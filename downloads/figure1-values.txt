@@ -1,0 +1,44 @@
+panel              | column                 | model            | effect [95% CI] (* Holm p < 0.05); two-mark rows: circle first, diamond second
+Contract review    | Hidden instruction     | Haiku 5.5        |   -0.15 [  -0.55,   +0.25] 
+Contract review    | Hidden instruction     | Opus 5.5         |   -0.05 [  -0.30,   +0.20] 
+Contract review    | Hidden instruction     | Fable 5.1        |   +0.15 [  -0.15,   +0.40] 
+Contract review    | Hidden instruction     | GPT-6 Luna       |   +0.60 [  +0.30,   +0.90]*
+Contract review    | Hidden instruction     | GPT-6.1 Sol      |   -0.40 [  -0.80,   +0.00] 
+Contract review    | Hidden instruction     | dots.3 note      |  +20.75 [ +16.75,  +24.45]*
+Contract review    | Hidden instruction     | Gemini 3.6 Flash |   -3.40 [  -5.65,   -1.10]*
+Contract review    | Hidden instruction     | Nemotron 3 Ultra |   -0.75 [  -2.45,   +0.90] 
+Contract review    | Hidden instruction     | Xing 4.0         |   -1.30 [  -7.40,   +4.65] 
+Contract review    | Combined framing       | Haiku 5.5        |   -0.40 [  -0.80,   +0.00] 
+Contract review    | Combined framing       | Opus 5.5         |   +0.25 [  -0.05,   +0.55] 
+Contract review    | Combined framing       | Fable 5.1        |   +0.05 [  -0.30,   +0.35] 
+Contract review    | Combined framing       | GPT-6 Luna       |   +0.75 [  +0.40,   +1.10]*
+Contract review    | Combined framing       | GPT-6.1 Sol      |   -0.10 [  -0.55,   +0.30] 
+Contract review    | Combined framing       | dots.3 note      |   +7.20 [  +3.20,  +11.90]*
+Contract review    | Combined framing       | Gemini 3.6 Flash |   +2.35 [  -1.20,   +5.95] 
+Contract review    | Combined framing       | Nemotron 3 Ultra |   +2.65 [  +0.25,   +5.10] 
+Contract review    | Combined framing       | Xing 4.0         |   -2.00 [  -8.80,   +4.75] 
+Interpretive drift | Favoured items first   | Haiku 5.5        |    -6.2 [   -9.1,    -3.5]*    -10.8 [  -14.1,    -7.4]*
+Interpretive drift | Favoured items first   | Opus 5.5         |    -4.5 [   -5.8,    -3.3]*     -8.1 [   -9.5,    -6.7]*
+Interpretive drift | Favoured items first   | Fable 5.1        |    -0.7 [   -2.6,    +1.2]      -5.0 [   -7.5,    -2.5]*
+Interpretive drift | Favoured items first   | GPT-6 Luna       |    -9.3 [  -12.6,    -5.9]*     -0.4 [   -3.6,    +2.8] 
+Interpretive drift | Favoured items first   | GPT-6.1 Sol      |    -4.5 [   -5.8,    -3.3]*     -3.2 [   -4.2,    -2.2]*
+Interpretive drift | Favoured items last    | Haiku 5.5        |    +8.2 [   +2.5,   +13.5]*     +1.1 [   -2.8,    +5.1] 
+Interpretive drift | Favoured items last    | Opus 5.5         |    +3.1 [   +1.8,    +4.4]*     +3.7 [   +2.1,    +5.4]*
+Interpretive drift | Favoured items last    | Fable 5.1        |    +1.8 [   +0.1,    +3.5]      +0.1 [   -1.6,    +1.8] 
+Interpretive drift | Favoured items last    | GPT-6 Luna       |    +5.6 [   +2.6,    +8.7]*     +0.6 [   -3.0,    +4.2] 
+Interpretive drift | Favoured items last    | GPT-6.1 Sol      |    +2.5 [   +1.5,    +3.4]*     +4.1 [   +2.9,    +5.3]*
+Interpretive drift | Slanted glosses        | Haiku 5.5        |    +7.8 [   +4.0,   +11.7]*    +14.3 [  +11.6,   +17.0]*
+Interpretive drift | Slanted glosses        | Opus 5.5         |    -7.8 [   -8.9,    -6.6]*     -0.4 [   -1.8,    +1.1] 
+Interpretive drift | Slanted glosses        | Fable 5.1        |    -0.8 [   -2.8,    +1.1]      +3.0 [   +1.3,    +4.7] 
+Interpretive drift | Slanted glosses        | GPT-6 Luna       |    +5.5 [   +2.0,    +9.0]*     +7.4 [   +4.5,   +10.3]*
+Interpretive drift | Slanted glosses        | GPT-6.1 Sol      |    -1.9 [   -3.1,    -0.8]*     +4.4 [   +3.3,    +5.4]*
+IP assignment      | Assertion only         | Haiku 5.5        |    -0.2 [   -0.4,    +0.1]      +0.1 [   +0.0,    +0.2] 
+IP assignment      | Assertion only         | Opus 5.5         |    +0.0 [   +0.0,    +0.1]      -0.5 [   -0.8,    -0.3]*
+IP assignment      | Assertion only         | Fable 5.1        |    -0.2 [   -0.6,    +0.2]      -0.7 [   -1.0,    -0.4]*
+IP assignment      | Assertion only         | GPT-6 Luna       |    -0.7 [   -1.5,    +0.2]      +0.1 [   -0.1,    +0.4] 
+IP assignment      | Assertion only         | GPT-6.1 Sol      |    -0.2 [   -0.4,    -0.1]      +0.0 [   +0.0,    +0.0] 
+IP assignment      | Adversarial bundle     | Haiku 5.5        |    +4.7 [   +3.9,    +5.7]*    +13.7 [  +12.1,   +15.4]*
+IP assignment      | Adversarial bundle     | Opus 5.5         |    +9.4 [   +8.9,    +9.9]*    +25.0 [  +23.6,   +26.4]*
+IP assignment      | Adversarial bundle     | Fable 5.1        |    +9.5 [   +8.5,   +10.5]*    +23.6 [  +21.5,   +26.2]*
+IP assignment      | Adversarial bundle     | GPT-6 Luna       |    +7.9 [   +6.0,    +9.8]*    +15.9 [  +12.4,   +19.5]*
+IP assignment      | Adversarial bundle     | GPT-6.1 Sol      |   +11.1 [  +10.2,   +12.1]*    +25.0 [  +24.0,   +26.2]*
