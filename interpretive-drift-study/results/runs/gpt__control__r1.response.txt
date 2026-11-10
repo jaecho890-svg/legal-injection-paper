@@ -1,0 +1,9 @@
+STEP 1 | P=45 | CONF=LOW | Time-of-essence favours Aster; cure period and change control favour Delphin.
+STEP 2 | P=50 | CONF=LOW | Three-week late delivery supports Aster, but two change requests may excuse it.
+STEP 3 | P=38 | CONF=MED | Aster requested extra reporting and accepted the slip, weakening the breach claim.
+STEP 4 | P=35 | CONF=MED | Critical defects fixed within 11 business days, inside the 15-business-day cure period.
+STEP 5 | P=27 | CONF=MED | Withholding notice cited vague "quality concerns", not the specifics the contract requires.
+STEP 6 | P=22 | CONF=MED | Internal memo cites budget pressure and conditional exit, supporting a pretext argument.
+STEP 7 | P=15 | CONF=HIGH | Remediation plan delivered; termination nine days later, before cure could run.
+STEP 8 | P=20 | CONF=MED | Letter cites unspecified breaches; Delphin's cure-readiness claim is only assertion.
+FINAL | P=22 | CONF=MED | Notice defects, cure rights and pre-termination remediation outweigh the late milestone.

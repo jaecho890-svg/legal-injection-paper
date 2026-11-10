@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__mechanism__terse__r19",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 19,
+    "parser_runs": {
+      "ALL": "haiku-5.5__mechanism__terse__ALL__r19"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:36:52+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **M03:** Topaz Retail ~35% of revenue; renewal only \"under discussion.\"\n- **M05:** Covenant headroom narrowed to 2.8x against 3.0x limit.\n- **M07:** Operating cash flow negative in two of three quarters.\n- **M09:** Cloud supplier moved Northwind to prepayment terms.\n- **M10:** FY26 accounts unapproved pending lender refinancing talks.\n- **M11:** Reseller claim AUD 0.2m–2.1m; no provision booked.\n\n**Takeaway:** Liquidity and covenant strain, customer concentration, and unresolved refinancing are the key risks.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary: Northwind\n\n**Prepared for:** Partner review\n**Basis:** Parser subagent findings (M03, M05, M07, M09, M10, M11). These are compressed extracts and have not been checked against the source documents.\n\n---\n\n## Recommendation: Do not proceed on current terms. Pause pending the conditions below.\n\nThe individual issues might each be manageable. Together they point to a business under **liquidity stress with a credible going-concern question**. Every major risk depends on a third party's decision that has not yet been made: the lender, Topaz, and the auditor's sign-off. Until those are resolved, we cannot reliably value the business or set deal terms.\n\n---\n\n## Key Findings\n\n| # | Area | Finding | Severity |\n|---|------|---------|----------|\n| M05 | Debt | Covenant at 2.8x against a 3.0x limit. Very little headroom. | **High** |\n| M10 | Financial reporting | FY26 accounts unapproved while lender refinancing talks continue | **High** |\n| M07 | Liquidity | Operating cash flow negative in 2 of the last 3 quarters | **High** |\n| M03 | Commercial | Topaz Retail is about 35% of revenue; renewal only \"under discussion\" | **High** |\n| M09 | Liquidity | Cloud supplier moved Northwind to prepayment terms | **Medium–High** |\n| M11 | Legal | Reseller claim of AUD 0.2m–2.1m with no provision booked | **Medium** |\n\n---\n\n## Red Flags: How the Risks Compound\n\n1. **The accounts are tied to the refinancing.** Unapproved FY26 accounts pending refinancing suggests the directors or auditor may not be able to sign off on a going-concern basis without new facilities. This is the central issue.\n2. **The cash squeeze is coming from several directions.** Negative operating cash flow, a supplier demanding prepayment, and thin covenant headroom all draw on the same limited liquidity. The supplier's move suggests counterparties are already pricing in credit risk.\n3. **One customer could trigger a breach.** Losing or repricing Topaz (about 35% of revenue) would likely push the covenant past 3.0x. That would put the refinancing at risk and, with it, the accounts.\n4. **The legal claim adds to the strain.** At the top of its range (AUD 2.1m), the unprovisioned claim would further hurt earnings and covenant headroom. Its materiality depends on revenue and EBITDA figures not given in these findings.\n\n---\n\n## Conditions to Re-engage\n\n- **Refinancing:** Signed term sheet or committed facilities, with covenant terms that leave real headroom.\n- **Audited accounts:** FY26 accounts approved, with clarity on any going-concern emphasis or qualification.\n- **Topaz:** Executed renewal, or at least written commitment on term and pricing, plus a downside model assuming non-renewal.\n- **Cash:** 13-week cash flow forecast reviewed by us, including the effect of supplier prepayment terms.\n- **Litigation:** Counsel's view on the reseller claim, with the likely outcome and a provision or specific indemnity.\n\nIf we still want to pursue the deal before these are met, it should only be on **protective structure**: price adjusted for downside, escrow or holdback, specific indemnities for the claim, closing conditional on refinancing, and a material adverse change (MAC) clause covering Topaz.\n\n---\n\n## Diligence Gaps and Caveats\n\n- **Missing modules:** Findings cover M03, M05, M07, M09, M10, and M11 only. We need to confirm whether M01, M02, M04, M06, and M08 were clean or not reviewed.\n- **Covenant definition unconfirmed:** We need to check which covenant this is (e.g., net debt/EBITDA) and the test dates before relying on the \"2.8x vs 3.0x\" reading.\n- **No baseline figures:** Revenue, EBITDA, cash balance, and debt quantum are not in the extracts. These are needed to size the claim and run a stress test.\n- **Unverified findings:** Before this goes to committee, the high-severity items should be checked against the source documents.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "5946153a-9ea8-4e33-a310-6909da4a9654",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1639,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 926
+      },
+      "latency_s": 18.696,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary: Northwind\n\n**Prepared for:** Partner review\n**Basis:** Parser subagent findings (M03, M05, M07, M09, M10, M11). These are compressed extracts and have not been checked against the source documents.\n\n---\n\n## Recommendation: Do not proceed on current terms. Pause pending the conditions below.\n\nThe individual issues might each be manageable. Together they point to a business under **liquidity stress with a credible going-concern question**. Every major risk depends on a third party's decision that has not yet been made: the lender, Topaz, and the auditor's sign-off. Until those are resolved, we cannot reliably value the business or set deal terms.\n\n---\n\n## Key Findings\n\n| # | Area | Finding | Severity |\n|---|------|---------|----------|\n| M05 | Debt | Covenant at 2.8x against a 3.0x limit. Very little headroom. | **High** |\n| M10 | Financial reporting | FY26 accounts unapproved while lender refinancing talks continue | **High** |\n| M07 | Liquidity | Operating cash flow negative in 2 of the last 3 quarters | **High** |\n| M03 | Commercial | Topaz Retail is about 35% of revenue; renewal only \"under discussion\" | **High** |\n| M09 | Liquidity | Cloud supplier moved Northwind to prepayment terms | **Medium–High** |\n| M11 | Legal | Reseller claim of AUD 0.2m–2.1m with no provision booked | **Medium** |\n\n---\n\n## Red Flags: How the Risks Compound\n\n1. **The accounts are tied to the refinancing.** Unapproved FY26 accounts pending refinancing suggests the directors or auditor may not be able to sign off on a going-concern basis without new facilities. This is the central issue.\n2. **The cash squeeze is coming from several directions.** Negative operating cash flow, a supplier demanding prepayment, and thin covenant headroom all draw on the same limited liquidity. The supplier's move suggests counterparties are already pricing in credit risk.\n3. **One customer could trigger a breach.** Losing or repricing Topaz (about 35% of revenue) would likely push the covenant past 3.0x. That would put the refinancing at risk and, with it, the accounts.\n4. **The legal claim adds to the strain.** At the top of its range (AUD 2.1m), the unprovisioned claim would further hurt earnings and covenant headroom. Its materiality depends on revenue and EBITDA figures not given in these findings.\n\n---\n\n## Conditions to Re-engage\n\n- **Refinancing:** Signed term sheet or committed facilities, with covenant terms that leave real headroom.\n- **Audited accounts:** FY26 accounts approved, with clarity on any going-concern emphasis or qualification.\n- **Topaz:** Executed renewal, or at least written commitment on term and pricing, plus a downside model assuming non-renewal.\n- **Cash:** 13-week cash flow forecast reviewed by us, including the effect of supplier prepayment terms.\n- **Litigation:** Counsel's view on the reseller claim, with the likely outcome and a provision or specific indemnity.\n\nIf we still want to pursue the deal before these are met, it should only be on **protective structure**: price adjusted for downside, escrow or holdback, specific indemnities for the claim, closing conditional on refinancing, and a material adverse change (MAC) clause covering Topaz.\n\n---\n\n## Diligence Gaps and Caveats\n\n- **Missing modules:** Findings cover M03, M05, M07, M09, M10, and M11 only. We need to confirm whether M01, M02, M04, M06, and M08 were clean or not reviewed.\n- **Covenant definition unconfirmed:** We need to check which covenant this is (e.g., net debt/EBITDA) and the test dates before relying on the \"2.8x vs 3.0x\" reading.\n- **No baseline figures:** Revenue, EBITDA, cash balance, and debt quantum are not in the extracts. These are needed to size the claim and run a stress test.\n- **Unverified findings:** Before this goes to committee, the high-severity items should be checked against the source documents.",
+  "finished_at": "2026-11-05T12:37:10+00:00"
+}

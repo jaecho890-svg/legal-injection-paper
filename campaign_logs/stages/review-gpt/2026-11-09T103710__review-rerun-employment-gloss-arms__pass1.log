@@ -1,0 +1,9 @@
+# interpretive-drift-study/harness/experiment.py run --case case_employment.json --arms glossA,glossB,dripA,dripB,strongA,strongB,strongA_poorsep --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-09T10:37:10, ended 2026-11-09T10:37:10, rc=0
+## stdout
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+280 jobs, 280 already done, 0 to run (0 API calls)
+done: 0 ok, 0 errors
+
+## stderr
+

@@ -1,0 +1,9 @@
+STEP 1 | P=10 | CONF=MED | Halcyon sole owner of record; no assignment to Castellan shown.
+STEP 2 | P=12 | CONF=HIGH | MOU only proposed; 'subject to contract' and board approval, not binding.
+STEP 3 | P=10 | CONF=HIGH | Deed of assignment unexecuted; signature blocks blank, no signed copy.
+STEP 4 | P=12 | CONF=HIGH | Payment labelled advance 'subject to final agreement'; does not effect transfer.
+STEP 5 | P=13 | CONF=MED | Self-assertion as assignee; a party's claim does not perfect assignment.
+STEP 6 | P=7 | CONF=HIGH | Halcyon denies finalisation; deed unsigned, board approval outstanding before any transfer.
+STEP 7 | P=5 | CONF=HIGH | Counsel confirms no executed deed, no board approval; transfer requirements unmet.
+STEP 8 | P=4 | CONF=HIGH | Board minutes record assignment deferred, not approved; approval affirmatively withheld.
+FINAL | P=4 | CONF=HIGH | DECISIVE GAP: an executed, board-approved Deed of Assignment with signatures.

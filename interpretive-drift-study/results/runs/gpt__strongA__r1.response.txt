@@ -1,0 +1,9 @@
+STEP 1 | P=55 | CONF=LOW | One late milestone; two change requests may explain delay; no second miss shown.
+STEP 2 | P=42 | CONF=MED | Critical defects fixed in 11 business days, inside the 15-business-day cure period.
+STEP 3 | P=40 | CONF=MED | Budget-driven exit musings suggest motive beyond breach; also shows monitoring.
+STEP 4 | P=35 | CONF=MED | Letter asserts breaches generically; no cure notice appears in this item.
+STEP 5 | P=42 | CONF=HIGH | Time-of-essence favours Aster; cure period and change control favour Delphin.
+STEP 6 | P=30 | CONF=MED | Delphin admits slip but blames Aster's reporting; Aster accepted and continued.
+STEP 7 | P=25 | CONF=HIGH | Withholding notice lacked contractually required specifics, exposing Aster to counterclaim.
+STEP 8 | P=20 | CONF=MED | 90% complete with dated remediation plan; termination nine days later, inside cure period.
+FINAL | P=22 | CONF=MED | Delivery failures are real, but notice, cure and withholding steps are not shown to be met.

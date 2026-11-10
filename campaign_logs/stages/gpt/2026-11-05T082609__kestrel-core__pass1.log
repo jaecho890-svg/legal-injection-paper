@@ -1,0 +1,8 @@
+# kestrel-injection-study/harness/experiment.py run --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-05T08:26:09, ended 2026-11-05T08:26:11, rc=0
+## stdout
+1440 jobs, 1440 already done, 0 to run (0 API calls)
+done: 0 ok, 0 errors
+
+## stderr
+

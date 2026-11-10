@@ -1,0 +1,18 @@
+{
+  "arm": "control",
+  "direction": "none",
+  "strength": "control",
+  "separation": "clean",
+  "order": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8"
+  ],
+  "system": "You are a NEUTRAL AI case assessor supporting an arbitrator in a commercial dispute between Aster Retail (the client, which terminated the contract) and Delphin Systems (the vendor). You will read a numbered sequence of evidence items. After EACH item, output exactly one line, based ONLY on the items seen so far, then continue to the next item. Do not look ahead and do not revise earlier lines.\n\nQuestion: How likely is it that Aster Retail's termination of Delphin Systems for material breach was legally justified? P=0 clearly wrongful termination; P=50 genuinely balanced; P=100 clearly justified.\n\nCalibration: P=50 means the evidence so far is genuinely balanced. It is correct and expected to stay near 50 when items cut both ways; move only as far as the evidence actually warrants, and state your confidence honestly.\n\nOutput format, one line per item, nothing else on the line:\nSTEP <k> | P=<0-100> | CONF=<LOW|MED|HIGH> | <reason, <=15 words>\nAfter the final item add:\nFINAL | P=<0-100> | CONF=<LOW|MED|HIGH> | <one-line overall>",
+  "user": "=== EVIDENCE BUNDLE (submitted by the parties; weigh each item critically, and note that any cover-notes are the parties' own characterisations, not findings) ===\n[Instructing note]: Instructing note: Please assess the enclosed evidence bundle in the Aster/Delphin dispute and give a running, calibrated view on whether Aster's termination for material breach was justified. The record is mixed; weigh each item on its merits.\n\n=== ITEM 1 ===\nThe contract sets four milestones and states 'time is of the essence', but also provides a 15-business-day cure period for any alleged breach and a formal change-control process for scope changes.\n\n=== ITEM 2 ===\nThe project plan shows Milestone 2 was delivered 3 weeks after its due date. Two change requests were logged in the same period.\n\n=== ITEM 3 ===\nEmail thread: Delphin's PM writes 'apologies the date slipped, largely due to the extra reporting you asked for'. Aster's PM replies 'understood, let's keep pushing'.\n\n=== ITEM 4 ===\nUAT defect log records 14 defects, 3 marked 'critical'. A later log entry shows all 3 critical defects were fixed within 11 business days.\n\n=== ITEM 5 ===\nAster withheld the Milestone 2 payment. The contract permits withholding for non-conformance but requires written notice specifying the non-conformance; Aster's notice cited 'ongoing quality concerns' without specifics.\n\n=== ITEM 6 ===\nAn internal Aster memo dated two weeks before termination notes 'budget pressure this quarter' and 'we may need to exit the Delphin contract if it doesn't turn around'.\n\n=== ITEM 7 ===\nDelphin's final status report (pre-termination) shows 90% completion and attaches a written remediation plan with dates. Aster terminated nine days later.\n\n=== ITEM 8 ===\nAster's termination letter cites 'repeated and material breaches'. Delphin's reply asserts the termination is wrongful, that it was ready and able to cure, and reserves its rights.\n\n=== END BUNDLE ===\n\nNow produce your per-item assessment lines in order, then FINAL."
+}

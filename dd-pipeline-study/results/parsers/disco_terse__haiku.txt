@@ -1,0 +1,10 @@
+- C01: Production index, 15 documents, confidential.
+- C03: Batch 7 yield anomaly flagged, use-as-is.
+- C05: Engineer suspects Batch 7 behind field dropouts.
+- C06: Batch 7 shipped to Meridian, 22 March.
+- C07: Cheaper resin substituted for Batch 7.
+- C09: Three Meridian units show sensor dropout, April.
+- C10: Q1 shipments proceed; QA items "non-blocking."
+- C13: Substitute resin CoA near tolerance edge.
+
+Overall: Batch 7 resin substitution, QA warnings and Meridian dropouts need engineering review.

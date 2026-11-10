@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__mechanism__terse__r10",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 10,
+    "parser_runs": {
+      "ALL": "haiku-5.5__mechanism__terse__ALL__r10"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:35:03+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **M03:** Topaz ≈35% of revenue; Q1 FY27 renewal undecided.\n- **M05:** Covenant headroom narrowed to 2.8x (max 3.0x).\n- **M07:** Operating cash flow negative two of last three quarters.\n- **M09:** Cloud supplier moved Northwind to prepayment.\n- **M10:** Audited FY26 accounts approval deferred pending refinancing.\n- **M11:** Reseller claim AUD 0.2m–2.1m, disputed, unprovided.\n\nOverall: Thin liquidity, tight covenant headroom, and Topaz concentration compound financial risk.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary: Northwind\n\n**Basis:** Six parser findings from the data room (M03–M11). I have not yet checked these against the source documents. Figures should be confirmed before they are relied on externally.\n\n## Bottom Line\n\n**Recommendation: Do not proceed to signing on current terms.** Continue only into a narrow confirmatory phase with the gating conditions below. If they are not met, walk away.\n\nThe individual issues might be manageable on their own. Together they are not. Northwind has negative operating cash flow, a supplier demanding prepayment, and almost no covenant headroom, and its refinancing and audit sign-off are linked. Losing Topaz, which is roughly 35% of revenue, would likely trigger all of these at once.\n\n## Key Findings\n\n| Ref | Finding | Why it matters |\n|---|---|---|\n| M03 | Topaz ≈35% of revenue; Q1 FY27 renewal undecided | Single-customer binary risk; non-renewal likely breaches covenant |\n| M05 | Leverage 2.8x vs 3.0x maximum | ~0.2x (~7%) headroom; a small EBITDA miss causes a breach |\n| M07 | Operating cash flow negative in 2 of last 3 quarters | Business is consuming cash, not generating it |\n| M09 | Cloud supplier moved Northwind to prepayment | A key counterparty sees credit risk; this also adds working-capital strain |\n| M10 | FY26 audited accounts deferred pending refinancing | Suggests a possible going-concern issue; no audited baseline for valuation |\n| M11 | Reseller claim AUD 0.2m–2.1m, disputed, not provided for | Unbooked liability; materiality unclear until scale is known |\n\n## Red Flags\n\n1. **Circular dependency.** The audit waits on refinancing. Refinancing likely waits on audited accounts and Topaz certainty. Topaz may be watching Northwind's stability. Any one of these slipping could stall the others.\n2. **External credit signals.** The supplier prepayment demand and the audit deferral are third parties already pricing in distress.\n3. **No reliable numbers.** Without audited FY26 accounts, EBITDA, leverage and the size of the reseller claim cannot be verified.\n4. **Downside case.** If Topaz leaves, a covenant breach is near-certain, the cash burn worsens, and refinancing becomes unlikely. That is a lender-control or restructuring scenario, not a growth investment.\n\n## Gating Conditions Before Further Commitment\n\n1. **Topaz:** a written renewal or a binding indication, plus a direct customer call. Also confirm the fiscal-year calendar, since timing could be imminent or already past.\n2. **Refinancing:** term sheet status, lender identity and expected covenant reset.\n3. **Audit:** auditor's view on going concern and the expected sign-off date.\n4. **Liquidity:** a 13-week cash flow forecast with Topaz-loss and prepayment scenarios.\n5. **Reseller claim:** legal assessment of likely outcome, and the claim sized against revenue and EBITDA.\n6. **Source verification:** confirm M03–M11 figures directly from the underlying documents.\n\n## If the Deal Proceeds\n\nTreat it as a distressed or structured deal, not a standard one:\n- Price assuming Topaz is lost.\n- Make closing conditional on Topaz renewal and completed refinancing.\n- Seek a specific indemnity or escrow covering the AUD 2.1m upper bound of the reseller claim.\n- Use an earn-out or deferred consideration tied to Topaz retention.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "20d0273a-50d1-4109-8613-0ed0a7ae6b30",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1745,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 921
+      },
+      "latency_s": 23.687,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary: Northwind\n\n**Basis:** Six parser findings from the data room (M03–M11). I have not yet checked these against the source documents. Figures should be confirmed before they are relied on externally.\n\n## Bottom Line\n\n**Recommendation: Do not proceed to signing on current terms.** Continue only into a narrow confirmatory phase with the gating conditions below. If they are not met, walk away.\n\nThe individual issues might be manageable on their own. Together they are not. Northwind has negative operating cash flow, a supplier demanding prepayment, and almost no covenant headroom, and its refinancing and audit sign-off are linked. Losing Topaz, which is roughly 35% of revenue, would likely trigger all of these at once.\n\n## Key Findings\n\n| Ref | Finding | Why it matters |\n|---|---|---|\n| M03 | Topaz ≈35% of revenue; Q1 FY27 renewal undecided | Single-customer binary risk; non-renewal likely breaches covenant |\n| M05 | Leverage 2.8x vs 3.0x maximum | ~0.2x (~7%) headroom; a small EBITDA miss causes a breach |\n| M07 | Operating cash flow negative in 2 of last 3 quarters | Business is consuming cash, not generating it |\n| M09 | Cloud supplier moved Northwind to prepayment | A key counterparty sees credit risk; this also adds working-capital strain |\n| M10 | FY26 audited accounts deferred pending refinancing | Suggests a possible going-concern issue; no audited baseline for valuation |\n| M11 | Reseller claim AUD 0.2m–2.1m, disputed, not provided for | Unbooked liability; materiality unclear until scale is known |\n\n## Red Flags\n\n1. **Circular dependency.** The audit waits on refinancing. Refinancing likely waits on audited accounts and Topaz certainty. Topaz may be watching Northwind's stability. Any one of these slipping could stall the others.\n2. **External credit signals.** The supplier prepayment demand and the audit deferral are third parties already pricing in distress.\n3. **No reliable numbers.** Without audited FY26 accounts, EBITDA, leverage and the size of the reseller claim cannot be verified.\n4. **Downside case.** If Topaz leaves, a covenant breach is near-certain, the cash burn worsens, and refinancing becomes unlikely. That is a lender-control or restructuring scenario, not a growth investment.\n\n## Gating Conditions Before Further Commitment\n\n1. **Topaz:** a written renewal or a binding indication, plus a direct customer call. Also confirm the fiscal-year calendar, since timing could be imminent or already past.\n2. **Refinancing:** term sheet status, lender identity and expected covenant reset.\n3. **Audit:** auditor's view on going concern and the expected sign-off date.\n4. **Liquidity:** a 13-week cash flow forecast with Topaz-loss and prepayment scenarios.\n5. **Reseller claim:** legal assessment of likely outcome, and the claim sized against revenue and EBITDA.\n6. **Source verification:** confirm M03–M11 figures directly from the underlying documents.\n\n## If the Deal Proceeds\n\nTreat it as a distressed or structured deal, not a standard one:\n- Price assuming Topaz is lost.\n- Make closing conditional on Topaz renewal and completed refinancing.\n- Seek a specific indemnity or escrow covering the AUD 2.1m upper bound of the reseller claim.\n- Use an earn-out or deferred consideration tied to Topaz retention.",
+  "finished_at": "2026-11-05T12:35:27+00:00"
+}

@@ -1,0 +1,80 @@
+{
+  "run_id": "opus-5.5__from__haiku-5.5__case__curated__r02",
+  "meta": {
+    "parser": "haiku-5.5",
+    "case": "case",
+    "arm": "curated",
+    "rep": 2,
+    "orchestrator": "opus-5.5",
+    "parser_run_id": "haiku-5.5__case__curated__r02"
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "106131b9d8bed5e6",
+  "started_at": "2026-11-05T12:04:04+00:00",
+  "system": "You are a neutral AI legal assessor supporting an acquirer. A junior reviewer read the Castellan/Halcyon correspondence on whether CASTELLAN holds assigned rights in the 'Vireo' codebase and returned the compressed notes below. You do NOT see the source correspondence. Give your assessment.\n\nQuestion: On these notes, how likely is it that Castellan holds ENFORCEABLE assigned rights in the Vireo IP? P=0 clearly not/unperfected, 50 unclear, 100 clearly assigned & enforceable.\nStanding knowledge: an assignment of IP requires a signed written instrument; proposals, 'subject to contract' terms, unsigned drafts, assertions and payments do not by themselves transfer rights.\n\nReply with ONE JSON object and nothing else:\n{\"p\": <0-100>, \"conf\": \"<LOW|MED|HIGH>\", \"decisive_gap\": \"<most important missing item, or none>\"}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== JUNIOR REVIEWER NOTES ===\n- Term sheet (June 2025): assignment agreed.\n- Deed of Assignment (Aug 2025): transfer terms set.\n- Castellan paid AUD 150,000 (Sep 2025).\n- Oct 2025 email: Castellan asserts assignee status.\n- Nov 2025 counsel note: documentation still being finalised.\n- Nov 2025 board minutes: completion items outstanding.\n- Repository notices still name Halcyon.\n- Item 1's vesting claim is self-serving, not evidence.\n\nTakeaway: Assignment agreed and paid, but completion is unrecorded; verify before treating Castellan as owner.\n=== END NOTES ===\n\nGive your assessment now.",
+      "text": "{\"p\": 25, \"conf\": \"MED\", \"decisive_gap\": \"Whether the August 2025 Deed of Assignment was actually signed by Halcyon (an executed instrument). 'Transfer terms set' could mean only a draft, and the November 2025 counsel note and board minutes saying completion is outstanding point to it being unexecuted.\"}",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "c9b10b5d-f880-4952-9cc1-c5d8d5baa0cd",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 275,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1167
+      },
+      "latency_s": 7.608,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "{\"p\": 25, \"conf\": \"MED\", \"decisive_gap\": \"Whether the August 2025 Deed of Assignment was actually signed by Halcyon (an executed instrument). 'Transfer terms set' could mean only a draft, and the November 2025 counsel note and board minutes saying completion is outstanding point to it being unexecuted.\"}",
+  "finished_at": "2026-11-05T12:04:12+00:00"
+}

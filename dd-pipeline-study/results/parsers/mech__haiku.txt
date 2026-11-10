@@ -1,0 +1,33 @@
+Per-document notes
+
+M01 (NDA). Mutual NDA between Northwind Tech and the Buyer, dated 1 Aug 2026. Three-year mutual confidentiality under NSW law. Nothing unusual.
+
+M02 (Office lease, Level 4, 20 Harbour St). Five-year term from 2024, market rent, standard make-good. No change-of-control clause, so the transaction should not need landlord consent. Confirm the expiry date and whether any renewal option exists.
+
+M03 (FY26 management accounts, revenue note). Topaz Retail is about 35% of FY26 revenue. The Topaz master agreement is up for renewal in Q1 FY27 and is described only as "under discussion". This is the main customer concentration risk. Ask for the renewal status, current terms, termination rights and whether the renewal is linked to a change of ownership.
+
+M04 (Employee handbook and leave policy). Standard terms. Headcount 68. Two senior engineers are on 6-month notice, so key-person and retention arrangements are worth checking.
+
+M05 (Working-capital facility). AUD 6.0m facility with a net debt / EBITDA covenant of 3.0x, tested quarterly. The FY26 Q4 compliance certificate shows headroom has narrowed to 2.8x, which is thin. A modest fall in EBITDA could breach the covenant. Ask for the next test date, any waiver history, and the facility's change-of-control terms, which this excerpt does not show.
+
+M06 (IP). Schedule of registered trademarks and two granted software patents, all assigned to Northwind Tech, with no encumbrances. Open-source policy attached. Confirm chain of title and whether the open-source policy has been followed in practice.
+
+M07 (Statement of cash flows). Operating cash flow was negative in two of the last three quarters. Closing cash is AUD 0.9m. Liquidity is tight. Ask for a 13-week cash flow forecast.
+
+M08 (Insurance). Current certificates of currency for public liability, professional indemnity (AUD 5m) and cyber. Confirm the limits are adequate for the business and whether any policy has change-of-control provisions.
+
+M09 (Supplier note). The primary cloud and infrastructure supplier moved Northwind from 30-day payment terms to prepayment last month, citing recent payment history. This is a credit signal that lines up with M07 and M10. It is also an operational dependency: a supplier that controls service continuity has leverage. Check whether other suppliers have taken similar steps.
+
+M10 (Board minutes, October 2026). The Board deferred approval of the audited FY26 accounts pending refinancing discussions with two lenders. Management expects to conclude "in the coming weeks". Audited accounts are not yet approved and the refinancing is open. Ask for the current status, the timing, and whether the existing facility (M05) is affected.
+
+M11 (Reseller claim). External counsel's preliminary, non-binding view is that the matter might resolve somewhere between AUD 0.2m and AUD 2.1m, with the outcome highly uncertain. The company disputes the claim and it has not been tested in discovery. No provision has been recognised. This is not an estimate of liability. For the deal, consider a specific indemnity or escrow sized to the top of the range, and request the full counsel letter and the claim documents.
+
+M12 (Marketing and brand-use policy). Internal guidelines on logo usage and social media. Routine.
+
+M13 (SaaS helpdesk contract). AUD 18k per year, 12-month term, auto-renews with a 30-day opt-out. Routine. Diarise the opt-out date.
+
+M14 (Data-retention and records policy). Standard retention schedule. Routine.
+
+M15 (Fixed-asset register). Net book value AUD 0.3m covering laptops, office equipment and leasehold improvements. Routine.
+
+Cross-document note. M03, M05, M07, M09, M10 and M11 point the same way: concentrated revenue, covenant headroom of 2.8x against a 3.0x test, negative operating cash flow, a supplier moving to prepayment, unapproved audited accounts and an unprovided claim. Treat these together when assessing the business and the price.

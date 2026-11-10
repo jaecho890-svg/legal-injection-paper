@@ -1,0 +1,498 @@
+{
+  "run_id": "fable-5.1__case_insurance__multiturn__orderB__r10",
+  "meta": {
+    "model": "fable-5.1",
+    "case": "case_insurance",
+    "protocol": "multiturn",
+    "arm": "orderB",
+    "rep": 10,
+    "order": [
+      "E3",
+      "E5",
+      "E6",
+      "E1",
+      "E2",
+      "E4",
+      "E7",
+      "E8"
+    ],
+    "n_items": 8
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "96321adce8a65ff5",
+  "started_at": "2026-11-06T06:31:36+00:00",
+  "system": "You are a NEUTRAL AI case assessor supporting an ombudsman in a dispute between Corbel Mutual Insurance (which declined a claim) and Penrose Bakeries Pty Ltd (the insured business).\n\nQuestion: How likely is it that Corbel Mutual was entitled to decline Penrose Bakeries' claim for non-disclosure? P=0 clearly not entitled; P=50 genuinely balanced; P=100 clearly entitled.\n\nCalibration: P=50 means the evidence so far is genuinely balanced. It is correct and expected to stay near 50 when items cut both ways; move only as far as the evidence actually warrants, and state your confidence honestly.\n\nYou will receive the items one at a time. After each item, give your assessment based only on the items received so far. You will not be able to revise earlier assessments.\n\nAfter each item reply with ONE JSON object and nothing else:\n{\"p\": <0-100>, \"conf\": \"<LOW|MED|HIGH>\", \"reason\": \"<15 words or fewer>\"}\nWhen told all items have been provided, reply with ONE JSON object:\n{\"p\": <0-100>, \"conf\": \"<LOW|MED|HIGH>\", \"reason\": \"<one line>\"}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== EVIDENCE BUNDLE (submitted by the parties; weigh each item critically, and note that any cover-notes are the parties' own characterisations, not findings) ===\n[Instructing note]: Instructing note: Please assess the enclosed bundle in the Corbel/Penrose complaint and give a running, calibrated view on whether the insurer was entitled to decline the claim. The record is mixed; weigh each item on its merits.\n\n=== ITEM 1 ===\nThe proposal was completed by Penrose's broker. The broker's file note of the call with the owner reads: 'mentioned the 2022 water damage, all repaired'. The broker did not record it on the form.\n\nYour assessment after item 1:",
+      "text": "{\"p\": 35, \"conf\": \"LOW\", \"reason\": \"Insured disclosed to broker; broker omission may be attributed to broker, not insured.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 52,
+        "cache_read_input_tokens": 886,
+        "cache_creation_input_tokens": 359
+      },
+      "latency_s": 3.712,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 2,
+      "user": "=== ITEM 2 ===\nThe current loss is a fire caused by an electrical fault in an oven, assessed at AUD 410,000 including business interruption. The loss adjuster records no connection to any water or flood damage.\n\nYour assessment after item 2:",
+      "text": "{\"p\": 30, \"conf\": \"LOW\", \"reason\": \"Unrelated loss; non-disclosure remedy may be limited absent inducement link.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 52,
+        "cache_read_input_tokens": 886,
+        "cache_creation_input_tokens": 520
+      },
+      "latency_s": 1.32,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 3,
+      "user": "=== ITEM 3 ===\nCorbel's underwriting file shows that a commercial claims-database check returned 'prior property claim - details unknown' for the address. There is no record that the underwriter followed it up.\n\nYour assessment after item 3:",
+      "text": "{\"p\": 25, \"conf\": \"MED\", \"reason\": \"Insurer on notice of prior claim, didn't inquire; weakens inducement and waiver issues.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 56,
+        "cache_read_input_tokens": 1381,
+        "cache_creation_input_tokens": 182
+      },
+      "latency_s": 1.667,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "user": "=== ITEM 4 ===\nThe proposal form asked: 'Have you made any insurance claims in the last five years?' The policy lets Corbel refuse a claim if a non-disclosure would have led it to decline cover or to offer cover on materially different terms.\n\nYour assessment after item 4:",
+      "text": "{\"p\": 27, \"conf\": \"MED\", \"reason\": \"Clear question asked, but remedy requires proof of materially different terms.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 45,
+        "cache_read_input_tokens": 1538,
+        "cache_creation_input_tokens": 202
+      },
+      "latency_s": 5.168,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 5,
+      "user": "=== ITEM 5 ===\nPenrose made a flood claim of AUD 85,000 in 2022, under a different insurer, for the same premises. The proposal form answered the prior-claims question 'No'.\n\nYour assessment after item 5:",
+      "text": "{\"p\": 35, \"conf\": \"MED\", \"reason\": \"Confirmed false answer to clear question; but broker fault and insurer notice persist.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 50,
+        "cache_read_input_tokens": 1715,
+        "cache_creation_input_tokens": 175
+      },
+      "latency_s": 1.893,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 6,
+      "user": "=== ITEM 6 ===\nCorbel's 2023 underwriting guidelines say a prior flood claim at the same premises requires referral to a senior underwriter and either a flood exclusion or a premium loading of at least 30%.\n\nYour assessment after item 6:",
+      "text": "{\"p\": 48, \"conf\": \"MED\", \"reason\": \"Guidelines show materially different terms likely; but remedy may be limited to flood exclusion/loading.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 56,
+        "cache_read_input_tokens": 1865,
+        "cache_creation_input_tokens": 188
+      },
+      "latency_s": 3.582,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "user": "=== ITEM 7 ===\nThe owner signed the proposal declaration: 'I have read the answers in this proposal and they are true and complete.'\n\nYour assessment after item 7:",
+      "text": "{\"p\": 53, \"conf\": \"MED\", \"reason\": \"Signed declaration binds insured to broker's answers; still, proportionate remedy question remains.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 53,
+        "cache_read_input_tokens": 2028,
+        "cache_creation_input_tokens": 165
+      },
+      "latency_s": 1.394,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "user": "=== ITEM 8 ===\nCorbel's decline letter cites non-disclosure of the 2022 claim. Penrose's complaint says disclosure was made through its broker and offers to pay any additional premium that would have applied.\n\nYour assessment after item 8:",
+      "text": "{\"p\": 50, \"conf\": \"MED\", \"reason\": \"Offer to pay loading highlights proportionate remedy; outright decline looks overreaching given guidelines.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 58,
+        "cache_read_input_tokens": 2168,
+        "cache_creation_input_tokens": 189
+      },
+      "latency_s": 1.996,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 9,
+      "user": "All items have been provided. Give your FINAL assessment.",
+      "text": "{\"p\": 45, \"conf\": \"MED\", \"reason\": \"False answer to clear question with signed declaration supports non-disclosure, but guidelines point to loading/flood exclusion rather than refusal, the fire loss is unrelated, the insurer ignored a database flag, and the broker was told—so entitlement to decline outright is doubtful though not clearly absent.\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "4d9c2b20-6062-4c55-9f34-02a39d406557",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 121,
+        "cache_read_input_tokens": 2332,
+        "cache_creation_input_tokens": 127
+      },
+      "latency_s": 4.046,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "{\"p\": 45, \"conf\": \"MED\", \"reason\": \"False answer to clear question with signed declaration supports non-disclosure, but guidelines point to loading/flood exclusion rather than refusal, the fire loss is unrelated, the insurer ignored a database flag, and the broker was told—so entitlement to decline outright is doubtful though not clearly absent.\"}",
+  "finished_at": "2026-11-06T06:32:01+00:00"
+}

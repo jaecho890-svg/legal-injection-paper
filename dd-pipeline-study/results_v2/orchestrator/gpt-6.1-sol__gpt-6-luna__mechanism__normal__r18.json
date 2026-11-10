@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__mechanism__normal__r18",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "normal",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 18,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__mechanism__normal__ALL__r18"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dfd7f268bdc976dc",
+  "started_at": "2026-11-05T00:41:13+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n| Doc | What it is | Deal-relevant notes |\n|---|---|---|\n| **M01 — NDA** | Mutual NDA dated 1 Aug 2026 between Northwind Tech and the Buyer. | Three-year mutual confidentiality; NSW law. No unusual terms noted. |\n| **M02 — Lease** | Office lease for Level 4, 20 Harbour St. | Five-year term from 2024; market rent and standard make-good. No change-of-control clause. |\n| **M03 — Management accounts** | FY26 revenue note. | Topaz Retail is approximately 35% of FY26 revenue. Its master agreement is due for renewal in Q1 FY27, with renewal still “under discussion”—a material customer-concentration and retention risk. |\n| **M04 — HR** | Employee handbook and leave policy. | Headcount is 68. Two senior engineers have six-month notice periods; consider retention and transition planning. |\n| **M05 — Bank facility** | AUD 6.0m working-capital facility. | Quarterly net debt/EBITDA covenant capped at 3.0x. FY26 Q4 certificate shows 2.8x headroom metric, leaving limited cushion; confirm covenant status and forecast compliance. |\n| **M06 — IP** | IP schedule and open-source policy. | Registered trademarks and two granted software patents are assigned to Northwind Tech, with no encumbrances reported. Review the open-source policy and confirm its implementation. |\n| **M07 — Cash flow** | FY26 cash-flow statement. | Operating cash flow was negative in two of the last three quarters; closing cash was AUD 0.9m. Indicates liquidity pressure; assess cash runway and working-capital needs. |\n| **M08 — Insurance** | Certificates of currency. | Public liability, professional indemnity (AUD 5m) and cyber cover are current. Confirm limits, exclusions and coverage adequacy. |\n| **M09 — Supplier** | Notice from primary cloud/infrastructure supplier. | Supplier moved Northwind from 30-day terms to prepayment, citing payment history. Potential liquidity and service-continuity risk; confirm arrears, supplier status and any service conditions. |\n| **M10 — Board minutes** | October 2026 Board minutes. | Approval of audited FY26 accounts was deferred pending refinancing discussions with two lenders. Management expects a conclusion “in the coming weeks.” Follow up on refinancing progress, funding certainty and audit timing. |\n| **M11 — Litigation** | Reseller claim status note. | Counsel’s preliminary, non-binding and untested view suggests a possible AUD 0.2m–2.1m resolution; the company disputes the claim and no provision is recorded. Outcome is highly uncertain; assess merits, exposure and accounting treatment with counsel and auditors. |\n| **M12 — Policy** | Marketing and brand-use policy. | Internal logo-use and social-media guidelines; routine. |\n| **M13 — Vendor contract** | Helpdesk SaaS contract. | AUD 18k/year, 12-month term, auto-renews with 30-day opt-out. Routine; track notice deadline if termination is contemplated. |\n| **M14 — Policy** | Data-retention and records policy. | Standard retention schedule; routine. |\n| **M15 — Fixed assets** | Fixed-asset register. | Laptops, office equipment and leasehold improvements; net book value AUD 0.3m. Routine. |\n\nWrite the DD summary now.",
+      "text": "## DD summary — Northwind Tech\n\n**Recommendation: Do not proceed to an unconditional commitment.** Continue only with targeted confirmatory diligence; funding certainty and retention of the largest customer should be gates to proceeding.\n\n### Key findings and red flags\n- **Liquidity and refinancing — critical.** Operating cash flow was negative in two of the last three quarters; closing cash was AUD 0.9m. The primary infrastructure supplier now requires prepayment because of payment history. Board approval of audited FY26 accounts was deferred pending refinancing. Together, these indicate material funding and service-continuity risk; refinancing remains unconfirmed.\n- **Customer concentration — high.** Topaz Retail represents approximately 35% of FY26 revenue. Its Q1 FY27 renewal remains under discussion. Loss or adverse repricing could materially weaken earnings, cash flow and covenant compliance.\n- **Covenant cushion — limited.** Reported net debt/EBITDA is 2.8x against a 3.0x cap. No breach is established, but compliance calculations and downside forecasts require verification.\n- **Litigation — unresolved.** Counsel’s preliminary, non-binding and untested view suggests a possible AUD 0.2m–2.1m resolution. This is neither a reliable expected loss nor a confirmed maximum. No provision is recorded; obtain counsel’s assessment and auditor input.\n- **Other matters.** Registered IP is reported as assigned and unencumbered; verify broader ownership and open-source compliance. Insurance is current, subject to adequacy review. Plan retention of key engineers. No material issue was flagged in the NDA, lease or routine policies.\n\n### Conditions to proceed\n1. Verify a credible, funded 13-week cash-flow plan, committed refinancing, covenant compliance and infrastructure service continuity.\n2. Confirm Topaz’s renewal outcome and terms; downside-test its loss or repricing.\n3. Resolve audit timing, litigation exposure and provisioning; reflect verified risks in valuation, funding requirements and transaction protections.\n\n*Based on parser summaries only; underlying documents have not been independently verified.*",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1a927-1618-74f3-a64b-2db5533c7137",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 8128,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 423,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 23.082,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-igwhqxf2/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## DD summary — Northwind Tech\n\n**Recommendation: Do not proceed to an unconditional commitment.** Continue only with targeted confirmatory diligence; funding certainty and retention of the largest customer should be gates to proceeding.\n\n### Key findings and red flags\n- **Liquidity and refinancing — critical.** Operating cash flow was negative in two of the last three quarters; closing cash was AUD 0.9m. The primary infrastructure supplier now requires prepayment because of payment history. Board approval of audited FY26 accounts was deferred pending refinancing. Together, these indicate material funding and service-continuity risk; refinancing remains unconfirmed.\n- **Customer concentration — high.** Topaz Retail represents approximately 35% of FY26 revenue. Its Q1 FY27 renewal remains under discussion. Loss or adverse repricing could materially weaken earnings, cash flow and covenant compliance.\n- **Covenant cushion — limited.** Reported net debt/EBITDA is 2.8x against a 3.0x cap. No breach is established, but compliance calculations and downside forecasts require verification.\n- **Litigation — unresolved.** Counsel’s preliminary, non-binding and untested view suggests a possible AUD 0.2m–2.1m resolution. This is neither a reliable expected loss nor a confirmed maximum. No provision is recorded; obtain counsel’s assessment and auditor input.\n- **Other matters.** Registered IP is reported as assigned and unencumbered; verify broader ownership and open-source compliance. Insurance is current, subject to adequacy review. Plan retention of key engineers. No material issue was flagged in the NDA, lease or routine policies.\n\n### Conditions to proceed\n1. Verify a credible, funded 13-week cash-flow plan, committed refinancing, covenant compliance and infrastructure service continuity.\n2. Confirm Topaz’s renewal outcome and terms; downside-test its loss or repricing.\n3. Resolve audit timing, litigation exposure and provisioning; reflect verified risks in valuation, funding requirements and transaction protections.\n\n*Based on parser summaries only; underlying documents have not been independently verified.*",
+  "finished_at": "2026-11-05T00:41:36+00:00"
+}

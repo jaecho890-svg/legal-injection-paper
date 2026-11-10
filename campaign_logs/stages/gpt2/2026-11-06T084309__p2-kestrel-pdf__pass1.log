@@ -1,0 +1,250 @@
+# kestrel-injection-study/harness/experiment.py run --conditions C0P,A2P --tasks OPEN --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-06T08:43:09, ended 2026-11-06T09:21:07, rc=0
+## stdout
+240 jobs, 0 already done, 240 to run (240 API calls)
+  gpt-6-luna            120 calls  ~265,740 input tokens (excl. multi-turn history)
+  gpt-6.1-sol           120 calls  ~265,740 input tokens (excl. multi-turn history)
+  [1/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r01 
+  [2/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r01 
+  [3/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r01 
+  [4/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r01 
+  [5/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r01 
+  [6/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r01 
+  [7/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r01 
+  [8/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r01 
+  [9/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r01 
+  [10/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r01 
+  [11/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r01 
+  [12/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r01 
+  [13/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r02 
+  [14/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r02 
+  [15/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r02 
+  [16/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r02 
+  [17/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r02 
+  [18/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r02 
+  [19/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r02 
+  [20/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r02 
+  [21/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r02 
+  [22/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r02 
+  [23/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r02 
+  [24/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r02 
+  [25/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r03 
+  [26/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r03 
+  [27/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r03 
+  [28/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r03 
+  [29/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r03 
+  [30/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r03 
+  [31/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r03 
+  [32/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r03 
+  [33/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r03 
+  [34/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r03 
+  [35/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r03 
+  [36/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r03 
+  [37/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r04 
+  [38/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r04 
+  [39/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r04 
+  [40/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r04 
+  [41/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r04 
+  [42/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r04 
+  [43/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r04 
+  [44/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r04 
+  [45/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r04 
+  [46/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r04 
+  [47/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r04 
+  [48/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r04 
+  [49/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r05 
+  [50/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r05 
+  [51/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r05 
+  [52/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r05 
+  [53/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r05 
+  [54/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r05 
+  [55/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r05 
+  [56/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r05 
+  [57/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r05 
+  [58/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r05 
+  [59/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r05 
+  [60/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r05 
+  [61/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r06 
+  [62/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r06 
+  [63/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r06 
+  [64/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r06 
+  [65/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r06 
+  [66/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r06 
+  [67/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r06 
+  [68/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r06 
+  [69/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r06 
+  [70/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r06 
+  [71/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r06 
+  [72/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r06 
+  [73/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r07 
+  [74/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r07 
+  [75/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r07 
+  [76/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r07 
+  [77/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r07 
+  [78/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r07 
+  [79/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r07 
+  [80/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r07 
+  [81/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r07 
+  [82/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r07 
+  [83/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r07 
+  [84/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r07 
+  [85/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r08 
+  [86/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r08 
+  [87/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r08 
+  [88/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r08 
+  [89/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r08 
+  [90/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r08 
+  [91/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r08 
+  [92/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r08 
+  [93/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r08 
+  [94/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r08 
+  [95/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r08 
+  [96/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r08 
+  [97/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r09 
+  [98/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r09 
+  [99/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r09 
+  [100/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r09 
+  [101/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r09 
+  [102/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r09 
+  [103/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r09 
+  [104/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r09 
+  [105/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r09 
+  [106/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r09 
+  [107/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r09 
+  [108/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r09 
+  [109/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r10 
+  [110/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r10 
+  [111/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r10 
+  [112/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r10 
+  [113/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r10 
+  [114/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r10 
+  [115/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r10 
+  [116/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r10 
+  [117/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r10 
+  [118/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r10 
+  [119/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r10 
+  [120/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r10 
+  [121/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r11 
+  [122/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r11 
+  [123/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r11 
+  [124/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r11 
+  [125/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r11 
+  [126/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r11 
+  [127/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r11 
+  [128/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r11 
+  [129/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r11 
+  [130/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r11 
+  [131/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r11 
+  [132/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r11 
+  [133/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r12 
+  [134/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r12 
+  [135/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r12 
+  [136/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r12 
+  [137/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r12 
+  [138/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r12 
+  [139/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r12 
+  [140/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r12 
+  [141/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r12 
+  [142/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r12 
+  [143/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r12 
+  [144/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r13 
+  [145/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r12 
+  [146/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r13 
+  [147/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r13 
+  [148/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r13 
+  [149/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r13 
+  [150/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r13 
+  [151/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r13 
+  [152/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r13 
+  [153/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [154/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [155/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [156/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [157/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [158/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [159/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [160/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [161/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [162/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [163/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [164/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [165/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [166/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [167/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [168/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [169/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [170/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [171/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [172/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [173/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [174/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [175/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [176/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [177/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [178/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [179/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [180/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [181/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [182/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [183/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [184/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [185/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [186/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [187/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [188/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [189/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [190/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [191/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [192/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [193/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [194/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [195/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [196/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [197/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [198/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [199/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [200/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [201/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [202/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [203/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [204/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [205/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [206/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [207/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [208/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [209/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [210/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [211/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [212/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [213/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [214/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [215/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [216/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [217/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [218/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [219/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [220/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [221/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [222/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [223/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [224/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [225/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [226/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [227/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [228/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [229/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [230/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [231/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [232/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [233/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [234/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [235/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [236/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [237/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [238/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [239/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [240/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+done: 152 ok, 88 errors
+
+## stderr
+

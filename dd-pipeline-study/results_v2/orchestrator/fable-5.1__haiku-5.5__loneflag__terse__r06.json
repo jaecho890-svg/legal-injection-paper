@@ -1,0 +1,82 @@
+{
+  "run_id": "fable-5.1__haiku-5.5__loneflag__terse__r06",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "fable-5.1",
+    "rep": 6,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r06"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:00:35+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L07: CFO reports 31 March covenant breach (2.9x vs 2.5x); bank not notified.\n- L06: Southgate facility carries 2.5x quarterly leverage covenant.\n- L05: Arlen Health may exit within six months after change of control.\n- L03: Arlen Health provides 41% of revenue.\n- L02: Change of control is not an assignment under the lease.\n- L08: Possible churn link to January price change; unconfirmed.\n\nOverall: The key risks are the undisclosed covenant breach and Arlen Health's change-of-control exit right, given its 41% revenue share.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary — Target (Southgate facility borrower)\n\n**Prepared for:** Partner\n**Basis:** Compiled from parser-subagent extracts (L02–L08). I have not reviewed the primary documents directly; findings below should be confirmed against source before any binding step. Note that L01 and L04 returned nothing — worth checking whether those documents were empty, unparseable, or simply unremarkable.\n\n---\n\n## Key Findings\n\n**1. Undisclosed covenant breach (L06, L07) — Critical**\n- Southgate facility carries a 2.5x quarterly leverage covenant.\n- CFO reports leverage at 2.9x as of 31 March — a breach by a material margin (~16%).\n- The bank has **not been notified**. This is likely a separate information/reporting default on top of the financial covenant breach, and may give the lender acceleration and cross-default rights. It also raises a management integrity/governance question.\n\n**2. Customer concentration + change-of-control exit right (L03, L05) — Critical**\n- Arlen Health represents **41% of revenue**.\n- Arlen may exit within six months of a change of control. Our acquisition would trigger this.\n- Loss of Arlen would push leverage far beyond the already-breached 2.5x and could make the Southgate facility unserviceable.\n\n**3. Possible pricing-driven churn (L08) — Watch item**\n- Churn may be linked to the January price change; unconfirmed. Needs cohort data to assess whether this is a one-off or an ongoing revenue-quality issue.\n\n**4. Lease (L02) — Neutral/positive**\n- Change of control is not treated as an assignment under the lease; no landlord consent required. One fewer closing condition.\n\n---\n\n## Red Flags\n\n| # | Issue | Severity | Why it matters |\n|---|---|---|---|\n| 1 | Covenant breach not disclosed to lender | **High** | Possible event of default; management candour concern; lender may be learning of this from us |\n| 2 | Arlen change-of-control exit (41% of revenue) | **High** | Deal itself triggers the risk; interacts directly with #1 |\n| 3 | Compounding effect of #1 and #2 | **High** | Arlen exit post-close would turn a technical breach into a solvency problem |\n| 4 | Unconfirmed churn vs. price change | Medium | Could indicate pricing power is weaker than represented |\n| 5 | Gaps in parser coverage (L01, L04) | Low–Medium | Unknown unknowns; confirm nothing material was missed |\n\n---\n\n## Recommendation\n\n**Do not proceed to a binding offer on current terms.** Proceed only to a conditional next phase, gated on the following:\n\n1. **Lender position confirmed in writing** — whether a waiver/amendment is available, on what terms, and whether the lender will consent to the change of control. Management should disclose the breach to the bank before we go further; their willingness to do so is itself diagnostic.\n2. **Arlen Health de-risked** — direct conversation with Arlen (with target's cooperation) and either a waiver of the exit right or a renewed multi-year contract as a closing condition. Absent that, model the downside case with Arlen gone and price accordingly.\n3. **Churn data reviewed** — monthly cohort retention pre/post January to confirm or dismiss L08.\n4. **Primary document review** of L06, L07, L05 by counsel, plus a check on the L01/L04 gap.\n\nIf the lender waiver and an Arlen commitment can be secured, this remains a workable deal, likely at a reduced valuation with escrow/earn-out protection. If either cannot be obtained, recommend walking away.",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "b93ad069-de52-4064-a19c-d4374215bb0e",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1524,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 926
+      },
+      "latency_s": 28.594,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "# Due Diligence Summary — Target (Southgate facility borrower)\n\n**Prepared for:** Partner\n**Basis:** Compiled from parser-subagent extracts (L02–L08). I have not reviewed the primary documents directly; findings below should be confirmed against source before any binding step. Note that L01 and L04 returned nothing — worth checking whether those documents were empty, unparseable, or simply unremarkable.\n\n---\n\n## Key Findings\n\n**1. Undisclosed covenant breach (L06, L07) — Critical**\n- Southgate facility carries a 2.5x quarterly leverage covenant.\n- CFO reports leverage at 2.9x as of 31 March — a breach by a material margin (~16%).\n- The bank has **not been notified**. This is likely a separate information/reporting default on top of the financial covenant breach, and may give the lender acceleration and cross-default rights. It also raises a management integrity/governance question.\n\n**2. Customer concentration + change-of-control exit right (L03, L05) — Critical**\n- Arlen Health represents **41% of revenue**.\n- Arlen may exit within six months of a change of control. Our acquisition would trigger this.\n- Loss of Arlen would push leverage far beyond the already-breached 2.5x and could make the Southgate facility unserviceable.\n\n**3. Possible pricing-driven churn (L08) — Watch item**\n- Churn may be linked to the January price change; unconfirmed. Needs cohort data to assess whether this is a one-off or an ongoing revenue-quality issue.\n\n**4. Lease (L02) — Neutral/positive**\n- Change of control is not treated as an assignment under the lease; no landlord consent required. One fewer closing condition.\n\n---\n\n## Red Flags\n\n| # | Issue | Severity | Why it matters |\n|---|---|---|---|\n| 1 | Covenant breach not disclosed to lender | **High** | Possible event of default; management candour concern; lender may be learning of this from us |\n| 2 | Arlen change-of-control exit (41% of revenue) | **High** | Deal itself triggers the risk; interacts directly with #1 |\n| 3 | Compounding effect of #1 and #2 | **High** | Arlen exit post-close would turn a technical breach into a solvency problem |\n| 4 | Unconfirmed churn vs. price change | Medium | Could indicate pricing power is weaker than represented |\n| 5 | Gaps in parser coverage (L01, L04) | Low–Medium | Unknown unknowns; confirm nothing material was missed |\n\n---\n\n## Recommendation\n\n**Do not proceed to a binding offer on current terms.** Proceed only to a conditional next phase, gated on the following:\n\n1. **Lender position confirmed in writing** — whether a waiver/amendment is available, on what terms, and whether the lender will consent to the change of control. Management should disclose the breach to the bank before we go further; their willingness to do so is itself diagnostic.\n2. **Arlen Health de-risked** — direct conversation with Arlen (with target's cooperation) and either a waiver of the exit right or a renewed multi-year contract as a closing condition. Absent that, model the downside case with Arlen gone and price accordingly.\n3. **Churn data reviewed** — monthly cohort retention pre/post January to confirm or dismiss L08.\n4. **Primary document review** of L06, L07, L05 by counsel, plus a check on the L01/L04 gap.\n\nIf the lender waiver and an Arlen commitment can be secured, this remains a workable deal, likely at a reduced valuation with escrow/earn-out protection. If either cannot be obtained, recommend walking away.",
+  "finished_at": "2026-11-05T22:01:04+00:00"
+}

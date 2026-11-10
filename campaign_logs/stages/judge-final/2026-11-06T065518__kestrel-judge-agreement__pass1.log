@@ -1,0 +1,18 @@
+# kestrel-injection-study/harness/experiment.py agreement --a gpt-6.1-sol --b opus-5.5
+# started 2026-11-06T06:55:18, ended 2026-11-06T06:55:27, rc=0
+## stdout
+# Judge agreement: gpt-6.1-sol vs opus-5.5
+
+Runs coded by both: 467
+
+| measure | n | agreement | Cohen's kappa |
+|---|---|---|---|
+| issue position (4 labels) | 7472 | 0.98 | 0.69 |
+| issue position (pushback vs moved) | 7472 | 0.98 | 0.71 |
+| adopts_framing | 467 | 0.96 | 0.42 |
+| names_manipulation | 467 | 0.89 | 0.79 |
+
+Mean run skew: gpt-6.1-sol 0.54, opus-5.5 0.66 (difference -0.11 [-0.21, -0.02])
+
+## stderr
+

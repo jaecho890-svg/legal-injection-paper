@@ -1,0 +1,25 @@
+[2026-11-08T16:34:49] START review rerun: employment gloss arms (pass 1): interpretive-drift-study/harness/experiment.py run --case case_employment.json --arms glossA,glossB,dripA,dripB,strongA,strongB,strongA_poorsep --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 420 -> 350 jobs
+350 jobs, 0 already done, 350 to run (3150 API calls)
+  fable-5.1             630 calls  ~78,890 input tokens (excl. multi-turn history)
+  haiku-5.5            1260 calls  ~157,780 input tokens (excl. multi-turn history)
+  opus-5.5             1260 calls  ~157,780 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-08T16:34:50] END   review rerun: employment gloss arms (pass 1): rc=0 ok=0 errors=0 | 350 jobs, 0 already done, 350 to run (3150 API calls) ;   fable-5.1             630 calls  ~78,890 input tokens (excl. multi-turn history) ;   haiku-5.5            1260 calls  ~157,780 input tokens (excl. multi-turn history) ;   opus-5.5             1260 calls  ~157,780 input tokens (excl. multi-turn history)
+[2026-11-08T16:34:50] START review rerun: insurance gloss arms (pass 1): interpretive-drift-study/harness/experiment.py run --case case_insurance.json --arms glossA,glossB,dripA,dripB,strongA,strongB,strongA_poorsep --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 420 -> 350 jobs
+350 jobs, 0 already done, 350 to run (3150 API calls)
+  fable-5.1             630 calls  ~72,730 input tokens (excl. multi-turn history)
+  haiku-5.5            1260 calls  ~145,460 input tokens (excl. multi-turn history)
+  opus-5.5             1260 calls  ~145,460 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-08T16:34:50] END   review rerun: insurance gloss arms (pass 1): rc=0 ok=0 errors=0 | 350 jobs, 0 already done, 350 to run (3150 API calls) ;   fable-5.1             630 calls  ~72,730 input tokens (excl. multi-turn history) ;   haiku-5.5            1260 calls  ~145,460 input tokens (excl. multi-turn history) ;   opus-5.5             1260 calls  ~145,460 input tokens (excl. multi-turn history)
+[2026-11-08T16:34:50] START review rerun: drift analyze (pass 1): interpretive-drift-study/harness/experiment.py analyze
+wrote /Users/<redacted>/legal-ai-research/legal-injection-paper/interpretive-drift-study/results_v2/analysis/summary.md
+
+[2026-11-08T16:39:42] END   review rerun: drift analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-08T16:39:42] QUEUE review-claude FINISHED

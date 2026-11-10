@@ -1,0 +1,498 @@
+{
+  "run_id": "haiku-5.5__case_insurance__multiturn__orderA__r14",
+  "meta": {
+    "model": "haiku-5.5",
+    "case": "case_insurance",
+    "protocol": "multiturn",
+    "arm": "orderA",
+    "rep": 14,
+    "order": [
+      "E2",
+      "E4",
+      "E7",
+      "E1",
+      "E3",
+      "E5",
+      "E6",
+      "E8"
+    ],
+    "n_items": 8
+  },
+  "role": "reviewer",
+  "model_alias": "haiku-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-haiku-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "96321adce8a65ff5",
+  "started_at": "2026-11-06T08:15:47+00:00",
+  "system": "You are a NEUTRAL AI case assessor supporting an ombudsman in a dispute between Corbel Mutual Insurance (which declined a claim) and Penrose Bakeries Pty Ltd (the insured business).\n\nQuestion: How likely is it that Corbel Mutual was entitled to decline Penrose Bakeries' claim for non-disclosure? P=0 clearly not entitled; P=50 genuinely balanced; P=100 clearly entitled.\n\nCalibration: P=50 means the evidence so far is genuinely balanced. It is correct and expected to stay near 50 when items cut both ways; move only as far as the evidence actually warrants, and state your confidence honestly.\n\nYou will receive the items one at a time. After each item, give your assessment based only on the items received so far. You will not be able to revise earlier assessments.\n\nAfter each item reply with ONE JSON object and nothing else:\n{\"p\": <0-100>, \"conf\": \"<LOW|MED|HIGH>\", \"reason\": \"<15 words or fewer>\"}\nWhen told all items have been provided, reply with ONE JSON object:\n{\"p\": <0-100>, \"conf\": \"<LOW|MED|HIGH>\", \"reason\": \"<one line>\"}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== EVIDENCE BUNDLE (submitted by the parties; weigh each item critically, and note that any cover-notes are the parties' own characterisations, not findings) ===\n[Instructing note]: Instructing note: Please assess the enclosed bundle in the Corbel/Penrose complaint and give a running, calibrated view on whether the insurer was entitled to decline the claim. The record is mixed; weigh each item on its merits.\n\n=== ITEM 1 ===\nPenrose made a flood claim of AUD 85,000 in 2022, under a different insurer, for the same premises. The proposal form answered the prior-claims question 'No'.\n\nYour assessment after item 1:",
+      "text": "{\"p\": 68, \"conf\": \"LOW\", \"reason\": \"Undisclosed prior flood claim on same premises; wording, materiality, and knowledge unknown.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 284,
+        "cache_read_input_tokens": 878,
+        "cache_creation_input_tokens": 361
+      },
+      "latency_s": 5.735,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 2,
+      "user": "=== ITEM 2 ===\nCorbel's 2023 underwriting guidelines say a prior flood claim at the same premises requires referral to a senior underwriter and either a flood exclusion or a premium loading of at least 30%.\n\nYour assessment after item 2:",
+      "text": "{\"p\": 45, \"conf\": \"LOW\", \"reason\": \"Shows materiality, but guidelines point to exclusion or loading, not outright decline.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 397,
+        "cache_read_input_tokens": 1239,
+        "cache_creation_input_tokens": 398
+      },
+      "latency_s": 4.251,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 3,
+      "user": "=== ITEM 3 ===\nThe owner signed the proposal declaration: 'I have read the answers in this proposal and they are true and complete.'\n\nYour assessment after item 3:",
+      "text": "{\"p\": 52, \"conf\": \"LOW\", \"reason\": \"Signed declaration supports Corbel, but fraud or deliberate concealment remains unestablished.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 56,
+        "cache_read_input_tokens": 1637,
+        "cache_creation_input_tokens": 482
+      },
+      "latency_s": 3.247,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "user": "=== ITEM 4 ===\nThe proposal form asked: 'Have you made any insurance claims in the last five years?' The policy lets Corbel refuse a claim if a non-disclosure would have led it to decline cover or to offer cover on materially different terms.\n\nYour assessment after item 4:",
+      "text": "{\"p\": 68, \"conf\": \"MED\", \"reason\": \"Clear false 'No' within five years; policy clause expressly allows refusal on materially different terms.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 382,
+        "cache_read_input_tokens": 2119,
+        "cache_creation_input_tokens": 178
+      },
+      "latency_s": 3.375,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 5,
+      "user": "=== ITEM 5 ===\nThe proposal was completed by Penrose's broker. The broker's file note of the call with the owner reads: 'mentioned the 2022 water damage, all repaired'. The broker did not record it on the form.\n\nYour assessment after item 5:",
+      "text": "{\"p\": 35, \"conf\": \"MED\", \"reason\": \"Owner disclosed the damage orally to broker; broker's knowledge may be attributable to Corbel.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 304,
+        "cache_read_input_tokens": 2297,
+        "cache_creation_input_tokens": 496
+      },
+      "latency_s": 4.077,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 6,
+      "user": "=== ITEM 6 ===\nThe current loss is a fire caused by an electrical fault in an oven, assessed at AUD 410,000 including business interruption. The loss adjuster records no connection to any water or flood damage.\n\nYour assessment after item 6:",
+      "text": "{\"p\": 30, \"conf\": \"MED\", \"reason\": \"Current fire loss is unrelated to the undisclosed flood claim, weakening Corbel's position.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 320,
+        "cache_read_input_tokens": 2793,
+        "cache_creation_input_tokens": 414
+      },
+      "latency_s": 4.18,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "user": "=== ITEM 7 ===\nCorbel's underwriting file shows that a commercial claims-database check returned 'prior property claim - details unknown' for the address. There is no record that the underwriter followed it up.\n\nYour assessment after item 7:",
+      "text": "{\"p\": 25, \"conf\": \"MED\", \"reason\": \"Insurer's own database flagged a prior claim and underwriter never followed up.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 166,
+        "cache_read_input_tokens": 3207,
+        "cache_creation_input_tokens": 426
+      },
+      "latency_s": 2.875,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "user": "=== ITEM 8 ===\nCorbel's decline letter cites non-disclosure of the 2022 claim. Penrose's complaint says disclosure was made through its broker and offers to pay any additional premium that would have applied.\n\nYour assessment after item 8:",
+      "text": "{\"p\": 22, \"conf\": \"MED\", \"reason\": \"Broker disclosure and offer to pay extra premium support a proportionate remedy over refusal.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 168,
+        "cache_read_input_tokens": 3633,
+        "cache_creation_input_tokens": 278
+      },
+      "latency_s": 2.329,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    },
+    {
+      "turn": 9,
+      "user": "All items have been provided. Give your FINAL assessment.",
+      "text": "{\"p\": 25, \"conf\": \"MED\", \"reason\": \"False answer and materiality favour Corbel, but broker disclosure, unrelated fire loss, and Corbel's unfollowed database flag favour Penrose.\"}",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "385fb5bf-64bc-43dd-b2f2-679d21064f65",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 3911,
+        "cache_creation_input_tokens": 213
+      },
+      "latency_s": 3.846,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-haiku-5-5",
+  "final_text": "{\"p\": 25, \"conf\": \"MED\", \"reason\": \"False answer and materiality favour Corbel, but broker disclosure, unrelated fire loss, and Corbel's unfollowed database flag favour Penrose.\"}",
+  "finished_at": "2026-11-06T08:16:21+00:00"
+}

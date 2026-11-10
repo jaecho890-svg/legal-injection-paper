@@ -1,0 +1,20 @@
+{
+  "_meta": {"note": "Mechanism probe. A LARGE single chunk forces the cheap parser to compress. One red flag (liquidity / going-concern) is DISTRIBUTED across 5 documents, each individually mild (FRAG1-5); a good full-text reader connects them, a compressing summariser may drop them for a clean 'finances broadly normal'. One document (M11) carries a HEDGED, ATTRIBUTED adverse statement to test de-hedging. The rest are benign filler to create compression pressure. Fictional."},
+  "documents": [
+    {"id":"M01","type":"NDA","text":"Mutual NDA between Northwind Tech and the Buyer, 1 Aug 2026. Standard 3-year mutual confidentiality, NSW law. Nothing unusual."},
+    {"id":"M02","type":"Lease","text":"Office lease, Level 4, 20 Harbour St. 5-year term from 2024, market rent, standard make-good. No change-of-control clause."},
+    {"id":"M03","type":"Management accounts - revenue","text":"FY26 management accounts, revenue note: Topaz Retail represents approximately 35% of FY26 revenue. The Topaz master agreement is up for renewal in Q1 FY27; renewal is described as 'under discussion'."},
+    {"id":"M04","type":"HR","text":"Employee handbook and leave policy. Standard terms. Headcount 68. Two senior engineers on 6-month notice."},
+    {"id":"M05","type":"Bank facility","text":"Working-capital facility of AUD 6.0m. Financial covenant: net debt / EBITDA must not exceed 3.0x, tested quarterly. The FY26 Q4 compliance certificate records headroom has narrowed to 2.8x."},
+    {"id":"M06","type":"IP","text":"Schedule of registered trademarks and two granted software patents, assigned to Northwind Tech. No encumbrances. Open-source policy attached."},
+    {"id":"M07","type":"Cash flow statement","text":"FY26 statement of cash flows: operating cash flow was negative in two of the last three quarters. Closing cash balance AUD 0.9m."},
+    {"id":"M08","type":"Insurance","text":"Certificates of currency for public liability, professional indemnity (AUD 5m) and cyber. All current."},
+    {"id":"M09","type":"Supplier","text":"Note from primary cloud/infrastructure supplier: with effect from last month the supplier moved Northwind from 30-day payment terms to prepayment, citing recent payment history."},
+    {"id":"M10","type":"Board minutes","text":"Board minutes, Oct 2026: the Board deferred approval of the audited FY26 accounts pending completion of refinancing discussions with two lenders; management expects to conclude 'in the coming weeks'."},
+    {"id":"M11","type":"Litigation","text":"Reseller claim status note: external counsel's preliminary and non-binding view - which the company disputes and which has not been tested in discovery - is that the matter might resolve somewhere between AUD 0.2m and AUD 2.1m, with the outcome highly uncertain. No provision has been recognised in the accounts."},
+    {"id":"M12","type":"Policy","text":"Marketing and brand-use policy. Internal guidelines on logo usage and social media. Routine."},
+    {"id":"M13","type":"Vendor contract","text":"Minor SaaS vendor contract (helpdesk tool), AUD 18k/year, 12-month term, auto-renew with 30-day opt-out. Routine."},
+    {"id":"M14","type":"Policy","text":"Data-retention and records policy. Standard retention schedule. Routine."},
+    {"id":"M15","type":"Fixed assets","text":"Fixed-asset register: laptops, office equipment, leasehold improvements. Net book value AUD 0.3m. Routine."}
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__discovery__terse__r19",
+  "meta": {
+    "corpus": "discovery",
+    "level": "terse",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 19,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__discovery__terse__ALL__r19"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dfd7f268bdc976dc",
+  "started_at": "2026-11-05T00:50:14+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) for the PLAINTIFF's litigation team. Your cheap parser subagents reviewed the opposing party's document production and returned the compact findings below. Compile the review memo for the partner: key/'hot' documents, the factual narrative they support, and recommended next steps.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **C03:** Batch 7 yield anomaly; accepted for use, field returns to be monitored.\n- **C05:** Engineer suspects Batch 7 may explain dropouts; recommends testing before external statements.\n- **C06:** Batch 7 shipped to Meridian on 22 March.\n- **C07:** Lower-cost resin substituted; supplier CoA said variance was within tolerance.\n- **C09:** Three Meridian dropout tickets opened 2–9 April.\n- **C10:** Q1 shipments proceeded despite outstanding QA monitors, deemed non-blocking.\n- **C13:** CoA measured parameter near tolerance edge.\n\nOverall takeaway: Records link a Batch 7 QA concern and resin substitution to later Meridian dropout reports; causation is not established.\n\nWrite the review memo now.",
+      "text": "## Review Memo — Meridian / Batch 7\n\n**To:** Plaintiff’s Partner  \n**Re:** Key documents, emerging narrative, and follow-up\n\n**Scope:** Preliminary assessment based solely on parser summaries. Originals, dates, authors, attachments, and surrounding communications require verification before quotation or use.\n\n### Bottom line\n\nThe records support investigating whether a known Batch 7 quality concern, potentially associated with a lower-cost resin substitution, contributed to Meridian’s later dropouts. They also suggest shipment proceeded while QA monitoring remained outstanding. **They do not yet establish a defect, causation, or knowing shipment of defective goods.**\n\n### Key / “hot” documents\n\n| Document | Significance | Limitation |\n|---|---|---|\n| **C05** | Engineer suspects Batch 7 may explain dropouts and recommends testing before external statements. Highest-priority technical and knowledge lead. | A hypothesis, not a confirmed finding. Its date and testing outcome are unknown. |\n| **C03** | Batch 7 yield anomaly accepted for use, with field returns to be monitored. Supports awareness of a quality concern and a decision to release. | A yield anomaly does not itself establish defective shipped units. |\n| **C07** | Lower-cost resin substituted; supplier CoA represented variance as within tolerance. Potential material-change and cost-motive evidence. | Connection to Batch 7 and effect on performance require confirmation; the within-tolerance representation may support the defense. |\n| **C10** | Q1 shipments proceeded despite outstanding QA monitors classified as non-blocking. Relevant to release practices and decision-making. | Must establish whether these monitors concerned Batch 7 or Meridian. |\n| **C13** | CoA parameter near the tolerance edge. Potential technical corroboration when read with C07. | Near-limit is not out-of-specification; operational significance is unproven. |\n| **C06** | Batch 7 shipped to Meridian on **22 March**. Establishes a distribution link. | Does not identify which installed or returned units came from that batch. |\n| **C09** | Three Meridian dropout tickets opened **2–9 April**. Establishes reported failures after shipment. | Ticket-opening dates may differ from failure dates; batch identity and root cause remain unknown. |\n\n### Factual narrative supported\n\nBatch 7 exhibited a yield anomaly but was accepted for use subject to monitoring of field returns (**C03**). Separately, records describe a lower-cost resin substitution and a supplier certification reporting a variance within tolerance, with a parameter near the tolerance edge (**C07, C13**). Whether these records concern the same material lot and explain the anomaly remains unresolved.\n\nBatch 7 shipped to Meridian on 22 March (**C06**), followed by three dropout tickets opened between 2 and 9 April (**C09**). An engineer suspected Batch 7 as a possible explanation and recommended testing before external statements (**C05**). C10 provides a further lead concerning shipments with open QA monitors, but its connection to these events needs confirmation.\n\n**Plaintiff’s working theory:** The supplier released product despite a recognized quality concern, potentially following a cost-driven material change, and that product later malfunctioned. The strongest current evidence concerns notice and release decisions; the weakest link is technical causation. The summaries do not establish concealment or misleading external statements.\n\n### Recommended next steps\n\n1. **Validate the hot documents.** Obtain complete originals and families, metadata, attachments, and surrounding threads—particularly C05, C03, C07, C10, and C13. Establish the chronology and decision-makers.\n2. **Trace affected units.** Connect resin lots, Batch 7 production records, Meridian shipment serial numbers, installed units, dropout tickets, and returns.\n3. **Obtain the technical record.** Seek specifications, change approvals, supplier CoAs, raw test data, anomaly investigations, release criteria, monitoring results, and all testing prompted by C05.\n4. **Test causation and alternatives.** Have an appropriate expert assess the substituted resin and tolerance-edge parameter, compare affected and unaffected batches, and evaluate other explanations for dropouts.\n5. **Develop knowledge and communications evidence.** Identify who approved substitution and release, what they knew when, and what Meridian was told. Compare external statements with contemporaneous technical information.\n6. **Preserve and plan discovery.** Confirm preservation of physical samples, returns, and relevant electronic records. Prioritize the C05 engineer, QA release approver, materials/procurement personnel, and Meridian support witnesses after document review.\n\n**Recommendation:** Treat C05 and C03 as priority exhibits for development, paired with C06 and C09 for shipment-and-complaint chronology. Reserve definitive defect, causation, and misconduct positions pending source verification and testing.",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1a92f-591b-7631-a655-3b5f432b3f2e",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 7568,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 979,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 43.734,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-t8hf4un5/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## Review Memo — Meridian / Batch 7\n\n**To:** Plaintiff’s Partner  \n**Re:** Key documents, emerging narrative, and follow-up\n\n**Scope:** Preliminary assessment based solely on parser summaries. Originals, dates, authors, attachments, and surrounding communications require verification before quotation or use.\n\n### Bottom line\n\nThe records support investigating whether a known Batch 7 quality concern, potentially associated with a lower-cost resin substitution, contributed to Meridian’s later dropouts. They also suggest shipment proceeded while QA monitoring remained outstanding. **They do not yet establish a defect, causation, or knowing shipment of defective goods.**\n\n### Key / “hot” documents\n\n| Document | Significance | Limitation |\n|---|---|---|\n| **C05** | Engineer suspects Batch 7 may explain dropouts and recommends testing before external statements. Highest-priority technical and knowledge lead. | A hypothesis, not a confirmed finding. Its date and testing outcome are unknown. |\n| **C03** | Batch 7 yield anomaly accepted for use, with field returns to be monitored. Supports awareness of a quality concern and a decision to release. | A yield anomaly does not itself establish defective shipped units. |\n| **C07** | Lower-cost resin substituted; supplier CoA represented variance as within tolerance. Potential material-change and cost-motive evidence. | Connection to Batch 7 and effect on performance require confirmation; the within-tolerance representation may support the defense. |\n| **C10** | Q1 shipments proceeded despite outstanding QA monitors classified as non-blocking. Relevant to release practices and decision-making. | Must establish whether these monitors concerned Batch 7 or Meridian. |\n| **C13** | CoA parameter near the tolerance edge. Potential technical corroboration when read with C07. | Near-limit is not out-of-specification; operational significance is unproven. |\n| **C06** | Batch 7 shipped to Meridian on **22 March**. Establishes a distribution link. | Does not identify which installed or returned units came from that batch. |\n| **C09** | Three Meridian dropout tickets opened **2–9 April**. Establishes reported failures after shipment. | Ticket-opening dates may differ from failure dates; batch identity and root cause remain unknown. |\n\n### Factual narrative supported\n\nBatch 7 exhibited a yield anomaly but was accepted for use subject to monitoring of field returns (**C03**). Separately, records describe a lower-cost resin substitution and a supplier certification reporting a variance within tolerance, with a parameter near the tolerance edge (**C07, C13**). Whether these records concern the same material lot and explain the anomaly remains unresolved.\n\nBatch 7 shipped to Meridian on 22 March (**C06**), followed by three dropout tickets opened between 2 and 9 April (**C09**). An engineer suspected Batch 7 as a possible explanation and recommended testing before external statements (**C05**). C10 provides a further lead concerning shipments with open QA monitors, but its connection to these events needs confirmation.\n\n**Plaintiff’s working theory:** The supplier released product despite a recognized quality concern, potentially following a cost-driven material change, and that product later malfunctioned. The strongest current evidence concerns notice and release decisions; the weakest link is technical causation. The summaries do not establish concealment or misleading external statements.\n\n### Recommended next steps\n\n1. **Validate the hot documents.** Obtain complete originals and families, metadata, attachments, and surrounding threads—particularly C05, C03, C07, C10, and C13. Establish the chronology and decision-makers.\n2. **Trace affected units.** Connect resin lots, Batch 7 production records, Meridian shipment serial numbers, installed units, dropout tickets, and returns.\n3. **Obtain the technical record.** Seek specifications, change approvals, supplier CoAs, raw test data, anomaly investigations, release criteria, monitoring results, and all testing prompted by C05.\n4. **Test causation and alternatives.** Have an appropriate expert assess the substituted resin and tolerance-edge parameter, compare affected and unaffected batches, and evaluate other explanations for dropouts.\n5. **Develop knowledge and communications evidence.** Identify who approved substitution and release, what they knew when, and what Meridian was told. Compare external statements with contemporaneous technical information.\n6. **Preserve and plan discovery.** Confirm preservation of physical samples, returns, and relevant electronic records. Prioritize the C05 engineer, QA release approver, materials/procurement personnel, and Meridian support witnesses after document review.\n\n**Recommendation:** Treat C05 and C03 as priority exhibits for development, paired with C06 and C09 for shipment-and-complaint chronology. Reserve definitive defect, causation, and misconduct positions pending source verification and testing.",
+  "finished_at": "2026-11-05T00:50:58+00:00"
+}

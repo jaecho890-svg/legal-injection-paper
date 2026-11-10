@@ -1,0 +1,40 @@
+4766 jobs, 4730 already done, 36 to run (36 API calls)
+  gpt-6.1-sol            36 calls  ~104,607 input tokens (excl. multi-turn history)
+  [1/36] ok    dots-3-note__A2__OPEN__GUARD_OFF__r03 
+  [2/36] ok    dots-3-note__B3__OPEN__GUARD_OFF__r02 
+  [3/36] ok    dots-3-note__A2__OPEN__GUARD_OFF__r01 
+  [4/36] ok    dots-3-note__A2__OPEN__GUARD_OFF__r02 
+  [5/36] ok    dots-3-note__B3__OPEN__GUARD_OFF__r01 
+  [6/36] ok    dots-3-note__B3__OPEN__GUARD_OFF__r03 
+  [7/36] ok    dots-3-note__C0__OPEN__GUARD_OFF__r01 
+  [8/36] ok    dots-3-note__C0__OPEN__GUARD_OFF__r02 
+  [9/36] ok    dots-3-note__C0__OPEN__GUARD_OFF__r03 
+  [10/36] ok    gemini__A2__OPEN__GUARD_OFF__r02 
+  [11/36] ok    gemini__A2__OPEN__GUARD_OFF__r03 
+  [12/36] ok    gemini__A2__OPEN__GUARD_OFF__r01 
+  [13/36] ok    gemini__B3__OPEN__GUARD_OFF__r01 
+  [14/36] ok    gemini__B3__OPEN__GUARD_OFF__r02 
+  [15/36] ok    gemini__C0__OPEN__GUARD_OFF__r01 
+  [16/36] ok    gemini__B3__OPEN__GUARD_OFF__r03 
+  [17/36] ok    gemini__C0__OPEN__GUARD_OFF__r02 
+  [18/36] ok    gemini__C0__OPEN__GUARD_OFF__r03 
+  [19/36] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r01 
+  [20/36] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r02 
+  [21/36] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r03 
+  [22/36] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r01 
+  [23/36] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r02 
+  [24/36] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r01 
+  [25/36] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r02 
+  [26/36] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r03 
+  [27/36] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r03 
+  [28/36] ok    xing-4.0__A2__OPEN__GUARD_OFF__r01 
+  [29/36] ok    xing-4.0__A2__OPEN__GUARD_OFF__r02 
+  [30/36] ok    xing-4.0__B3__OPEN__GUARD_OFF__r02 
+  [31/36] ok    xing-4.0__A2__OPEN__GUARD_OFF__r03 
+  [32/36] ok    xing-4.0__B3__OPEN__GUARD_OFF__r03 
+  [33/36] ok    xing-4.0__C0__OPEN__GUARD_OFF__r01 
+  [34/36] ok    xing-4.0__B3__OPEN__GUARD_OFF__r01 
+  [35/36] ok    xing-4.0__C0__OPEN__GUARD_OFF__r02 
+  [36/36] ok    xing-4.0__C0__OPEN__GUARD_OFF__r03 
+done: 36 ok, 0 errors
+wrote /Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/results_v2/analysis/summary.md

@@ -1,0 +1,34 @@
+{
+  "queue": "review-gpt",
+  "started": "2026-11-09T10:37:10",
+  "stages": [
+    {
+      "stage": "review rerun: employment gloss arms",
+      "started": "2026-11-09T10:37:10",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-09T10:37:10"
+    },
+    {
+      "stage": "review rerun: insurance gloss arms",
+      "started": "2026-11-09T10:37:10",
+      "passes": 1,
+      "last_ok": 180,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-09T11:21:32"
+    },
+    {
+      "stage": "review rerun: drift analyze",
+      "started": "2026-11-09T11:21:32",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-09T11:25:03"
+    }
+  ],
+  "finished": "2026-11-09T11:25:03"
+}

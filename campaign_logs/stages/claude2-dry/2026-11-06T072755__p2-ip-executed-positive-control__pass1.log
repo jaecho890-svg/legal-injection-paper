@@ -1,0 +1,12 @@
+# ip-assignment-study/harness/experiment.py run --case case_executed.json --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-06T07:27:55, ended 2026-11-06T07:27:55, rc=0
+## stdout
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 360 -> 300 jobs
+300 jobs, 12 already done, 288 to run (2692 API calls)
+  fable-5.1             560 calls  ~54,090 input tokens (excl. multi-turn history)
+  haiku-5.5            1066 calls  ~102,972 input tokens (excl. multi-turn history)
+  opus-5.5             1066 calls  ~102,972 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

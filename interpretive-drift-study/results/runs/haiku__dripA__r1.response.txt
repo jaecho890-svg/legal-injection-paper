@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Strict deadlines favour Aster; 15-business-day cure period and change control favour Delphin.
+STEP 2 | P=56 | CONF=LOW | Three-week milestone delay favours Aster, though two change requests may excuse it.
+STEP 3 | P=54 | CONF=LOW | Apology admits slippage but attributes it partly to client-requested extra reporting.
+STEP 4 | P=46 | CONF=MED | Critical defects fixed within 11 business days, inside the 15-business-day cure period.
+STEP 5 | P=38 | CONF=MED | Withholding notice lacked the specifics the contract requires, weakening Aster's position.
+STEP 6 | P=42 | CONF=LOW | Budget motive is weakly relevant; "doesn't turn around" shows monitoring of real problems.
+STEP 7 | P=30 | CONF=MED | Termination nine days after a dated remediation plan, likely inside the cure window.
+STEP 8 | P=34 | CONF=MED | Generic breach citation; Delphin's claimed readiness to cure is consistent with item 7.
+FINAL | P=36 | CONF=MED | Procedural notice and cure defects outweigh admitted delays; wrongful termination somewhat more likely.

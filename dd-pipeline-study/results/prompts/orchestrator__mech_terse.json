@@ -1,0 +1,4 @@
+{
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "user": "===== PARSER FINDINGS =====\n- M03: Topaz 35% of revenue; renewal undecided.\n- M05: Covenant headroom narrowed to 2.8x (cap 3.0x).\n- M07: Operating cash negative two of three quarters.\n- M09: Cloud supplier moved Northwind to prepayment.\n- M10: Audited FY26 accounts deferred pending refinancing.\n- M11: Reseller claim AUD 0.2m-2.1m; no provision booked.\n\nOverall: liquidity is tightening; refinancing and Topaz renewal are the key items.\n\nWrite the DD summary now."
+}

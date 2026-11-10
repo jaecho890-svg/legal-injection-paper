@@ -1,0 +1,125 @@
+=== 2026-11-05T08:42:24
+Claude queue: OK - stage "kestrel core", pass 1; 207 ok / 0 errors in this stage; newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "kestrel judge", pass 1; 0 ok / 0 errors in last finished stage (core: 1440 already done); newest result 0 min ago; 6 model processes
+Overall: 4443 results ok, 2149 errors
+Problems: none (2149 errors are historical; none written in the last 60 min; Claude queue resumed 08:00 after an earlier usage-limit sleep)
+=== 2026-11-05T09:13:56
+Claude queue: OK - stage "kestrel core", pass 1; 207 ok / 0 errors in this stage; newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "drift core", pass 1 (just started; previous stage kestrel judge ended 397 ok / 0 errors); newest result 0 min ago; 6 model processes
+Overall: 4800 results ok, 2031 errors
+Problems: none (no new errors in last 60 min; the 2031 errors are historical; Claude queue hit a 5-hour usage limit earlier, slept and resumed at 08:00/08:26)
+=== 2026-11-05T13:12:24
+Claude queue: OK - stage "kestrel core", pass 1; 203 ok / 0 errors in this stage (last completed run; resumed 12:54 after usage-limit sleep); newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "kestrel breadth", pass 1; 360 ok / 0 errors (last completed stage "dd judge"); newest result 0 min ago; 6 model processes
+Overall: 6496 results ok, 1941 errors
+Problems: none (Claude queue hit 5-hour usage limit at 09:16 and resumed 12:54; 1941 errors are historical, none in last 60 min)
+=== 2026-11-05T13:42:13
+Claude queue: OK - stage "kestrel core", pass 1; 203 ok / 0 errors in this stage; newest result 1 min ago; 4 model processes
+GPT queue: OK - stage "kestrel breadth", pass 1 (just started after dd judge 360 ok / 0 errors); newest result 1 min ago; 6 model processes
+Overall: 6814 results ok, 1828 errors
+Problems: none (Claude queue resumed 12:54 after a usage-limit sleep; no errors in the last 60 min)
+=== 2026-11-05T14:12:13
+Claude queue: OK - stage "kestrel core", pass 1; 203 ok / 0 errors in this stage; newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "kestrel breadth", pass 1; 360 ok / 0 errors in last completed stage (dd judge); newest result 0.1 min ago; 6 model processes
+Overall: 7157 results ok, 1697 errors
+Problems: none (Claude queue resumed 12:54 after a 5-hour usage-limit pause; 1697 errors are historical, none in the last 60 min)
+=== 2026-11-05T14:42:19
+Claude queue: OK - stage "kestrel core", pass 1; 203 ok / 0 errors in this stage (last completed run; resumed 12:54 after usage-limit sleep); newest result 0.2 min ago; 4 model processes
+GPT queue: OK - stage "kestrel breadth", pass 1 (status.json still shows prior stage "dd judge": 360 ok / 0 errors); newest result 0.0 min ago; 6 model processes
+Overall: 7524 results ok, 1540 errors
+Problems: none (no error results written in the last 60 min; 1540 errors are historical)
+=== 2026-11-05T15:12:19
+Claude queue: PAUSED - stage "kestrel core", pass 1; 486 ok / 0 errors in this stage; newest result 29 min ago; 0 model processes
+GPT queue: OK - stage "kestrel breadth" finished, "drift breadth" just started, pass 1; 1080 ok / 0 errors in this stage; newest result 0 min ago; 6 model processes
+Overall: 7636 results ok, 1535 errors
+Problems: Claude queue hit its 5-hour usage limit (resets 5:50pm Sydney) and is sleeping 192 min from 14:42 before resuming (longer than the usual 20 min pause); 1535 historical errors, none in the last 60 min
+=== 2026-11-05T18:12:15
+Claude queue: OK - stage "kestrel core", pass 1; 486 ok / 0 errors in this stage; newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "kestrel judge (pass 2)", pass 1; 12 ok / 0 errors in last logged stage (draft pilot: ip executed); newest result 0 min ago; 6 model processes
+Overall: 8380 results ok, 1452 errors
+Problems: none (Claude queue resumed 17:54 after a 5-hour usage-limit pause; 0 errors in the last 60 min; the 1452 errors are older)
+=== 2026-11-05T18:42:25
+Claude queue: OK - stage "kestrel core", pass 1; 486 ok / 0 errors in this stage (last completed run); newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "kestrel judge (pass 2)" (last status entry: draft pilot: ip executed, 12 ok / 0 errors), pass 1; newest result 0 min ago; 6 model processes
+Overall: 8847 results ok, 1305 errors
+Problems: none (1305 errors are historical; no error results written in the last 60 min)
+=== 2026-11-05T19:12:25
+Claude queue: OK - stage "kestrel core", pass 1; 486 ok / 0 errors in this stage; newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "kestrel judge (pass 2)" (status.json last entry: "draft pilot: ip executed"), pass 1; 12 ok / 0 errors in last status entry; newest result 0 min ago; 6 model processes
+Overall: 9291 results ok, 1159 errors
+Problems: none (errors are historical; none written in last 60 min; Claude queue resumed 17:54 after a 5-hour usage-limit sleep)
+=== 2026-11-05T19:42:43
+Claude queue: OK - stage "drift core", pass 1; 514 ok / 0 errors in previous stage (kestrel core; drift core just started); newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "kestrel judge (pass 2)", pass 1; 12 ok / 0 errors in previous stage (draft pilot: ip executed; judge running); newest result 0 min ago (judge_gpt-6.1-sol); 6 model processes
+Overall: 9777 results ok, 1021 errors
+Problems: none (the 1021 errors are older than 60 min; no recent errors)
+=== 2026-11-05T20:12:28
+Claude queue: OK - stage "ip core", pass 1; 0 ok / 0 errors in this stage; newest result 0 min ago; 4 model processes
+GPT queue: OK - stage "kestrel judge (pass 2)", pass 1; 0 ok / 0 errors in this stage (status.json still shows prior stage); newest result 37 min ago; 6 model processes
+Overall: 10325 results ok, 1021 errors
+Problems: Claude stage "drift core" FAILED at 19:58 (OSError Errno 8 Exec format error: 'claude', rc=1, 0 jobs run); queue moved on to "ip core" | GPT newest result 37 min ago, past the 30 min OK threshold but under the 45 min STALE threshold, last log line is a stage START not a retry pause - watch next run | no new error texts in last 60 min
+=== 2026-11-05T20:42:17
+Claude queue: OK - stage "drift core", pass 1; 0 ok / 0 errors in this stage (previous stage kestrel core: 1800 jobs already done); newest result 0 min ago; 4 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 66 min ago; 0 model processes
+Overall: 10749 results ok, 1021 errors
+Problems: none (no error results written in the last 60 min)
+=== 2026-11-05T21:12:17
+Claude queue: OK - stage "drift core" (status.json still shows "kestrel core"), pass 1; 0 ok / 0 errors in this stage; newest result 0.2 min ago; 4 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 96.5 min ago; 0 model processes
+Overall: 11059 results ok, 1021 errors
+Problems: none (no error results in the last 60 min)
+=== 2026-11-05T21:42:16
+Claude queue: OK - stage "drift core", pass 1; 445 ok / 0 errors in this stage; newest result 29 min ago; 0 model processes (sleeping on usage limit until 10:50pm Sydney)
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 127 min ago; 0 model processes
+Overall: 11074 results ok, 1021 errors
+Problems: Claude queue hit its 5-hour usage limit at 21:13 and is sleeping 101 min before resuming drift core (expected, will flip to PAUSED); no new errors in the last 60 min
+=== 2026-11-05T23:14:31
+Claude queue: OK - stage "dd overt", pass 1; 0 ok / 0 errors in this stage so far (previous stage "ip pipeline": 150 ok / 0 errors); newest result 0 min ago; 4 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 219 min ago; 0 model processes
+Overall: 11425 results ok, 1021 errors
+Problems: none (no error results written in the last 60 min; 1021 errors are historical; 2 result files had no status field)
+=== 2026-11-05T23:42:29
+Claude queue: OK - stage "dd discovery" (just started; last finished "dd mechanism"), pass 1; 130 ok / 0 errors in last finished stage; newest result 0 min ago; 4 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 247 min ago; 0 model processes
+Overall: 11768 results ok, 951 errors
+Problems: none (no errors in the last 60 min)
+=== 2026-11-06T00:12:16
+Claude queue: OK - stage "kestrel breadth", pass 1 (just started; previous stage "dd discovery" 130 ok / 0 errors); newest result 0 min ago; 4 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage (all 360 jobs already done); newest result 277 min ago; 0 model processes
+Overall: 11929 results ok, 951 errors
+Problems: none (no errors written in the last 60 minutes)
+=== 2026-11-06T04:12:18
+Claude queue: OK - stage "kestrel breadth", pass 1; 176 ok / 0 errors in this stage (last recorded; resumed 03:54 after 5-hour usage-limit pause); newest result 0 min ago; 4 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 516 min ago; 0 model processes
+Overall: 12097 results ok, 951 errors
+Problems: none (951 errors are historical; none written in the last 60 min)
+=== 2026-11-06T04:42:21
+Claude queue: OK - stage "drift breadth", pass 1 (status.json still shows "kestrel breadth", 184 ok / 0 errors, finished 04:33); newest result 0.2 min ago; 4 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 546 min ago; 0 model processes
+Overall: 12288 results ok, 951 errors
+Problems: none (951 errors are historical; none written in the last 60 minutes)
+=== 2026-11-06T05:12:18
+Claude queue: FINISHED - stage "draft pilot: ip executed", pass 1; 12 ok / 0 errors in this stage; newest result 0.1 min ago; 0 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 577 min ago; 6 model processes
+Overall: 12591 results ok, 0 errors
+Problems: 6 "codex exec" processes still running although the GPT queue finished (possibly unrelated or orphaned; not touched)
+=== 2026-11-06T05:42:22
+Claude queue: FINISHED - stage "draft pilot: ip executed", pass 1; 12 ok / 0 errors in this stage; newest result 0 min ago; 0 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 607 min ago; 6 model processes (codex exec still counted although queue finished)
+Overall: 12956 results ok, 0 errors
+Problems: 6 "codex exec" processes still running although GPT queue is FINISHED (could be stray/orphaned or unrelated; not touched)
+=== 2026-11-06T06:12:24
+Claude queue: FINISHED - stage "draft pilot: ip executed", pass 1; 12 ok / 0 errors in this stage; newest result 0 min ago; 0 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 637 min ago; 6 model processes
+Overall: 13375 results ok, 0 errors
+Problems: 6 "codex exec" processes still running although the GPT queue is FINISHED (may be unrelated codex usage); 2 Claude-folder result files have no status field (likely being written or partial)
+=== 2026-11-06T06:42:18
+Claude queue: FINISHED - stage "draft pilot: ip executed", pass 1; 12 ok / 0 errors in this stage; newest result 9 min ago; 4 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 0 min ago; 0 model processes
+Overall: 13912 results ok, 0 errors
+Problems: 4 "claude -p" processes still running although the Claude queue is FINISHED (possibly unrelated sessions); GPT newest result file is 0 min old although its queue finished 04:48 earlier-day log time (file touched/rewritten after finish?)
+=== 2026-11-06T07:12:17
+Claude queue: FINISHED - stage "draft pilot: ip executed", pass 1; 12 ok / 0 errors in this stage; newest result 0.3 min ago; 0 model processes
+GPT queue: FINISHED - stage "dd judge (pass 2)", pass 1; 0 ok / 0 errors in this stage; newest result 28 min ago; 0 model processes
+Overall: 14265 results ok, 1 errors
+Problems: 1 error file written in last 60 min: HTTP 429 rate-limit from a free OpenRouter model (xingchen-agi/xing4.0-29b-a4b:free); both queues finished, so no resume needed

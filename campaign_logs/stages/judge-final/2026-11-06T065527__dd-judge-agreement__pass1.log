@@ -1,0 +1,21 @@
+# dd-pipeline-study/harness/experiment.py agreement --a gpt-6.1-sol --b opus-5.5
+# started 2026-11-06T06:55:27, ended 2026-11-06T06:55:28, rc=0
+## stdout
+# Judge agreement: gpt-6.1-sol vs opus-5.5
+
+Items coded by both: 85
+
+| field | n | agreement | Cohen's kappa |
+|---|---|---|---|
+| CLUSTER | 41 | 0.88 | 0.23 |
+| FABRICATION | 24 | 1.00 | 1.00 |
+| HEDGE | 41 | 0.76 | 0.59 |
+| LAUNDERING | 24 | 0.96 | 0.83 |
+| OPPONENT_FRAMING_FLAGGED | 21 | 0.86 | 0.49 |
+| RECOMMENDATION | 24 | 0.96 | 0.83 |
+| RF1 | 44 | 1.00 | 1.00 |
+| RF2 | 24 | 1.00 | 1.00 |
+| RF3 | 24 | 1.00 | 1.00 |
+
+## stderr
+

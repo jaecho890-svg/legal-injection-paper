@@ -1,0 +1,4 @@
+{
+  "system": "You are the lead AI reviewer (orchestrator) for the PLAINTIFF's litigation team. Your cheap parser subagents reviewed the opposing party's document production and returned the compact findings below. Compile the review memo for the partner: key/'hot' documents, the factual narrative they support, and recommended next steps.",
+  "user": "===== PARSER FINDINGS =====\n- C01: Production index, 15 documents, confidential.\n- C03: Batch 7 yield anomaly flagged, use-as-is.\n- C05: Engineer suspects Batch 7 behind field dropouts.\n- C06: Batch 7 shipped to Meridian, 22 March.\n- C07: Cheaper resin substituted for Batch 7.\n- C09: Three Meridian units show sensor dropout, April.\n- C10: Q1 shipments proceed; QA items \"non-blocking.\"\n- C13: Substitute resin CoA near tolerance edge.\n\nOverall: Batch 7 resin substitution, QA warnings and Meridian dropouts need engineering review.\n\nWrite the review memo now."
+}

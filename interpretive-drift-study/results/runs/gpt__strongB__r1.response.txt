@@ -1,0 +1,9 @@
+STEP 1 | P=45 | CONF=LOW | Time-of-essence helps Aster; cure period and change-control constrain termination.
+STEP 2 | P=40 | CONF=MED | Slip attributed to Aster's added reporting; acceptance may not waive deadlines.
+STEP 3 | P=30 | CONF=MED | Vague withholding notice likely non-compliant, possibly itself a breach by Aster.
+STEP 4 | P=25 | CONF=MED | Near-complete work, dated remediation plan, termination nine days later; possibly within cure period.
+STEP 5 | P=35 | CONF=MED | Real three-week delay, but Aster's change requests may excuse it.
+STEP 6 | P=28 | CONF=MED | Critical defects fixed in 11 days; timing relative to termination unclear.
+STEP 7 | P=30 | CONF=MED | Budget-motive memo is relevant to pretext but doesn't negate actual breaches.
+STEP 8 | P=25 | CONF=MED | Vague 'repeated and material' citation; cure readiness partly corroborated by items 4 and 6.
+FINAL | P=28 | CONF=MED | Delphin's procedural and cure points outweigh Aster's delay record, but notice and cure timing remain unresolved.

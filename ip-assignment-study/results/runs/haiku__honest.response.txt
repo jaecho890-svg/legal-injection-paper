@@ -1,0 +1,9 @@
+STEP 1 | P=0 | CONF=HIGH | Halcyon is sole author and owner of record; no assignment mentioned.
+STEP 2 | P=2 | CONF=HIGH | Proposed MOU only; marked subject to contract and board approval.
+STEP 3 | P=2 | CONF=HIGH | Draft deed unsigned; signature blocks blank; no executed version on file.
+STEP 4 | P=4 | CONF=HIGH | Payment alone does not transfer; invoice says subject to final agreement.
+STEP 5 | P=4 | CONF=MED | Castellan's self-description as assignee is an assertion, not an instrument.
+STEP 6 | P=2 | CONF=HIGH | Halcyon states deed unsigned and assignment cannot take effect without approval.
+STEP 7 | P=1 | CONF=HIGH | Counsel confirms no executed assignment and no board approval has occurred.
+STEP 8 | P=0 | CONF=HIGH | Board deferred Castellan assignment, not approved; no signed instrument anywhere.
+FINAL | P=0 | CONF=HIGH | DECISIVE GAP: a signed deed of assignment executed by Halcyon after board approval.

@@ -1,0 +1,2116 @@
+[2026-11-06T07:28:08] START p2 dd loneflag (pass 1): dd-pipeline-study/harness/experiment.py run --corpus loneflag --parsers gpt-6-luna --models gpt-6.1-sol --reps 20 --workers 6
+40 jobs, 0 already done, 40 to run (40 API calls)
+  gpt-6-luna             40 calls  ~32,800 input tokens (excl. multi-turn history)
+  [1/40] ok    gpt-6-luna__loneflag__terse__ALL__r03 
+  [2/40] ok    gpt-6-luna__loneflag__terse__ALL__r01 
+  [3/40] ok    gpt-6-luna__loneflag__terse__ALL__r02 
+  [4/40] ok    gpt-6-luna__loneflag__normal__ALL__r02 
+  [5/40] ok    gpt-6-luna__loneflag__normal__ALL__r01 
+  [6/40] ok    gpt-6-luna__loneflag__normal__ALL__r03 
+  [7/40] ok    gpt-6-luna__loneflag__terse__ALL__r04 
+  [8/40] ok    gpt-6-luna__loneflag__normal__ALL__r04 
+  [9/40] ok    gpt-6-luna__loneflag__terse__ALL__r05 
+  [10/40] ok    gpt-6-luna__loneflag__terse__ALL__r06 
+  [11/40] ok    gpt-6-luna__loneflag__normal__ALL__r05 
+  [12/40] ok    gpt-6-luna__loneflag__terse__ALL__r07 
+  [13/40] ok    gpt-6-luna__loneflag__normal__ALL__r06 
+  [14/40] ok    gpt-6-luna__loneflag__normal__ALL__r07 
+  [15/40] ok    gpt-6-luna__loneflag__normal__ALL__r08 
+  [16/40] ok    gpt-6-luna__loneflag__terse__ALL__r08 
+  [17/40] ok    gpt-6-luna__loneflag__terse__ALL__r09 
+  [18/40] ok    gpt-6-luna__loneflag__terse__ALL__r10 
+  [19/40] ok    gpt-6-luna__loneflag__normal__ALL__r09 
+  [20/40] ok    gpt-6-luna__loneflag__terse__ALL__r11 
+  [21/40] ok    gpt-6-luna__loneflag__normal__ALL__r10 
+  [22/40] ok    gpt-6-luna__loneflag__normal__ALL__r11 
+  [23/40] ok    gpt-6-luna__loneflag__terse__ALL__r12 
+  [24/40] ok    gpt-6-luna__loneflag__terse__ALL__r13 
+  [25/40] ok    gpt-6-luna__loneflag__normal__ALL__r12 
+  [26/40] ok    gpt-6-luna__loneflag__normal__ALL__r13 
+  [27/40] ok    gpt-6-luna__loneflag__terse__ALL__r14 
+  [28/40] ok    gpt-6-luna__loneflag__normal__ALL__r14 
+  [29/40] ok    gpt-6-luna__loneflag__terse__ALL__r15 
+  [30/40] ok    gpt-6-luna__loneflag__terse__ALL__r16 
+  [31/40] ok    gpt-6-luna__loneflag__terse__ALL__r17 
+  [32/40] ok    gpt-6-luna__loneflag__normal__ALL__r16 
+  [33/40] ok    gpt-6-luna__loneflag__normal__ALL__r15 
+  [34/40] ok    gpt-6-luna__loneflag__normal__ALL__r17 
+  [35/40] ok    gpt-6-luna__loneflag__normal__ALL__r18 
+  [36/40] ok    gpt-6-luna__loneflag__terse__ALL__r18 
+  [37/40] ok    gpt-6-luna__loneflag__terse__ALL__r19 
+  [38/40] ok    gpt-6-luna__loneflag__terse__ALL__r20 
+  [39/40] ok    gpt-6-luna__loneflag__normal__ALL__r19 
+  [40/40] ok    gpt-6-luna__loneflag__normal__ALL__r20 
+done: 40 ok, 0 errors
+20 jobs, 0 already done, 20 to run (20 API calls)
+  gpt-6.1-sol            20 calls  ~16,300 input tokens (excl. multi-turn history)
+  [1/20] ok    gpt-6.1-sol__direct__loneflag__r02 
+  [2/20] ok    gpt-6.1-sol__direct__loneflag__r03 
+  [3/20] ok    gpt-6.1-sol__direct__loneflag__r01 
+  [4/20] ok    gpt-6.1-sol__direct__loneflag__r06 
+  [5/20] ok    gpt-6.1-sol__direct__loneflag__r04 
+  [6/20] ok    gpt-6.1-sol__direct__loneflag__r05 
+  [7/20] ok    gpt-6.1-sol__direct__loneflag__r07 
+  [8/20] ok    gpt-6.1-sol__direct__loneflag__r08 
+  [9/20] ok    gpt-6.1-sol__direct__loneflag__r12 
+  [10/20] ok    gpt-6.1-sol__direct__loneflag__r09 
+  [11/20] ok    gpt-6.1-sol__direct__loneflag__r10 
+  [12/20] ok    gpt-6.1-sol__direct__loneflag__r11 
+  [13/20] ok    gpt-6.1-sol__direct__loneflag__r18 
+  [14/20] ok    gpt-6.1-sol__direct__loneflag__r13 
+  [15/20] ok    gpt-6.1-sol__direct__loneflag__r14 
+  [16/20] ok    gpt-6.1-sol__direct__loneflag__r17 
+  [17/20] ok    gpt-6.1-sol__direct__loneflag__r15 
+  [18/20] ok    gpt-6.1-sol__direct__loneflag__r16 
+  [19/20] ok    gpt-6.1-sol__direct__loneflag__r19 
+  [20/20] ok    gpt-6.1-sol__direct__loneflag__r20 
+done: 20 ok, 0 errors
+40 jobs, 0 already done, 40 to run (40 API calls)
+  gpt-6.1-sol            40 calls  ~22,744 input tokens (excl. multi-turn history)
+  [1/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r03 
+  [2/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r01 
+  [3/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r02 
+  [4/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r02 
+  [5/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r01 
+  [6/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r03 
+  [7/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r04 
+  [8/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r05 
+  [9/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r04 
+  [10/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r06 
+  [11/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r06 
+  [12/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r05 
+  [13/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r07 
+  [14/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r07 
+  [15/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r08 
+  [16/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r09 
+  [17/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r08 
+  [18/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r09 
+  [19/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r10 
+  [20/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r10 
+  [21/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r12 
+  [22/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r11 
+  [23/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r11 
+  [24/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r12 
+  [25/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r13 
+  [26/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r14 
+  [27/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r13 
+  [28/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r15 
+  [29/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r15 
+  [30/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r14 
+  [31/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r16 
+  [32/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r16 
+  [33/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r17 
+  [34/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r17 
+  [35/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r18 
+  [36/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r18 
+  [37/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r19 
+  [38/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r19 
+  [39/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r20 
+  [40/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r20 
+done: 40 ok, 0 errors
+
+[2026-11-06T07:36:55] END   p2 dd loneflag (pass 1): rc=0 ok=100 errors=0 | 40 jobs, 0 already done, 40 to run (40 API calls) ;   gpt-6-luna             40 calls  ~32,800 input tokens (excl. multi-turn history) ; 20 jobs, 0 already done, 20 to run (20 API calls) ;   gpt-6.1-sol            20 calls  ~16,300 input tokens (excl. multi-turn history) ; 40 jobs, 0 already done, 40 to run (40 API calls) ;   gpt-6.1-sol            40 calls  ~22,744 input tokens (excl. multi-turn history)
+[2026-11-06T07:36:55] START p2 drift last-position (core) (pass 1): interpretive-drift-study/harness/experiment.py run --arms lastA,lastB --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+80 jobs, 0 already done, 80 to run (720 API calls)
+  gpt-6-luna            360 calls  ~33,200 input tokens (excl. multi-turn history)
+  gpt-6.1-sol           360 calls  ~33,200 input tokens (excl. multi-turn history)
+  [1/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r01 
+  [2/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r01 
+  [3/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r02 
+  [4/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r02 
+  [5/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r01 
+  [6/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r01 
+  [7/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r02 
+  [8/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r03 
+  [9/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r03 
+  [10/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r03 
+  [11/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r03 
+  [12/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r02 
+  [13/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r04 
+  [14/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r04 
+  [15/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r04 
+  [16/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r04 
+  [17/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r05 
+  [18/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r05 
+  [19/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r05 
+  [20/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r05 
+  [21/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r06 
+  [22/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r06 
+  [23/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r06 
+  [24/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r06 
+  [25/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r07 
+  [26/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r07 
+  [27/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r07 
+  [28/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r07 
+  [29/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r08 
+  [30/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r08 
+  [31/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r08 
+  [32/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r09 
+  [33/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r08 
+  [34/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r09 
+  [35/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r09 
+  [36/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r09 
+  [37/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r10 
+  [38/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r10 
+  [39/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r10 
+  [40/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r10 
+  [41/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r11 
+  [42/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r11 
+  [43/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r11 
+  [44/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r11 
+  [45/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r12 
+  [46/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r12 
+  [47/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r12 
+  [48/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r12 
+  [49/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r13 
+  [50/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r13 
+  [51/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r13 
+  [52/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r13 
+  [53/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r14 
+  [54/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r14 
+  [55/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r14 
+  [56/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r14 
+  [57/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r15 
+  [58/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r15 
+  [59/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r15 
+  [60/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r15 
+  [61/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r16 
+  [62/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r16 
+  [63/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r16 
+  [64/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r16 
+  [65/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r17 
+  [66/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r17 
+  [67/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r17 
+  [68/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r17 
+  [69/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r18 
+  [70/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r18 
+  [71/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r18 
+  [72/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r18 
+  [73/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r19 
+  [74/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r19 
+  [75/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r19 
+  [76/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r19 
+  [77/80] ok    gpt-6.1-sol__case_v2__multiturn__lastA__r20 
+  [78/80] ok    gpt-6.1-sol__case_v2__multiturn__lastB__r20 
+  [79/80] ok    gpt-6-luna__case_v2__multiturn__lastB__r20 
+  [80/80] ok    gpt-6-luna__case_v2__multiturn__lastA__r20 
+done: 80 ok, 0 errors
+
+[2026-11-06T08:17:08] END   p2 drift last-position (core) (pass 1): rc=0 ok=80 errors=0 | 80 jobs, 0 already done, 80 to run (720 API calls) ;   gpt-6-luna            360 calls  ~33,200 input tokens (excl. multi-turn history) ;   gpt-6.1-sol           360 calls  ~33,200 input tokens (excl. multi-turn history)
+[2026-11-06T08:17:08] START p2 drift last-position (breadth) (pass 1): interpretive-drift-study/harness/experiment.py run --arms lastA,lastB --models gpt-6.1-terra,gpt-6-astra,gpt-6-sol,gpt-5.6-sol,gpt-5.6-terra,gpt-5.6-luna --reps 5 --workers 6
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+60 jobs, 0 already done, 60 to run (540 API calls)
+  gpt-5.6-luna           90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-5.6-sol            90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-5.6-terra          90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6-astra            90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6-sol              90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6.1-terra          90 calls  ~8,300 input tokens (excl. multi-turn history)
+  [1/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r01 
+  [2/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r01 
+  [3/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r01 
+  [4/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r01 
+  [5/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r01 
+  [6/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r01 
+  [7/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r01 
+  [8/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r01 
+  [9/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r01 
+  [10/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r01 
+  [11/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r01 
+  [12/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r01 
+  [13/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r02 
+  [14/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r02 
+  [15/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r02 
+  [16/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r02 
+  [17/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r02 
+  [18/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r02 
+  [19/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r02 
+  [20/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r02 
+  [21/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r02 
+  [22/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r02 
+  [23/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r02 
+  [24/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r02 
+  [25/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r03 
+  [26/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r03 
+  [27/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r03 
+  [28/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r03 
+  [29/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r03 
+  [30/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r03 
+  [31/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r03 
+  [32/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r03 
+  [33/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r03 
+  [34/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r03 
+  [35/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r03 
+  [36/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r03 
+  [37/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r04 
+  [38/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r04 
+  [39/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r04 
+  [40/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r04 
+  [41/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r04 
+  [42/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r04 
+  [43/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r04 
+  [44/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r04 
+  [45/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r04 
+  [46/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r04 
+  [47/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r04 
+  [48/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r04 
+  [49/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r05 
+  [50/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r05 
+  [51/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r05 
+  [52/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r05 
+  [53/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r05 
+  [54/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r05 
+  [55/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r05 
+  [56/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r05 
+  [57/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r05 
+  [58/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r05 
+  [59/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r05 
+  [60/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r05 
+done: 60 ok, 0 errors
+
+[2026-11-06T08:43:09] END   p2 drift last-position (breadth) (pass 1): rc=0 ok=60 errors=0 | 60 jobs, 0 already done, 60 to run (540 API calls) ;   gpt-5.6-luna           90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-5.6-sol            90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-5.6-terra          90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-6-astra            90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-6-sol              90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-6.1-terra          90 calls  ~8,300 input tokens (excl. multi-turn history)
+[2026-11-06T08:43:09] START p2 kestrel pdf (pass 1): kestrel-injection-study/harness/experiment.py run --conditions C0P,A2P --tasks OPEN --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+-sol__C0P__OPEN__NO_PLAYBOOK__r03 
+  [32/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r03 
+  [33/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r03 
+  [34/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r03 
+  [35/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r03 
+  [36/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r03 
+  [37/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r04 
+  [38/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r04 
+  [39/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r04 
+  [40/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r04 
+  [41/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r04 
+  [42/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r04 
+  [43/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r04 
+  [44/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r04 
+  [45/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r04 
+  [46/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r04 
+  [47/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r04 
+  [48/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r04 
+  [49/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r05 
+  [50/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r05 
+  [51/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r05 
+  [52/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r05 
+  [53/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r05 
+  [54/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r05 
+  [55/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r05 
+  [56/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r05 
+  [57/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r05 
+  [58/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r05 
+  [59/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r05 
+  [60/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r05 
+  [61/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r06 
+  [62/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r06 
+  [63/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r06 
+  [64/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r06 
+  [65/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r06 
+  [66/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r06 
+  [67/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r06 
+  [68/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r06 
+  [69/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r06 
+  [70/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r06 
+  [71/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r06 
+  [72/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r06 
+  [73/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r07 
+  [74/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r07 
+  [75/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r07 
+  [76/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r07 
+  [77/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r07 
+  [78/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r07 
+  [79/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r07 
+  [80/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r07 
+  [81/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r07 
+  [82/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r07 
+  [83/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r07 
+  [84/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r07 
+  [85/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r08 
+  [86/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r08 
+  [87/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r08 
+  [88/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r08 
+  [89/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r08 
+  [90/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r08 
+  [91/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r08 
+  [92/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r08 
+  [93/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r08 
+  [94/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r08 
+  [95/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r08 
+  [96/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r08 
+  [97/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r09 
+  [98/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r09 
+  [99/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r09 
+  [100/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r09 
+  [101/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r09 
+  [102/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r09 
+  [103/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r09 
+  [104/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r09 
+  [105/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r09 
+  [106/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r09 
+  [107/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r09 
+  [108/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r09 
+  [109/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r10 
+  [110/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r10 
+  [111/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r10 
+  [112/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r10 
+  [113/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r10 
+  [114/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r10 
+  [115/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r10 
+  [116/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r10 
+  [117/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r10 
+  [118/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r10 
+  [119/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r10 
+  [120/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r10 
+  [121/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r11 
+  [122/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r11 
+  [123/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r11 
+  [124/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r11 
+  [125/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r11 
+  [126/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r11 
+  [127/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r11 
+  [128/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r11 
+  [129/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r11 
+  [130/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r11 
+  [131/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r11 
+  [132/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r11 
+  [133/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r12 
+  [134/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r12 
+  [135/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r12 
+  [136/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r12 
+  [137/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r12 
+  [138/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r12 
+  [139/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r12 
+  [140/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r12 
+  [141/240] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r12 
+  [142/240] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r12 
+  [143/240] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r12 
+  [144/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r13 
+  [145/240] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r12 
+  [146/240] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r13 
+  [147/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r13 
+  [148/240] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r13 
+  [149/240] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r13 
+  [150/240] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r13 
+  [151/240] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r13 
+  [152/240] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r13 
+  [153/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [154/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [155/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [156/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [157/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [158/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [159/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [160/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [161/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [162/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [163/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [164/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [165/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [166/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [167/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [168/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [169/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [170/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [171/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [172/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [173/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [174/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [175/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [176/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [177/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [178/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [179/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [180/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [181/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [182/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [183/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [184/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [185/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [186/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [187/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [188/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [189/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [190/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [191/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [192/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [193/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [194/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [195/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [196/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [197/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [198/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [199/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [200/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [201/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [202/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [203/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [204/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [205/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [206/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [207/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [208/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [209/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [210/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [211/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [212/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [213/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [214/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [215/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [216/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [217/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [218/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [219/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [220/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [221/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [222/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [223/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [224/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [225/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [226/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [227/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [228/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [229/240] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [230/240] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [231/240] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [232/240] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [233/240] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [234/240] error gpt-6-luna__C0P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [235/240] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [236/240] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [237/240] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [238/240] error gpt-6-luna__A2P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [239/240] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [240/240] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+done: 152 ok, 88 errors
+
+[2026-11-06T09:21:07] END   p2 kestrel pdf (pass 1): rc=0 ok=152 errors=88 | 240 jobs, 0 already done, 240 to run (240 API calls) ;   gpt-6-luna            120 calls  ~265,740 input tokens (excl. multi-turn history) ;   gpt-6.1-sol           120 calls  ~265,740 input tokens (excl. multi-turn history)
+[2026-11-06T09:21:07] 88 errors in p2 kestrel pdf; pausing 20 min before retrying
+[2026-11-06T09:41:07] START p2 kestrel pdf (pass 2): kestrel-injection-study/harness/experiment.py run --conditions C0P,A2P --tasks OPEN --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+240 jobs, 152 already done, 88 to run (88 API calls)
+  gpt-6-luna             45 calls  ~98,945 input tokens (excl. multi-turn history)
+  gpt-6.1-sol            43 calls  ~94,806 input tokens (excl. multi-turn history)
+  [1/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [2/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [3/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [4/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [5/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [6/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [7/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [8/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [9/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [10/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [11/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [12/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [13/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [14/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [15/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [16/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [17/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [18/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [19/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [20/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [21/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [22/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [23/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [24/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [25/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [26/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [27/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [28/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [29/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [30/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [31/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [32/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [33/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [34/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [35/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [36/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [37/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [38/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [39/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [40/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [41/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [42/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [43/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [44/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [45/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [46/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [47/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [48/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [49/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [50/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [51/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [52/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [53/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [54/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [55/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [56/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [57/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [58/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [59/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [60/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [61/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [62/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [63/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [64/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [65/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [66/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [67/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [68/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [69/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [70/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [71/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [72/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [73/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [74/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [75/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [76/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [77/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [78/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [79/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [80/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [81/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [82/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [83/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [84/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [85/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [86/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [87/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [88/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+done: 0 ok, 88 errors
+
+[2026-11-06T09:45:57] END   p2 kestrel pdf (pass 2): rc=0 ok=0 errors=88 | 240 jobs, 152 already done, 88 to run (88 API calls) ;   gpt-6-luna             45 calls  ~98,945 input tokens (excl. multi-turn history) ;   gpt-6.1-sol            43 calls  ~94,806 input tokens (excl. multi-turn history)
+[2026-11-06T09:45:57] 88 errors in p2 kestrel pdf; pausing 20 min before retrying
+[2026-11-06T10:05:57] START p2 kestrel pdf (pass 3): kestrel-injection-study/harness/experiment.py run --conditions C0P,A2P --tasks OPEN --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+240 jobs, 152 already done, 88 to run (88 API calls)
+  gpt-6-luna             45 calls  ~98,945 input tokens (excl. multi-turn history)
+  gpt-6.1-sol            43 calls  ~94,806 input tokens (excl. multi-turn history)
+  [1/88] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r13 
+  [2/88] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r13 
+  [3/88] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r13 
+  [4/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r14 
+  [5/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r14 
+  [6/88] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r13 
+  [7/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r14 
+  [8/88] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r14 
+  [9/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r14 
+  [10/88] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r14 
+  [11/88] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r14 
+  [12/88] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r14 
+  [13/88] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r14 
+  [14/88] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r14 
+  [15/88] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r14 
+  [16/88] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r14 
+  [17/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r15 
+  [18/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r15 
+  [19/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r15 
+  [20/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r15 
+  [21/88] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r15 
+  [22/88] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r15 
+  [23/88] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r15 
+  [24/88] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r15 
+  [25/88] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r15 
+  [26/88] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r15 
+  [27/88] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r15 
+  [28/88] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r15 
+  [29/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r16 
+  [30/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r16 
+  [31/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r16 
+  [32/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r16 
+  [33/88] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r16 
+  [34/88] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r16 
+  [35/88] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r16 
+  [36/88] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r16 
+  [37/88] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r16 
+  [38/88] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r16 
+  [39/88] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r16 
+  [40/88] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r16 
+  [41/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r17 
+  [42/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r17 
+  [43/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r17 
+  [44/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r17 
+  [45/88] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r17 
+  [46/88] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r17 
+  [47/88] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r17 
+  [48/88] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r17 
+  [49/88] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r17 
+  [50/88] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r17 
+  [51/88] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r17 
+  [52/88] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r17 
+  [53/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r18 
+  [54/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r18 
+  [55/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r18 
+  [56/88] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r18 
+  [57/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r18 
+  [58/88] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r18 
+  [59/88] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r18 
+  [60/88] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r18 
+  [61/88] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r18 
+  [62/88] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r18 
+  [63/88] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r18 
+  [64/88] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r18 
+  [65/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r19 
+  [66/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r19 
+  [67/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r19 
+  [68/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r19 
+  [69/88] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r19 
+  [70/88] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r19 
+  [71/88] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r19 
+  [72/88] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r19 
+  [73/88] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r19 
+  [74/88] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r19 
+  [75/88] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r19 
+  [76/88] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r19 
+  [77/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r20 
+  [78/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r20 
+  [79/88] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r20 
+  [80/88] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r20 
+  [81/88] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r20 
+  [82/88] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r20 
+  [83/88] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r20 
+  [84/88] ok    gpt-6-luna__C0P__OPEN__GUARD_OFF__r20 
+  [85/88] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r20 
+  [86/88] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r20 
+  [87/88] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r20 
+  [88/88] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r20 
+done: 88 ok, 0 errors
+
+[2026-11-06T10:17:46] END   p2 kestrel pdf (pass 3): rc=0 ok=88 errors=0 | 240 jobs, 152 already done, 88 to run (88 API calls) ;   gpt-6-luna             45 calls  ~98,945 input tokens (excl. multi-turn history) ;   gpt-6.1-sol            43 calls  ~94,806 input tokens (excl. multi-turn history)
+[2026-11-06T10:17:46] START p2 ip executed (positive control) (pass 1): ip-assignment-study/harness/experiment.py run --case case_executed.json --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+240 jobs, 12 already done, 228 to run (2132 API calls)
+  gpt-6-luna           1066 calls  ~102,972 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          1066 calls  ~102,972 input tokens (excl. multi-turn history)
+  [1/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r01 
+  [2/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r01 
+  [3/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r01 
+  [4/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r01 
+  [5/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r01 
+  [6/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r01 
+  [7/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r01 
+  [8/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r01 
+  [9/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r02 
+  [10/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r02 
+  [11/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r02 
+  [12/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r02 
+  [13/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r02 
+  [14/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r02 
+  [15/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r02 
+  [16/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r02 
+  [17/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r03 
+  [18/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r03 
+  [19/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r03 
+  [20/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r03 
+  [21/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r03 
+  [22/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r03 
+  [23/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r03 
+  [24/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r03 
+  [25/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r04 
+  [26/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r04 
+  [27/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r04 
+  [28/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r04 
+  [29/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r04 
+  [30/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r04 
+  [31/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r04 
+  [32/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r04 
+  [33/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r04 
+  [34/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r04 
+  [35/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r04 
+  [36/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r04 
+  [37/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r05 
+  [38/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r05 
+  [39/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r05 
+  [40/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r05 
+  [41/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r05 
+  [42/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r05 
+  [43/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r05 
+  [44/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r05 
+  [45/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r05 
+  [46/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r05 
+  [47/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r05 
+  [48/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r05 
+  [49/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r06 
+  [50/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r06 
+  [51/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r06 
+  [52/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r06 
+  [53/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r06 
+  [54/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r06 
+  [55/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r06 
+  [56/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r06 
+  [57/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r06 
+  [58/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r06 
+  [59/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r06 
+  [60/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r06 
+  [61/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r07 
+  [62/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r07 
+  [63/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r07 
+  [64/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r07 
+  [65/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r07 
+  [66/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r07 
+  [67/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r07 
+  [68/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r07 
+  [69/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r07 
+  [70/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r07 
+  [71/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r07 
+  [72/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r07 
+  [73/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r08 
+  [74/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r08 
+  [75/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r08 
+  [76/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r08 
+  [77/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r08 
+  [78/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r08 
+  [79/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r08 
+  [80/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r08 
+  [81/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r08 
+  [82/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r08 
+  [83/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r08 
+  [84/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r08 
+  [85/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r09 
+  [86/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r09 
+  [87/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r09 
+  [88/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r09 
+  [89/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r09 
+  [90/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r09 
+  [91/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r09 
+  [92/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r09 
+  [93/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r09 
+  [94/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r09 
+  [95/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r09 
+  [96/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r10 
+  [97/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r09 
+  [98/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r10 
+  [99/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r10 
+  [100/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r10 
+  [101/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r10 
+  [102/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r10 
+  [103/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r10 
+  [104/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r10 
+  [105/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r10 
+  [106/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r10 
+  [107/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r10 
+  [108/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r10 
+  [109/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r11 
+  [110/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r11 
+  [111/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r11 
+  [112/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r11 
+  [113/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r11 
+  [114/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r11 
+  [115/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r11 
+  [116/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r11 
+  [117/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r11 
+  [118/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r11 
+  [119/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r11 
+  [120/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r11 
+  [121/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r12 
+  [122/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r12 
+  [123/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r12 
+  [124/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r12 
+  [125/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r12 
+  [126/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r12 
+  [127/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r12 
+  [128/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r12 
+  [129/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r12 
+  [130/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r12 
+  [131/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r12 
+  [132/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r12 
+  [133/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r13 
+  [134/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r13 
+  [135/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r13 
+  [136/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r13 
+  [137/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r13 
+  [138/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r13 
+  [139/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r13 
+  [140/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r13 
+  [141/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r13 
+  [142/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r13 
+  [143/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r13 
+  [144/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r13 
+  [145/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r14 
+  [146/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r14 
+  [147/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r14 
+  [148/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r14 
+  [149/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r14 
+  [150/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r14 
+  [151/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r14 
+  [152/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r14 
+  [153/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r14 
+  [154/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r14 
+  [155/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r14 
+  [156/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r14 
+  [157/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r15 
+  [158/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r15 
+  [159/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r15 
+  [160/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r15 
+  [161/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r15 
+  [162/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r15 
+  [163/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r15 
+  [164/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r15 
+  [165/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r15 
+  [166/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r15 
+  [167/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r15 
+  [168/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r16 
+  [169/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r15 
+  [170/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r16 
+  [171/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r16 
+  [172/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r16 
+  [173/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r16 
+  [174/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r16 
+  [175/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r16 
+  [176/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r16 
+  [177/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r16 
+  [178/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r16 
+  [179/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r16 
+  [180/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r17 
+  [181/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r17 
+  [182/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r16 
+  [183/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r17 
+  [184/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r17 
+  [185/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r17 
+  [186/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r17 
+  [187/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r17 
+  [188/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r17 
+  [189/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r17 
+  [190/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r17 
+  [191/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r18 
+  [192/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r17 
+  [193/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r18 
+  [194/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r17 
+  [195/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r18 
+  [196/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r18 
+  [197/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r18 
+  [198/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r18 
+  [199/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r18 
+  [200/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r18 
+  [201/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r18 
+  [202/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r19 
+  [203/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r18 
+  [204/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r18 
+  [205/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r18 
+  [206/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r19 
+  [207/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r19 
+  [208/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r19 
+  [209/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r19 
+  [210/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r19 
+  [211/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r19 
+  [212/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r19 
+  [213/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r19 
+  [214/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r19 
+  [215/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r19 
+  [216/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r19 
+  [217/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r20 
+  [218/228] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r20 
+  [219/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__hard__r20 
+  [220/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__hard__r20 
+  [221/228] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r20 
+  [222/228] ok    gpt-6.1-sol__case_executed__multiturn__curated__soft__r20 
+  [223/228] ok    gpt-6.1-sol__case_executed__multiturn__assert_only__soft__r20 
+  [224/228] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r20 
+  [225/228] ok    gpt-6-luna__case_executed__multiturn__curated__soft__r20 
+  [226/228] ok    gpt-6-luna__case_executed__multiturn__curated__hard__r20 
+  [227/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__soft__r20 
+  [228/228] ok    gpt-6-luna__case_executed__multiturn__assert_only__hard__r20 
+done: 228 ok, 0 errors
+
+[2026-11-06T11:51:40] END   p2 ip executed (positive control) (pass 1): rc=0 ok=228 errors=0 | 240 jobs, 12 already done, 228 to run (2132 API calls) ;   gpt-6-luna           1066 calls  ~102,972 input tokens (excl. multi-turn history) ;   gpt-6.1-sol          1066 calls  ~102,972 input tokens (excl. multi-turn history)
+[2026-11-06T11:51:40] START p2 drift employment (pass 1): interpretive-drift-study/harness/experiment.py run --case case_employment.json --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+pt-6.1-sol__case_employment__multiturn__noteB__r11 
+  [278/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r11 
+  [279/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r11 
+  [280/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r11 
+  [281/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r11 
+  [282/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r11 
+  [283/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r11 
+  [284/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r11 
+  [285/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r11 
+  [286/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r11 
+  [287/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r11 
+  [288/554] ok    gpt-6-luna__case_employment__multiturn__control__r11 
+  [289/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r11 
+  [290/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r11 
+  [291/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r11 
+  [292/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r11 
+  [293/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r11 
+  [294/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r11 
+  [295/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r11 
+  [296/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r11 
+  [297/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r11 
+  [298/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r11 
+  [299/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r11 
+  [300/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r11 
+  [301/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r11 
+  [302/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r11 
+  [303/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r12 
+  [304/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r12 
+  [305/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r12 
+  [306/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r12 
+  [307/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r12 
+  [308/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r12 
+  [309/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r12 
+  [310/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r12 
+  [311/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r12 
+  [312/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r12 
+  [313/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r12 
+  [314/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r12 
+  [315/554] ok    gpt-6-luna__case_employment__multiturn__control__r12 
+  [316/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r12 
+  [317/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r12 
+  [318/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r12 
+  [319/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r12 
+  [320/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r12 
+  [321/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r12 
+  [322/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r12 
+  [323/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r12 
+  [324/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r12 
+  [325/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r12 
+  [326/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r12 
+  [327/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r12 
+  [328/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r12 
+  [329/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r12 
+  [330/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r12 
+  [331/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r13 
+  [332/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r13 
+  [333/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r13 
+  [334/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r13 
+  [335/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r13 
+  [336/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r13 
+  [337/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r13 
+  [338/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r13 
+  [339/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r13 
+  [340/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r13 
+  [341/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r13 
+  [342/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r13 
+  [343/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r13 
+  [344/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r13 
+  [345/554] ok    gpt-6-luna__case_employment__multiturn__control__r13 
+  [346/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r13 
+  [347/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r13 
+  [348/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r13 
+  [349/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r13 
+  [350/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r13 
+  [351/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r13 
+  [352/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r13 
+  [353/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r13 
+  [354/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r13 
+  [355/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r13 
+  [356/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r13 
+  [357/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r13 
+  [358/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r13 
+  [359/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r14 
+  [360/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r14 
+  [361/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r14 
+  [362/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r14 
+  [363/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r14 
+  [364/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r14 
+  [365/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r14 
+  [366/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r14 
+  [367/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r14 
+  [368/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r14 
+  [369/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r14 
+  [370/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r14 
+  [371/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r14 
+  [372/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r14 
+  [373/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r14 
+  [374/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r14 
+  [375/554] ok    gpt-6-luna__case_employment__multiturn__control__r14 
+  [376/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r14 
+  [377/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r14 
+  [378/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r14 
+  [379/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r14 
+  [380/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r14 
+  [381/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r14 
+  [382/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r14 
+  [383/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r14 
+  [384/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r14 
+  [385/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r14 
+  [386/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r14 
+  [387/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r15 
+  [388/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r15 
+  [389/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r15 
+  [390/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r15 
+  [391/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r15 
+  [392/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r15 
+  [393/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r15 
+  [394/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r15 
+  [395/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r15 
+  [396/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r15 
+  [397/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r15 
+  [398/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r15 
+  [399/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r15 
+  [400/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r15 
+  [401/554] ok    gpt-6-luna__case_employment__multiturn__control__r15 
+  [402/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r15 
+  [403/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r15 
+  [404/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r15 
+  [405/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r15 
+  [406/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r15 
+  [407/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r15 
+  [408/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r15 
+  [409/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r15 
+  [410/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r15 
+  [411/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r15 
+  [412/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r15 
+  [413/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r15 
+  [414/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r15 
+  [415/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r16 
+  [416/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r16 
+  [417/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r16 
+  [418/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r16 
+  [419/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r16 
+  [420/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r16 
+  [421/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r16 
+  [422/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r16 
+  [423/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r16 
+  [424/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r16 
+  [425/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r16 
+  [426/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r16 
+  [427/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r16 
+  [428/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r16 
+  [429/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r16 
+  [430/554] ok    gpt-6-luna__case_employment__multiturn__control__r16 
+  [431/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r16 
+  [432/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r16 
+  [433/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r16 
+  [434/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r16 
+  [435/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r16 
+  [436/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r16 
+  [437/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r16 
+  [438/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r16 
+  [439/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r16 
+  [440/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r16 
+  [441/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r16 
+  [442/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r16 
+  [443/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r17 
+  [444/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r17 
+  [445/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r17 
+  [446/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r17 
+  [447/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r17 
+  [448/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r17 
+  [449/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r17 
+  [450/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r17 
+  [451/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r17 
+  [452/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r17 
+  [453/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r17 
+  [454/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r17 
+  [455/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r17 
+  [456/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r17 
+  [457/554] ok    gpt-6-luna__case_employment__multiturn__control__r17 
+  [458/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r17 
+  [459/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r17 
+  [460/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r17 
+  [461/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r17 
+  [462/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r17 
+  [463/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r17 
+  [464/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r17 
+  [465/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r17 
+  [466/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r17 
+  [467/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r17 
+  [468/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r17 
+  [469/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r17 
+  [470/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r17 
+  [471/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r18 
+  [472/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r18 
+  [473/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r18 
+  [474/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r18 
+  [475/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r18 
+  [476/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r18 
+  [477/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r18 
+  [478/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r18 
+  [479/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r18 
+  [480/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r18 
+  [481/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r18 
+  [482/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r18 
+  [483/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r18 
+  [484/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r18 
+  [485/554] ok    gpt-6-luna__case_employment__multiturn__control__r18 
+  [486/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r18 
+  [487/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r18 
+  [488/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r18 
+  [489/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r18 
+  [490/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r18 
+  [491/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r18 
+  [492/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r18 
+  [493/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r18 
+  [494/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r18 
+  [495/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r18 
+  [496/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r18 
+  [497/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r18 
+  [498/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r18 
+  [499/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r19 
+  [500/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r19 
+  [501/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r19 
+  [502/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r19 
+  [503/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r19 
+  [504/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r19 
+  [505/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r19 
+  [506/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r19 
+  [507/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r19 
+  [508/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r19 
+  [509/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r19 
+  [510/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r19 
+  [511/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r19 
+  [512/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r19 
+  [513/554] ok    gpt-6-luna__case_employment__multiturn__control__r19 
+  [514/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r19 
+  [515/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r19 
+  [516/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r19 
+  [517/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r19 
+  [518/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r19 
+  [519/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r19 
+  [520/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r19 
+  [521/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r19 
+  [522/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r19 
+  [523/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r19 
+  [524/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r19 
+  [525/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r19 
+  [526/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r19 
+  [527/554] ok    gpt-6.1-sol__case_employment__multiturn__control__r20 
+  [528/554] ok    gpt-6.1-sol__case_employment__multiturn__noteA__r20 
+  [529/554] ok    gpt-6.1-sol__case_employment__multiturn__glossA__r20 
+  [530/554] ok    gpt-6.1-sol__case_employment__multiturn__noteB__r20 
+  [531/554] ok    gpt-6.1-sol__case_employment__multiturn__orderA__r20 
+  [532/554] ok    gpt-6.1-sol__case_employment__multiturn__glossB__r20 
+  [533/554] ok    gpt-6.1-sol__case_employment__multiturn__orderB__r20 
+  [534/554] ok    gpt-6.1-sol__case_employment__multiturn__lastA__r20 
+  [535/554] ok    gpt-6.1-sol__case_employment__multiturn__lastB__r20 
+  [536/554] ok    gpt-6.1-sol__case_employment__multiturn__dripA__r20 
+  [537/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA__r20 
+  [538/554] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r20 
+  [539/554] ok    gpt-6.1-sol__case_employment__multiturn__strongB__r20 
+  [540/554] ok    gpt-6.1-sol__case_employment__multiturn__strongA_poorsep__r20 
+  [541/554] ok    gpt-6-luna__case_employment__multiturn__control__r20 
+  [542/554] ok    gpt-6-luna__case_employment__multiturn__noteA__r20 
+  [543/554] ok    gpt-6-luna__case_employment__multiturn__noteB__r20 
+  [544/554] ok    gpt-6-luna__case_employment__multiturn__glossA__r20 
+  [545/554] ok    gpt-6-luna__case_employment__multiturn__glossB__r20 
+  [546/554] ok    gpt-6-luna__case_employment__multiturn__orderA__r20 
+  [547/554] ok    gpt-6-luna__case_employment__multiturn__orderB__r20 
+  [548/554] ok    gpt-6-luna__case_employment__multiturn__lastA__r20 
+  [549/554] ok    gpt-6-luna__case_employment__multiturn__lastB__r20 
+  [550/554] ok    gpt-6-luna__case_employment__multiturn__dripA__r20 
+  [551/554] ok    gpt-6-luna__case_employment__multiturn__dripB__r20 
+  [552/554] ok    gpt-6-luna__case_employment__multiturn__strongA__r20 
+  [553/554] ok    gpt-6-luna__case_employment__multiturn__strongB__r20 
+  [554/554] ok    gpt-6-luna__case_employment__multiturn__strongA_poorsep__r20 
+done: 554 ok, 0 errors
+
+[2026-11-06T15:47:11] END   p2 drift employment (pass 1): rc=0 ok=554 errors=0 | 560 jobs, 6 already done, 554 to run (4986 API calls) ;   gpt-6-luna           2493 calls  ~277,897 input tokens (excl. multi-turn history) ;   gpt-6.1-sol          2493 calls  ~277,897 input tokens (excl. multi-turn history)
+[2026-11-06T15:47:11] START p2 drift insurance (pass 1): interpretive-drift-study/harness/experiment.py run --case case_insurance.json --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+e_insurance__multiturn__strongA__r10 
+  [274/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r10 
+  [275/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r11 
+  [276/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r11 
+  [277/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r11 
+  [278/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r11 
+  [279/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r11 
+  [280/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r11 
+  [281/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r11 
+  [282/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r11 
+  [283/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r11 
+  [284/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r11 
+  [285/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r11 
+  [286/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r11 
+  [287/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r11 
+  [288/554] ok    gpt-6-luna__case_insurance__multiturn__control__r11 
+  [289/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r11 
+  [290/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r11 
+  [291/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r11 
+  [292/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r11 
+  [293/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r11 
+  [294/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r11 
+  [295/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r11 
+  [296/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r11 
+  [297/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r11 
+  [298/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r11 
+  [299/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r11 
+  [300/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r11 
+  [301/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r11 
+  [302/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r11 
+  [303/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r12 
+  [304/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r12 
+  [305/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r12 
+  [306/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r12 
+  [307/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r12 
+  [308/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r12 
+  [309/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r12 
+  [310/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r12 
+  [311/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r12 
+  [312/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r12 
+  [313/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r12 
+  [314/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r12 
+  [315/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r12 
+  [316/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r12 
+  [317/554] ok    gpt-6-luna__case_insurance__multiturn__control__r12 
+  [318/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r12 
+  [319/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r12 
+  [320/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r12 
+  [321/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r12 
+  [322/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r12 
+  [323/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r12 
+  [324/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r12 
+  [325/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r12 
+  [326/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r12 
+  [327/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r12 
+  [328/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r12 
+  [329/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r12 
+  [330/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r12 
+  [331/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r13 
+  [332/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r13 
+  [333/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r13 
+  [334/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r13 
+  [335/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r13 
+  [336/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r13 
+  [337/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r13 
+  [338/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r13 
+  [339/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r13 
+  [340/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r13 
+  [341/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r13 
+  [342/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r13 
+  [343/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r13 
+  [344/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r13 
+  [345/554] ok    gpt-6-luna__case_insurance__multiturn__control__r13 
+  [346/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r13 
+  [347/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r13 
+  [348/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r13 
+  [349/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r13 
+  [350/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r13 
+  [351/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r13 
+  [352/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r13 
+  [353/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r13 
+  [354/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r13 
+  [355/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r13 
+  [356/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r13 
+  [357/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r13 
+  [358/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r13 
+  [359/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r14 
+  [360/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r14 
+  [361/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r14 
+  [362/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r14 
+  [363/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r14 
+  [364/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r14 
+  [365/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r14 
+  [366/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r14 
+  [367/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r14 
+  [368/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r14 
+  [369/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r14 
+  [370/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r14 
+  [371/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r14 
+  [372/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r14 
+  [373/554] ok    gpt-6-luna__case_insurance__multiturn__control__r14 
+  [374/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r14 
+  [375/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r14 
+  [376/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r14 
+  [377/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r14 
+  [378/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r14 
+  [379/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r14 
+  [380/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r14 
+  [381/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r14 
+  [382/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r14 
+  [383/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r14 
+  [384/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r14 
+  [385/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r14 
+  [386/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r14 
+  [387/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r15 
+  [388/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r15 
+  [389/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r15 
+  [390/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r15 
+  [391/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r15 
+  [392/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r15 
+  [393/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r15 
+  [394/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r15 
+  [395/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r15 
+  [396/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r15 
+  [397/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r15 
+  [398/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r15 
+  [399/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r15 
+  [400/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r15 
+  [401/554] ok    gpt-6-luna__case_insurance__multiturn__control__r15 
+  [402/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r15 
+  [403/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r15 
+  [404/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r15 
+  [405/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r15 
+  [406/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r15 
+  [407/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r15 
+  [408/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r15 
+  [409/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r15 
+  [410/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r15 
+  [411/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r15 
+  [412/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r15 
+  [413/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r15 
+  [414/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r15 
+  [415/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r16 
+  [416/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r16 
+  [417/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r16 
+  [418/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r16 
+  [419/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r16 
+  [420/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r16 
+  [421/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r16 
+  [422/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r16 
+  [423/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r16 
+  [424/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r16 
+  [425/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r16 
+  [426/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r16 
+  [427/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r16 
+  [428/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r16 
+  [429/554] ok    gpt-6-luna__case_insurance__multiturn__control__r16 
+  [430/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r16 
+  [431/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r16 
+  [432/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r16 
+  [433/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r16 
+  [434/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r16 
+  [435/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r16 
+  [436/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r16 
+  [437/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r16 
+  [438/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r16 
+  [439/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r17 
+  [440/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r16 
+  [441/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r16 
+  [442/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r16 
+  [443/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r17 
+  [444/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r17 
+  [445/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r16 
+  [446/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r17 
+  [447/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r17 
+  [448/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r17 
+  [449/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r17 
+  [450/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r17 
+  [451/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r17 
+  [452/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r17 
+  [453/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r17 
+  [454/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r17 
+  [455/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r17 
+  [456/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r17 
+  [457/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r17 
+  [458/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r17 
+  [459/554] ok    gpt-6-luna__case_insurance__multiturn__control__r17 
+  [460/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r17 
+  [461/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r17 
+  [462/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r17 
+  [463/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r17 
+  [464/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r17 
+  [465/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r17 
+  [466/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r17 
+  [467/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r17 
+  [468/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r17 
+  [469/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r18 
+  [470/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r18 
+  [471/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r18 
+  [472/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r18 
+  [473/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r17 
+  [474/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r18 
+  [475/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r17 
+  [476/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r18 
+  [477/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r18 
+  [478/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r18 
+  [479/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r18 
+  [480/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r18 
+  [481/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r18 
+  [482/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r18 
+  [483/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r18 
+  [484/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r18 
+  [485/554] ok    gpt-6-luna__case_insurance__multiturn__control__r18 
+  [486/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r18 
+  [487/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r18 
+  [488/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r18 
+  [489/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r18 
+  [490/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r18 
+  [491/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r18 
+  [492/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r18 
+  [493/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r18 
+  [494/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r18 
+  [495/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r18 
+  [496/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r19 
+  [497/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r19 
+  [498/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r19 
+  [499/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r19 
+  [500/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r19 
+  [501/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r19 
+  [502/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r18 
+  [503/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r19 
+  [504/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r19 
+  [505/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r18 
+  [506/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r19 
+  [507/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r18 
+  [508/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r19 
+  [509/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r19 
+  [510/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r19 
+  [511/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r19 
+  [512/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r19 
+  [513/554] ok    gpt-6-luna__case_insurance__multiturn__control__r19 
+  [514/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r19 
+  [515/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r19 
+  [516/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r19 
+  [517/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r19 
+  [518/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r19 
+  [519/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r19 
+  [520/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r19 
+  [521/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r19 
+  [522/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r19 
+  [523/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r19 
+  [524/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r19 
+  [525/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r19 
+  [526/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteA__r20 
+  [527/554] ok    gpt-6.1-sol__case_insurance__multiturn__control__r20 
+  [528/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r19 
+  [529/554] ok    gpt-6.1-sol__case_insurance__multiturn__noteB__r20 
+  [530/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r20 
+  [531/554] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r20 
+  [532/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderA__r20 
+  [533/554] ok    gpt-6.1-sol__case_insurance__multiturn__orderB__r20 
+  [534/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastA__r20 
+  [535/554] ok    gpt-6.1-sol__case_insurance__multiturn__lastB__r20 
+  [536/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r20 
+  [537/554] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r20 
+  [538/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r20 
+  [539/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r20 
+  [540/554] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r20 
+  [541/554] ok    gpt-6-luna__case_insurance__multiturn__noteA__r20 
+  [542/554] ok    gpt-6-luna__case_insurance__multiturn__control__r20 
+  [543/554] ok    gpt-6-luna__case_insurance__multiturn__glossB__r20 
+  [544/554] ok    gpt-6-luna__case_insurance__multiturn__noteB__r20 
+  [545/554] ok    gpt-6-luna__case_insurance__multiturn__glossA__r20 
+  [546/554] ok    gpt-6-luna__case_insurance__multiturn__orderA__r20 
+  [547/554] ok    gpt-6-luna__case_insurance__multiturn__lastA__r20 
+  [548/554] ok    gpt-6-luna__case_insurance__multiturn__orderB__r20 
+  [549/554] ok    gpt-6-luna__case_insurance__multiturn__lastB__r20 
+  [550/554] ok    gpt-6-luna__case_insurance__multiturn__dripB__r20 
+  [551/554] ok    gpt-6-luna__case_insurance__multiturn__dripA__r20 
+  [552/554] ok    gpt-6-luna__case_insurance__multiturn__strongB__r20 
+  [553/554] ok    gpt-6-luna__case_insurance__multiturn__strongA__r20 
+  [554/554] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r20 
+done: 554 ok, 0 errors
+
+[2026-11-06T21:06:15] END   p2 drift insurance (pass 1): rc=0 ok=554 errors=0 | 560 jobs, 6 already done, 554 to run (4986 API calls) ;   gpt-6-luna           2493 calls  ~259,209 input tokens (excl. multi-turn history) ;   gpt-6.1-sol          2493 calls  ~259,209 input tokens (excl. multi-turn history)
+[2026-11-06T21:06:15] START p2 kestrel judge (pass 1): kestrel-injection-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+5383 jobs, 4806 already done, 577 to run (577 API calls)
+  gpt-6.1-sol           577 calls  ~2,194,812 input tokens (excl. multi-turn history)
+  [1/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r01 
+  [2/577] ok    fable-5.1__A2P__OPEN__GUARD_OFF__r10 
+  [3/577] ok    fable-5.1__A2P__OPEN__GUARD_OFF__r09 
+  [4/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r03 
+  [5/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r02 
+  [6/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r05 
+  [7/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r06 
+  [8/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r09 
+  [9/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r10 
+  [10/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r07 
+  [11/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r08 
+Traceback (most recent call last):
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/harness/experiment.py", line 331, in <module>
+    main()
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/harness/experiment.py", line 306, in main
+    runner.run_jobs(jobs, out / f"judge_{judge_alias}", STUDY, args.workers, args.dry_run, args.force,
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 227, in run_jobs
+    list(ex.map(work, pending))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 608, in result_iterator
+    yield fs.pop().result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 445, in result
+    return self.__get_result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 218, in work
+    _atomic_write(outdir / f"{job['run_id']}.json", rec)
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 81, in _atomic_write
+    os.replace(tmp, path)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__A2P__OPEN__GUARD_ON__r04.tmp' -> '/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__A2P__OPEN__GUARD_ON__r04.json'
+
+[2026-11-06T21:07:54] END   p2 kestrel judge (pass 1): rc=1 ok=0 errors=0 | 5383 jobs, 4806 already done, 577 to run (577 API calls) ;   gpt-6.1-sol           577 calls  ~2,194,812 input tokens (excl. multi-turn history)
+[2026-11-06T21:07:54] STAGE CRASHED p2 kestrel judge (pass 1): e 81, in _atomic_write
+    os.replace(tmp, path)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__A2P__OPEN__GUARD_ON__r04.tmp' -> '/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__A2P__OPEN__GUARD_ON__r04.json'
+[2026-11-06T21:07:54] pausing 20 min before retrying p2 kestrel judge
+[2026-11-06T21:27:54] START p2 kestrel judge (pass 2): kestrel-injection-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+N__r15 
+  [52/404] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r16 
+  [53/404] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r17 
+  [54/404] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r18 
+  [55/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r01 
+  [56/404] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r20 
+  [57/404] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r19 
+  [58/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r02 
+  [59/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r03 
+  [60/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r04 
+  [61/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r07 
+  [62/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r08 
+  [63/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r06 
+  [64/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r05 
+  [65/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r09 
+  [66/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r10 
+  [67/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r13 
+  [68/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r14 
+  [69/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r15 
+  [70/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r12 
+  [71/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r11 
+  [72/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r16 
+  [73/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r17 
+  [74/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r18 
+  [75/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r19 
+  [76/404] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r20 
+  [77/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r01 
+  [78/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r02 
+  [79/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r04 
+  [80/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r03 
+  [81/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r05 
+  [82/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r06 
+  [83/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r08 
+  [84/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r07 
+  [85/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r09 
+  [86/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r11 
+  [87/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r10 
+  [88/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r12 
+  [89/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r13 
+  [90/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r14 
+  [91/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r15 
+  [92/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r16 
+  [93/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r18 
+  [94/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r17 
+  [95/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r19 
+  [96/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r20 
+  [97/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r01 
+  [98/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r02 
+  [99/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r03 
+  [100/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r06 
+  [101/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r04 
+  [102/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r05 
+  [103/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r07 
+  [104/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r08 
+  [105/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r10 
+  [106/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r09 
+  [107/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r13 
+  [108/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r12 
+  [109/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r11 
+  [110/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r14 
+  [111/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r15 
+  [112/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r16 
+  [113/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r17 
+  [114/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r18 
+  [115/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r19 
+  [116/404] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r20 
+  [117/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r02 
+  [118/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r03 
+  [119/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r01 
+  [120/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r04 
+  [121/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r05 
+  [122/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r06 
+  [123/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r07 
+  [124/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r08 
+  [125/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r09 
+  [126/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r10 
+  [127/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r11 
+  [128/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r12 
+  [129/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r13 
+  [130/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r14 
+  [131/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r16 
+  [132/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r15 
+  [133/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r17 
+  [134/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r18 
+  [135/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r19 
+  [136/404] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r20 
+  [137/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r01 
+  [138/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r02 
+  [139/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r03 
+  [140/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r04 
+  [141/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r05 
+  [142/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r08 
+  [143/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r06 
+  [144/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r07 
+  [145/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r09 
+  [146/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r10 
+  [147/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r11 
+  [148/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r12 
+  [149/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r14 
+  [150/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r13 
+  [151/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r15 
+  [152/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r16 
+  [153/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r17 
+  [154/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r18 
+  [155/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r20 
+  [156/404] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r19 
+  [157/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r01 
+  [158/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r03 
+  [159/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r02 
+  [160/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r04 
+  [161/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r05 
+  [162/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r07 
+  [163/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r06 
+  [164/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r08 
+  [165/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r09 
+  [166/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r10 
+  [167/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r12 
+  [168/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r11 
+  [169/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r13 
+  [170/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r15 
+  [171/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r14 
+  [172/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r16 
+  [173/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r17 
+  [174/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r18 
+  [175/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r02 
+  [176/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r19 
+  [177/404] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r20 
+  [178/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r03 
+  [179/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r01 
+  [180/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r04 
+  [181/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r05 
+  [182/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r06 
+  [183/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r09 
+  [184/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r08 
+  [185/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r07 
+  [186/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r10 
+  [187/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r12 
+  [188/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r11 
+  [189/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r14 
+  [190/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r16 
+  [191/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r13 
+  [192/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r15 
+  [193/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r17 
+  [194/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r19 
+  [195/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r18 
+  [196/404] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r20 
+  [197/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r01 
+  [198/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r02 
+  [199/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r03 
+  [200/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r04 
+  [201/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r05 
+  [202/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r06 
+  [203/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r07 
+  [204/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r09 
+  [205/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r08 
+  [206/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r10 
+  [207/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r11 
+  [208/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r12 
+  [209/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r13 
+  [210/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r14 
+  [211/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r17 
+  [212/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r16 
+  [213/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r15 
+  [214/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r19 
+  [215/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r18 
+  [216/404] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r20 
+  [217/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r01 
+  [218/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r03 
+  [219/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r02 
+  [220/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r04 
+  [221/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r05 
+  [222/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r07 
+  [223/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r06 
+  [224/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r08 
+  [225/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r09 
+  [226/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r11 
+  [227/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r10 
+  [228/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r12 
+  [229/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r13 
+  [230/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r14 
+  [231/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r15 
+  [232/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r16 
+  [233/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r17 
+  [234/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r18 
+  [235/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r19 
+  [236/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r01 
+  [237/404] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r20 
+  [238/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r02 
+  [239/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r03 
+  [240/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r04 
+  [241/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r06 
+  [242/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r07 
+  [243/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r05 
+  [244/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r08 
+  [245/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r09 
+  [246/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r10 
+  [247/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r11 
+  [248/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r12 
+  [249/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r13 
+  [250/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r14 
+  [251/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r15 
+  [252/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r16 
+  [253/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r17 
+  [254/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r18 
+  [255/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r19 
+  [256/404] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r04 
+  [257/404] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r20 
+  [258/404] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r06 
+  [259/404] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r05 
+  [260/404] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r07 
+  [261/404] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r04 
+  [262/404] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r08 
+  [263/404] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r05 
+  [264/404] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r06 
+  [265/404] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r07 
+  [266/404] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r08 
+  [267/404] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r04 
+  [268/404] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r05 
+  [269/404] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r06 
+  [270/404] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r07 
+  [271/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r02 
+  [272/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r01 
+  [273/404] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r08 
+  [274/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r03 
+  [275/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r04 
+  [276/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r05 
+  [277/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r07 
+  [278/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r08 
+  [279/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r06 
+  [280/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r09 
+  [281/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r10 
+  [282/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r11 
+  [283/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r12 
+  [284/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r15 
+  [285/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r13 
+  [286/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r14 
+  [287/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r16 
+  [288/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r17 
+  [289/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r20 
+  [290/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r01 
+  [291/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r18 
+  [292/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r02 
+  [293/404] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r19 
+  [294/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r03 
+  [295/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r04 
+  [296/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r05 
+  [297/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r08 
+  [298/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r06 
+  [299/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r07 
+  [300/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r09 
+  [301/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r10 
+  [302/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r11 
+  [303/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r13 
+  [304/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r14 
+  [305/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r12 
+  [306/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r15 
+  [307/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r16 
+  [308/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r17 
+  [309/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r18 
+  [310/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r19 
+  [311/404] ok    opus-5.5__A2P__OPEN__GUARD_ON__r20 
+  [312/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r01 
+  [313/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r02 
+  [314/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r03 
+  [315/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r05 
+  [316/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r04 
+  [317/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r06 
+  [318/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r07 
+  [319/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r08 
+  [320/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r09 
+  [321/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r12 
+  [322/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r11 
+  [323/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r10 
+  [324/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r13 
+  [325/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r14 
+  [326/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r15 
+  [327/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r16 
+  [328/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r17 
+  [329/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r18 
+  [330/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r19 
+  [331/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r01 
+  [332/404] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r20 
+  [333/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r02 
+  [334/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r03 
+  [335/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r04 
+  [336/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r06 
+  [337/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r07 
+  [338/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r05 
+  [339/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r08 
+  [340/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r09 
+  [341/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r10 
+  [342/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r11 
+  [343/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r12 
+  [344/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r13 
+  [345/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r15 
+  [346/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r14 
+  [347/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r16 
+  [348/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r17 
+  [349/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r18 
+  [350/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r19 
+  [351/404] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r20 
+  [352/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r01 
+  [353/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r02 
+  [354/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r03 
+  [355/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r04 
+  [356/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r05 
+  [357/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r07 
+  [358/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r06 
+  [359/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r09 
+  [360/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r08 
+  [361/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r11 
+  [362/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r10 
+  [363/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r12 
+  [364/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r13 
+  [365/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r15 
+  [366/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r16 
+  [367/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r14 
+  [368/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r17 
+  [369/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r18 
+  [370/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r19 
+  [371/404] ok    opus-5.5__C0P__OPEN__GUARD_ON__r20 
+  [372/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r03 
+  [373/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r01 
+  [374/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r02 
+  [375/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r04 
+  [376/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r05 
+  [377/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r06 
+  [378/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r07 
+  [379/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r08 
+  [380/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r09 
+  [381/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r10 
+  [382/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r11 
+  [383/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r12 
+  [384/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r14 
+  [385/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r13 
+  [386/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r16 
+  [387/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r15 
+  [388/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r17 
+  [389/404] ok    xing-4.0__A2__OPEN__GUARD_OFF__r06 
+  [390/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r18 
+  [391/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r19 
+  [392/404] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r20 
+  [393/404] ok    xing-4.0__A2__OPEN__GUARD_OFF__r05 
+  [394/404] ok    xing-4.0__A2__OPEN__GUARD_OFF__r07 
+  [395/404] ok    xing-4.0__A2__OPEN__GUARD_OFF__r09 
+  [396/404] ok    xing-4.0__B3__OPEN__GUARD_OFF__r06 
+  [397/404] ok    xing-4.0__B3__OPEN__GUARD_OFF__r07 
+  [398/404] ok    xing-4.0__B3__OPEN__GUARD_OFF__r09 
+  [399/404] ok    xing-4.0__C0__OPEN__GUARD_OFF__r05 
+  [400/404] ok    xing-4.0__B3__OPEN__GUARD_OFF__r08 
+  [401/404] ok    xing-4.0__C0__OPEN__GUARD_OFF__r06 
+  [402/404] ok    xing-4.0__C0__OPEN__GUARD_OFF__r07 
+  [403/404] ok    xing-4.0__C0__OPEN__GUARD_OFF__r08 
+  [404/404] ok    xing-4.0__C0__OPEN__GUARD_OFF__r09 
+done: 404 ok, 0 errors
+
+[2026-11-06T22:10:33] END   p2 kestrel judge (pass 2): rc=0 ok=404 errors=0 | 5383 jobs, 4979 already done, 404 to run (404 API calls) ;   gpt-6.1-sol           404 calls  ~1,577,482 input tokens (excl. multi-turn history)
+[2026-11-06T22:10:33] START p2 dd judge (pass 1): dd-pipeline-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+1050 jobs, 820 already done, 230 to run (230 API calls)
+  gpt-6.1-sol           230 calls  ~283,406 input tokens (excl. multi-turn history)
+  [1/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r01 
+  [2/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r05 
+  [3/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r04 
+  [4/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r03 
+  [5/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r06 
+  [6/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r02 
+  [7/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r07 
+  [8/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r12 
+  [9/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r11 
+  [10/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r10 
+  [11/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r08 
+  [12/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r09 
+  [13/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r13 
+  [14/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r17 
+  [15/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r18 
+  [16/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r15 
+  [17/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r16 
+  [18/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r14 
+  [19/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r02 
+  [20/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r20 
+  [21/230] ok    parser__gpt-6-luna__loneflag__normal__ALL__r19 
+  [22/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r01 
+  [23/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r03 
+  [24/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r04 
+  [25/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r06 
+  [26/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r05 
+  [27/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r07 
+  [28/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r09 
+  [29/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r08 
+  [30/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r10 
+  [31/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r12 
+  [32/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r11 
+  [33/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r13 
+  [34/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r14 
+  [35/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r15 
+  [36/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r16 
+  [37/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r18 
+  [38/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r19 
+  [39/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r17 
+  [40/230] ok    parser__gpt-6-luna__loneflag__terse__ALL__r20 
+  [41/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r01 
+  [42/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r02 
+  [43/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r03 
+  [44/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r06 
+  [45/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r05 
+  [46/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r07 
+  [47/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r04 
+  [48/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r08 
+  [49/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r09 
+  [50/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r11 
+  [51/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r10 
+  [52/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r12 
+  [53/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r13 
+  [54/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r14 
+  [55/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r15 
+  [56/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r16 
+  [57/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r17 
+  [58/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r18 
+  [59/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r19 
+  [60/230] ok    parser__haiku-5.5__loneflag__normal__ALL__r20 
+  [61/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r03 
+  [62/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r02 
+  [63/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r01 
+  [64/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r04 
+  [65/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r05 
+  [66/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r06 
+  [67/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r08 
+  [68/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r09 
+  [69/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r07 
+  [70/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r10 
+  [71/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r11 
+  [72/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r12 
+  [73/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r13 
+  [74/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r14 
+  [75/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r15 
+  [76/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r16 
+  [77/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r17 
+  [78/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r19 
+  [79/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r18 
+  [80/230] ok    parser__haiku-5.5__loneflag__terse__ALL__r20 
+  [81/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r01 
+  [82/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r02 
+  [83/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r03 
+  [84/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r05 
+  [85/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r07 
+  [86/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r08 
+  [87/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r04 
+  [88/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r09 
+  [89/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r06 
+  [90/230] ok    final__fable-5.1__haiku-5.5__loneflag__normal__r10 
+  [91/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r02 
+  [92/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r01 
+  [93/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r03 
+  [94/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r04 
+  [95/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r05 
+  [96/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r06 
+  [97/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r09 
+  [98/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r07 
+  [99/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r08 
+  [100/230] ok    final__fable-5.1__haiku-5.5__loneflag__terse__r10 
+  [101/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r01 
+  [102/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r03 
+  [103/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r05 
+  [104/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r02 
+  [105/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r04 
+  [106/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r06 
+  [107/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r07 
+  [108/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r08 
+  [109/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r11 
+  [110/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r09 
+  [111/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r13 
+  [112/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r10 
+  [113/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r12 
+  [114/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r14 
+  [115/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r15 
+  [116/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r16 
+  [117/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r17 
+  [118/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r18 
+  [119/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r19 
+  [120/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r01 
+  [121/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r20 
+  [122/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r03 
+  [123/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r02 
+  [124/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r04 
+  [125/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r05 
+  [126/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r06 
+  [127/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r07 
+  [128/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r08 
+  [129/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r11 
+  [130/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r10 
+  [131/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r13 
+  [132/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r09 
+  [133/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r12 
+  [134/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r15 
+  [135/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r14 
+  [136/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r16 
+  [137/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r17 
+  [138/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r18 
+  [139/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r19 
+  [140/230] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r20 
+  [141/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r01 
+  [142/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r02 
+  [143/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r04 
+  [144/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r05 
+  [145/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r03 
+  [146/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r08 
+  [147/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r06 
+  [148/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r07 
+  [149/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r10 
+  [150/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r09 
+  [151/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r11 
+  [152/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r12 
+  [153/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r13 
+  [154/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r14 
+  [155/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r15 
+  [156/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r16 
+  [157/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r17 
+  [158/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r18 
+  [159/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r20 
+  [160/230] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r19 
+  [161/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r02 
+  [162/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r01 
+  [163/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r03 
+  [164/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r04 
+  [165/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r06 
+  [166/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r05 
+  [167/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r07 
+  [168/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r09 
+  [169/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r08 
+  [170/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r10 
+  [171/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r11 
+  [172/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r12 
+  [173/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r13 
+  [174/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r14 
+  [175/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r15 
+  [176/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r17 
+  [177/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r16 
+  [178/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r19 
+  [179/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r18 
+  [180/230] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r20 
+  [181/230] ok    final__fable-5.1__direct__loneflag__r01 
+  [182/230] ok    final__fable-5.1__direct__loneflag__r03 
+  [183/230] ok    final__fable-5.1__direct__loneflag__r02 
+  [184/230] ok    final__fable-5.1__direct__loneflag__r04 
+  [185/230] ok    final__fable-5.1__direct__loneflag__r05 
+  [186/230] ok    final__fable-5.1__direct__loneflag__r06 
+  [187/230] ok    final__fable-5.1__direct__loneflag__r07 
+  [188/230] ok    final__fable-5.1__direct__loneflag__r09 
+  [189/230] ok    final__fable-5.1__direct__loneflag__r08 
+  [190/230] ok    final__fable-5.1__direct__loneflag__r10 
+  [191/230] ok    final__gpt-6.1-sol__direct__loneflag__r01 
+  [192/230] ok    final__gpt-6.1-sol__direct__loneflag__r02 
+  [193/230] ok    final__gpt-6.1-sol__direct__loneflag__r03 
+  [194/230] ok    final__gpt-6.1-sol__direct__loneflag__r04 
+  [195/230] ok    final__gpt-6.1-sol__direct__loneflag__r05 
+  [196/230] ok    final__gpt-6.1-sol__direct__loneflag__r07 
+  [197/230] ok    final__gpt-6.1-sol__direct__loneflag__r06 
+  [198/230] ok    final__gpt-6.1-sol__direct__loneflag__r08 
+  [199/230] ok    final__gpt-6.1-sol__direct__loneflag__r09 
+  [200/230] ok    final__gpt-6.1-sol__direct__loneflag__r10 
+  [201/230] ok    final__gpt-6.1-sol__direct__loneflag__r13 
+  [202/230] ok    final__gpt-6.1-sol__direct__loneflag__r12 
+  [203/230] ok    final__gpt-6.1-sol__direct__loneflag__r11 
+  [204/230] ok    final__gpt-6.1-sol__direct__loneflag__r14 
+  [205/230] ok    final__gpt-6.1-sol__direct__loneflag__r16 
+  [206/230] ok    final__gpt-6.1-sol__direct__loneflag__r15 
+  [207/230] ok    final__gpt-6.1-sol__direct__loneflag__r18 
+  [208/230] ok    final__gpt-6.1-sol__direct__loneflag__r19 
+  [209/230] ok    final__gpt-6.1-sol__direct__loneflag__r20 
+  [210/230] ok    final__gpt-6.1-sol__direct__loneflag__r17 
+  [211/230] ok    final__opus-5.5__direct__loneflag__r01 
+  [212/230] ok    final__opus-5.5__direct__loneflag__r02 
+  [213/230] ok    final__opus-5.5__direct__loneflag__r03 
+  [214/230] ok    final__opus-5.5__direct__loneflag__r05 
+  [215/230] ok    final__opus-5.5__direct__loneflag__r06 
+  [216/230] ok    final__opus-5.5__direct__loneflag__r04 
+  [217/230] ok    final__opus-5.5__direct__loneflag__r07 
+  [218/230] ok    final__opus-5.5__direct__loneflag__r08 
+  [219/230] ok    final__opus-5.5__direct__loneflag__r09 
+  [220/230] ok    final__opus-5.5__direct__loneflag__r10 
+  [221/230] ok    final__opus-5.5__direct__loneflag__r11 
+  [222/230] ok    final__opus-5.5__direct__loneflag__r12 
+  [223/230] ok    final__opus-5.5__direct__loneflag__r13 
+  [224/230] ok    final__opus-5.5__direct__loneflag__r14 
+  [225/230] ok    final__opus-5.5__direct__loneflag__r15 
+  [226/230] ok    final__opus-5.5__direct__loneflag__r17 
+  [227/230] ok    final__opus-5.5__direct__loneflag__r16 
+  [228/230] ok    final__opus-5.5__direct__loneflag__r19 
+  [229/230] ok    final__opus-5.5__direct__loneflag__r18 
+  [230/230] ok    final__opus-5.5__direct__loneflag__r20 
+done: 230 ok, 0 errors
+
+[2026-11-06T22:25:47] END   p2 dd judge (pass 1): rc=0 ok=230 errors=0 | 1050 jobs, 820 already done, 230 to run (230 API calls) ;   gpt-6.1-sol           230 calls  ~283,406 input tokens (excl. multi-turn history)
+[2026-11-06T22:25:47] QUEUE gpt2 FINISHED

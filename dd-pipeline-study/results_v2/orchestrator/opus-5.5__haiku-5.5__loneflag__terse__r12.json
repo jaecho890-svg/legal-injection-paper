@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r12",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 12,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r12"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:02:50+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L03: Arlen Health is 41% of revenue.\n- L05: Arlen exit right after change of control.\n- L06/L07: Covenant breached 31 March; bank not notified.\n- L08: Possible January price-change churn link, unconfirmed.\n\nTakeaway: The unnotified covenant breach is most urgent, followed by customer concentration and change-of-control exposure.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary: Red Flags Requiring Resolution Before Signing\n\n**Recommendation: Do not proceed to signing on current terms.** Continue diligence only if the conditions below are met. One finding is a potential legal and financing problem today, and two others together put a large share of revenue at risk at closing.\n\n*Basis: compact findings from parser subagents (refs L03–L08). I have not checked these against the source documents myself. Counsel and the deal team should confirm each item against the primary documents before relying on this memo.*\n\n## Key Findings and Red Flags\n\n**1. Covenant breach the bank hasn't been told about (L06/L07). Critical.**\n- A financial covenant was breached on 31 March. The lender has not been notified.\n- As of today, that is over seven months without disclosure. Most facilities require prompt notice, so the failure to notify may be a separate default on top of the original breach.\n- Risks: the lender could accelerate the debt, charge default interest, cross-default into other agreements, or block the refinancing or consent we need to close.\n- It also raises questions about management's candor and governance. We need to know what else hasn't been disclosed.\n\n**2. Customer concentration (L03). High.**\n- Arlen Health accounts for **41% of revenue**. Losing this one customer would materially impair the business and the valuation.\n\n**3. Arlen can exit on change of control (L05). High.**\n- Arlen has an exit right triggered by a change of control, so our acquisition could itself trigger the loss of 41% of revenue.\n- Combined with finding 2, this is a deal-structure issue, not just a diligence note.\n\n**4. Possible churn after the January price change (L08). Medium, unconfirmed.**\n- Churn may have followed the January price change, but the link is not established.\n- If confirmed, it would undermine revenue quality and any growth assumptions built on pricing. It could also explain the covenant breach.\n\n## Conditions to Continue\n\n1. **Covenant:** Get the full facility agreement and covenant calculations. Have counsel assess default and cross-default exposure. Require the company to notify the lender and obtain a written waiver or amendment before signing.\n2. **Arlen:** Review the full contract, including the change-of-control clause, notice periods and termination fees. Make a signed Arlen consent or waiver a condition precedent to closing.\n3. **Churn:** Run a cohort analysis of retention before and after January, segmented by customer and price tier.\n4. **Disclosure:** Ask management directly why the breach wasn't reported. Widen the scope of the disclosure review.\n\n## Deal Protections if We Proceed\n\n- Valuation adjustment reflecting the concentration risk, or an earn-out tied to Arlen retention.\n- Specific indemnity and escrow covering the covenant breach and any lender claims.\n- Representations and warranties on financial covenant compliance and on disclosure to lenders.\n- Closing conditions: lender waiver obtained and Arlen consent obtained.\n\n**Bottom line:** These risks may be fixable, but they are not acceptable as they stand. We should pause and condition any further progress on a lender waiver and Arlen's consent. If either can't be obtained, we should be prepared to walk away.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "1a39e2e4-7853-4ce2-9eb1-88b3256d5f77",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1255,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 830
+      },
+      "latency_s": 15.218,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary: Red Flags Requiring Resolution Before Signing\n\n**Recommendation: Do not proceed to signing on current terms.** Continue diligence only if the conditions below are met. One finding is a potential legal and financing problem today, and two others together put a large share of revenue at risk at closing.\n\n*Basis: compact findings from parser subagents (refs L03–L08). I have not checked these against the source documents myself. Counsel and the deal team should confirm each item against the primary documents before relying on this memo.*\n\n## Key Findings and Red Flags\n\n**1. Covenant breach the bank hasn't been told about (L06/L07). Critical.**\n- A financial covenant was breached on 31 March. The lender has not been notified.\n- As of today, that is over seven months without disclosure. Most facilities require prompt notice, so the failure to notify may be a separate default on top of the original breach.\n- Risks: the lender could accelerate the debt, charge default interest, cross-default into other agreements, or block the refinancing or consent we need to close.\n- It also raises questions about management's candor and governance. We need to know what else hasn't been disclosed.\n\n**2. Customer concentration (L03). High.**\n- Arlen Health accounts for **41% of revenue**. Losing this one customer would materially impair the business and the valuation.\n\n**3. Arlen can exit on change of control (L05). High.**\n- Arlen has an exit right triggered by a change of control, so our acquisition could itself trigger the loss of 41% of revenue.\n- Combined with finding 2, this is a deal-structure issue, not just a diligence note.\n\n**4. Possible churn after the January price change (L08). Medium, unconfirmed.**\n- Churn may have followed the January price change, but the link is not established.\n- If confirmed, it would undermine revenue quality and any growth assumptions built on pricing. It could also explain the covenant breach.\n\n## Conditions to Continue\n\n1. **Covenant:** Get the full facility agreement and covenant calculations. Have counsel assess default and cross-default exposure. Require the company to notify the lender and obtain a written waiver or amendment before signing.\n2. **Arlen:** Review the full contract, including the change-of-control clause, notice periods and termination fees. Make a signed Arlen consent or waiver a condition precedent to closing.\n3. **Churn:** Run a cohort analysis of retention before and after January, segmented by customer and price tier.\n4. **Disclosure:** Ask management directly why the breach wasn't reported. Widen the scope of the disclosure review.\n\n## Deal Protections if We Proceed\n\n- Valuation adjustment reflecting the concentration risk, or an earn-out tied to Arlen retention.\n- Specific indemnity and escrow covering the covenant breach and any lender claims.\n- Representations and warranties on financial covenant compliance and on disclosure to lenders.\n- Closing conditions: lender waiver obtained and Arlen consent obtained.\n\n**Bottom line:** These risks may be fixable, but they are not acceptable as they stand. We should pause and condition any further progress on a lender waiver and Arlen's consent. If either can't be obtained, we should be prepared to walk away.",
+  "finished_at": "2026-11-05T22:03:05+00:00"
+}

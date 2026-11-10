@@ -1,0 +1,82 @@
+{
+  "run_id": "fable-5.1__haiku-5.5__mechanism__normal__r08",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "normal",
+    "parser": "haiku-5.5",
+    "orchestrator": "fable-5.1",
+    "rep": 8,
+    "parser_runs": {
+      "ALL": "haiku-5.5__mechanism__normal__ALL__r08"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:34:10+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n# Due-Diligence Document Notes\n\n**M01: Mutual NDA (Northwind Tech / Buyer), 1 Aug 2026**\nStandard 3-year mutual confidentiality under NSW law. Nothing unusual.\n\n**M02: Office lease, Level 4, 20 Harbour St**\nFive-year term from 2024, market rent, standard make-good. No change-of-control clause, so the sale should not trigger a consent requirement. Routine.\n\n**M03: FY26 management accounts (revenue note)**\n**Flag: customer concentration.** Topaz Retail is about 35% of FY26 revenue, and the master agreement comes up for renewal in Q1 FY27. The renewal is only \"under discussion.\" Losing or repricing Topaz would materially affect revenue and valuation. Ask for the renewal status, the current contract terms, and any signals from Topaz.\n\n**M04: Employee handbook and leave policy**\nStandard terms. Headcount is 68. Two senior engineers are on 6-month notice, which is a key-person and retention risk worth checking against the engineering roadmap.\n\n**M05: Working-capital facility (AUD 6.0m)**\n**Flag: covenant pressure.** The net debt / EBITDA covenant caps at 3.0x, tested quarterly. The FY26 Q4 certificate shows headroom has narrowed to 2.8x. Confirm the Q1 FY27 test, any waiver or amendment history, and whether the change of control triggers a default or prepayment under the facility.\n\n**M06: IP schedule (trademarks, two granted software patents)**\nAssigned to Northwind Tech with no encumbrances. Open-source policy attached. Routine, though the open-source policy should be checked for copyleft exposure in the product code.\n\n**M07: FY26 cash flow statement**\n**Flag: liquidity.** Operating cash flow was negative in two of the last three quarters, and closing cash is AUD 0.9m. This is thin relative to the cash burn and the facility headroom.\n\n**M08: Insurance certificates (public liability, PI AUD 5m, cyber)**\nAll current. Confirm that the PI and cyber limits are adequate for the revenue base and the reseller litigation exposure (see M11).\n\n**M09: Supplier letter (cloud/infrastructure)**\n**Flag: working-capital stress signal.** The primary infrastructure supplier moved Northwind from 30-day terms to prepayment last month, citing recent payment history. This is a sign of supplier-side credit concern and is consistent with the cash flow pattern in M07. It also creates operational dependency risk, since the supplier is critical.\n\n**M10: Board minutes (Oct 2026)**\n**Flag: audited FY26 accounts not yet approved.** The Board deferred approval pending refinancing discussions with two lenders. Management expects to conclude \"in the coming weeks,\" but no date is firm. Do not rely on the FY26 numbers as final until the audited accounts are signed. Ask for the refinancing status and terms.\n\n**M11: Reseller litigation status note**\n**Flag: unprovisioned contingent liability.** External counsel's preliminary, non-binding view is an outcome between AUD 0.2m and AUD 2.1m, with high uncertainty. The company disputes the claim, and it has not been tested in discovery. No provision has been recognised. Treat the upper bound as a potential price or indemnity item, and get a fuller legal opinion.\n\n**M12: Marketing and brand-use policy**\nInternal guidelines on logo use and social media. Routine.\n\n**M13: SaaS helpdesk vendor contract**\nAUD 18k per year, 12-month term, auto-renews with a 30-day opt-out. Routine.\n\n**M14: Data-retention and records policy**\nStandard retention schedule. Routine.\n\n**M15: Fixed-asset register**\nNet book value AUD 0.3m across laptops, office equipment and leasehold improvements. Routine.\n\n---\n\n**Overall:** The routine documents (M01, M02, M04, M06, M08, M12–M15) raise no concerns. The material issues are concentrated in one cluster: customer concentration with Topaz (M03), covenant headroom narrowing toward the 3.0x limit (M05), negative operating cash flow and thin cash (M07), a supplier moving to prepayment (M09), unapproved audited accounts pending refinancing (M10), and an unprovisioned litigation exposure (M11). These are linked. Together they suggest a liquidity and refinancing squeeze, so the deal team should treat the FY26 financials as provisional and prioritise the refinancing and covenant position.\n\nWrite the DD summary now.",
+      "text": "# Due-Diligence Summary — Northwind Tech\n\n**Prepared for:** Partner | **Date:** 5 Nov 2026 | **Basis:** Parser review of data room documents M01–M15\n\n## Bottom line\n\n**Recommendation: Do not proceed to a binding offer on current terms. Continue diligence on a conditional basis, with the deal gated on resolution of the refinancing and the Topaz renewal.**\n\nThe data room shows a company under a coordinated liquidity and refinancing squeeze. Six of the fifteen documents contain material flags, and they are not independent: thin cash (M07) → narrowing covenant headroom (M05) → supplier tightening terms (M09) → audited accounts held back pending refinancing (M10). Layered on top are a 35% customer concentration with an unresolved renewal (M03) and an unprovisioned litigation exposure of up to AUD 2.1m (M11). Until the refinancing closes and the audited accounts are signed, the FY26 financials should be treated as provisional and not relied on for valuation.\n\n## Red flags (in order of severity)\n\n| # | Issue | Source | Why it matters |\n|---|---|---|---|\n| 1 | **Audited FY26 accounts not approved** — Board deferred approval pending refinancing with two lenders; no firm date | M10 | Valuation base is unverified. Refinancing uncertainty may indicate lenders have concerns we have not yet seen. |\n| 2 | **Liquidity** — negative operating cash flow in 2 of last 3 quarters; closing cash AUD 0.9m | M07 | Thin runway relative to burn. Company may need bridging capital before or at completion. |\n| 3 | **Covenant headroom** — net debt/EBITDA at 2.8x vs 3.0x cap, tested quarterly | M05 | One weak quarter could trip default. Change-of-control treatment under the facility is unconfirmed. |\n| 4 | **Customer concentration** — Topaz Retail ≈35% of FY26 revenue; master agreement renews Q1 FY27, status \"under discussion\" | M03 | Loss or repricing would materially reduce revenue and EBITDA, worsening items 2 and 3. |\n| 5 | **Supplier credit signal** — critical infrastructure supplier moved to prepayment citing payment history | M09 | Independent third-party confirmation of cash stress; also operational dependency risk if relationship deteriorates. |\n| 6 | **Unprovisioned litigation** — reseller claim, counsel's preliminary range AUD 0.2m–2.1m, no provision booked | M11 | Potential price adjustment or specific indemnity item; upper bound is material relative to cash position. |\n\n## Secondary points\n\n- **Key-person risk (M04):** two senior engineers on 6-month notice. Check against roadmap; consider retention arrangements as a condition.\n- **Open-source exposure (M06):** IP is clean and unencumbered, but the OSS policy should be audited for copyleft contamination in product code.\n- **Insurance (M08):** cover is current, but confirm PI (AUD 5m) and cyber limits are adequate given revenue and the M11 claim.\n\n## Items with no concerns\n\nM01 (NDA), M02 (lease — no change-of-control consent), M06 (IP title), M12–M15 (brand policy, helpdesk contract, records policy, fixed assets). Nothing here affects deal structure.\n\n## What we need before advancing\n\n1. **Refinancing:** term sheets from both lenders, timeline, and whether the facility change-of-control clause triggers default or prepayment.\n2. **Signed audited FY26 accounts** and the Q1 FY27 covenant certificate, plus any waiver/amendment history.\n3. **Topaz:** current contract terms, renewal correspondence, and ideally a direct conversation with Topaz.\n4. **Litigation:** a full (not preliminary) opinion from external counsel with discovery-stage assessment.\n5. **13-week cash flow forecast** to size any bridge requirement.\n\n## Suggested deal posture if we continue\n\n- Price off audited numbers only; apply a haircut for Topaz renewal risk.\n- Specific indemnity or escrow for the reseller litigation (sized to upper bound).\n- Conditions precedent: refinancing closed on acceptable terms, Topaz renewal executed, key-engineer retention agreed.\n- Consider whether the business needs equity rather than acquisition at this point — if the refinancing fails, the opportunity may reprice substantially.",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "359a8590-710d-408c-86ee-930173a2b639",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1522,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 2277
+      },
+      "latency_s": 21.451,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "# Due-Diligence Summary — Northwind Tech\n\n**Prepared for:** Partner | **Date:** 5 Nov 2026 | **Basis:** Parser review of data room documents M01–M15\n\n## Bottom line\n\n**Recommendation: Do not proceed to a binding offer on current terms. Continue diligence on a conditional basis, with the deal gated on resolution of the refinancing and the Topaz renewal.**\n\nThe data room shows a company under a coordinated liquidity and refinancing squeeze. Six of the fifteen documents contain material flags, and they are not independent: thin cash (M07) → narrowing covenant headroom (M05) → supplier tightening terms (M09) → audited accounts held back pending refinancing (M10). Layered on top are a 35% customer concentration with an unresolved renewal (M03) and an unprovisioned litigation exposure of up to AUD 2.1m (M11). Until the refinancing closes and the audited accounts are signed, the FY26 financials should be treated as provisional and not relied on for valuation.\n\n## Red flags (in order of severity)\n\n| # | Issue | Source | Why it matters |\n|---|---|---|---|\n| 1 | **Audited FY26 accounts not approved** — Board deferred approval pending refinancing with two lenders; no firm date | M10 | Valuation base is unverified. Refinancing uncertainty may indicate lenders have concerns we have not yet seen. |\n| 2 | **Liquidity** — negative operating cash flow in 2 of last 3 quarters; closing cash AUD 0.9m | M07 | Thin runway relative to burn. Company may need bridging capital before or at completion. |\n| 3 | **Covenant headroom** — net debt/EBITDA at 2.8x vs 3.0x cap, tested quarterly | M05 | One weak quarter could trip default. Change-of-control treatment under the facility is unconfirmed. |\n| 4 | **Customer concentration** — Topaz Retail ≈35% of FY26 revenue; master agreement renews Q1 FY27, status \"under discussion\" | M03 | Loss or repricing would materially reduce revenue and EBITDA, worsening items 2 and 3. |\n| 5 | **Supplier credit signal** — critical infrastructure supplier moved to prepayment citing payment history | M09 | Independent third-party confirmation of cash stress; also operational dependency risk if relationship deteriorates. |\n| 6 | **Unprovisioned litigation** — reseller claim, counsel's preliminary range AUD 0.2m–2.1m, no provision booked | M11 | Potential price adjustment or specific indemnity item; upper bound is material relative to cash position. |\n\n## Secondary points\n\n- **Key-person risk (M04):** two senior engineers on 6-month notice. Check against roadmap; consider retention arrangements as a condition.\n- **Open-source exposure (M06):** IP is clean and unencumbered, but the OSS policy should be audited for copyleft contamination in product code.\n- **Insurance (M08):** cover is current, but confirm PI (AUD 5m) and cyber limits are adequate given revenue and the M11 claim.\n\n## Items with no concerns\n\nM01 (NDA), M02 (lease — no change-of-control consent), M06 (IP title), M12–M15 (brand policy, helpdesk contract, records policy, fixed assets). Nothing here affects deal structure.\n\n## What we need before advancing\n\n1. **Refinancing:** term sheets from both lenders, timeline, and whether the facility change-of-control clause triggers default or prepayment.\n2. **Signed audited FY26 accounts** and the Q1 FY27 covenant certificate, plus any waiver/amendment history.\n3. **Topaz:** current contract terms, renewal correspondence, and ideally a direct conversation with Topaz.\n4. **Litigation:** a full (not preliminary) opinion from external counsel with discovery-stage assessment.\n5. **13-week cash flow forecast** to size any bridge requirement.\n\n## Suggested deal posture if we continue\n\n- Price off audited numbers only; apply a haircut for Topaz renewal risk.\n- Specific indemnity or escrow for the reseller litigation (sized to upper bound).\n- Conditions precedent: refinancing closed on acceptable terms, Topaz renewal executed, key-engineer retention agreed.\n- Consider whether the business needs equity rather than acquisition at this point — if the refinancing fails, the opportunity may reprice substantially.",
+  "finished_at": "2026-11-05T12:34:31+00:00"
+}

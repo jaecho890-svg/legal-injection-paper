@@ -1,0 +1,12 @@
+# dd-pipeline-study/harness/experiment.py agreement --a gpt-6.1-sol --b opus-5.5
+# started 2026-11-06T04:49:09, ended 2026-11-06T04:49:09, rc=0
+## stdout
+# Judge agreement: gpt-6.1-sol vs opus-5.5
+
+Items coded by both: 0
+
+| field | n | agreement | Cohen's kappa |
+|---|---|---|---|
+
+## stderr
+

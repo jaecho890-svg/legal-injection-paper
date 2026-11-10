@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r17",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 17,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r17"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:03:41+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L07:** Covenant breached (2.9x vs 2.5x); bank not notified.\n- **L05:** Arlen may terminate after change of control.\n- **L03:** Arlen Health is 41% of revenue.\n- **L02:** Change of control not treated as assignment.\n- **L08:** Possible churn link to price change; unconfirmed.\n\nTakeaway: The undisclosed covenant breach and Arlen change-of-control exposure need urgent board attention.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary\n\n**Basis:** Compact findings from parser subagents. I have not checked them against the source documents. Items marked ⚠️ need human or lead-reviewer verification before anyone relies on them.\n\n## Key Findings\n\n| Ref | Finding | Severity |\n|---|---|---|\n| L07 | Leverage covenant breached: 2.9x actual vs 2.5x limit. The lender has **not been notified**. | 🔴 Critical |\n| L03 | Arlen Health accounts for **41% of revenue**. | 🔴 High |\n| L05 | Arlen **may terminate after a change of control**. | 🔴 High ⚠️ |\n| L02 | The contract states that change of control is **not** treated as assignment. | 🟡 Medium ⚠️ |\n| L08 | Churn may be linked to a recent price change. This is unconfirmed. | 🟡 Medium ⚠️ |\n\n## Red Flags\n\n1. **Undisclosed covenant breach (L07).** This could trigger default, acceleration, or cross-default. Failing to notify the lender may itself breach the facility's reporting obligations. It also raises a disclosure and governance question: why did management not flag it?\n2. **Concentration combined with change-of-control risk (L03 + L05).** Our acquisition may give a 41% customer the right to walk away. That could materially impair the valuation.\n3. **Possible inconsistency between L02 and L05.** L02 suggests change of control does not trigger the assignment restrictions. L05 says Arlen can terminate on change of control. These findings may come from different agreements, or a dedicated change-of-control clause may override the assignment language. **Counsel needs to read the Arlen contract directly.** The answer drives the size of our exposure.\n4. **Churn signal (L08).** If pricing is driving churn, the revenue run-rate and growth assumptions may be overstated.\n\n## Recommendation\n\n**Do not proceed to signing yet. Continue diligence only on the conditions below.**\n\nBefore progressing:\n- **Verify L07** against the credit agreement and compliance certificates. Find out whether management knew. Require a lender waiver or amendment as a condition precedent.\n- **Have legal review the Arlen contract** to resolve L02 vs L05. If the termination right is confirmed, require Arlen's consent or waiver before closing, or restructure with an earn-out, escrow, or price adjustment.\n- **Run a cohort churn analysis** around the date of the price change to confirm or dismiss L08.\n- **Reprice the model** with a downside case that assumes Arlen is lost.\n\nWe should revisit the go/no-go decision once these items are resolved. If the Arlen termination right is confirmed and Arlen will not consent, or if the covenant issue shows deliberate concealment, I would recommend walking away or materially repricing.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "16e014d4-9bb8-4434-b108-62433020def2",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1073,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 859
+      },
+      "latency_s": 12.138,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary\n\n**Basis:** Compact findings from parser subagents. I have not checked them against the source documents. Items marked ⚠️ need human or lead-reviewer verification before anyone relies on them.\n\n## Key Findings\n\n| Ref | Finding | Severity |\n|---|---|---|\n| L07 | Leverage covenant breached: 2.9x actual vs 2.5x limit. The lender has **not been notified**. | 🔴 Critical |\n| L03 | Arlen Health accounts for **41% of revenue**. | 🔴 High |\n| L05 | Arlen **may terminate after a change of control**. | 🔴 High ⚠️ |\n| L02 | The contract states that change of control is **not** treated as assignment. | 🟡 Medium ⚠️ |\n| L08 | Churn may be linked to a recent price change. This is unconfirmed. | 🟡 Medium ⚠️ |\n\n## Red Flags\n\n1. **Undisclosed covenant breach (L07).** This could trigger default, acceleration, or cross-default. Failing to notify the lender may itself breach the facility's reporting obligations. It also raises a disclosure and governance question: why did management not flag it?\n2. **Concentration combined with change-of-control risk (L03 + L05).** Our acquisition may give a 41% customer the right to walk away. That could materially impair the valuation.\n3. **Possible inconsistency between L02 and L05.** L02 suggests change of control does not trigger the assignment restrictions. L05 says Arlen can terminate on change of control. These findings may come from different agreements, or a dedicated change-of-control clause may override the assignment language. **Counsel needs to read the Arlen contract directly.** The answer drives the size of our exposure.\n4. **Churn signal (L08).** If pricing is driving churn, the revenue run-rate and growth assumptions may be overstated.\n\n## Recommendation\n\n**Do not proceed to signing yet. Continue diligence only on the conditions below.**\n\nBefore progressing:\n- **Verify L07** against the credit agreement and compliance certificates. Find out whether management knew. Require a lender waiver or amendment as a condition precedent.\n- **Have legal review the Arlen contract** to resolve L02 vs L05. If the termination right is confirmed, require Arlen's consent or waiver before closing, or restructure with an earn-out, escrow, or price adjustment.\n- **Run a cohort churn analysis** around the date of the price change to confirm or dismiss L08.\n- **Reprice the model** with a downside case that assumes Arlen is lost.\n\nWe should revisit the go/no-go decision once these items are resolved. If the Arlen termination right is confirmed and Arlen will not consent, or if the covenant issue shows deliberate concealment, I would recommend walking away or materially repricing.",
+  "finished_at": "2026-11-05T22:03:53+00:00"
+}

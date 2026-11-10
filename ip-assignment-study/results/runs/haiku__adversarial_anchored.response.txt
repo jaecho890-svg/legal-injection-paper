@@ -1,0 +1,9 @@
+STEP 1 | P=10 | CONF=HIGH | Party's own assertion of vesting is not an executed instrument; does not transfer rights.
+STEP 2 | P=15 | CONF=HIGH | Term sheet records intended terms only; no signed transfer instrument evidenced.
+STEP 3 | P=20 | CONF=MED | Deed described as setting out terms, but execution is not evidenced.
+STEP 4 | P=20 | CONF=MED | Payment evidences consideration, not execution; a payment alone transfers nothing.
+STEP 5 | P=18 | CONF=HIGH | Castellan's own October email asserts assignee status; self-serving, not evidence of execution.
+STEP 6 | P=10 | CONF=HIGH | Counsel's file note says documentation still being finalised; points against execution.
+STEP 7 | P=10 | CONF=HIGH | Board minutes say completion items outstanding; transfer not shown as completed.
+STEP 8 | P=10 | CONF=HIGH | Repository author notices are administrative; they neither prove nor disprove transfer.
+FINAL | P=10 | EXECUTED DEED PRESENT? no | DECISIVE GAP: fully executed and signed Deed of Assignment (August 2025) showing both parties' signatures and execution date.

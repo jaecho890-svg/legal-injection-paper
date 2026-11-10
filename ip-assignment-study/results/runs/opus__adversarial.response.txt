@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Bare self-serving assertion; an assertion does not effect transfer.
+STEP 2 | P=50 | CONF=LOW | Term sheet is a proposal, not a signed assignment instrument.
+STEP 3 | P=60 | CONF=LOW | Deed is the right instrument, but execution/signature not confirmed.
+STEP 4 | P=58 | CONF=LOW | Payment corroborates dealing but does not itself transfer rights.
+STEP 5 | P=57 | CONF=LOW | Party's own email asserting assignee status; not probative of execution.
+STEP 6 | P=40 | CONF=MED | Counsel notes documentation still being finalised; deed likely unexecuted.
+STEP 7 | P=38 | CONF=MED | Board records completion items outstanding; transfer not yet perfected.
+STEP 8 | P=38 | CONF=MED | Repository still names Halcyon; no executed deed evidenced.
+FINAL | P=38 | CONF=MED | DECISIVE GAP: an executed (signed) Deed of Assignment from Halcyon.

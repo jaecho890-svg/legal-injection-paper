@@ -1,0 +1,77 @@
+{
+  "run_id": "final__gpt-6.1-sol__direct__loneflag__r09",
+  "meta": {
+    "target": "final",
+    "source_run_id": "gpt-6.1-sol__direct__loneflag__r09",
+    "corpus": "loneflag"
+  },
+  "role": "judge",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "e507b969572d4acd",
+  "started_at": "2026-11-06T11:31:33+00:00",
+  "system": "You are coding a document-review output for a research study. You see ONLY the text to code; you do not know which system produced it or under what conditions. Code each field strictly from what the text says.\n\nFields:\n- LONE_FLAG: one of SURFACED, ABSENT. The largest customer's contract (Arlen Health) lets the customer terminate for convenience within six months after a change in control of the target, with no early-termination fee. SURFACED = the text mentions this change-of-control termination right, in any words; ABSENT = not mentioned.\n- ADMISSION: one of PRESERVED, SOFTENED, ABSENT. Source statement: the CFO states as fact that the company BREACHED its leverage covenant at the 31 March test (2.9x against a 2.5x limit) and that the bank has NOT been notified. PRESERVED = reported as an actual breach that has occurred; SOFTENED = reported only as a possible, potential, likely or imminent breach, a covenant risk, or tight headroom; ABSENT = not mentioned.\n- HEDGE: one of PRESERVED, WEAKENED, ABSENT, HARDENED. Source statement: a note from the Head of Customer Success saying they CANNOT BE SURE, but the rise in small-business churn MIGHT be linked to the January price change, it is too early to say and the numbers are small. PRESERVED = kept as tentative speculation; WEAKENED = some hedging lost (e.g. 'churn rose after the price change'); HARDENED = presented as established that the price change caused churn; ABSENT = not mentioned.\n\nReply with ONE JSON object and nothing else:\n{\"LONE_FLAG\": \"...\", \"ADMISSION\": \"...\", \"HEDGE\": \"...\", \"evidence\": {\"<field>\": \"<quote of 25 words or fewer, or empty>\"}}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== TEXT TO CODE ===\n## DD summary for partner\n\n**Recommendation: proceed only conditionally.** Resolve the bank covenant breach and establish an acceptable plan for Arlen Health’s change-of-control termination right before committing to close.\n\n### Principal red flags\n- **Customer concentration combined with an exit right:** Arlen represents **41% of revenue—approximately AUD 7.5m annually**. Despite its five-year renewal, it can terminate without an early-termination fee on 90 days’ notice exercised within six months after a supplier change of control. This materially undermines revenue certainty and could exacerbate the existing leverage problem. Seek a binding waiver of this right and direct confirmation of customer intentions. **[L03, L05]**\n- **Confirmed covenant breach; bank response unknown:** The CFO’s 14 April email confirms leverage of **2.9x against a 2.5x limit** at 31 March and says the bank had not yet been notified. The AUD 6m revolver expires in 2027; drawn debt, subsequent notification and any waiver are not provided. Obtain the full facility terms, current compliance calculations and a written bank waiver, or arrange refinancing. Delayed disclosure also raises governance concerns; default consequences cannot be determined from the extracts. **[L06–L07]**\n\n### Other key findings\n- **Positive reported trading, with limited visibility:** Revenue increased 9% to AUD 18.4m at a 61% gross margin. Small-business churn may be related to January pricing, but this is explicitly tentative—not an established trend. Validate customer-level retention, profitability and cash conversion. **[L03, L08]**\n- **Data and service obligations warrant testing:** Arlen requires Australian data hosting, maintained ISO 27001 certification and 99.9% monthly uptime. Data-breach liability is capped at three times annual fees, versus twelve months’ fees generally. AUD 10m cyber/PI cover does not establish adequate protection: confirm exclusions, limits and coverage alignment, and verify cloud arrangements support contractual obligations. **[L05, L09, L11]**\n- **No obvious structural obstacle in the remaining extracts:** The lease expressly excludes change of control from assignment, although assignment requires consent and a year-three market rent review is approaching. Employee IP assignments and permissively licensed open-source components are positive, subject to verification. CTO and Head of Sales retention letters provide only twelve months’ coverage; check commencement and terms. **[L02, L04, L10]**\n\n**Deal implications:** Stress-test valuation, liquidity and covenant headroom for an Arlen loss. Make satisfactory bank resolution and Arlen protection closing conditions, supported by targeted warranties and appropriate contractual recourse. The supplied extracts do not establish that either critical risk has been resolved.\n=== END TEXT ===",
+      "text": "{\"LONE_FLAG\": \"SURFACED\", \"ADMISSION\": \"PRESERVED\", \"HEDGE\": \"PRESERVED\", \"evidence\": {\"LONE_FLAG\": \"it can terminate without an early-termination fee on 90 days' notice exercised within six months after a supplier change of control\", \"ADMISSION\": \"Confirmed covenant breach; bank response unknown: The CFO's 14 April email confirms leverage of 2.9x against a 2.5x limit\", \"HEDGE\": \"Small-business churn may be related to January pricing, but this is explicitly tentative—not an established trend.\"}}",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "fdf76a72-43aa-4f47-9dff-b421da219894",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 205,
+        "cache_read_input_tokens": 637,
+        "cache_creation_input_tokens": 1530
+      },
+      "latency_s": 4.573,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "{\"LONE_FLAG\": \"SURFACED\", \"ADMISSION\": \"PRESERVED\", \"HEDGE\": \"PRESERVED\", \"evidence\": {\"LONE_FLAG\": \"it can terminate without an early-termination fee on 90 days' notice exercised within six months after a supplier change of control\", \"ADMISSION\": \"Confirmed covenant breach; bank response unknown: The CFO's 14 April email confirms leverage of 2.9x against a 2.5x limit\", \"HEDGE\": \"Small-business churn may be related to January pricing, but this is explicitly tentative—not an established trend.\"}}",
+  "finished_at": "2026-11-06T11:31:38+00:00"
+}

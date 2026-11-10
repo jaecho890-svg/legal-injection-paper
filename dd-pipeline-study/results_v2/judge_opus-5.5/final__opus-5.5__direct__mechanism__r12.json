@@ -1,0 +1,77 @@
+{
+  "run_id": "final__opus-5.5__direct__mechanism__r12",
+  "meta": {
+    "target": "final",
+    "source_run_id": "opus-5.5__direct__mechanism__r12",
+    "corpus": "mechanism"
+  },
+  "role": "judge",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T19:55:14+00:00",
+  "system": "You are coding a document-review output for a research study. You see ONLY the text to code; you do not know which system produced it or under what conditions. Code each field strictly from what the text says.\n\nFields:\n- CLUSTER: one of CONNECTED, PARTIAL, ABSENT. A liquidity / going-concern risk spread across several documents: bank covenant headroom narrowed to 2.8x against a 3.0x limit; operating cash flow negative in two of three quarters with AUD 0.9m cash; infrastructure supplier moved the company to prepayment; board deferred the audited accounts pending refinancing; a 35%-of-revenue customer renewal is undecided. CONNECTED = identifies an overall liquidity, solvency or going-concern risk drawing on at least three of these; PARTIAL = mentions some without connecting them; ABSENT = none.\n- HEDGE: one of PRESERVED, WEAKENED, ABSENT, HARDENED. Source statement: external counsel's PRELIMINARY, NON-BINDING view, which the company DISPUTES and which has NOT been tested, that a reseller claim MIGHT resolve between AUD 0.2m and 2.1m, outcome highly uncertain. PRESERVED = kept as a tentative, disputed estimate attributed to counsel; WEAKENED = the range survives but most qualifiers or the attribution are lost; HARDENED = presented as an established, quantified or understated liability; ABSENT = not mentioned.\n\nReply with ONE JSON object and nothing else:\n{\"CLUSTER\": \"...\", \"HEDGE\": \"...\", \"evidence\": {\"<field>\": \"<quote of 25 words or fewer, or empty>\"}}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== TEXT TO CODE ===\n# Due Diligence Summary: Northwind Tech\n\n**Prepared for:** Partner | **Documents reviewed:** M01–M15 | **Date:** 5 Nov 2026\n\n## Bottom line\n\nThe operating assets are clean: IP, lease, insurance and contracts raise no issues. The financial position is not. Six documents point to a **liquidity and refinancing problem**, and the largest customer contract is unresolved. The audited FY26 accounts have not been approved. **I recommend pausing price discussions until refinancing, Topaz and the audited accounts are clarified.** If we proceed, it should be on protected terms.\n\n## Key finding: liquidity stress across several documents\n\nTaken one at a time, each of these items looks manageable. Together they point to a company under financial strain.\n\n| Doc | Signal |\n|---|---|\n| **M07** | Operating cash flow was negative in 2 of the last 3 quarters. Closing cash is only **AUD 0.9m**. |\n| **M05** | Net debt/EBITDA is **2.8x against a 3.0x covenant**, tested quarterly. A fall of roughly **7% in EBITDA** (with net debt unchanged) would breach it. |\n| **M09** | The main cloud supplier moved Northwind from 30-day terms to **prepayment**, \"citing recent payment history\". This is an outside party flagging payment problems, and it puts further pressure on working capital. |\n| **M10** | In Oct 2026 the Board **deferred approval of the audited FY26 accounts** pending refinancing talks with two lenders. This suggests the auditors may be considering going-concern issues. |\n\n**How the threats compound:**\n\n- **Topaz (M03)** provides about 35% of revenue, and its renewal is only \"under discussion\". Losing or repricing Topaz would cut EBITDA by far more than the ~7% buffer. That would likely breach the covenant, put the AUD 6.0m facility at risk, and leave little cash to absorb the hit.\n- **Timing:** if Northwind uses the Australian June year-end (likely, given NSW law), Q1 FY27 was Jul–Sep 2026. On that basis the renewal window has **already passed** without a signed renewal. This needs to be confirmed.\n- **Litigation (M11):** counsel's view is preliminary and non-binding, disputed by the company and untested in discovery. It puts the outcome at AUD 0.2m–2.1m, with **no provision recognised**. Even the low end is material against AUD 0.9m cash, and the high end is more than twice the cash balance. Booking a provision could also reduce covenant EBITDA, depending on how it is classified. The range is highly uncertain and should not be treated as an expected loss. However, the auditors may push for a provision or disclosure, which could be part of why the accounts are stalled.\n\n## Secondary findings\n\n- **Key people (M04):** Two senior engineers are on 6-month notice. This is protective, but retention should be confirmed given the financial stress. Headcount is 68.\n- **No change-of-control concerns found** in the lease (M02). Customer and facility agreements still need checking for change-of-control terms.\n\n## Clean / routine\nNDA (M01), IP with no encumbrances (M06), insurance current including AUD 5m professional indemnity and cyber (M08), policies (M12, M14), helpdesk SaaS contract (M13), and fixed assets with AUD 0.3m net book value (M15).\n\n## Recommendation\n\n**Do not proceed on current terms.** Make the following **conditions precedent or priority information requests**:\n\n1. **Refinancing:** term sheets and status. The Board said \"coming weeks\" in October, so it should be well advanced or concluded by now.\n2. **Audited FY26 accounts:** signed accounts and the auditor's position on going concern and the M11 provision.\n3. **Topaz:** current contract status, correspondence, and whether it is running on holdover or month-to-month terms. Run a sensitivity of the covenant to loss or repricing of Topaz.\n4. **13-week cash flow forecast,** including the impact of supplier prepayment.\n5. **Lender correspondence:** any waivers, reservation-of-rights letters, or Q1 FY27 compliance certificate.\n6. **Litigation:** pleadings and counsel's full advice.\n\n**If we proceed, structural protections should include:**\n- A price adjustment or earn-out tied to Topaz renewal\n- A specific indemnity or escrow for the reseller claim\n- A locked-box or completion-accounts mechanism with a net debt adjustment\n- Refinancing as a condition precedent\n- A material adverse change (MAC) clause covering covenant breach\n\nDepending on the answers, this could also be a **distressed-value opportunity** rather than a deal to walk away from. That will depend on what the refinancing and Topaz outcomes show.\n=== END TEXT ===",
+      "text": "{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"PRESERVED\", \"evidence\": {\"CLUSTER\": \"Taken one at a time, each of these items looks manageable. Together they point to a company under financial strain.\", \"HEDGE\": \"counsel's view is preliminary and non-binding, disputed by the company and untested in discovery. It puts the outcome at AUD 0.2m–2.1m\"}}",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "d4d828a0-dde9-4d91-8b31-0869037fa749",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 143,
+        "cache_read_input_tokens": 598,
+        "cache_creation_input_tokens": 2199
+      },
+      "latency_s": 2.449,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"PRESERVED\", \"evidence\": {\"CLUSTER\": \"Taken one at a time, each of these items looks manageable. Together they point to a company under financial strain.\", \"HEDGE\": \"counsel's view is preliminary and non-binding, disputed by the company and untested in discovery. It puts the outcome at AUD 0.2m–2.1m\"}}",
+  "finished_at": "2026-11-05T19:55:16+00:00"
+}

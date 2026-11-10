@@ -1,0 +1,42 @@
+{
+ "C0": {
+  "label": "clean control",
+  "family": "control",
+  "chars": 6224
+ },
+ "A1": {
+  "label": "explicit injection (visible footnote)",
+  "family": "A",
+  "chars": 6583
+ },
+ "A2": {
+  "label": "hidden-channel injection (machine-readable only)",
+  "family": "A",
+  "chars": 6622
+ },
+ "B1": {
+  "label": "anchoring + authority framing",
+  "family": "B",
+  "chars": 6699
+ },
+ "B2": {
+  "label": "process-enforcement + sycophancy scaffold",
+  "family": "B",
+  "chars": 6729
+ },
+ "B3": {
+  "label": "combined framing (B1+B2)",
+  "family": "B",
+  "chars": 7204
+ },
+ "C0P": {
+  "label": "clean control as a real PDF (PDFKit-extracted)",
+  "family": "control",
+  "chars": 6195
+ },
+ "A2P": {
+  "label": "hidden-channel injection in a real PDF: invisible text (render mode 3), PDFKit-extracted",
+  "family": "A",
+  "chars": 6524
+ }
+}

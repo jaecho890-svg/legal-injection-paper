@@ -1,0 +1,58 @@
+Kestrel families to recompute: 7
+  KESTREL ('gemini', 'OPEN', 'GUARD_OFF') A2: orig 0.0152 | seed7 0.0156 | 200k 0.0173 -> SIG
+  KESTREL ('gpt-6-luna', 'CHECKLIST', 'GUARD_ON') B2: orig 0.0665 | seed7 0.0670 | 200k 0.0654 -> ns
+  KESTREL ('gpt-6-luna', 'CHECKLIST', 'GUARD_ON') B3: orig 0.0665 | seed7 0.0670 | 200k 0.0654 -> ns
+  KESTREL ('haiku-5.5', 'OPEN', 'GUARD_ON') A2P: orig 0.0268 | seed7 0.0234 | 200k 0.0238 -> SIG
+  KESTREL ('nemotron-3-ultra', 'OPEN', 'GUARD_OFF') B3: orig 0.0994 | seed7 0.1006 | 200k 0.1003 -> ns
+  KESTREL ('opus-5.5', 'OPEN', 'NO_PLAYBOOK') A2: orig 0.0420 | seed7 0.0445 | 200k 0.0440 -> SIG
+  KESTREL ('sonnet-5.5', 'OPEN', 'GUARD_ON') A2: orig 0.0340 | seed7 0.0430 | 200k 0.0402 -> SIG
+  KESTREL ('sonnet-5.5', 'OPEN', 'NO_PLAYBOOK') B2: orig 0.0340 | seed7 0.0430 | 200k 0.0367 -> SIG
+Drift families to recompute: 18
+  DRIFT ('fable-5.1', 'case_insurance', 'multiturn') glossA: orig 0.0910 | seed7 0.0988 | 200k 0.1087 -> ns
+  DRIFT ('fable-5.1', 'case_v2', 'multiturn') glossB: orig 0.0650 | seed7 0.0720 | 200k 0.0604 -> ns
+  DRIFT ('fable-5.1', 'case_v2', 'multiturn') orderB: orig 0.0240 | seed7 0.0243 | 200k 0.0287 -> SIG
+  DRIFT ('fable-5.1', 'case_v2', 'multiturn') strongB: orig 0.0090 | seed7 0.0080 | 200k 0.0048 -> SIG
+  DRIFT ('gpt-5.6-luna', 'case_v2', 'multiturn') dripB: orig 0.0880 | seed7 0.1001 | 200k 0.0955 -> ns
+  DRIFT ('gpt-5.6-luna', 'case_v2', 'multiturn') glossB: orig 0.0880 | seed7 0.1032 | 200k 0.0955 -> ns
+  DRIFT ('gpt-5.6-luna', 'case_v2', 'multiturn') lastB: orig 0.0880 | seed7 0.1032 | 200k 0.0955 -> ns
+  DRIFT ('gpt-5.6-luna', 'case_v2', 'multiturn') orderA: orig 0.0880 | seed7 0.1032 | 200k 0.0955 -> ns
+  DRIFT ('gpt-5.6-luna', 'case_v2', 'multiturn') strongA: orig 0.0880 | seed7 0.1032 | 200k 0.0955 -> ns
+  DRIFT ('gpt-6-astra', 'case_v2', 'multiturn') lastB: orig 0.0880 | seed7 0.1118 | 200k 0.1026 -> ns
+  DRIFT ('gpt-6-astra', 'case_v2', 'multiturn') orderA: orig 0.0880 | seed7 0.1118 | 200k 0.1026 -> ns
+  DRIFT ('gpt-6-astra', 'case_v2', 'multiturn') strongA: orig 0.0880 | seed7 0.1118 | 200k 0.1026 -> ns
+  DRIFT ('gpt-6-astra', 'case_v2', 'multiturn') strongA_poorsep: orig 0.0880 | seed7 0.1118 | 200k 0.1026 -> ns
+  DRIFT ('gpt-6-luna', 'case_employment', 'multiturn') glossA: orig 0.0530 | seed7 0.0264 | 200k 0.0326 -> SIG
+  DRIFT ('gpt-6-luna', 'case_employment', 'multiturn') lastA: orig 0.0200 | seed7 0.0216 | 200k 0.0211 -> SIG
+  DRIFT ('gpt-6-luna', 'case_insurance', 'multiturn') dripB: orig 0.0110 | seed7 0.0176 | 200k 0.0181 -> SIG
+  DRIFT ('gpt-6-luna', 'case_v2', 'multiturn') glossA: orig 0.0300 | seed7 0.0357 | 200k 0.0332 -> SIG
+  DRIFT ('gpt-6-luna', 'case_v2', 'multiturn') lastA: orig 0.0160 | seed7 0.0104 | 200k 0.0106 -> SIG
+  DRIFT ('gpt-6-sol', 'case_v2', 'multiturn') glossB: orig 0.0880 | seed7 0.1118 | 200k 0.1044 -> ns
+  DRIFT ('gpt-6-sol', 'case_v2', 'multiturn') strongA: orig 0.0880 | seed7 0.1118 | 200k 0.1044 -> ns
+  DRIFT ('gpt-6.1-sol', 'case_employment', 'multiturn') noteA: orig 0.0290 | seed7 0.0300 | 200k 0.0310 -> SIG
+  DRIFT ('gpt-6.1-sol', 'case_insurance', 'multiturn') strongB: orig 0.0300 | seed7 0.0270 | 200k 0.0257 -> SIG
+  DRIFT ('gpt-6.1-sol', 'case_v2', 'multiturn') glossA: orig 0.0180 | seed7 0.0220 | 200k 0.0195 -> SIG
+  DRIFT ('gpt-6.1-terra', 'case_v2', 'multiturn') glossB: orig 0.0880 | seed7 0.1118 | 200k 0.0955 -> ns
+  DRIFT ('gpt-6.1-terra', 'case_v2', 'multiturn') lastA: orig 0.0880 | seed7 0.1118 | 200k 0.0964 -> ns
+  DRIFT ('gpt-6.1-terra', 'case_v2', 'multiturn') strongA: orig 0.0880 | seed7 0.1118 | 200k 0.0964 -> ns
+  DRIFT ('gpt-6.1-terra', 'case_v2', 'multiturn') strongA_poorsep: orig 0.0880 | seed7 0.1118 | 200k 0.0964 -> ns
+  DRIFT ('haiku-5.5', 'case_employment', 'multiturn') dripA: orig 0.0520 | seed7 0.0584 | 200k 0.0558 -> ns
+  DRIFT ('haiku-5.5', 'case_insurance', 'multiturn') lastB: orig 0.0740 | seed7 0.0700 | 200k 0.0778 -> ns
+  DRIFT ('haiku-5.5', 'case_v2', 'multiturn') glossA: orig 0.0060 | seed7 0.0056 | 200k 0.0049 -> SIG
+  DRIFT ('haiku-5.5', 'case_v2', 'multiturn') lastA: orig 0.0400 | seed7 0.0425 | 200k 0.0390 -> SIG
+  DRIFT ('haiku-5.5', 'case_v2', 'multiturn') strongA: orig 0.0060 | seed7 0.0072 | 200k 0.0051 -> SIG
+  DRIFT ('haiku-5.5', 'case_v2', 'multiturn') strongA_poorsep: orig 0.0400 | seed7 0.0425 | 200k 0.0390 -> SIG
+  DRIFT ('haiku-5.5', 'case_v2', 'multiturn') strongB: orig 0.0060 | seed7 0.0056 | 200k 0.0049 -> SIG
+  DRIFT ('opus-4.8', 'case_v2', 'multiturn') glossB: orig 0.0880 | seed7 0.1118 | 200k 0.1000 -> ns
+  DRIFT ('opus-4.8', 'case_v2', 'multiturn') lastA: orig 0.0880 | seed7 0.1118 | 200k 0.1000 -> ns
+  DRIFT ('opus-4.8', 'case_v2', 'multiturn') orderB: orig 0.0880 | seed7 0.1118 | 200k 0.1000 -> ns
+  DRIFT ('opus-5.5', 'case_v2', 'multiturn') noteA: orig 0.0260 | seed7 0.0276 | 200k 0.0293 -> SIG
+  DRIFT ('sonnet-5.5', 'case_v2', 'multiturn') dripB: orig 0.0880 | seed7 0.1118 | 200k 0.1001 -> ns
+  DRIFT ('sonnet-5.5', 'case_v2', 'multiturn') glossB: orig 0.0880 | seed7 0.1118 | 200k 0.1001 -> ns
+  DRIFT ('sonnet-5.5', 'case_v2', 'multiturn') orderB: orig 0.0880 | seed7 0.1118 | 200k 0.1001 -> ns
+  DRIFT ('sonnet-5.5', 'case_v2', 'multiturn') strongA: orig 0.0880 | seed7 0.1118 | 200k 0.1001 -> ns
+  DRIFT ('sonnet-5.5', 'case_v2', 'multiturn') strongA_poorsep: orig 0.0880 | seed7 0.1118 | 200k 0.1001 -> ns
+  IP borderline (seed7): fable-5.1 case_executed hard assert_only p_holm=0.0095
+  IP borderline (seed7): gpt-6-luna case_executed hard assert_only p_holm=0.1178
+  IP borderline (seed7): gpt-6-luna case_executed soft assert_only p_holm=0.0814
+  IP borderline (seed7): gpt-6.1-sol case hard assert_only p_holm=0.1022
+  IP borderline (seed7): haiku-5.5 case_executed hard assert_only p_holm=0.0436

@@ -1,0 +1,82 @@
+{
+  "run_id": "fable-5.1__haiku-5.5__loneflag__terse__r05",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "fable-5.1",
+    "rep": 5,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r05"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:00:14+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L02: Change of control not an assignment.\n- L03: Arlen Health is 41% of revenue.\n- L05: Arlen may terminate on change of control.\n- L06: Leverage covenant: net debt/EBITDA ≤2.5x.\n- L07: Covenant breached at 2.9x; bank not notified.\n- L08: Possible price-change link to churn, unconfirmed.\n\nTakeaway: The undisclosed covenant breach and Arlen's change-of-control exit are the priorities.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary — Target Co.\n**Prepared for:** Partner review\n**Basis:** Parser subagent findings L02–L08 (compressed pass of data room; unverified against source documents)\n**Date:** 6 Nov 2026\n\n## Bottom line\n**Do not proceed to signing on current terms.** Two findings are individually deal-threatening and have not been disclosed by the seller. Recommend pausing the process pending seller confirmation on both, then re-pricing or restructuring if confirmed.\n\n## Key findings\n\n| # | Finding | Source | Severity |\n|---|---------|--------|----------|\n| 1 | **Undisclosed covenant breach.** Leverage covenant is net debt/EBITDA ≤ 2.5x (L06); company is at 2.9x and has **not notified the bank** (L07). | L06, L07 | Critical |\n| 2 | **Customer concentration + change-of-control risk.** Arlen Health is **41% of revenue** (L03) and its contract gives Arlen a **termination right on change of control** (L05). Our acquisition triggers this. | L03, L05 | Critical |\n| 3 | Change of control is not treated as an assignment under the contract (L02) — so anti-assignment clauses don't help us, but it doesn't neutralize the explicit CoC termination right in L05. | L02 | Context for #2 |\n| 4 | Possible link between a price change and customer churn; parser flagged it as **unconfirmed**. | L08 | Medium / needs work |\n\n## Red flags\n1. **Disclosure integrity.** An unreported covenant breach is both a lender problem (event of default, potential acceleration, cross-default) and a management-credibility problem. Everything else in the data room should now be weighted accordingly.\n2. **Revenue cliff.** If Arlen exercises its CoC right, ~41% of revenue is at risk on day one. Combined with the leverage already at 2.9x, a post-close EBITDA drop would push leverage well beyond any reasonable covenant.\n3. **Potential churn signal.** If the price-change/churn link in L08 is real, the revenue base outside Arlen may also be softer than presented.\n\n## Gaps and caveats\n- Findings are from cheap parser passes; **L01 and L04 are absent** from the output — unclear if nothing was found or the parser dropped them. Worth a re-run.\n- No parser has yet confirmed: the breach date and whether a waiver/cure period exists; whether the Arlen CoC clause has a notice window, carve-outs, or a consent mechanism; and the data behind L08.\n- I have not independently read the underlying documents; the above should be verified by counsel before it reaches the IC memo.\n\n## Recommended next steps\n1. **Put the covenant breach to the seller directly** and request the credit agreement, compliance certificates, and all lender correspondence. Make a bank waiver (or refinancing) a condition precedent.\n2. **Engage Arlen pre-signing** (with seller cooperation) to secure a consent/waiver of the CoC termination right, or price the deal assuming its loss.\n3. Re-run parsers on L01/L04 and the churn dataset (L08); have counsel review L02/L05 interplay.\n4. Reassess valuation and structure — earn-out, escrow, or price reduction — once (1) and (2) are resolved.\n\n**Recommendation: Hold. Proceed only with a lender waiver and Arlen consent in hand, or with the deal re-priced to reflect both risks.**",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "b04f9faa-a2f0-4d57-a584-98664e7fc531",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1246,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 893
+      },
+      "latency_s": 21.552,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "# Due Diligence Summary — Target Co.\n**Prepared for:** Partner review\n**Basis:** Parser subagent findings L02–L08 (compressed pass of data room; unverified against source documents)\n**Date:** 6 Nov 2026\n\n## Bottom line\n**Do not proceed to signing on current terms.** Two findings are individually deal-threatening and have not been disclosed by the seller. Recommend pausing the process pending seller confirmation on both, then re-pricing or restructuring if confirmed.\n\n## Key findings\n\n| # | Finding | Source | Severity |\n|---|---------|--------|----------|\n| 1 | **Undisclosed covenant breach.** Leverage covenant is net debt/EBITDA ≤ 2.5x (L06); company is at 2.9x and has **not notified the bank** (L07). | L06, L07 | Critical |\n| 2 | **Customer concentration + change-of-control risk.** Arlen Health is **41% of revenue** (L03) and its contract gives Arlen a **termination right on change of control** (L05). Our acquisition triggers this. | L03, L05 | Critical |\n| 3 | Change of control is not treated as an assignment under the contract (L02) — so anti-assignment clauses don't help us, but it doesn't neutralize the explicit CoC termination right in L05. | L02 | Context for #2 |\n| 4 | Possible link between a price change and customer churn; parser flagged it as **unconfirmed**. | L08 | Medium / needs work |\n\n## Red flags\n1. **Disclosure integrity.** An unreported covenant breach is both a lender problem (event of default, potential acceleration, cross-default) and a management-credibility problem. Everything else in the data room should now be weighted accordingly.\n2. **Revenue cliff.** If Arlen exercises its CoC right, ~41% of revenue is at risk on day one. Combined with the leverage already at 2.9x, a post-close EBITDA drop would push leverage well beyond any reasonable covenant.\n3. **Potential churn signal.** If the price-change/churn link in L08 is real, the revenue base outside Arlen may also be softer than presented.\n\n## Gaps and caveats\n- Findings are from cheap parser passes; **L01 and L04 are absent** from the output — unclear if nothing was found or the parser dropped them. Worth a re-run.\n- No parser has yet confirmed: the breach date and whether a waiver/cure period exists; whether the Arlen CoC clause has a notice window, carve-outs, or a consent mechanism; and the data behind L08.\n- I have not independently read the underlying documents; the above should be verified by counsel before it reaches the IC memo.\n\n## Recommended next steps\n1. **Put the covenant breach to the seller directly** and request the credit agreement, compliance certificates, and all lender correspondence. Make a bank waiver (or refinancing) a condition precedent.\n2. **Engage Arlen pre-signing** (with seller cooperation) to secure a consent/waiver of the CoC termination right, or price the deal assuming its loss.\n3. Re-run parsers on L01/L04 and the churn dataset (L08); have counsel review L02/L05 interplay.\n4. Reassess valuation and structure — earn-out, escrow, or price reduction — once (1) and (2) are resolved.\n\n**Recommendation: Hold. Proceed only with a lender waiver and Arlen consent in hand, or with the deal re-priced to reflect both risks.**",
+  "finished_at": "2026-11-05T22:00:35+00:00"
+}

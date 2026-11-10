@@ -1,0 +1,176 @@
+# interpretive-drift-study/harness/experiment.py run --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-05T19:39:32, ended 2026-11-05T19:58:07, rc=1
+## stdout
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 720 -> 600 jobs
+600 jobs, 0 already done, 600 to run (5400 API calls)
+  fable-5.1            1080 calls  ~115,450 input tokens (excl. multi-turn history)
+  haiku-5.5            2160 calls  ~230,900 input tokens (excl. multi-turn history)
+  opus-5.5             2160 calls  ~230,900 input tokens (excl. multi-turn history)
+  [1/600] ok    fable-5.1__case_v2__multiturn__noteA__r01 
+  [2/600] ok    fable-5.1__case_v2__multiturn__control__r01 
+  [3/600] ok    fable-5.1__case_v2__multiturn__glossA__r01 
+  [4/600] ok    fable-5.1__case_v2__multiturn__noteB__r01 
+  [5/600] ok    fable-5.1__case_v2__multiturn__orderB__r01 
+  [6/600] ok    fable-5.1__case_v2__multiturn__dripB__r01 
+  [7/600] ok    fable-5.1__case_v2__multiturn__orderA__r01 
+  [8/600] ok    fable-5.1__case_v2__multiturn__glossB__r01 
+  [9/600] ok    fable-5.1__case_v2__multiturn__dripA__r01 
+  [10/600] ok    fable-5.1__case_v2__multiturn__strongA__r01 
+  [11/600] ok    opus-5.5__case_v2__multiturn__control__r01 
+  [12/600] ok    fable-5.1__case_v2__multiturn__strongB__r01 
+  [13/600] ok    opus-5.5__case_v2__multiturn__noteA__r01 
+  [14/600] ok    opus-5.5__case_v2__multiturn__noteB__r01 
+  [15/600] ok    fable-5.1__case_v2__multiturn__strongA_poorsep__r01 
+  [16/600] ok    opus-5.5__case_v2__multiturn__glossA__r01 
+  [17/600] ok    opus-5.5__case_v2__multiturn__glossB__r01 
+  [18/600] ok    opus-5.5__case_v2__multiturn__orderA__r01 
+  [19/600] ok    opus-5.5__case_v2__multiturn__dripA__r01 
+  [20/600] ok    opus-5.5__case_v2__multiturn__orderB__r01 
+  [21/600] ok    opus-5.5__case_v2__multiturn__dripB__r01 
+  [22/600] ok    opus-5.5__case_v2__multiturn__strongA__r01 
+  [23/600] ok    haiku-5.5__case_v2__multiturn__control__r01 
+  [24/600] ok    opus-5.5__case_v2__multiturn__strongB__r01 
+  [25/600] ok    opus-5.5__case_v2__multiturn__strongA_poorsep__r01 
+  [26/600] ok    haiku-5.5__case_v2__multiturn__noteA__r01 
+  [27/600] ok    haiku-5.5__case_v2__multiturn__noteB__r01 
+  [28/600] ok    haiku-5.5__case_v2__multiturn__glossA__r01 
+  [29/600] ok    haiku-5.5__case_v2__multiturn__glossB__r01 
+  [30/600] ok    haiku-5.5__case_v2__multiturn__orderA__r01 
+  [31/600] ok    haiku-5.5__case_v2__multiturn__dripA__r01 
+  [32/600] ok    haiku-5.5__case_v2__multiturn__orderB__r01 
+  [33/600] ok    haiku-5.5__case_v2__multiturn__dripB__r01 
+  [34/600] ok    haiku-5.5__case_v2__multiturn__strongA__r01 
+  [35/600] ok    haiku-5.5__case_v2__multiturn__strongA_poorsep__r01 
+  [36/600] ok    fable-5.1__case_v2__multiturn__control__r02 
+  [37/600] ok    haiku-5.5__case_v2__multiturn__strongB__r01 
+  [38/600] ok    fable-5.1__case_v2__multiturn__noteB__r02 
+  [39/600] ok    fable-5.1__case_v2__multiturn__glossA__r02 
+  [40/600] ok    fable-5.1__case_v2__multiturn__noteA__r02 
+  [41/600] ok    fable-5.1__case_v2__multiturn__glossB__r02 
+  [42/600] ok    fable-5.1__case_v2__multiturn__dripA__r02 
+  [43/600] ok    fable-5.1__case_v2__multiturn__orderA__r02 
+  [44/600] ok    fable-5.1__case_v2__multiturn__orderB__r02 
+  [45/600] ok    fable-5.1__case_v2__multiturn__strongA__r02 
+  [46/600] ok    fable-5.1__case_v2__multiturn__strongA_poorsep__r02 
+  [47/600] ok    fable-5.1__case_v2__multiturn__dripB__r02 
+  [48/600] ok    opus-5.5__case_v2__multiturn__control__r02 
+  [49/600] ok    fable-5.1__case_v2__multiturn__strongB__r02 
+  [50/600] ok    opus-5.5__case_v2__multiturn__glossA__r02 
+  [51/600] ok    opus-5.5__case_v2__multiturn__noteA__r02 
+  [52/600] ok    opus-5.5__case_v2__multiturn__noteB__r02 
+  [53/600] ok    opus-5.5__case_v2__multiturn__orderA__r02 
+  [54/600] ok    opus-5.5__case_v2__multiturn__dripA__r02 
+  [55/600] ok    opus-5.5__case_v2__multiturn__glossB__r02 
+  [56/600] ok    opus-5.5__case_v2__multiturn__orderB__r02 
+  [57/600] ok    opus-5.5__case_v2__multiturn__strongB__r02 
+  [58/600] ok    opus-5.5__case_v2__multiturn__dripB__r02 
+  [59/600] ok    opus-5.5__case_v2__multiturn__strongA_poorsep__r02 
+  [60/600] ok    opus-5.5__case_v2__multiturn__strongA__r02 
+  [61/600] ok    haiku-5.5__case_v2__multiturn__noteB__r02 
+  [62/600] ok    haiku-5.5__case_v2__multiturn__control__r02 
+  [63/600] ok    haiku-5.5__case_v2__multiturn__noteA__r02 
+  [64/600] ok    haiku-5.5__case_v2__multiturn__glossA__r02 
+  [65/600] ok    haiku-5.5__case_v2__multiturn__orderB__r02 
+  [66/600] ok    haiku-5.5__case_v2__multiturn__glossB__r02 
+  [67/600] ok    haiku-5.5__case_v2__multiturn__orderA__r02 
+  [68/600] ok    haiku-5.5__case_v2__multiturn__dripA__r02 
+  [69/600] ok    haiku-5.5__case_v2__multiturn__strongA__r02 
+  [70/600] ok    haiku-5.5__case_v2__multiturn__dripB__r02 
+  [71/600] ok    haiku-5.5__case_v2__multiturn__strongB__r02 
+  [72/600] ok    haiku-5.5__case_v2__multiturn__strongA_poorsep__r02 
+  [73/600] ok    fable-5.1__case_v2__multiturn__control__r03 
+  [74/600] ok    fable-5.1__case_v2__multiturn__noteA__r03 
+  [75/600] ok    fable-5.1__case_v2__multiturn__orderA__r03 
+  [76/600] ok    fable-5.1__case_v2__multiturn__noteB__r03 
+  [77/600] ok    fable-5.1__case_v2__multiturn__glossB__r03 
+  [78/600] ok    fable-5.1__case_v2__multiturn__glossA__r03 
+  [79/600] ok    fable-5.1__case_v2__multiturn__orderB__r03 
+  [80/600] ok    fable-5.1__case_v2__multiturn__dripA__r03 
+  [81/600] ok    fable-5.1__case_v2__multiturn__strongA_poorsep__r03 
+  [82/600] ok    fable-5.1__case_v2__multiturn__strongB__r03 
+  [83/600] ok    fable-5.1__case_v2__multiturn__dripB__r03 
+  [84/600] ok    fable-5.1__case_v2__multiturn__strongA__r03 
+  [85/600] ok    opus-5.5__case_v2__multiturn__control__r03 
+  [86/600] ok    opus-5.5__case_v2__multiturn__noteA__r03 
+  [87/600] ok    opus-5.5__case_v2__multiturn__noteB__r03 
+  [88/600] ok    opus-5.5__case_v2__multiturn__glossA__r03 
+  [89/600] ok    opus-5.5__case_v2__multiturn__orderA__r03 
+  [90/600] ok    opus-5.5__case_v2__multiturn__glossB__r03 
+  [91/600] ok    opus-5.5__case_v2__multiturn__orderB__r03 
+  [92/600] ok    opus-5.5__case_v2__multiturn__dripA__r03 
+  [93/600] ok    opus-5.5__case_v2__multiturn__dripB__r03 
+  [94/600] ok    opus-5.5__case_v2__multiturn__strongB__r03 
+  [95/600] ok    opus-5.5__case_v2__multiturn__strongA_poorsep__r03 
+  [96/600] ok    opus-5.5__case_v2__multiturn__strongA__r03 
+  [97/600] ok    haiku-5.5__case_v2__multiturn__control__r03 
+  [98/600] ok    haiku-5.5__case_v2__multiturn__noteA__r03 
+  [99/600] ok    haiku-5.5__case_v2__multiturn__noteB__r03 
+  [100/600] ok    haiku-5.5__case_v2__multiturn__glossA__r03 
+  [101/600] ok    haiku-5.5__case_v2__multiturn__orderA__r03 
+  [102/600] ok    haiku-5.5__case_v2__multiturn__glossB__r03 
+  [103/600] ok    haiku-5.5__case_v2__multiturn__orderB__r03 
+  [104/600] ok    haiku-5.5__case_v2__multiturn__strongA__r03 
+  [105/600] ok    haiku-5.5__case_v2__multiturn__dripA__r03 
+  [106/600] ok    haiku-5.5__case_v2__multiturn__dripB__r03 
+  [107/600] ok    haiku-5.5__case_v2__multiturn__strongA_poorsep__r03 
+  [108/600] ok    haiku-5.5__case_v2__multiturn__strongB__r03 
+  [109/600] ok    fable-5.1__case_v2__multiturn__control__r04 
+  [110/600] ok    fable-5.1__case_v2__multiturn__noteA__r04 
+  [111/600] ok    fable-5.1__case_v2__multiturn__glossB__r04 
+  [112/600] ok    fable-5.1__case_v2__multiturn__noteB__r04 
+  [113/600] ok    fable-5.1__case_v2__multiturn__orderA__r04 
+  [114/600] ok    fable-5.1__case_v2__multiturn__glossA__r04 
+  [115/600] ok    fable-5.1__case_v2__multiturn__dripA__r04 
+  [116/600] ok    fable-5.1__case_v2__multiturn__orderB__r04 
+  [117/600] ok    fable-5.1__case_v2__multiturn__strongA_poorsep__r04 
+  [118/600] ok    opus-5.5__case_v2__multiturn__control__r04 
+  [119/600] ok    fable-5.1__case_v2__multiturn__dripB__r04 
+  [120/600] ok    opus-5.5__case_v2__multiturn__noteA__r04 
+  [121/600] ok    opus-5.5__case_v2__multiturn__glossA__r04 
+  [122/600] ok    opus-5.5__case_v2__multiturn__glossB__r04 
+  [123/600] ok    opus-5.5__case_v2__multiturn__orderA__r04 
+  [124/600] ok    opus-5.5__case_v2__multiturn__noteB__r04 
+  [125/600] ok    opus-5.5__case_v2__multiturn__orderB__r04 
+  [126/600] ok    opus-5.5__case_v2__multiturn__dripA__r04 
+  [127/600] ok    opus-5.5__case_v2__multiturn__dripB__r04 
+  [128/600] ok    opus-5.5__case_v2__multiturn__strongA_poorsep__r04 
+  [129/600] ok    fable-5.1__case_v2__multiturn__strongA__r04 
+  [130/600] ok    opus-5.5__case_v2__multiturn__strongA__r04 
+  [131/600] ok    haiku-5.5__case_v2__multiturn__control__r04 
+  [132/600] ok    opus-5.5__case_v2__multiturn__strongB__r04 
+  [133/600] ok    haiku-5.5__case_v2__multiturn__noteA__r04 
+
+## stderr
+Traceback (most recent call last):
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/interpretive-drift-study/harness/experiment.py", line 209, in <module>
+    main()
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/interpretive-drift-study/harness/experiment.py", line 202, in main
+    runner.run_jobs(jobs, out / "reviewer", STUDY, args.workers, args.dry_run, args.force,
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 227, in run_jobs
+    list(ex.map(work, pending))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 608, in result_iterator
+    yield fs.pop().result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 210, in work
+    rec = _execute(job, specs[job["model"]], params, fingerprint)
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 95, in _execute
+    outs = cli_backends.converse(spec, job["system"], job["turns"], params)
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/cli_backends.py", line 232, in converse
+    return _retrying(lambda: _claude_conversation(spec, system, turns, params, timeout))
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/cli_backends.py", line 61, in _retrying
+    return fn()
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/cli_backends.py", line 232, in <lambda>
+    return _retrying(lambda: _claude_conversation(spec, system, turns, params, timeout))
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/cli_backends.py", line 95, in _claude_conversation
+    proc = subprocess.Popen([binary] + flags, cwd=cwd, env=_clean_env(), stdin=subprocess.PIPE,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: 'claude'
+

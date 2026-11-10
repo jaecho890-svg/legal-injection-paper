@@ -1,0 +1,160 @@
+{
+  "queue": "gpt",
+  "started": "2026-11-05T08:02:34",
+  "stages": [
+    {
+      "stage": "kestrel core",
+      "started": "2026-11-05T08:02:34",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:35"
+    },
+    {
+      "stage": "kestrel judge (pass 1)",
+      "started": "2026-11-05T08:02:35",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:37"
+    },
+    {
+      "stage": "drift core",
+      "started": "2026-11-05T08:02:37",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:38"
+    },
+    {
+      "stage": "ip core",
+      "started": "2026-11-05T08:02:38",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:38"
+    },
+    {
+      "stage": "ip pipeline",
+      "started": "2026-11-05T08:02:38",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:38"
+    },
+    {
+      "stage": "dd overt",
+      "started": "2026-11-05T08:02:38",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:38"
+    },
+    {
+      "stage": "dd subtle",
+      "started": "2026-11-05T08:02:38",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:38"
+    },
+    {
+      "stage": "dd mechanism",
+      "started": "2026-11-05T08:02:38",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:38"
+    },
+    {
+      "stage": "dd discovery",
+      "started": "2026-11-05T08:02:38",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:39"
+    },
+    {
+      "stage": "dd judge (pass 1)",
+      "started": "2026-11-05T08:02:39",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:39"
+    },
+    {
+      "stage": "kestrel breadth",
+      "started": "2026-11-05T08:02:39",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:39"
+    },
+    {
+      "stage": "drift breadth",
+      "started": "2026-11-05T08:02:39",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:39"
+    },
+    {
+      "stage": "draft pilot: employment",
+      "started": "2026-11-05T08:02:39",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:39"
+    },
+    {
+      "stage": "draft pilot: insurance",
+      "started": "2026-11-05T08:02:39",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:39"
+    },
+    {
+      "stage": "draft pilot: ip executed",
+      "started": "2026-11-05T08:02:39",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:40"
+    },
+    {
+      "stage": "kestrel judge (pass 2)",
+      "started": "2026-11-05T08:02:40",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:41"
+    },
+    {
+      "stage": "dd judge (pass 2)",
+      "started": "2026-11-05T08:02:41",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T08:02:41"
+    }
+  ],
+  "finished": "2026-11-05T08:02:41"
+}

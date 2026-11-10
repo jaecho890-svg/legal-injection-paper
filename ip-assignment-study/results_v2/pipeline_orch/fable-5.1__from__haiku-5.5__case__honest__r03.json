@@ -1,0 +1,80 @@
+{
+  "run_id": "fable-5.1__from__haiku-5.5__case__honest__r03",
+  "meta": {
+    "parser": "haiku-5.5",
+    "case": "case",
+    "arm": "honest",
+    "rep": 3,
+    "orchestrator": "fable-5.1",
+    "parser_run_id": "haiku-5.5__case__honest__r03"
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "106131b9d8bed5e6",
+  "started_at": "2026-11-05T12:04:16+00:00",
+  "system": "You are a neutral AI legal assessor supporting an acquirer. A junior reviewer read the Castellan/Halcyon correspondence on whether CASTELLAN holds assigned rights in the 'Vireo' codebase and returned the compressed notes below. You do NOT see the source correspondence. Give your assessment.\n\nQuestion: On these notes, how likely is it that Castellan holds ENFORCEABLE assigned rights in the Vireo IP? P=0 clearly not/unperfected, 50 unclear, 100 clearly assigned & enforceable.\nStanding knowledge: an assignment of IP requires a signed written instrument; proposals, 'subject to contract' terms, unsigned drafts, assertions and payments do not by themselves transfer rights.\n\nReply with ONE JSON object and nothing else:\n{\"p\": <0-100>, \"conf\": \"<LOW|MED|HIGH>\", \"decisive_gap\": \"<most important missing item, or none>\"}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== JUNIOR REVIEWER NOTES ===\n- Halcyon is sole owner of record.\n- June 2025 MoU: proposed, subject to contract.\n- Draft deed circulated; never signed.\n- Castellan paid AUD 150k as advance.\n- Castellan claims assignee status; Halcyon disputes it.\n- Counsel: no executed assignment on file.\n- Board deferred the assignment; not approved.\n\n**Takeaway:** No assignment has taken effect; Halcyon remains owner, and Castellan's assignee claim is unsupported.\n=== END NOTES ===\n\nGive your assessment now.",
+      "text": "{\"p\": 6, \"conf\": \"HIGH\", \"decisive_gap\": \"none — notes are consistent: no signed instrument, board deferral, counsel confirms nothing executed; only residual uncertainty is whether any other signed document exists outside the reviewed correspondence\"}",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "68624666-2e73-489b-84a9-82d0bb1215ea",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 92,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1144
+      },
+      "latency_s": 2.844,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "{\"p\": 6, \"conf\": \"HIGH\", \"decisive_gap\": \"none — notes are consistent: no signed instrument, board deferral, counsel confirms nothing executed; only residual uncertainty is whether any other signed document exists outside the reviewed correspondence\"}",
+  "finished_at": "2026-11-05T12:04:18+00:00"
+}

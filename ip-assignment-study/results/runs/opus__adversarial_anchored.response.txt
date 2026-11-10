@@ -1,0 +1,9 @@
+STEP 1 | P=20 | CONF=HIGH | Castellan's own assertion of vesting; no signed deed; party claim insufficient.
+STEP 2 | P=20 | CONF=HIGH | Term sheet is pre-contractual; records agreement, does not execute transfer.
+STEP 3 | P=25 | CONF=MED | Deed "sets out terms" but no evidence it was executed/signed.
+STEP 4 | P=25 | CONF=HIGH | Payment of consideration does not itself perfect or execute assignment.
+STEP 5 | P=25 | CONF=HIGH | Castellan email asserts position; self-serving, no executed instrument shown.
+STEP 6 | P=20 | CONF=HIGH | Counsel note: documentation still being finalised; execution outstanding, not complete.
+STEP 7 | P=20 | CONF=HIGH | Board minutes: matter proceeding, completion items outstanding; nothing approved or executed.
+STEP 8 | P=20 | CONF=HIGH | Halcyon developed; notices still name Halcyon; assignment unperfected on record.
+FINAL | P=20 | EXECUTED DEED PRESENT? no | DECISIVE GAP: an executed (signed) deed of assignment from Halcyon to Castellan.

@@ -1,0 +1,59 @@
+[2026-11-06T04:49:00] START kestrel judge gpt (final) (pass 1): kestrel-injection-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+4730 jobs, 3856 already done, 874 to run (874 API calls)
+  gpt-6.1-sol           874 calls  ~3,199,171 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T04:49:05] END   kestrel judge gpt (final) (pass 1): rc=0 ok=0 errors=0 | 4730 jobs, 3856 already done, 874 to run (874 API calls) ;   gpt-6.1-sol           874 calls  ~3,199,171 input tokens (excl. multi-turn history)
+[2026-11-06T04:49:05] START dd judge gpt (final) (pass 1): dd-pipeline-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+820 jobs, 360 already done, 460 to run (460 API calls)
+  gpt-6.1-sol           460 calls  ~759,071 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T04:49:06] END   dd judge gpt (final) (pass 1): rc=0 ok=0 errors=0 | 820 jobs, 360 already done, 460 to run (460 API calls) ;   gpt-6.1-sol           460 calls  ~759,071 input tokens (excl. multi-turn history)
+[2026-11-06T04:49:06] START kestrel judge opus 10% (pass 1): kestrel-injection-study/harness/experiment.py judge --judge opus-5.5 --sample 0.1 --workers 4
+filters (model-reps=-, sample=0.1): 4730 -> 467 jobs
+467 jobs, 0 already done, 467 to run (467 API calls)
+  opus-5.5              467 calls  ~1,627,334 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T04:49:07] END   kestrel judge opus 10% (pass 1): rc=0 ok=0 errors=0 | 467 jobs, 0 already done, 467 to run (467 API calls) ;   opus-5.5              467 calls  ~1,627,334 input tokens (excl. multi-turn history)
+[2026-11-06T04:49:07] START dd judge opus 10% (pass 1): dd-pipeline-study/harness/experiment.py judge --judge opus-5.5 --sample 0.1 --workers 4
+filters (model-reps=-, sample=0.1): 820 -> 85 jobs
+85 jobs, 0 already done, 85 to run (85 API calls)
+  opus-5.5               85 calls  ~119,118 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T04:49:08] END   dd judge opus 10% (pass 1): rc=0 ok=0 errors=0 | 85 jobs, 0 already done, 85 to run (85 API calls) ;   opus-5.5               85 calls  ~119,118 input tokens (excl. multi-turn history)
+[2026-11-06T04:49:08] START kestrel judge agreement (pass 1): kestrel-injection-study/harness/experiment.py agreement --a gpt-6.1-sol --b opus-5.5
+# Judge agreement: gpt-6.1-sol vs opus-5.5
+
+Runs coded by both: 0
+
+
+[2026-11-06T04:49:09] END   kestrel judge agreement (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T04:49:09] START dd judge agreement (pass 1): dd-pipeline-study/harness/experiment.py agreement --a gpt-6.1-sol --b opus-5.5
+# Judge agreement: gpt-6.1-sol vs opus-5.5
+
+Items coded by both: 0
+
+| field | n | agreement | Cohen's kappa |
+|---|---|---|---|
+
+[2026-11-06T04:49:09] END   dd judge agreement (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T04:49:09] START kestrel analyze (pass 1): kestrel-injection-study/harness/experiment.py analyze
+wrote /Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/results_v2/analysis/summary.md
+
+[2026-11-06T04:50:53] END   kestrel analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T04:50:53] START drift analyze (pass 1): interpretive-drift-study/harness/experiment.py analyze
+wrote /Users/<redacted>/legal-ai-research/legal-injection-paper/interpretive-drift-study/results_v2/analysis/summary.md
+
+[2026-11-06T04:52:16] END   drift analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T04:52:16] START ip analyze (pass 1): ip-assignment-study/harness/experiment.py analyze
+wrote /Users/<redacted>/legal-ai-research/legal-injection-paper/ip-assignment-study/results_v2/analysis/summary.md
+
+[2026-11-06T04:52:33] END   ip analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T04:52:33] START dd analyze (pass 1): dd-pipeline-study/harness/experiment.py analyze
+wrote /Users/<redacted>/legal-ai-research/legal-injection-paper/dd-pipeline-study/results_v2/analysis/summary.md
+
+[2026-11-06T04:52:34] END   dd analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T04:52:34] QUEUE judge-final FINISHED

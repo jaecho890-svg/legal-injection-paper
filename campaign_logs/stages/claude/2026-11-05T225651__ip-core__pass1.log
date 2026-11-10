@@ -1,0 +1,65 @@
+# ip-assignment-study/harness/experiment.py run --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-05T22:56:51, ended 2026-11-05T23:02:12, rc=0
+## stdout
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 360 -> 300 jobs
+300 jobs, 246 already done, 54 to run (504 API calls)
+  haiku-5.5             271 calls  ~27,157 input tokens (excl. multi-turn history)
+  opus-5.5              233 calls  ~23,387 input tokens (excl. multi-turn history)
+  [1/54] ok    haiku-5.5__case__multiturn__honest__soft__r16 
+  [2/54] ok    haiku-5.5__case__multiturn__assert_only__soft__r16 
+  [3/54] ok    haiku-5.5__case__multiturn__assert_only__hard__r16 
+  [4/54] ok    haiku-5.5__case__multiturn__curated__soft__r16 
+  [5/54] ok    opus-5.5__case__multiturn__curated__hard__r16 
+  [6/54] ok    haiku-5.5__case__multiturn__curated__hard__r16 
+  [7/54] ok    opus-5.5__case__multiturn__honest__soft__r17 
+  [8/54] ok    opus-5.5__case__multiturn__honest__hard__r17 
+  [9/54] ok    opus-5.5__case__multiturn__assert_only__hard__r17 
+  [10/54] ok    opus-5.5__case__multiturn__assert_only__soft__r17 
+  [11/54] ok    haiku-5.5__case__multiturn__honest__soft__r17 
+  [12/54] ok    haiku-5.5__case__multiturn__honest__hard__r17 
+  [13/54] ok    opus-5.5__case__multiturn__curated__hard__r17 
+  [14/54] ok    opus-5.5__case__multiturn__curated__soft__r17 
+  [15/54] ok    haiku-5.5__case__multiturn__assert_only__hard__r17 
+  [16/54] ok    haiku-5.5__case__multiturn__assert_only__soft__r17 
+  [17/54] ok    haiku-5.5__case__multiturn__curated__soft__r17 
+  [18/54] ok    opus-5.5__case__multiturn__honest__hard__r18 
+  [19/54] ok    opus-5.5__case__multiturn__honest__soft__r18 
+  [20/54] ok    haiku-5.5__case__multiturn__curated__hard__r17 
+  [21/54] ok    opus-5.5__case__multiturn__assert_only__hard__r18 
+  [22/54] ok    opus-5.5__case__multiturn__curated__hard__r18 
+  [23/54] ok    opus-5.5__case__multiturn__curated__soft__r18 
+  [24/54] ok    opus-5.5__case__multiturn__assert_only__soft__r18 
+  [25/54] ok    haiku-5.5__case__multiturn__honest__soft__r18 
+  [26/54] ok    haiku-5.5__case__multiturn__honest__hard__r18 
+  [27/54] ok    haiku-5.5__case__multiturn__assert_only__hard__r18 
+  [28/54] ok    haiku-5.5__case__multiturn__assert_only__soft__r18 
+  [29/54] ok    haiku-5.5__case__multiturn__curated__soft__r18 
+  [30/54] ok    haiku-5.5__case__multiturn__curated__hard__r18 
+  [31/54] ok    opus-5.5__case__multiturn__honest__soft__r19 
+  [32/54] ok    opus-5.5__case__multiturn__assert_only__soft__r19 
+  [33/54] ok    opus-5.5__case__multiturn__honest__hard__r19 
+  [34/54] ok    opus-5.5__case__multiturn__assert_only__hard__r19 
+  [35/54] ok    haiku-5.5__case__multiturn__honest__soft__r19 
+  [36/54] ok    haiku-5.5__case__multiturn__honest__hard__r19 
+  [37/54] ok    opus-5.5__case__multiturn__curated__soft__r19 
+  [38/54] ok    haiku-5.5__case__multiturn__assert_only__soft__r19 
+  [39/54] ok    haiku-5.5__case__multiturn__curated__soft__r19 
+  [40/54] ok    haiku-5.5__case__multiturn__assert_only__hard__r19 
+  [41/54] ok    opus-5.5__case__multiturn__curated__hard__r19 
+  [42/54] ok    haiku-5.5__case__multiturn__curated__hard__r19 
+  [43/54] ok    opus-5.5__case__multiturn__honest__hard__r20 
+  [44/54] ok    opus-5.5__case__multiturn__honest__soft__r20 
+  [45/54] ok    opus-5.5__case__multiturn__curated__soft__r20 
+  [46/54] ok    opus-5.5__case__multiturn__assert_only__soft__r20 
+  [47/54] ok    opus-5.5__case__multiturn__assert_only__hard__r20 
+  [48/54] ok    opus-5.5__case__multiturn__curated__hard__r20 
+  [49/54] ok    haiku-5.5__case__multiturn__honest__soft__r20 
+  [50/54] ok    haiku-5.5__case__multiturn__honest__hard__r20 
+  [51/54] ok    haiku-5.5__case__multiturn__assert_only__soft__r20 
+  [52/54] ok    haiku-5.5__case__multiturn__assert_only__hard__r20 
+  [53/54] ok    haiku-5.5__case__multiturn__curated__hard__r20 
+  [54/54] ok    haiku-5.5__case__multiturn__curated__soft__r20 
+done: 54 ok, 0 errors
+
+## stderr
+

@@ -1,0 +1,95 @@
+# dd-pipeline-study/harness/experiment.py judge --judge opus-5.5 --sample 0.1 --workers 4
+# started 2026-11-06T06:53:28, ended 2026-11-06T06:55:18, rc=0
+## stdout
+filters (model-reps=-, sample=0.1): 820 -> 85 jobs
+85 jobs, 0 already done, 85 to run (85 API calls)
+  opus-5.5               85 calls  ~119,118 input tokens (excl. multi-turn history)
+  [1/85] ok    parser__gpt-6-luna__discovery__terse__ALL__r20 
+  [2/85] ok    parser__gpt-6-luna__discovery__terse__ALL__r09 
+  [3/85] ok    parser__gpt-6-luna__discovery__terse__ALL__r19 
+  [4/85] ok    parser__gpt-6-luna__discovery__normal__ALL__r04 
+  [5/85] ok    parser__gpt-6-luna__mechanism__normal__ALL__r11 
+  [6/85] ok    parser__gpt-6-luna__mechanism__normal__ALL__r16 
+  [7/85] ok    parser__gpt-6-luna__mechanism__terse__ALL__r01 
+  [8/85] ok    parser__gpt-6-luna__overt__hardened__A__r08 
+  [9/85] ok    parser__gpt-6-luna__mechanism__terse__ALL__r05 
+  [10/85] ok    parser__gpt-6-luna__mechanism__terse__ALL__r09 
+  [11/85] ok    parser__gpt-6-luna__mechanism__terse__ALL__r08 
+  [12/85] ok    parser__gpt-6-luna__overt__naive__A__r05 
+  [13/85] ok    parser__gpt-6-luna__overt__naive__A__r06 
+  [14/85] ok    parser__gpt-6-luna__overt__naive__A__r10 
+  [15/85] ok    parser__gpt-6-luna__subtle__hardened__A__r06 
+  [16/85] ok    parser__gpt-6-luna__overt__naive__A__r16 
+  [17/85] ok    parser__gpt-6-luna__subtle__hardened__A__r13 
+  [18/85] ok    parser__gpt-6-luna__subtle__hardened__A__r20 
+  [19/85] ok    parser__gpt-6-luna__subtle__hardened__A__r19 
+  [20/85] ok    parser__haiku-5.5__discovery__terse__ALL__r01 
+  [21/85] ok    parser__haiku-5.5__discovery__terse__ALL__r16 
+  [22/85] ok    parser__haiku-5.5__discovery__normal__ALL__r12 
+  [23/85] ok    parser__haiku-5.5__mechanism__normal__ALL__r03 
+  [24/85] ok    parser__haiku-5.5__discovery__terse__ALL__r10 
+  [25/85] ok    parser__haiku-5.5__mechanism__normal__ALL__r09 
+  [26/85] ok    parser__haiku-5.5__mechanism__normal__ALL__r04 
+  [27/85] ok    parser__haiku-5.5__mechanism__terse__ALL__r12 
+  [28/85] ok    parser__haiku-5.5__mechanism__terse__ALL__r07 
+  [29/85] ok    parser__haiku-5.5__overt__hardened__A__r10 
+  [30/85] ok    parser__haiku-5.5__overt__hardened__A__r14 
+  [31/85] ok    parser__haiku-5.5__overt__naive__A__r09 
+  [32/85] ok    parser__haiku-5.5__overt__hardened__A__r19 
+  [33/85] ok    parser__haiku-5.5__overt__naive__A__r19 
+  [34/85] ok    parser__haiku-5.5__subtle__hardened__A__r01 
+  [35/85] ok    parser__haiku-5.5__subtle__hardened__A__r10 
+  [36/85] ok    parser__haiku-5.5__subtle__hardened__A__r18 
+  [37/85] ok    parser__haiku-5.5__subtle__hardened__A__r13 
+  [38/85] ok    parser__haiku-5.5__subtle__hardened__A__r12 
+  [39/85] ok    parser__haiku-5.5__subtle__naive__A__r09 
+  [40/85] ok    final__fable-5.1__haiku-5.5__mechanism__terse__r08 
+  [41/85] ok    final__fable-5.1__haiku-5.5__overt__hardened__r07 
+  [42/85] ok    final__fable-5.1__haiku-5.5__overt__hardened__r01 
+  [43/85] ok    final__fable-5.1__haiku-5.5__discovery__normal__r01 
+  [44/85] ok    final__fable-5.1__haiku-5.5__overt__naive__r07 
+  [45/85] ok    final__fable-5.1__haiku-5.5__overt__hardened__r09 
+  [46/85] ok    final__fable-5.1__haiku-5.5__subtle__hardened__r02 
+  [47/85] ok    final__fable-5.1__haiku-5.5__subtle__hardened__r09 
+  [48/85] ok    final__fable-5.1__haiku-5.5__subtle__hardened__r10 
+  [49/85] ok    final__fable-5.1__haiku-5.5__subtle__naive__r03 
+  [50/85] ok    final__fable-5.1__haiku-5.5__subtle__naive__r05 
+  [51/85] ok    final__fable-5.1__haiku-5.5__subtle__naive__r09 
+  [52/85] ok    final__gpt-6.1-sol__gpt-6-luna__discovery__normal__r18 
+  [53/85] ok    final__gpt-6.1-sol__gpt-6-luna__mechanism__terse__r07 
+  [54/85] ok    final__gpt-6.1-sol__gpt-6-luna__discovery__terse__r18 
+  [55/85] ok    final__gpt-6.1-sol__gpt-6-luna__overt__hardened__r04 
+  [56/85] ok    final__gpt-6.1-sol__gpt-6-luna__mechanism__normal__r03 
+  [57/85] ok    final__gpt-6.1-sol__gpt-6-luna__overt__naive__r15 
+  [58/85] ok    final__gpt-6.1-sol__gpt-6-luna__overt__naive__r02 
+  [59/85] ok    final__gpt-6.1-sol__gpt-6-luna__subtle__naive__r05 
+  [60/85] ok    final__gpt-6.1-sol__gpt-6-luna__subtle__naive__r01 
+  [61/85] ok    final__gpt-6.1-sol__gpt-6-luna__subtle__naive__r09 
+  [62/85] ok    final__opus-5.5__haiku-5.5__discovery__normal__r01 
+  [63/85] ok    final__opus-5.5__haiku-5.5__discovery__normal__r11 
+  [64/85] ok    final__opus-5.5__haiku-5.5__discovery__normal__r07 
+  [65/85] ok    final__opus-5.5__haiku-5.5__mechanism__terse__r04 
+  [66/85] ok    final__opus-5.5__haiku-5.5__mechanism__terse__r20 
+  [67/85] ok    final__opus-5.5__haiku-5.5__discovery__terse__r11 
+  [68/85] ok    final__opus-5.5__haiku-5.5__overt__hardened__r19 
+  [69/85] ok    final__opus-5.5__haiku-5.5__overt__hardened__r20 
+  [70/85] ok    final__opus-5.5__haiku-5.5__overt__naive__r17 
+  [71/85] ok    final__opus-5.5__haiku-5.5__overt__naive__r16 
+  [72/85] ok    final__opus-5.5__haiku-5.5__subtle__hardened__r09 
+  [73/85] ok    final__opus-5.5__haiku-5.5__subtle__hardened__r12 
+  [74/85] ok    final__opus-5.5__haiku-5.5__subtle__hardened__r17 
+  [75/85] ok    final__opus-5.5__haiku-5.5__subtle__naive__r14 
+  [76/85] ok    final__fable-5.1__direct__discovery__r03 
+  [77/85] ok    final__fable-5.1__direct__discovery__r06 
+  [78/85] ok    final__fable-5.1__direct__mechanism__r08 
+  [79/85] ok    final__gpt-6.1-sol__direct__discovery__r11 
+  [80/85] ok    final__gpt-6.1-sol__direct__mechanism__r02 
+  [81/85] ok    final__gpt-6.1-sol__direct__discovery__r20 
+  [82/85] ok    final__opus-5.5__direct__discovery__r03 
+  [83/85] ok    final__opus-5.5__direct__mechanism__r12 
+  [84/85] ok    final__opus-5.5__direct__discovery__r20 
+  [85/85] ok    final__opus-5.5__direct__mechanism__r02 
+done: 85 ok, 0 errors
+
+## stderr
+

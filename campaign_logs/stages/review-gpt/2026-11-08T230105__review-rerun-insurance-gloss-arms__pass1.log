@@ -1,0 +1,291 @@
+# interpretive-drift-study/harness/experiment.py run --case case_insurance.json --arms glossA,glossB,dripA,dripB,strongA,strongB,strongA_poorsep --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-08T23:01:05, ended 2026-11-09T00:22:22, rc=0
+## stdout
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+280 jobs, 0 already done, 280 to run (2520 API calls)
+  gpt-6-luna           1260 calls  ~145,460 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          1260 calls  ~145,460 input tokens (excl. multi-turn history)
+  [1/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r01 
+  [2/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r01 
+  [3/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r01 
+  [4/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r01 
+  [5/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r01 
+  [6/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r01 
+  [7/280] ok    gpt-6-luna__case_insurance__multiturn__glossA__r01 
+  [8/280] ok    gpt-6-luna__case_insurance__multiturn__dripA__r01 
+  [9/280] ok    gpt-6-luna__case_insurance__multiturn__glossB__r01 
+  [10/280] ok    gpt-6-luna__case_insurance__multiturn__strongA__r01 
+  [11/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r01 
+  [12/280] ok    gpt-6-luna__case_insurance__multiturn__dripB__r01 
+  [13/280] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r01 
+  [14/280] ok    gpt-6-luna__case_insurance__multiturn__strongB__r01 
+  [15/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r02 
+  [16/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r02 
+  [17/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r02 
+  [18/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r02 
+  [19/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r02 
+  [20/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r02 
+  [21/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r02 
+  [22/280] ok    gpt-6-luna__case_insurance__multiturn__glossA__r02 
+  [23/280] ok    gpt-6-luna__case_insurance__multiturn__glossB__r02 
+  [24/280] ok    gpt-6-luna__case_insurance__multiturn__dripA__r02 
+  [25/280] ok    gpt-6-luna__case_insurance__multiturn__dripB__r02 
+  [26/280] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r02 
+  [27/280] ok    gpt-6-luna__case_insurance__multiturn__strongA__r02 
+  [28/280] ok    gpt-6-luna__case_insurance__multiturn__strongB__r02 
+  [29/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r03 
+  [30/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r03 
+  [31/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r03 
+  [32/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r03 
+  [33/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r03 
+  [34/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r03 
+  [35/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r03 
+  [36/280] ok    gpt-6-luna__case_insurance__multiturn__glossA__r03 
+  [37/280] ok    gpt-6-luna__case_insurance__multiturn__glossB__r03 
+  [38/280] ok    gpt-6-luna__case_insurance__multiturn__dripB__r03 
+  [39/280] ok    gpt-6-luna__case_insurance__multiturn__dripA__r03 
+  [40/280] ok    gpt-6-luna__case_insurance__multiturn__strongA__r03 
+  [41/280] ok    gpt-6-luna__case_insurance__multiturn__strongB__r03 
+  [42/280] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r03 
+  [43/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r04 
+  [44/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r04 
+  [45/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r04 
+  [46/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r04 
+  [47/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r04 
+  [48/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r04 
+  [49/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r04 
+  [50/280] ok    gpt-6-luna__case_insurance__multiturn__glossB__r04 
+  [51/280] ok    gpt-6-luna__case_insurance__multiturn__glossA__r04 
+  [52/280] ok    gpt-6-luna__case_insurance__multiturn__dripB__r04 
+  [53/280] ok    gpt-6-luna__case_insurance__multiturn__dripA__r04 
+  [54/280] ok    gpt-6-luna__case_insurance__multiturn__strongA__r04 
+  [55/280] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r04 
+  [56/280] ok    gpt-6-luna__case_insurance__multiturn__strongB__r04 
+  [57/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r05 
+  [58/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r05 
+  [59/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r05 
+  [60/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r05 
+  [61/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r05 
+  [62/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r05 
+  [63/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r05 
+  [64/280] ok    gpt-6-luna__case_insurance__multiturn__glossB__r05 
+  [65/280] ok    gpt-6-luna__case_insurance__multiturn__dripA__r05 
+  [66/280] ok    gpt-6-luna__case_insurance__multiturn__dripB__r05 
+  [67/280] ok    gpt-6-luna__case_insurance__multiturn__glossA__r05 
+  [68/280] ok    gpt-6-luna__case_insurance__multiturn__strongA__r05 
+  [69/280] ok    gpt-6-luna__case_insurance__multiturn__strongB__r05 
+  [70/280] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r05 
+  [71/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r06 
+  [72/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r06 
+  [73/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r06 
+  [74/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r06 
+  [75/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r06 
+  [76/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r06 
+  [77/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r06 
+  [78/280] ok    gpt-6-luna__case_insurance__multiturn__glossA__r06 
+  [79/280] ok    gpt-6-luna__case_insurance__multiturn__glossB__r06 
+  [80/280] ok    gpt-6-luna__case_insurance__multiturn__dripA__r06 
+  [81/280] ok    gpt-6-luna__case_insurance__multiturn__dripB__r06 
+  [82/280] ok    gpt-6-luna__case_insurance__multiturn__strongA__r06 
+  [83/280] ok    gpt-6-luna__case_insurance__multiturn__strongB__r06 
+  [84/280] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r06 
+  [85/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r07 
+  [86/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r07 
+  [87/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripA__r07 
+  [88/280] ok    gpt-6.1-sol__case_insurance__multiturn__dripB__r07 
+  [89/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA__r07 
+  [90/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongB__r07 
+  [91/280] ok    gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r07 
+  [92/280] ok    gpt-6-luna__case_insurance__multiturn__glossB__r07 
+  [93/280] ok    gpt-6-luna__case_insurance__multiturn__glossA__r07 
+  [94/280] ok    gpt-6-luna__case_insurance__multiturn__dripA__r07 
+  [95/280] ok    gpt-6-luna__case_insurance__multiturn__strongA__r07 
+  [96/280] ok    gpt-6-luna__case_insurance__multiturn__dripB__r07 
+  [97/280] ok    gpt-6-luna__case_insurance__multiturn__strongB__r07 
+  [98/280] ok    gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r07 
+  [99/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossA__r08 
+  [100/280] ok    gpt-6.1-sol__case_insurance__multiturn__glossB__r08 
+  [101/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [102/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [103/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [104/280] error gpt-6-luna__case_insurance__multiturn__glossB__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [105/280] error gpt-6-luna__case_insurance__multiturn__dripA__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [106/280] error gpt-6-luna__case_insurance__multiturn__dripB__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [107/280] error gpt-6-luna__case_insurance__multiturn__strongA__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [108/280] error gpt-6-luna__case_insurance__multiturn__strongB__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [109/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [110/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [111/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [112/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [113/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [114/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [115/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [116/280] error gpt-6-luna__case_insurance__multiturn__glossA__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [117/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [118/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r08 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [119/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [120/280] error gpt-6-luna__case_insurance__multiturn__glossA__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [121/280] error gpt-6-luna__case_insurance__multiturn__glossB__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [122/280] error gpt-6-luna__case_insurance__multiturn__dripA__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [123/280] error gpt-6-luna__case_insurance__multiturn__dripB__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [124/280] error gpt-6-luna__case_insurance__multiturn__strongA__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery timed out"}}
+  [125/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [126/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [127/280] error gpt-6-luna__case_insurance__multiturn__strongB__r09 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [128/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [129/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [130/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [131/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [132/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [133/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [134/280] error gpt-6-luna__case_insurance__multiturn__glossB__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [135/280] error gpt-6-luna__case_insurance__multiturn__glossA__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [136/280] error gpt-6-luna__case_insurance__multiturn__dripA__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [137/280] error gpt-6-luna__case_insurance__multiturn__dripB__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [138/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [139/280] error gpt-6-luna__case_insurance__multiturn__strongA__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [140/280] error gpt-6-luna__case_insurance__multiturn__strongB__r10 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [141/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [142/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [143/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [144/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [145/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [146/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [147/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [148/280] error gpt-6-luna__case_insurance__multiturn__glossA__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [149/280] error gpt-6-luna__case_insurance__multiturn__dripB__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [150/280] error gpt-6-luna__case_insurance__multiturn__dripA__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [151/280] error gpt-6-luna__case_insurance__multiturn__glossB__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [152/280] error gpt-6-luna__case_insurance__multiturn__strongA__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [153/280] error gpt-6-luna__case_insurance__multiturn__strongB__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [154/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r11 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [155/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [156/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [157/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [158/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [159/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [160/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [161/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [162/280] error gpt-6-luna__case_insurance__multiturn__glossA__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [163/280] error gpt-6-luna__case_insurance__multiturn__glossB__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [164/280] error gpt-6-luna__case_insurance__multiturn__dripA__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [165/280] error gpt-6-luna__case_insurance__multiturn__dripB__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [166/280] error gpt-6-luna__case_insurance__multiturn__strongA__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [167/280] error gpt-6-luna__case_insurance__multiturn__strongB__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [168/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r12 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [169/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [170/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [171/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [172/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [173/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [174/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [175/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [176/280] error gpt-6-luna__case_insurance__multiturn__glossA__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [177/280] error gpt-6-luna__case_insurance__multiturn__glossB__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [178/280] error gpt-6-luna__case_insurance__multiturn__dripA__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [179/280] error gpt-6-luna__case_insurance__multiturn__dripB__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [180/280] error gpt-6-luna__case_insurance__multiturn__strongA__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [181/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [182/280] error gpt-6-luna__case_insurance__multiturn__strongB__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [183/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [184/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [185/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [186/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [187/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [188/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [189/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [190/280] error gpt-6-luna__case_insurance__multiturn__glossA__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [191/280] error gpt-6-luna__case_insurance__multiturn__glossB__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [192/280] error gpt-6-luna__case_insurance__multiturn__dripA__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [193/280] error gpt-6-luna__case_insurance__multiturn__strongA__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [194/280] error gpt-6-luna__case_insurance__multiturn__dripB__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [195/280] error gpt-6-luna__case_insurance__multiturn__strongB__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [196/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [197/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [198/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [199/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [200/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [201/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [202/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [203/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [204/280] error gpt-6-luna__case_insurance__multiturn__glossB__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [205/280] error gpt-6-luna__case_insurance__multiturn__glossA__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [206/280] error gpt-6-luna__case_insurance__multiturn__dripB__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [207/280] error gpt-6-luna__case_insurance__multiturn__dripA__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [208/280] error gpt-6-luna__case_insurance__multiturn__strongA__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [209/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [210/280] error gpt-6-luna__case_insurance__multiturn__strongB__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [211/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [212/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [213/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [214/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [215/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [216/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [217/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [218/280] error gpt-6-luna__case_insurance__multiturn__glossA__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [219/280] error gpt-6-luna__case_insurance__multiturn__glossB__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [220/280] error gpt-6-luna__case_insurance__multiturn__dripA__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [221/280] error gpt-6-luna__case_insurance__multiturn__dripB__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [222/280] error gpt-6-luna__case_insurance__multiturn__strongA__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [223/280] error gpt-6-luna__case_insurance__multiturn__strongB__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [224/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [225/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [226/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [227/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [228/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [229/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [230/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [231/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [232/280] error gpt-6-luna__case_insurance__multiturn__glossA__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [233/280] error gpt-6-luna__case_insurance__multiturn__glossB__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [234/280] error gpt-6-luna__case_insurance__multiturn__dripA__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [235/280] error gpt-6-luna__case_insurance__multiturn__dripB__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [236/280] error gpt-6-luna__case_insurance__multiturn__strongB__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [237/280] error gpt-6-luna__case_insurance__multiturn__strongA__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [238/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [239/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [240/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [241/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [242/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [243/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [244/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [245/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [246/280] error gpt-6-luna__case_insurance__multiturn__glossA__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [247/280] error gpt-6-luna__case_insurance__multiturn__glossB__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [248/280] error gpt-6-luna__case_insurance__multiturn__dripA__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [249/280] error gpt-6-luna__case_insurance__multiturn__dripB__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [250/280] error gpt-6-luna__case_insurance__multiturn__strongA__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [251/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [252/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [253/280] error gpt-6-luna__case_insurance__multiturn__strongB__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [254/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [255/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [256/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [257/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [258/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [259/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [260/280] error gpt-6-luna__case_insurance__multiturn__glossA__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [261/280] error gpt-6-luna__case_insurance__multiturn__glossB__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [262/280] error gpt-6-luna__case_insurance__multiturn__dripA__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [263/280] error gpt-6-luna__case_insurance__multiturn__dripB__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [264/280] error gpt-6-luna__case_insurance__multiturn__strongB__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [265/280] error gpt-6-luna__case_insurance__multiturn__strongA__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [266/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [267/280] error gpt-6.1-sol__case_insurance__multiturn__glossA__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [268/280] error gpt-6.1-sol__case_insurance__multiturn__glossB__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [269/280] error gpt-6.1-sol__case_insurance__multiturn__dripA__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [270/280] error gpt-6.1-sol__case_insurance__multiturn__dripB__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [271/280] error gpt-6.1-sol__case_insurance__multiturn__strongA__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [272/280] error gpt-6.1-sol__case_insurance__multiturn__strongB__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [273/280] error gpt-6.1-sol__case_insurance__multiturn__strongA_poorsep__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [274/280] error gpt-6-luna__case_insurance__multiturn__glossA__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [275/280] error gpt-6-luna__case_insurance__multiturn__glossB__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [276/280] error gpt-6-luna__case_insurance__multiturn__dripA__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [277/280] error gpt-6-luna__case_insurance__multiturn__dripB__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [278/280] error gpt-6-luna__case_insurance__multiturn__strongA__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [279/280] error gpt-6-luna__case_insurance__multiturn__strongB__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [280/280] error gpt-6-luna__case_insurance__multiturn__strongA_poorsep__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+done: 100 ok, 180 errors
+
+## stderr
+

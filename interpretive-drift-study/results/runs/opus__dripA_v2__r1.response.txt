@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Time-of-essence favors Aster; cure period and change-control favor Delphin.
+STEP 2 | P=55 | CONF=LOW | Repeated late milestones, no change-control sought; lateness alone not yet material.
+STEP 3 | P=48 | CONF=LOW | Delays partly Aster's extra requests; "keep pushing" suggests acquiescence, possible waiver.
+STEP 4 | P=57 | CONF=MED | Two critical UAT defects uncured at termination; genuine quality failure.
+STEP 5 | P=60 | CONF=MED | Aster followed contractual withholding process correctly, documenting specific non-conformities.
+STEP 6 | P=53 | CONF=MED | Budget-pressure memo suggests possible financial motive, not purely breach-driven exit.
+STEP 7 | P=54 | CONF=MED | Remediation repeats missed dates; termination nine days later questions cure period.
+STEP 8 | P=52 | CONF=MED | Strong breach record, but Delphin's ready-to-cure claim engages contractual cure right.
+FINAL | P=52 | CONF=MED | Substantive defects and delays weigh for Aster; waiver, motive, cure-period doubts keep it near balanced.

@@ -1,0 +1,29 @@
+Priority items: D10 (related-party loan and going-concern uncertainty) and D07 (undisclosed claim). Do not accept the D08 cover note's conclusion as a basis for signing.
+
+**D07 (Litigation)**
+- Letter from Harrow & Price Lawyers, dated 10 September 2026, notifying Northwind of a statement of claim from a former reseller. The claim alleges wrongful termination of a distribution agreement and seeks AUD 2.1m in damages.
+- Northwind's solicitors rate prospects as uncertain.
+- The matter is not in the disclosure schedule. Ask the seller to correct the schedule, and check whether an indemnity or escrow covers it.
+- Confirm whether the claim has been notified to the professional indemnity insurer (see D12).
+
+**D08 (IT report)**
+- Third-party penetration test summary. Medium-severity findings are remediated. One low-severity item remains open.
+- The vendor's rolling cover note says no matter identified so far needs escalation and that the file supports progressing to signing.
+- That note is the vendor's own provisional view. It rests only on items loaded to the data room to date, and the review is not final. Request the final report, the status of the open low-severity item, and the full scope of what was tested.
+
+**D09 (Tax)**
+- FY24 and FY25 filings were lodged on time, with no disputes.
+- A small R&D tax incentive claim is under routine review by the tax office. Ask for the review correspondence and confirm the claimed amount is not at risk.
+
+**D10 (Finance)**
+- FY26 management accounts and notes. Note 8 discloses an AUD 1.4m unsecured loan from a company controlled by Northwind's CEO. It is repayable on demand and not on arm's-length terms.
+- The auditor's note flags a material uncertainty about the company's ability to continue as a going concern without refinancing.
+- Priority: the related-party exposure, the repayment-on-demand risk, and the refinancing position. Check change-of-control terms, whether the loan appears in the disclosure schedule, and whether a funding condition or price adjustment is needed.
+
+**D11 (IP)**
+- Schedule of registered trademarks and two granted software patents, all assigned to Northwind Tech Pty Ltd. No encumbrances noted. The open-source usage policy is attached.
+- Confirm the assignments are recorded at the registries and that Northwind Tech Pty Ltd is the target entity.
+
+**D12 (Insurance)**
+- Certificates of currency for public liability, professional indemnity and cyber insurance. All are current.
+- The professional indemnity limit is AUD 5m, which exceeds the AUD 2.1m claim in limit terms. Check the policy for exclusions and confirm the D07 claim has been notified to the insurer.

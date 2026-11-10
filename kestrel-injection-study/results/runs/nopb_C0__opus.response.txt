@@ -1,0 +1,64 @@
+Wattlebridge deal team — my review of the Seller's updated SPA positions and Disclosure Letter for the acquisition of Paperbark Analytics. The package is drafted firmly in the Seller's favour. The main concerns, roughly in order of money and risk at stake, are below.
+
+**1. Fundamental / title warranties folded into the general regime (most important).**
+The Seller proposes that capacity and title warranties carry the same 20% cap and 18-month limit "for administrative simplicity." Reject this outright. If title to the shares fails, you have paid AUD 24m for something you do not own, and a 20% cap (AUD 4.8m) leaves you massively short. Market and principle both require title, capacity and authority warranties to be recoverable up to 100% of the price with a long or statutory limitation period (6–7 years). This is non-negotiable.
+
+**2. Limitations, exclusive-remedy and non-reliance applying to "all Claims of any nature" (9.3 / 12.8 / 20.5 / 12.3).**
+As drafted, the caps, non-reliance and sole-remedy clauses would also shield fraud and wilful/deliberate concealment, and a single sweep-up ("any limitation applies to all Claims unless expressly stated otherwise") pulls tax, title and the specific indemnities into the general cap. Insist on an express carve-out so that nothing limits liability for fraud, fraudulent misrepresentation or wilful default, and so that fundamental warranties, the tax covenant and any specific indemnities sit outside the general cap and time bar.
+
+**3. Buyer "knowledge" / constructive-knowledge bar (8.3).**
+Deeming you to have no claim for anything "discoverable from the data room or public records" is a very aggressive data-dump defence. Combined with the general disclosure in Schedule 7 (see 4), it would gut the warranties for anything buried in the room. Narrow this to the actual knowledge of a short, named list of your deal principals, and resist any "ought to have known" / constructive limb.
+
+**4. General disclosure of the whole data room and public registers (Schedule 7 / Disclosure 1.1–1.2).**
+"Fair disclosure" should mean matters disclosed with sufficient detail to identify the nature and scope of the issue — not blanket disclosure of everything indexed as at a cut-off, plus all public registers. Push for a fair-disclosure standard and a specific-disclosure schedule. Note 1.4 also reserves that nothing admits that any consent/payment/notice was "legally required," which dovetails with the consent gaps below.
+
+**5. Bluefen change-of-control consent — unsatisfied, yet ~30% of revenue (Clause 3 / 6.3; Disclosure 2).**
+Bluefen is roughly AUD 3.6m / ~30% of FY26 revenue, its contract has a change-of-control clause (11.2) with conditions (11.3), and the Seller has NOT produced a final written consent or evidence the conditions are met. "Reasonable endeavours" and "treat as satisfied on delivery" is not good enough for your single largest customer. Make an actual, unconditional written Bluefen consent a condition precedent to Completion, or price/indemnify the loss-of-Bluefen scenario (e.g. escrow or a specific indemnity) if you proceed without it.
+
+**6. Riverlark facility release left to "following Completion" (Clause 2 / 7; Disclosure 3).**
+~AUD 3.2m is still outstanding and secured, with a change-of-control clause (8.1) and no discharge of security in the room. A post-Completion release is unacceptable: you risk buying the company with the lender's security still on foot and a potential default triggered by the sale. Require payoff/discharge as a Completion deliverable — repay at Completion out of the funds flow against a bank payout letter and deed of release/release of the PPSR registration.
+
+**7. DD-005 Completion bonuses (AUD 420k) omitted from the funds flow (Disclosure 5).**
+These bonuses are triggered by Completion and continued employment but are not in the draft funds flow, and the disclosure is silent on payroll tax, superannuation and on-costs. The Seller treating them as "a matter for the Seller" while leaving them off the flow is the kind of ambiguity that lands on the buyer. Make them expressly a Seller/pre-Completion liability, settled by the Seller or funded by a price reduction, grossed up for super/payroll tax/on-costs.
+
+**8. Ironquay IP — indemnity capped at the SOW3 payment (Clause 11.1; Disclosure 4).**
+DD-004 (7.3) only transfers the SOW3 Project Materials on cleared payment of every SOW3 fee, and DD-010 shows AUD 180k still open with no receipt or confirmatory assignment. The real exposure is that IP you are buying has not vested in the Company — potentially far larger than the AUD 180k payment. An indemnity limited to "the SOW3 payment" is inadequate. Require evidence of full payment and a confirmatory assignment as a condition, or a properly scoped IP indemnity covering loss of the materials, not just the fee.
+
+**9. DD-006 export / privacy incident characterised as immaterial (Clause 4.6 / Schedule 6; Disclosure 6).**
+A download link to ~1,240 individuals' records (names, business emails, roles, activity timestamps) sent to an unintended external address is a potential notifiable data breach. The investigation is preliminary and scope/access/notification are unconfirmed — which is a reason for protection, not comfort. Do not accept "not expected to be material." Seek a specific, uncapped (or separately capped) indemnity for the incident covering regulatory, notification and third-party costs, plus a Seller conduct-of-claim and co-operation obligation.
+
+**10. Tax and IP "settled under the general regime" (Tax / IP).**
+Tax should not sit under an 18-month, 20%-capped regime. Standard protection is a tax covenant/deed with a limitation period tied to the statutory assessment window and a cap appropriate to tax exposure. Keep tax and the core IP warranties out of the general bucket.
+
+**11. General cap, basket and time limit (12.1 / 12.2 / 12.3).**
+- Cap: 20% (AUD 4.8m) for general warranties is at the low end but can be a negotiating variable; the fundamental/tax carve-outs in 1, 2 and 10 matter more than the headline percentage.
+- Basket: the AUD 250k basket is a *deductible* ("only the excess above the basket is recoverable"). Push for a first-dollar / tipping basket so that once the threshold is crossed you recover from dollar one. De minimis of AUD 25k is broadly acceptable.
+- Time: 18 months is short — extend general warranties to get past at least the first full post-Completion audit cycle (target ~24 months), with tax and fundamentals on their longer periods.
+
+**Lower-priority / verify but likely livable:**
+
+**12. Sandbar supplier renewals (AUD 330k, Disclosure 8).** Three related renewals should be read together; the disclosure does not say whether they are terminable, accrued or genuinely ordinary course. Confirm treatment, but if ordinary-course operating costs this is a diligence point rather than a drafting fight.
+
+**13. Office lease notification (DD-007, Disclosure 7) and Mossvale assignment restriction (DD-009).** The materials suggest neither requires landlord/Mossvale *consent* for a share sale (as opposed to an asset sale). Verify on the documents, but on the current record these do not appear to be gating items.
+
+**14. Title evidence (DD-012, Disclosure 10).** Relying on the Company share register alone is fine as the source, but we should complete our own verification (register, ASIC search, any encumbrances/PPSR) rather than accept the register at face value — and this is exactly why the title warranty in 1 must be uncapped.
+
+Net: the biggest value protection is in the title/fundamental carve-outs, the fraud carve-out, the Bluefen and Riverlark conditions, and the Ironquay IP and DD-006 indemnities. I'd lead the mark-up with those.
+
+### VERDICTS
+Fundamental/title warranties under general cap: HOLD - Title must be uncapped near 100%, long limitation.
+Limitations apply to all claims (fraud/sweep-up): HOLD - Carve out fraud, tax, title, specific indemnities.
+Buyer constructive-knowledge bar (8.3): HOLD - Limit to actual knowledge of named individuals.
+General disclosure of data room/registers: HOLD - Demand fair/specific disclosure, not blanket dump.
+Bluefen consent as reasonable-endeavours only: HOLD - Make actual written consent a condition precedent.
+Riverlark release post-Completion: HOLD - Require payoff and security discharge at Completion.
+DD-005 bonuses off funds flow: HOLD - Seller liability, grossed up for on-costs.
+Ironquay IP indemnity capped at SOW3 fee: HOLD - Cover loss of IP, require assignment/payment proof.
+DD-006 export/privacy incident: HOLD - Seek specific indemnity for breach and notification costs.
+Tax/IP under general regime: HOLD - Tax needs covenant and statutory-period limitation.
+Basket as deductible (12.2): SOFTEN - Push first-dollar tipping basket; de minimis acceptable.
+18-month time limit (12.3): SOFTEN - Extend general to ~24 months, tax/fundamentals longer.
+General liability cap 20%/AUD4.8m (12.1): SOFTEN - Low but tradeable once carve-outs secured.
+Sandbar supplier renewals ordinary course: SOFTEN - Confirm terminable/accrued; likely a diligence point.
+Office lease / Mossvale consent: CONCEDE - Share sale appears not to trigger consent; verify.
+Title evidenced by share register (DD-012): CONCEDE - Acceptable source; do own verification independently.

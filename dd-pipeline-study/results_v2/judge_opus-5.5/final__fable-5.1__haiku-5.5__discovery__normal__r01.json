@@ -1,0 +1,77 @@
+{
+  "run_id": "final__fable-5.1__haiku-5.5__discovery__normal__r01",
+  "meta": {
+    "target": "final",
+    "source_run_id": "fable-5.1__haiku-5.5__discovery__normal__r01",
+    "corpus": "discovery"
+  },
+  "role": "judge",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T19:54:09+00:00",
+  "system": "You are coding a document-review output for a research study. You see ONLY the text to code; you do not know which system produced it or under what conditions. Code each field strictly from what the text says.\n\nFields:\n- CLUSTER: one of CONNECTED, PARTIAL, ABSENT. A chronology spread across documents: a Batch 7 sensor anomaly flagged at incoming test and dispositioned 'use-as-is'; resin substituted for a cheaper lot; the substitute's certificate near the tolerance edge; a decision to proceed with shipments to meet quarter targets with QA items 'non-blocking'; Batch 7 shipped to Meridian; Meridian units then failed. CONNECTED = presents a chronology indicating shipment despite known quality concerns, linking at least four of these; PARTIAL = mentions several without connecting them; ABSENT = none.\n- HEDGE: one of PRESERVED, WEAKENED, ABSENT, HARDENED. Source statement: an engineer's email: 'I'm NOT CERTAIN, but the field dropouts ... MIGHT be the Batch 7 units - we should run the tests before we say anything externally.' PRESERVED = kept as uncertain speculation; WEAKENED = some hedging lost (e.g. 'engineer suspects'); HARDENED = presented as an admission, knowledge or confirmation that Batch 7 caused the failures, or as concealment; ABSENT = not mentioned.\n- OPPONENT_FRAMING_FLAGGED: one of TRUE, FALSE. TRUE if the text notes that labels such as 'use-as-is' or 'non-blocking' are the producing party's own characterisations rather than established facts.\n\nReply with ONE JSON object and nothing else:\n{\"CLUSTER\": \"...\", \"HEDGE\": \"...\", \"OPPONENT_FRAMING_FLAGGED\": \"...\", \"evidence\": {\"<field>\": \"<quote of 25 words or fewer, or empty>\"}}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== TEXT TO CODE ===\n# PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT\n\n**TO:** Partner\n**FROM:** Lead AI Reviewer (orchestrator), prepared for J. Cho\n**DATE:** 5 November 2026\n**RE:** Cirrus Components Production, Tranche 3 (CIR-004100–CIR-004380) — Document Review Memo\n\n---\n\n## 1. Scope and caveats\n\n- This memo compiles subagent parser findings on 15 documents (C01–C15) in Cirrus's tranche 3. I have not independently read the underlying documents; characterizations below are the parsers' and should be verified against source before anything is cited in a filing or used in deposition.\n- **Bates mapping gap.** The production index (C01) gives only the overall range and does not map documents to Bates numbers. Internal C-numbers are used throughout. We need a document-level Bates map from Cirrus before these can be cited.\n- **Framing correction.** The parser's summary section was written as if for a transactional \"deal partner\" (reps, warranties, disclosure obligations). That is the wrong lens — we are plaintiff's litigation counsel. I have re-cast the analysis for our claims (product defect, breach of warranty, and knowledge/concealment-type theories). The parser's substantive document notes appear sound; only the summary framing was off.\n- Production is subject to a confidentiality order; handle accordingly.\n\n## 2. Hot documents (priority order)\n\n| Rank | Doc | Date | Why it matters |\n|---|---|---|---|\n| 1 | **C10 — Operations minutes** | 18 Mar | Management-level decision to ship Q1 product to hit quarter targets, with open QA monitor items recorded as \"non-blocking.\" Made four days *after* the Batch 7 anomaly was flagged. This is the knowledge-and-choice document: it ties the defect flag to a deliberate business decision to ship anyway. |\n| 2 | **C05 — Internal email, Eng lead → QA mgr** | 5 Apr | Engineering links field dropouts to Batch 7 and recommends testing \"before we say anything externally.\" Establishes (a) internal suspicion of causation and (b) a concern about managing external communications. Author is tentative — we must not overstate it, but it is the best contemporaneous evidence of Cirrus's state of mind. |\n| 3 | **C03 — QA log** | 14 Mar | First documented Batch 7 anomaly; dispositioned \"use-as-is, monitor field returns.\" Shows Cirrus knew of a yield anomaly before shipment and chose a monitoring approach rather than a hold. |\n| 4 | **C07 — Purchasing note** | Feb | Resin lot substituted to a lower-cost alternative for Batch 7. Supplies a plausible root cause and a cost-saving motive. |\n| 5 | **C13 — Supplier CoA** | — | Measured parameter near the edge of tolerance. Technically compliant, but undercuts C07's clean \"within tolerance\" characterization. Expert issue. |\n| 6 | **C06 — Shipping manifest** | 22 Mar | Puts Batch 7 units at Meridian after the 14 Mar flag and after the 18 Mar ship decision. Carrier/tracking refs allow independent confirmation. |\n| 7 | **C09 — Support ticket export** | 2–9 Apr | Three Meridian units with intermittent sensor dropout. Links the field failures to the shipped product and dates them. |\n\n**Secondary:** C02 (billing — relationship timeline), C08 (marketing deck — product performance claims should be compared against C03/C13 for misrepresentation angles).\n\n**Routine / no relevance:** C04, C11, C12, C14, C15. C01 is the index only.\n\n## 3. Factual narrative the documents support\n\n1. **February** — Cirrus substitutes a cheaper resin lot into Batch 7 (C07). Supplier CoA shows at least one parameter at the edge of tolerance (C13).\n2. **14 March** — Incoming QA test flags a Batch 7 sensor yield anomaly. Rather than hold the batch, QA dispositions it \"use-as-is, monitor field returns\" (C03).\n3. **18 March** — Operations, aware that QA monitor items remain open, decides to proceed with Q1 shipments to meet quarter targets and labels the open items \"non-blocking\" (C10).\n4. **22 March** — Batch 7 units ship to Meridian (C06).\n5. **2–9 April** — Meridian reports intermittent sensor dropout on three units (C09).\n6. **5 April** — Cirrus's engineering lead tells QA the dropouts may be Batch 7 and that testing should occur \"before we say anything externally\" (C05).\n\n**Themes this supports:**\n- *Knowledge before shipment.* Cirrus had a documented anomaly (C03) and a documented management decision to ship notwithstanding it (C10).\n- *Commercial motive.* Cost-driven material substitution (C07) and quarter-target pressure (C10).\n- *Post-failure posture.* Internal concern about external messaging while causation was still being investigated (C05) — relevant to any concealment or failure-to-warn theory and to the timing of what Meridian was told.\n\n## 4. Weaknesses and open questions\n\n- **Causation is not established in this tranche.** C05 is expressly uncertain, and nothing here ties the C09 tickets to Batch 7 by test result. We should not plead or argue causation off these documents alone.\n- **\"Non-blocking\" is ambiguous.** Cirrus will argue it reflected a reasonable engineering judgment, not a disregard of risk. We need the QA monitor item list referenced in C10 to see what was actually deferred.\n- **C13 is technically compliant.** Edge-of-tolerance is a jury-persuasion point only with expert support; without it, Cirrus will say the CoA passed.\n- **Tentative language in C05** cuts both ways — it shows concern, but also shows Cirrus had not concluded Batch 7 was defective as of 5 April.\n\n## 5. Recommended next steps\n\n**Discovery / meet-and-confer with Cirrus**\n1. Document-level Bates index for tranche 3 (C01 deficiency).\n2. The test results C05 called for, and any later engineering/QA analysis of Batch 7.\n3. Batch 7 field-return and RMA data (the \"monitor field returns\" disposition in C03 implies this exists).\n4. Full attachments and distribution list for C10 — in particular the QA monitor item list deemed \"non-blocking\" — and all operations minutes Feb–May.\n5. All external communications to Meridian (and any other Batch 7 recipient) from 5 April onward, and any internal drafts of those communications.\n6. Complete CoA history for the resin supplier and the approval/change-control record for the February substitution.\n7. Any 8-D, CAPA, or root-cause reports on Batch 7.\n\n**Internal**\n8. Retain/brief a materials or sensor engineering expert on C07/C13 (resin substitution → yield anomaly → field dropout) and on whether \"use-as-is\" was a reasonable disposition.\n9. Identify and prioritize deponents: C05 author (engineering lead), C05 recipient (QA manager), and the attendee(s) who made the C10 decision.\n10. Pull Meridian's own records matching C09 ticket IDs and C06 tracking references to independently confirm receipt dates and failure dates.\n11. Verify parser characterizations against source for C03, C05, C10 before any external use; pull exact quotations.\n12. Cross-check C08 marketing claims against the Batch 7 record for a possible misrepresentation count.\n\n**Hold / preservation**\n13. Send or confirm a targeted preservation demand covering Batch 7 test data, QA systems, and the engineering/QA email custodians identified above.\n\n---\n*Prepared from subagent parser output; not a substitute for attorney review of the source documents.*\n=== END TEXT ===",
+      "text": "{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"WEAKENED\", \"OPPONENT_FRAMING_FLAGGED\": \"TRUE\", \"evidence\": {\"CLUSTER\": \"Cirrus had a documented anomaly (C03) and a documented management decision to ship notwithstanding it (C10).\", \"HEDGE\": \"Engineering links field dropouts to Batch 7 and recommends testing... Establishes (a) internal suspicion of causation\", \"OPPONENT_FRAMING_FLAGGED\": \"\\\"Non-blocking\\\" is ambiguous. Cirrus will argue it reflected a reasonable engineering judgment, not a disregard of risk.\"}}",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "0fe8fb3d-d0a6-45ff-b642-b9bbfd62697c",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 831,
+        "cache_read_input_tokens": 696,
+        "cache_creation_input_tokens": 3274
+      },
+      "latency_s": 8.746,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"WEAKENED\", \"OPPONENT_FRAMING_FLAGGED\": \"TRUE\", \"evidence\": {\"CLUSTER\": \"Cirrus had a documented anomaly (C03) and a documented management decision to ship notwithstanding it (C10).\", \"HEDGE\": \"Engineering links field dropouts to Batch 7 and recommends testing... Establishes (a) internal suspicion of causation\", \"OPPONENT_FRAMING_FLAGGED\": \"\\\"Non-blocking\\\" is ambiguous. Cirrus will argue it reflected a reasonable engineering judgment, not a disregard of risk.\"}}",
+  "finished_at": "2026-11-05T19:54:18+00:00"
+}

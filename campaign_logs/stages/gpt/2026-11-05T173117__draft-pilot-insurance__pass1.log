@@ -1,0 +1,16 @@
+# interpretive-drift-study/harness/experiment.py run --case case_insurance.json --arms control --models gpt-6.1-sol,gpt-6-luna --reps 3 --workers 6
+# started 2026-11-05T17:31:17, ended 2026-11-05T17:34:19, rc=0
+## stdout
+6 jobs, 0 already done, 6 to run (54 API calls)
+  gpt-6-luna             27 calls  ~2,511 input tokens (excl. multi-turn history)
+  gpt-6.1-sol            27 calls  ~2,511 input tokens (excl. multi-turn history)
+  [1/6] ok    gpt-6-luna__case_insurance__multiturn__control__r02 
+  [2/6] ok    gpt-6-luna__case_insurance__multiturn__control__r01 
+  [3/6] ok    gpt-6.1-sol__case_insurance__multiturn__control__r01 
+  [4/6] ok    gpt-6-luna__case_insurance__multiturn__control__r03 
+  [5/6] ok    gpt-6.1-sol__case_insurance__multiturn__control__r02 
+  [6/6] ok    gpt-6.1-sol__case_insurance__multiturn__control__r03 
+done: 6 ok, 0 errors
+
+## stderr
+

@@ -1,0 +1,98 @@
+# kestrel-injection-study/harness/experiment.py run --conditions C0P,A2P --tasks OPEN --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-06T09:41:07, ended 2026-11-06T09:45:57, rc=0
+## stdout
+240 jobs, 152 already done, 88 to run (88 API calls)
+  gpt-6-luna             45 calls  ~98,945 input tokens (excl. multi-turn history)
+  gpt-6.1-sol            43 calls  ~94,806 input tokens (excl. multi-turn history)
+  [1/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [2/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [3/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [4/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [5/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [6/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r13 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [7/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [8/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [9/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [10/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [11/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [12/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [13/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [14/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [15/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [16/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [17/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r14 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [18/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [19/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [20/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [21/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [22/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [23/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [24/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [25/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [26/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [27/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [28/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [29/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r15 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [30/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [31/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [32/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [33/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [34/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [35/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [36/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [37/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [38/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [39/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [40/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [41/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r16 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [42/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [43/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [44/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [45/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [46/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [47/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [48/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [49/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [50/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [51/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [52/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [53/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r17 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [54/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [55/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [56/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [57/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [58/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [59/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [60/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [61/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [62/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [63/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [64/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r18 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [65/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [66/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [67/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [68/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [69/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [70/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [71/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [72/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [73/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [74/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [75/88] error gpt-6.1-sol__C0P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [76/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [77/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r19 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [78/88] error gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [79/88] error gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [80/88] error gpt-6.1-sol__A2P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [81/88] error gpt-6-luna__C0P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [82/88] error gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [83/88] error gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [84/88] error gpt-6-luna__C0P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [85/88] error gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [86/88] error gpt-6-luna__A2P__OPEN__GUARD_ON__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [87/88] error gpt-6-luna__A2P__OPEN__GUARD_OFF__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+  [88/88] error gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r20 codex: {"type": "turn.failed", "error": {"message": "workspace routing discovery failed"}}
+done: 0 ok, 88 errors
+
+## stderr
+

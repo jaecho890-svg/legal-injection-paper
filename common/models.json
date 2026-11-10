@@ -1,0 +1,199 @@
+{
+  "_readme": [
+    "Model registry. Experiments name models by alias; the alias resolves to an exact model id and a route.",
+    "Routes: claude_cli / codex_cli = your signed-in Claude Code and Codex CLIs (see common/cli_backends.py); anthropic / openai / openai_compat = direct API with a key.",
+    "verified=false entries are placeholders or not yet probed: the runner refuses them until checked and set to true.",
+    "CLI routes cannot set temperature; provider defaults apply and every record says so. effort is passed explicitly so it does not depend on CLI defaults."
+  ],
+  "defaults": {
+    "reviewer": {
+      "temperature": 1.0,
+      "max_tokens": 4000,
+      "effort": "medium"
+    },
+    "judge": {
+      "temperature": 0.0,
+      "max_tokens": 4000,
+      "effort": "medium"
+    },
+    "judge_model": "gpt-6.1-sol",
+    "second_judge_model": "opus-5.5",
+    "second_judge_sample": 0.1
+  },
+  "models": {
+    "fable-5.1": {
+      "provider": "claude_cli",
+      "model": "claude-fable-5-1",
+      "verified": true,
+      "family": "anthropic",
+      "tier": "frontier",
+      "probed_at": "2026-11-04T06:09:22+00:00"
+    },
+    "opus-5.5": {
+      "provider": "claude_cli",
+      "model": "claude-opus-5-5",
+      "verified": true,
+      "family": "anthropic",
+      "tier": "frontier",
+      "probed_at": "2026-11-04T06:09:22+00:00"
+    },
+    "sonnet-5.5": {
+      "provider": "claude_cli",
+      "model": "claude-sonnet-5-5",
+      "verified": true,
+      "family": "anthropic",
+      "tier": "mid",
+      "probed_at": "2026-11-04T06:09:22+00:00"
+    },
+    "haiku-5.5": {
+      "provider": "claude_cli",
+      "model": "claude-haiku-5-5",
+      "verified": true,
+      "family": "anthropic",
+      "tier": "small",
+      "probed_at": "2026-11-04T06:09:22+00:00"
+    },
+    "opus-4.8": {
+      "provider": "claude_cli",
+      "model": "claude-opus-4-8",
+      "verified": true,
+      "family": "anthropic",
+      "tier": "frontier",
+      "note": "model the pilot sessions ran on",
+      "probed_at": "2026-11-04T06:09:22+00:00"
+    },
+    "gpt-6.1-sol": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "verified": true,
+      "family": "openai",
+      "tier": "frontier",
+      "probed_at": "2026-11-04T06:37:40+00:00"
+    },
+    "gpt-6.1-terra": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-terra",
+      "verified": true,
+      "family": "openai",
+      "probed_at": "2026-11-04T06:37:40+00:00"
+    },
+    "gpt-6-astra": {
+      "provider": "codex_cli",
+      "model": "gpt-6-astra",
+      "verified": true,
+      "family": "openai",
+      "probed_at": "2026-11-04T06:37:40+00:00"
+    },
+    "gpt-6-sol": {
+      "provider": "codex_cli",
+      "model": "gpt-6-sol",
+      "verified": true,
+      "family": "openai",
+      "probed_at": "2026-11-04T06:37:40+00:00"
+    },
+    "gpt-6-luna": {
+      "provider": "codex_cli",
+      "model": "gpt-6-luna",
+      "verified": true,
+      "family": "openai",
+      "probed_at": "2026-11-04T06:37:40+00:00"
+    },
+    "gpt-5.6-sol": {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-sol",
+      "verified": true,
+      "family": "openai",
+      "probed_at": "2026-11-04T06:37:40+00:00"
+    },
+    "gpt-5.6-terra": {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-terra",
+      "verified": true,
+      "family": "openai",
+      "probed_at": "2026-11-04T06:37:52+00:00"
+    },
+    "gpt-5.6-luna": {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-luna",
+      "verified": true,
+      "family": "openai",
+      "probed_at": "2026-11-04T06:37:54+00:00"
+    },
+    "opus-5.5-api": {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5",
+      "key_env": "ANTHROPIC_API_KEY",
+      "verified": true,
+      "family": "anthropic"
+    },
+    "haiku-5.5-api": {
+      "provider": "anthropic",
+      "model": "claude-haiku-5-5",
+      "key_env": "ANTHROPIC_API_KEY",
+      "verified": true,
+      "family": "anthropic"
+    },
+    "gemini": {
+      "provider": "openai_compat",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "model": "gemini-3.6-flash",
+      "key_env": "GEMINI_API_KEY",
+      "verified": true,
+      "family": "google",
+      "max_tokens_param": "max_tokens",
+      "quota": "free tier: 5 RPM, 20 requests/day",
+      "probed_at": "2026-11-04T06:18:11+00:00"
+    },
+    "mock-robust": {
+      "provider": "mock",
+      "model": "mock-robust",
+      "verified": true,
+      "family": "mock",
+      "tier": "test",
+      "susceptibility": 0.05
+    },
+    "mock-susceptible": {
+      "provider": "mock",
+      "model": "mock-susceptible",
+      "verified": true,
+      "family": "mock",
+      "tier": "test",
+      "susceptibility": 0.6
+    },
+    "nemotron-3-ultra": {
+      "provider": "openai_compat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "key_env": "OPENROUTER_API_KEY",
+      "verified": true,
+      "family": "open-weight (US)",
+      "max_tokens_param": "max_tokens",
+      "quota": "OpenRouter free tier: 20 RPM, 50 requests/day shared across models",
+      "probed_at": "2026-11-04T06:09:44+00:00"
+    },
+    "dots-3-note": {
+      "provider": "openai_compat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "key_env": "OPENROUTER_API_KEY",
+      "verified": true,
+      "family": "open-weight (China)",
+      "max_tokens_param": "max_tokens",
+      "quota": "OpenRouter free tier: 20 RPM, 50 requests/day shared across models",
+      "note": "endpoint retires 2026-12-31",
+      "probed_at": "2026-11-04T06:09:44+00:00"
+    },
+    "xing-4.0": {
+      "provider": "openai_compat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "xingchen-agi/xing4.0-29b-a4b:free",
+      "key_env": "OPENROUTER_API_KEY",
+      "verified": true,
+      "family": "open-weight (China)",
+      "max_tokens_param": "max_tokens",
+      "quota": "OpenRouter free tier: 20 RPM, 50 requests/day shared across models",
+      "note": "returned upstream 429s in your tests",
+      "probed_at": "2026-11-04T06:09:44+00:00"
+    }
+  }
+}

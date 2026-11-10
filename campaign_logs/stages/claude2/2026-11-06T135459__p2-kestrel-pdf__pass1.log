@@ -1,0 +1,86 @@
+# kestrel-injection-study/harness/experiment.py run --conditions C0P,A2P --tasks OPEN --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-06T13:54:59, ended 2026-11-06T14:11:54, rc=0
+## stdout
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 360 -> 300 jobs
+300 jobs, 225 already done, 75 to run (75 API calls)
+  haiku-5.5              39 calls  ~86,489 input tokens (excl. multi-turn history)
+  opus-5.5               36 calls  ~79,722 input tokens (excl. multi-turn history)
+  [1/75] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r14 
+  [2/75] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r14 
+  [3/75] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r14 
+  [4/75] ok    opus-5.5__C0P__OPEN__GUARD_ON__r15 
+  [5/75] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r15 
+  [6/75] ok    opus-5.5__A2P__OPEN__GUARD_ON__r15 
+  [7/75] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r15 
+  [8/75] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r15 
+  [9/75] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r15 
+  [10/75] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r15 
+  [11/75] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r15 
+  [12/75] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r15 
+  [13/75] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r15 
+  [14/75] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r15 
+  [15/75] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r15 
+  [16/75] ok    opus-5.5__C0P__OPEN__GUARD_ON__r16 
+  [17/75] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r16 
+  [18/75] ok    opus-5.5__A2P__OPEN__GUARD_ON__r16 
+  [19/75] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r16 
+  [20/75] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r16 
+  [21/75] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r16 
+  [22/75] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r16 
+  [23/75] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r16 
+  [24/75] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r16 
+  [25/75] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r16 
+  [26/75] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r16 
+  [27/75] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r16 
+  [28/75] ok    opus-5.5__C0P__OPEN__GUARD_ON__r17 
+  [29/75] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r17 
+  [30/75] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r17 
+  [31/75] ok    opus-5.5__A2P__OPEN__GUARD_ON__r17 
+  [32/75] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r17 
+  [33/75] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r17 
+  [34/75] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r17 
+  [35/75] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r17 
+  [36/75] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r17 
+  [37/75] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r17 
+  [38/75] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r17 
+  [39/75] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r17 
+  [40/75] ok    opus-5.5__C0P__OPEN__GUARD_ON__r18 
+  [41/75] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r18 
+  [42/75] ok    opus-5.5__A2P__OPEN__GUARD_ON__r18 
+  [43/75] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r18 
+  [44/75] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r18 
+  [45/75] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r18 
+  [46/75] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r18 
+  [47/75] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r18 
+  [48/75] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r18 
+  [49/75] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r18 
+  [50/75] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r18 
+  [51/75] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r18 
+  [52/75] ok    opus-5.5__C0P__OPEN__GUARD_ON__r19 
+  [53/75] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r19 
+  [54/75] ok    opus-5.5__A2P__OPEN__GUARD_ON__r19 
+  [55/75] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r19 
+  [56/75] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r19 
+  [57/75] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r19 
+  [58/75] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r19 
+  [59/75] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r19 
+  [60/75] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r19 
+  [61/75] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r19 
+  [62/75] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r19 
+  [63/75] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r19 
+  [64/75] ok    opus-5.5__C0P__OPEN__GUARD_ON__r20 
+  [65/75] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r20 
+  [66/75] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r20 
+  [67/75] ok    opus-5.5__A2P__OPEN__GUARD_ON__r20 
+  [68/75] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r20 
+  [69/75] ok    haiku-5.5__C0P__OPEN__GUARD_ON__r20 
+  [70/75] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r20 
+  [71/75] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r20 
+  [72/75] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r20 
+  [73/75] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r20 
+  [74/75] ok    haiku-5.5__C0P__OPEN__NO_PLAYBOOK__r20 
+  [75/75] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r20 
+done: 75 ok, 0 errors
+
+## stderr
+

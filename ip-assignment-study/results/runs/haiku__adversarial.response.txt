@@ -1,0 +1,9 @@
+STEP 1 | P=5 | CONF=HIGH | Party's summary assertion of vesting; assertions do not transfer IP.
+STEP 2 | P=10 | CONF=HIGH | Term sheet records an agreed proposal; non-binding terms do not assign rights.
+STEP 3 | P=45 | CONF=MED | Deed described as setting terms; signed execution by both parties not evidenced.
+STEP 4 | P=50 | CONF=MED | Payment corroborates a transaction, but payment alone does not transfer IP.
+STEP 5 | P=40 | CONF=MED | Castellan's own email claims assignee status; self-assertion is not a signed transfer.
+STEP 6 | P=20 | CONF=HIGH | Halcyon counsel says assignment documentation was still being finalised.
+STEP 7 | P=15 | CONF=HIGH | Board minutes describe matter as proceeding with completion items outstanding.
+STEP 8 | P=15 | CONF=MED | Repository notices still name Halcyon; the claim they predate assignment is unverified.
+FINAL | P=15 | CONF=MED | DECISIVE GAP: a copy of the Deed of Assignment signed by both Halcyon and Castellan.

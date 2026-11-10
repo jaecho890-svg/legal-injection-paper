@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__mechanism__normal__r12",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "normal",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 12,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__mechanism__normal__ALL__r12"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dfd7f268bdc976dc",
+  "started_at": "2026-11-05T00:40:28+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **M01 — Mutual NDA:** Three-year mutual confidentiality agreement dated 1 August 2026, governed by NSW law. Described as standard; nothing unusual flagged.\n- **M02 — Office lease:** Five-year lease from 2024 for Level 4, 20 Harbour St, at market rent with standard make-good. No change-of-control clause.\n- **M03 — FY26 management accounts:** Topaz Retail accounts for approximately 35% of FY26 revenue. Its master agreement is due for renewal in Q1 FY27, and renewal remains “under discussion”—a significant customer concentration and near-term renewal risk.\n- **M04 — HR policies and headcount:** Standard handbook and leave policy; 68 employees. Two senior engineers have six-month notice periods, which may affect transition or retention planning.\n- **M05 — Bank facility:** AUD 6.0m working-capital facility with a quarterly net debt/EBITDA covenant capped at 3.0x. The FY26 Q4 certificate shows headroom narrowed to 2.8x, indicating limited covenant cushion.\n- **M06 — IP schedule:** Two granted software patents and registered trademarks are assigned to Northwind Tech, with no encumbrances reported. Open-source policy is attached.\n- **M07 — FY26 cash flow:** Operating cash flow was negative in two of the last three quarters; closing cash was AUD 0.9m. Together with the supplier’s move to prepayment (M09), this warrants attention to liquidity and working capital.\n- **M08 — Insurance:** Current certificates for public liability, professional indemnity (AUD 5m), and cyber insurance.\n- **M09 — Cloud/infrastructure supplier:** Supplier moved Northwind from 30-day terms to prepayment last month, citing recent payment history. This is a potential liquidity and supplier-continuity concern.\n- **M10 — Board minutes:** In October 2026, the Board deferred approval of audited FY26 accounts pending refinancing discussions with two lenders. Management expected conclusion “in the coming weeks”; confirm current status and whether the accounts have since been approved.\n- **M11 — Reseller litigation:** No provision has been recognised. External counsel’s preliminary, non-binding and untested view suggests a possible AUD 0.2m–2.1m resolution range; the company disputes the view and outcome is highly uncertain. Seek an updated legal assessment and understand the accounting treatment.\n- **M12 — Marketing/brand policy:** Routine internal guidance on logo use and social media; no issue flagged.\n- **M13 — Helpdesk SaaS contract:** Minor contract at AUD 18k/year, 12-month term, auto-renewal with 30-day opt-out. Routine; note the opt-out deadline.\n- **M14 — Data-retention policy:** Standard retention schedule; no issue flagged.\n- **M15 — Fixed-asset register:** Laptops, office equipment, and leasehold improvements with AUD 0.3m net book value. Routine.\n\nWrite the DD summary now.",
+      "text": "## DD summary — Northwind Tech\n\n**Recommendation: Hold investment approval pending targeted diligence.** The combined liquidity, refinancing and customer-renewal risks are material. Proceed only if funding viability and earnings resilience are demonstrated; the current findings do not support unconditional approval.\n\n### Key findings and red flags\n- **Liquidity and refinancing — highest priority:** Operating cash flow was negative in two of the last three quarters; closing cash was **AUD 0.9m** (M07). The cloud supplier recently imposed prepayment because of payment history (M09), adding cash pressure and potential service-continuity risk. October board minutes deferred approval of audited FY26 accounts pending refinancing discussions; completion remains unconfirmed (M10).\n- **Limited covenant cushion:** The AUD 6.0m working-capital facility caps net debt/EBITDA at **3.0x**, versus **2.8x** reported for FY26 Q4 (M05). No breach is reported, but downside capacity appears limited.\n- **Customer concentration:** Topaz Retail contributes approximately **35% of FY26 revenue**. Its agreement is due for renewal in Q1 FY27, with renewal still described as “under discussion” (M03). Confirm current status urgently.\n- **Uncertain litigation exposure:** No provision is recognised for the reseller dispute. Counsel’s preliminary, non-binding and untested possible resolution range is **AUD 0.2m–2.1m**; management disputes that view (M11). This is not an established liability, but could materially affect liquidity.\n\n### Other findings\nReported patent and trademark ownership is clear, with no encumbrances reported (M06). The office lease has no change-of-control clause (M02), and insurance certificates are current (M08). Two senior engineers’ six-month notice periods warrant transition and retention planning (M04). Remaining documents appear routine based on the parser findings.\n\n### Conditions to proceed\n1. Obtain a **13-week cash-flow forecast**, current cash/debt balances, covenant calculations and downside sensitivities.\n2. Verify refinancing status and binding funding availability; obtain approved audited FY26 accounts and resolve outstanding audit issues.\n3. Confirm Topaz’s renewal status and terms; stress-test non-renewal or reduced spend.\n4. Obtain updated external legal advice and support for the litigation accounting treatment; assess appropriate price or contractual protection.\n\n*Based on parser findings only; underlying documents and current status have not been independently verified.*",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1a926-6606-74d2-ac0a-d51a6766a4a0",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 8027,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 504,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 24.218,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-60yjhkcj/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## DD summary — Northwind Tech\n\n**Recommendation: Hold investment approval pending targeted diligence.** The combined liquidity, refinancing and customer-renewal risks are material. Proceed only if funding viability and earnings resilience are demonstrated; the current findings do not support unconditional approval.\n\n### Key findings and red flags\n- **Liquidity and refinancing — highest priority:** Operating cash flow was negative in two of the last three quarters; closing cash was **AUD 0.9m** (M07). The cloud supplier recently imposed prepayment because of payment history (M09), adding cash pressure and potential service-continuity risk. October board minutes deferred approval of audited FY26 accounts pending refinancing discussions; completion remains unconfirmed (M10).\n- **Limited covenant cushion:** The AUD 6.0m working-capital facility caps net debt/EBITDA at **3.0x**, versus **2.8x** reported for FY26 Q4 (M05). No breach is reported, but downside capacity appears limited.\n- **Customer concentration:** Topaz Retail contributes approximately **35% of FY26 revenue**. Its agreement is due for renewal in Q1 FY27, with renewal still described as “under discussion” (M03). Confirm current status urgently.\n- **Uncertain litigation exposure:** No provision is recognised for the reseller dispute. Counsel’s preliminary, non-binding and untested possible resolution range is **AUD 0.2m–2.1m**; management disputes that view (M11). This is not an established liability, but could materially affect liquidity.\n\n### Other findings\nReported patent and trademark ownership is clear, with no encumbrances reported (M06). The office lease has no change-of-control clause (M02), and insurance certificates are current (M08). Two senior engineers’ six-month notice periods warrant transition and retention planning (M04). Remaining documents appear routine based on the parser findings.\n\n### Conditions to proceed\n1. Obtain a **13-week cash-flow forecast**, current cash/debt balances, covenant calculations and downside sensitivities.\n2. Verify refinancing status and binding funding availability; obtain approved audited FY26 accounts and resolve outstanding audit issues.\n3. Confirm Topaz’s renewal status and terms; stress-test non-renewal or reduced spend.\n4. Obtain updated external legal advice and support for the litigation accounting treatment; assess appropriate price or contractual protection.\n\n*Based on parser findings only; underlying documents and current status have not been independently verified.*",
+  "finished_at": "2026-11-05T00:40:52+00:00"
+}

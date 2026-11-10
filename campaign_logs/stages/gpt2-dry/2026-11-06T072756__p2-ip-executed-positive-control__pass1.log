@@ -1,0 +1,10 @@
+# ip-assignment-study/harness/experiment.py run --case case_executed.json --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-06T07:27:56, ended 2026-11-06T07:27:57, rc=0
+## stdout
+240 jobs, 12 already done, 228 to run (2132 API calls)
+  gpt-6-luna           1066 calls  ~102,972 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          1066 calls  ~102,972 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

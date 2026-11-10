@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__discovery__terse__r14",
+  "meta": {
+    "corpus": "discovery",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 14,
+    "parser_runs": {
+      "ALL": "haiku-5.5__discovery__terse__ALL__r14"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:51:33+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) for the PLAINTIFF's litigation team. Your cheap parser subagents reviewed the opposing party's document production and returned the compact findings below. Compile the review memo for the partner: key/'hot' documents, the factual narrative they support, and recommended next steps.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- C03: Batch 7 yield anomaly accepted use-as-is (14 Mar)\n- C05: Engineer suspects Batch 7 behind field dropouts (5 Apr)\n- C06: Batch 7 units shipped to Meridian (22 Mar)\n- C07: Batch 7 resin swapped to cheaper alternative (Feb)\n- C09: Three Meridian units report sensor dropouts (2-9 Apr)\n- C10: Q1 shipments approved with open QA items (18 Mar)\n- C13: Substituted resin lot near tolerance edge\n\nTakeaway: Batch 7 may be defective, and it shipped before testing was complete.\n\nWrite the review memo now.",
+      "text": "# PRIVILEGED & CONFIDENTIAL: ATTORNEY WORK PRODUCT\n\n**MEMORANDUM**\n\n**To:** [Partner]\n**From:** Document Review Team\n**Date:** November 5, 2026\n**Re:** First-pass review of defendant's production: Batch 7 issues\n\n---\n\n## 1. Bottom Line\n\nThe production contains a coherent chronology suggesting that the defendant **(a)** substituted a cheaper resin in Batch 7, **(b)** saw a yield anomaly and accepted the batch \"use-as-is,\" **(c)** approved Q1 shipments while QA items were still open, and **(d)** shipped Batch 7 to Meridian, where units began failing within about two weeks.\n\n**Caution:** This memo rests on short summaries from first-pass reviewers, not on the documents themselves. Each item below must be pulled, read in full and confirmed before anyone relies on it in a filing, letter or deposition outline. Section 4 lists specific places where the summaries may overstate or understate the evidence.\n\n---\n\n## 2. Hot Documents\n\n| Priority | Doc | Date | Summary (per reviewer) | Why it matters |\n|---|---|---|---|---|\n| **1** | **C03** | 14 Mar | Batch 7 yield anomaly accepted use-as-is | Strongest notice evidence. A known anomaly was overridden by a deliberate disposition decision. |\n| **1** | **C10** | 18 Mar | Q1 shipments approved with open QA items | Shows shipment approval despite unresolved QA. Bears on knowledge and recklessness. |\n| **1** | **C07** | Feb | Batch 7 resin swapped to cheaper alternative | Possible root cause. A cost-driven motive may support willfulness or punitive theories. |\n| **2** | **C05** | 5 Apr | Engineer suspects Batch 7 behind field dropouts | Internal link from Batch 7 to the failures. Possible admission, depending on the author's role. |\n| **2** | **C13** | Undated | Substituted resin lot near tolerance edge | Ties the substitute resin to marginal quality. Cuts both ways (see §4). |\n| **2** | **C06** | 22 Mar | Batch 7 units shipped to Meridian | Establishes that Batch 7 reached the customer. |\n| **2** | **C09** | 2–9 Apr | Three Meridian units report sensor dropouts | Field failures. Their timing follows the shipment. |\n\n---\n\n## 3. Factual Narrative (subject to verification)\n\n1. **February: substitution.** The defendant replaces the specified resin for Batch 7 with a cheaper alternative (C07). The substituted lot measures near the edge of tolerance (C13; date unknown).\n2. **14 March: warning sign.** Batch 7 shows a yield anomaly. Instead of rejecting or investigating it, someone dispositions it \"use-as-is\" (C03).\n3. **18 March: approval despite open issues.** Q1 shipments are approved while QA items remain open (C10).\n4. **22 March: shipment.** Batch 7 units ship to Meridian (C06).\n5. **2–9 April: field failures.** Three Meridian units report sensor dropouts (C09), roughly 11 to 18 days after shipment.\n6. **5 April: internal recognition.** While failures are still coming in, an engineer suspects Batch 7 is the cause (C05).\n\n**Theme:** The defendant made a cost-driven material change, ignored the warning signs, shipped anyway, and its own engineer connected the failures to the batch it chose to release.\n\n---\n\n## 4. Limits and Weak Points to Resolve\n\n1. **\"Shipped before testing was complete\" is not yet supported.** The reviewers' takeaway goes further than the findings. C10 says shipments were approved with *open QA items*. That is not the same as incomplete testing, and nothing in the summary shows the open items concerned Batch 7. We need to confirm what the open items were.\n2. **C13 may help the defense.** \"Near tolerance edge\" suggests the lot was *within* tolerance. Expect the defendant to argue it met spec. We need the actual values, the spec limits, and whether the swap required qualification or customer notice.\n3. **C05 is a suspicion, not a finding.** We need the author's identity and role, the recipients, any follow-up, and whether a later root-cause analysis confirmed or rejected it.\n4. **Causation is not established.** Three dropouts that follow a shipment show timing, not cause. We need to know how many Batch 7 units shipped, the failure rate compared with other batches, and whether the failed units are confirmed to be from Batch 7.\n5. **We don't yet know who knew what.** None of the summaries identify the decision-makers for C03 and C10. Their authority level matters for notice and corporate knowledge.\n6. **Gaps in the document numbering.** C01, C02, C04, C08, C11 and C12 were not flagged. We should confirm whether reviewers judged them non-responsive or not hot, or whether they are missing, withheld or logged as privileged.\n7. **No citations.** We need Bates numbers, custodians and verbatim excerpts for every item.\n\n---\n\n## 5. Recommended Next Steps\n\n**Immediate (this week)**\n- Pull and read C03, C05, C07, C10 and C13 in full. Record Bates numbers, authors, recipients and key quotes.\n- Confirm the status of C01, C02, C04, C08, C11 and C12, and check them against the privilege log.\n- Have a second-level reviewer re-run the search for Batch 7, the resin and supplier names, \"use-as-is,\" the MRB/deviation terms, and Meridian.\n\n**Follow-up discovery**\n- Batch 7 records: the travelers, the nonconformance report and MRB disposition behind C03, and the open-QA list behind C10.\n- The resin change: the engineering change order, supplier qualification, certificates of analysis, the specification, cost-savings analysis, and any customer notice of the change.\n- Field failures: RMAs, failure analysis, CAPA/8D files, and the complete list of Meridian complaints.\n- Shipment records showing serial and lot traceability for the Meridian units.\n\n**Witnesses (preliminary)**\n- The C05 engineer, the person who dispositioned C03, the person who approved C10, and whoever authorized the resin swap in C07.\n\n**Expert**\n- Consider retaining a materials or reliability expert to evaluate the resin substitution, the tolerance margin, and the sensor dropout failure mode.\n\n**Preservation**\n- Confirm the hold covers the physical failed units, retained resin samples, and any remaining Batch 7 inventory.\n\n---\n\n*Prepared from first-pass parser summaries. Not yet verified against the source documents.*",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "9029c9c4-e8c8-4782-b068-3f0342bf4193",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 2703,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 943
+      },
+      "latency_s": 29.564,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# PRIVILEGED & CONFIDENTIAL: ATTORNEY WORK PRODUCT\n\n**MEMORANDUM**\n\n**To:** [Partner]\n**From:** Document Review Team\n**Date:** November 5, 2026\n**Re:** First-pass review of defendant's production: Batch 7 issues\n\n---\n\n## 1. Bottom Line\n\nThe production contains a coherent chronology suggesting that the defendant **(a)** substituted a cheaper resin in Batch 7, **(b)** saw a yield anomaly and accepted the batch \"use-as-is,\" **(c)** approved Q1 shipments while QA items were still open, and **(d)** shipped Batch 7 to Meridian, where units began failing within about two weeks.\n\n**Caution:** This memo rests on short summaries from first-pass reviewers, not on the documents themselves. Each item below must be pulled, read in full and confirmed before anyone relies on it in a filing, letter or deposition outline. Section 4 lists specific places where the summaries may overstate or understate the evidence.\n\n---\n\n## 2. Hot Documents\n\n| Priority | Doc | Date | Summary (per reviewer) | Why it matters |\n|---|---|---|---|---|\n| **1** | **C03** | 14 Mar | Batch 7 yield anomaly accepted use-as-is | Strongest notice evidence. A known anomaly was overridden by a deliberate disposition decision. |\n| **1** | **C10** | 18 Mar | Q1 shipments approved with open QA items | Shows shipment approval despite unresolved QA. Bears on knowledge and recklessness. |\n| **1** | **C07** | Feb | Batch 7 resin swapped to cheaper alternative | Possible root cause. A cost-driven motive may support willfulness or punitive theories. |\n| **2** | **C05** | 5 Apr | Engineer suspects Batch 7 behind field dropouts | Internal link from Batch 7 to the failures. Possible admission, depending on the author's role. |\n| **2** | **C13** | Undated | Substituted resin lot near tolerance edge | Ties the substitute resin to marginal quality. Cuts both ways (see §4). |\n| **2** | **C06** | 22 Mar | Batch 7 units shipped to Meridian | Establishes that Batch 7 reached the customer. |\n| **2** | **C09** | 2–9 Apr | Three Meridian units report sensor dropouts | Field failures. Their timing follows the shipment. |\n\n---\n\n## 3. Factual Narrative (subject to verification)\n\n1. **February: substitution.** The defendant replaces the specified resin for Batch 7 with a cheaper alternative (C07). The substituted lot measures near the edge of tolerance (C13; date unknown).\n2. **14 March: warning sign.** Batch 7 shows a yield anomaly. Instead of rejecting or investigating it, someone dispositions it \"use-as-is\" (C03).\n3. **18 March: approval despite open issues.** Q1 shipments are approved while QA items remain open (C10).\n4. **22 March: shipment.** Batch 7 units ship to Meridian (C06).\n5. **2–9 April: field failures.** Three Meridian units report sensor dropouts (C09), roughly 11 to 18 days after shipment.\n6. **5 April: internal recognition.** While failures are still coming in, an engineer suspects Batch 7 is the cause (C05).\n\n**Theme:** The defendant made a cost-driven material change, ignored the warning signs, shipped anyway, and its own engineer connected the failures to the batch it chose to release.\n\n---\n\n## 4. Limits and Weak Points to Resolve\n\n1. **\"Shipped before testing was complete\" is not yet supported.** The reviewers' takeaway goes further than the findings. C10 says shipments were approved with *open QA items*. That is not the same as incomplete testing, and nothing in the summary shows the open items concerned Batch 7. We need to confirm what the open items were.\n2. **C13 may help the defense.** \"Near tolerance edge\" suggests the lot was *within* tolerance. Expect the defendant to argue it met spec. We need the actual values, the spec limits, and whether the swap required qualification or customer notice.\n3. **C05 is a suspicion, not a finding.** We need the author's identity and role, the recipients, any follow-up, and whether a later root-cause analysis confirmed or rejected it.\n4. **Causation is not established.** Three dropouts that follow a shipment show timing, not cause. We need to know how many Batch 7 units shipped, the failure rate compared with other batches, and whether the failed units are confirmed to be from Batch 7.\n5. **We don't yet know who knew what.** None of the summaries identify the decision-makers for C03 and C10. Their authority level matters for notice and corporate knowledge.\n6. **Gaps in the document numbering.** C01, C02, C04, C08, C11 and C12 were not flagged. We should confirm whether reviewers judged them non-responsive or not hot, or whether they are missing, withheld or logged as privileged.\n7. **No citations.** We need Bates numbers, custodians and verbatim excerpts for every item.\n\n---\n\n## 5. Recommended Next Steps\n\n**Immediate (this week)**\n- Pull and read C03, C05, C07, C10 and C13 in full. Record Bates numbers, authors, recipients and key quotes.\n- Confirm the status of C01, C02, C04, C08, C11 and C12, and check them against the privilege log.\n- Have a second-level reviewer re-run the search for Batch 7, the resin and supplier names, \"use-as-is,\" the MRB/deviation terms, and Meridian.\n\n**Follow-up discovery**\n- Batch 7 records: the travelers, the nonconformance report and MRB disposition behind C03, and the open-QA list behind C10.\n- The resin change: the engineering change order, supplier qualification, certificates of analysis, the specification, cost-savings analysis, and any customer notice of the change.\n- Field failures: RMAs, failure analysis, CAPA/8D files, and the complete list of Meridian complaints.\n- Shipment records showing serial and lot traceability for the Meridian units.\n\n**Witnesses (preliminary)**\n- The C05 engineer, the person who dispositioned C03, the person who approved C10, and whoever authorized the resin swap in C07.\n\n**Expert**\n- Consider retaining a materials or reliability expert to evaluate the resin substitution, the tolerance margin, and the sensor dropout failure mode.\n\n**Preservation**\n- Confirm the hold covers the physical failed units, retained resin samples, and any remaining Batch 7 inventory.\n\n---\n\n*Prepared from first-pass parser summaries. Not yet verified against the source documents.*",
+  "finished_at": "2026-11-05T12:52:02+00:00"
+}

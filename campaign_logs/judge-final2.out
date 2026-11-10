@@ -1,0 +1,21 @@
+[2026-11-06T22:26:44] START kestrel judge gpt (final 2) (pass 1): kestrel-injection-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+[2026-11-06T22:26:50] END   kestrel judge gpt (final 2) (pass 1): rc=0 ok=0 errors=0 | 5383 jobs, 5383 already done, 0 to run (0 API calls)
+[2026-11-06T22:26:50] START dd judge gpt (final 2) (pass 1): dd-pipeline-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+[2026-11-06T22:26:51] END   dd judge gpt (final 2) (pass 1): rc=0 ok=0 errors=0 | 1050 jobs, 1050 already done, 0 to run (0 API calls)
+[2026-11-06T22:26:51] START kestrel judge opus 10% (pass 1): kestrel-injection-study/harness/experiment.py judge --judge opus-5.5 --sample 0.1 --workers 4
+[2026-11-06T22:31:13] END   kestrel judge opus 10% (pass 1): rc=0 ok=70 errors=0 | 537 jobs, 467 already done, 70 to run (70 API calls) ;   opus-5.5               70 calls  ~252,295 input tokens (excl. multi-turn history)
+[2026-11-06T22:31:13] START dd judge opus 10% (pass 1): dd-pipeline-study/harness/experiment.py judge --judge opus-5.5 --sample 0.1 --workers 4
+[2026-11-06T22:31:46] END   dd judge opus 10% (pass 1): rc=0 ok=24 errors=0 | 109 jobs, 85 already done, 24 to run (24 API calls) ;   opus-5.5               24 calls  ~27,381 input tokens (excl. multi-turn history)
+[2026-11-06T22:31:46] START kestrel judge agreement (pass 1): kestrel-injection-study/harness/experiment.py agreement --a gpt-6.1-sol --b opus-5.5
+[2026-11-06T22:31:57] END   kestrel judge agreement (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T22:31:57] START dd judge agreement (pass 1): dd-pipeline-study/harness/experiment.py agreement --a gpt-6.1-sol --b opus-5.5
+[2026-11-06T22:31:58] END   dd judge agreement (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T22:31:58] START kestrel analyze (pass 1): kestrel-injection-study/harness/experiment.py analyze
+[2026-11-06T22:34:23] END   kestrel analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T22:34:23] START drift analyze (pass 1): interpretive-drift-study/harness/experiment.py analyze
+[2026-11-06T22:37:56] END   drift analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T22:37:56] START ip analyze (pass 1): ip-assignment-study/harness/experiment.py analyze
+[2026-11-06T22:38:27] END   ip analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T22:38:27] START dd analyze (pass 1): dd-pipeline-study/harness/experiment.py analyze
+[2026-11-06T22:38:29] END   dd analyze (pass 1): rc=0 ok=0 errors=0 | 
+[2026-11-06T22:38:29] QUEUE judge-final2 FINISHED

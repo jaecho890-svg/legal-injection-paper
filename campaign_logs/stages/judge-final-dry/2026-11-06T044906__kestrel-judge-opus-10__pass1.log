@@ -1,0 +1,10 @@
+# kestrel-injection-study/harness/experiment.py judge --judge opus-5.5 --sample 0.1 --workers 4
+# started 2026-11-06T04:49:06, ended 2026-11-06T04:49:07, rc=0
+## stdout
+filters (model-reps=-, sample=0.1): 4730 -> 467 jobs
+467 jobs, 0 already done, 467 to run (467 API calls)
+  opus-5.5              467 calls  ~1,627,334 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

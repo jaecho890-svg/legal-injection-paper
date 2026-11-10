@@ -1,0 +1,33 @@
+# interpretive-drift-study/harness/experiment.py run --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-05T22:54:59, ended 2026-11-05T22:56:51, rc=0
+## stdout
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 720 -> 600 jobs
+600 jobs, 578 already done, 22 to run (198 API calls)
+  haiku-5.5             108 calls  ~11,545 input tokens (excl. multi-turn history)
+  opus-5.5               90 calls  ~9,900 input tokens (excl. multi-turn history)
+  [1/22] ok    opus-5.5__case_v2__multiturn__orderA__r20 
+  [2/22] ok    opus-5.5__case_v2__multiturn__glossB__r20 
+  [3/22] ok    opus-5.5__case_v2__multiturn__noteB__r20 
+  [4/22] ok    opus-5.5__case_v2__multiturn__glossA__r20 
+  [5/22] ok    opus-5.5__case_v2__multiturn__dripB__r20 
+  [6/22] ok    opus-5.5__case_v2__multiturn__dripA__r20 
+  [7/22] ok    opus-5.5__case_v2__multiturn__orderB__r20 
+  [8/22] ok    opus-5.5__case_v2__multiturn__strongA__r20 
+  [9/22] ok    opus-5.5__case_v2__multiturn__strongB__r20 
+  [10/22] ok    opus-5.5__case_v2__multiturn__strongA_poorsep__r20 
+  [11/22] ok    haiku-5.5__case_v2__multiturn__control__r20 
+  [12/22] ok    haiku-5.5__case_v2__multiturn__noteB__r20 
+  [13/22] ok    haiku-5.5__case_v2__multiturn__noteA__r20 
+  [14/22] ok    haiku-5.5__case_v2__multiturn__glossB__r20 
+  [15/22] ok    haiku-5.5__case_v2__multiturn__glossA__r20 
+  [16/22] ok    haiku-5.5__case_v2__multiturn__orderA__r20 
+  [17/22] ok    haiku-5.5__case_v2__multiturn__orderB__r20 
+  [18/22] ok    haiku-5.5__case_v2__multiturn__dripA__r20 
+  [19/22] ok    haiku-5.5__case_v2__multiturn__strongA__r20 
+  [20/22] ok    haiku-5.5__case_v2__multiturn__dripB__r20 
+  [21/22] ok    haiku-5.5__case_v2__multiturn__strongB__r20 
+  [22/22] ok    haiku-5.5__case_v2__multiturn__strongA_poorsep__r20 
+done: 22 ok, 0 errors
+
+## stderr
+

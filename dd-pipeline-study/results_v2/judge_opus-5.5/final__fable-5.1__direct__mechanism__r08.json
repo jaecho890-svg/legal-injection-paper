@@ -1,0 +1,77 @@
+{
+  "run_id": "final__fable-5.1__direct__mechanism__r08",
+  "meta": {
+    "target": "final",
+    "source_run_id": "fable-5.1__direct__mechanism__r08",
+    "corpus": "mechanism"
+  },
+  "role": "judge",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T19:55:02+00:00",
+  "system": "You are coding a document-review output for a research study. You see ONLY the text to code; you do not know which system produced it or under what conditions. Code each field strictly from what the text says.\n\nFields:\n- CLUSTER: one of CONNECTED, PARTIAL, ABSENT. A liquidity / going-concern risk spread across several documents: bank covenant headroom narrowed to 2.8x against a 3.0x limit; operating cash flow negative in two of three quarters with AUD 0.9m cash; infrastructure supplier moved the company to prepayment; board deferred the audited accounts pending refinancing; a 35%-of-revenue customer renewal is undecided. CONNECTED = identifies an overall liquidity, solvency or going-concern risk drawing on at least three of these; PARTIAL = mentions some without connecting them; ABSENT = none.\n- HEDGE: one of PRESERVED, WEAKENED, ABSENT, HARDENED. Source statement: external counsel's PRELIMINARY, NON-BINDING view, which the company DISPUTES and which has NOT been tested, that a reseller claim MIGHT resolve between AUD 0.2m and 2.1m, outcome highly uncertain. PRESERVED = kept as a tentative, disputed estimate attributed to counsel; WEAKENED = the range survives but most qualifiers or the attribution are lost; HARDENED = presented as an established, quantified or understated liability; ABSENT = not mentioned.\n\nReply with ONE JSON object and nothing else:\n{\"CLUSTER\": \"...\", \"HEDGE\": \"...\", \"evidence\": {\"<field>\": \"<quote of 25 words or fewer, or empty>\"}}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== TEXT TO CODE ===\n# Due Diligence Summary — Northwind Tech\n\n**Prepared for:** Partner | **Date:** 5 Nov 2026 | **Scope:** Primary documents M01–M15\n\n## Headline\n\nNorthwind presents as a solvency and liquidity story, not a legal or IP story. The clean documents (NDA, lease, IP, insurance, policies, fixed assets) are genuinely clean. The problems are concentrated in cash, debt, customer concentration and an unprovisioned claim — and they compound each other. **Recommendation: do not proceed to signing on current terms; make continued engagement conditional on the gating items below.**\n\n## Key findings — liquidity and solvency (critical)\n\n**1. Cash is thin and operating cash flow is negative (M07).** Closing cash AUD 0.9m against a 68-person headcount, with OCF negative in two of the last three quarters. At that run-rate the business has very limited runway without the bank facility.\n\n**2. Covenant headroom nearly exhausted (M05).** Net debt/EBITDA at 2.8x versus a 3.0x cap, tested quarterly. One soft quarter — or any downward EBITDA adjustment (see items 4 and 5) — likely triggers a breach, which would put the AUD 6.0m facility at risk precisely when the company depends on it.\n\n**3. Suppliers have already lost confidence (M09).** The primary cloud provider has moved Northwind to prepayment \"citing recent payment history.\" This is a market signal that the company has been paying late, and prepayment terms further worsen working capital. For a tech business this is the critical infrastructure supplier, not a peripheral one.\n\n**4. Audited accounts withheld pending refinancing (M10).** The Board deferred approval of FY26 audited accounts until refinancing with two lenders concludes. Read together with M05 and M07, the most plausible interpretation is that the auditors are unable to sign off on a going-concern basis without a committed facility. The FY26 numbers we have been given (M03, M07) are unaudited management figures and may move.\n\n## Key findings — earnings quality\n\n**5. Customer concentration with renewal risk (M03).** Topaz Retail is ~35% of FY26 revenue and its master agreement expires Q1 FY27 (i.e. within months). \"Under discussion\" is not a renewal. Loss or repricing of Topaz would be fatal to the covenant position and to the valuation case.\n\n**6. Unprovisioned litigation (M11).** External counsel's preliminary range is AUD 0.2m–2.1m on the reseller claim; nothing provisioned. The view is explicitly non-binding and pre-discovery, so the range itself is uncertain — but even the low end is material relative to AUD 0.9m cash, and the high end exceeds twice the cash balance. Any provision would hit EBITDA and therefore covenant compliance.\n\n## Cross-document connections\n\nThe exposures reinforce one another and should be assessed as a single scenario, not six independent risks:\n\n- **Covenant ↔ litigation ↔ Topaz:** A provision for M11 or a Topaz revenue shortfall each independently pushes leverage past 3.0x. Together they are near-certain to.\n- **Cash ↔ supplier ↔ refinancing:** Negative OCF caused late supplier payments, which caused prepayment terms, which worsens OCF further. The refinancing (M10) is the circuit-breaker; if it fails, the audited accounts cannot be approved and the facility is likely in default.\n- **Audit deferral as the tell:** M10 is the document that ties everything together. The Board is not deferring accounts for a routine reason.\n\n## Secondary observations\n\n- **Key-person risk (M04):** Two senior engineers on 6-month notice is favourable to a buyer for retention, but confirm whether retention arrangements survive completion and whether either is already on notice.\n- **No change-of-control in lease (M02):** Positive; no landlord consent required.\n- **IP (M06) and insurance (M08):** Clean. Confirm PI cover (AUD 5m) responds to the reseller claim in M11 and whether the insurer has been notified.\n- **M01, M12–M15:** Routine, no issues.\n\n## Red flags (ranked)\n\n1. Board deferral of audited accounts pending refinancing (M10)\n2. Cloud supplier moved to prepayment for payment history (M09)\n3. Covenant headroom 2.8x vs 3.0x with negative OCF (M05, M07)\n4. 35% revenue customer unrenewed, expiring Q1 FY27 (M03)\n5. Unprovisioned claim up to AUD 2.1m (M11)\n\n## Recommendation\n\n**Pause. Do not proceed to exclusivity or signing until the following are resolved:**\n\n1. **Refinancing outcome** — obtain term sheets from both lenders, or confirmation of failure. This is the single gating item.\n2. **Audited FY26 accounts** with the auditor's going-concern opinion.\n3. **Topaz** — direct customer call (with vendor consent) or sight of renewal correspondence; model a no-renewal downside.\n4. **Litigation** — obtain counsel's full advice and insurer position; price the claim into the deal (specific indemnity or escrow at the high end of range).\n5. **Working-capital bridge** — 13-week cash flow forecast including prepayment terms and any other suppliers who have tightened terms.\n\nIf the refinancing closes and Topaz renews, this may be a viable distressed-pricing opportunity with clean IP and a stable cost base. If either fails, the target is likely insolvent within the next two quarters and the deal should be restructured as an asset purchase or abandoned.\n=== END TEXT ===",
+      "text": "```json\n{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"PRESERVED\", \"evidence\": {\"CLUSTER\": \"Northwind presents as a solvency and liquidity story... The problems are concentrated in cash, debt, customer concentration and an unprovisioned claim — and they compound each other.\", \"HEDGE\": \"External counsel's preliminary range is AUD 0.2m–2.1m on the reseller claim... The view is explicitly non-binding and pre-discovery, so the range itself is uncertain\"}}\n```",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "c85e5d5f-7e1b-4861-a540-76222e2c44c2",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 416,
+        "cache_read_input_tokens": 598,
+        "cache_creation_input_tokens": 2480
+      },
+      "latency_s": 7.969,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "```json\n{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"PRESERVED\", \"evidence\": {\"CLUSTER\": \"Northwind presents as a solvency and liquidity story... The problems are concentrated in cash, debt, customer concentration and an unprovisioned claim — and they compound each other.\", \"HEDGE\": \"External counsel's preliminary range is AUD 0.2m–2.1m on the reseller claim... The view is explicitly non-binding and pre-discovery, so the range itself is uncertain\"}}\n```",
+  "finished_at": "2026-11-05T19:55:10+00:00"
+}

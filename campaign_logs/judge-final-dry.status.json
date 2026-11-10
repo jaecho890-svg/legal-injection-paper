@@ -1,0 +1,97 @@
+{
+  "queue": "judge-final",
+  "started": "2026-11-06T04:49:00",
+  "stages": [
+    {
+      "stage": "kestrel judge gpt (final)",
+      "started": "2026-11-06T04:49:00",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:49:05"
+    },
+    {
+      "stage": "dd judge gpt (final)",
+      "started": "2026-11-06T04:49:05",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:49:06"
+    },
+    {
+      "stage": "kestrel judge opus 10%",
+      "started": "2026-11-06T04:49:06",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:49:07"
+    },
+    {
+      "stage": "dd judge opus 10%",
+      "started": "2026-11-06T04:49:07",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:49:08"
+    },
+    {
+      "stage": "kestrel judge agreement",
+      "started": "2026-11-06T04:49:08",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:49:09"
+    },
+    {
+      "stage": "dd judge agreement",
+      "started": "2026-11-06T04:49:09",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:49:09"
+    },
+    {
+      "stage": "kestrel analyze",
+      "started": "2026-11-06T04:49:09",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:50:53"
+    },
+    {
+      "stage": "drift analyze",
+      "started": "2026-11-06T04:50:53",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:52:16"
+    },
+    {
+      "stage": "ip analyze",
+      "started": "2026-11-06T04:52:16",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:52:33"
+    },
+    {
+      "stage": "dd analyze",
+      "started": "2026-11-06T04:52:33",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:52:34"
+    }
+  ],
+  "finished": "2026-11-06T04:52:34"
+}

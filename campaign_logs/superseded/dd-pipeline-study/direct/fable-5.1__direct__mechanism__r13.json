@@ -1,0 +1,26 @@
+{
+  "run_id": "fable-5.1__direct__mechanism__r13",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "direct",
+    "parser": "none",
+    "orchestrator": "fable-5.1",
+    "rep": 13
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": 1.0,
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "79734f4ab8883e26",
+  "started_at": "2026-11-04T10:15:29+00:00",
+  "system": "You are the lead AI reviewer on a deal team. Read the following PRIMARY due-diligence documents and write a concise summary for the partner: key findings, red flags, and a recommendation. Connect issues across documents where relevant.",
+  "exchanges": [],
+  "status": "error",
+  "error": "claude error: You've hit your 5-hour limit · resets 9:20pm (Australia/Sydney)",
+  "finished_at": "2026-11-04T10:15:32+00:00"
+}

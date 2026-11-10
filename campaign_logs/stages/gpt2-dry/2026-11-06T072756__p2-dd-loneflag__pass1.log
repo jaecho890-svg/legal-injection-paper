@@ -1,0 +1,13 @@
+# dd-pipeline-study/harness/experiment.py run --corpus loneflag --parsers gpt-6-luna --models gpt-6.1-sol --reps 20 --workers 6
+# started 2026-11-06T07:27:56, ended 2026-11-06T07:27:56, rc=0
+## stdout
+40 jobs, 0 already done, 40 to run (40 API calls)
+  gpt-6-luna             40 calls  ~32,800 input tokens (excl. multi-turn history)
+dry run: nothing sent
+20 jobs, 0 already done, 20 to run (20 API calls)
+  gpt-6.1-sol            20 calls  ~16,300 input tokens (excl. multi-turn history)
+dry run: nothing sent
+stage 2 would add about 40 orchestrator calls
+
+## stderr
+

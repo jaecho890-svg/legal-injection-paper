@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Time-of-essence favours Aster; 15-day cure period favours Delphin; balanced.
+STEP 2 | P=64 | CONF=MED | Two late milestones (3 and 2 weeks) with no change-control relief sought.
+STEP 3 | P=55 | CONF=MED | Delphin admits slippage but blames Aster's extra reporting; Aster's reply may imply waiver.
+STEP 4 | P=70 | CONF=MED | Two critical defects recurred after fix and remained open at termination.
+STEP 5 | P=71 | CONF=MED | Specific withholding notice referencing UAT defect log; contract compliance unverified.
+STEP 6 | P=66 | CONF=MED | Budget-pressure memo suggests commercial motive; also shows documented monitoring.
+STEP 7 | P=54 | CONF=MED | Remediation plan repeats missed dates, but termination nine days later may pre-empt cure period.
+STEP 8 | P=55 | CONF=LOW | Delphin asserts cure readiness, unverified; breach merits favour Aster, cure timing unresolved.
+FINAL | P=55 | CONF=LOW | Breach evidence favours Aster; cure-period compliance unresolved, so overall near balanced.

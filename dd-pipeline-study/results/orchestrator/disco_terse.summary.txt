@@ -1,0 +1,113 @@
+PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT
+
+TO:       Partner
+FROM:     AI Document Review (Lead Reviewer / Orchestrator)
+RE:       Opposing Party's Document Production — Initial Hot-Document Review
+          "Batch 7" Resin Substitution and Meridian Field Dropouts
+
+==================================================================
+1. OVERVIEW
+==================================================================
+Parser subagents reviewed the opposing party's production (15 documents,
+produced as confidential per the index at C01). This memo flags the key
+documents, lays out the factual narrative they support, and recommends
+next steps. Note: findings below derive from a compact first-pass parse;
+every document cited should be pulled and read in full before any is used
+in a filing or deposition.
+
+==================================================================
+2. KEY / "HOT" DOCUMENTS
+==================================================================
+The following documents form a coherent and damaging chain regarding a
+resin substitution in "Batch 7" and subsequent field failures:
+
+  C07 — Cheaper resin substituted for Batch 7.
+        Establishes a deliberate material change. Goes directly to intent
+        and cost-motive. Likely the single most important document.
+
+  C13 — Substitute resin Certificate of Analysis near tolerance edge.
+        Contemporaneous record that the substitute material was marginal,
+        not comfortably within spec. Corroborates C07 and undercuts any
+        "fully conforming material" defense.
+
+  C03 — Batch 7 yield anomaly flagged; dispositioned "use-as-is."
+        Internal awareness of a problem plus an express decision to ship
+        anyway. Strong notice/knowledge document.
+
+  C05 — Engineer suspects Batch 7 is behind the field dropouts.
+        Internal attribution of the failures to Batch 7 by the company's
+        own engineer. Potential admission; confirm author, date, and
+        whether it is privileged-adjacent before relying on it.
+
+  C10 — Q1 shipments proceed; QA items marked "non-blocking."
+        Shows the decision to continue shipping despite open QA concerns.
+        Pairs with C03 to show knowledge + continued conduct.
+
+  C06 — Batch 7 shipped to Meridian, 22 March.
+        Fixes the delivery of the affected batch to the relevant customer
+        and anchors the timeline.
+
+  C09 — Three Meridian units show sensor dropout, April.
+        The downstream harm, closely following the March shipment.
+        Supports causation.
+
+  C01 — Production index (15 docs, confidential).
+        Scope/completeness reference; use to check for gaps and withheld
+        or missing items.
+
+==================================================================
+3. FACTUAL NARRATIVE SUPPORTED
+==================================================================
+The documents support the following sequence:
+
+  (a) A cheaper resin was substituted into Batch 7 (C07), and its
+      Certificate of Analysis sat near the edge of tolerance (C13).
+  (b) A yield anomaly on Batch 7 was flagged internally but dispositioned
+      "use-as-is" (C03), and open QA items were treated as "non-blocking"
+      so Q1 shipments continued (C10).
+  (c) Batch 7 shipped to Meridian on 22 March (C06).
+  (d) In April, three Meridian units exhibited sensor dropout (C09), and
+      the company's own engineer attributed the dropouts to Batch 7 (C05).
+
+Read together, this is a knowledge-and-continued-conduct narrative: the
+substitution was a cost-driven choice, the risk was identified before
+shipment, the product was shipped regardless, and failures followed in
+the field consistent with the internally suspected cause.
+
+==================================================================
+4. EVIDENTIARY GAPS & CAUTIONS
+==================================================================
+  - Causation is suggested, not yet proven. C05 is a suspicion/opinion,
+    and C09 is temporally consistent, but nothing in this set confirms the
+    resin substitution as the technical root cause. Expect a defense that
+    the dropouts had another source.
+  - Confirm authorship, dates, recipients, and distribution for C03, C05,
+    and C10 — the "who knew / who decided" chain is only as strong as the
+    metadata behind these.
+  - "Use-as-is" (C03) and "non-blocking" (C10) are the opponent's
+    characterizations; preserve the full context around each.
+  - This is a first-pass parse of a compact summary. Do not quote or rely
+    on any document until the underlying file is reviewed in full.
+
+==================================================================
+5. RECOMMENDED NEXT STEPS
+==================================================================
+  1. Pull and read C07, C13, C03, C05, C10, C06, and C09 in full; verify
+     the parser summaries against the source text.
+  2. Engineering review of the Batch 7 substitution, the near-tolerance
+     CoA, the yield anomaly, and the Meridian dropouts to assess technical
+     causation — line up a testifying expert early.
+  3. Build a document-backed chronology (resin substitution -> internal
+     flags/dispositions -> 22 March Meridian shipment -> April dropouts).
+  4. Run a completeness check against the C01 index; identify custodians
+     and any missing categories (full test data, the complete QA
+     disposition record, internal emails on the substitution decision) and
+     prepare targeted follow-up discovery.
+  5. Identify likely deposition targets: the engineer behind C05, the QA
+     decision-maker(s) behind C03/C10, and the person who authorized the
+     resin substitution in C07.
+  6. Reconfirm the confidentiality designation on these documents and
+     handle under the protective order.
+
+==================================================================
+END OF MEMO

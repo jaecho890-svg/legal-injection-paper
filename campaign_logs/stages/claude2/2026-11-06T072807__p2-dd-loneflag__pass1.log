@@ -1,0 +1,68 @@
+# dd-pipeline-study/harness/experiment.py run --corpus loneflag --parsers haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-06T07:28:07, ended 2026-11-06T07:31:11, rc=0
+## stdout
+40 jobs, 0 already done, 40 to run (40 API calls)
+  haiku-5.5              40 calls  ~32,800 input tokens (excl. multi-turn history)
+  [1/40] ok    haiku-5.5__loneflag__terse__ALL__r01 
+  [2/40] ok    haiku-5.5__loneflag__terse__ALL__r02 
+  [3/40] ok    haiku-5.5__loneflag__normal__ALL__r02 
+  [4/40] ok    haiku-5.5__loneflag__normal__ALL__r01 
+  [5/40] ok    haiku-5.5__loneflag__terse__ALL__r03 
+  [6/40] ok    haiku-5.5__loneflag__normal__ALL__r03 
+  [7/40] ok    haiku-5.5__loneflag__terse__ALL__r04 
+  [8/40] ok    haiku-5.5__loneflag__terse__ALL__r05 
+  [9/40] ok    haiku-5.5__loneflag__normal__ALL__r04 
+  [10/40] ok    haiku-5.5__loneflag__normal__ALL__r05 
+  [11/40] ok    haiku-5.5__loneflag__terse__ALL__r06 
+  [12/40] ok    haiku-5.5__loneflag__normal__ALL__r06 
+  [13/40] ok    haiku-5.5__loneflag__terse__ALL__r07 
+  [14/40] ok    haiku-5.5__loneflag__terse__ALL__r08 
+  [15/40] ok    haiku-5.5__loneflag__normal__ALL__r08 
+  [16/40] ok    haiku-5.5__loneflag__normal__ALL__r07 
+  [17/40] ok    haiku-5.5__loneflag__normal__ALL__r09 
+  [18/40] ok    haiku-5.5__loneflag__terse__ALL__r09 
+  [19/40] ok    haiku-5.5__loneflag__terse__ALL__r10 
+  [20/40] ok    haiku-5.5__loneflag__terse__ALL__r11 
+  [21/40] ok    haiku-5.5__loneflag__normal__ALL__r10 
+  [22/40] ok    haiku-5.5__loneflag__normal__ALL__r11 
+  [23/40] ok    haiku-5.5__loneflag__normal__ALL__r12 
+  [24/40] ok    haiku-5.5__loneflag__terse__ALL__r12 
+  [25/40] ok    haiku-5.5__loneflag__terse__ALL__r13 
+  [26/40] ok    haiku-5.5__loneflag__normal__ALL__r13 
+  [27/40] ok    haiku-5.5__loneflag__terse__ALL__r14 
+  [28/40] ok    haiku-5.5__loneflag__normal__ALL__r14 
+  [29/40] ok    haiku-5.5__loneflag__terse__ALL__r15 
+  [30/40] ok    haiku-5.5__loneflag__normal__ALL__r15 
+  [31/40] ok    haiku-5.5__loneflag__terse__ALL__r16 
+  [32/40] ok    haiku-5.5__loneflag__terse__ALL__r17 
+  [33/40] ok    haiku-5.5__loneflag__normal__ALL__r16 
+  [34/40] ok    haiku-5.5__loneflag__normal__ALL__r17 
+  [35/40] ok    haiku-5.5__loneflag__terse__ALL__r18 
+  [36/40] ok    haiku-5.5__loneflag__terse__ALL__r19 
+  [37/40] ok    haiku-5.5__loneflag__normal__ALL__r18 
+  [38/40] ok    haiku-5.5__loneflag__normal__ALL__r19 
+  [39/40] ok    haiku-5.5__loneflag__terse__ALL__r20 
+  [40/40] ok    haiku-5.5__loneflag__normal__ALL__r20 
+done: 40 ok, 0 errors
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 40 -> 30 jobs
+30 jobs, 0 already done, 30 to run (30 API calls)
+  fable-5.1              10 calls  ~8,150 input tokens (excl. multi-turn history)
+  opus-5.5               20 calls  ~16,300 input tokens (excl. multi-turn history)
+  [1/30] ok    opus-5.5__direct__loneflag__r01 
+  [2/30] ok    opus-5.5__direct__loneflag__r02 
+  [3/30] ok    fable-5.1__direct__loneflag__r02 
+  [4/30] ok    fable-5.1__direct__loneflag__r01 
+  [5/30] ok    opus-5.5__direct__loneflag__r03 
+  [6/30] ok    opus-5.5__direct__loneflag__r04 
+  [7/30] ok    fable-5.1__direct__loneflag__r03 
+done: 7 ok, 0 errors
+USAGE LIMIT HIT: claude error: You've hit your 5-hour limit · resets 8:50am (Australia/Sydney)
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 80 -> 60 jobs
+60 jobs, 0 already done, 60 to run (60 API calls)
+  fable-5.1              20 calls  ~15,312 input tokens (excl. multi-turn history)
+  opus-5.5               40 calls  ~30,759 input tokens (excl. multi-turn history)
+done: 0 ok, 0 errors
+USAGE LIMIT HIT: claude error: You've hit your 5-hour limit · resets 8:50am (Australia/Sydney)
+
+## stderr
+

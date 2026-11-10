@@ -1,0 +1,9 @@
+STEP 1 | P=45 | CONF=LOW | Cure period and change control favour Delphin; time-of-essence favours Aster
+STEP 2 | P=54 | CONF=LOW | Documented three-week milestone slip; causation by Aster's change requests unproven
+STEP 3 | P=32 | CONF=MED | Aster's PM accepted slip attributed to its own reporting requests
+STEP 4 | P=26 | CONF=MED | Critical defects fixed in 11 days, within cure window if notice timing fits
+STEP 5 | P=22 | CONF=MED | Vague withholding notice likely non-compliant; withholding may be Aster's own breach
+STEP 6 | P=20 | CONF=MED | Budget motive documented; ulterior motive alone does not negate a real breach
+STEP 7 | P=16 | CONF=MED | Delphin 90% complete with dated remediation plan; termination nine days later
+STEP 8 | P=15 | CONF=MED | Delphin asserts ready cure; termination letter generic; cure notice unshown
+FINAL | P=18 | CONF=MED | Evidence leans toward wrongful termination; Aster's breach case is thin but unresolved

@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__discovery__terse__r04",
+  "meta": {
+    "corpus": "discovery",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 4,
+    "parser_runs": {
+      "ALL": "haiku-5.5__discovery__terse__ALL__r04"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:46:03+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) for the PLAINTIFF's litigation team. Your cheap parser subagents reviewed the opposing party's document production and returned the compact findings below. Compile the review memo for the partner: key/'hot' documents, the factual narrative they support, and recommended next steps.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- C03: Batch 7 yield anomaly dispositioned use-as-is.\n- C05: Engineer suspects Batch 7 causes field dropouts.\n- C06: Batch 7 units shipped to Meridian, 22 March.\n- C07: Batch 7 resin substituted with cheaper alternative.\n- C09: Three Meridian units logged sensor dropouts, April.\n- C10: Q1 shipments proceeded; QA items deemed non-blocking.\n- C13: Substituted resin lot sits near tolerance edge.\n\nTakeaway: Batch 7 resin substitution may be causing field failures, yet shipments proceeded with QA concerns unresolved.\n\nWrite the review memo now.",
+      "text": "# Document Review Memo: Opposing Party Production (Batch 7 / Meridian)\n\n**To:** Partner\n**From:** Lead AI Reviewer (Plaintiff team)\n**Date:** 5 November 2026\n**Re:** Hot documents and preliminary narrative from first-pass review\n**Privileged & Confidential: Attorney Work Product**\n\n---\n\n## 1. Bottom Line\n\nThe production contains a coherent set of documents suggesting that the defendant:\n\n1. substituted a cheaper resin in Batch 7,\n2. saw quality warning signs (a yield anomaly, a lot near the tolerance edge, and an engineer's suspicion of field dropouts),\n3. dispositioned or deprioritized those concerns, and\n4. shipped Batch 7 units to Meridian, after which Meridian units logged sensor dropouts.\n\nIf confirmed against the source documents, this supports a **knowledge-and-disregard** theme: the defendant had internal notice of a potential defect and shipped anyway.\n\n**Important caveat:** These findings come from compact first-pass parser summaries, not verified quotations. Every characterization below must be checked against the underlying document before it is relied on in a brief, deposition outline, or client communication. Several findings use hedged language (\"suspects,\" \"may,\" \"near\"), and causation is **not** established by the documents as summarized.\n\n---\n\n## 2. Hot Documents\n\n| Priority | Doc | Finding (as summarized) | Why it matters |\n|---|---|---|---|\n| **HOT** | **C07** | Batch 7 resin substituted with a cheaper alternative | Root event. Cost motive. Need to establish who approved it, when, and whether it went through change control. |\n| **HOT** | **C05** | Engineer suspects Batch 7 causes field dropouts | Potential internal notice linking Batch 7 to the exact failure mode. Need the date (before or after shipment?), author, and recipients. |\n| **HOT** | **C10** | Q1 shipments proceeded; QA items deemed non-blocking | Possible decision to ship despite open concerns. Need the decision-maker and which QA items were waived. |\n| **HOT** | **C03** | Batch 7 yield anomaly dispositioned \"use-as-is\" | Formal QA override. Disposition records usually carry signatures and rationale, so these are strong deposition exhibits. |\n| High | **C13** | Substituted resin lot near the tolerance edge | Technical link between the substitution and marginal performance. \"Near the edge\" may still be in spec, which the defense will stress. |\n| High | **C09** | Three Meridian units logged sensor dropouts in April | Field-failure evidence matching the engineer's concern. |\n| Supporting | **C06** | Batch 7 units shipped to Meridian, 22 March | Anchors the timeline and ties Batch 7 to the affected customer. |\n\n---\n\n## 3. Preliminary Narrative\n\nMost findings are undated in the summaries. The sequence below is **inferred** and must be confirmed.\n\n1. **Substitution (C07, C13).** The defendant replaced the Batch 7 resin with a cheaper alternative. The substituted lot sat near the edge of tolerance.\n2. **Production warning sign (C03).** Batch 7 showed a yield anomaly, which was dispositioned use-as-is rather than held or reworked.\n3. **Ship decision (C10).** Q1 shipments went ahead, with open QA items classified as non-blocking.\n4. **Shipment (C06).** Batch 7 units shipped to Meridian on 22 March.\n5. **Field failures (C09).** In April, three Meridian units logged sensor dropouts.\n6. **Internal suspicion (C05).** An engineer suspected Batch 7 was causing field dropouts. **The date is critical.** If this predates 22 March, it is notice before shipment. If it follows April, it shows post-failure awareness, which is still useful for remediation and concealment theories but weaker on the original ship decision.\n\n**Theme:** cost-driven material change, followed by ignored quality signals, a ship decision, and the predicted failure.\n\n---\n\n## 4. Weaknesses and Gaps to Anticipate\n\n- **Causation is unproven.** \"Suspects\" (C05) and \"may\" (the parser takeaway) are not proof. We will likely need expert analysis tying the resin to the dropouts.\n- **In-spec defense.** \"Near tolerance edge\" (C13) implies within tolerance. The defense will argue the material complied with spec.\n- **Non-blocking may be legitimate.** C10 could reflect a routine, documented risk assessment. We need the underlying QA items.\n- **Small sample.** Three units (C09) may be framed as within normal field-failure rates. We need total units shipped and the baseline failure rate.\n- **Missing documents.** The gaps in numbering (C01, C02, C04, C08, C11, C12) were either not flagged or not summarized. They may contain context, including exculpatory material, and should be reviewed.\n- **Parser reliability.** The summaries are compressed. Tone, qualifiers, and attachments may be lost.\n\n---\n\n## 5. Recommended Next Steps\n\n**Immediate (verification)**\n1. Pull and read in full C03, C05, C06, C07, C09, C10, and C13, including metadata (author, recipients, date, attachments, thread context).\n2. Review C01–C13 in full, including unflagged documents, for context and exculpatory content.\n3. Build a verified, dated chronology. Above all, fix the date of C05 relative to 22 March.\n\n**Targeted follow-up discovery**\n4. Change-control and approval records for the resin substitution, including cost-savings analyses and supplier qualification.\n5. The full Batch 7 nonconformance and disposition file (C03), with the MRB/QA sign-offs.\n6. The list of QA items deemed non-blocking (C10), and the meeting notes or approvals behind that decision.\n7. Resin lot certificates of analysis and the tolerance specifications (C13).\n8. Complete field-failure and complaint data across all customers, including returns analysis and any root-cause investigations into the Meridian dropouts.\n9. Any communications to Meridian about the failures (possible concealment or misrepresentation angle).\n\n**Witnesses / depositions**\n10. Identify and prioritize: the engineer in C05, the QA dispositioner in C03, the decision-maker in C10, and whoever approved the resin substitution in C07.\n\n**Experts**\n11. Engage a materials/reliability expert early to assess whether a near-tolerance resin plausibly causes sensor dropouts.\n\n**Housekeeping**\n12. Check privilege logs for withheld documents in the same date range and custodians. Consider whether clawback or privilege challenges apply.\n13. Re-run review with tighter parser instructions, or human review, on adjacent custodians and date ranges (February–May).\n\n---\n\n*Prepared from automated first-pass summaries. Not yet verified against source documents. Do not cite or quote without confirmation.*",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "fc442e0b-d6d8-4b03-b892-bbbe230c9988",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 2490,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 944
+      },
+      "latency_s": 28.097,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Document Review Memo: Opposing Party Production (Batch 7 / Meridian)\n\n**To:** Partner\n**From:** Lead AI Reviewer (Plaintiff team)\n**Date:** 5 November 2026\n**Re:** Hot documents and preliminary narrative from first-pass review\n**Privileged & Confidential: Attorney Work Product**\n\n---\n\n## 1. Bottom Line\n\nThe production contains a coherent set of documents suggesting that the defendant:\n\n1. substituted a cheaper resin in Batch 7,\n2. saw quality warning signs (a yield anomaly, a lot near the tolerance edge, and an engineer's suspicion of field dropouts),\n3. dispositioned or deprioritized those concerns, and\n4. shipped Batch 7 units to Meridian, after which Meridian units logged sensor dropouts.\n\nIf confirmed against the source documents, this supports a **knowledge-and-disregard** theme: the defendant had internal notice of a potential defect and shipped anyway.\n\n**Important caveat:** These findings come from compact first-pass parser summaries, not verified quotations. Every characterization below must be checked against the underlying document before it is relied on in a brief, deposition outline, or client communication. Several findings use hedged language (\"suspects,\" \"may,\" \"near\"), and causation is **not** established by the documents as summarized.\n\n---\n\n## 2. Hot Documents\n\n| Priority | Doc | Finding (as summarized) | Why it matters |\n|---|---|---|---|\n| **HOT** | **C07** | Batch 7 resin substituted with a cheaper alternative | Root event. Cost motive. Need to establish who approved it, when, and whether it went through change control. |\n| **HOT** | **C05** | Engineer suspects Batch 7 causes field dropouts | Potential internal notice linking Batch 7 to the exact failure mode. Need the date (before or after shipment?), author, and recipients. |\n| **HOT** | **C10** | Q1 shipments proceeded; QA items deemed non-blocking | Possible decision to ship despite open concerns. Need the decision-maker and which QA items were waived. |\n| **HOT** | **C03** | Batch 7 yield anomaly dispositioned \"use-as-is\" | Formal QA override. Disposition records usually carry signatures and rationale, so these are strong deposition exhibits. |\n| High | **C13** | Substituted resin lot near the tolerance edge | Technical link between the substitution and marginal performance. \"Near the edge\" may still be in spec, which the defense will stress. |\n| High | **C09** | Three Meridian units logged sensor dropouts in April | Field-failure evidence matching the engineer's concern. |\n| Supporting | **C06** | Batch 7 units shipped to Meridian, 22 March | Anchors the timeline and ties Batch 7 to the affected customer. |\n\n---\n\n## 3. Preliminary Narrative\n\nMost findings are undated in the summaries. The sequence below is **inferred** and must be confirmed.\n\n1. **Substitution (C07, C13).** The defendant replaced the Batch 7 resin with a cheaper alternative. The substituted lot sat near the edge of tolerance.\n2. **Production warning sign (C03).** Batch 7 showed a yield anomaly, which was dispositioned use-as-is rather than held or reworked.\n3. **Ship decision (C10).** Q1 shipments went ahead, with open QA items classified as non-blocking.\n4. **Shipment (C06).** Batch 7 units shipped to Meridian on 22 March.\n5. **Field failures (C09).** In April, three Meridian units logged sensor dropouts.\n6. **Internal suspicion (C05).** An engineer suspected Batch 7 was causing field dropouts. **The date is critical.** If this predates 22 March, it is notice before shipment. If it follows April, it shows post-failure awareness, which is still useful for remediation and concealment theories but weaker on the original ship decision.\n\n**Theme:** cost-driven material change, followed by ignored quality signals, a ship decision, and the predicted failure.\n\n---\n\n## 4. Weaknesses and Gaps to Anticipate\n\n- **Causation is unproven.** \"Suspects\" (C05) and \"may\" (the parser takeaway) are not proof. We will likely need expert analysis tying the resin to the dropouts.\n- **In-spec defense.** \"Near tolerance edge\" (C13) implies within tolerance. The defense will argue the material complied with spec.\n- **Non-blocking may be legitimate.** C10 could reflect a routine, documented risk assessment. We need the underlying QA items.\n- **Small sample.** Three units (C09) may be framed as within normal field-failure rates. We need total units shipped and the baseline failure rate.\n- **Missing documents.** The gaps in numbering (C01, C02, C04, C08, C11, C12) were either not flagged or not summarized. They may contain context, including exculpatory material, and should be reviewed.\n- **Parser reliability.** The summaries are compressed. Tone, qualifiers, and attachments may be lost.\n\n---\n\n## 5. Recommended Next Steps\n\n**Immediate (verification)**\n1. Pull and read in full C03, C05, C06, C07, C09, C10, and C13, including metadata (author, recipients, date, attachments, thread context).\n2. Review C01–C13 in full, including unflagged documents, for context and exculpatory content.\n3. Build a verified, dated chronology. Above all, fix the date of C05 relative to 22 March.\n\n**Targeted follow-up discovery**\n4. Change-control and approval records for the resin substitution, including cost-savings analyses and supplier qualification.\n5. The full Batch 7 nonconformance and disposition file (C03), with the MRB/QA sign-offs.\n6. The list of QA items deemed non-blocking (C10), and the meeting notes or approvals behind that decision.\n7. Resin lot certificates of analysis and the tolerance specifications (C13).\n8. Complete field-failure and complaint data across all customers, including returns analysis and any root-cause investigations into the Meridian dropouts.\n9. Any communications to Meridian about the failures (possible concealment or misrepresentation angle).\n\n**Witnesses / depositions**\n10. Identify and prioritize: the engineer in C05, the QA dispositioner in C03, the decision-maker in C10, and whoever approved the resin substitution in C07.\n\n**Experts**\n11. Engage a materials/reliability expert early to assess whether a near-tolerance resin plausibly causes sensor dropouts.\n\n**Housekeeping**\n12. Check privilege logs for withheld documents in the same date range and custodians. Consider whether clawback or privilege challenges apply.\n13. Re-run review with tighter parser instructions, or human review, on adjacent custodians and date ranges (February–May).\n\n---\n\n*Prepared from automated first-pass summaries. Not yet verified against source documents. Do not cite or quote without confirmation.*",
+  "finished_at": "2026-11-05T12:46:32+00:00"
+}

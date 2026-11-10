@@ -1,0 +1,70 @@
+{
+  "queue": "claude2",
+  "started": "2026-11-06T07:27:55",
+  "stages": [
+    {
+      "stage": "p2 dd loneflag",
+      "started": "2026-11-06T07:27:55",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T07:27:55"
+    },
+    {
+      "stage": "p2 drift last-position (core)",
+      "started": "2026-11-06T07:27:55",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T07:27:55"
+    },
+    {
+      "stage": "p2 drift last-position (breadth)",
+      "started": "2026-11-06T07:27:55",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T07:27:55"
+    },
+    {
+      "stage": "p2 kestrel pdf",
+      "started": "2026-11-06T07:27:55",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T07:27:55"
+    },
+    {
+      "stage": "p2 ip executed (positive control)",
+      "started": "2026-11-06T07:27:55",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T07:27:55"
+    },
+    {
+      "stage": "p2 drift employment",
+      "started": "2026-11-06T07:27:55",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T07:27:56"
+    },
+    {
+      "stage": "p2 drift insurance",
+      "started": "2026-11-06T07:27:56",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T07:27:56"
+    }
+  ],
+  "finished": "2026-11-06T07:27:56"
+}

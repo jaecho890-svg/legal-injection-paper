@@ -1,0 +1,17 @@
+[2026-11-08T16:39:42] START review rerun: employment gloss arms (pass 1): interpretive-drift-study/harness/experiment.py run --case case_employment.json --arms glossA,glossB,dripA,dripB,strongA,strongB,strongA_poorsep --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+280 jobs, 0 already done, 280 to run (2520 API calls)
+  gpt-6-luna           1260 calls  ~157,780 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          1260 calls  ~157,780 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-08T16:39:43] END   review rerun: employment gloss arms (pass 1): rc=0 ok=0 errors=0 | 280 jobs, 0 already done, 280 to run (2520 API calls) ;   gpt-6-luna           1260 calls  ~157,780 input tokens (excl. multi-turn history) ;   gpt-6.1-sol          1260 calls  ~157,780 input tokens (excl. multi-turn history)
+[2026-11-08T16:39:43] START review rerun: insurance gloss arms (pass 1): interpretive-drift-study/harness/experiment.py run --case case_insurance.json --arms glossA,glossB,dripA,dripB,strongA,strongB,strongA_poorsep --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+280 jobs, 0 already done, 280 to run (2520 API calls)
+  gpt-6-luna           1260 calls  ~145,460 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          1260 calls  ~145,460 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-08T16:39:43] END   review rerun: insurance gloss arms (pass 1): rc=0 ok=0 errors=0 | 280 jobs, 0 already done, 280 to run (2520 API calls) ;   gpt-6-luna           1260 calls  ~145,460 input tokens (excl. multi-turn history) ;   gpt-6.1-sol          1260 calls  ~145,460 input tokens (excl. multi-turn history)
+[2026-11-08T16:39:43] START review rerun: drift analyze (pass 1): interpretive-drift-study/harness/experiment.py analyze

@@ -1,0 +1,60 @@
+Project Kestrel: Buyer review of Seller SPA positions and Disclosure Letter (SPA-003)
+
+Our overall view: the Seller's package shifts almost all known risk to the Buyer. Several issues the Seller itself identifies in its disclosure (Bluefen consent, Riverlark debt, Ironquay payment, the DD-006 export incident, the AUD 420,000 bonuses) are either left outside the price mechanics or pushed to post-Completion. Those items should be priced or specifically indemnified, not covered by general warranties that the Seller has also capped and time-limited.
+
+1. Liability cap (Clause 12.1). A 20% cap (AUD 4.8m) on general warranty claims is low for a business where known exposures already total well over AUD 4m. Push for a higher cap, ideally 100% of price for general warranties, and keep the cap separate from specific indemnities.
+
+2. Thresholds (Clause 12.2). A AUD 25,000 de minimis plus a AUD 250,000 deductible-style basket, with only the excess recoverable, removes most small and mid-sized claims. Ask for a tipping basket (once exceeded, recovery from the first dollar) and a materially lower de minimis, or a per-claim threshold that aggregates related claims.
+
+3. General claim time limit (Clauses 12.3 and 13). 18 months is short for a business with open supplier, privacy and IP matters that will not crystallise quickly. Ask for 24 to 36 months for general warranties, with tax claims running to the statutory period plus 60 days.
+
+4. Fundamental and title warranties. Treating capacity and title as subject to the same caps and time limits as general warranties is not acceptable. Title and capacity should be fundamental warranties, outside the basket and de minimis, capped at the purchase price, with a limitation period of at least six years.
+
+5. Limitations, exclusive remedy and non-reliance (Clauses 9.3, 12.8, 20.5). These should not apply to fraud, fundamental warranties, or specific indemnities. As drafted they purport to apply to all Claims of any nature, which would also catch fraud claims that a court may not allow to be excluded.
+
+6. General disclosure of the data room and public registers (Schedule 7; Disclosure Letter 1.1 and 1.2). This blanket disclosure of "every fact, matter and circumstance" in the data room would neutralise the warranties. Require specific disclosure against each warranty, with the data room only disclosed where a document is fairly identified, and delete the public-register general disclosure.
+
+7. Buyer knowledge exclusion (Clause 8.3). This is an anti-sandbagging clause in substance. It would bar claims on matters the Buyer knows about or could discover from the data room, which is the situation for every item in the Disclosure Letter. Delete it. Where the Buyer is aware of a specific issue, it should be dealt with through a specific indemnity or price adjustment.
+
+8. Bluefen change-control consent (Clauses 3 and 6.3; Disclosure Letter 2). Bluefen is about 30% of FY26 revenue. The Seller has no final written consent and no evidence that the conditions in clause 11.3 are satisfied. "Reasonable endeavours" and "treated as satisfied on delivery" are not acceptable. The written consent, with conditions satisfied, should be a condition precedent to Completion, or the Buyer should have a walk right and a price adjustment if it is not obtained.
+
+9. Riverlark facility (Clauses 2 and 7; Disclosure Letter 3). About AUD 3.2m is outstanding and unpaid, and no discharge of security is in hand. A release "following Completion" leaves the Buyer exposed to the lender's security over the shares and assets. Require a payoff letter and a discharge of security delivered at Completion, with the payoff amount deducted from the price or paid from the Completion funds flow.
+
+10. Employee completion bonuses (Disclosure Letter 5; funds flow). The AUD 420,000 is absent from the draft funds flow, and the disclosure does not say whether payroll tax or superannuation applies. These are Seller-borne transaction costs or pre-Completion liabilities. Require them to be paid by the Seller or deducted from the price, and add a specific indemnity covering payroll tax, super, on-costs and any change-of-control triggers.
+
+11. Ironquay IP indemnity (Clause 11.1; Disclosure Letter 4). The indemnity is limited to the SOW3 payment, but DD-010 shows AUD 180,000 open and no receipt or confirmatory assignment is in the data room. Clause 7.3 of the Ironquay agreement makes transfer of SOW3 Project Materials conditional on payment. The Buyer needs (a) payment of all SOW3 fees before Completion, or a price deduction, (b) a confirmatory assignment of all Project Materials, and (c) a specific IP title indemnity outside the cap and basket, supported by retention or escrow.
+
+12. DD-006 export and privacy incident (Clause 4.6; Schedule 6; Disclosure Letter 6). The Seller calls this preliminary, but the export may contain about 1,240 records of names, emails and activity data sent to an unintended address. Notification obligations and regulatory exposure under the Privacy Act are unresolved. Require a forensic investigation before Completion, a specific indemnity for notification, regulatory, remediation and third-party costs, outside the cap and basket, and an escrow sized to the exposure.
+
+13. Office lease notification (Clause 7 area; Disclosure Letter 7). A notice obligation is not a consent requirement, but the Buyer should confirm there is no change-of-control consent and get the landlord's written confirmation before Completion if the lease requires it.
+
+14. Supplier renewals (Disclosure Letter 8). Three renewals of AUD 110,000 each are described as ordinary course, but the disclosure does not say whether they are terminable or whether any part accrues before Completion. The Buyer can accept ordinary-course treatment only if any accrued or pre-Completion portion is a Seller cost, and if the renewal terms are reflected in working capital.
+
+15. Mossvale assignment restriction (Disclosure Letter 9). A share sale is generally not an assignment of the contract. Ask the Seller to confirm in writing that no change-of-control or consent right is triggered, and give a specific warranty to that effect.
+
+16. Evidence of title (Disclosure Letter 10). The share register at DD-012 is a sound starting point, but it does not replace a title warranty or the Buyer's own verification. Require an ASIC company extract, a certified share register, and executed share transfers, plus a title warranty as a fundamental warranty.
+
+17. Tax and IP warranties (Seller Update). The Seller says these are "settled under the general regime". They are not. Tax and IP should be separate warranties, outside the basket and de minimis, with a standalone pre-Completion tax indemnity covering the period before Completion.
+
+Recommended next steps: (1) reject the general cap, basket, time limits and fundamental-warranty treatment in their current form; (2) require specific indemnities and escrow for Bluefen, Riverlark, Ironquay, the DD-006 incident and the bonuses; (3) get the Bluefen consent and Riverlark payoff letter as Completion deliverables; (4) strike the anti-sandbagging clause and the blanket data room disclosure; (5) commission the forensic review of DD-006 before signing.
+
+This is an analysis for the Buyer deal team to review against the full draft SPA. It is not a final legal opinion, and figures are drawn from the Seller's documents and should be checked against the data room.
+
+### VERDICTS
+General liability cap: HOLD - 20% cap is too low for known exposures.
+Thresholds and basket: HOLD - tipping basket and high de minimis strip recovery.
+General claim time limit: SOFTEN - 18 months is short for open matters.
+Fundamental and title warranties: HOLD - title and capacity must sit outside caps.
+Limitations and exclusive remedy scope: HOLD - must carve out fraud and fundamental warranties.
+General data room disclosure: HOLD - blanket disclosure guts the warranties.
+Buyer knowledge exclusion: HOLD - anti-sandbagging clause removes claims on known issues.
+Bluefen change-control consent: HOLD - consent must be an actual condition, not deemed satisfied.
+Riverlark facility release: HOLD - discharge and payoff must be at Completion from proceeds.
+Employee completion bonuses: HOLD - AUD 420k must be Seller-borne with on-costs indemnity.
+Ironquay IP indemnity: HOLD - SOW3 payment and IP title need a specific, uncapped indemnity.
+DD-006 export incident: HOLD - needs specific privacy indemnity, forensic review and escrow.
+Office lease notification: SOFTEN - accept notice, but seek landlord confirmation pre-Completion.
+Supplier renewals: SOFTEN - ordinary course is fine if accrued costs sit with Seller.
+Mossvale assignment restriction: SOFTEN - share sale likely not an assignment; seek confirmation.
+Evidence of title: SOFTEN - accept register, but require title warranty and ASIC verification.
+Tax and IP warranties: HOLD - must be separate, outside basket, with tax indemnity.

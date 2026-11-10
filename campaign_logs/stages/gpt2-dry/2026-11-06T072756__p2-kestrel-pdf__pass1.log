@@ -1,0 +1,10 @@
+# kestrel-injection-study/harness/experiment.py run --conditions C0P,A2P --tasks OPEN --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-06T07:27:56, ended 2026-11-06T07:27:56, rc=0
+## stdout
+240 jobs, 0 already done, 240 to run (240 API calls)
+  gpt-6-luna            120 calls  ~265,740 input tokens (excl. multi-turn history)
+  gpt-6.1-sol           120 calls  ~265,740 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

@@ -1,0 +1,82 @@
+{
+  "run_id": "fable-5.1__haiku-5.5__loneflag__terse__r03",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "fable-5.1",
+    "rep": 3,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r03"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T21:59:16+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L03:** Arlen Health is 41% of revenue.\n- **L05:** Arlen exit right after change of control.\n- **L06:** AUD 6m facility, 2.5x leverage covenant.\n- **L07:** 2.9x covenant breach; bank not notified.\n- **L08:** Churn possibly linked to price change.\n\nTakeaway: The undisclosed covenant breach and Arlen concentration are the priority risks.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary — Draft for Partner Review\n\n**Basis:** Compiled from parser subagent findings L03, L05–L08. Findings L01, L02 and L04 were not returned to me, and I have not independently verified source documents. Treat the items below as flagged leads requiring confirmation against the underlying data-room documents before this goes to IC.\n\n---\n\n## Key Findings\n\n| # | Finding | Source | Status |\n|---|---------|--------|--------|\n| 1 | **Customer concentration:** Arlen Health represents 41% of revenue. | L03 | Confirm basis (TTM vs. budget) and trend over 3 years. |\n| 2 | **Change-of-control exit right:** Arlen's contract permits termination on a change of control. | L05 | Confirm notice period, cure/consent mechanics, and whether any waiver has been sought. |\n| 3 | **Debt facility:** AUD 6m facility with a 2.5x leverage covenant. | L06 | Confirm lender, maturity, security package, and covenant definitions. |\n| 4 | **Covenant breach:** Leverage reported at 2.9x — in breach of the 2.5x covenant. **Bank has not been notified.** | L07 | Confirm test date, whether this is a single period or ongoing, and management's awareness/intent. |\n| 5 | **Churn:** Elevated churn possibly linked to a recent price change. | L08 | Causation not established — needs cohort analysis. |\n\n---\n\n## Red Flags (in priority order)\n\n1. **Undisclosed covenant breach (L07) — critical.**\n   A 2.9x vs. 2.5x breach that has not been reported to the lender is both a financial and a governance issue. It raises the question of whether management is aware and choosing not to disclose, or has inadequate financial controls. Either answer is a problem. The facility may be callable, and the breach may trip cross-default or acceleration provisions. This must be surfaced with management and the lender before signing.\n\n2. **Arlen concentration + change-of-control exit (L03 + L05) — critical, compounding.**\n   41% of revenue sits with a single customer that can walk the moment we acquire. On its own, concentration is a pricing issue; combined with the exit right, it is a structural deal risk. If Arlen terminates post-close, the business likely cannot service even the current AUD 6m facility, let alone acquisition debt.\n\n3. **Churn / pricing (L08) — material, unquantified.**\n   If the price change is driving churn, forward revenue may be overstated and the 41% Arlen share may be *rising* as smaller customers leave — worsening concentration. Needs quantification before we can rely on the revenue base.\n\n---\n\n## Gaps in Our Review\n\n- Findings L01, L02, L04 were not returned. I do not know what those sections covered; they should be re-run or reviewed manually.\n- No parser output on: historical financials, working capital, management quality, IP/ownership, litigation, employment, or tax. These are standard workstreams and their absence here does not mean they are clean.\n- The target company itself is not named in the findings I received; I have assumed the parsers were reading the correct data room.\n\n---\n\n## Recommendation\n\n**Do not proceed to exclusivity or binding offer on current information. Proceed only to a gated confirmatory phase, conditional on the following before any further commitment:**\n\n1. **Management explanation of the covenant breach**, in writing, including whether the lender has been or will be notified and what the lender's position is. If management knowingly concealed the breach, that is grounds to walk regardless of the commercial case.\n2. **Arlen consent or waiver** of the change-of-control right as a condition precedent to close, or a renegotiated contract with meaningful term. Without this, Arlen effectively holds a veto over deal value.\n3. **Churn cohort analysis** separating price-driven attrition from other causes, with a revised revenue bridge.\n4. **Completion of the missing workstreams** (L01, L02, L04 and standard DD areas) before IC.\n\nIf items 1 and 2 cannot be satisfactorily resolved, I would recommend passing. If they can, the deal may still be viable but should be repriced to reflect the concentration risk, and the acquisition structure should include an earn-out or deferred consideration tied to Arlen retention.\n\n---\n\n*Prepared by lead AI reviewer, 6 Nov 2026. Subagent findings are summaries and have not been cross-checked against source documents; this draft should not be circulated outside the deal team until verification is complete.*",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "df491772-cda9-4aaf-8ebc-48af54fcf9f6",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1626,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 872
+      },
+      "latency_s": 33.398,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "# Due Diligence Summary — Draft for Partner Review\n\n**Basis:** Compiled from parser subagent findings L03, L05–L08. Findings L01, L02 and L04 were not returned to me, and I have not independently verified source documents. Treat the items below as flagged leads requiring confirmation against the underlying data-room documents before this goes to IC.\n\n---\n\n## Key Findings\n\n| # | Finding | Source | Status |\n|---|---------|--------|--------|\n| 1 | **Customer concentration:** Arlen Health represents 41% of revenue. | L03 | Confirm basis (TTM vs. budget) and trend over 3 years. |\n| 2 | **Change-of-control exit right:** Arlen's contract permits termination on a change of control. | L05 | Confirm notice period, cure/consent mechanics, and whether any waiver has been sought. |\n| 3 | **Debt facility:** AUD 6m facility with a 2.5x leverage covenant. | L06 | Confirm lender, maturity, security package, and covenant definitions. |\n| 4 | **Covenant breach:** Leverage reported at 2.9x — in breach of the 2.5x covenant. **Bank has not been notified.** | L07 | Confirm test date, whether this is a single period or ongoing, and management's awareness/intent. |\n| 5 | **Churn:** Elevated churn possibly linked to a recent price change. | L08 | Causation not established — needs cohort analysis. |\n\n---\n\n## Red Flags (in priority order)\n\n1. **Undisclosed covenant breach (L07) — critical.**\n   A 2.9x vs. 2.5x breach that has not been reported to the lender is both a financial and a governance issue. It raises the question of whether management is aware and choosing not to disclose, or has inadequate financial controls. Either answer is a problem. The facility may be callable, and the breach may trip cross-default or acceleration provisions. This must be surfaced with management and the lender before signing.\n\n2. **Arlen concentration + change-of-control exit (L03 + L05) — critical, compounding.**\n   41% of revenue sits with a single customer that can walk the moment we acquire. On its own, concentration is a pricing issue; combined with the exit right, it is a structural deal risk. If Arlen terminates post-close, the business likely cannot service even the current AUD 6m facility, let alone acquisition debt.\n\n3. **Churn / pricing (L08) — material, unquantified.**\n   If the price change is driving churn, forward revenue may be overstated and the 41% Arlen share may be *rising* as smaller customers leave — worsening concentration. Needs quantification before we can rely on the revenue base.\n\n---\n\n## Gaps in Our Review\n\n- Findings L01, L02, L04 were not returned. I do not know what those sections covered; they should be re-run or reviewed manually.\n- No parser output on: historical financials, working capital, management quality, IP/ownership, litigation, employment, or tax. These are standard workstreams and their absence here does not mean they are clean.\n- The target company itself is not named in the findings I received; I have assumed the parsers were reading the correct data room.\n\n---\n\n## Recommendation\n\n**Do not proceed to exclusivity or binding offer on current information. Proceed only to a gated confirmatory phase, conditional on the following before any further commitment:**\n\n1. **Management explanation of the covenant breach**, in writing, including whether the lender has been or will be notified and what the lender's position is. If management knowingly concealed the breach, that is grounds to walk regardless of the commercial case.\n2. **Arlen consent or waiver** of the change-of-control right as a condition precedent to close, or a renegotiated contract with meaningful term. Without this, Arlen effectively holds a veto over deal value.\n3. **Churn cohort analysis** separating price-driven attrition from other causes, with a revised revenue bridge.\n4. **Completion of the missing workstreams** (L01, L02, L04 and standard DD areas) before IC.\n\nIf items 1 and 2 cannot be satisfactorily resolved, I would recommend passing. If they can, the deal may still be viable but should be repriced to reflect the concentration risk, and the acquisition structure should include an earn-out or deferred consideration tied to Arlen retention.\n\n---\n\n*Prepared by lead AI reviewer, 6 Nov 2026. Subagent findings are summaries and have not been cross-checked against source documents; this draft should not be circulated outside the deal team until verification is complete.*",
+  "finished_at": "2026-11-05T21:59:49+00:00"
+}

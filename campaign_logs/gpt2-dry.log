@@ -1,0 +1,69 @@
+[2026-11-06T07:27:56] START p2 dd loneflag (pass 1): dd-pipeline-study/harness/experiment.py run --corpus loneflag --parsers gpt-6-luna --models gpt-6.1-sol --reps 20 --workers 6
+40 jobs, 0 already done, 40 to run (40 API calls)
+  gpt-6-luna             40 calls  ~32,800 input tokens (excl. multi-turn history)
+dry run: nothing sent
+20 jobs, 0 already done, 20 to run (20 API calls)
+  gpt-6.1-sol            20 calls  ~16,300 input tokens (excl. multi-turn history)
+dry run: nothing sent
+stage 2 would add about 40 orchestrator calls
+
+[2026-11-06T07:27:56] END   p2 dd loneflag (pass 1): rc=0 ok=0 errors=0 | 40 jobs, 0 already done, 40 to run (40 API calls) ;   gpt-6-luna             40 calls  ~32,800 input tokens (excl. multi-turn history) ; 20 jobs, 0 already done, 20 to run (20 API calls) ;   gpt-6.1-sol            20 calls  ~16,300 input tokens (excl. multi-turn history)
+[2026-11-06T07:27:56] START p2 drift last-position (core) (pass 1): interpretive-drift-study/harness/experiment.py run --arms lastA,lastB --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+80 jobs, 0 already done, 80 to run (720 API calls)
+  gpt-6-luna            360 calls  ~33,200 input tokens (excl. multi-turn history)
+  gpt-6.1-sol           360 calls  ~33,200 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T07:27:56] END   p2 drift last-position (core) (pass 1): rc=0 ok=0 errors=0 | 80 jobs, 0 already done, 80 to run (720 API calls) ;   gpt-6-luna            360 calls  ~33,200 input tokens (excl. multi-turn history) ;   gpt-6.1-sol           360 calls  ~33,200 input tokens (excl. multi-turn history)
+[2026-11-06T07:27:56] START p2 drift last-position (breadth) (pass 1): interpretive-drift-study/harness/experiment.py run --arms lastA,lastB --models gpt-6.1-terra,gpt-6-astra,gpt-6-sol,gpt-5.6-sol,gpt-5.6-terra,gpt-5.6-luna --reps 5 --workers 6
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+60 jobs, 0 already done, 60 to run (540 API calls)
+  gpt-5.6-luna           90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-5.6-sol            90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-5.6-terra          90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6-astra            90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6-sol              90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6.1-terra          90 calls  ~8,300 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T07:27:56] END   p2 drift last-position (breadth) (pass 1): rc=0 ok=0 errors=0 | 60 jobs, 0 already done, 60 to run (540 API calls) ;   gpt-5.6-luna           90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-5.6-sol            90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-5.6-terra          90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-6-astra            90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-6-sol              90 calls  ~8,300 input tokens (excl. multi-turn history) ;   gpt-6.1-terra          90 calls  ~8,300 input tokens (excl. multi-turn history)
+[2026-11-06T07:27:56] START p2 kestrel pdf (pass 1): kestrel-injection-study/harness/experiment.py run --conditions C0P,A2P --tasks OPEN --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+240 jobs, 0 already done, 240 to run (240 API calls)
+  gpt-6-luna            120 calls  ~265,740 input tokens (excl. multi-turn history)
+  gpt-6.1-sol           120 calls  ~265,740 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T07:27:56] END   p2 kestrel pdf (pass 1): rc=0 ok=0 errors=0 | 240 jobs, 0 already done, 240 to run (240 API calls) ;   gpt-6-luna            120 calls  ~265,740 input tokens (excl. multi-turn history) ;   gpt-6.1-sol           120 calls  ~265,740 input tokens (excl. multi-turn history)
+[2026-11-06T07:27:56] START p2 ip executed (positive control) (pass 1): ip-assignment-study/harness/experiment.py run --case case_executed.json --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+240 jobs, 12 already done, 228 to run (2132 API calls)
+  gpt-6-luna           1066 calls  ~102,972 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          1066 calls  ~102,972 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T07:27:57] END   p2 ip executed (positive control) (pass 1): rc=0 ok=0 errors=0 | 240 jobs, 12 already done, 228 to run (2132 API calls) ;   gpt-6-luna           1066 calls  ~102,972 input tokens (excl. multi-turn history) ;   gpt-6.1-sol          1066 calls  ~102,972 input tokens (excl. multi-turn history)
+[2026-11-06T07:27:57] START p2 drift employment (pass 1): interpretive-drift-study/harness/experiment.py run --case case_employment.json --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+560 jobs, 6 already done, 554 to run (4986 API calls)
+  gpt-6-luna           2493 calls  ~277,897 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          2493 calls  ~277,897 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T07:27:57] END   p2 drift employment (pass 1): rc=0 ok=0 errors=0 | 560 jobs, 6 already done, 554 to run (4986 API calls) ;   gpt-6-luna           2493 calls  ~277,897 input tokens (excl. multi-turn history) ;   gpt-6.1-sol          2493 calls  ~277,897 input tokens (excl. multi-turn history)
+[2026-11-06T07:27:57] START p2 drift insurance (pass 1): interpretive-drift-study/harness/experiment.py run --case case_insurance.json --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+560 jobs, 6 already done, 554 to run (4986 API calls)
+  gpt-6-luna           2493 calls  ~259,209 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          2493 calls  ~259,209 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-06T07:27:57] END   p2 drift insurance (pass 1): rc=0 ok=0 errors=0 | 560 jobs, 6 already done, 554 to run (4986 API calls) ;   gpt-6-luna           2493 calls  ~259,209 input tokens (excl. multi-turn history) ;   gpt-6.1-sol          2493 calls  ~259,209 input tokens (excl. multi-turn history)
+[2026-11-06T07:27:57] START p2 kestrel judge (pass 1): kestrel-injection-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+4766 jobs, 4766 already done, 0 to run (0 API calls)
+dry run: nothing sent
+
+[2026-11-06T07:28:00] END   p2 kestrel judge (pass 1): rc=0 ok=0 errors=0 | 4766 jobs, 4766 already done, 0 to run (0 API calls)
+[2026-11-06T07:28:00] START p2 dd judge (pass 1): dd-pipeline-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+820 jobs, 820 already done, 0 to run (0 API calls)
+dry run: nothing sent
+
+[2026-11-06T07:28:01] END   p2 dd judge (pass 1): rc=0 ok=0 errors=0 | 820 jobs, 820 already done, 0 to run (0 API calls)
+[2026-11-06T07:28:01] QUEUE gpt2 FINISHED

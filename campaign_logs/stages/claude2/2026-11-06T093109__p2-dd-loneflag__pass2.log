@@ -1,0 +1,21 @@
+# dd-pipeline-study/harness/experiment.py run --corpus loneflag --parsers haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-06T09:31:09, ended 2026-11-06T09:37:09, rc=0
+## stdout
+40 jobs, 40 already done, 0 to run (0 API calls)
+done: 0 ok, 0 errors
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 40 -> 30 jobs
+30 jobs, 30 already done, 0 to run (0 API calls)
+done: 0 ok, 0 errors
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 80 -> 60 jobs
+60 jobs, 54 already done, 6 to run (6 API calls)
+  opus-5.5                6 calls  ~4,744 input tokens (excl. multi-turn history)
+  [1/6] error opus-5.5__haiku-5.5__loneflag__normal__r19 claude error: API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)
+  [2/6] error opus-5.5__haiku-5.5__loneflag__terse__r19 claude error: API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)
+  [3/6] error opus-5.5__haiku-5.5__loneflag__terse__r18 claude error: API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)
+  [4/6] error opus-5.5__haiku-5.5__loneflag__normal__r18 claude error: API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)
+  [5/6] error opus-5.5__haiku-5.5__loneflag__normal__r20 claude error: API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)
+  [6/6] error opus-5.5__haiku-5.5__loneflag__terse__r20 claude error: API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)
+done: 0 ok, 6 errors
+
+## stderr
+

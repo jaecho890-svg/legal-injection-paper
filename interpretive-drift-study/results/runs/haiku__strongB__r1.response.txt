@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Time-of-essence clause cuts against Delphin; cure and change-control clauses cut for it.
+STEP 2 | P=40 | CONF=LOW | Slippage partly tied to Aster's added reporting, which Aster accepted without objection.
+STEP 3 | P=30 | CONF=MED | Vague withholding notice may itself breach the contract, favoring Delphin.
+STEP 4 | P=22 | CONF=MED | 90% completion and dated remediation plan suggest a curable breach; termination looks disproportionate.
+STEP 5 | P=35 | CONF=MED | Three-week Milestone 2 delay is Delphin's shortfall, but coincides with Aster's change requests.
+STEP 6 | P=30 | CONF=MED | Critical defects fixed in 11 days, inside the cure window; fix timing versus termination unclear.
+STEP 7 | P=28 | CONF=MED | Budget-motivated exit memo suggests pretext, though it conditions exit on performance.
+STEP 8 | P=25 | CONF=MED | Bundle shows no cure notice before termination; Delphin's readiness to cure favors wrongfulness.
+FINAL | P=28 | CONF=MED | Leans wrongful: cure rights, vague withholding and pretext signals outweigh unresolved breach evidence.

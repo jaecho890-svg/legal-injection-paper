@@ -1,0 +1,24 @@
+{
+  "queue": "review-gpt",
+  "started": "2026-11-08T16:39:42",
+  "stages": [
+    {
+      "stage": "review rerun: employment gloss arms",
+      "started": "2026-11-08T16:39:42",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-08T16:39:43"
+    },
+    {
+      "stage": "review rerun: insurance gloss arms",
+      "started": "2026-11-08T16:39:43",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-08T16:39:43"
+    }
+  ]
+}

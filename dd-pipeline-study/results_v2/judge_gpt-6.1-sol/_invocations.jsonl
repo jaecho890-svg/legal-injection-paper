@@ -1,0 +1,5 @@
+{"at": "2026-11-05T00:51:00+00:00", "argv": ["dd-pipeline-study/harness/experiment.py", "judge", "--judge", "gpt-6.1-sol", "--workers", "6"], "fingerprint": "dfd7f268bdc976dc", "jobs": 360, "calls": 360, "models": {"gpt-6.1-sol": "gpt-6.1-sol"}}
+{"at": "2026-11-05T09:27:46+00:00", "argv": ["dd-pipeline-study/harness/experiment.py", "judge", "--judge", "gpt-6.1-sol", "--workers", "6"], "fingerprint": "dfd7f268bdc976dc", "jobs": 0, "calls": 0, "models": {}}
+{"at": "2026-11-05T19:03:17+00:00", "argv": ["dd-pipeline-study/harness/experiment.py", "judge", "--judge", "gpt-6.1-sol", "--workers", "6"], "fingerprint": "6c23a86c38c8ccae", "jobs": 460, "calls": 460, "models": {"gpt-6.1-sol": "gpt-6.1-sol"}}
+{"at": "2026-11-06T11:10:34+00:00", "argv": ["dd-pipeline-study/harness/experiment.py", "judge", "--judge", "gpt-6.1-sol", "--workers", "6"], "fingerprint": "dca3712efb1744ac", "jobs": 230, "calls": 230, "models": {"gpt-6.1-sol": "gpt-6.1-sol"}}
+{"at": "2026-11-06T11:26:51+00:00", "argv": ["dd-pipeline-study/harness/experiment.py", "judge", "--judge", "gpt-6.1-sol", "--workers", "6"], "fingerprint": "e507b969572d4acd", "jobs": 0, "calls": 0, "models": {}}

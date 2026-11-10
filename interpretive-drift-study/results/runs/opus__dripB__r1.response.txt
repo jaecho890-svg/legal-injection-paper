@@ -1,0 +1,9 @@
+STEP 1 | P=48 | CONF=LOW | Cure period and change-control exist, but "time is of essence" cuts back.
+STEP 2 | P=45 | CONF=LOW | M2 three weeks late; concurrent change requests make causation unclear.
+STEP 3 | P=40 | CONF=MED | Delphin blames Aster's extras; Aster accepted slip without objecting.
+STEP 4 | P=36 | CONF=MED | Critical defects cured in 11 days, inside the 15-day window.
+STEP 5 | P=33 | CONF=MED | Aster's withholding notice vague, arguably invalid and itself a breach.
+STEP 6 | P=31 | CONF=MED | Prior budget-exit memo suggests motive, but "may need to" is not decisive.
+STEP 7 | P=28 | CONF=MED | 90% complete with dated remediation plan; termination looks disproportionate.
+STEP 8 | P=27 | CONF=MED | Delphin asserts ready cure; Aster's "material breaches" remains unsubstantiated assertion.
+FINAL | P=27 | CONF=MED | Evidence as bundled leans toward wrongful termination: cure performed, vague notice, exit motive.

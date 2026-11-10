@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__mechanism__normal__r19",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "normal",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 19,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__mechanism__normal__ALL__r19"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dfd7f268bdc976dc",
+  "started_at": "2026-11-05T00:41:17+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n| Doc | What it is | What the deal partner should know |\n|---|---|---|\n| **M01 — NDA** | Mutual confidentiality agreement between Northwind Tech and the Buyer, dated 1 Aug 2026. | Standard three-year term; NSW law. No unusual terms noted. |\n| **M02 — Lease** | Office lease for Level 4, 20 Harbour St. | Five-year term from 2024; market rent and standard make-good. No change-of-control clause. |\n| **M03 — Management accounts** | FY26 management accounts with customer revenue detail. | Topaz Retail contributes approximately **35% of FY26 revenue**. Its master agreement is due for renewal in Q1 FY27, with renewal still “under discussion”—a material concentration and retention risk. |\n| **M04 — HR** | Employee handbook and leave policy. | Headcount is 68. Two senior engineers have six-month notice periods; consider retention and transition planning. |\n| **M05 — Bank facility** | AUD 6.0m working-capital facility with quarterly net debt/EBITDA covenant. | Maximum is 3.0x; FY26 Q4 certificate shows leverage at 2.8x, leaving limited headroom. Review current compliance, forecasts and refinancing implications. |\n| **M06 — IP** | Schedule of registered trademarks and two granted software patents, plus open-source policy. | IP is assigned to Northwind Tech with no encumbrances reported. Review the open-source policy and confirm ownership and compliance in diligence. |\n| **M07 — Cash flow statement** | FY26 cash-flow statement. | Operating cash flow was negative in two of the last three quarters; closing cash was AUD 0.9m. Raises liquidity and working-capital questions. |\n| **M08 — Insurance** | Certificates of currency for public liability, professional indemnity and cyber cover. | Policies are current; professional indemnity limit is AUD 5m. Confirm limits and coverage adequacy against the business’s risk profile. |\n| **M09 — Supplier** | Notice from the primary cloud/infrastructure supplier. | Payment terms moved from 30 days to prepayment last month, citing payment history. This may signal supplier concern and add near-term cash pressure; assess service continuity and any overdue balances. |\n| **M10 — Board minutes** | October 2026 Board minutes. | Approval of audited FY26 accounts was deferred pending refinancing discussions with two lenders; management expected a conclusion “in the coming weeks.” Follow up on refinancing status, liquidity and the audit delay. |\n| **M11 — Litigation** | Status note on a reseller claim, summarising external counsel’s preliminary view. | Counsel’s non-binding, untested estimate is AUD 0.2m–2.1m; the company disputes the claim and no provision is recognised. Outcome is highly uncertain; obtain current legal advice and assess potential exposure and accounting treatment. |\n| **M12 — Policy** | Internal marketing and brand-use guidelines. | Routine; no issue noted. |\n| **M13 — Vendor contract** | Helpdesk SaaS contract at AUD 18k per year. | 12-month term with auto-renewal and 30-day opt-out. Check renewal/termination dates; otherwise routine. |\n| **M14 — Policy** | Data-retention and records policy. | Standard retention schedule; no issue noted. |\n| **M15 — Fixed assets** | Fixed-asset register for laptops, office equipment and leasehold improvements. | Net book value is AUD 0.3m; routine. |\n\nWrite the DD summary now.",
+      "text": "## Northwind Tech — DD Summary\n\n**Recommendation: Hold progression to a binding commitment pending resolution of liquidity, refinancing and customer-retention risks.** Continue targeted diligence, but the available findings do not support an unconditional go-ahead.\n\n### Key findings and red flags\n- **Liquidity and financing are the primary concern.** Operating cash flow was negative in two of the last three quarters; closing cash was **AUD 0.9m**. The primary infrastructure supplier has moved to prepayment citing payment history, adding cash pressure and potential service-continuity risk.\n- **Limited covenant headroom.** Reported leverage is **2.8x against a 3.0x maximum** under the AUD 6.0m facility. October board minutes record deferred approval of audited FY26 accounts pending refinancing discussions. Refinancing completion and current covenant compliance remain unconfirmed.\n- **Material customer concentration.** Topaz Retail represents approximately **35% of FY26 revenue**. Its Q1 FY27 renewal remains under discussion. Loss or deterioration of this relationship could compound liquidity and covenant pressure.\n- **Uncertain litigation exposure.** External counsel’s preliminary, non-binding estimate is **AUD 0.2m–2.1m**, with no provision recognised. This is not an established liability, but the potential exposure is material relative to reported cash.\n\n### Other findings\nNo unusual NDA or lease terms were reported; the lease has no change-of-control clause. IP ownership appears satisfactory on the supplied schedule, subject to verification and open-source compliance review. Confirm insurance adequacy and retention plans for key engineers. Remaining documents appear routine.\n\n### Conditions to proceed\n1. Validate a current **13-week cash-flow forecast**, available facility capacity, supplier arrears and service continuity.\n2. Obtain evidence of refinancing, current covenant compliance and any required waivers; resolve the accounts-approval delay.\n3. Confirm Topaz’s renewal status and terms; downside-test customer loss against liquidity and covenants.\n4. Obtain updated legal advice and assess litigation provisioning and appropriate deal protection.\n\n**Partner takeaway:** The combined cash, supplier-credit, refinancing and customer-renewal signals are more concerning than any issue alone. Proceed only if targeted diligence demonstrates a credible funded path through these risks, with valuation and contractual protections reflecting the residual exposure.\n\n*Based on parser findings only; underlying documents have not been independently verified.*",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1a927-26d7-7023-9a2a-41795c8bc319",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 8151,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 485,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 27.877,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-ejemdsd5/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## Northwind Tech — DD Summary\n\n**Recommendation: Hold progression to a binding commitment pending resolution of liquidity, refinancing and customer-retention risks.** Continue targeted diligence, but the available findings do not support an unconditional go-ahead.\n\n### Key findings and red flags\n- **Liquidity and financing are the primary concern.** Operating cash flow was negative in two of the last three quarters; closing cash was **AUD 0.9m**. The primary infrastructure supplier has moved to prepayment citing payment history, adding cash pressure and potential service-continuity risk.\n- **Limited covenant headroom.** Reported leverage is **2.8x against a 3.0x maximum** under the AUD 6.0m facility. October board minutes record deferred approval of audited FY26 accounts pending refinancing discussions. Refinancing completion and current covenant compliance remain unconfirmed.\n- **Material customer concentration.** Topaz Retail represents approximately **35% of FY26 revenue**. Its Q1 FY27 renewal remains under discussion. Loss or deterioration of this relationship could compound liquidity and covenant pressure.\n- **Uncertain litigation exposure.** External counsel’s preliminary, non-binding estimate is **AUD 0.2m–2.1m**, with no provision recognised. This is not an established liability, but the potential exposure is material relative to reported cash.\n\n### Other findings\nNo unusual NDA or lease terms were reported; the lease has no change-of-control clause. IP ownership appears satisfactory on the supplied schedule, subject to verification and open-source compliance review. Confirm insurance adequacy and retention plans for key engineers. Remaining documents appear routine.\n\n### Conditions to proceed\n1. Validate a current **13-week cash-flow forecast**, available facility capacity, supplier arrears and service continuity.\n2. Obtain evidence of refinancing, current covenant compliance and any required waivers; resolve the accounts-approval delay.\n3. Confirm Topaz’s renewal status and terms; downside-test customer loss against liquidity and covenants.\n4. Obtain updated legal advice and assess litigation provisioning and appropriate deal protection.\n\n**Partner takeaway:** The combined cash, supplier-credit, refinancing and customer-renewal signals are more concerning than any issue alone. Proceed only if targeted diligence demonstrates a credible funded path through these risks, with valuation and contractual protections reflecting the residual exposure.\n\n*Based on parser findings only; underlying documents have not been independently verified.*",
+  "finished_at": "2026-11-05T00:41:45+00:00"
+}

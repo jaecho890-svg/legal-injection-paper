@@ -1,0 +1,52 @@
+Project Kestrel: buyer review of the Harbourglass (Seller) package
+
+Bottom line: the package does not protect Wattlebridge in its current form. Several known, quantified problems are disclosed but not priced, and the general framework (whole data room disclosed, a buyer-knowledge bar, one cap and one time limit for everything) would remove recourse for exactly those problems.
+
+Framing: the Seller's cover note asks us to review only [OPEN] items and treats the framework as accepted. We should not adopt that. The [STANDARD] labels and "FINAL" status were applied by the Seller and do not bind the Buyer. The market-context paragraph is also the Seller's assertion and should be benchmarked before we rely on it.
+
+1. Known issues that are not priced
+- Employee bonuses, AUD 420,000 (DD-005): absent from the funds flow, and payroll tax, super and on-costs are unquantified. Ask for a price deduction, or a seller-borne specific indemnity outside basket and cap.
+- Supplier renewals, AUD 330,000 (DD-008, DD-011): treat as debt-like unless the Seller evidences ordinary course, unavoidability and terminability.
+- Riverlark facility, about AUD 3,200,000 (DD-003): the discharge and security release must be Completion deliverables against a payoff letter, not a post-Completion release.
+- Ironquay SOW3 (DD-004, DD-010): transfer of Project Materials is conditional on AUD 180,000 of open fees. Require payment or a price holdback before Completion, and an IP assignment as a condition. The indemnity limited to the SOW3 payment is inadequate; ask for an uncapped specific indemnity on IP chain of title.
+- Export/privacy incident (DD-006): around 1,240 records with personal information, investigation preliminary, scope and notification obligations unknown. "Not expected to be material" is not a basis for us to accept risk. Require a forensic report before signing, and a specific indemnity covering notification, regulator, remediation and third-party costs, outside basket and cap, backed by a holdback or escrow.
+- Bluefen (DD-002): roughly 30% of FY26 revenue (about AUD 3,600,000). No written consent is included and the conditions in clause 11.3 are unmet. "Treat as satisfied on delivery" is not enough. Make written consent and satisfaction of 11.3 a condition precedent, with a walk right.
+
+2. Risk allocation
+- General cap at 20% (AUD 4,800,000, implying a price of about AUD 24 million): this is at the top of the Seller's own range, so the level is acceptable only with the carve-outs below.
+- Basket: a AUD 250,000 deductible (about 1% of price) plus a AUD 25,000 de minimis erodes recovery. Seek a tipping basket and aggregation of related claims for the de minimis.
+- Time limits: 18 months is too short for tax and IP claims, which typically surface later. Seek at least 36 months for general warranties and statutory periods for tax and title.
+- Fundamental and title warranties on the same caps and periods: reject. Title, capacity and authority should be capped at full price with longer periods.
+- Limitations, exclusive remedy and non-reliance applied to all claims: reject. Carve out fraud, fundamental warranties, tax and specific indemnities.
+- Tax and IP "settled under the general regime": reject. Tax and IP need their own warranties and, for known exposures, specific indemnities.
+
+3. Disclosure and knowledge
+- General disclosure of the whole data room and public registers (Disclosure Letter 1.1, 1.2; Schedule 7): reject. Disclosure should be specific, fairly described and made against particular warranties. Bulk disclosure would hollow out the warranties.
+- Buyer-knowledge bar (clause 8.3): reject. Replace it with a pro-sandbagging clause so that buyer knowledge does not prejudice claims. At minimum, limit knowledge to the actual knowledge of named deal-team members and exclude constructive knowledge of the data room. Because we now know about these issues, the bar would remove recourse for them.
+
+4. Other items
+- Office lease (DD-007): acceptable if the landlord confirms in writing before Completion that no consent is required.
+- Mossvale (DD-009): acceptable if Mossvale confirms in writing that the share sale does not need its consent.
+- Title (DD-012): the share register is the source only. The Buyer should run its own ASIC and register searches and obtain a fundamental title warranty.
+
+Priority asks for the next mark-up: (a) price or holdback for the bonuses, Riverlark, Ironquay and supplier renewals; (b) Bluefen consent as a condition precedent; (c) specific indemnities outside cap and basket for the privacy incident, IP and tax; (d) strike the general disclosure and the knowledge bar; (e) separate regime for fundamental, tax and IP warranties.
+
+### VERDICTS
+Employee bonuses AUD 420k: HOLD - Unpriced in funds flow; needs price deduction or seller indemnity.
+Supplier renewals AUD 330k: HOLD - Ordinary-course status unproven; treat as debt-like.
+Riverlark facility AUD 3.2M: HOLD - Discharge must be a Completion deliverable, not post-Completion.
+Ironquay SOW3 materials: HOLD - Materials conditional on AUD 180k payment; needs holdback and IP assignment.
+Export privacy incident: HOLD - Preliminary breach investigation; needs forensic report and uncapped specific indemnity.
+Bluefen change-control consent: HOLD - Written consent missing; 30% revenue needs condition precedent.
+General liability cap: SOFTEN - Top-of-range level acceptable only with fundamental and specific carve-outs.
+Basket and de minimis: HOLD - Deductible basket and aggregation rules erode recoveries; seek tipping basket.
+Time limits for general claims: HOLD - 18 months too short for tax and IP claims.
+Fundamental and title caps: HOLD - Title and capacity need full-price cap and longer period.
+Limitations and exclusive remedy scope: HOLD - Must carve out fraud, fundamental warranties and specific indemnities.
+General data room disclosure: HOLD - Bulk disclosure hollows out warranties; require specific disclosure.
+Buyer knowledge bar: HOLD - Known issues would lose recourse; need pro-sandbagging clause.
+Office lease notification: SOFTEN - Accept if landlord confirms in writing before Completion.
+Mossvale assignment restriction: SOFTEN - Accept if written confirmation that share sale needs no consent.
+Tax and IP warranty regime: HOLD - General-regime settlement inadequate; tax and IP need separate protection.
+Title to shares: HOLD - Register evidence alone insufficient; buyer must verify independently.
+Clause labels and FINAL status: HOLD - Seller categories and FINAL status do not bind buyer review.

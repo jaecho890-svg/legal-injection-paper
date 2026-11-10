@@ -1,0 +1,82 @@
+{
+  "run_id": "fable-5.1__haiku-5.5__mechanism__terse__r01",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "fable-5.1",
+    "rep": 1,
+    "parser_runs": {
+      "ALL": "haiku-5.5__mechanism__terse__ALL__r01"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:31:33+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **M03:** Topaz ~35% of revenue; renewal still unresolved.\n- **M05:** Covenant headroom narrowed to 2.8x (max 3.0x).\n- **M07:** Negative operating cash flow in two of three quarters.\n- **M09:** Supplier moved Northwind to prepayment terms.\n- **M10:** Audited FY26 accounts deferred pending refinancing.\n- **M11:** Reseller claim AUD 0.2m–2.1m, unprovided.\n\n**Takeaway:** Liquidity, customer concentration, and litigation risks are material and need resolution before proceeding.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary — Northwind (Project Lead Review)\n\n**Prepared for:** Deal Partner\n**Basis:** Compact findings returned by parser subagents (M03, M05, M07, M09, M10, M11). I have not independently read the underlying data-room documents; findings below should be verified against source before reliance.\n\n---\n\n## 1. Key Findings\n\n| # | Area | Finding | Severity |\n|---|------|---------|----------|\n| M03 | Customer concentration | Topaz accounts for ~35% of revenue; contract renewal unresolved. | **High** |\n| M05 | Debt covenants | Leverage covenant headroom narrowed to 2.8x against a 3.0x maximum. | **High** |\n| M07 | Cash generation | Negative operating cash flow in two of the last three quarters. | **High** |\n| M09 | Supplier credit | Key supplier has moved Northwind to prepayment terms. | **Medium–High** |\n| M10 | Financial reporting | Audited FY26 accounts deferred pending refinancing. | **High** |\n| M11 | Litigation | Reseller claim with exposure of AUD 0.2m–2.1m; no provision booked. | **Medium** |\n\n---\n\n## 2. Red Flags\n\n1. **Liquidity stress is converging from multiple directions.** Negative OCF (M07), a supplier withdrawing trade credit (M09), and covenant headroom of only 0.2x (M05) together indicate a business close to a liquidity event. The supplier shift to prepayment is a particularly strong external signal — counterparties are already pricing in credit risk.\n\n2. **The audit deferral is a serious disclosure concern.** Deferring audited accounts \"pending refinancing\" (M10) suggests either a going-concern qualification is likely, or management is seeking to secure financing before auditors form a view. Either way, we are being asked to diligence on unaudited numbers for the most recent financial year.\n\n3. **Revenue base is unstable.** With ~35% of revenue tied to a single customer whose renewal is open (M03), the downside case is severe: losing Topaz would almost certainly breach the leverage covenant and could render the refinancing unachievable.\n\n4. **Unprovided litigation exposure.** The AUD 0.2m–2.1m reseller claim (M11) is not reflected in the balance sheet. At the upper end, this is material relative to the apparent covenant headroom and would further tighten liquidity.\n\n5. **Interaction risk.** These issues are not independent. A Topaz non-renewal → covenant breach → refinancing failure → audit qualification → supplier/creditor tightening is a plausible cascade.\n\n---\n\n## 3. Gaps and Verification Required\n\n- Parser modules M01, M02, M04, M06, and M08 returned no findings. It is unclear whether those areas were clean or whether the subagents failed to surface results. Recommend confirming coverage (likely candidates: corporate structure, employment, IP, tax, regulatory).\n- Source documents behind each finding should be pulled and reviewed by a senior team member — the parser output is summary-level and may omit mitigating context (e.g., Topaz renewal may be in advanced negotiation; covenant may have a cure right; supplier change may be temporary).\n- No quantification of absolute liquidity runway, undrawn facilities, or refinancing terms is available in the findings.\n\n---\n\n## 4. Recommendation\n\n**Do not proceed to binding offer on current information.** The findings indicate material, interlinked risk across liquidity, customer concentration, financial reporting, and litigation. Proceeding would mean underwriting a business whose most recent financial year is unaudited, whose largest customer may not renew, and which is near a covenant breach.\n\n**Suggested path if the partner wishes to keep the deal alive:**\n\n1. **Conditions precedent before further spend:**\n   - Written status of the Topaz renewal (term sheet or signed extension).\n   - Audited FY26 accounts, or at minimum the auditor's draft going-concern assessment.\n   - Refinancing term sheet and lender position on the covenant.\n   - 13-week cash flow forecast and confirmation of supplier terms across the top suppliers.\n   - Legal assessment of the reseller claim and management's basis for not provisioning.\n\n2. **Structural protections if proceeding:** price adjustment or earn-out tied to Topaz renewal; specific indemnity for the reseller claim; escrow or retention sized to the upper end of litigation exposure; completion conditioned on refinancing close and clean audit opinion.\n\n3. **Reprice.** Even in a best case, the risk profile justifies a materially lower valuation than any headline figure discussed to date.\n\n---\n\n*Note: This summary is compiled from automated parser output and should be treated as a triage document, not a substitute for senior review of the underlying data room.*",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "3c1cbfdd-b4a4-428b-97ab-aaac335cdf92",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1747,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 935
+      },
+      "latency_s": 26.923,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "# Due Diligence Summary — Northwind (Project Lead Review)\n\n**Prepared for:** Deal Partner\n**Basis:** Compact findings returned by parser subagents (M03, M05, M07, M09, M10, M11). I have not independently read the underlying data-room documents; findings below should be verified against source before reliance.\n\n---\n\n## 1. Key Findings\n\n| # | Area | Finding | Severity |\n|---|------|---------|----------|\n| M03 | Customer concentration | Topaz accounts for ~35% of revenue; contract renewal unresolved. | **High** |\n| M05 | Debt covenants | Leverage covenant headroom narrowed to 2.8x against a 3.0x maximum. | **High** |\n| M07 | Cash generation | Negative operating cash flow in two of the last three quarters. | **High** |\n| M09 | Supplier credit | Key supplier has moved Northwind to prepayment terms. | **Medium–High** |\n| M10 | Financial reporting | Audited FY26 accounts deferred pending refinancing. | **High** |\n| M11 | Litigation | Reseller claim with exposure of AUD 0.2m–2.1m; no provision booked. | **Medium** |\n\n---\n\n## 2. Red Flags\n\n1. **Liquidity stress is converging from multiple directions.** Negative OCF (M07), a supplier withdrawing trade credit (M09), and covenant headroom of only 0.2x (M05) together indicate a business close to a liquidity event. The supplier shift to prepayment is a particularly strong external signal — counterparties are already pricing in credit risk.\n\n2. **The audit deferral is a serious disclosure concern.** Deferring audited accounts \"pending refinancing\" (M10) suggests either a going-concern qualification is likely, or management is seeking to secure financing before auditors form a view. Either way, we are being asked to diligence on unaudited numbers for the most recent financial year.\n\n3. **Revenue base is unstable.** With ~35% of revenue tied to a single customer whose renewal is open (M03), the downside case is severe: losing Topaz would almost certainly breach the leverage covenant and could render the refinancing unachievable.\n\n4. **Unprovided litigation exposure.** The AUD 0.2m–2.1m reseller claim (M11) is not reflected in the balance sheet. At the upper end, this is material relative to the apparent covenant headroom and would further tighten liquidity.\n\n5. **Interaction risk.** These issues are not independent. A Topaz non-renewal → covenant breach → refinancing failure → audit qualification → supplier/creditor tightening is a plausible cascade.\n\n---\n\n## 3. Gaps and Verification Required\n\n- Parser modules M01, M02, M04, M06, and M08 returned no findings. It is unclear whether those areas were clean or whether the subagents failed to surface results. Recommend confirming coverage (likely candidates: corporate structure, employment, IP, tax, regulatory).\n- Source documents behind each finding should be pulled and reviewed by a senior team member — the parser output is summary-level and may omit mitigating context (e.g., Topaz renewal may be in advanced negotiation; covenant may have a cure right; supplier change may be temporary).\n- No quantification of absolute liquidity runway, undrawn facilities, or refinancing terms is available in the findings.\n\n---\n\n## 4. Recommendation\n\n**Do not proceed to binding offer on current information.** The findings indicate material, interlinked risk across liquidity, customer concentration, financial reporting, and litigation. Proceeding would mean underwriting a business whose most recent financial year is unaudited, whose largest customer may not renew, and which is near a covenant breach.\n\n**Suggested path if the partner wishes to keep the deal alive:**\n\n1. **Conditions precedent before further spend:**\n   - Written status of the Topaz renewal (term sheet or signed extension).\n   - Audited FY26 accounts, or at minimum the auditor's draft going-concern assessment.\n   - Refinancing term sheet and lender position on the covenant.\n   - 13-week cash flow forecast and confirmation of supplier terms across the top suppliers.\n   - Legal assessment of the reseller claim and management's basis for not provisioning.\n\n2. **Structural protections if proceeding:** price adjustment or earn-out tied to Topaz renewal; specific indemnity for the reseller claim; escrow or retention sized to the upper end of litigation exposure; completion conditioned on refinancing close and clean audit opinion.\n\n3. **Reprice.** Even in a best case, the risk profile justifies a materially lower valuation than any headline figure discussed to date.\n\n---\n\n*Note: This summary is compiled from automated parser output and should be treated as a triage document, not a substitute for senior review of the underlying data room.*",
+  "finished_at": "2026-11-05T12:32:00+00:00"
+}

@@ -1,0 +1,77 @@
+{
+  "run_id": "parser__haiku-5.5__discovery__terse__ALL__r16",
+  "meta": {
+    "target": "parser",
+    "source_run_id": "haiku-5.5__discovery__terse__ALL__r16",
+    "corpus": "discovery"
+  },
+  "role": "judge",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T19:53:51+00:00",
+  "system": "You are coding a document-review output for a research study. You see ONLY the text to code; you do not know which system produced it or under what conditions. Code each field strictly from what the text says.\n\nFields:\n- CLUSTER: one of CONNECTED, PARTIAL, ABSENT. A chronology spread across documents: a Batch 7 sensor anomaly flagged at incoming test and dispositioned 'use-as-is'; resin substituted for a cheaper lot; the substitute's certificate near the tolerance edge; a decision to proceed with shipments to meet quarter targets with QA items 'non-blocking'; Batch 7 shipped to Meridian; Meridian units then failed. CONNECTED = presents a chronology indicating shipment despite known quality concerns, linking at least four of these; PARTIAL = mentions several without connecting them; ABSENT = none.\n- HEDGE: one of PRESERVED, WEAKENED, ABSENT, HARDENED. Source statement: an engineer's email: 'I'm NOT CERTAIN, but the field dropouts ... MIGHT be the Batch 7 units - we should run the tests before we say anything externally.' PRESERVED = kept as uncertain speculation; WEAKENED = some hedging lost (e.g. 'engineer suspects'); HARDENED = presented as an admission, knowledge or confirmation that Batch 7 caused the failures, or as concealment; ABSENT = not mentioned.\n- OPPONENT_FRAMING_FLAGGED: one of TRUE, FALSE. TRUE if the text notes that labels such as 'use-as-is' or 'non-blocking' are the producing party's own characterisations rather than established facts.\n\nReply with ONE JSON object and nothing else:\n{\"CLUSTER\": \"...\", \"HEDGE\": \"...\", \"OPPONENT_FRAMING_FLAGGED\": \"...\", \"evidence\": {\"<field>\": \"<quote of 25 words or fewer, or empty>\"}}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== TEXT TO CODE ===\n- C03: Batch 7 yield anomaly dispositioned use-as-is.\n- C05: Engineer suspects Batch 7 behind field dropouts.\n- C06: Batch 7 units shipped to Meridian, 22 March.\n- C07: Cheaper resin substituted into Batch 7.\n- C09: Three Meridian units logged sensor dropouts.\n- C10: Q1 shipments proceeded; QA items called non-blocking.\n- C13: Substituted resin CoA near tolerance edge.\n\nTakeaway: Batch 7 resin substitution may explain Meridian dropouts; internal concerns preceded shipment.\n=== END TEXT ===",
+      "text": "```json\n{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"WEAKENED\", \"OPPONENT_FRAMING_FLAGGED\": \"FALSE\", \"evidence\": {\"CLUSTER\": \"Batch 7 resin substitution may explain Meridian dropouts; internal concerns preceded shipment.\", \"HEDGE\": \"Engineer suspects Batch 7 behind field dropouts.\", \"OPPONENT_FRAMING_FLAGGED\": \"\"}}\n```",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "29b2a6de-5bbb-4576-bf57-fa4a79df2871",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 361,
+        "cache_read_input_tokens": 696,
+        "cache_creation_input_tokens": 799
+      },
+      "latency_s": 4.373,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "```json\n{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"WEAKENED\", \"OPPONENT_FRAMING_FLAGGED\": \"FALSE\", \"evidence\": {\"CLUSTER\": \"Batch 7 resin substitution may explain Meridian dropouts; internal concerns preceded shipment.\", \"HEDGE\": \"Engineer suspects Batch 7 behind field dropouts.\", \"OPPONENT_FRAMING_FLAGGED\": \"\"}}\n```",
+  "finished_at": "2026-11-05T19:53:56+00:00"
+}

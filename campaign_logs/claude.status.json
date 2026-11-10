@@ -1,0 +1,124 @@
+{
+  "queue": "claude",
+  "started": "2026-11-05T20:28:48",
+  "stages": [
+    {
+      "stage": "kestrel core",
+      "started": "2026-11-05T20:28:48",
+      "passes": 1,
+      "last_ok": 0,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T20:28:49"
+    },
+    {
+      "stage": "drift core",
+      "started": "2026-11-05T20:28:49",
+      "passes": 1,
+      "last_ok": 22,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T22:56:51"
+    },
+    {
+      "stage": "ip core",
+      "started": "2026-11-05T22:56:51",
+      "passes": 1,
+      "last_ok": 54,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T23:02:12"
+    },
+    {
+      "stage": "ip pipeline",
+      "started": "2026-11-05T23:02:12",
+      "passes": 1,
+      "last_ok": 150,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T23:05:44"
+    },
+    {
+      "stage": "dd overt",
+      "started": "2026-11-05T23:05:44",
+      "passes": 1,
+      "last_ok": 140,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T23:15:43"
+    },
+    {
+      "stage": "dd subtle",
+      "started": "2026-11-05T23:15:43",
+      "passes": 1,
+      "last_ok": 140,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T23:26:41"
+    },
+    {
+      "stage": "dd mechanism",
+      "started": "2026-11-05T23:26:41",
+      "passes": 1,
+      "last_ok": 130,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T23:37:26"
+    },
+    {
+      "stage": "dd discovery",
+      "started": "2026-11-05T23:37:26",
+      "passes": 1,
+      "last_ok": 130,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-05T23:53:52"
+    },
+    {
+      "stage": "kestrel breadth",
+      "started": "2026-11-05T23:53:52",
+      "passes": 1,
+      "last_ok": 184,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:33:01"
+    },
+    {
+      "stage": "drift breadth",
+      "started": "2026-11-06T04:33:01",
+      "passes": 1,
+      "last_ok": 120,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:45:48"
+    },
+    {
+      "stage": "draft pilot: employment",
+      "started": "2026-11-06T04:45:48",
+      "passes": 1,
+      "last_ok": 6,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:46:24"
+    },
+    {
+      "stage": "draft pilot: insurance",
+      "started": "2026-11-06T04:46:24",
+      "passes": 1,
+      "last_ok": 6,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:47:05"
+    },
+    {
+      "stage": "draft pilot: ip executed",
+      "started": "2026-11-06T04:47:05",
+      "passes": 1,
+      "last_ok": 12,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T04:48:05"
+    }
+  ],
+  "finished": "2026-11-06T04:48:05"
+}

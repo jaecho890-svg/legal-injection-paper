@@ -1,0 +1,22 @@
+# ip-assignment-study/harness/experiment.py run --case case_executed.json --arms honest --models gpt-6.1-sol,gpt-6-luna --reps 3 --workers 6
+# started 2026-11-05T17:34:19, ended 2026-11-05T17:42:01, rc=0
+## stdout
+12 jobs, 0 already done, 12 to run (108 API calls)
+  gpt-6-luna             54 calls  ~5,208 input tokens (excl. multi-turn history)
+  gpt-6.1-sol            54 calls  ~5,208 input tokens (excl. multi-turn history)
+  [1/12] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r01 
+  [2/12] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r01 
+  [3/12] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r01 
+  [4/12] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r01 
+  [5/12] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r02 
+  [6/12] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r02 
+  [7/12] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r02 
+  [8/12] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r02 
+  [9/12] ok    gpt-6.1-sol__case_executed__multiturn__honest__soft__r03 
+  [10/12] ok    gpt-6.1-sol__case_executed__multiturn__honest__hard__r03 
+  [11/12] ok    gpt-6-luna__case_executed__multiturn__honest__soft__r03 
+  [12/12] ok    gpt-6-luna__case_executed__multiturn__honest__hard__r03 
+done: 12 ok, 0 errors
+
+## stderr
+

@@ -1,0 +1,82 @@
+{
+  "run_id": "fable-5.1__haiku-5.5__mechanism__terse__r07",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "fable-5.1",
+    "rep": 7,
+    "parser_runs": {
+      "ALL": "haiku-5.5__mechanism__terse__ALL__r07"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:34:04+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- M03: Topaz (~35% revenue) renewal unresolved, Q1 FY27.\n- M05: Covenant headroom tight, 2.8x vs 3.0x max.\n- M07: Operating cash negative two of last three quarters.\n- M09: Supplier moved to prepayment from 30-day terms.\n- M10: Audited FY26 accounts unapproved pending lender refinancing.\n- M11: Reseller claim AUD 0.2m–2.1m possible; no provision.\n\nOverall: Liquidity and covenant pressure, plus customer concentration and unresolved audit, make this a high-risk profile.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary — Target Company\n**Prepared for:** Partner review  \n**Prepared by:** Lead AI reviewer (orchestrator), compiled from parser subagent findings  \n**Date:** 5 November 2026\n\n---\n\n## 1. Headline\n\nThe target presents a **high-risk profile** driven by a combination of liquidity stress, thin covenant headroom, heavy customer concentration, and an unsigned audit. Individually several of these are manageable; together they suggest a business under near-term financial strain where multiple adverse events are correlated (a Topaz non-renewal would likely trip the covenant, which would complicate the refinancing on which audit sign-off depends).\n\n## 2. Key Findings\n\n| Ref | Finding | Severity |\n|---|---|---|\n| M03 | **Customer concentration:** Topaz represents ~35% of revenue; renewal unresolved, due Q1 FY27. | High |\n| M05 | **Covenant headroom:** Leverage at 2.8x against a 3.0x maximum — ~7% headroom. | High |\n| M07 | **Cash generation:** Operating cash flow negative in two of the last three quarters. | High |\n| M09 | **Supplier terms deterioration:** A supplier has moved the target from 30-day terms to prepayment — a market signal of credit concern and a further working-capital drain. | Medium–High |\n| M10 | **Audit status:** FY26 audited accounts not approved, pending lender refinancing. Going-concern sign-off is likely contingent on the refinancing closing. | High |\n| M11 | **Contingent liability:** Reseller claim with possible exposure of AUD 0.2m–2.1m; no provision recognised. | Medium |\n\n## 3. Red Flags\n\n1. **Interlocking downside.** Topaz loss → EBITDA decline → covenant breach → refinancing at risk → audit unsigned. These are not independent risks; they are one chain.\n2. **Liquidity is tightening from both sides.** Negative operating cash plus a supplier demanding prepayment indicates working capital is actively deteriorating, not stable.\n3. **Unaudited FY26 numbers.** We are underwriting off accounts the auditor has not yet been willing to sign. Any valuation based on FY26 figures carries elevated uncertainty.\n4. **Unprovided claim.** The AUD 2.1m top end is material relative to the covenant headroom; management's decision not to provide should be challenged.\n5. **Possible gaps in data room coverage.** Parser output references M03, M05, M07, M09, M10, M11 only — M01, M02, M04, M06, M08 are absent. Either those items were clean or the parsers did not surface them; this should be confirmed before relying on this summary as complete.\n\n## 4. Recommendation\n\n**Do not proceed to binding offer on current terms. Proceed only on a conditional basis** with the following gating items:\n\n- **Topaz:** Written renewal (or binding LOI) before signing, or price/structure that assumes loss of the contract (e.g., earn-out or deferred consideration tied to Topaz revenue).\n- **Refinancing and audit:** Signed FY26 audited accounts with an unqualified opinion as a condition precedent; obtain lender term sheet and confirm covenant reset or waiver.\n- **Liquidity:** 13-week cash flow forecast with sensitivity for Topaz loss and supplier term changes; confirm whether other suppliers are tightening terms.\n- **Reseller claim:** Legal opinion on probable outcome; require provision or specific indemnity/escrow for the full AUD 2.1m.\n- **Price:** Any valuation should be stress-tested on a Topaz-loss, covenant-breach scenario and the headline reduced or structured accordingly.\n\nIf the vendor is unwilling to accept these conditions, the recommendation is to **pass**.\n\n## 5. Caveats\n\nThis summary is compiled from parser subagent extracts; I have not independently re-read the underlying data room documents. Severity ratings are judgement calls based on the compact findings and should be validated against source before the IC paper is finalised.",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "89209673-9a28-476d-8529-367410b9ca2e",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1470,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 934
+      },
+      "latency_s": 29.652,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "# Due Diligence Summary — Target Company\n**Prepared for:** Partner review  \n**Prepared by:** Lead AI reviewer (orchestrator), compiled from parser subagent findings  \n**Date:** 5 November 2026\n\n---\n\n## 1. Headline\n\nThe target presents a **high-risk profile** driven by a combination of liquidity stress, thin covenant headroom, heavy customer concentration, and an unsigned audit. Individually several of these are manageable; together they suggest a business under near-term financial strain where multiple adverse events are correlated (a Topaz non-renewal would likely trip the covenant, which would complicate the refinancing on which audit sign-off depends).\n\n## 2. Key Findings\n\n| Ref | Finding | Severity |\n|---|---|---|\n| M03 | **Customer concentration:** Topaz represents ~35% of revenue; renewal unresolved, due Q1 FY27. | High |\n| M05 | **Covenant headroom:** Leverage at 2.8x against a 3.0x maximum — ~7% headroom. | High |\n| M07 | **Cash generation:** Operating cash flow negative in two of the last three quarters. | High |\n| M09 | **Supplier terms deterioration:** A supplier has moved the target from 30-day terms to prepayment — a market signal of credit concern and a further working-capital drain. | Medium–High |\n| M10 | **Audit status:** FY26 audited accounts not approved, pending lender refinancing. Going-concern sign-off is likely contingent on the refinancing closing. | High |\n| M11 | **Contingent liability:** Reseller claim with possible exposure of AUD 0.2m–2.1m; no provision recognised. | Medium |\n\n## 3. Red Flags\n\n1. **Interlocking downside.** Topaz loss → EBITDA decline → covenant breach → refinancing at risk → audit unsigned. These are not independent risks; they are one chain.\n2. **Liquidity is tightening from both sides.** Negative operating cash plus a supplier demanding prepayment indicates working capital is actively deteriorating, not stable.\n3. **Unaudited FY26 numbers.** We are underwriting off accounts the auditor has not yet been willing to sign. Any valuation based on FY26 figures carries elevated uncertainty.\n4. **Unprovided claim.** The AUD 2.1m top end is material relative to the covenant headroom; management's decision not to provide should be challenged.\n5. **Possible gaps in data room coverage.** Parser output references M03, M05, M07, M09, M10, M11 only — M01, M02, M04, M06, M08 are absent. Either those items were clean or the parsers did not surface them; this should be confirmed before relying on this summary as complete.\n\n## 4. Recommendation\n\n**Do not proceed to binding offer on current terms. Proceed only on a conditional basis** with the following gating items:\n\n- **Topaz:** Written renewal (or binding LOI) before signing, or price/structure that assumes loss of the contract (e.g., earn-out or deferred consideration tied to Topaz revenue).\n- **Refinancing and audit:** Signed FY26 audited accounts with an unqualified opinion as a condition precedent; obtain lender term sheet and confirm covenant reset or waiver.\n- **Liquidity:** 13-week cash flow forecast with sensitivity for Topaz loss and supplier term changes; confirm whether other suppliers are tightening terms.\n- **Reseller claim:** Legal opinion on probable outcome; require provision or specific indemnity/escrow for the full AUD 2.1m.\n- **Price:** Any valuation should be stress-tested on a Topaz-loss, covenant-breach scenario and the headline reduced or structured accordingly.\n\nIf the vendor is unwilling to accept these conditions, the recommendation is to **pass**.\n\n## 5. Caveats\n\nThis summary is compiled from parser subagent extracts; I have not independently re-read the underlying data room documents. Severity ratings are judgement calls based on the compact findings and should be validated against source before the IC paper is finalised.",
+  "finished_at": "2026-11-05T12:34:33+00:00"
+}

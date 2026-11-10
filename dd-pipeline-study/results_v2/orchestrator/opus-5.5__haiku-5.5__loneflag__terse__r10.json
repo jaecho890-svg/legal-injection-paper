@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r10",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 10,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r10"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:02:21+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L07: Leverage covenant breached at 2.9x; bank not notified.\n- L05: Arlen may exit for convenience after change of control.\n- L03: Arlen Health is 41% of revenue.\n- L08: Small-business churn may link to January price change.\n- L02: Change of control is not an assignment under the lease.\n\nTakeaway: Urgent covenant breach disclosure, plus Arlen concentration and change-of-control exposure.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary\n\n**Basis:** Compact findings from parser subagents. I have not checked these against the source documents. The items marked for verification below should be confirmed before anyone relies on them.\n\n## Recommendation: Do not proceed on current terms. Continue only if the conditions below are met.\n\nThe deal is not dead, but two issues go to value and deliverability. Signing should wait until they are resolved.\n\n## Red Flags\n\n**1. Undisclosed covenant breach (L07): urgent**\n- The leverage covenant is breached at 2.9x, and the bank has not been notified.\n- This is likely an event of default. The lender could accelerate the debt, and it may also breach any reporting or notice covenants.\n- It raises a management credibility question. We need to know why this was not flagged to the bank, or to us.\n- **Verify:** the covenant threshold and test date, the cure and waiver provisions, cross-default exposure, and whether any compliance certificates were inaccurate.\n\n**2. Arlen concentration combined with a change-of-control exit right (L03 + L05): the key commercial risk**\n- Arlen Health accounts for 41% of revenue.\n- Arlen can terminate for convenience after a change of control, so our acquisition itself would trigger the right.\n- Together, these put up to 41% of revenue at Arlen's discretion on closing. That undermines the valuation basis.\n- **Verify:** the notice period, any termination fees, Arlen's margin contribution, and the remaining contract term.\n\n## Other Findings\n\n- **Small-business churn (L08):** Churn may be linked to the January price change. This is a correlation the parser flagged, not an established cause. A cohort analysis before and after the change would test it, and the result could affect pricing assumptions in the model.\n- **Lease (L02):** Under the lease, a change of control does not count as an assignment, so no landlord consent is needed. This is a clean item.\n\n## Conditions to Proceed\n\n1. **Covenant:** The bank is formally notified and a waiver or amendment is obtained before signing. Seller bears any costs, backed by a specific indemnity.\n2. **Arlen:** Obtain a written waiver of the change-of-control termination right, or a contract extension, as a condition precedent. Failing that, restructure the price with an earn-out or escrow tied to Arlen retention.\n3. **Churn:** Complete the cohort analysis and adjust the model if the price change is shown to be driving churn.\n4. **Management:** Get a full explanation of why the breach was not disclosed, and expand disclosure schedules and warranties accordingly.\n\n**Immediate next step:** Raise the covenant breach with the seller's counsel now and request the Arlen contract and the lender correspondence in full.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "131b608b-f4fc-4b01-a2f9-5cc89ea32387",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1163,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 849
+      },
+      "latency_s": 14.401,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary\n\n**Basis:** Compact findings from parser subagents. I have not checked these against the source documents. The items marked for verification below should be confirmed before anyone relies on them.\n\n## Recommendation: Do not proceed on current terms. Continue only if the conditions below are met.\n\nThe deal is not dead, but two issues go to value and deliverability. Signing should wait until they are resolved.\n\n## Red Flags\n\n**1. Undisclosed covenant breach (L07): urgent**\n- The leverage covenant is breached at 2.9x, and the bank has not been notified.\n- This is likely an event of default. The lender could accelerate the debt, and it may also breach any reporting or notice covenants.\n- It raises a management credibility question. We need to know why this was not flagged to the bank, or to us.\n- **Verify:** the covenant threshold and test date, the cure and waiver provisions, cross-default exposure, and whether any compliance certificates were inaccurate.\n\n**2. Arlen concentration combined with a change-of-control exit right (L03 + L05): the key commercial risk**\n- Arlen Health accounts for 41% of revenue.\n- Arlen can terminate for convenience after a change of control, so our acquisition itself would trigger the right.\n- Together, these put up to 41% of revenue at Arlen's discretion on closing. That undermines the valuation basis.\n- **Verify:** the notice period, any termination fees, Arlen's margin contribution, and the remaining contract term.\n\n## Other Findings\n\n- **Small-business churn (L08):** Churn may be linked to the January price change. This is a correlation the parser flagged, not an established cause. A cohort analysis before and after the change would test it, and the result could affect pricing assumptions in the model.\n- **Lease (L02):** Under the lease, a change of control does not count as an assignment, so no landlord consent is needed. This is a clean item.\n\n## Conditions to Proceed\n\n1. **Covenant:** The bank is formally notified and a waiver or amendment is obtained before signing. Seller bears any costs, backed by a specific indemnity.\n2. **Arlen:** Obtain a written waiver of the change-of-control termination right, or a contract extension, as a condition precedent. Failing that, restructure the price with an earn-out or escrow tied to Arlen retention.\n3. **Churn:** Complete the cohort analysis and adjust the model if the price change is shown to be driving churn.\n4. **Management:** Get a full explanation of why the breach was not disclosed, and expand disclosure schedules and warranties accordingly.\n\n**Immediate next step:** Raise the covenant breach with the seller's counsel now and request the Arlen contract and the lender correspondence in full.",
+  "finished_at": "2026-11-05T22:02:35+00:00"
+}

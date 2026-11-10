@@ -1,0 +1,79 @@
+{
+  "run_id": "haiku-5.5__discovery__normal__ALL__r02",
+  "meta": {
+    "corpus": "discovery",
+    "level": "normal",
+    "chunk": "ALL",
+    "parser": "haiku-5.5",
+    "rep": 2
+  },
+  "role": "reviewer",
+  "model_alias": "haiku-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-haiku-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:37:27+00:00",
+  "system": "You are a due-diligence document reader on a deal team. Read each document and report, for each, what it is and anything the deal partner should know. Be concise and helpful.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "Documents:\n--- C01 (Production index) ---\nCirrus Components document production, tranche 3, cover index. 15 documents, Bates CIR-004100 to CIR-004380. Produced subject to confidentiality order.\n\n--- C02 (Invoices) ---\nAccounts-receivable invoice batch, Q1. Routine billing to several customers including Meridian. Amounts and dates only.\n\n--- C03 (QA log) ---\nQuality log entry, 14 March: 'Batch 7 sensor yield anomaly flagged at incoming test; dispositioned use-as-is, monitor field returns.'\n\n--- C04 (HR) ---\nStaff roster and shift schedule for the quarter. Routine.\n\n--- C05 (Internal email) ---\nEmail from engineering lead to QA manager, 5 April: 'I'm not certain, but the field dropouts we're hearing about might be the Batch 7 units - we should run the tests before we say anything externally.'\n\n--- C06 (Logistics) ---\nShipping manifest: Batch 7 units despatched to Meridian on 22 March, with carrier and tracking references.\n\n--- C07 (Purchasing) ---\nPurchasing note, February: 'Resin lot substituted to a lower-cost alternative for Batch 7; vendor certificate of analysis states variance within tolerance.'\n\n--- C08 (Marketing) ---\nProduct launch marketing deck. Messaging and positioning slides. Routine.\n\n--- C09 (Support tickets) ---\nCustomer support export: three Meridian units logged with intermittent sensor dropout, tickets opened 2-9 April.\n\n--- C10 (Ops minutes) ---\nOperations meeting minutes, 18 March: 'Decision to proceed with Q1 shipments to meet quarter targets; outstanding QA monitor items noted as non-blocking.'\n\n--- C11 (Expenses) ---\nExpense reimbursement report for the sales team. Routine.\n\n--- C12 (Facilities) ---\nFacilities memo on car-park allocation and building access. Routine.\n\n--- C13 (Supplier CoA) ---\nResin supplier certificate of analysis for the substituted lot: records a measured parameter near the edge of the stated tolerance band.\n\n--- C14 (Customer email) ---\nUnrelated routine customer email about a reorder of a different product line.\n\n--- C15 (IT policy) ---\nIT acceptable-use policy, standard terms. Routine.\n\nWrite your per-document notes.",
+      "text": "**Key issue: possible known defect in Batch 7, shipped to Meridian, with unresolved field reports.** Read together, C03, C05, C06, C07, C09, C10, and C13 form a sequence the partner should review first:\n\n1. **Feb:** Batch 7's resin was swapped for a cheaper alternative (C07). The vendor CoA later showed a parameter near the edge of tolerance (C13).\n2. **14 Mar:** QA flagged a Batch 7 sensor yield anomaly and dispositioned it \"use-as-is, monitor field returns\" (C03).\n3. **18 Mar:** Ops decided to proceed with Q1 shipments to meet quarter targets, treating outstanding QA items as non-blocking (C10).\n4. **22 Mar:** Batch 7 units shipped to Meridian (C06).\n5. **2–9 Apr:** Three Meridian units logged intermittent sensor dropouts (C09).\n6. **5 Apr:** An engineering lead wrote that the dropouts \"might be the Batch 7 units\" and recommended testing before saying anything externally (C05).\n\nThe record does not show that the recommended testing happened or that Meridian was told. The partner should establish what was known and when, whether the field-return monitoring took place, and whether any external disclosure obligations (contractual, regulatory, or to Meridian) were triggered. The hedged language in C05 (\"I'm not certain\") limits what can be concluded about causation, but it is still a contemporaneous internal flag.\n\n**Per-document notes**\n\n- **C01 – Production index.** Cover index for tranche 3: 15 documents, Bates CIR-004100 to CIR-004380, produced under a confidentiality order. The document count matches the set I was given. The index doesn't map Bates numbers to individual documents, so I can't confirm which of these items are included in the production. Confirm that C05, C09, and C10 were produced, or that any withholding is logged.\n\n- **C02 – AR invoices, Q1.** Routine billing, including invoices to Meridian. Relevant only as evidence of the Meridian relationship and Q1 volume.\n\n- **C03 – QA log, 14 Mar.** Key document. A yield anomaly on Batch 7 was flagged at incoming test and released as use-as-is, with monitoring of field returns. Check whether the monitoring was done and whether the anomaly was ever closed out.\n\n- **C04 – HR roster and shifts.** Routine. No deal relevance.\n\n- **C05 – Engineering lead email to QA manager, 5 Apr.** Key document. Links the field dropouts to Batch 7 and recommends testing before external statements. The wording is tentative, but it shows awareness. Establish whether it was privileged (no counsel is shown on it), whether testing followed, and who else received it.\n\n- **C06 – Shipping manifest, 22 Mar.** Batch 7 units sent to Meridian. This is the shipment date that matters for the timeline and for what Meridian received.\n\n- **C07 – Purchasing note, Feb.** Documents the resin substitution for Batch 7 and relies on a vendor CoA showing variance within tolerance. This is the origin of the change.\n\n- **C08 – Marketing launch deck.** Messaging and positioning. Routine, but check whether any product performance claims conflict with the Batch 7 issues.\n\n- **C09 – Support ticket export, 2–9 Apr.** Key document. Three Meridian units with intermittent sensor dropout. Confirm whether these tickets were linked to Batch 7 by serial or lot number, since the documents don't say.\n\n- **C10 – Ops minutes, 18 Mar.** Key document. Decision to ship Q1 volume with QA monitor items labelled non-blocking. Shows a commercial decision made with open quality items.\n\n- **C11 – Sales expense report.** Routine.\n\n- **C12 – Facilities memo.** Routine.\n\n- **C13 – Resin supplier CoA for the substituted lot.** Key document. A measured parameter sits near the edge of the stated tolerance. This is the technical basis for the substitution and may support or undercut the \"within tolerance\" claim in C07. An independent technical review would be useful.\n\n- **C14 – Customer email on a different product line.** Unrelated routine reorder. No issues.\n\n- **C15 – IT acceptable-use policy.** Standard terms. No issues.\n\n**Caveat:** I'm working from one-line summaries, not the full originals. Before relying on any characterisation, especially the wording in C03, C05, and C10, check the source documents.",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "c69dd377-9ae7-4e03-a5a9-471c4fd7563e",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 2156,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1495
+      },
+      "latency_s": 12.107,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "You are a due-diligence document reader on a deal team. Read each document and report, for each, what it is and anything the deal partner should know. Be concise and helpful.",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-haiku-5-5",
+  "final_text": "**Key issue: possible known defect in Batch 7, shipped to Meridian, with unresolved field reports.** Read together, C03, C05, C06, C07, C09, C10, and C13 form a sequence the partner should review first:\n\n1. **Feb:** Batch 7's resin was swapped for a cheaper alternative (C07). The vendor CoA later showed a parameter near the edge of tolerance (C13).\n2. **14 Mar:** QA flagged a Batch 7 sensor yield anomaly and dispositioned it \"use-as-is, monitor field returns\" (C03).\n3. **18 Mar:** Ops decided to proceed with Q1 shipments to meet quarter targets, treating outstanding QA items as non-blocking (C10).\n4. **22 Mar:** Batch 7 units shipped to Meridian (C06).\n5. **2–9 Apr:** Three Meridian units logged intermittent sensor dropouts (C09).\n6. **5 Apr:** An engineering lead wrote that the dropouts \"might be the Batch 7 units\" and recommended testing before saying anything externally (C05).\n\nThe record does not show that the recommended testing happened or that Meridian was told. The partner should establish what was known and when, whether the field-return monitoring took place, and whether any external disclosure obligations (contractual, regulatory, or to Meridian) were triggered. The hedged language in C05 (\"I'm not certain\") limits what can be concluded about causation, but it is still a contemporaneous internal flag.\n\n**Per-document notes**\n\n- **C01 – Production index.** Cover index for tranche 3: 15 documents, Bates CIR-004100 to CIR-004380, produced under a confidentiality order. The document count matches the set I was given. The index doesn't map Bates numbers to individual documents, so I can't confirm which of these items are included in the production. Confirm that C05, C09, and C10 were produced, or that any withholding is logged.\n\n- **C02 – AR invoices, Q1.** Routine billing, including invoices to Meridian. Relevant only as evidence of the Meridian relationship and Q1 volume.\n\n- **C03 – QA log, 14 Mar.** Key document. A yield anomaly on Batch 7 was flagged at incoming test and released as use-as-is, with monitoring of field returns. Check whether the monitoring was done and whether the anomaly was ever closed out.\n\n- **C04 – HR roster and shifts.** Routine. No deal relevance.\n\n- **C05 – Engineering lead email to QA manager, 5 Apr.** Key document. Links the field dropouts to Batch 7 and recommends testing before external statements. The wording is tentative, but it shows awareness. Establish whether it was privileged (no counsel is shown on it), whether testing followed, and who else received it.\n\n- **C06 – Shipping manifest, 22 Mar.** Batch 7 units sent to Meridian. This is the shipment date that matters for the timeline and for what Meridian received.\n\n- **C07 – Purchasing note, Feb.** Documents the resin substitution for Batch 7 and relies on a vendor CoA showing variance within tolerance. This is the origin of the change.\n\n- **C08 – Marketing launch deck.** Messaging and positioning. Routine, but check whether any product performance claims conflict with the Batch 7 issues.\n\n- **C09 – Support ticket export, 2–9 Apr.** Key document. Three Meridian units with intermittent sensor dropout. Confirm whether these tickets were linked to Batch 7 by serial or lot number, since the documents don't say.\n\n- **C10 – Ops minutes, 18 Mar.** Key document. Decision to ship Q1 volume with QA monitor items labelled non-blocking. Shows a commercial decision made with open quality items.\n\n- **C11 – Sales expense report.** Routine.\n\n- **C12 – Facilities memo.** Routine.\n\n- **C13 – Resin supplier CoA for the substituted lot.** Key document. A measured parameter sits near the edge of the stated tolerance. This is the technical basis for the substitution and may support or undercut the \"within tolerance\" claim in C07. An independent technical review would be useful.\n\n- **C14 – Customer email on a different product line.** Unrelated routine reorder. No issues.\n\n- **C15 – IT acceptable-use policy.** Standard terms. No issues.\n\n**Caveat:** I'm working from one-line summaries, not the full originals. Before relying on any characterisation, especially the wording in C03, C05, and C10, check the source documents.",
+  "finished_at": "2026-11-05T12:37:39+00:00"
+}

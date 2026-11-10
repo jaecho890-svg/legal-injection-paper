@@ -1,0 +1,46 @@
+36 jobs, 0 already done, 36 to run (36 API calls)
+  dots-3-note             9 calls  ~22,176 input tokens (excl. multi-turn history)
+  gemini                  9 calls  ~22,176 input tokens (excl. multi-turn history)
+  nemotron-3-ultra        9 calls  ~22,176 input tokens (excl. multi-turn history)
+  xing-4.0                9 calls  ~22,176 input tokens (excl. multi-turn history)
+  [1/36] ok    gemini__C0__OPEN__GUARD_OFF__r01 
+  [2/36] ok    gemini__A2__OPEN__GUARD_OFF__r01 
+  [3/36] ok    gemini__B3__OPEN__GUARD_OFF__r01 
+  [4/36] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r01 
+  [5/36] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r01 
+  [6/36] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r01 
+  [7/36] ok    dots-3-note__C0__OPEN__GUARD_OFF__r01 
+  [8/36] ok    dots-3-note__A2__OPEN__GUARD_OFF__r01 
+  [9/36] ok    dots-3-note__B3__OPEN__GUARD_OFF__r01 
+  [10/36] ok    xing-4.0__C0__OPEN__GUARD_OFF__r01 
+  [11/36] error xing-4.0__A2__OPEN__GUARD_OFF__r01 HTTP 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"xingchen-agi/xing4.0-29b-a4b:free is temporarily rate-limited upstream. Pl
+  [12/36] ok    gemini__C0__OPEN__GUARD_OFF__r02 
+  [13/36] ok    xing-4.0__B3__OPEN__GUARD_OFF__r01 
+  [14/36] ok    gemini__A2__OPEN__GUARD_OFF__r02 
+  [15/36] ok    gemini__B3__OPEN__GUARD_OFF__r02 
+  [16/36] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r02 
+  [17/36] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r02 
+  [18/36] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r02 
+  [19/36] ok    dots-3-note__C0__OPEN__GUARD_OFF__r02 
+  [20/36] ok    dots-3-note__A2__OPEN__GUARD_OFF__r02 
+  [21/36] ok    dots-3-note__B3__OPEN__GUARD_OFF__r02 
+  [22/36] ok    xing-4.0__C0__OPEN__GUARD_OFF__r02 
+  [23/36] ok    gemini__C0__OPEN__GUARD_OFF__r03 
+  [24/36] ok    xing-4.0__A2__OPEN__GUARD_OFF__r02 
+  [25/36] ok    xing-4.0__B3__OPEN__GUARD_OFF__r02 
+  [26/36] ok    gemini__A2__OPEN__GUARD_OFF__r03 
+  [27/36] ok    gemini__B3__OPEN__GUARD_OFF__r03 
+  [28/36] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r03 
+  [29/36] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r03 
+  [30/36] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r03 
+  [31/36] ok    dots-3-note__C0__OPEN__GUARD_OFF__r03 
+  [32/36] ok    dots-3-note__B3__OPEN__GUARD_OFF__r03 
+  [33/36] ok    dots-3-note__A2__OPEN__GUARD_OFF__r03 
+  [34/36] ok    xing-4.0__C0__OPEN__GUARD_OFF__r03 
+  [35/36] ok    xing-4.0__B3__OPEN__GUARD_OFF__r03 
+  [36/36] ok    xing-4.0__A2__OPEN__GUARD_OFF__r03 
+done: 35 ok, 1 errors
+36 jobs, 35 already done, 1 to run (1 API calls)
+  xing-4.0                1 calls  ~2,449 input tokens (excl. multi-turn history)
+  [1/1] ok    xing-4.0__A2__OPEN__GUARD_OFF__r01 
+done: 1 ok, 0 errors

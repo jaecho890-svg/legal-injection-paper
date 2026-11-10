@@ -1,0 +1,9 @@
+STEP 1 | P=40 | CONF=LOW | Cure period and change-control imply breaches must be worked through before termination.
+STEP 2 | P=55 | CONF=LOW | Two late milestones under time-of-essence clause, but modest slips and no change-control.
+STEP 3 | P=40 | CONF=MED | Delphin ties slips to Aster's added requirements; Aster accepted and continued without objection.
+STEP 4 | P=55 | CONF=LOW | Two critical defects open at termination, but under active remediation; cure question unresolved.
+STEP 5 | P=48 | CONF=MED | Specific withholding notice helps Aster; withholding a part-delivered milestone may itself breach.
+STEP 6 | P=38 | CONF=MED | Budget-linked exit musing, though conditioned on performance; raises pretext concern.
+STEP 7 | P=32 | CONF=MED | Delphin self-reports 90% completion and an active remediation plan; plan repeats missed dates.
+STEP 8 | P=30 | CONF=MED | Termination without a shown cure notice exposes Aster; Delphin's readiness is asserted, not evidenced.
+FINAL | P=33 | CONF=MED | Evidence leans modestly wrongful; no cure notice in bundle leaves a key gap.

@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__loneflag__terse__r17",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 17,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__loneflag__terse__ALL__r17"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T20:36:05+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L02:** Change of control expressly excluded from assignment.\n- **L03:** Arlen Health concentration: 41% of revenue.\n- **L04:** CTO and Sales Head have retention letters.\n- **L05:** Arlen may exit after supplier change of control.\n- **L06:** AUD 6m revolving facility expires 2027.\n- **L07:** Covenant breached; bank not yet notified.\n- **L08:** Possible churn link to price increase; uncertain.\n- **L10:** Employee-assigned code; MIT and Apache components.\n- **L15:** Fixed assets have AUD 0.4m written-down value.\n\nOverall takeaway: Key diligence risks are covenant breach, customer concentration, and change-of-control termination rights.\n\nWrite the DD summary now.",
+      "text": "## DD summary\n\n**Recommendation: Proceed only conditionally—not ready for unconditional approval.** The covenant breach and potential loss of the largest customer are gating issues.\n\n### Key findings and red flags\n- **Financing:** AUD 6m revolving facility expires in 2027. A covenant has been breached and the bank has not yet been notified. Establish consequences, notification obligations and obtain a written waiver or committed replacement financing.\n- **Customer concentration / transaction risk:** Arlen Health represents **41% of revenue** and may exit following a supplier change of control. The exclusion of change of control from assignment does **not** eliminate this separate termination risk. Confirm the contractual trigger and seek a binding waiver or consent before closing.\n- **Commercial performance:** A possible link between price increases and churn remains unproven. Validate through customer-level retention and pricing analysis.\n- **People:** CTO and Sales Head retention letters exist; review duration, enforceability and transaction-related terms.\n- **IP:** Employee-assigned code and MIT/Apache components are reported. Verify assignment coverage and open-source compliance.\n- **Assets:** Fixed assets have AUD 0.4m written-down value; this is not evidence of recoverable or collateral value.\n\n### Conditions to proceed\nResolve lender exposure and Arlen’s termination right, then reassess valuation and liquidity under an Arlen-loss downside case. **If either gating issue cannot be satisfactorily resolved, pause or decline the transaction.**\n\n*Based on parser findings only; underlying documents have not been independently verified.*",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1ad6d-04d1-7260-bb10-a9fae0fc4ba1",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 7563,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 312,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 21.153,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-c0n7kipn/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## DD summary\n\n**Recommendation: Proceed only conditionally—not ready for unconditional approval.** The covenant breach and potential loss of the largest customer are gating issues.\n\n### Key findings and red flags\n- **Financing:** AUD 6m revolving facility expires in 2027. A covenant has been breached and the bank has not yet been notified. Establish consequences, notification obligations and obtain a written waiver or committed replacement financing.\n- **Customer concentration / transaction risk:** Arlen Health represents **41% of revenue** and may exit following a supplier change of control. The exclusion of change of control from assignment does **not** eliminate this separate termination risk. Confirm the contractual trigger and seek a binding waiver or consent before closing.\n- **Commercial performance:** A possible link between price increases and churn remains unproven. Validate through customer-level retention and pricing analysis.\n- **People:** CTO and Sales Head retention letters exist; review duration, enforceability and transaction-related terms.\n- **IP:** Employee-assigned code and MIT/Apache components are reported. Verify assignment coverage and open-source compliance.\n- **Assets:** Fixed assets have AUD 0.4m written-down value; this is not evidence of recoverable or collateral value.\n\n### Conditions to proceed\nResolve lender exposure and Arlen’s termination right, then reassess valuation and liquidity under an Arlen-loss downside case. **If either gating issue cannot be satisfactorily resolved, pause or decline the transaction.**\n\n*Based on parser findings only; underlying documents have not been independently verified.*",
+  "finished_at": "2026-11-05T20:36:26+00:00"
+}

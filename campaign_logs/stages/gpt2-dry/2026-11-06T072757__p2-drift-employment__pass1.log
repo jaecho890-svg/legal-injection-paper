@@ -1,0 +1,10 @@
+# interpretive-drift-study/harness/experiment.py run --case case_employment.json --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-06T07:27:57, ended 2026-11-06T07:27:57, rc=0
+## stdout
+560 jobs, 6 already done, 554 to run (4986 API calls)
+  gpt-6-luna           2493 calls  ~277,897 input tokens (excl. multi-turn history)
+  gpt-6.1-sol          2493 calls  ~277,897 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

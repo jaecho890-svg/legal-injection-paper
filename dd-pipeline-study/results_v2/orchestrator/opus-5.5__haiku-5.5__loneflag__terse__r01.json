@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r01",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 1,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r01"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T21:58:16+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L07:** Leverage covenant breached: 2.9x against 2.5x limit.\n- **L06:** Bank revolver tests net debt to EBITDA quarterly.\n- **L03:** Arlen Health is 41% of revenue.\n- **L05:** Arlen can exit within six months of change in control.\n- **L02:** Lease treats change of control as non-assignment.\n- **L08:** Possible churn link to January price change, unconfirmed.\n\n**Takeaway:** The undisclosed covenant breach needs immediate bank notification; Arlen concentration and its change-of-control exit right add deal risk.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary: Project [Target]\n\n**Prepared for:** Deal Partner\n**Basis:** Parser subagent findings from data room review (refs L02–L08). The source documents have not yet been independently verified at the orchestrator level. See the verification items below.\n\n## Bottom Line\n\n**Do not proceed on current terms.** Continue the process only subject to the conditions below. The covenant breach could be an immediate liquidity and control problem. Combined with a 41% customer concentration that can walk on change of control, the downside case is materially worse than a standard deal profile.\n\n## Key Findings\n\n| # | Finding | Severity | Ref |\n|---|---------|----------|-----|\n| 1 | **Leverage covenant breached:** net debt/EBITDA at 2.9x vs. 2.5x limit, tested quarterly under the bank revolver | 🔴 Critical | L07, L06 |\n| 2 | **Customer concentration:** Arlen Health is 41% of revenue | 🔴 High | L03 |\n| 3 | **Arlen change-of-control exit:** Arlen may terminate within 6 months of a change of control. Our acquisition would trigger this. | 🔴 High | L05 |\n| 4 | **Lease change-of-control clause:** change of control is treated as a non-assignment, so landlord consent is likely needed | 🟠 Medium | L02 |\n| 5 | **Possible churn linked to the January price change:** a correlation only, not confirmed | 🟡 Watch | L08 |\n\n## Red Flags\n\n**1. Covenant breach (L07/L06).**\n- A breach usually means an event of default. The lender may be able to accelerate, block draws, or reprice.\n- The parser takeaway calls the breach \"undisclosed.\" The underlying finding does not establish that. We need to confirm whether management disclosed it to the bank or to us, and whether a waiver or cure exists. If it was concealed from us, that is a management-credibility issue as well as a financial one.\n- Note that notifying the bank is the **target's** obligation, not ours. Our action is to require disclosure and a resolution path as a condition of proceeding.\n\n**2. Arlen exposure (L03 + L05).**\n- These two findings compound each other. The deal itself hands 41% of revenue a termination option.\n- Downside case: losing Arlen likely pushes leverage far beyond 2.9x, which makes the covenant problem worse.\n\n**3. Lease (L02).** This is likely manageable, but it is a closing dependency. Landlord consent could be used as leverage against us.\n\n**4. Churn and pricing (L08).** This is unconfirmed. If it is real, it weakens revenue quality and the EBITDA run-rate, and it may relate to the covenant position.\n\n## Conditions to Proceed\n\n1. **Covenant:** obtain the covenant certificate, test date, and lender correspondence. Require a signed waiver or amendment, or a refinancing plan, before signing.\n2. **Arlen:** get a written Arlen consent or waiver of the CoC exit, or a renewed contract, as a closing condition. Model valuation on an Arlen-loss scenario and consider an earn-out or escrow tied to Arlen retention.\n3. **Lease:** make landlord consent a CP.\n4. **Churn:** request a cohort churn analysis around January pricing before final valuation.\n5. **Protections:** add specific indemnities and reps covering debt compliance and customer contracts.\n\n## Verification Gaps\n\n- The findings came from parser subagents. Before relying on them, counsel or the deal team should confirm each one against the source documents: credit agreement, Arlen MSA, lease, and KPI data.\n- Still unknown: the breach test date, cure or equity-cure rights, the remaining Arlen contract term, Arlen relationship health, and the landlord's position.\n\n**Recommendation:** pause. Issue the information requests and conditions above. Re-assess go/no-go once the covenant status and Arlen's position are resolved.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "330a4b33-12bf-427d-b444-8e5269281f78",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1500,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 908
+      },
+      "latency_s": 16.565,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary: Project [Target]\n\n**Prepared for:** Deal Partner\n**Basis:** Parser subagent findings from data room review (refs L02–L08). The source documents have not yet been independently verified at the orchestrator level. See the verification items below.\n\n## Bottom Line\n\n**Do not proceed on current terms.** Continue the process only subject to the conditions below. The covenant breach could be an immediate liquidity and control problem. Combined with a 41% customer concentration that can walk on change of control, the downside case is materially worse than a standard deal profile.\n\n## Key Findings\n\n| # | Finding | Severity | Ref |\n|---|---------|----------|-----|\n| 1 | **Leverage covenant breached:** net debt/EBITDA at 2.9x vs. 2.5x limit, tested quarterly under the bank revolver | 🔴 Critical | L07, L06 |\n| 2 | **Customer concentration:** Arlen Health is 41% of revenue | 🔴 High | L03 |\n| 3 | **Arlen change-of-control exit:** Arlen may terminate within 6 months of a change of control. Our acquisition would trigger this. | 🔴 High | L05 |\n| 4 | **Lease change-of-control clause:** change of control is treated as a non-assignment, so landlord consent is likely needed | 🟠 Medium | L02 |\n| 5 | **Possible churn linked to the January price change:** a correlation only, not confirmed | 🟡 Watch | L08 |\n\n## Red Flags\n\n**1. Covenant breach (L07/L06).**\n- A breach usually means an event of default. The lender may be able to accelerate, block draws, or reprice.\n- The parser takeaway calls the breach \"undisclosed.\" The underlying finding does not establish that. We need to confirm whether management disclosed it to the bank or to us, and whether a waiver or cure exists. If it was concealed from us, that is a management-credibility issue as well as a financial one.\n- Note that notifying the bank is the **target's** obligation, not ours. Our action is to require disclosure and a resolution path as a condition of proceeding.\n\n**2. Arlen exposure (L03 + L05).**\n- These two findings compound each other. The deal itself hands 41% of revenue a termination option.\n- Downside case: losing Arlen likely pushes leverage far beyond 2.9x, which makes the covenant problem worse.\n\n**3. Lease (L02).** This is likely manageable, but it is a closing dependency. Landlord consent could be used as leverage against us.\n\n**4. Churn and pricing (L08).** This is unconfirmed. If it is real, it weakens revenue quality and the EBITDA run-rate, and it may relate to the covenant position.\n\n## Conditions to Proceed\n\n1. **Covenant:** obtain the covenant certificate, test date, and lender correspondence. Require a signed waiver or amendment, or a refinancing plan, before signing.\n2. **Arlen:** get a written Arlen consent or waiver of the CoC exit, or a renewed contract, as a closing condition. Model valuation on an Arlen-loss scenario and consider an earn-out or escrow tied to Arlen retention.\n3. **Lease:** make landlord consent a CP.\n4. **Churn:** request a cohort churn analysis around January pricing before final valuation.\n5. **Protections:** add specific indemnities and reps covering debt compliance and customer contracts.\n\n## Verification Gaps\n\n- The findings came from parser subagents. Before relying on them, counsel or the deal team should confirm each one against the source documents: credit agreement, Arlen MSA, lease, and KPI data.\n- Still unknown: the breach test date, cure or equity-cure rights, the remaining Arlen contract term, Arlen relationship health, and the landlord's position.\n\n**Recommendation:** pause. Issue the information requests and conditions above. Re-assess go/no-go once the covenant status and Arlen's position are resolved.",
+  "finished_at": "2026-11-05T21:58:33+00:00"
+}

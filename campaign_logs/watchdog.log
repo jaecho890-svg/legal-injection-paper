@@ -1,0 +1,617 @@
+[2026-11-05T08:26:12] watchdog start: claude, gpt
+[2026-11-05T08:26:12] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T08:31:12] claude OK newest 1m | gpt OK newest 0m
+[2026-11-05T08:36:12] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T08:41:13] claude OK newest 1m | gpt OK newest 0m
+[2026-11-05T08:46:13] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T08:51:14] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T08:56:14] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T09:01:14] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T09:06:14] claude OK newest 1m | gpt OK newest 0m
+[2026-11-05T09:11:14] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T09:16:15] claude WAITING newest 0m | gpt OK newest 0m
+[2026-11-05T09:21:15] claude WAITING newest 5m | gpt OK newest 0m
+[2026-11-05T09:26:15] claude WAITING newest 10m | gpt OK newest 0m
+[2026-11-05T09:31:15] claude WAITING newest 15m | gpt OK newest 1m
+[2026-11-05T09:36:16] claude WAITING newest 20m | gpt OK newest 0m
+[2026-11-05T09:41:16] claude WAITING newest 25m | gpt OK newest 1m
+[2026-11-05T09:46:16] claude WAITING newest 30m | gpt OK newest 1m
+[2026-11-05T09:51:16] claude WAITING newest 35m | gpt OK newest 1m
+[2026-11-05T09:56:16] claude WAITING newest 40m | gpt OK newest 1m
+[2026-11-05T10:01:17] claude WAITING newest 45m | gpt OK newest 1m
+[2026-11-05T10:06:17] claude WAITING newest 50m | gpt OK newest 1m
+[2026-11-05T10:11:17] claude WAITING newest 55m | gpt OK newest 1m
+[2026-11-05T10:16:17] claude WAITING newest 60m | gpt OK newest 1m
+[2026-11-05T10:21:18] claude WAITING newest 65m | gpt OK newest 0m
+[2026-11-05T10:26:18] claude WAITING newest 70m | gpt OK newest 1m
+[2026-11-05T10:31:18] claude WAITING newest 75m | gpt OK newest 0m
+[2026-11-05T10:36:18] claude WAITING newest 80m | gpt OK newest 0m
+[2026-11-05T10:41:19] claude WAITING newest 85m | gpt OK newest 1m
+[2026-11-05T10:46:19] claude WAITING newest 90m | gpt OK newest 1m
+[2026-11-05T10:51:19] claude WAITING newest 95m | gpt OK newest 1m
+[2026-11-05T10:56:19] claude WAITING newest 100m | gpt OK newest 1m
+[2026-11-05T11:01:20] claude WAITING newest 105m | gpt OK newest 1m
+[2026-11-05T11:06:20] claude WAITING newest 110m | gpt OK newest 1m
+[2026-11-05T11:11:20] claude WAITING newest 115m | gpt OK newest 1m
+[2026-11-05T11:16:20] claude WAITING newest 120m | gpt OK newest 0m
+[2026-11-05T11:21:21] claude WAITING newest 125m | gpt OK newest 0m
+[2026-11-05T11:26:21] claude WAITING newest 130m | gpt OK newest 0m
+[2026-11-05T11:31:21] claude WAITING newest 135m | gpt OK newest 0m
+[2026-11-05T11:36:21] claude WAITING newest 140m | gpt OK newest 0m
+[2026-11-05T11:41:22] claude WAITING newest 145m | gpt OK newest 0m
+[2026-11-05T11:46:22] claude WAITING newest 150m | gpt OK newest 0m
+[2026-11-05T11:51:22] claude WAITING newest 155m | gpt OK newest 0m
+[2026-11-05T11:56:22] claude WAITING newest 160m | gpt OK newest 0m
+[2026-11-05T12:01:23] claude WAITING newest 165m | gpt OK newest 0m
+[2026-11-05T12:06:23] claude WAITING newest 170m | gpt OK newest 0m
+[2026-11-05T12:11:23] claude WAITING newest 175m | gpt OK newest 0m
+[2026-11-05T12:16:23] claude WAITING newest 180m | gpt OK newest 0m
+[2026-11-05T12:21:24] claude WAITING newest 185m | gpt OK newest 1m
+[2026-11-05T12:26:24] claude WAITING newest 190m | gpt OK newest 0m
+[2026-11-05T12:31:24] claude WAITING newest 195m | gpt OK newest 0m
+[2026-11-05T12:36:24] claude WAITING newest 200m | gpt OK newest 0m
+[2026-11-05T12:41:25] claude WAITING newest 205m | gpt OK newest 0m
+[2026-11-05T12:46:25] claude WAITING newest 210m | gpt OK newest 0m
+[2026-11-05T12:51:25] claude WAITING newest 215m | gpt OK newest 0m
+[2026-11-05T12:56:25] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:01:26] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:06:26] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:11:26] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:16:26] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:21:27] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:26:27] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:31:27] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:36:27] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:41:28] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:46:28] claude OK newest 1m | gpt OK newest 0m
+[2026-11-05T13:51:28] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T13:56:29] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:01:29] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:06:29] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:11:29] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:16:30] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:21:30] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:26:30] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:31:30] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:36:31] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:41:31] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T14:46:31] claude WAITING newest 4m | gpt OK newest 0m
+[2026-11-05T14:51:31] claude WAITING newest 9m | gpt OK newest 0m
+[2026-11-05T14:56:32] claude WAITING newest 14m | gpt OK newest 0m
+[2026-11-05T15:01:32] claude WAITING newest 19m | gpt OK newest 0m
+[2026-11-05T15:06:32] claude WAITING newest 24m | gpt OK newest 0m
+[2026-11-05T15:11:32] claude WAITING newest 29m | gpt OK newest 0m
+[2026-11-05T15:16:33] claude WAITING newest 34m | gpt OK newest 0m
+[2026-11-05T15:21:33] claude WAITING newest 39m | gpt OK newest 1m
+[2026-11-05T15:26:33] claude WAITING newest 44m | gpt OK newest 0m
+[2026-11-05T15:31:33] claude WAITING newest 49m | gpt OK newest 0m
+[2026-11-05T15:36:33] claude WAITING newest 54m | gpt OK newest 0m
+[2026-11-05T15:41:34] claude WAITING newest 59m | gpt OK newest 0m
+[2026-11-05T15:46:34] claude WAITING newest 64m | gpt OK newest 0m
+[2026-11-05T15:51:34] claude WAITING newest 69m | gpt OK newest 0m
+[2026-11-05T15:56:34] claude WAITING newest 74m | gpt OK newest 0m
+[2026-11-05T16:01:35] claude WAITING newest 79m | gpt OK newest 0m
+[2026-11-05T16:06:35] claude WAITING newest 84m | gpt OK newest 0m
+[2026-11-05T16:11:35] claude WAITING newest 89m | gpt OK newest 1m
+[2026-11-05T16:16:35] claude WAITING newest 94m | gpt OK newest 1m
+[2026-11-05T16:21:36] claude WAITING newest 99m | gpt OK newest 0m
+[2026-11-05T16:26:36] claude WAITING newest 104m | gpt OK newest 0m
+[2026-11-05T16:31:36] claude WAITING newest 109m | gpt OK newest 1m
+[2026-11-05T16:36:37] claude WAITING newest 114m | gpt OK newest 0m
+[2026-11-05T16:41:37] claude WAITING newest 119m | gpt OK newest 1m
+[2026-11-05T16:46:37] claude WAITING newest 124m | gpt OK newest 0m
+[2026-11-05T16:51:37] claude WAITING newest 129m | gpt OK newest 0m
+[2026-11-05T16:56:38] claude WAITING newest 134m | gpt OK newest 1m
+[2026-11-05T17:01:38] claude WAITING newest 139m | gpt OK newest 0m
+[2026-11-05T17:06:38] claude WAITING newest 144m | gpt OK newest 0m
+[2026-11-05T17:11:38] claude WAITING newest 149m | gpt OK newest 1m
+[2026-11-05T17:16:39] claude WAITING newest 154m | gpt OK newest 0m
+[2026-11-05T17:21:39] claude WAITING newest 159m | gpt OK newest 1m
+[2026-11-05T17:26:39] claude WAITING newest 164m | gpt OK newest 1m
+[2026-11-05T17:31:39] claude WAITING newest 169m | gpt OK newest 0m
+[2026-11-05T17:36:40] claude WAITING newest 174m | gpt OK newest 2m
+[2026-11-05T17:41:40] claude WAITING newest 179m | gpt OK newest 0m
+[2026-11-05T17:46:40] claude WAITING newest 184m | gpt OK newest 0m
+[2026-11-05T17:51:41] claude WAITING newest 189m | gpt OK newest 0m
+[2026-11-05T17:56:41] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:01:41] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:06:42] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:11:42] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:16:42] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:21:42] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:26:43] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:31:43] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:36:43] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:41:43] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:46:44] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:51:44] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T18:56:44] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:01:45] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:06:45] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:11:45] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:16:45] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:21:45] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:26:46] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:31:46] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:36:46] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:41:47] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:46:47] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:51:47] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T19:56:47] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T20:01:48] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T20:06:48] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T20:11:48] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T20:16:49] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T20:21:49] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T20:26:49] claude OK newest 0m | gpt OK newest 0m
+[2026-11-05T20:28:51] watchdog start: claude
+[2026-11-05T20:28:51] claude OK newest 0m
+[2026-11-05T20:33:51] claude OK newest 0m
+[2026-11-05T20:38:51] claude OK newest 0m
+[2026-11-05T20:43:52] claude OK newest 0m
+[2026-11-05T20:48:52] claude OK newest 0m
+[2026-11-05T20:53:52] claude OK newest 0m
+[2026-11-05T20:58:52] claude OK newest 0m
+[2026-11-05T21:03:53] claude OK newest 0m
+[2026-11-05T21:08:53] claude OK newest 0m
+[2026-11-05T21:13:53] claude WAITING newest 1m
+[2026-11-05T21:18:53] claude WAITING newest 6m
+[2026-11-05T21:23:53] claude WAITING newest 11m
+[2026-11-05T21:28:53] claude WAITING newest 16m
+[2026-11-05T21:33:54] claude WAITING newest 21m
+[2026-11-05T21:38:54] claude WAITING newest 26m
+[2026-11-05T21:43:54] claude WAITING newest 31m
+[2026-11-05T21:48:54] claude WAITING newest 36m
+[2026-11-05T21:53:54] claude WAITING newest 41m
+[2026-11-05T21:58:55] claude WAITING newest 46m
+[2026-11-05T22:03:55] claude WAITING newest 51m
+[2026-11-05T22:08:55] claude WAITING newest 56m
+[2026-11-05T22:13:55] claude WAITING newest 61m
+[2026-11-05T22:18:56] claude WAITING newest 66m
+[2026-11-05T22:23:56] claude WAITING newest 71m
+[2026-11-05T22:28:56] claude WAITING newest 76m
+[2026-11-05T22:33:56] claude WAITING newest 81m
+[2026-11-05T22:38:57] claude WAITING newest 86m
+[2026-11-05T22:43:57] claude WAITING newest 91m
+[2026-11-05T22:48:57] claude WAITING newest 96m
+[2026-11-05T22:53:57] claude WAITING newest 101m
+[2026-11-05T22:58:58] claude OK newest 0m
+[2026-11-05T23:03:58] claude OK newest 0m
+[2026-11-05T23:08:58] claude OK newest 0m
+[2026-11-05T23:13:58] claude OK newest 0m
+[2026-11-05T23:18:59] claude OK newest 0m
+[2026-11-05T23:23:59] claude OK newest 0m
+[2026-11-05T23:28:59] claude OK newest 0m
+[2026-11-05T23:33:59] claude OK newest 0m
+[2026-11-05T23:38:59] claude OK newest 0m
+[2026-11-05T23:44:00] claude OK newest 0m
+[2026-11-05T23:49:00] claude OK newest 0m
+[2026-11-05T23:54:00] claude OK newest 0m
+[2026-11-05T23:59:00] claude OK newest 0m
+[2026-11-06T00:04:00] claude OK newest 0m
+[2026-11-06T00:09:01] claude OK newest 0m
+[2026-11-06T00:14:01] claude OK newest 0m
+[2026-11-06T00:19:01] claude OK newest 0m
+[2026-11-06T00:24:01] claude OK newest 0m
+[2026-11-06T00:29:02] claude WAITING newest 0m
+[2026-11-06T00:34:02] claude WAITING newest 5m
+[2026-11-06T00:39:02] claude WAITING newest 10m
+[2026-11-06T00:44:02] claude WAITING newest 15m
+[2026-11-06T00:49:02] claude WAITING newest 20m
+[2026-11-06T00:54:03] claude WAITING newest 25m
+[2026-11-06T00:59:03] claude WAITING newest 30m
+[2026-11-06T01:04:03] claude WAITING newest 35m
+[2026-11-06T01:09:03] claude WAITING newest 40m
+[2026-11-06T01:14:03] claude WAITING newest 45m
+[2026-11-06T01:19:03] claude WAITING newest 50m
+[2026-11-06T01:24:04] claude WAITING newest 55m
+[2026-11-06T01:29:04] claude WAITING newest 60m
+[2026-11-06T01:34:04] claude WAITING newest 65m
+[2026-11-06T01:39:04] claude WAITING newest 70m
+[2026-11-06T01:44:04] claude WAITING newest 75m
+[2026-11-06T01:49:05] claude WAITING newest 80m
+[2026-11-06T01:54:05] claude WAITING newest 85m
+[2026-11-06T01:59:05] claude WAITING newest 90m
+[2026-11-06T02:04:05] claude WAITING newest 95m
+[2026-11-06T02:09:06] claude WAITING newest 100m
+[2026-11-06T02:14:06] claude WAITING newest 105m
+[2026-11-06T02:19:06] claude WAITING newest 110m
+[2026-11-06T02:24:06] claude WAITING newest 115m
+[2026-11-06T02:29:07] claude WAITING newest 120m
+[2026-11-06T02:34:07] claude WAITING newest 125m
+[2026-11-06T02:39:07] claude WAITING newest 130m
+[2026-11-06T02:44:07] claude WAITING newest 135m
+[2026-11-06T02:49:08] claude WAITING newest 140m
+[2026-11-06T02:54:08] claude WAITING newest 145m
+[2026-11-06T02:59:08] claude WAITING newest 150m
+[2026-11-06T03:04:08] claude WAITING newest 155m
+[2026-11-06T03:09:08] claude WAITING newest 160m
+[2026-11-06T03:14:08] claude WAITING newest 165m
+[2026-11-06T03:19:09] claude WAITING newest 170m
+[2026-11-06T03:24:09] claude WAITING newest 175m
+[2026-11-06T03:29:09] claude WAITING newest 180m
+[2026-11-06T03:34:09] claude WAITING newest 185m
+[2026-11-06T03:39:10] claude WAITING newest 190m
+[2026-11-06T03:44:10] claude WAITING newest 195m
+[2026-11-06T03:49:10] claude WAITING newest 200m
+[2026-11-06T03:54:10] claude WAITING newest 205m
+[2026-11-06T03:59:10] claude OK newest 0m
+[2026-11-06T04:04:11] claude OK newest 0m
+[2026-11-06T04:09:11] claude OK newest 0m
+[2026-11-06T04:14:11] claude OK newest 0m
+[2026-11-06T04:19:11] claude OK newest 0m
+[2026-11-06T04:24:12] claude OK newest 0m
+[2026-11-06T04:29:12] claude OK newest 0m
+[2026-11-06T04:34:12] claude OK newest 0m
+[2026-11-06T04:39:12] claude OK newest 0m
+[2026-11-06T04:44:12] claude OK newest 0m
+[2026-11-06T04:49:13] claude: FINISHED
+[2026-11-06T04:52:43] watchdog start: judge-final
+[2026-11-06T04:52:43] judge-final OK newest 0m
+[2026-11-06T04:57:44] judge-final OK newest 0m
+[2026-11-06T05:02:44] judge-final OK newest 0m
+[2026-11-06T05:07:44] judge-final OK newest 0m
+[2026-11-06T05:12:44] judge-final OK newest 0m
+[2026-11-06T05:17:45] judge-final OK newest 0m
+[2026-11-06T05:22:45] judge-final OK newest 0m
+[2026-11-06T05:27:45] judge-final OK newest 0m
+[2026-11-06T05:32:45] judge-final OK newest 0m
+[2026-11-06T05:37:46] judge-final OK newest 0m
+[2026-11-06T05:42:46] judge-final OK newest 0m
+[2026-11-06T05:47:46] judge-final OK newest 0m
+[2026-11-06T05:52:47] judge-final OK newest 0m
+[2026-11-06T05:57:47] judge-final OK newest 0m
+[2026-11-06T06:02:47] judge-final OK newest 0m
+[2026-11-06T06:07:47] judge-final OK newest 0m
+[2026-11-06T06:12:48] judge-final OK newest 0m
+[2026-11-06T06:17:48] judge-final OK newest 0m
+[2026-11-06T06:22:48] judge-final OK newest 0m
+[2026-11-06T06:27:49] judge-final OK newest 0m
+[2026-11-06T06:32:49] judge-final OK newest 0m
+[2026-11-06T06:37:49] judge-final OK newest 0m
+[2026-11-06T06:42:49] judge-final OK newest 0m
+[2026-11-06T06:47:50] judge-final OK newest 0m
+[2026-11-06T06:52:50] judge-final OK newest 0m
+[2026-11-06T06:57:50] judge-final OK newest 3m
+[2026-11-06T07:02:50] judge-final: FINISHED
+[2026-11-06T07:28:22] watchdog start: claude2, gpt2
+[2026-11-06T07:28:22] claude2 OK newest 0m | gpt2 OK newest 13m
+[2026-11-06T07:33:23] claude2 WAITING newest 2m | gpt2 OK newest 0m
+[2026-11-06T07:38:23] claude2 WAITING newest 7m | gpt2 OK newest 1m
+[2026-11-06T07:43:23] claude2 WAITING newest 12m | gpt2 OK newest 1m
+[2026-11-06T07:48:23] claude2 WAITING newest 17m | gpt2 OK newest 1m
+[2026-11-06T07:53:24] claude2 WAITING newest 22m | gpt2 OK newest 0m
+[2026-11-06T07:58:24] claude2 WAITING newest 27m | gpt2 OK newest 0m
+[2026-11-06T08:03:24] claude2 WAITING newest 32m | gpt2 OK newest 0m
+[2026-11-06T08:08:25] claude2 WAITING newest 37m | gpt2 OK newest 1m
+[2026-11-06T08:13:25] claude2 WAITING newest 42m | gpt2 OK newest 0m
+[2026-11-06T08:18:25] claude2 WAITING newest 47m | gpt2 OK newest 0m
+[2026-11-06T08:23:26] claude2 WAITING newest 52m | gpt2 OK newest 1m
+[2026-11-06T08:28:26] claude2 WAITING newest 57m | gpt2 OK newest 0m
+[2026-11-06T08:33:26] claude2 WAITING newest 62m | gpt2 OK newest 0m
+[2026-11-06T08:38:27] claude2 WAITING newest 67m | gpt2 OK newest 0m
+[2026-11-06T08:43:27] claude2 WAITING newest 72m | gpt2 OK newest 0m
+[2026-11-06T08:48:27] claude2 WAITING newest 77m | gpt2 OK newest 0m
+[2026-11-06T08:53:28] claude2 WAITING newest 82m | gpt2 OK newest 0m
+[2026-11-06T08:58:28] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T09:03:28] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T09:08:29] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T09:13:29] claude2 WAITING newest 2m | gpt2 OK newest 0m
+[2026-11-06T09:18:29] claude2 WAITING newest 7m | gpt2 OK newest 0m
+[2026-11-06T09:23:30] claude2 WAITING newest 12m | gpt2 WAITING newest 2m
+[2026-11-06T09:28:30] claude2 WAITING newest 17m | gpt2 WAITING newest 7m
+[2026-11-06T09:33:31] claude2 OK newest 22m | gpt2 WAITING newest 12m
+[2026-11-06T09:38:31] claude2 WAITING newest 1m | gpt2 WAITING newest 17m
+[2026-11-06T09:43:31] claude2 WAITING newest 6m | gpt2 OK newest 0m
+[2026-11-06T09:48:31] claude2 WAITING newest 11m | gpt2 WAITING newest 3m
+[2026-11-06T09:53:32] claude2 WAITING newest 16m | gpt2 WAITING newest 8m
+[2026-11-06T09:58:32] claude2 OK newest 21m | gpt2 WAITING newest 13m
+[2026-11-06T10:03:33] claude2 WAITING newest 0m | gpt2 WAITING newest 18m
+[2026-11-06T10:08:33] claude2 WAITING newest 5m | gpt2 OK newest 0m
+[2026-11-06T10:13:33] claude2 WAITING newest 10m | gpt2 OK newest 0m
+[2026-11-06T10:18:34] claude2 WAITING newest 15m | gpt2 OK newest 1m
+[2026-11-06T10:23:34] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T10:28:35] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T10:33:35] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T10:38:35] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T10:43:36] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T10:48:36] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T10:53:36] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T10:58:37] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T11:03:37] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T11:08:37] claude2 OK newest 1m | gpt2 OK newest 1m
+[2026-11-06T11:13:38] claude2 OK newest 0m | gpt2 OK newest 2m
+[2026-11-06T11:18:38] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T11:23:38] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T11:28:39] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T11:33:39] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T11:38:39] claude2 OK newest 1m | gpt2 OK newest 1m
+[2026-11-06T11:43:40] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T11:48:40] claude2 WAITING newest 2m | gpt2 OK newest 1m
+[2026-11-06T11:53:41] claude2 WAITING newest 7m | gpt2 OK newest 2m
+[2026-11-06T11:58:41] claude2 WAITING newest 12m | gpt2 OK newest 0m
+[2026-11-06T12:03:41] claude2 WAITING newest 17m | gpt2 OK newest 0m
+[2026-11-06T12:08:42] claude2 WAITING newest 22m | gpt2 OK newest 0m
+[2026-11-06T12:13:42] claude2 WAITING newest 27m | gpt2 OK newest 0m
+[2026-11-06T12:18:42] claude2 WAITING newest 32m | gpt2 OK newest 1m
+[2026-11-06T12:23:43] claude2 WAITING newest 37m | gpt2 OK newest 1m
+[2026-11-06T12:28:43] claude2 WAITING newest 42m | gpt2 OK newest 1m
+[2026-11-06T12:33:44] claude2 WAITING newest 47m | gpt2 OK newest 1m
+[2026-11-06T12:38:44] claude2 WAITING newest 52m | gpt2 OK newest 2m
+[2026-11-06T12:43:44] claude2 WAITING newest 57m | gpt2 OK newest 0m
+[2026-11-06T12:48:45] claude2 WAITING newest 62m | gpt2 OK newest 0m
+[2026-11-06T12:53:45] claude2 WAITING newest 67m | gpt2 OK newest 0m
+[2026-11-06T12:58:45] claude2 WAITING newest 72m | gpt2 OK newest 0m
+[2026-11-06T13:03:46] claude2 WAITING newest 77m | gpt2 OK newest 0m
+[2026-11-06T13:08:46] claude2 WAITING newest 82m | gpt2 OK newest 0m
+[2026-11-06T13:13:46] claude2 WAITING newest 87m | gpt2 OK newest 0m
+[2026-11-06T13:18:47] claude2 WAITING newest 92m | gpt2 OK newest 0m
+[2026-11-06T13:23:47] claude2 WAITING newest 97m | gpt2 OK newest 0m
+[2026-11-06T13:28:48] claude2 WAITING newest 102m | gpt2 OK newest 0m
+[2026-11-06T13:33:48] claude2 WAITING newest 107m | gpt2 OK newest 1m
+[2026-11-06T13:38:48] claude2 WAITING newest 112m | gpt2 OK newest 1m
+[2026-11-06T13:43:49] claude2 WAITING newest 117m | gpt2 OK newest 0m
+[2026-11-06T13:48:49] claude2 WAITING newest 122m | gpt2 OK newest 0m
+[2026-11-06T13:53:49] claude2 WAITING newest 127m | gpt2 OK newest 0m
+[2026-11-06T13:58:50] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:03:50] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:08:50] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:13:51] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:18:51] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:23:51] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:28:52] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:33:52] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:38:53] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:43:53] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:48:53] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:53:54] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T14:58:54] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T15:03:54] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T15:08:55] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T15:13:55] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T15:18:56] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T15:23:56] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T15:28:56] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T15:33:57] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T15:38:57] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T15:43:57] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T15:48:58] claude2 OK newest 0m | gpt2 OK newest 2m
+[2026-11-06T15:53:58] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T15:58:59] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T16:03:59] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T16:08:59] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T16:14:00] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T16:19:00] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T16:24:01] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T16:29:01] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T16:34:01] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T16:39:02] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T16:44:02] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T16:49:02] claude2 OK newest 0m | gpt2 OK newest 2m
+[2026-11-06T16:54:03] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T16:59:03] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T17:04:04] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T17:09:04] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T17:14:04] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T17:19:05] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T17:24:05] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T17:29:06] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T17:34:06] claude2 WAITING newest 2m | gpt2 OK newest 1m
+[2026-11-06T17:39:06] claude2 WAITING newest 7m | gpt2 OK newest 0m
+[2026-11-06T17:44:06] claude2 WAITING newest 12m | gpt2 OK newest 1m
+[2026-11-06T17:49:07] claude2 WAITING newest 17m | gpt2 OK newest 0m
+[2026-11-06T17:54:07] claude2 WAITING newest 22m | gpt2 OK newest 1m
+[2026-11-06T17:59:07] claude2 WAITING newest 27m | gpt2 OK newest 0m
+[2026-11-06T18:04:08] claude2 WAITING newest 32m | gpt2 OK newest 1m
+[2026-11-06T18:09:08] claude2 WAITING newest 37m | gpt2 OK newest 0m
+[2026-11-06T18:14:08] claude2 WAITING newest 42m | gpt2 OK newest 1m
+[2026-11-06T18:19:09] claude2 WAITING newest 47m | gpt2 OK newest 1m
+[2026-11-06T18:24:09] claude2 WAITING newest 52m | gpt2 OK newest 1m
+[2026-11-06T18:29:10] claude2 WAITING newest 57m | gpt2 OK newest 0m
+[2026-11-06T18:34:10] claude2 WAITING newest 62m | gpt2 OK newest 0m
+[2026-11-06T18:39:10] claude2 WAITING newest 67m | gpt2 OK newest 1m
+[2026-11-06T18:44:11] claude2 WAITING newest 72m | gpt2 OK newest 0m
+[2026-11-06T18:49:11] claude2 WAITING newest 77m | gpt2 OK newest 0m
+[2026-11-06T18:54:11] claude2 WAITING newest 82m | gpt2 OK newest 0m
+[2026-11-06T18:59:11] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T19:04:12] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T19:09:12] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T19:14:13] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T19:19:13] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T19:24:14] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T19:29:14] claude2 OK newest 0m | gpt2 OK newest 0m
+[2026-11-06T19:34:14] claude2 OK newest 0m | gpt2 OK newest 1m
+[2026-11-06T19:39:15] claude2 OK newest 0m | gpt2 OK newest 2m
+[2026-11-06T19:42:15] watchdog start: gpt2
+[2026-11-06T19:42:15] gpt2 OK newest 5m
+[2026-11-06T19:47:15] gpt2 OK newest 2m
+[2026-11-06T19:52:16] gpt2 OK newest 1m
+[2026-11-06T19:57:16] gpt2 OK newest 0m
+[2026-11-06T20:02:16] gpt2 OK newest 1m
+[2026-11-06T20:07:17] gpt2 OK newest 0m
+[2026-11-06T20:12:17] gpt2 OK newest 3m
+[2026-11-06T20:17:17] gpt2 OK newest 1m
+[2026-11-06T20:22:18] gpt2 OK newest 4m
+[2026-11-06T20:27:18] gpt2 OK newest 1m
+[2026-11-06T20:32:18] gpt2 OK newest 1m
+[2026-11-06T20:37:18] gpt2 OK newest 0m
+[2026-11-06T20:42:19] gpt2 OK newest 1m
+[2026-11-06T20:47:19] gpt2 OK newest 0m
+[2026-11-06T20:52:19] gpt2 OK newest 0m
+[2026-11-06T20:57:20] gpt2 OK newest 0m
+[2026-11-06T21:02:20] gpt2 OK newest 0m
+[2026-11-06T21:07:20] gpt2 OK newest 0m
+[2026-11-06T21:12:21] gpt2 WAITING newest 0m
+[2026-11-06T21:17:21] gpt2 WAITING newest -0m
+[2026-11-06T21:22:21] gpt2 WAITING newest 0m
+[2026-11-06T21:27:21] gpt2 WAITING newest 0m
+[2026-11-06T21:32:22] gpt2 OK newest 0m
+[2026-11-06T21:37:22] gpt2 OK newest 0m
+[2026-11-06T21:42:23] gpt2 OK newest 0m
+[2026-11-06T21:47:23] gpt2 OK newest 0m
+[2026-11-06T21:52:23] gpt2 OK newest 0m
+[2026-11-06T21:57:23] gpt2 OK newest 0m
+[2026-11-06T22:02:24] gpt2 OK newest 0m
+[2026-11-06T22:07:24] gpt2 OK newest 0m
+[2026-11-06T22:12:24] gpt2 OK newest 0m
+[2026-11-06T22:17:25] gpt2 OK newest 0m
+[2026-11-06T22:22:25] gpt2 OK newest 0m
+[2026-11-06T22:26:56] watchdog start: judge-final2
+[2026-11-06T22:26:56] judge-final2 OK newest 0m
+[2026-11-06T22:27:25] gpt2: FINISHED
+[2026-11-06T22:31:57] judge-final2 OK newest 0m
+[2026-11-06T22:36:57] judge-final2 OK newest 5m
+[2026-11-06T22:41:57] judge-final2: FINISHED
+[2026-11-08T16:42:41] watchdog start: review-claude, review-gpt
+[2026-11-08T16:42:41] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T16:47:42] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T16:52:43] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T16:57:43] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:02:44] review-claude OK newest 1m | review-gpt OK newest 1m
+[2026-11-08T17:07:45] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:12:46] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:17:46] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:22:47] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:27:48] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:32:48] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:37:49] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:42:50] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:47:50] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:52:51] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T17:57:51] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:02:52] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:07:52] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:12:53] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:17:53] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:22:54] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:27:55] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:32:55] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:37:56] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:42:56] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:47:57] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:52:58] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T18:57:58] review-claude OK newest -0m | review-gpt OK newest 0m
+[2026-11-08T19:02:58] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:07:59] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:13:00] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:18:00] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:23:01] review-claude OK newest 1m | review-gpt OK newest 1m
+[2026-11-08T19:28:02] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:33:03] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:38:03] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:43:04] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:48:04] review-claude OK newest 0m | review-gpt OK newest 0m
+[2026-11-08T19:52:41] watchdog start: review-gpt
+[2026-11-08T19:52:41] review-gpt OK newest 5m
+[2026-11-08T19:57:42] review-gpt OK newest 10m
+[2026-11-08T20:02:42] review-gpt OK newest 0m
+[2026-11-08T20:07:42] review-gpt OK newest 1m
+[2026-11-08T20:12:43] review-gpt OK newest 3m
+[2026-11-08T20:17:43] review-gpt OK newest 1m
+[2026-11-08T20:22:43] review-gpt OK newest 6m
+[2026-11-08T20:27:43] review-gpt OK newest 2m
+[2026-11-08T20:32:44] review-gpt OK newest 0m
+[2026-11-08T20:37:44] review-gpt OK newest 6m
+[2026-11-08T20:42:45] review-gpt OK newest 1m
+[2026-11-08T20:47:45] review-gpt OK newest 2m
+[2026-11-08T20:52:46] review-gpt OK newest 0m
+[2026-11-08T20:57:46] review-gpt OK newest 0m
+[2026-11-08T21:02:47] review-gpt OK newest 5m
+[2026-11-08T21:07:47] review-gpt OK newest 5m
+[2026-11-08T21:12:47] review-gpt OK newest 3m
+[2026-11-08T21:17:47] review-gpt OK newest 0m
+[2026-11-08T21:22:48] review-gpt OK newest 0m
+[2026-11-08T21:27:48] review-gpt OK newest 4m
+[2026-11-08T21:32:49] review-gpt OK newest 9m
+[2026-11-08T21:37:49] review-gpt OK newest 0m
+[2026-11-08T21:42:50] review-gpt OK newest 4m
+[2026-11-08T21:47:50] review-gpt OK newest 0m
+[2026-11-08T21:52:51] review-gpt OK newest 1m
+[2026-11-08T21:57:51] review-gpt OK newest 0m
+[2026-11-08T22:02:51] review-gpt OK newest 0m
+[2026-11-08T22:07:51] review-gpt OK newest 0m
+[2026-11-08T22:12:52] review-gpt OK newest 0m
+[2026-11-08T22:17:52] review-gpt OK newest 0m
+[2026-11-08T22:22:52] review-gpt OK newest 0m
+[2026-11-08T22:27:53] review-gpt OK newest 0m
+[2026-11-08T22:32:53] review-gpt OK newest 0m
+[2026-11-08T22:37:54] review-gpt OK newest 0m
+[2026-11-08T22:42:54] review-gpt WAITING newest 4m
+[2026-11-08T22:47:54] review-gpt WAITING newest 9m
+[2026-11-08T22:52:55] review-gpt WAITING newest 14m
+[2026-11-08T22:57:55] review-gpt WAITING newest 19m
+[2026-11-08T23:02:56] review-gpt OK newest 2m
+[2026-11-08T23:07:56] review-gpt OK newest 1m
+[2026-11-08T23:12:57] review-gpt OK newest 0m
+[2026-11-08T23:17:57] review-gpt OK newest 1m
+[2026-11-08T23:22:57] review-gpt OK newest 0m
+[2026-11-08T23:27:58] review-gpt OK newest 0m
+[2026-11-08T23:32:58] review-gpt OK newest 0m
+[2026-11-08T23:37:59] review-gpt OK newest 0m
+[2026-11-08T23:42:59] review-gpt OK newest 0m
+[2026-11-08T23:47:59] review-gpt OK newest 0m
+[2026-11-08T23:53:00] review-gpt OK newest 4m
+[2026-11-08T23:58:00] review-gpt OK newest 0m
+[2026-11-09T00:03:00] review-gpt OK newest 2m
+[2026-11-09T00:08:01] review-gpt OK newest 3m
+[2026-11-09T00:13:01] review-gpt OK newest 0m
+[2026-11-09T00:18:01] review-gpt OK newest 0m
+[2026-11-09T00:23:02] review-gpt WAITING newest 1m
+[2026-11-09T00:28:02] review-gpt WAITING newest 6m
+[2026-11-09T00:33:03] review-gpt WAITING newest 11m
+[2026-11-09T00:38:03] review-gpt WAITING newest 16m
+[2026-11-09T00:43:03] review-gpt OK newest 0m
+[2026-11-09T00:48:04] review-gpt OK newest 0m
+[2026-11-09T00:53:04] review-gpt WAITING newest 1m
+[2026-11-09T00:58:04] review-gpt WAITING newest 6m
+[2026-11-09T01:03:05] review-gpt WAITING newest 11m
+[2026-11-09T01:08:05] review-gpt WAITING newest 16m
+[2026-11-09T01:13:05] review-gpt OK newest 0m
+[2026-11-09T01:18:06] review-gpt OK newest 0m
+[2026-11-09T01:23:06] review-gpt WAITING newest 2m
+[2026-11-09T01:28:06] review-gpt WAITING newest 7m
+[2026-11-09T01:33:07] review-gpt WAITING newest 12m
+[2026-11-09T01:38:07] review-gpt WAITING newest 17m
+[2026-11-09T01:43:08] review-gpt OK newest 0m
+[2026-11-09T01:48:08] review-gpt OK newest 0m
+[2026-11-09T01:53:09] review-gpt WAITING newest 2m
+[2026-11-09T01:58:09] review-gpt WAITING newest 7m
+[2026-11-09T02:03:09] review-gpt WAITING newest 12m
+[2026-11-09T02:08:10] review-gpt WAITING newest 17m
+[2026-11-09T02:13:10] review-gpt OK newest 0m
+[2026-11-09T02:18:10] review-gpt OK newest 0m
+[2026-11-09T02:23:11] review-gpt WAITING newest 3m
+[2026-11-09T02:28:11] review-gpt WAITING newest 8m
+[2026-11-09T02:33:12] review-gpt WAITING newest 13m
+[2026-11-09T02:38:12] review-gpt WAITING newest 18m
+[2026-11-09T02:43:12] review-gpt OK newest 0m
+[2026-11-09T02:48:13] review-gpt OK newest 0m
+[2026-11-09T02:53:13] review-gpt WAITING newest 4m
+[2026-11-09T02:58:13] review-gpt WAITING newest 9m
+[2026-11-09T03:03:14] review-gpt WAITING newest 14m
+[2026-11-09T03:08:14] review-gpt WAITING newest 19m
+[2026-11-09T03:13:14] review-gpt OK newest 0m
+[2026-11-09T03:18:15] review-gpt OK newest 0m
+[2026-11-09T03:23:15] review-gpt WAITING newest 4m
+[2026-11-09T03:28:16] review-gpt WAITING newest 9m
+[2026-11-09T03:33:16] review-gpt WAITING newest 14m
+[2026-11-09T03:38:17] review-gpt WAITING newest 19m
+[2026-11-09T03:43:17] review-gpt OK newest 0m
+[2026-11-09T03:48:17] review-gpt OK newest 0m
+[2026-11-09T03:53:18] review-gpt WAITING newest 5m
+[2026-11-09T03:58:18] review-gpt WAITING newest 10m
+[2026-11-09T04:03:18] review-gpt WAITING newest 15m
+[2026-11-09T04:08:19] review-gpt WAITING newest 20m
+[2026-11-09T04:13:19] review-gpt: FINISHED
+[2026-11-09T10:37:16] watchdog start: review-gpt
+[2026-11-09T10:37:16] review-gpt OK newest 0m
+[2026-11-09T10:42:16] review-gpt OK newest 0m
+[2026-11-09T10:47:18] review-gpt OK newest 0m
+[2026-11-09T10:52:18] review-gpt OK newest 0m
+[2026-11-09T10:57:18] review-gpt OK newest 0m
+[2026-11-09T11:02:18] review-gpt OK newest 1m
+[2026-11-09T11:07:19] review-gpt OK newest 1m
+[2026-11-09T11:12:19] review-gpt OK newest 1m
+[2026-11-09T11:17:19] review-gpt OK newest 1m
+[2026-11-09T11:22:19] review-gpt OK newest 1m
+[2026-11-09T11:27:20] review-gpt: FINISHED

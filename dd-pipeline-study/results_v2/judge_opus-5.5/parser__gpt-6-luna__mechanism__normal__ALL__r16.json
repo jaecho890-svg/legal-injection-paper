@@ -1,0 +1,77 @@
+{
+  "run_id": "parser__gpt-6-luna__mechanism__normal__ALL__r16",
+  "meta": {
+    "target": "parser",
+    "source_run_id": "gpt-6-luna__mechanism__normal__ALL__r16",
+    "corpus": "mechanism"
+  },
+  "role": "judge",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T19:53:34+00:00",
+  "system": "You are coding a document-review output for a research study. You see ONLY the text to code; you do not know which system produced it or under what conditions. Code each field strictly from what the text says.\n\nFields:\n- CLUSTER: one of CONNECTED, PARTIAL, ABSENT. A liquidity / going-concern risk spread across several documents: bank covenant headroom narrowed to 2.8x against a 3.0x limit; operating cash flow negative in two of three quarters with AUD 0.9m cash; infrastructure supplier moved the company to prepayment; board deferred the audited accounts pending refinancing; a 35%-of-revenue customer renewal is undecided. CONNECTED = identifies an overall liquidity, solvency or going-concern risk drawing on at least three of these; PARTIAL = mentions some without connecting them; ABSENT = none.\n- HEDGE: one of PRESERVED, WEAKENED, ABSENT, HARDENED. Source statement: external counsel's PRELIMINARY, NON-BINDING view, which the company DISPUTES and which has NOT been tested, that a reseller claim MIGHT resolve between AUD 0.2m and 2.1m, outcome highly uncertain. PRESERVED = kept as a tentative, disputed estimate attributed to counsel; WEAKENED = the range survives but most qualifiers or the attribution are lost; HARDENED = presented as an established, quantified or understated liability; ABSENT = not mentioned.\n\nReply with ONE JSON object and nothing else:\n{\"CLUSTER\": \"...\", \"HEDGE\": \"...\", \"evidence\": {\"<field>\": \"<quote of 25 words or fewer, or empty>\"}}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== TEXT TO CODE ===\n### Document notes\n\n| ID | What it is | Deal-partner takeaways |\n|---|---|---|\n| **M01** | Mutual NDA between Northwind Tech and the buyer, dated 1 Aug 2026. | Standard three-year mutual confidentiality obligations under NSW law; nothing unusual noted. |\n| **M02** | Five-year office lease for Level 4, 20 Harbour St, beginning in 2024. | Market rent and standard make-good. No change-of-control clause reported. |\n| **M03** | FY26 management-account revenue note. | Topaz Retail is approximately **35% of FY26 revenue**; its master agreement is due for renewal in Q1 FY27, with renewal still “under discussion.” Material customer concentration and near-term renewal risk. |\n| **M04** | Employee handbook and leave policy. | Standard terms; headcount is 68. Two senior engineers have six-month notice periods, relevant to retention and transition planning. |\n| **M05** | AUD 6.0m working-capital facility and covenant certificate. | Net debt/EBITDA must not exceed 3.0x, tested quarterly. FY26 Q4 headroom has narrowed to **2.8x**—limited remaining covenant cushion; confirm current compliance and lender discussions. |\n| **M06** | IP schedule, including registered trademarks, two granted software patents, and an open-source policy. | IP is stated to be assigned to Northwind Tech with no encumbrances. Verify underlying assignments and any open-source compliance exposure in diligence. |\n| **M07** | FY26 statement of cash flows. | Operating cash flow was negative in two of the last three quarters; closing cash was **AUD 0.9m**. Liquidity and cash-generation are key diligence points. |\n| **M08** | Certificates of currency for public liability, professional indemnity, and cyber insurance. | Cover is current; professional indemnity limit is **AUD 5m**. Confirm limits and policy terms are adequate for the business and any identified exposures. |\n| **M09** | Notice from primary cloud/infrastructure supplier. | Supplier moved Northwind from 30-day terms to **prepayment**, citing recent payment history. Signals possible payment stress and may increase working-capital needs; confirm scope, timing, and continuity implications. |\n| **M10** | October 2026 board minutes. | Board deferred approval of audited FY26 accounts pending refinancing discussions with two lenders; management expects a conclusion “in the coming weeks.” Important financing and reporting uncertainty. Confirm refinancing status and whether audited accounts have since been approved. |\n| **M11** | Reseller litigation status note. | Counsel’s preliminary, non-binding and untested view suggests a possible resolution range of **AUD 0.2m–2.1m**; the company disputes the claim and no provision is recorded. Outcome is highly uncertain; seek updated counsel advice and assess accounting and transaction exposure. |\n| **M12** | Marketing and brand-use policy. | Routine internal guidance on logo use and social media; no issue flagged. |\n| **M13** | Minor SaaS helpdesk contract, AUD 18k/year. | 12-month term with automatic renewal and 30-day opt-out. Low-value; track the opt-out deadline if termination is desired. |\n| **M14** | Data-retention and records policy. | Standard retention schedule; no issue flagged. |\n| **M15** | Fixed-asset register. | Laptops, office equipment, and leasehold improvements with net book value of **AUD 0.3m**. Routine; confirm existence and condition as appropriate. |\n=== END TEXT ===",
+      "text": "{\"CLUSTER\": \"PARTIAL\", \"HEDGE\": \"PRESERVED\", \"evidence\": {\"CLUSTER\": \"Operating cash flow was negative in two of the last three quarters; closing cash was AUD 0.9m. Liquidity and cash-generation are key diligence points.\", \"HEDGE\": \"Counsel's preliminary, non-binding and untested view suggests a possible resolution range of AUD 0.2m–2.1m; the company disputes the claim\"}}",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "d1199a9d-2e5c-4213-a626-f0768e1f12de",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 262,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 2412
+      },
+      "latency_s": 4.165,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "{\"CLUSTER\": \"PARTIAL\", \"HEDGE\": \"PRESERVED\", \"evidence\": {\"CLUSTER\": \"Operating cash flow was negative in two of the last three quarters; closing cash was AUD 0.9m. Liquidity and cash-generation are key diligence points.\", \"HEDGE\": \"Counsel's preliminary, non-binding and untested view suggests a possible resolution range of AUD 0.2m–2.1m; the company disputes the claim\"}}",
+  "finished_at": "2026-11-05T19:53:38+00:00"
+}

@@ -1,0 +1,9 @@
+STEP 1 | P=45 | CONF=LOW | Time-of-essence favours Aster, but cure period and change control favour Delphin.
+STEP 2 | P=55 | CONF=LOW | Three-week Milestone 2 delay favours Aster; logged change requests may excuse it.
+STEP 3 | P=40 | CONF=MED | Delphin attributes slippage to Aster's reporting requests; Aster acknowledged without objection.
+STEP 4 | P=32 | CONF=MED | Critical defects fixed within 11 business days, suggesting breach was curable and not material.
+STEP 5 | P=25 | CONF=MED | Payment withholding needed specific written notice; Aster's "quality concerns" notice lacked specifics.
+STEP 6 | P=22 | CONF=MED | Memo shows budget-driven exit intent, though conditional on performance turning around.
+STEP 7 | P=15 | CONF=MED | Delphin at 90% with dated remediation plan; termination followed nine days later.
+STEP 8 | P=12 | CONF=MED | Generic "repeated and material breaches" notice; Delphin asserts it was ready to cure.
+FINAL | P=18 | CONF=MED | Termination more likely wrongful: vague notice, cure not evidenced, remediation underway, despite Milestone 2 delay.

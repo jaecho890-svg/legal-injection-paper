@@ -1,0 +1,12 @@
+# interpretive-drift-study/harness/experiment.py run --case case_insurance.json --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-06T07:27:56, ended 2026-11-06T07:27:56, rc=0
+## stdout
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 840 -> 700 jobs
+700 jobs, 6 already done, 694 to run (6246 API calls)
+  fable-5.1            1260 calls  ~130,860 input tokens (excl. multi-turn history)
+  haiku-5.5            2493 calls  ~259,209 input tokens (excl. multi-turn history)
+  opus-5.5             2493 calls  ~259,209 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

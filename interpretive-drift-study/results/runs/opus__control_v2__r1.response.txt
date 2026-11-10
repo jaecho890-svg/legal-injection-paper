@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Time-of-essence favors strictness; cure period and change-control temper it.
+STEP 2 | P=60 | CONF=MED | Two late milestones, no change-control invoked; supports breach.
+STEP 3 | P=50 | CONF=MED | Aster's extra asks caused slippage; PM acquiesced, cutting both ways.
+STEP 4 | P=60 | CONF=MED | Two critical defects recurred, open at termination; material quality failure.
+STEP 5 | P=62 | CONF=MED | Proper withholding notice cross-referencing defects shows contractually orderly conduct.
+STEP 6 | P=54 | CONF=MED | Budget-pressure exit memo suggests possible ulterior motive; weakens justification.
+STEP 7 | P=57 | CONF=MED | Remediation plan repeats missed dates; cure credibility doubtful, but process short.
+STEP 8 | P=54 | CONF=MED | Delphin claims ready to cure; cure-period compliance genuinely contested.
+FINAL | P=54 | CONF=MED | Real breaches, but cure-period and mixed-fault questions leave justification only marginally favored.

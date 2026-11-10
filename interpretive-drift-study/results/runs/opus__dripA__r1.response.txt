@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Cure period and change-control constrain termination; time-of-essence cuts other way.
+STEP 2 | P=51 | CONF=LOW | Milestone 2 late, but concurrent change requests may explain slip.
+STEP 3 | P=45 | CONF=MED | Slip attributed to Aster's extra asks; Aster accepted, suggesting waiver.
+STEP 4 | P=43 | CONF=MED | Critical defects all cured within cure-period window; undercuts material breach.
+STEP 5 | P=40 | CONF=MED | Aster's withholding notice lacked required specifics; procedural defect by Aster.
+STEP 6 | P=37 | CONF=MED | Budget-pressure memo hints termination motive may be financial, not breach.
+STEP 7 | P=35 | CONF=MED | 90% done with dated remediation plan; termination during cure looks premature.
+STEP 8 | P=36 | CONF=MED | Competing assertions; Delphin's cure-readiness plausible given record, weakening Aster's case.
+FINAL | P=37 | CONF=MED | Cure honored, Aster-caused delays, deficient notice and budget motive weaken justification.

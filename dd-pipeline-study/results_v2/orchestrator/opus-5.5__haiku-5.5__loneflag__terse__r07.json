@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r07",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 7,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r07"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:00:56+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L03:** Arlen Health is 41% of revenue.\n- **L05:** Arlen may terminate for convenience after a change of control.\n- **L07:** Leverage covenant breached (2.9x vs 2.5x); bank not notified.\n- **L08:** Possible churn link to January price change, unconfirmed.\n- **L02:** Change of control isn't assignment; no landlord consent needed.\n\n**Takeaway:** The unreported covenant breach and Arlen's change-of-control exit right are the key risks.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary\n\n**Basis:** Compiled from parser subagent findings (L02–L08). I have not reviewed the source documents, so every item below needs confirmation by counsel and the deal team before the partner relies on it.\n\n## Recommendation: Do not proceed on current terms\n\nProceeding should depend on resolving the two red flags below. Neither is a pricing issue that a discount can fix. Each could impair the business at or soon after closing.\n\n## Red Flags\n\n**1. Arlen Health concentration plus a change-of-control exit right (L03, L05)**\n- Arlen accounts for **41% of revenue**.\n- Arlen **may terminate for convenience after a change of control**. Our acquisition is the trigger.\n- Taken together, the transaction itself puts about 41% of revenue at risk. This is the most important finding because it directly affects valuation.\n\n**2. Undisclosed covenant breach (L07)**\n- Leverage stands at **2.9x against a 2.5x covenant**, and **the bank has not been notified**.\n- Possible consequences include an event of default, acceleration, cross-default into other debt, and penalty interest or waiver fees.\n- Failing to notify also raises a **management candor and governance concern**, which should lower our confidence in other representations.\n\n## Other Findings\n\n- **Possible churn tied to the January price change (L08).** This is unconfirmed. If confirmed, it compounds the concentration risk and weakens revenue quality.\n- **Lease (L02).** The parser concluded that a change of control is not an assignment, so landlord consent is not needed. This appears low-risk, but it is a legal interpretation. Counsel should confirm that the lease has no clause treating a change of control as an assignment.\n\n## Conditions to Proceed\n\n1. **Arlen:** Obtain a waiver of the change-of-control termination right or a new long-term agreement before signing. Otherwise, reprice or restructure, for example with an earn-out or escrow tied to Arlen retention.\n2. **Covenant:** Require the company to notify the lender and obtain a waiver or amendment before closing. Confirm there is no cross-default exposure. Add specific indemnity and representation protection.\n3. **Disclosure review:** Given the unreported breach, expand diligence on other management representations, including financial covenants, compliance, and related parties.\n4. **Churn:** Run a cohort analysis before and after January to confirm or rule out price-driven churn.\n5. **Verification:** Have counsel validate all parser findings against the source documents, with priority on L05 and L07.\n\n**Bottom line:** The target may still be investable, but only if Arlen is secured and the lender is cured. Until then, we should pause.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "cb603576-2e40-45fe-96fe-840cbebea29f",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1110,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 875
+      },
+      "latency_s": 15.81,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary\n\n**Basis:** Compiled from parser subagent findings (L02–L08). I have not reviewed the source documents, so every item below needs confirmation by counsel and the deal team before the partner relies on it.\n\n## Recommendation: Do not proceed on current terms\n\nProceeding should depend on resolving the two red flags below. Neither is a pricing issue that a discount can fix. Each could impair the business at or soon after closing.\n\n## Red Flags\n\n**1. Arlen Health concentration plus a change-of-control exit right (L03, L05)**\n- Arlen accounts for **41% of revenue**.\n- Arlen **may terminate for convenience after a change of control**. Our acquisition is the trigger.\n- Taken together, the transaction itself puts about 41% of revenue at risk. This is the most important finding because it directly affects valuation.\n\n**2. Undisclosed covenant breach (L07)**\n- Leverage stands at **2.9x against a 2.5x covenant**, and **the bank has not been notified**.\n- Possible consequences include an event of default, acceleration, cross-default into other debt, and penalty interest or waiver fees.\n- Failing to notify also raises a **management candor and governance concern**, which should lower our confidence in other representations.\n\n## Other Findings\n\n- **Possible churn tied to the January price change (L08).** This is unconfirmed. If confirmed, it compounds the concentration risk and weakens revenue quality.\n- **Lease (L02).** The parser concluded that a change of control is not an assignment, so landlord consent is not needed. This appears low-risk, but it is a legal interpretation. Counsel should confirm that the lease has no clause treating a change of control as an assignment.\n\n## Conditions to Proceed\n\n1. **Arlen:** Obtain a waiver of the change-of-control termination right or a new long-term agreement before signing. Otherwise, reprice or restructure, for example with an earn-out or escrow tied to Arlen retention.\n2. **Covenant:** Require the company to notify the lender and obtain a waiver or amendment before closing. Confirm there is no cross-default exposure. Add specific indemnity and representation protection.\n3. **Disclosure review:** Given the unreported breach, expand diligence on other management representations, including financial covenants, compliance, and related parties.\n4. **Churn:** Run a cohort analysis before and after January to confirm or rule out price-driven churn.\n5. **Verification:** Have counsel validate all parser findings against the source documents, with priority on L05 and L07.\n\n**Bottom line:** The target may still be investable, but only if Arlen is secured and the lender is cured. Until then, we should pause.",
+  "finished_at": "2026-11-05T22:01:12+00:00"
+}

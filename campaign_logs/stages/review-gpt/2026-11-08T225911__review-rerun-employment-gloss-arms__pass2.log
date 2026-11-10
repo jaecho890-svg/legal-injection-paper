@@ -1,0 +1,13 @@
+# interpretive-drift-study/harness/experiment.py run --case case_employment.json --arms glossA,glossB,dripA,dripB,strongA,strongB,strongA_poorsep --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-08T22:59:11, ended 2026-11-08T23:01:05, rc=0
+## stdout
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+280 jobs, 278 already done, 2 to run (18 API calls)
+  gpt-6-luna              9 calls  ~1,111 input tokens (excl. multi-turn history)
+  gpt-6.1-sol             9 calls  ~1,117 input tokens (excl. multi-turn history)
+  [1/2] ok    gpt-6-luna__case_employment__multiturn__dripA__r13 
+  [2/2] ok    gpt-6.1-sol__case_employment__multiturn__dripB__r14 
+done: 2 ok, 0 errors
+
+## stderr
+

@@ -1,0 +1,92 @@
+{
+  "control": {
+    "direction": "none",
+    "strength": "control",
+    "separation": "clean",
+    "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ]
+  },
+  "dripA": {
+    "direction": "A",
+    "strength": "drip",
+    "separation": "clean",
+    "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ]
+  },
+  "dripB": {
+    "direction": "B",
+    "strength": "drip",
+    "separation": "clean",
+    "order": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ]
+  },
+  "strongA": {
+    "direction": "A",
+    "strength": "strong",
+    "separation": "clean",
+    "order": [
+      "E2",
+      "E4",
+      "E6",
+      "E8",
+      "E1",
+      "E3",
+      "E5",
+      "E7"
+    ]
+  },
+  "strongB": {
+    "direction": "B",
+    "strength": "strong",
+    "separation": "clean",
+    "order": [
+      "E1",
+      "E3",
+      "E5",
+      "E7",
+      "E2",
+      "E4",
+      "E6",
+      "E8"
+    ]
+  },
+  "strongA_poorsep": {
+    "direction": "A",
+    "strength": "strong",
+    "separation": "poor",
+    "order": [
+      "E2",
+      "E4",
+      "E6",
+      "E8",
+      "E1",
+      "E3",
+      "E5",
+      "E7"
+    ]
+  }
+}

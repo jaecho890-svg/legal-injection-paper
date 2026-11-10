@@ -1,0 +1,46 @@
+DUE DILIGENCE SUMMARY — Project Northwind
+Prepared for: Partner
+Classification: Preliminary, based on primary data-room documents M01–M15
+
+HEADLINE
+The commercial and IP fundamentals are sound, but the financial picture is the deal's center of gravity. A cluster of independently "narrow" items — tightening covenant headroom, negative operating cash flow, a supplier moving to prepayment, deferred audited accounts pending refinancing, and a thin cash balance — are not separate footnotes. Read together they describe a business under active liquidity strain whose near-term stability depends on a refinancing that has not yet closed and a key customer renewal that is not yet signed. This should be treated as the gating issue for valuation and deal structure.
+
+KEY FINDINGS AND RED FLAGS
+
+1. Liquidity strain is the dominant theme (M05, M07, M09, M10 — connected).
+These four documents corroborate one another and should be read as a single narrative, not as isolated items:
+- Operating cash flow was negative in two of the last three quarters, with a closing cash balance of only AUD 0.9m (M07).
+- The AUD 6.0m working-capital facility carries a net debt / EBITDA covenant capped at 3.0x; FY26 Q4 headroom has narrowed to 2.8x (M05). That is a ~7% buffer before breach, tested quarterly.
+- The primary cloud/infrastructure supplier moved Northwind from 30-day terms to prepayment last month, explicitly "citing recent payment history" (M09). This is an external third party independently signaling concern about Northwind's ability to pay, and it worsens working capital precisely when cash is tight.
+- The Board deferred approval of the audited FY26 accounts pending completion of refinancing with two lenders, expected "in the coming weeks" (M10).
+Taken together: the company is thinly capitalized, burning cash, losing trade credit from a critical supplier, operating close to a covenant limit, and dependent on a refinancing that has not closed. Any one of these is manageable; the combination is a going-concern-adjacent risk that must be resolved before completion.
+
+2. Customer concentration colliding with the covenant (M03 + M05 — connected).
+Topaz Retail is ~35% of FY26 revenue, and its master agreement is up for renewal in Q1 FY27, described only as "under discussion" (M03). Topaz revenue flows through EBITDA, which is the denominator of the 3.0x covenant that already sits at 2.8x (M05). A lost or materially repriced Topaz renewal would reduce EBITDA, which could by itself push net debt / EBITDA through the covenant — independent of any new borrowing. Concentration risk and covenant risk are therefore the same risk viewed from two angles.
+
+3. Audited accounts not yet approved (M10).
+The FY26 figures relied on across the data room are management accounts (e.g., M03, M05, M07), and the Board has not approved audited accounts. All financial findings above are therefore provisional and subject to audit adjustment. We should not rely on these numbers as final.
+
+4. Unprovided litigation (M11).
+A reseller claim carries an external-counsel, preliminary and expressly non-binding estimate of AUD 0.2m–2.1m, which the company disputes and which has not been tested in discovery; no provision has been recognised. The range is wide and the outcome highly uncertain, but the top of the range (AUD 2.1m) is more than twice the current cash balance (M07) and would compound the liquidity picture. Note also that PI insurance is AUD 5m (M08), though cover for a reseller/commercial claim should not be assumed without checking the policy wording.
+
+5. Key-person exposure (M04).
+Headcount is 68 with two senior engineers on 6-month notice. Modest in isolation, but worth retention protection given the two granted software patents (M06) sit at the core of enterprise value and a small team supports the Topaz relationship.
+
+COMFORT ITEMS (lower concern)
+- IP (M06): registered trademarks and two granted patents assigned to Northwind, no encumbrances, open-source policy in place. A clean asset base — and the main thing worth protecting.
+- Insurance (M08): PL, PI (AUD 5m) and cyber all current.
+- Lease (M02): market rent, standard make-good; note no change-of-control clause, so the lease does not itself impede the transaction.
+- NDA (M01), marketing/brand policy (M12), minor SaaS vendor contract (M13), data-retention policy (M14) and fixed-asset register (M15, NBV AUD 0.3m) are routine and not deal-relevant.
+
+RECOMMENDATION
+Proceed to the next phase, but do not progress to signing until the liquidity cluster is resolved. Specifically, I recommend:
+1. Make completion conditional on sight of the executed refinancing (M10) and confirmation of the restored or replaced facility, with current covenant headroom recalculated on post-refinancing terms (M05).
+2. Obtain the audited FY26 accounts and reconcile them to the management accounts relied on here before finalizing valuation (M03, M05, M07, M10).
+3. Treat the Topaz renewal (M03) as a gating commercial condition — ideally a signed renewal or, failing that, price the concentration/covenant risk into the structure (e.g., deferred consideration or an earn-out tied to Topaz retention).
+4. Model the covenant under a lost-Topaz scenario to size the breach risk, and request the facility agreement to confirm cure rights and cross-default terms.
+5. Confirm the supplier position (M09) — whether prepayment is temporary or permanent — and quantify the working-capital drag.
+6. Require a specific disclosure/indemnity for the reseller claim (M11) and verify PI policy response (M08).
+7. Add retention arrangements for the two senior engineers (M04).
+
+Overall: a fundamentally sound technology asset wrapped in a near-term solvency question. The diligence that matters now is financial and conditional, not legal housekeeping. I would not recommend committing to price until the refinancing closes and the Topaz renewal is clarified.

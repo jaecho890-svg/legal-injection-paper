@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__discovery__terse__r02",
+  "meta": {
+    "corpus": "discovery",
+    "level": "terse",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 2,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__discovery__terse__ALL__r02"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dfd7f268bdc976dc",
+  "started_at": "2026-11-05T00:46:33+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) for the PLAINTIFF's litigation team. Your cheap parser subagents reviewed the opposing party's document production and returned the compact findings below. Compile the review memo for the partner: key/'hot' documents, the factual narrative they support, and recommended next steps.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **C03:** Batch 7 sensor yield anomaly; use-as-is, monitor returns.\n- **C05:** Engineer suspects Batch 7 dropouts; urges testing before external statements.\n- **C06:** Batch 7 shipped to Meridian, 22 March.\n- **C07:** Lower-cost resin substituted; supplier certified variance within tolerance.\n- **C09:** Three Meridian dropout tickets opened 2–9 April.\n- **C10:** Shipments proceeded despite outstanding QA monitors.\n- **C13:** Resin measurement near tolerance edge.\n\nOverall: Records raise questions about Batch 7 quality and shipment decisions.\n\nWrite the review memo now.",
+      "text": "## Privileged & Confidential — Draft Review Memo\n**To:** Partner, Plaintiff’s Litigation Team  \n**Re:** Batch 7 — preliminary production review\n\n### Bottom line\nThe findings support investigating whether defendant shipped Batch 7 despite unresolved quality concerns, followed by Meridian reports of dropouts. They do **not yet establish** a defect, causation, knowledge at shipment, or a misleading external statement. This assessment rests on parser summaries; the underlying documents require verification.\n\n### Key / “hot” documents\n\n| Record | Reported content | Significance and limitations |\n|---|---|---|\n| **C05** | Engineer suspects Batch 7 dropouts and urges testing before external statements. | Potential evidence of technical concern and a warning to decision-makers. Confirm date, recipients, supporting data, and whether testing or statements followed. |\n| **C10** | Shipments proceeded despite outstanding QA monitors. | Potential evidence of shipment with unresolved QA issues. Determine what the monitors required, whether they barred release, and which shipments were affected. |\n| **C03** | Batch 7 sensor yield anomaly; “use-as-is,” monitor returns. | Potential evidence of an affirmative acceptance decision despite an anomaly. Verify exact wording, decision-maker, timing, and technical meaning; yield issues do not necessarily establish field defects. |\n| **C06** | Batch 7 shipped to Meridian on 22 March. | Shipment anchor. Establish year, quantities, serial numbers, and linkage to reported failures. |\n| **C09** | Three Meridian dropout tickets opened 2–9 April. | Potential post-shipment corroboration of the suspected failure mode. Ticket dates are not necessarily failure dates; confirm affected units were Batch 7. |\n| **C07 / C13** | Lower-cost resin substituted; supplier certified variance within tolerance; resin measurement near tolerance edge. | Possible mechanism and cost rationale to investigate. Neither substitution nor a near-limit measurement establishes nonconformity or causation. The supplier certification is material counterevidence. |\n\n### Factual narrative and vulnerabilities\nA **working plaintiff theory** is that Batch 7 presented a sensor-yield anomaly and suspected dropout risk, yet was accepted and shipped while QA monitoring remained outstanding. Meridian subsequently opened three dropout tickets. A lower-cost resin substitution may warrant technical investigation.\n\nThe critical gap is chronology: except for shipment and ticket dates, the summaries do not establish when concerns arose or who knew of them before release. Nor do they link the resin to dropouts or Meridian’s affected units to Batch 7. Defendant may argue that the material met specifications, monitoring was routine, and the complaints had unrelated causes. No supplied finding establishes an actual external representation, reliance, or quantified loss.\n\n### Recommended next steps\n1. **Validate and preserve the key records.** Obtain complete documents, Bates references, native files, attachments, threads, metadata, and exact language for C03, C05, and C10.\n2. **Build a knowledge-and-release chronology.** Identify when concerns arose, who received them, who approved “use-as-is” and shipment, and what testing occurred before and after 22 March.\n3. **Trace the affected product.** Link resin lots, Batch 7 production records, shipments, and Meridian complaint units through lot and serial numbers.\n4. **Test defect and causation.** Obtain specifications, raw QA data, release criteria, supplier certifications, change-control records, complaint investigations, and returned units. Have a qualified expert assess plausible failure mechanisms and alternative causes.\n5. **Develop testimony and damages.** Prioritize the engineer, QA release authority, shipment decision-maker, procurement/materials personnel, and Meridian ticket owners. Collect external statements and evidence of repair costs, replacements, downtime, and other claimed losses.\n\n**Partner recommendation:** Prioritize C03, C05, and C10 for immediate source review and witness preparation. Treat the resin theory as an investigative lead—not an established causal explanation.",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1a92b-f9c9-7102-a6d5-ea57829a0124",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 7541,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 807,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 38.219,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-mhls97e8/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## Privileged & Confidential — Draft Review Memo\n**To:** Partner, Plaintiff’s Litigation Team  \n**Re:** Batch 7 — preliminary production review\n\n### Bottom line\nThe findings support investigating whether defendant shipped Batch 7 despite unresolved quality concerns, followed by Meridian reports of dropouts. They do **not yet establish** a defect, causation, knowledge at shipment, or a misleading external statement. This assessment rests on parser summaries; the underlying documents require verification.\n\n### Key / “hot” documents\n\n| Record | Reported content | Significance and limitations |\n|---|---|---|\n| **C05** | Engineer suspects Batch 7 dropouts and urges testing before external statements. | Potential evidence of technical concern and a warning to decision-makers. Confirm date, recipients, supporting data, and whether testing or statements followed. |\n| **C10** | Shipments proceeded despite outstanding QA monitors. | Potential evidence of shipment with unresolved QA issues. Determine what the monitors required, whether they barred release, and which shipments were affected. |\n| **C03** | Batch 7 sensor yield anomaly; “use-as-is,” monitor returns. | Potential evidence of an affirmative acceptance decision despite an anomaly. Verify exact wording, decision-maker, timing, and technical meaning; yield issues do not necessarily establish field defects. |\n| **C06** | Batch 7 shipped to Meridian on 22 March. | Shipment anchor. Establish year, quantities, serial numbers, and linkage to reported failures. |\n| **C09** | Three Meridian dropout tickets opened 2–9 April. | Potential post-shipment corroboration of the suspected failure mode. Ticket dates are not necessarily failure dates; confirm affected units were Batch 7. |\n| **C07 / C13** | Lower-cost resin substituted; supplier certified variance within tolerance; resin measurement near tolerance edge. | Possible mechanism and cost rationale to investigate. Neither substitution nor a near-limit measurement establishes nonconformity or causation. The supplier certification is material counterevidence. |\n\n### Factual narrative and vulnerabilities\nA **working plaintiff theory** is that Batch 7 presented a sensor-yield anomaly and suspected dropout risk, yet was accepted and shipped while QA monitoring remained outstanding. Meridian subsequently opened three dropout tickets. A lower-cost resin substitution may warrant technical investigation.\n\nThe critical gap is chronology: except for shipment and ticket dates, the summaries do not establish when concerns arose or who knew of them before release. Nor do they link the resin to dropouts or Meridian’s affected units to Batch 7. Defendant may argue that the material met specifications, monitoring was routine, and the complaints had unrelated causes. No supplied finding establishes an actual external representation, reliance, or quantified loss.\n\n### Recommended next steps\n1. **Validate and preserve the key records.** Obtain complete documents, Bates references, native files, attachments, threads, metadata, and exact language for C03, C05, and C10.\n2. **Build a knowledge-and-release chronology.** Identify when concerns arose, who received them, who approved “use-as-is” and shipment, and what testing occurred before and after 22 March.\n3. **Trace the affected product.** Link resin lots, Batch 7 production records, shipments, and Meridian complaint units through lot and serial numbers.\n4. **Test defect and causation.** Obtain specifications, raw QA data, release criteria, supplier certifications, change-control records, complaint investigations, and returned units. Have a qualified expert assess plausible failure mechanisms and alternative causes.\n5. **Develop testimony and damages.** Prioritize the engineer, QA release authority, shipment decision-maker, procurement/materials personnel, and Meridian ticket owners. Collect external statements and evidence of repair costs, replacements, downtime, and other claimed losses.\n\n**Partner recommendation:** Prioritize C03, C05, and C10 for immediate source review and witness preparation. Treat the resin theory as an investigative lead—not an established causal explanation.",
+  "finished_at": "2026-11-05T00:47:12+00:00"
+}

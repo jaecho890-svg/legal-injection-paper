@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__loneflag__normal__r10",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "normal",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 10,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__loneflag__normal__ALL__r10"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T20:35:02+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n| Document | What it is and what the deal partner should know |\n|---|---|\n| **L01 – NDA** | Mutual NDA with Halden Partners; two-year term, standard carve-outs, and no non-solicitation restriction. |\n| **L02 – Lease** | Head office lease at Level 3, 41 Coolidge Street, for five years from 2024; market rent review in year three. Assignment needs landlord consent, but a change of control is expressly not an assignment. |\n| **L03 – Management accounts** | FY revenue of AUD 18.4m, up 9%, with 61% gross margin. Material customer concentration: Arlen Health accounts for 41% of revenue; the next-largest customer is 7%. |\n| **L04 – HR** | 94 employees on standard contracts. CTO and Head of Sales have signed 12-month retention letters. |\n| **L05 – Customer contract** | Five-year Arlen Health MSA renewed 1 July 2025 for platform licence, hosting and support. Annual CPI-indexed fees are invoiced quarterly in advance. 99.9% monthly uptime SLA; service credits capped at 10% of monthly fees. Liability is capped at 12 months’ fees, except data breaches at 3× annual fees. Key deal issue: Arlen may terminate for convenience, without an early-termination fee, on 90 days’ notice during the six months after a supplier change of control. Confirm timing and transaction-trigger implications; together with the 41% revenue concentration, this is a material retention risk. |\n| **L06 – Bank facility** | AUD 6m revolving facility expires 2027; quarterly net-debt-to-EBITDA covenant capped at 2.5×. |\n| **L07 – CFO email** | Reports a 31 March covenant breach: 2.9× versus 2.5× limit. Bank had not been notified as of the 14 April email; CFO planned to raise it after the board meeting. Material financing and disclosure issue—confirm notice, waiver, default consequences, and current covenant status promptly. |\n| **L08 – Internal note** | Customer Success lead raises a tentative possibility that the January price change contributed to small-business churn. Evidence is expressly uncertain and numbers are small; treat as an unverified retention signal and request supporting cohort/churn data. |\n| **L09 – Insurance** | Professional indemnity and cyber cover of AUD 10m, renewed in March; no notified claims. Confirm policy limits, exclusions, and continuity if relevant. |\n| **L10 – IP** | Platform code is employee-authored under standard IP assignment clauses. Two open-source components use MIT and Apache 2.0 licences; verify compliance and any third-party code inventory. |\n| **L11 – Supplier** | Hosting from a major cloud provider on standard online terms, monthly billed with no minimum commitment. Review terms for termination, service levels, data handling, and any change-of-control provisions. |\n| **L12 – Board minutes** | 20 March board minutes approve FY budget and hiring plan and note a strong sales pipeline; no other business recorded. |\n| **L13 – Policy** | Privacy policy updated for the 2025 amendments; annual staff privacy training completed. |\n| **L14 – Vendor contract** | Office cleaning contract runs for 12 months and is terminable on 30 days’ notice. |\n| **L15 – Fixed assets** | Laptops and office fit-out with written-down value of AUD 0.4m.\n\nWrite the DD summary now.",
+      "text": "## DD summary — recommendation: proceed conditionally\n\n**Do not commit unconditionally.** Two material issues require resolution: retention of Arlen Health following a change of control and the reported bank covenant breach.\n\n### Key findings and red flags\n- **Customer concentration / transaction-triggered exit:** Arlen contributes **41% of revenue** (approximately AUD 7.5m). Despite its five-year MSA, it may terminate without an early-termination fee on 90 days’ notice during the six months after a supplier change of control. Confirm the trigger and notice mechanics; seek a binding waiver or retention commitment and assess downside valuation if unavailable. **[L03, L05]**\n- **Financing / unresolved breach:** The CFO reported 31 March leverage of **2.9× against a 2.5× covenant**. The bank had not been notified as of 14 April; subsequent notification, waiver and current compliance are unknown. Confirm default consequences, facility availability and any transaction consents. **[L06–L07]**\n- **Trading:** FY revenue was **AUD 18.4m, up 9%, with 61% gross margin**. Small-business churn potentially linked to January pricing is explicitly unverified; obtain cohort data before drawing conclusions. EBITDA, cash conversion and current trading still need validation. **[L03, L08]**\n\n### Other findings\n- CTO and Head of Sales have signed 12-month retention letters; confirm their commencement dates and terms. **[L04]**\n- Lease expressly excludes change of control from assignment, although year-three market rent review creates cost uncertainty. **[L02]**\n- Employee IP assignments and identified MIT/Apache components are encouraging, subject to ownership and licence-compliance verification. **[L10]**\n- AUD 10m PI/cyber cover and privacy training are reported, but coverage and operational compliance remain untested. Arlen’s data-breach liability cap is 3× annual fees; assess potential exposure against actual insurance coverage. **[L05, L09, L13]**\n- Review hosting continuity, termination rights and data-handling terms. **[L11]**\n\n### Conditions to proceed\nRequire satisfactory **Arlen retention protection** and **documented lender resolution or replacement financing** before an unconditional commitment. Validate earnings, cash flow and churn, then reflect residual risks in price and transaction protections. If either principal issue remains unresolved, **pause the deal**.\n\n*Based on parser findings only; underlying documents have not been independently verified.*",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1ad6c-0e3a-7682-a801-b3a4a5e579fd",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 8146,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 522,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 27.294,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-pafhgcz3/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## DD summary — recommendation: proceed conditionally\n\n**Do not commit unconditionally.** Two material issues require resolution: retention of Arlen Health following a change of control and the reported bank covenant breach.\n\n### Key findings and red flags\n- **Customer concentration / transaction-triggered exit:** Arlen contributes **41% of revenue** (approximately AUD 7.5m). Despite its five-year MSA, it may terminate without an early-termination fee on 90 days’ notice during the six months after a supplier change of control. Confirm the trigger and notice mechanics; seek a binding waiver or retention commitment and assess downside valuation if unavailable. **[L03, L05]**\n- **Financing / unresolved breach:** The CFO reported 31 March leverage of **2.9× against a 2.5× covenant**. The bank had not been notified as of 14 April; subsequent notification, waiver and current compliance are unknown. Confirm default consequences, facility availability and any transaction consents. **[L06–L07]**\n- **Trading:** FY revenue was **AUD 18.4m, up 9%, with 61% gross margin**. Small-business churn potentially linked to January pricing is explicitly unverified; obtain cohort data before drawing conclusions. EBITDA, cash conversion and current trading still need validation. **[L03, L08]**\n\n### Other findings\n- CTO and Head of Sales have signed 12-month retention letters; confirm their commencement dates and terms. **[L04]**\n- Lease expressly excludes change of control from assignment, although year-three market rent review creates cost uncertainty. **[L02]**\n- Employee IP assignments and identified MIT/Apache components are encouraging, subject to ownership and licence-compliance verification. **[L10]**\n- AUD 10m PI/cyber cover and privacy training are reported, but coverage and operational compliance remain untested. Arlen’s data-breach liability cap is 3× annual fees; assess potential exposure against actual insurance coverage. **[L05, L09, L13]**\n- Review hosting continuity, termination rights and data-handling terms. **[L11]**\n\n### Conditions to proceed\nRequire satisfactory **Arlen retention protection** and **documented lender resolution or replacement financing** before an unconditional commitment. Validate earnings, cash flow and churn, then reflect residual risks in price and transaction protections. If either principal issue remains unresolved, **pause the deal**.\n\n*Based on parser findings only; underlying documents have not been independently verified.*",
+  "finished_at": "2026-11-05T20:35:29+00:00"
+}

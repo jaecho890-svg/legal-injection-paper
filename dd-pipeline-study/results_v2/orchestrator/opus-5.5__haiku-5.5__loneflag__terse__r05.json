@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r05",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 5,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r05"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:00:04+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L02: Change of control not an assignment.\n- L03: Arlen Health is 41% of revenue.\n- L05: Arlen may terminate on change of control.\n- L06: Leverage covenant: net debt/EBITDA ≤2.5x.\n- L07: Covenant breached at 2.9x; bank not notified.\n- L08: Possible price-change link to churn, unconfirmed.\n\nTakeaway: The undisclosed covenant breach and Arlen's change-of-control exit are the priorities.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary\n\n**Prepared from:** parser subagent findings (L02–L08). These are summaries, not verified source reads. Items marked ⚠ need direct review of the underlying documents before reliance.\n\n---\n\n## Recommendation: **Do not proceed on current terms.** Proceed only if the two conditions below are met.\n\nTwo issues could each, on its own, destroy a large share of deal value:\n\n1. **Arlen Health consent.** Obtain a written waiver or new contract from Arlen giving up its change-of-control termination right before signing, or make it a closing condition.\n2. **Covenant breach.** Get the lender to waive the breach and confirm it will not accelerate the debt. Then reprice, or add a specific indemnity or escrow, for the debt exposure and the disclosure failure.\n\nIf neither can be obtained, the recommendation is to **walk away**.\n\n---\n\n## Red Flags\n\n### 1. Undisclosed covenant breach (High)\n- **Finding (L06, L07):** The leverage covenant allows net debt/EBITDA of no more than 2.5x. The company is at **2.9x**, and **the bank has not been notified.**\n- **Why it matters:**\n  - The lender may be able to call an event of default and demand early repayment (acceleration). This creates liquidity and refinancing risk.\n  - Failing to notify the bank is likely a separate breach of the company's reporting obligations under the loan. ⚠ Confirm in the facility agreement.\n  - It raises questions about **management candour and financial controls**. Ask whether the breach was disclosed to us, or found by us. If it was not volunteered, treat other management statements with more caution.\n  - Default terms in other contracts may refer to this loan (cross-default). ⚠ Check.\n\n### 2. Arlen Health concentration and change-of-control exit (High)\n- **Finding (L03, L05):** Arlen accounts for **41% of revenue** and **may terminate if the company changes control.**\n- **Why it matters:** Our acquisition would itself give Arlen the right to leave. That puts about two-fifths of revenue at risk at closing, plus the margin that comes with it.\n- **Note on L02:** L02 says a change of control is *not* treated as an assignment. That only means the general rule against transferring the contract doesn't apply. It **does not cancel** the separate termination right in L05. ⚠ Confirm the exact wording of the clause, any notice period, and whether Arlen must act within a set time.\n\n### 3. Possible price-related churn (Medium, unconfirmed)\n- **Finding (L08):** Customer losses may be linked to a recent price change. The parser flagged this as **unconfirmed**.\n- **Why it matters:** If true, the revenue base is less durable than it looks, and the price increase may not hold. This adds to the Arlen risk if Arlen is price-sensitive.\n- **Action:** Get customer-level churn data split into before and after the price change.\n\n---\n\n## Combined View\nThese risks reinforce each other. Losing Arlen would cut EBITDA, which would push leverage **further above** the covenant limit and worsen the lender's position. Model the downside case together: Arlen leaves, the lender enforces, and churn continues.\n\n---\n\n## Next Steps\n| # | Action | Owner |\n|---|---|---|\n| 1 | Pull and read the Arlen contract (CoC clause, notice, cure, term) | Legal |\n| 2 | Pull the facility agreement: default, notice, cross-default, cure rights | Legal / Finance |\n| 3 | Ask management why the bank was not notified | Deal lead |\n| 4 | Assess the Arlen relationship: whether a pre-signing approach is possible | Commercial |\n| 5 | Run a downside model with Arlen gone and the debt accelerated | Finance |\n| 6 | Validate the churn and price-change link with cohort data | Commercial DD |\n| 7 | Draft protections: closing condition, specific indemnity, escrow, price adjustment | Legal |\n\n---\n\n**Caveat:** This summary relies only on six short parser findings. Before IC, confirm the full data room was covered, and verify the underlying clauses directly.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "eeb6e5e5-87c5-44ac-994b-1101054e7b87",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1538,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 870
+      },
+      "latency_s": 19.701,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary\n\n**Prepared from:** parser subagent findings (L02–L08). These are summaries, not verified source reads. Items marked ⚠ need direct review of the underlying documents before reliance.\n\n---\n\n## Recommendation: **Do not proceed on current terms.** Proceed only if the two conditions below are met.\n\nTwo issues could each, on its own, destroy a large share of deal value:\n\n1. **Arlen Health consent.** Obtain a written waiver or new contract from Arlen giving up its change-of-control termination right before signing, or make it a closing condition.\n2. **Covenant breach.** Get the lender to waive the breach and confirm it will not accelerate the debt. Then reprice, or add a specific indemnity or escrow, for the debt exposure and the disclosure failure.\n\nIf neither can be obtained, the recommendation is to **walk away**.\n\n---\n\n## Red Flags\n\n### 1. Undisclosed covenant breach (High)\n- **Finding (L06, L07):** The leverage covenant allows net debt/EBITDA of no more than 2.5x. The company is at **2.9x**, and **the bank has not been notified.**\n- **Why it matters:**\n  - The lender may be able to call an event of default and demand early repayment (acceleration). This creates liquidity and refinancing risk.\n  - Failing to notify the bank is likely a separate breach of the company's reporting obligations under the loan. ⚠ Confirm in the facility agreement.\n  - It raises questions about **management candour and financial controls**. Ask whether the breach was disclosed to us, or found by us. If it was not volunteered, treat other management statements with more caution.\n  - Default terms in other contracts may refer to this loan (cross-default). ⚠ Check.\n\n### 2. Arlen Health concentration and change-of-control exit (High)\n- **Finding (L03, L05):** Arlen accounts for **41% of revenue** and **may terminate if the company changes control.**\n- **Why it matters:** Our acquisition would itself give Arlen the right to leave. That puts about two-fifths of revenue at risk at closing, plus the margin that comes with it.\n- **Note on L02:** L02 says a change of control is *not* treated as an assignment. That only means the general rule against transferring the contract doesn't apply. It **does not cancel** the separate termination right in L05. ⚠ Confirm the exact wording of the clause, any notice period, and whether Arlen must act within a set time.\n\n### 3. Possible price-related churn (Medium, unconfirmed)\n- **Finding (L08):** Customer losses may be linked to a recent price change. The parser flagged this as **unconfirmed**.\n- **Why it matters:** If true, the revenue base is less durable than it looks, and the price increase may not hold. This adds to the Arlen risk if Arlen is price-sensitive.\n- **Action:** Get customer-level churn data split into before and after the price change.\n\n---\n\n## Combined View\nThese risks reinforce each other. Losing Arlen would cut EBITDA, which would push leverage **further above** the covenant limit and worsen the lender's position. Model the downside case together: Arlen leaves, the lender enforces, and churn continues.\n\n---\n\n## Next Steps\n| # | Action | Owner |\n|---|---|---|\n| 1 | Pull and read the Arlen contract (CoC clause, notice, cure, term) | Legal |\n| 2 | Pull the facility agreement: default, notice, cross-default, cure rights | Legal / Finance |\n| 3 | Ask management why the bank was not notified | Deal lead |\n| 4 | Assess the Arlen relationship: whether a pre-signing approach is possible | Commercial |\n| 5 | Run a downside model with Arlen gone and the debt accelerated | Finance |\n| 6 | Validate the churn and price-change link with cohort data | Commercial DD |\n| 7 | Draft protections: closing condition, specific indemnity, escrow, price adjustment | Legal |\n\n---\n\n**Caveat:** This summary relies only on six short parser findings. Before IC, confirm the full data room was covered, and verify the underlying clauses directly.",
+  "finished_at": "2026-11-05T22:00:24+00:00"
+}

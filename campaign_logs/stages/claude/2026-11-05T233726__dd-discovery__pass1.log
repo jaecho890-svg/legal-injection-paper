@@ -1,0 +1,149 @@
+# dd-pipeline-study/harness/experiment.py run --corpus discovery --parsers haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-05T23:37:26, ended 2026-11-05T23:53:52, rc=0
+## stdout
+40 jobs, 0 already done, 40 to run (40 API calls)
+  haiku-5.5              40 calls  ~23,460 input tokens (excl. multi-turn history)
+  [1/40] ok    haiku-5.5__discovery__terse__ALL__r02 
+  [2/40] ok    haiku-5.5__discovery__normal__ALL__r01 
+  [3/40] ok    haiku-5.5__discovery__terse__ALL__r01 
+  [4/40] ok    haiku-5.5__discovery__normal__ALL__r02 
+  [5/40] ok    haiku-5.5__discovery__terse__ALL__r03 
+  [6/40] ok    haiku-5.5__discovery__terse__ALL__r04 
+  [7/40] ok    haiku-5.5__discovery__normal__ALL__r03 
+  [8/40] ok    haiku-5.5__discovery__terse__ALL__r05 
+  [9/40] ok    haiku-5.5__discovery__normal__ALL__r04 
+  [10/40] ok    haiku-5.5__discovery__normal__ALL__r05 
+  [11/40] ok    haiku-5.5__discovery__terse__ALL__r06 
+  [12/40] ok    haiku-5.5__discovery__terse__ALL__r07 
+  [13/40] ok    haiku-5.5__discovery__normal__ALL__r06 
+  [14/40] ok    haiku-5.5__discovery__normal__ALL__r07 
+  [15/40] ok    haiku-5.5__discovery__terse__ALL__r08 
+  [16/40] ok    haiku-5.5__discovery__normal__ALL__r08 
+  [17/40] ok    haiku-5.5__discovery__terse__ALL__r09 
+  [18/40] ok    haiku-5.5__discovery__terse__ALL__r10 
+  [19/40] ok    haiku-5.5__discovery__normal__ALL__r09 
+  [20/40] ok    haiku-5.5__discovery__terse__ALL__r11 
+  [21/40] ok    haiku-5.5__discovery__terse__ALL__r12 
+  [22/40] ok    haiku-5.5__discovery__normal__ALL__r11 
+  [23/40] ok    haiku-5.5__discovery__normal__ALL__r10 
+  [24/40] ok    haiku-5.5__discovery__normal__ALL__r12 
+  [25/40] ok    haiku-5.5__discovery__terse__ALL__r13 
+  [26/40] ok    haiku-5.5__discovery__normal__ALL__r13 
+  [27/40] ok    haiku-5.5__discovery__terse__ALL__r14 
+  [28/40] ok    haiku-5.5__discovery__normal__ALL__r14 
+  [29/40] ok    haiku-5.5__discovery__terse__ALL__r15 
+  [30/40] ok    haiku-5.5__discovery__normal__ALL__r15 
+  [31/40] ok    haiku-5.5__discovery__terse__ALL__r16 
+  [32/40] ok    haiku-5.5__discovery__normal__ALL__r16 
+  [33/40] ok    haiku-5.5__discovery__terse__ALL__r17 
+  [34/40] ok    haiku-5.5__discovery__normal__ALL__r17 
+  [35/40] ok    haiku-5.5__discovery__terse__ALL__r18 
+  [36/40] ok    haiku-5.5__discovery__terse__ALL__r19 
+  [37/40] ok    haiku-5.5__discovery__normal__ALL__r18 
+  [38/40] ok    haiku-5.5__discovery__normal__ALL__r19 
+  [39/40] ok    haiku-5.5__discovery__terse__ALL__r20 
+  [40/40] ok    haiku-5.5__discovery__normal__ALL__r20 
+done: 40 ok, 0 errors
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 40 -> 30 jobs
+30 jobs, 0 already done, 30 to run (30 API calls)
+  fable-5.1              10 calls  ~6,040 input tokens (excl. multi-turn history)
+  opus-5.5               20 calls  ~12,080 input tokens (excl. multi-turn history)
+  [1/30] ok    opus-5.5__direct__discovery__r01 
+  [2/30] ok    opus-5.5__direct__discovery__r02 
+  [3/30] ok    fable-5.1__direct__discovery__r01 
+  [4/30] ok    fable-5.1__direct__discovery__r02 
+  [5/30] ok    opus-5.5__direct__discovery__r03 
+  [6/30] ok    opus-5.5__direct__discovery__r04 
+  [7/30] ok    fable-5.1__direct__discovery__r03 
+  [8/30] ok    fable-5.1__direct__discovery__r04 
+  [9/30] ok    opus-5.5__direct__discovery__r05 
+  [10/30] ok    opus-5.5__direct__discovery__r06 
+  [11/30] ok    fable-5.1__direct__discovery__r05 
+  [12/30] ok    opus-5.5__direct__discovery__r07 
+  [13/30] ok    fable-5.1__direct__discovery__r06 
+  [14/30] ok    opus-5.5__direct__discovery__r08 
+  [15/30] ok    fable-5.1__direct__discovery__r08 
+  [16/30] ok    fable-5.1__direct__discovery__r07 
+  [17/30] ok    opus-5.5__direct__discovery__r09 
+  [18/30] ok    fable-5.1__direct__discovery__r09 
+  [19/30] ok    opus-5.5__direct__discovery__r10 
+  [20/30] ok    opus-5.5__direct__discovery__r11 
+  [21/30] ok    fable-5.1__direct__discovery__r10 
+  [22/30] ok    opus-5.5__direct__discovery__r12 
+  [23/30] ok    opus-5.5__direct__discovery__r13 
+  [24/30] ok    opus-5.5__direct__discovery__r14 
+  [25/30] ok    opus-5.5__direct__discovery__r15 
+  [26/30] ok    opus-5.5__direct__discovery__r16 
+  [27/30] ok    opus-5.5__direct__discovery__r17 
+  [28/30] ok    opus-5.5__direct__discovery__r18 
+  [29/30] ok    opus-5.5__direct__discovery__r19 
+  [30/30] ok    opus-5.5__direct__discovery__r20 
+done: 30 ok, 0 errors
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 80 -> 60 jobs
+60 jobs, 0 already done, 60 to run (60 API calls)
+  fable-5.1              20 calls  ~13,184 input tokens (excl. multi-turn history)
+  opus-5.5               40 calls  ~25,904 input tokens (excl. multi-turn history)
+  [1/60] ok    opus-5.5__haiku-5.5__discovery__terse__r01 
+  [2/60] ok    opus-5.5__haiku-5.5__discovery__normal__r01 
+  [3/60] ok    fable-5.1__haiku-5.5__discovery__terse__r01 
+  [4/60] ok    fable-5.1__haiku-5.5__discovery__normal__r01 
+  [5/60] ok    opus-5.5__haiku-5.5__discovery__terse__r02 
+  [6/60] ok    opus-5.5__haiku-5.5__discovery__normal__r02 
+  [7/60] ok    fable-5.1__haiku-5.5__discovery__terse__r02 
+  [8/60] ok    fable-5.1__haiku-5.5__discovery__normal__r02 
+  [9/60] ok    opus-5.5__haiku-5.5__discovery__normal__r03 
+  [10/60] ok    opus-5.5__haiku-5.5__discovery__terse__r03 
+  [11/60] ok    fable-5.1__haiku-5.5__discovery__terse__r03 
+  [12/60] ok    fable-5.1__haiku-5.5__discovery__normal__r03 
+  [13/60] ok    opus-5.5__haiku-5.5__discovery__normal__r04 
+  [14/60] ok    opus-5.5__haiku-5.5__discovery__terse__r04 
+  [15/60] ok    fable-5.1__haiku-5.5__discovery__terse__r04 
+  [16/60] ok    fable-5.1__haiku-5.5__discovery__normal__r04 
+  [17/60] ok    opus-5.5__haiku-5.5__discovery__normal__r05 
+  [18/60] ok    opus-5.5__haiku-5.5__discovery__terse__r05 
+  [19/60] ok    fable-5.1__haiku-5.5__discovery__normal__r05 
+  [20/60] ok    opus-5.5__haiku-5.5__discovery__normal__r06 
+  [21/60] ok    fable-5.1__haiku-5.5__discovery__terse__r05 
+  [22/60] ok    opus-5.5__haiku-5.5__discovery__terse__r06 
+  [23/60] ok    fable-5.1__haiku-5.5__discovery__normal__r06 
+  [24/60] ok    fable-5.1__haiku-5.5__discovery__terse__r06 
+  [25/60] ok    opus-5.5__haiku-5.5__discovery__normal__r07 
+  [26/60] ok    opus-5.5__haiku-5.5__discovery__terse__r07 
+  [27/60] ok    fable-5.1__haiku-5.5__discovery__normal__r07 
+  [28/60] ok    fable-5.1__haiku-5.5__discovery__terse__r07 
+  [29/60] ok    opus-5.5__haiku-5.5__discovery__normal__r08 
+  [30/60] ok    opus-5.5__haiku-5.5__discovery__terse__r08 
+  [31/60] ok    fable-5.1__haiku-5.5__discovery__terse__r08 
+  [32/60] ok    fable-5.1__haiku-5.5__discovery__normal__r08 
+  [33/60] ok    opus-5.5__haiku-5.5__discovery__normal__r09 
+  [34/60] ok    opus-5.5__haiku-5.5__discovery__terse__r09 
+  [35/60] ok    fable-5.1__haiku-5.5__discovery__terse__r09 
+  [36/60] ok    fable-5.1__haiku-5.5__discovery__normal__r09 
+  [37/60] ok    opus-5.5__haiku-5.5__discovery__normal__r10 
+  [38/60] ok    opus-5.5__haiku-5.5__discovery__terse__r10 
+  [39/60] ok    fable-5.1__haiku-5.5__discovery__normal__r10 
+  [40/60] ok    fable-5.1__haiku-5.5__discovery__terse__r10 
+  [41/60] ok    opus-5.5__haiku-5.5__discovery__normal__r11 
+  [42/60] ok    opus-5.5__haiku-5.5__discovery__terse__r11 
+  [43/60] ok    opus-5.5__haiku-5.5__discovery__normal__r12 
+  [44/60] ok    opus-5.5__haiku-5.5__discovery__terse__r12 
+  [45/60] ok    opus-5.5__haiku-5.5__discovery__normal__r13 
+  [46/60] ok    opus-5.5__haiku-5.5__discovery__terse__r13 
+  [47/60] ok    opus-5.5__haiku-5.5__discovery__normal__r14 
+  [48/60] ok    opus-5.5__haiku-5.5__discovery__terse__r14 
+  [49/60] ok    opus-5.5__haiku-5.5__discovery__terse__r15 
+  [50/60] ok    opus-5.5__haiku-5.5__discovery__normal__r15 
+  [51/60] ok    opus-5.5__haiku-5.5__discovery__normal__r16 
+  [52/60] ok    opus-5.5__haiku-5.5__discovery__terse__r16 
+  [53/60] ok    opus-5.5__haiku-5.5__discovery__terse__r17 
+  [54/60] ok    opus-5.5__haiku-5.5__discovery__normal__r17 
+  [55/60] ok    opus-5.5__haiku-5.5__discovery__normal__r18 
+  [56/60] ok    opus-5.5__haiku-5.5__discovery__terse__r18 
+  [57/60] ok    opus-5.5__haiku-5.5__discovery__terse__r19 
+  [58/60] ok    opus-5.5__haiku-5.5__discovery__normal__r19 
+  [59/60] ok    opus-5.5__haiku-5.5__discovery__terse__r20 
+  [60/60] ok    opus-5.5__haiku-5.5__discovery__normal__r20 
+done: 60 ok, 0 errors
+
+## stderr
+

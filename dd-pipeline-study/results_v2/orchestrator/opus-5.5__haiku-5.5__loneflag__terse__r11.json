@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r11",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 11,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r11"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:02:35+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- Covenant breached 31 March (2.9x); bank not notified.\n- Arlen (41% revenue) may exit post change-of-control.\n- Arlen is 41% of AUD 18.4m revenue.\n- Possible churn link to January price change; unconfirmed.\n\nOverall: the undisclosed covenant breach and Arlen's change-of-control exit right need urgent board attention.\n\nWrite the DD summary now.",
+      "text": "# DD Summary: Key Findings, Red Flags & Recommendation\n\n**Basis:** Parser subagent findings only. Nothing below has been checked against the source documents. Items marked *[verify]* need primary-document confirmation before they go into any IC memo.\n\n## Key Findings\n\n| # | Finding | Status |\n|---|---|---|\n| 1 | **Financial covenant breached at 31 March** (metric at 2.9x). **Lender not notified.** | Reported *[verify: covenant definition, threshold, facility agreement clause]* |\n| 2 | **Customer concentration:** Arlen = **41% of AUD 18.4m revenue (~AUD 7.5m)** | Reported *[verify: FY period, revenue basis]* |\n| 3 | **Arlen holds a change-of-control exit right.** Our acquisition would likely trigger it. | Reported *[verify: contract wording, notice period, termination fees]* |\n| 4 | Possible **customer churn linked to the January price change** | **Unconfirmed.** No causation established |\n\n## Red Flags\n\n1. **Undisclosed covenant breach (Critical).** A breach carries default and acceleration risk on its own. The failure to notify the lender is worse. It may be a separate breach of information covenants, and it raises questions about management candour and governance. We also need to know whether this was disclosed to *us* by management or found independently.\n2. **Arlen change-of-control risk (Critical).** Closing the deal could trigger the loss of ~41% of revenue. That would undermine the valuation, debt serviceability, and likely the covenant position further.\n3. **Compounding effect.** Points 1 and 2 interact. Losing Arlen after closing could turn a technical breach into a liquidity problem.\n4. **Pricing and churn (Moderate, unverified).** If the January price change is driving churn, the revenue base may be weaker than the headline AUD 18.4m suggests.\n\n## Gaps in Current Findings\n\n- Covenant threshold, test frequency, and whether a waiver has been sought\n- Lender identity, facility size, and cross-default exposure\n- Arlen contract term, renewal date, and any signals of its intent\n- Churn data (volume, timing, segments) before and after January\n- Whether any other material contracts carry change-of-control clauses\n\n## Recommendation\n\n**Do not proceed on current terms. Pause and proceed only if the following conditions are met.**\n\nBefore advancing:\n1. **Lender:** Require the target to notify the bank and obtain a formal waiver or amendment as a condition precedent.\n2. **Arlen:** Get a written change-of-control consent or waiver from Arlen, or price the risk in through a valuation adjustment, earn-out, escrow, or specific indemnity.\n3. **Verification:** Have the deal team or counsel confirm all four findings against the source documents. Run a focused churn analysis on the pricing question.\n4. **Governance:** Escalate the non-disclosure issue to the board. Consider extending warranty and indemnity protection on financial and lender disclosures.\n\nIf the Arlen consent and the lender waiver cannot be obtained, the risk profile likely does not support proceeding.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "38d6075c-b6b4-408d-bd53-531667679b0c",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1194,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 832
+      },
+      "latency_s": 14.268,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# DD Summary: Key Findings, Red Flags & Recommendation\n\n**Basis:** Parser subagent findings only. Nothing below has been checked against the source documents. Items marked *[verify]* need primary-document confirmation before they go into any IC memo.\n\n## Key Findings\n\n| # | Finding | Status |\n|---|---|---|\n| 1 | **Financial covenant breached at 31 March** (metric at 2.9x). **Lender not notified.** | Reported *[verify: covenant definition, threshold, facility agreement clause]* |\n| 2 | **Customer concentration:** Arlen = **41% of AUD 18.4m revenue (~AUD 7.5m)** | Reported *[verify: FY period, revenue basis]* |\n| 3 | **Arlen holds a change-of-control exit right.** Our acquisition would likely trigger it. | Reported *[verify: contract wording, notice period, termination fees]* |\n| 4 | Possible **customer churn linked to the January price change** | **Unconfirmed.** No causation established |\n\n## Red Flags\n\n1. **Undisclosed covenant breach (Critical).** A breach carries default and acceleration risk on its own. The failure to notify the lender is worse. It may be a separate breach of information covenants, and it raises questions about management candour and governance. We also need to know whether this was disclosed to *us* by management or found independently.\n2. **Arlen change-of-control risk (Critical).** Closing the deal could trigger the loss of ~41% of revenue. That would undermine the valuation, debt serviceability, and likely the covenant position further.\n3. **Compounding effect.** Points 1 and 2 interact. Losing Arlen after closing could turn a technical breach into a liquidity problem.\n4. **Pricing and churn (Moderate, unverified).** If the January price change is driving churn, the revenue base may be weaker than the headline AUD 18.4m suggests.\n\n## Gaps in Current Findings\n\n- Covenant threshold, test frequency, and whether a waiver has been sought\n- Lender identity, facility size, and cross-default exposure\n- Arlen contract term, renewal date, and any signals of its intent\n- Churn data (volume, timing, segments) before and after January\n- Whether any other material contracts carry change-of-control clauses\n\n## Recommendation\n\n**Do not proceed on current terms. Pause and proceed only if the following conditions are met.**\n\nBefore advancing:\n1. **Lender:** Require the target to notify the bank and obtain a formal waiver or amendment as a condition precedent.\n2. **Arlen:** Get a written change-of-control consent or waiver from Arlen, or price the risk in through a valuation adjustment, earn-out, escrow, or specific indemnity.\n3. **Verification:** Have the deal team or counsel confirm all four findings against the source documents. Run a focused churn analysis on the pricing question.\n4. **Governance:** Escalate the non-disclosure issue to the board. Consider extending warranty and indemnity protection on financial and lender disclosures.\n\nIf the Arlen consent and the lender waiver cannot be obtained, the risk profile likely does not support proceeding.",
+  "finished_at": "2026-11-05T22:02:50+00:00"
+}

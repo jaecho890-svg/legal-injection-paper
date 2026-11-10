@@ -1,0 +1,187 @@
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Brehm(1966)]{brehm1966}
+Jack~W. Brehm.
+\newblock \emph{A Theory of Psychological Reactance}.
+\newblock Academic Press, New York, 1966.
+
+\bibitem[Chen et~al.(2026)Chen, Yao, Chen, Papalexakis, and Wei]{chen2026every}
+Tiejin Chen, Huaiyuan Yao, Jia Chen, Evangelos~E. Papalexakis, and Hua Wei.
+\newblock Every response counts: Quantifying uncertainty of {LLM}-based
+  multi-agent systems through tensor decomposition.
+\newblock In \emph{Proceedings of the 64th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 16204--16218,
+  2026.
+\newblock \doi{10.18653/v1/2026.acl-long.737}.
+
+\bibitem[Cho et~al.(2025)Cho, Hoyle, and Hermstr{\"u}wer]{cho2025motivated}
+Eunjung Cho, Alexander Hoyle, and Yoan Hermstr{\"u}wer.
+\newblock Modeling motivated reasoning in law: Evaluating strategic role
+  conditioning in {LLM} summarization.
+\newblock \emph{arXiv preprint arXiv:2509.00529}, 2025.
+
+\bibitem[Cohen(1960)]{cohen1960}
+Jacob Cohen.
+\newblock A coefficient of agreement for nominal scales.
+\newblock \emph{Educational and Psychological Measurement}, 20\penalty0
+  (1):\penalty0 37--46, 1960.
+
+\bibitem[Collu et~al.(2025)Collu, Salviati, Confalonieri, Conti, and
+  Apruzzese]{collu2025misleading}
+Matteo~Gioele Collu, Umberto Salviati, Roberto Confalonieri, Mauro Conti, and
+  Giovanni Apruzzese.
+\newblock Misleading large language models used (or misused) in scientific
+  peer-reviewing via hidden prompt-injection attacks.
+\newblock \emph{arXiv preprint arXiv:2508.20863}, 2025.
+
+\bibitem[Dahl et~al.(2024)Dahl, Magesh, Suzgun, and Ho]{dahl2024fictions}
+Matthew Dahl, Varun Magesh, Mirac Suzgun, and Daniel~E. Ho.
+\newblock Large legal fictions: Profiling legal hallucinations in large
+  language models.
+\newblock \emph{Journal of Legal Analysis}, 16\penalty0 (1), 2024.
+\newblock arXiv:2401.01301.
+
+\bibitem[Greshake et~al.(2023)Greshake, Abdelnabi, Mishra, Endres, Holz, and
+  Fritz]{greshake2023}
+Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten
+  Holz, and Mario Fritz.
+\newblock Not what you've signed up for: Compromising real-world
+  {LLM}-integrated applications with indirect prompt injection.
+\newblock In \emph{Proceedings of the 16th ACM Workshop on Artificial
+  Intelligence and Security (AISec)}, 2023.
+\newblock arXiv:2302.12173.
+
+\bibitem[Guha et~al.(2023)Guha, Nyarko, Ho, R{\'e}, et~al.]{guha2023legalbench}
+Neel Guha, Julian Nyarko, Daniel~E. Ho, Christopher R{\'e}, et~al.
+\newblock {LegalBench}: A collaboratively built benchmark for measuring legal
+  reasoning in large language models.
+\newblock In \emph{Advances in Neural Information Processing Systems (Datasets
+  and Benchmarks Track)}, 2023.
+\newblock arXiv:2308.11462.
+
+\bibitem[Heimann et~al.(2026)Heimann, Taylor, and
+  Jacob]{heimann2026notwithstanding}
+Mark Heimann, Katherine Taylor, and Bruno Jacob.
+\newblock Notwithstanding anything to the contrary, ignore all instructions:
+  Measuring prompt injection guards on legal contract review attacks.
+\newblock \emph{arXiv preprint arXiv:2611.08834}, 2026.
+
+\bibitem[Hogarth and Einhorn(1992)]{hogarth1992order}
+Robin~M. Hogarth and Hillel~J. Einhorn.
+\newblock Order effects in belief updating: The belief-adjustment model.
+\newblock \emph{Cognitive Psychology}, 24\penalty0 (1):\penalty0 1--55, 1992.
+
+\bibitem[Holm(1979)]{holm1979}
+Sture Holm.
+\newblock A simple sequentially rejective multiple test procedure.
+\newblock \emph{Scandinavian Journal of Statistics}, 6\penalty0 (2):\penalty0
+  65--70, 1979.
+
+\bibitem[Lin et~al.(2026)Lin, Lan, Guan, Jing, Fan, Gregg, and
+  Botterweck]{lin2026uncertainty}
+Moule Lin, Qizhen Lan, Shuhao Guan, Weipeng Jing, Jiexin Fan, David Gregg, and
+  Goetz Botterweck.
+\newblock Uncertainty quantification for {LLM} agents: A taxonomy, an
+  evaluation protocol, and an empirical study.
+\newblock \emph{arXiv preprint arXiv:2609.07395}, 2026.
+
+\bibitem[Liu et~al.(2024)Liu, Lin, Hewitt, Paranjape, Bevilacqua, Petroni, and
+  Liang]{liu2024lost}
+Nelson~F. Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua,
+  Fabio Petroni, and Percy Liang.
+\newblock Lost in the middle: How language models use long contexts.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  12, 2024.
+\newblock arXiv:2307.03172.
+
+\bibitem[Liu et~al.(2023)Liu, Deng, Li, Wang, Wang, Wang, Zhang, Liu, Wang,
+  Zheng, Zhang, and Liu]{liu2023injection}
+Yi~Liu, Gelei Deng, Yuekang Li, Kailong Wang, Zihao Wang, Xiaofeng Wang,
+  Tianwei Zhang, Yepang Liu, Haoyu Wang, Yan Zheng, Leo~Yu Zhang, and Yang Liu.
+\newblock Prompt injection attack against {LLM}-integrated applications.
+\newblock \emph{arXiv preprint arXiv:2306.05499}, 2023.
+
+\bibitem[Magesh et~al.(2024)Magesh, Surani, Dahl, Suzgun, Manning, and
+  Ho]{magesh2024hallucination}
+Varun Magesh, Faiz Surani, Matthew Dahl, Mirac Suzgun, Christopher~D. Manning,
+  and Daniel~E. Ho.
+\newblock {Hallucination-Free? Assessing} the reliability of leading {AI} legal
+  research tools.
+\newblock \emph{arXiv preprint arXiv:2405.20362}, 2024.
+
+\bibitem[Peng et~al.(2026)Peng, Wang, Schoeffler, Hong, Suffoletto, Kim,
+  Preiksaitis, and Rose]{peng2026sycoeval}
+Dongshen Peng, Yi~Wang, Austin Schoeffler, Sun-ha Hong, Brian Suffoletto, David
+  Kim, Carl Preiksaitis, and Christian Rose.
+\newblock {SycoEval-EM}: Sycophancy evaluation of large language models in
+  simulated clinical encounters for emergency care.
+\newblock \emph{arXiv preprint arXiv:2601.16529}, 2026.
+
+\bibitem[Perez et~al.(2022)Perez, Ringer, Luko{\v{s}}i{\=u}t{\.e},
+  et~al.]{perez2022discovering}
+Ethan Perez, Sam Ringer, Kamil{\.e} Luko{\v{s}}i{\=u}t{\.e}, et~al.
+\newblock Discovering language model behaviors with model-written evaluations.
+\newblock \emph{arXiv preprint arXiv:2212.09251}, 2022.
+
+\bibitem[Perez and Ribeiro(2022)]{perez2022ignore}
+F{\'a}bio Perez and Ian Ribeiro.
+\newblock Ignore previous prompt: Attack techniques for language models.
+\newblock \emph{arXiv preprint arXiv:2211.09527}, 2022.
+
+\bibitem[Ping et~al.(2026)Ping, {\c{C}}ar{\i}k, Wohn, Ding, Wang, and
+  Rho]{ping2026medical}
+Kaike Ping, Buse {\c{C}}ar{\i}k, Caleb Wohn, Xiaohan Ding, Tongshuai Wang, and
+  Eugenia Rho.
+\newblock Why {LLMs} give in: Conversational factors and reasoning behind
+  medical sycophancy.
+\newblock \emph{arXiv preprint arXiv:2608.01017}, 2026.
+
+\bibitem[Sharma et~al.(2023)Sharma, Tong, Korbak, Duvenaud, Askell, Bowman,
+  et~al.]{sharma2023sycophancy}
+Mrinank Sharma, Meg Tong, Tomasz Korbak, David Duvenaud, Amanda Askell,
+  Samuel~R. Bowman, et~al.
+\newblock Towards understanding sycophancy in language models.
+\newblock \emph{arXiv preprint arXiv:2310.13548}, 2023.
+
+\bibitem[Suttle and Lillis(2026)]{suttle2026persuadability}
+Oisin Suttle and David Lillis.
+\newblock Assessing and explaining the persuadability of large language models
+  as legal decision tools.
+\newblock \emph{arXiv preprint arXiv:2604.26233}, 2026.
+
+\bibitem[Tennant et~al.(2026)Tennant, Henke, Keshmirian, Shanahan, Rieser, Lum,
+  Levine, and Haas]{tennant2026normative}
+Elizaveta Tennant, Benjamin Henke, Anita Keshmirian, Murray Shanahan, Verena
+  Rieser, Kristian Lum, Sydney Levine, and Julia Haas.
+\newblock Normative robustness as a frontier for non-verifiable reasoning in
+  {LLMs}.
+\newblock \emph{arXiv preprint arXiv:2606.12731}, 2026.
+
+\bibitem[Wang et~al.(2023)Wang, Li, Chen, Cai, Zhu, Lin, Cao, Liu, Liu, and
+  Sui]{wang2023fair}
+Peiyi Wang, Lei Li, Liang Chen, Zefan Cai, Dawei Zhu, Binghuai Lin, Yunbo Cao,
+  Qi~Liu, Tianyu Liu, and Zhifang Sui.
+\newblock Large language models are not fair evaluators.
+\newblock \emph{arXiv preprint arXiv:2305.17926}, 2023.
+
+\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang,
+  et~al.]{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao
+  Zhuang, et~al.
+\newblock Judging {LLM}-as-a-judge with {MT-Bench} and {Chatbot Arena}.
+\newblock In \emph{Advances in Neural Information Processing Systems (Datasets
+  and Benchmarks Track)}, 2023.
+\newblock arXiv:2306.05685.
+
+\bibitem[Zhu et~al.(2025)Zhu, Xiong, Ma, Lu, Liu, and Li]{zhu2025reviewer}
+Changjia Zhu, Junjie Xiong, Renkai Ma, Zhicong Lu, Yao Liu, and Lingyao Li.
+\newblock When your reviewer is an {LLM}: Biases, divergence, and prompt
+  injection risks in peer review.
+\newblock \emph{arXiv preprint arXiv:2509.09912}, 2025.
+
+\end{thebibliography}

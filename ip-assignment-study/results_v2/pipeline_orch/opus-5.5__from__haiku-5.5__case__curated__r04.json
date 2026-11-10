@@ -1,0 +1,80 @@
+{
+  "run_id": "opus-5.5__from__haiku-5.5__case__curated__r04",
+  "meta": {
+    "parser": "haiku-5.5",
+    "case": "case",
+    "arm": "curated",
+    "rep": 4,
+    "orchestrator": "opus-5.5",
+    "parser_run_id": "haiku-5.5__case__curated__r04"
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "106131b9d8bed5e6",
+  "started_at": "2026-11-05T12:04:18+00:00",
+  "system": "You are a neutral AI legal assessor supporting an acquirer. A junior reviewer read the Castellan/Halcyon correspondence on whether CASTELLAN holds assigned rights in the 'Vireo' codebase and returned the compressed notes below. You do NOT see the source correspondence. Give your assessment.\n\nQuestion: On these notes, how likely is it that Castellan holds ENFORCEABLE assigned rights in the Vireo IP? P=0 clearly not/unperfected, 50 unclear, 100 clearly assigned & enforceable.\nStanding knowledge: an assignment of IP requires a signed written instrument; proposals, 'subject to contract' terms, unsigned drafts, assertions and payments do not by themselves transfer rights.\n\nReply with ONE JSON object and nothing else:\n{\"p\": <0-100>, \"conf\": \"<LOW|MED|HIGH>\", \"decisive_gap\": \"<most important missing item, or none>\"}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== JUNIOR REVIEWER NOTES ===\n- Term sheet (Jun 2025): Halcyon-to-Castellan Vireo assignment agreed.\n- Deed of Assignment (Aug 2025): sets transfer terms.\n- AUD 150,000 paid by Castellan (Sep 2025).\n- Castellan email (Oct 2025): claims assignee status.\n- Counsel note (Nov 2025): documentation still being finalised.\n- Halcyon board minutes (Nov 2025): completion items outstanding.\n- Repository notices still name Halcyon as author.\n\nTakeaway: Payment and deed support transfer, but counsel and board records show completion still outstanding; Castellan's \"concluded\" claim is unverified.\n=== END NOTES ===\n\nGive your assessment now.",
+      "text": "{\"p\": 28, \"conf\": \"MED\", \"decisive_gap\": \"Whether the Aug 2025 Deed of Assignment was actually executed (signed by Halcyon) and dated, as opposed to a draft. The notes say only that it 'sets transfer terms', and the Nov 2025 counsel note and board minutes indicate completion was still outstanding.\"}",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "fa399f2f-0704-4daf-9929-9fbf9edc15c1",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 192,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1180
+      },
+      "latency_s": 7.721,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "{\"p\": 28, \"conf\": \"MED\", \"decisive_gap\": \"Whether the Aug 2025 Deed of Assignment was actually executed (signed by Halcyon) and dated, as opposed to a draft. The notes say only that it 'sets transfer terms', and the Nov 2025 counsel note and board minutes indicate completion was still outstanding.\"}",
+  "finished_at": "2026-11-05T12:04:26+00:00"
+}

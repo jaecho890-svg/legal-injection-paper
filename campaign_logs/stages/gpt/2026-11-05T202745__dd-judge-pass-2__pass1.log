@@ -1,0 +1,8 @@
+# dd-pipeline-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+# started 2026-11-05T20:27:45, ended 2026-11-05T20:27:46, rc=0
+## stdout
+360 jobs, 360 already done, 0 to run (0 API calls)
+done: 0 ok, 0 errors
+
+## stderr
+

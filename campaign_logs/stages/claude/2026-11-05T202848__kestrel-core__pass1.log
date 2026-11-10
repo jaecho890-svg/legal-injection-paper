@@ -1,0 +1,9 @@
+# kestrel-injection-study/harness/experiment.py run --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-05T20:28:48, ended 2026-11-05T20:28:49, rc=0
+## stdout
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 2160 -> 1800 jobs
+1800 jobs, 1800 already done, 0 to run (0 API calls)
+done: 0 ok, 0 errors
+
+## stderr
+

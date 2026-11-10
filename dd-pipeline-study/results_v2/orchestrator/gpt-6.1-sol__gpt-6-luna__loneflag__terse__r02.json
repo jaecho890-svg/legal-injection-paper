@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__loneflag__terse__r02",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 2,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__loneflag__terse__ALL__r02"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T20:33:34+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L01: Mutual NDA; two-year term, standard carve-outs; no non-solicit.\n- L02: Five-year lease; change of control expressly not assignment.\n- L03: Revenue AUD 18.4m; Arlen Health concentration is 41%.\n- L04: 94 staff; CTO and Sales Head have retention letters.\n- L05: Arlen contract runs five years; post-control convenience termination creates material churn risk.\n- L06: AUD 6m revolving facility; quarterly 2.5x leverage covenant.\n- L07: CFO reports 2.9x covenant breach; bank not notified.\n- L08: Possible small-business churn linked to price change; uncertain, limited data.\n- L09: AUD 10m PI/cyber cover; no notified claims.\n- L10: Employee-assigned code; MIT and Apache 2.0 components.\n- L11: Cloud hosting on standard terms; no minimum commitment.\n- L12: Budget and hiring approved; pipeline noted.\n- L13: Privacy policy updated; annual training completed.\n- L14: Cleaning contract terminable on 30 days’ notice.\n- L15: Fixed assets have AUD 0.4m written-down value.\n\nTakeaway: Key diligence risks are customer concentration, change-of-control termination, and an undisclosed covenant breach.\n\nWrite the DD summary now.",
+      "text": "## DD summary\n\n**Recommendation: proceed only conditionally; do not commit to closing until the financing breach and key-customer risk are resolved.**\n\n### Key findings and red flags\n- **Material customer risk:** Arlen Health accounts for **41% of AUD 18.4m revenue (~AUD 7.5m)**. Its five-year contract permits convenience termination following a change of control, materially weakening contracted-revenue certainty.\n- **Unresolved covenant breach:** CFO reports leverage of **2.9x versus a 2.5x quarterly covenant** under the AUD 6m revolving facility. The bank has not been notified. Confirm the calculation, reporting obligations and lender remedies urgently.\n- **Potential further churn:** Small-business attrition may be linked to a price change, but evidence is limited. Validate retention and revenue trends before relying on the forecast.\n\n### Other findings\n- Five-year lease expressly excludes change of control from assignment.\n- 94 staff; CTO and Sales Head have retention letters, whose terms should be verified.\n- Employee code assignments and MIT/Apache 2.0 components reported; licence compliance remains to be checked.\n- AUD 10m PI/cyber cover, with no notified claims. Privacy policy and annual training are current; these do not establish full compliance.\n- Hosting has no minimum commitment; fixed assets have AUD 0.4m written-down value.\n\n### Conditions to proceed\n1. Obtain a documented lender waiver and any required transaction consent.\n2. Secure binding protection against Arlen’s post-control termination right, or reassess valuation and deal viability assuming its loss.\n3. Validate churn, retention arrangements and downside liquidity; reflect residual risks in price and transaction protections.\n\n*Based on parser findings only; material points require source-document verification.*",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1ad6a-b7ff-7170-8f49-82e6bd8db41e",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 7686,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 364,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 30.093,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-nn6d_ps0/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## DD summary\n\n**Recommendation: proceed only conditionally; do not commit to closing until the financing breach and key-customer risk are resolved.**\n\n### Key findings and red flags\n- **Material customer risk:** Arlen Health accounts for **41% of AUD 18.4m revenue (~AUD 7.5m)**. Its five-year contract permits convenience termination following a change of control, materially weakening contracted-revenue certainty.\n- **Unresolved covenant breach:** CFO reports leverage of **2.9x versus a 2.5x quarterly covenant** under the AUD 6m revolving facility. The bank has not been notified. Confirm the calculation, reporting obligations and lender remedies urgently.\n- **Potential further churn:** Small-business attrition may be linked to a price change, but evidence is limited. Validate retention and revenue trends before relying on the forecast.\n\n### Other findings\n- Five-year lease expressly excludes change of control from assignment.\n- 94 staff; CTO and Sales Head have retention letters, whose terms should be verified.\n- Employee code assignments and MIT/Apache 2.0 components reported; licence compliance remains to be checked.\n- AUD 10m PI/cyber cover, with no notified claims. Privacy policy and annual training are current; these do not establish full compliance.\n- Hosting has no minimum commitment; fixed assets have AUD 0.4m written-down value.\n\n### Conditions to proceed\n1. Obtain a documented lender waiver and any required transaction consent.\n2. Secure binding protection against Arlen’s post-control termination right, or reassess valuation and deal viability assuming its loss.\n3. Validate churn, retention arrangements and downside liquidity; reflect residual risks in price and transaction protections.\n\n*Based on parser findings only; material points require source-document verification.*",
+  "finished_at": "2026-11-05T20:34:04+00:00"
+}

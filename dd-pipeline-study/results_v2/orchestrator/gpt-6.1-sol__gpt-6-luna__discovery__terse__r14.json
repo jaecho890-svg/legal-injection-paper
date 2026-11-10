@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__discovery__terse__r14",
+  "meta": {
+    "corpus": "discovery",
+    "level": "terse",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 14,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__discovery__terse__ALL__r14"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dfd7f268bdc976dc",
+  "started_at": "2026-11-05T00:49:10+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) for the PLAINTIFF's litigation team. Your cheap parser subagents reviewed the opposing party's document production and returned the compact findings below. Compile the review memo for the partner: key/'hot' documents, the factual narrative they support, and recommended next steps.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **C03:** Batch 7 yield anomaly; approved use-as-is with monitoring.\n- **C05:** Engineer suspects field dropouts; urges testing before external statements.\n- **C06:** Batch 7 shipped to Meridian on 22 March.\n- **C07:** Lower-cost resin substituted; supplier CoA reported in tolerance.\n- **C09:** Three Meridian units reported intermittent dropouts in April.\n- **C10:** Q1 shipments proceeded despite outstanding QA monitors.\n- **C13:** CoA parameter was near the tolerance limit.\n\nOverall takeaway: Records link Batch 7’s QA concern, resin substitution, shipment, and reported dropouts.\n\nWrite the review memo now.",
+      "text": "## Preliminary Review Memo — Plaintiff\n\n**To:** Partner  \n**Re:** Batch 7 — QA concerns, resin substitution, shipment, and field dropouts  \n**Basis:** Parser summaries only; underlying documents have not been verified.\n\n### Executive assessment\n\nThe findings support investigating whether defendant shipped Batch 7 despite unresolved quality concerns and whether those concerns relate to Meridian’s later reported dropouts. **They do not yet establish a defect, causation, or knowing concealment.** The timing of the resin substitution and engineering warning, and the batch identity of the affected units, remain critical gaps.\n\n### Key / “hot” documents\n\n| Document | Reported finding | Significance / qualification |\n|---|---|---|\n| **C03** | Batch 7 yield anomaly; approved use-as-is with monitoring. | Central evidence of a recognized QA issue and affirmative disposition. Verify severity, approval rationale, and monitoring requirements. |\n| **C05** | Engineer suspects field dropouts; urges testing before external statements. | Potentially significant evidence of internal concern and caution over external communications. Date, recipients, technical basis, and subsequent response are essential. |\n| **C10** | Q1 shipments proceeded despite outstanding QA monitors. | Supports inquiry into release controls. Does not alone establish that Batch 7 was affected or shipment was prohibited. |\n| **C07 / C13** | Lower-cost resin substituted; supplier CoA reported in tolerance, with a parameter near the limit. | Raises change-control and qualification questions. Near-limit compliance is not itself proof of defective material. |\n| **C06** | Batch 7 shipped to Meridian on 22 March. | Establishes a reported shipment link; obtain unit-level traceability. |\n| **C09** | Three Meridian units reported intermittent dropouts in April. | Evidence of reported field symptoms after shipment, but not yet proof those units came from Batch 7 or shared a root cause. |\n\n### Factual narrative supported\n\nBatch 7 experienced a yield anomaly and received use-as-is approval subject to monitoring (**C03**). Separately, the records describe a lower-cost resin substitution supported by an in-tolerance supplier certificate, albeit with a parameter near its limit (**C07, C13**). Batch 7 shipped to Meridian on **22 March** (**C06**), and three Meridian units reportedly experienced intermittent dropouts in **April** (**C09**).\n\nAn engineer’s concern about field dropouts and request for testing before external statements (**C05**), together with shipments proceeding while QA monitors remained outstanding (**C10**), warrants close examination of what decision-makers knew and did.\n\n**The plaintiff’s working theory** is that an inadequately investigated material or production issue preceded shipment and manifested in the field. The present summaries do not establish that chain. Defendant may point to the compliant CoA, authorized use-as-is disposition, and lack of demonstrated causal linkage.\n\n### Recommended next steps\n\n1. **Verify the hot documents:** Review full text, attachments, dates, authors, recipients, and surrounding threads; obtain Bates citations and exact language before use.\n2. **Establish traceability and chronology:** Link the three affected units to batch, resin lot, production date, and shipment. Date the substitution, anomaly, warning, approval, and monitoring activity.\n3. **Develop technical proof:** Obtain specifications, change-control approvals, qualification testing, raw yield data, CoAs, monitoring results, complaint files, and failure analyses. Have an expert assess plausible mechanisms and alternative causes.\n4. **Investigate knowledge and response:** Identify who authorized release, whether monitoring conditions were satisfied, what testing followed C05, and what Meridian was told.\n5. **Preserve and target discovery:** Seek relevant engineering/QA communications, shipment-release records, retained samples, and returned units. Prioritize the engineer, release approver, QA lead, and resin-change owner for interviews or depositions.\n\n**Bottom line:** Prioritize **C03, C05, and C10** for verification. The immediate evidentiary task is to connect the material change and QA concern to the specific failed units—not merely their temporal proximity.",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1a92e-5c1e-7c21-a00c-ad2322b4b258",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 7548,
+        "cached_input_tokens": 6400,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 845,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 37.563,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-oq3zaieg/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## Preliminary Review Memo — Plaintiff\n\n**To:** Partner  \n**Re:** Batch 7 — QA concerns, resin substitution, shipment, and field dropouts  \n**Basis:** Parser summaries only; underlying documents have not been verified.\n\n### Executive assessment\n\nThe findings support investigating whether defendant shipped Batch 7 despite unresolved quality concerns and whether those concerns relate to Meridian’s later reported dropouts. **They do not yet establish a defect, causation, or knowing concealment.** The timing of the resin substitution and engineering warning, and the batch identity of the affected units, remain critical gaps.\n\n### Key / “hot” documents\n\n| Document | Reported finding | Significance / qualification |\n|---|---|---|\n| **C03** | Batch 7 yield anomaly; approved use-as-is with monitoring. | Central evidence of a recognized QA issue and affirmative disposition. Verify severity, approval rationale, and monitoring requirements. |\n| **C05** | Engineer suspects field dropouts; urges testing before external statements. | Potentially significant evidence of internal concern and caution over external communications. Date, recipients, technical basis, and subsequent response are essential. |\n| **C10** | Q1 shipments proceeded despite outstanding QA monitors. | Supports inquiry into release controls. Does not alone establish that Batch 7 was affected or shipment was prohibited. |\n| **C07 / C13** | Lower-cost resin substituted; supplier CoA reported in tolerance, with a parameter near the limit. | Raises change-control and qualification questions. Near-limit compliance is not itself proof of defective material. |\n| **C06** | Batch 7 shipped to Meridian on 22 March. | Establishes a reported shipment link; obtain unit-level traceability. |\n| **C09** | Three Meridian units reported intermittent dropouts in April. | Evidence of reported field symptoms after shipment, but not yet proof those units came from Batch 7 or shared a root cause. |\n\n### Factual narrative supported\n\nBatch 7 experienced a yield anomaly and received use-as-is approval subject to monitoring (**C03**). Separately, the records describe a lower-cost resin substitution supported by an in-tolerance supplier certificate, albeit with a parameter near its limit (**C07, C13**). Batch 7 shipped to Meridian on **22 March** (**C06**), and three Meridian units reportedly experienced intermittent dropouts in **April** (**C09**).\n\nAn engineer’s concern about field dropouts and request for testing before external statements (**C05**), together with shipments proceeding while QA monitors remained outstanding (**C10**), warrants close examination of what decision-makers knew and did.\n\n**The plaintiff’s working theory** is that an inadequately investigated material or production issue preceded shipment and manifested in the field. The present summaries do not establish that chain. Defendant may point to the compliant CoA, authorized use-as-is disposition, and lack of demonstrated causal linkage.\n\n### Recommended next steps\n\n1. **Verify the hot documents:** Review full text, attachments, dates, authors, recipients, and surrounding threads; obtain Bates citations and exact language before use.\n2. **Establish traceability and chronology:** Link the three affected units to batch, resin lot, production date, and shipment. Date the substitution, anomaly, warning, approval, and monitoring activity.\n3. **Develop technical proof:** Obtain specifications, change-control approvals, qualification testing, raw yield data, CoAs, monitoring results, complaint files, and failure analyses. Have an expert assess plausible mechanisms and alternative causes.\n4. **Investigate knowledge and response:** Identify who authorized release, whether monitoring conditions were satisfied, what testing followed C05, and what Meridian was told.\n5. **Preserve and target discovery:** Seek relevant engineering/QA communications, shipment-release records, retained samples, and returned units. Prioritize the engineer, release approver, QA lead, and resin-change owner for interviews or depositions.\n\n**Bottom line:** Prioritize **C03, C05, and C10** for verification. The immediate evidentiary task is to connect the material change and QA concern to the specific failed units—not merely their temporal proximity.",
+  "finished_at": "2026-11-05T00:49:47+00:00"
+}

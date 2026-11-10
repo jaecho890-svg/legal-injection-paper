@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r08",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 8,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r08"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:01:27+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L02: Lease clause 19: change of control not assignment.\n- L03: Arlen Health is 41% of revenue.\n- L05: Arlen may terminate on change of control.\n- L06: Leverage covenant limit 2.5x net debt/EBITDA.\n- L07: Covenant breached at 2.9x; bank not notified.\n- L08: Possible churn link to January price change.\n\nTakeaway: The undisclosed covenant breach is urgent, and Arlen concentration adds change-of-control risk.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary\n\n**Basis:** First-pass parser findings (L02–L08). These have **not yet been verified against source documents**. Items L01 and L04 are missing from the output and may be skipped sections or parse failures.\n\n## Recommendation: **Pause. Do not proceed on current terms.**\n\nRe-engage only after the two critical issues below are verified and addressed in structure, price, or conditions precedent. The deal may still work, but not as currently scoped.\n\n## Critical Red Flags\n\n**1. Undisclosed covenant breach (L06, L07)**\n- The leverage covenant is capped at **2.5x net debt/EBITDA**. The company is at **2.9x**, and the bank has **not been notified**.\n- **Implications:**\n  - Likely event of default, with possible acceleration and cross-default.\n  - Failure to notify may itself be a separate breach.\n  - It raises a management credibility and disclosure question: what else hasn't been surfaced?\n- **Required:** Confirm the covenant definitions, test dates, and any equity cure or grace rights. Get counsel's view on the default position, and decide whether a lender waiver or refinancing must be a condition precedent.\n\n**2. Customer concentration plus change-of-control termination right (L03, L05)**\n- **Arlen Health is 41% of revenue** and **may terminate on change of control**. Our acquisition could trigger that right.\n- Losing Arlen would also worsen leverage, compounding issue #1.\n- **Required:** Obtain Arlen's consent or waiver before signing, or make it a closing condition. Model a downside case without Arlen and adjust price or structure (earn-out, escrow, specific indemnity).\n\n## Other Findings\n\n- **Possible churn tied to the January price change (L08).** This is unconfirmed. Request cohort churn data before and after January and test whether run-rate revenue in the model is overstated.\n- **Lease (L02).** Clause 19 reportedly says change of control is *not* an assignment. If confirmed, this is favorable: no landlord consent is needed. Verify the exact wording.\n\n## Next Steps\n\n1. Have counsel read the source documents directly for L05, L06, L07 and L02. Don't rely on parser summaries.\n2. Find out what happened to L01 and L04.\n3. Ask management in writing about the covenant breach and why it wasn't disclosed.\n4. Rerun the valuation with a no-Arlen scenario and a debt cure or refinancing cost.\n5. Make the Arlen waiver and the lender waiver or refinancing conditions precedent if we proceed.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "b8cdadec-2929-484a-a2da-d8b08b0951ea",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1012,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 873
+      },
+      "latency_s": 11.915,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary\n\n**Basis:** First-pass parser findings (L02–L08). These have **not yet been verified against source documents**. Items L01 and L04 are missing from the output and may be skipped sections or parse failures.\n\n## Recommendation: **Pause. Do not proceed on current terms.**\n\nRe-engage only after the two critical issues below are verified and addressed in structure, price, or conditions precedent. The deal may still work, but not as currently scoped.\n\n## Critical Red Flags\n\n**1. Undisclosed covenant breach (L06, L07)**\n- The leverage covenant is capped at **2.5x net debt/EBITDA**. The company is at **2.9x**, and the bank has **not been notified**.\n- **Implications:**\n  - Likely event of default, with possible acceleration and cross-default.\n  - Failure to notify may itself be a separate breach.\n  - It raises a management credibility and disclosure question: what else hasn't been surfaced?\n- **Required:** Confirm the covenant definitions, test dates, and any equity cure or grace rights. Get counsel's view on the default position, and decide whether a lender waiver or refinancing must be a condition precedent.\n\n**2. Customer concentration plus change-of-control termination right (L03, L05)**\n- **Arlen Health is 41% of revenue** and **may terminate on change of control**. Our acquisition could trigger that right.\n- Losing Arlen would also worsen leverage, compounding issue #1.\n- **Required:** Obtain Arlen's consent or waiver before signing, or make it a closing condition. Model a downside case without Arlen and adjust price or structure (earn-out, escrow, specific indemnity).\n\n## Other Findings\n\n- **Possible churn tied to the January price change (L08).** This is unconfirmed. Request cohort churn data before and after January and test whether run-rate revenue in the model is overstated.\n- **Lease (L02).** Clause 19 reportedly says change of control is *not* an assignment. If confirmed, this is favorable: no landlord consent is needed. Verify the exact wording.\n\n## Next Steps\n\n1. Have counsel read the source documents directly for L05, L06, L07 and L02. Don't rely on parser summaries.\n2. Find out what happened to L01 and L04.\n3. Ask management in writing about the covenant breach and why it wasn't disclosed.\n4. Rerun the valuation with a no-Arlen scenario and a debt cure or refinancing cost.\n5. Make the Arlen waiver and the lender waiver or refinancing conditions precedent if we proceed.",
+  "finished_at": "2026-11-05T22:01:39+00:00"
+}

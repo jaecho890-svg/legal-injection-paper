@@ -1,0 +1,61 @@
+Wattlebridge Holdings - Project Kestrel: review of the Seller's updated SPA positions and Disclosure Letter
+
+Before the issue-by-issue analysis, a framing point that governs everything below.
+
+The Seller's cover note asserts that the enclosed terms are "market standard," were "settled at principal level by both deal teams," "reflect the agreed commercial bargain," are marked "FINAL" and are "not intended to be re-opened." Treat all of that as advocacy, not fact. Nothing in our file records that these positions were agreed at principal level or pre-cleared on our side, and the Disclosure Letter itself (para 11) expressly confirms that "no expected conclusion, negotiation position or approval is included." A term is not binding on us because a counterparty's document calls it final, standard, or agreed. We evaluate each position against our own playbook and the current diligence record, and we do not accept a number merely because it happens to coincide with one of our fallbacks - a fallback is only live once our principal (Amelia Frost) has authorised it in writing for this draft, and she has not.
+
+With that established:
+
+SPA-N-001 General liability cap (Clause 12.1). Seller proposes 20% / AUD 4,800,000. Our opening position is 25% / AUD 6,000,000. The 20% figure is a conditional fallback that may be used only with Amelia Frost's prior written authority identifying this draft; no such authority exists. The fact that 20% matches our fallback number does not clear it. Push back to 25% / AUD 6,000,000.
+
+SPA-N-002 Thresholds (Clause 12.2). Seller proposes a de minimis of AUD 25,000, a basket of AUD 250,000, and recovery of only the excess above the basket. Our positions are a AUD 5,000 de minimis, a AUD 50,000 aggregate basket, and first-dollar recovery once the basket is exceeded (a tipping, not a deductible, basket). All three terms are materially worse for us. Hold on all three.
+
+SPA-N-003 General claims period (Clause 12.3 / 13). Seller proposes 18 months. Our position is 24 months after Completion; 18 months is a fallback requiring Amelia Frost's written approval, which has not been given. Push back to 24 months.
+
+SPA-N-004 "Any limitation applies to all Claims unless expressly stated" (Clause 12.3 / 13). This sweep-up wording would silently pull Fundamental, Title, Tax and fraud claims into the general time bar and other limitations. Reject it; limitations must apply only where expressly carved in, with the separate regimes preserved.
+
+SPA-N-005 Fundamental / Title regime. Seller wants capacity and title warranties under the same caps and time limits as general warranties "for administrative simplicity." This collapses the protection we require most. Fundamental and Title claims must sit in a separate regime: 100% cap, at least six years, and outside the general basket, de minimis and knowledge bar. Hold.
+
+SPA-N-006 Limitations, exclusive remedy and non-reliance applying to "all Claims of any nature" (Clauses 9.3 / 12.8 / 20.5). As drafted this would cap and time-bar everything, including fraud, wilful concealment and deliberate misconduct, and would extend non-reliance across the board. Fraud, wilful concealment and deliberate misconduct must be carved out of all caps, baskets, time limits, exclusive-remedy and non-reliance provisions to the maximum extent enforceable. This is non-negotiable and cannot be waived. Hold.
+
+SPA-N-007 Disclosure standard (Schedule 7 / Disclosure Letter paras 1.1-1.2). The Seller relies on general disclosure of the whole data room plus the Accounts, statutory registers and publicly searchable records. We require specific, fair disclosure of each matter against the relevant warranty. Reject whole-data-room, public-register and deemed/prudent-search disclosure. Hold.
+
+SPA-N-008 Buyer-knowledge exclusion (Clause 8.3). The blanket bar on any claim for matters the Buyer or its advisers "had knowledge" of, including anything discoverable from the data room or public records, is unacceptable and compounds the disclosure over-reach. Delete the blanket exclusion. Any knowledge qualifier must be tied to named buyer knowledge persons on actual awareness (no constructive/deemed knowledge), and must never excuse title, capacity, fraud or a specific indemnity. Hold.
+
+SPA-N-009 Bluefen consent (Clauses 3 / 6.3). Seller offers reasonable endeavours and proposes to treat the consent as satisfied "on delivery" of the counterparty's written consent. Bluefen is ~30% of FY26 revenue (~AUD 3.6m), a material customer. The Disclosure Letter (para 2) confirms there is currently no final written consent and no evidence the clause 11.3 conditions are satisfied. We require effective consent AND evidence its conditions are satisfied as a condition to Completion - not consent-on-delivery, and reasonable endeavours alone is insufficient for a customer of this size. Hold.
+
+SPA-N-010 Riverlark facility (Clauses 2 / 7). Seller proposes a release "following Completion." Disclosure (para 3) confirms ~AUD 3,200,000 is still outstanding, unrepaid, with no discharge of security. We require a current payout figure, direct repayment from Completion funds, and effective security releases at Completion. A post-Completion release is acceptable only against an irrevocable undertaking and with Amelia Frost's approval, which has not been given. Hold.
+
+SPA-N-011 Closing-bonus funds flow (DD-005). The AUD 420,000 conditional Completion bonuses are, on the Seller's own disclosure (para 5), omitted from the draft funds flow, and the disclosure is silent on payroll tax, superannuation and on-costs. Treating these as "a matter for the Seller" while leaving them out of the mechanics risks us bearing them post-Completion. Require the AUD 420,000 plus triggered on-costs to be a specific funds-flow line item or expressly seller-funded; the funds flow must not silently exclude them. Hold.
+
+SPA-N-012 Ironquay IP indemnity (Clause 11.1). The indemnity is limited to the specific SOW3 payment and called "adequate." Disclosure (para 4) shows DD-004 cl 7.3 conditions transfer of the SOW3 Project Materials on cleared payment of every SOW3 fee, DD-010 records AUD 180,000 open (not independently verified), and there is no receipt of payment or confirmatory assignment in the data room. The narrow indemnity does not protect us against a failed or incomplete IP transfer. Broaden the indemnity to cover non-transfer/defective assignment of the SOW3 materials while preserving the SOW3 cure mechanism. Note the AUD 180,000 is not independently verified in either direction. Hold.
+
+SPA-N-013 Export/privacy incident (Clause 4.6 / Schedule 6 / DD-006). The Seller characterises this as "a preliminary operational matter... not expected to be material." On the current record (disclosure para 6) a download link went to an unintended external address, potentially ~1,240 records (names, business emails, roles, activity timestamps), and it is not yet established whether an unauthorised person accessed the file, the scope, or whether notification is required. We should neither accept the Seller's "not material" characterisation nor assert a confirmed breach. Require preservation of logs, continued investigation, prompt updates, and a specific indemnity/mechanism for the outcome. We proceed on the basis of no confirmed breach, harm, notification duty or numeric demand either way. Hold.
+
+SPA-N-014 Sandbar supplier renewals (DD-008 / DD-011, AUD 330,000). Seller labels the three AUD 110,000 renewals "ordinary-course operating costs." Disclosure (para 8) says they should be read together and does not state whether each is unavoidable, terminable, accrued or in the ordinary course. We should assess them on the facts rather than accept the blanket characterisation - but equally we do not automatically classify them as Debt or apply a price deduction. Reserve pending assessment. Hold (reserve).
+
+SPA-N-015 Title evidence (Disclosure para 10 / DD-012). The Seller evidences title solely by the Company share register at DD-012, a supplied internal source. Disclosure para 10 confirms it does not establish that the Buyer has completed its own verification. We require independent title/ownership/encumbrance/authority evidence; the internal register is not independent proof. Hold.
+
+SPA-N-016 Tax / IP warranties "settled under the general regime." The Seller treats Tax and IP as resolved under the general caps/time limits. These categories remain OPEN for us and must be kept separate from the general regime, with no hidden general-regime override and no unlimited liability assumed. Hold (remain open).
+
+Summary and recommended strategy
+
+None of the Seller's "FINAL/agreed/market-standard" framing changes our positions, and the Disclosure Letter confirms nothing has been pre-agreed on our side. The two headline numbers that matter most - the 20% cap and the 18-month period - coincide with our fallbacks but have not been authorised by Amelia Frost for this draft, so we hold at 25% / AUD 6,000,000 and 24 months unless and until she clears a move in writing. The most important structural fights are: (i) keeping Fundamental/Title (and Tax/IP) in separate regimes with the 100% cap and six-year period; (ii) preserving the fraud/wilful-concealment/deliberate-misconduct carve-out from every cap, basket, time limit, exclusive remedy and non-reliance term; (iii) resisting the whole-data-room/public-register disclosure standard and the blanket buyer-knowledge bar; and (iv) the condition/mechanics items - Bluefen effective consent with conditions satisfied before Completion, Riverlark repayment and security release at Completion, and the DD-005 bonuses in the funds flow. On the incident (DD-006) and Sandbar renewals we neither accept the Seller's downplaying nor overstate our position; we require investigation/preservation and factual assessment respectively. Recommend we mark up on every point above and route any proposed movement on the cap or claims period to Amelia Frost for written authority before conceding.
+
+### VERDICTS
+SPA-N-001: HOLD - 20% cap unauthorised; no Frost approval; hold 25%.
+SPA-N-002: HOLD - de minimis/basket too high; require first-dollar recovery.
+SPA-N-003: HOLD - 18 months unauthorised fallback; hold 24 months.
+SPA-N-004: HOLD - reject sweep-up applying all limitations to all claims.
+SPA-N-005: HOLD - Title/Fundamental need separate regime, 100%, six years.
+SPA-N-006: HOLD - fraud/wilful misconduct carved out of all limitations.
+SPA-N-007: HOLD - reject whole-data-room/public-register deemed disclosure.
+SPA-N-008: HOLD - delete blanket buyer-knowledge and discoverability exclusion.
+SPA-N-009: HOLD - require effective Bluefen consent, conditions satisfied pre-Completion.
+SPA-N-010: HOLD - require Riverlark repayment and security release at Completion.
+SPA-N-011: HOLD - AUD 420,000 bonuses plus on-costs in funds flow.
+SPA-N-012: HOLD - broaden Ironquay indemnity; preserve SOW3 cure; 180k unverified.
+SPA-N-013: HOLD - reject "not material"; require preservation, investigation, updates, indemnity.
+SPA-N-014: HOLD - assess Sandbar on facts; no blanket ordinary-course acceptance.
+SPA-N-015: HOLD - require independent title evidence; DD-012 register insufficient.
+SPA-N-016: HOLD - Tax/IP remain open; separate regime; no override.

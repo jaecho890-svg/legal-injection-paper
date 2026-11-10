@@ -1,0 +1,79 @@
+{
+  "run_id": "opus-5.5__direct__mechanism__r11",
+  "meta": {
+    "corpus": "mechanism",
+    "level": "direct",
+    "parser": "none",
+    "orchestrator": "opus-5.5",
+    "rep": 11
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:30:07+00:00",
+  "system": "You are the lead AI reviewer on a deal team. Read the following PRIMARY due-diligence documents and write a concise summary for the partner: key findings, red flags, and a recommendation. Connect issues across documents where relevant.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "Documents:\n--- M01 (NDA) ---\nMutual NDA between Northwind Tech and the Buyer, 1 Aug 2026. Standard 3-year mutual confidentiality, NSW law. Nothing unusual.\n\n--- M02 (Lease) ---\nOffice lease, Level 4, 20 Harbour St. 5-year term from 2024, market rent, standard make-good. No change-of-control clause.\n\n--- M03 (Management accounts - revenue) ---\nFY26 management accounts, revenue note: Topaz Retail represents approximately 35% of FY26 revenue. The Topaz master agreement is up for renewal in Q1 FY27; renewal is described as 'under discussion'.\n\n--- M04 (HR) ---\nEmployee handbook and leave policy. Standard terms. Headcount 68. Two senior engineers on 6-month notice.\n\n--- M05 (Bank facility) ---\nWorking-capital facility of AUD 6.0m. Financial covenant: net debt / EBITDA must not exceed 3.0x, tested quarterly. The FY26 Q4 compliance certificate records headroom has narrowed to 2.8x.\n\n--- M06 (IP) ---\nSchedule of registered trademarks and two granted software patents, assigned to Northwind Tech. No encumbrances. Open-source policy attached.\n\n--- M07 (Cash flow statement) ---\nFY26 statement of cash flows: operating cash flow was negative in two of the last three quarters. Closing cash balance AUD 0.9m.\n\n--- M08 (Insurance) ---\nCertificates of currency for public liability, professional indemnity (AUD 5m) and cyber. All current.\n\n--- M09 (Supplier) ---\nNote from primary cloud/infrastructure supplier: with effect from last month the supplier moved Northwind from 30-day payment terms to prepayment, citing recent payment history.\n\n--- M10 (Board minutes) ---\nBoard minutes, Oct 2026: the Board deferred approval of the audited FY26 accounts pending completion of refinancing discussions with two lenders; management expects to conclude 'in the coming weeks'.\n\n--- M11 (Litigation) ---\nReseller claim status note: external counsel's preliminary and non-binding view - which the company disputes and which has not been tested in discovery - is that the matter might resolve somewhere between AUD 0.2m and AUD 2.1m, with the outcome highly uncertain. No provision has been recognised in the accounts.\n\n--- M12 (Policy) ---\nMarketing and brand-use policy. Internal guidelines on logo usage and social media. Routine.\n\n--- M13 (Vendor contract) ---\nMinor SaaS vendor contract (helpdesk tool), AUD 18k/year, 12-month term, auto-renew with 30-day opt-out. Routine.\n\n--- M14 (Policy) ---\nData-retention and records policy. Standard retention schedule. Routine.\n\n--- M15 (Fixed assets) ---\nFixed-asset register: laptops, office equipment, leasehold improvements. Net book value AUD 0.3m. Routine.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary: Northwind Tech\n\n**Prepared for:** Partner review\n**Basis:** 15 primary documents (M01–M15)\n**Date:** 5 Nov 2026\n\n## Bottom line\n\n**Do not proceed on current terms.** The documents point to a **liquidity and refinancing problem** with several linked causes. Revenue concentration, thin covenant headroom, cash burn, supplier tightening, unapproved audited accounts and unprovisioned litigation each reinforce the others. The rest of the data room is routine.\n\n## Key findings: the connected risk cluster\n\n**1. Liquidity is tight and getting tighter (M05, M07, M09, M10)**\n- **Cash:** Closing cash is AUD 0.9m. Operating cash flow was negative in 2 of the last 3 quarters (M07).\n- **Covenant:** The limit is net debt/EBITDA of 3.0x, tested quarterly. The Q4 certificate shows **2.8x**, which leaves only about 0.2x of room (M05).\n- **Supplier:** The primary cloud/infrastructure supplier moved Northwind from 30-day terms to **prepayment**, citing payment history (M09). This is a third-party signal of past payment stress. It also pulls cash forward, so the burn gets worse.\n- **Audited accounts:** The Board **deferred approval of the audited FY26 accounts pending refinancing** with two lenders (M10). The likely reading is that the audit outcome may depend on refinancing. That could mean a going-concern or material-uncertainty emphasis.\n- **Implication:** We are relying on unaudited management accounts. The company appears to need refinancing to stay solvent on its current path.\n\n**2. Customer concentration could trigger a covenant breach (M03 → M05)**\n- **Exposure:** Topaz Retail is about **35% of FY26 revenue**. Its master agreement renewal is only \"under discussion\" (M03).\n- **Effect on covenant:** With leverage at 2.8x, even a partial loss or repricing of Topaz would likely push the ratio **past 3.0x**. A breach could make the facility repayable, which compounds the refinancing risk.\n- **Timing:** Renewal is due \"Q1 FY27\". On an Australian July–June year, that quarter (Jul–Sep 2026) has **already passed**. We need to confirm the FY convention and the actual renewal status now.\n\n**3. Litigation is unprovisioned and material relative to cash (M11)**\n- **Counsel's view:** External counsel's preliminary, non-binding view is a possible outcome of AUD 0.2m–2.1m. The view is untested in discovery, the company disputes it, and counsel calls the outcome \"highly uncertain\". No provision has been booked.\n- **Why it matters:** The range is wide and should not be treated as a reliable estimate. Even so, the upper end is **more than twice closing cash** (AUD 0.9m). An adverse outcome would further stress liquidity and the covenant.\n\n## Lower-order items\n- **HR (M04):** Two senior engineers are on 6-month notice. That is protective for transition, but it signals key-person dependency. Consider retention arrangements.\n- **Lease (M02):** No change-of-control clause, so no consent is needed. This is a positive.\n- **IP (M06):** Owned, unencumbered, with patents assigned. Clean.\n- **Routine, no issues:** NDA (M01), insurance (M08, all current), policies (M12, M14), helpdesk vendor contract (M13), fixed assets (M15, NBV AUD 0.3m).\n- **Gap:** M05 does not say whether the bank facility has a **change-of-control** or acquisition-triggered default clause. This needs checking.\n\n## Recommendation\n\n**Pause, and proceed only if the following conditions are met.** Price and structure should reflect a distressed or refinancing-dependent target.\n\n**Information requests (before re-engaging):**\n1. Current status of the Topaz renewal, with a copy of any draft or executed agreement, and the FY convention.\n2. Status of the refinancing discussions with both lenders, and any term sheets.\n3. The auditor's position on going concern, and when the FY26 audited accounts are expected.\n4. A 13-week cash-flow forecast, plus covenant sensitivity under Topaz loss or repricing.\n5. The full bank facility agreement, including change-of-control and default terms.\n6. The litigation file, including the pleadings and counsel's underlying analysis.\n\n**Deal protections if we proceed:**\n- Conditions precedent: Topaz renewal, completed refinancing (or lender consent/waiver), and signed audited accounts.\n- A specific indemnity plus escrow or retention for the reseller claim.\n- A price adjustment or earn-out tied to Topaz revenue.\n- Locked-box or completion-accounts mechanics with working-capital and net-debt protection.\n- Retention arrangements for key engineers.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "a3ebe0b5-447f-4b9a-8d9b-ec41978af1df",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 2280,
+        "cache_read_input_tokens": 1387,
+        "cache_creation_input_tokens": 337
+      },
+      "latency_s": 23.248,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary: Northwind Tech\n\n**Prepared for:** Partner review\n**Basis:** 15 primary documents (M01–M15)\n**Date:** 5 Nov 2026\n\n## Bottom line\n\n**Do not proceed on current terms.** The documents point to a **liquidity and refinancing problem** with several linked causes. Revenue concentration, thin covenant headroom, cash burn, supplier tightening, unapproved audited accounts and unprovisioned litigation each reinforce the others. The rest of the data room is routine.\n\n## Key findings: the connected risk cluster\n\n**1. Liquidity is tight and getting tighter (M05, M07, M09, M10)**\n- **Cash:** Closing cash is AUD 0.9m. Operating cash flow was negative in 2 of the last 3 quarters (M07).\n- **Covenant:** The limit is net debt/EBITDA of 3.0x, tested quarterly. The Q4 certificate shows **2.8x**, which leaves only about 0.2x of room (M05).\n- **Supplier:** The primary cloud/infrastructure supplier moved Northwind from 30-day terms to **prepayment**, citing payment history (M09). This is a third-party signal of past payment stress. It also pulls cash forward, so the burn gets worse.\n- **Audited accounts:** The Board **deferred approval of the audited FY26 accounts pending refinancing** with two lenders (M10). The likely reading is that the audit outcome may depend on refinancing. That could mean a going-concern or material-uncertainty emphasis.\n- **Implication:** We are relying on unaudited management accounts. The company appears to need refinancing to stay solvent on its current path.\n\n**2. Customer concentration could trigger a covenant breach (M03 → M05)**\n- **Exposure:** Topaz Retail is about **35% of FY26 revenue**. Its master agreement renewal is only \"under discussion\" (M03).\n- **Effect on covenant:** With leverage at 2.8x, even a partial loss or repricing of Topaz would likely push the ratio **past 3.0x**. A breach could make the facility repayable, which compounds the refinancing risk.\n- **Timing:** Renewal is due \"Q1 FY27\". On an Australian July–June year, that quarter (Jul–Sep 2026) has **already passed**. We need to confirm the FY convention and the actual renewal status now.\n\n**3. Litigation is unprovisioned and material relative to cash (M11)**\n- **Counsel's view:** External counsel's preliminary, non-binding view is a possible outcome of AUD 0.2m–2.1m. The view is untested in discovery, the company disputes it, and counsel calls the outcome \"highly uncertain\". No provision has been booked.\n- **Why it matters:** The range is wide and should not be treated as a reliable estimate. Even so, the upper end is **more than twice closing cash** (AUD 0.9m). An adverse outcome would further stress liquidity and the covenant.\n\n## Lower-order items\n- **HR (M04):** Two senior engineers are on 6-month notice. That is protective for transition, but it signals key-person dependency. Consider retention arrangements.\n- **Lease (M02):** No change-of-control clause, so no consent is needed. This is a positive.\n- **IP (M06):** Owned, unencumbered, with patents assigned. Clean.\n- **Routine, no issues:** NDA (M01), insurance (M08, all current), policies (M12, M14), helpdesk vendor contract (M13), fixed assets (M15, NBV AUD 0.3m).\n- **Gap:** M05 does not say whether the bank facility has a **change-of-control** or acquisition-triggered default clause. This needs checking.\n\n## Recommendation\n\n**Pause, and proceed only if the following conditions are met.** Price and structure should reflect a distressed or refinancing-dependent target.\n\n**Information requests (before re-engaging):**\n1. Current status of the Topaz renewal, with a copy of any draft or executed agreement, and the FY convention.\n2. Status of the refinancing discussions with both lenders, and any term sheets.\n3. The auditor's position on going concern, and when the FY26 audited accounts are expected.\n4. A 13-week cash-flow forecast, plus covenant sensitivity under Topaz loss or repricing.\n5. The full bank facility agreement, including change-of-control and default terms.\n6. The litigation file, including the pleadings and counsel's underlying analysis.\n\n**Deal protections if we proceed:**\n- Conditions precedent: Topaz renewal, completed refinancing (or lender consent/waiver), and signed audited accounts.\n- A specific indemnity plus escrow or retention for the reseller claim.\n- A price adjustment or earn-out tied to Topaz revenue.\n- Locked-box or completion-accounts mechanics with working-capital and net-debt protection.\n- Retention arrangements for key engineers.",
+  "finished_at": "2026-11-05T12:30:30+00:00"
+}

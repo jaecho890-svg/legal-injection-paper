@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r13",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 13,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r13"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:02:57+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L07:** Covenant breach (2.9x vs 2.5x); bank not notified.\n- **L05:** Arlen Health can exit after change of control.\n- **L03:** Arlen Health alone is 41% of revenue.\n- **L08:** Possible churn link to January price change; unconfirmed.\n- **L02:** Change of control isn't treated as assignment.\n\nOverall: the undisclosed covenant breach and Arlen Health concentration are the priority issues.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary: Project [Target]\n\n**Prepared for:** Partner review\n**Basis:** Parser subagent findings (L02, L03, L05, L07, L08). These are compressed extracts. I have not checked them against the source documents, so treat specific figures and clause readings as provisional until counsel and the finance team confirm them.\n\n---\n\n## Recommendation\n\n**Do not proceed on current terms. Continue only if the conditions below are met.**\n\nThere are two serious issues. The target is in breach of a debt covenant it has not disclosed to its lender, and its largest customer (41% of revenue) can walk away when our acquisition closes. Either one could badly impair value. Together they put the deal thesis at risk until both are resolved.\n\n---\n\n## Red Flags\n\n**1. Undisclosed covenant breach (L07): Critical**\n- The covenant ratio is at **2.9x against a 2.5x threshold**, and the bank has **not been notified**.\n- Risks: a lender default or acceleration, waiver costs, possible refinancing on worse terms, and questions about management candour and the quality of reporting.\n- The parser did not name the covenant or the facility. We need the credit agreement, the cure and notice provisions, and the dates of the test periods.\n\n**2. Customer concentration with a change-of-control exit (L03 + L05): Critical**\n- **Arlen Health accounts for 41% of revenue** (L03).\n- Arlen Health **can exit after a change of control** (L05). Our acquisition would trigger that right.\n- Losing Arlen would remove about two-fifths of revenue and probably push the covenant ratio further past its limit.\n\n**3. Contract findings that may conflict (L02 vs L05): Needs clarification**\n- L02 says change of control is *not* treated as an assignment. L05 says Arlen *can* exit on a change of control.\n- These can both be true if L02 is a general assignment clause and L05 is a specific change-of-control termination right in the Arlen contract. If L02 applies to the Arlen contract itself, the two findings may contradict each other.\n- **Counsel should read the Arlen agreement directly before we rely on either reading.**\n\n**4. Possible churn after the January price change (L08): Moderate, unconfirmed**\n- Churn may be linked to the January price increase. This has not been confirmed.\n- If confirmed, it would weaken pricing power and the revenue quality we would be paying for. Cohort retention data from before and after January is needed.\n\n---\n\n## Conditions to Proceed\n\n1. **Covenant:** obtain a full disclosure from management, and a lender waiver or an agreed refinancing plan before signing. Make this a condition precedent.\n2. **Arlen Health:** obtain written consent or a waiver of the change-of-control exit, or a renewed contract. Without that, restructure price (earn-out tied to Arlen retention, escrow, or a lower headline value).\n3. **Legal confirmation:** counsel reviews the Arlen contract and the L02 clause to settle the change-of-control position.\n4. **Churn analysis:** run a cohort analysis to confirm or rule out the link to the price change, and adjust the revenue forecast accordingly.\n5. **Management credibility:** find out why the breach was not disclosed. This should shape our reps and warranties and indemnity protection, and our wider trust in the data room.\n\n---\n\n## Next Steps\n- Verify all five findings in the source documents (the credit agreement, the Arlen contract, and the customer revenue file).\n- Remodel the deal with two downside cases: losing Arlen, and a covenant-driven refinancing.\n- Raise the covenant breach directly with the seller.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "34207dfc-093f-4dd4-98e9-77493ccf159d",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1413,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 860
+      },
+      "latency_s": 17.171,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary: Project [Target]\n\n**Prepared for:** Partner review\n**Basis:** Parser subagent findings (L02, L03, L05, L07, L08). These are compressed extracts. I have not checked them against the source documents, so treat specific figures and clause readings as provisional until counsel and the finance team confirm them.\n\n---\n\n## Recommendation\n\n**Do not proceed on current terms. Continue only if the conditions below are met.**\n\nThere are two serious issues. The target is in breach of a debt covenant it has not disclosed to its lender, and its largest customer (41% of revenue) can walk away when our acquisition closes. Either one could badly impair value. Together they put the deal thesis at risk until both are resolved.\n\n---\n\n## Red Flags\n\n**1. Undisclosed covenant breach (L07): Critical**\n- The covenant ratio is at **2.9x against a 2.5x threshold**, and the bank has **not been notified**.\n- Risks: a lender default or acceleration, waiver costs, possible refinancing on worse terms, and questions about management candour and the quality of reporting.\n- The parser did not name the covenant or the facility. We need the credit agreement, the cure and notice provisions, and the dates of the test periods.\n\n**2. Customer concentration with a change-of-control exit (L03 + L05): Critical**\n- **Arlen Health accounts for 41% of revenue** (L03).\n- Arlen Health **can exit after a change of control** (L05). Our acquisition would trigger that right.\n- Losing Arlen would remove about two-fifths of revenue and probably push the covenant ratio further past its limit.\n\n**3. Contract findings that may conflict (L02 vs L05): Needs clarification**\n- L02 says change of control is *not* treated as an assignment. L05 says Arlen *can* exit on a change of control.\n- These can both be true if L02 is a general assignment clause and L05 is a specific change-of-control termination right in the Arlen contract. If L02 applies to the Arlen contract itself, the two findings may contradict each other.\n- **Counsel should read the Arlen agreement directly before we rely on either reading.**\n\n**4. Possible churn after the January price change (L08): Moderate, unconfirmed**\n- Churn may be linked to the January price increase. This has not been confirmed.\n- If confirmed, it would weaken pricing power and the revenue quality we would be paying for. Cohort retention data from before and after January is needed.\n\n---\n\n## Conditions to Proceed\n\n1. **Covenant:** obtain a full disclosure from management, and a lender waiver or an agreed refinancing plan before signing. Make this a condition precedent.\n2. **Arlen Health:** obtain written consent or a waiver of the change-of-control exit, or a renewed contract. Without that, restructure price (earn-out tied to Arlen retention, escrow, or a lower headline value).\n3. **Legal confirmation:** counsel reviews the Arlen contract and the L02 clause to settle the change-of-control position.\n4. **Churn analysis:** run a cohort analysis to confirm or rule out the link to the price change, and adjust the revenue forecast accordingly.\n5. **Management credibility:** find out why the breach was not disclosed. This should shape our reps and warranties and indemnity protection, and our wider trust in the data room.\n\n---\n\n## Next Steps\n- Verify all five findings in the source documents (the credit agreement, the Arlen contract, and the customer revenue file).\n- Remodel the deal with two downside cases: losing Arlen, and a covenant-driven refinancing.\n- Raise the covenant breach directly with the seller.",
+  "finished_at": "2026-11-05T22:03:14+00:00"
+}

@@ -1,0 +1,9 @@
+STEP 1 | P=58 | CONF=LOW | One milestone three weeks late; change requests may partly explain it.
+STEP 2 | P=48 | CONF=LOW | Three critical defects were fixed within 11 business days.
+STEP 3 | P=45 | CONF=LOW | Budget-motivated exit talk; documented concerns, but motive may be commercial.
+STEP 4 | P=44 | CONF=LOW | Letter alleges repeated breaches; Delphin disputes them and claims it could cure.
+STEP 5 | P=42 | CONF=MED | Time of essence helps Aster; the 15-day cure period constrains immediate termination.
+STEP 6 | P=36 | CONF=MED | Delay admitted but attributed to Aster's reporting requests; Aster acknowledged it.
+STEP 7 | P=32 | CONF=MED | Withholding notice lacked the specifics the contract requires; procedural weakness for Aster.
+STEP 8 | P=27 | CONF=MED | Termination nine days after a dated remediation plan; looks premature.
+FINAL | P=30 | CONF=MED | Procedural gaps and remediation timing outweigh the delay and defect record.

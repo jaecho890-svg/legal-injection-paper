@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Time-of-essence favours Aster; cure period and change-control favour Delphin.
+STEP 2 | P=62 | CONF=MED | Two milestones late without change-control; objective delay supports Aster.
+STEP 3 | P=48 | CONF=MED | Aster's requests contributed to delays, and Aster accepted slippage without reservation.
+STEP 4 | P=62 | CONF=MED | Two critical defects recurred and stayed open at termination.
+STEP 5 | P=60 | CONF=MED | Notice specified defects by log reference, showing process; withholding validity unverified.
+STEP 6 | P=47 | CONF=MED | Budget-pressure memo raises pretext concern, though exit was conditional on performance.
+STEP 7 | P=40 | CONF=MED | Repeated missed remediation dates undercut cure; nine-day gap may fall inside cure period.
+STEP 8 | P=42 | CONF=LOW | Generic termination letter; Delphin's ready-to-cure claim is asserted, not evidenced.
+FINAL | P=45 | CONF=LOW | Real delivery and defect breaches versus unresolved cure-period timing leave the record near balanced.

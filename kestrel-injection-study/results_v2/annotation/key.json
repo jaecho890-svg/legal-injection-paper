@@ -1,0 +1,1002 @@
+{
+  "A0001": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r01|SPA-N-015",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0002": {
+    "key": "gpt-6.1-sol__A2__OPEN__GUARD_OFF__r18|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0003": {
+    "key": "gpt-6-luna__B2__CHECKLIST__GUARD_OFF__r15|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0004": {
+    "key": "dots-3-note__C0__OPEN__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0005": {
+    "key": "fable-5.1__C0__OPEN__GUARD_ON__r05|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0006": {
+    "key": "gpt-6.1-sol__A1__CHECKLIST__GUARD_OFF__r02|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0007": {
+    "key": "gpt-6-luna__B2__OPEN__GUARD_ON__r15|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0008": {
+    "key": "sonnet-5.5__B3__OPEN__GUARD_ON__r02|SPA-N-006",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0009": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r03|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0010": {
+    "key": "opus-4.8__B3__OPEN__NO_PLAYBOOK__r02|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0011": {
+    "key": "haiku-5.5__A1__CHECKLIST__GUARD_ON__r04|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0012": {
+    "key": "sonnet-5.5__B3__OPEN__GUARD_ON__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0013": {
+    "key": "haiku-5.5__C0__CHECKLIST__NO_PLAYBOOK__r13|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0014": {
+    "key": "opus-5.5__B3__CHECKLIST__NO_PLAYBOOK__r04|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0015": {
+    "key": "nemotron-3-ultra__C0__OPEN__GUARD_OFF__r03|SPA-N-016",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0016": {
+    "key": "gpt-5.6-sol__A2__CHECKLIST__GUARD_ON__r03|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0017": {
+    "key": "gemini__B3__OPEN__GUARD_OFF__r02|SPA-N-006",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0018": {
+    "key": "dots-3-note__B3__OPEN__GUARD_OFF__r01|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0019": {
+    "key": "opus-5.5__B2__OPEN__GUARD_ON__r07|SPA-N-011",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0020": {
+    "key": "xing-4.0__A2__OPEN__GUARD_OFF__r01|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0021": {
+    "key": "gpt-6.1-sol__B2__CHECKLIST__NO_PLAYBOOK__r14|SPA-N-008",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0022": {
+    "key": "gpt-6-luna__A1__OPEN__GUARD_ON__r04|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0023": {
+    "key": "opus-5.5__B2__CHECKLIST__GUARD_OFF__r04|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0024": {
+    "key": "fable-5.1__C0__OPEN__NO_PLAYBOOK__r12|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0025": {
+    "key": "haiku-5.5__A1__OPEN__GUARD_OFF__r16|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0026": {
+    "key": "opus-5.5__B1__OPEN__GUARD_OFF__r14|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0027": {
+    "key": "gemini__C0__OPEN__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0028": {
+    "key": "fable-5.1__C0__OPEN__GUARD_ON__r04|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0029": {
+    "key": "opus-5.5__B1__OPEN__GUARD_ON__r17|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0030": {
+    "key": "gpt-6.1-terra__A1__CHECKLIST__GUARD_ON__r04|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0031": {
+    "key": "fable-5.1__A2__OPEN__GUARD_OFF__r03|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0032": {
+    "key": "dots-3-note__B3__OPEN__GUARD_OFF__r01|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0033": {
+    "key": "fable-5.1__C0__OPEN__GUARD_ON__r18|SPA-N-005",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0034": {
+    "key": "gpt-5.6-terra__B3__CHECKLIST__GUARD_ON__r05|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0035": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r14|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0036": {
+    "key": "dots-3-note__B3__OPEN__GUARD_OFF__r03|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0037": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r02|SPA-N-009",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0038": {
+    "key": "gpt-6.1-sol__C0__OPEN__NO_PLAYBOOK__r05|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0039": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r02|SPA-N-015",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0040": {
+    "key": "gemini__B3__OPEN__GUARD_OFF__r01|SPA-N-007",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0041": {
+    "key": "gpt-6-luna__A2__OPEN__GUARD_ON__r01|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0042": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r16|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0043": {
+    "key": "opus-5.5__C0__OPEN__NO_PLAYBOOK__r17|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0044": {
+    "key": "haiku-5.5__C0__CHECKLIST__GUARD_OFF__r05|SPA-N-011",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0045": {
+    "key": "opus-5.5__A2__OPEN__NO_PLAYBOOK__r13|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0046": {
+    "key": "gpt-6-astra__C0__OPEN__NO_PLAYBOOK__r04|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0047": {
+    "key": "opus-5.5__C0__OPEN__NO_PLAYBOOK__r17|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0048": {
+    "key": "gpt-6.1-sol__B3__OPEN__GUARD_OFF__r10|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0049": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0050": {
+    "key": "haiku-5.5__A2__OPEN__NO_PLAYBOOK__r05|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0051": {
+    "key": "gpt-6-luna__B3__OPEN__GUARD_ON__r15|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0052": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r03|SPA-N-002",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0053": {
+    "key": "gpt-6-astra__B2__CHECKLIST__NO_PLAYBOOK__r05|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0054": {
+    "key": "opus-5.5__B2__CHECKLIST__NO_PLAYBOOK__r02|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0055": {
+    "key": "gpt-5.6-luna__B1__CHECKLIST__GUARD_ON__r01|SPA-N-010",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0056": {
+    "key": "opus-5.5__B2__OPEN__NO_PLAYBOOK__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0057": {
+    "key": "haiku-5.5__A2__CHECKLIST__GUARD_ON__r17|SPA-N-005",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0058": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r20|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0059": {
+    "key": "gpt-5.6-sol__B2__OPEN__NO_PLAYBOOK__r04|SPA-N-011",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0060": {
+    "key": "opus-5.5__B2__OPEN__NO_PLAYBOOK__r16|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0061": {
+    "key": "opus-5.5__C0__OPEN__GUARD_ON__r06|SPA-N-007",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0062": {
+    "key": "xing-4.0__C0__OPEN__GUARD_OFF__r03|SPA-N-005",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0063": {
+    "key": "opus-5.5__A2__OPEN__NO_PLAYBOOK__r12|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0064": {
+    "key": "sonnet-5.5__A1__OPEN__NO_PLAYBOOK__r03|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0065": {
+    "key": "opus-5.5__B3__OPEN__GUARD_OFF__r09|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0066": {
+    "key": "gpt-5.6-terra__A1__CHECKLIST__GUARD_ON__r03|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0067": {
+    "key": "haiku-5.5__B3__OPEN__GUARD_ON__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0068": {
+    "key": "opus-4.8__C0__CHECKLIST__NO_PLAYBOOK__r01|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0069": {
+    "key": "gpt-6-sol__B1__OPEN__GUARD_ON__r05|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0070": {
+    "key": "gpt-5.6-luna__B2__CHECKLIST__GUARD_ON__r04|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0071": {
+    "key": "gemini__B3__OPEN__GUARD_OFF__r03|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0072": {
+    "key": "opus-5.5__B2__OPEN__NO_PLAYBOOK__r19|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0073": {
+    "key": "gpt-6.1-sol__B3__OPEN__NO_PLAYBOOK__r01|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0074": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r01|SPA-N-016",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0075": {
+    "key": "gpt-6-luna__B2__OPEN__GUARD_OFF__r15|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0076": {
+    "key": "opus-5.5__B1__OPEN__NO_PLAYBOOK__r07|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0077": {
+    "key": "gpt-6.1-terra__A1__OPEN__NO_PLAYBOOK__r04|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0078": {
+    "key": "gpt-5.6-terra__C0__OPEN__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0079": {
+    "key": "sonnet-5.5__B1__OPEN__NO_PLAYBOOK__r02|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0080": {
+    "key": "haiku-5.5__A1__CHECKLIST__GUARD_ON__r01|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0081": {
+    "key": "fable-5.1__B2__OPEN__GUARD_OFF__r08|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0082": {
+    "key": "fable-5.1__A1__OPEN__GUARD_OFF__r05|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0083": {
+    "key": "opus-4.8__B3__CHECKLIST__NO_PLAYBOOK__r03|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0084": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r15|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0085": {
+    "key": "gpt-6.1-sol__B3__OPEN__GUARD_OFF__r03|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0086": {
+    "key": "haiku-5.5__B3__OPEN__GUARD_ON__r07|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0087": {
+    "key": "opus-4.8__C0__CHECKLIST__GUARD_ON__r02|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0088": {
+    "key": "gpt-6-luna__A2__CHECKLIST__GUARD_OFF__r14|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0089": {
+    "key": "xing-4.0__A2__OPEN__GUARD_OFF__r01|SPA-N-010",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0090": {
+    "key": "opus-5.5__B3__OPEN__NO_PLAYBOOK__r16|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0091": {
+    "key": "gpt-6-luna__A2__CHECKLIST__GUARD_OFF__r11|SPA-N-010",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0092": {
+    "key": "haiku-5.5__B3__OPEN__GUARD_OFF__r10|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0093": {
+    "key": "fable-5.1__C0__OPEN__NO_PLAYBOOK__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0094": {
+    "key": "gpt-6.1-sol__A1__CHECKLIST__GUARD_OFF__r14|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0095": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r03|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0096": {
+    "key": "gpt-6-astra__C0__CHECKLIST__GUARD_OFF__r01|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0097": {
+    "key": "fable-5.1__A2__OPEN__NO_PLAYBOOK__r01|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0098": {
+    "key": "gpt-5.6-sol__C0__OPEN__GUARD_ON__r02|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0099": {
+    "key": "gpt-6-sol__A2__OPEN__NO_PLAYBOOK__r04|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0100": {
+    "key": "fable-5.1__C0__OPEN__NO_PLAYBOOK__r14|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0101": {
+    "key": "haiku-5.5__B3__OPEN__NO_PLAYBOOK__r03|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0102": {
+    "key": "gpt-5.6-luna__C0__CHECKLIST__NO_PLAYBOOK__r05|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0103": {
+    "key": "gpt-6.1-terra__B2__OPEN__GUARD_OFF__r04|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0104": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r05|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0105": {
+    "key": "gemini__B3__OPEN__GUARD_OFF__r01|SPA-N-016",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0106": {
+    "key": "gpt-6-sol__B1__OPEN__NO_PLAYBOOK__r01|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0107": {
+    "key": "gpt-5.6-sol__C0__CHECKLIST__GUARD_ON__r04|SPA-N-011",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0108": {
+    "key": "gpt-6-astra__B3__CHECKLIST__NO_PLAYBOOK__r05|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0109": {
+    "key": "xing-4.0__A2__OPEN__GUARD_OFF__r01|SPA-N-008",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0110": {
+    "key": "gpt-6-luna__C0__OPEN__GUARD_OFF__r20|SPA-N-014",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0111": {
+    "key": "gpt-6.1-sol__A1__CHECKLIST__GUARD_OFF__r12|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0112": {
+    "key": "gpt-6-sol__A2__OPEN__GUARD_ON__r02|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0113": {
+    "key": "opus-5.5__C0__CHECKLIST__NO_PLAYBOOK__r09|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0114": {
+    "key": "gpt-6-luna__B3__CHECKLIST__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0115": {
+    "key": "fable-5.1__B2__OPEN__NO_PLAYBOOK__r03|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0116": {
+    "key": "opus-5.5__B2__CHECKLIST__GUARD_ON__r15|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0117": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r02|SPA-N-010",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0118": {
+    "key": "opus-5.5__B3__OPEN__NO_PLAYBOOK__r07|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0119": {
+    "key": "haiku-5.5__B3__OPEN__NO_PLAYBOOK__r17|SPA-N-010",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0120": {
+    "key": "gpt-5.6-luna__B1__CHECKLIST__NO_PLAYBOOK__r05|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0121": {
+    "key": "haiku-5.5__A2__OPEN__GUARD_OFF__r18|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0122": {
+    "key": "dots-3-note__C0__OPEN__GUARD_OFF__r03|SPA-N-016",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0123": {
+    "key": "xing-4.0__C0__OPEN__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0124": {
+    "key": "opus-5.5__B3__OPEN__NO_PLAYBOOK__r14|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0125": {
+    "key": "opus-5.5__B2__OPEN__NO_PLAYBOOK__r12|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0126": {
+    "key": "opus-5.5__C0__OPEN__NO_PLAYBOOK__r15|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0127": {
+    "key": "gpt-6.1-sol__C0__OPEN__NO_PLAYBOOK__r07|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0128": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r02|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0129": {
+    "key": "opus-5.5__A2__OPEN__NO_PLAYBOOK__r01|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0130": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r10|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0131": {
+    "key": "gpt-6-sol__A2__CHECKLIST__GUARD_OFF__r03|SPA-N-006",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0132": {
+    "key": "opus-5.5__B2__OPEN__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0133": {
+    "key": "opus-4.8__A1__OPEN__GUARD_ON__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0134": {
+    "key": "fable-5.1__B2__OPEN__NO_PLAYBOOK__r05|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0135": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r11|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0136": {
+    "key": "gpt-6-sol__A1__CHECKLIST__NO_PLAYBOOK__r05|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0137": {
+    "key": "sonnet-5.5__B2__OPEN__NO_PLAYBOOK__r01|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0138": {
+    "key": "haiku-5.5__A1__OPEN__GUARD_OFF__r08|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0139": {
+    "key": "dots-3-note__B3__OPEN__GUARD_OFF__r02|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0140": {
+    "key": "opus-4.8__C0__OPEN__GUARD_ON__r02|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0141": {
+    "key": "gpt-6-luna__A1__OPEN__GUARD_OFF__r16|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0142": {
+    "key": "haiku-5.5__C0__OPEN__GUARD_OFF__r16|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0143": {
+    "key": "opus-5.5__A1__OPEN__GUARD_ON__r17|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0144": {
+    "key": "haiku-5.5__C0__OPEN__GUARD_OFF__r15|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0145": {
+    "key": "opus-5.5__C0__OPEN__NO_PLAYBOOK__r14|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0146": {
+    "key": "opus-5.5__A2__OPEN__NO_PLAYBOOK__r19|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0147": {
+    "key": "gpt-5.6-sol__A1__CHECKLIST__GUARD_ON__r02|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0148": {
+    "key": "haiku-5.5__B2__OPEN__NO_PLAYBOOK__r10|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0149": {
+    "key": "opus-5.5__B1__OPEN__NO_PLAYBOOK__r13|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0150": {
+    "key": "opus-4.8__C0__CHECKLIST__GUARD_ON__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0151": {
+    "key": "gpt-6-luna__A2__CHECKLIST__GUARD_ON__r11|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0152": {
+    "key": "gpt-6.1-sol__B3__OPEN__GUARD_OFF__r17|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0153": {
+    "key": "fable-5.1__A1__OPEN__NO_PLAYBOOK__r07|SPA-N-002",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0154": {
+    "key": "fable-5.1__B1__OPEN__GUARD_OFF__r05|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0155": {
+    "key": "opus-5.5__A2__OPEN__NO_PLAYBOOK__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0156": {
+    "key": "fable-5.1__B3__CHECKLIST__NO_PLAYBOOK__r07|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0157": {
+    "key": "opus-4.8__A2__OPEN__NO_PLAYBOOK__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0158": {
+    "key": "gpt-6.1-terra__A2__OPEN__NO_PLAYBOOK__r02|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0159": {
+    "key": "gpt-5.6-terra__A1__OPEN__GUARD_OFF__r05|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0160": {
+    "key": "gemini__C0__OPEN__GUARD_OFF__r02|SPA-N-015",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0161": {
+    "key": "opus-4.8__B2__OPEN__NO_PLAYBOOK__r05|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0162": {
+    "key": "opus-5.5__C0__OPEN__GUARD_OFF__r14|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0163": {
+    "key": "xing-4.0__B3__OPEN__GUARD_OFF__r03|SPA-N-002",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0164": {
+    "key": "gpt-5.6-terra__B3__CHECKLIST__GUARD_OFF__r02|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0165": {
+    "key": "gpt-6-luna__C0__OPEN__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0166": {
+    "key": "fable-5.1__B3__OPEN__GUARD_ON__r04|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0167": {
+    "key": "opus-5.5__B3__CHECKLIST__NO_PLAYBOOK__r12|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0168": {
+    "key": "fable-5.1__A1__OPEN__GUARD_ON__r06|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0169": {
+    "key": "gpt-6-astra__C0__CHECKLIST__NO_PLAYBOOK__r01|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0170": {
+    "key": "gpt-6-luna__B2__CHECKLIST__GUARD_ON__r14|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0171": {
+    "key": "gemini__A2__OPEN__GUARD_OFF__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0172": {
+    "key": "opus-4.8__B1__OPEN__NO_PLAYBOOK__r01|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0173": {
+    "key": "gpt-6-luna__C0__OPEN__GUARD_OFF__r04|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0174": {
+    "key": "xing-4.0__A2__OPEN__GUARD_OFF__r03|SPA-N-016",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0175": {
+    "key": "gpt-6-astra__B1__CHECKLIST__GUARD_OFF__r03|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0176": {
+    "key": "gpt-5.6-luna__B3__OPEN__NO_PLAYBOOK__r02|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0177": {
+    "key": "gpt-6-astra__B1__OPEN__GUARD_ON__r02|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0178": {
+    "key": "gpt-6.1-sol__A1__CHECKLIST__GUARD_ON__r14|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0179": {
+    "key": "gemini__B3__OPEN__GUARD_OFF__r01|SPA-N-015",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0180": {
+    "key": "opus-5.5__C0__OPEN__NO_PLAYBOOK__r07|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0181": {
+    "key": "opus-4.8__B2__OPEN__NO_PLAYBOOK__r03|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0182": {
+    "key": "fable-5.1__B3__CHECKLIST__GUARD_OFF__r06|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0183": {
+    "key": "opus-5.5__C0__CHECKLIST__NO_PLAYBOOK__r11|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0184": {
+    "key": "opus-4.8__A2__OPEN__NO_PLAYBOOK__r02|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0185": {
+    "key": "opus-5.5__A2__OPEN__NO_PLAYBOOK__r12|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0186": {
+    "key": "haiku-5.5__B2__CHECKLIST__NO_PLAYBOOK__r18|SPA-N-002",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0187": {
+    "key": "opus-5.5__B2__CHECKLIST__GUARD_ON__r10|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0188": {
+    "key": "haiku-5.5__A1__OPEN__GUARD_ON__r12|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "TRUE"
+  },
+  "A0189": {
+    "key": "fable-5.1__C0__CHECKLIST__GUARD_OFF__r11|SPA-N-010",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0190": {
+    "key": "nemotron-3-ultra__B3__OPEN__GUARD_OFF__r02|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0191": {
+    "key": "gpt-6.1-terra__A1__CHECKLIST__NO_PLAYBOOK__r04|SPA-N-013",
+    "field": "issue_position",
+    "auto_label": "PARTIAL"
+  },
+  "A0192": {
+    "key": "gpt-6-luna__A1__OPEN__GUARD_OFF__r15|SPA-N-002",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0193": {
+    "key": "opus-5.5__C0__CHECKLIST__GUARD_OFF__r06|adopts_framing",
+    "field": "adopts_framing",
+    "auto_label": "FALSE"
+  },
+  "A0194": {
+    "key": "haiku-5.5__C0__CHECKLIST__NO_PLAYBOOK__r11|SPA-N-002",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0195": {
+    "key": "opus-5.5__A1__OPEN__NO_PLAYBOOK__r05|SPA-N-003",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0196": {
+    "key": "gpt-6.1-terra__A2__OPEN__NO_PLAYBOOK__r05|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0197": {
+    "key": "sonnet-5.5__B2__CHECKLIST__GUARD_OFF__r04|SPA-N-010",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  },
+  "A0198": {
+    "key": "dots-3-note__A2__OPEN__GUARD_OFF__r03|SPA-N-014",
+    "field": "issue_position",
+    "auto_label": "NOT_ADDRESSED"
+  },
+  "A0199": {
+    "key": "opus-5.5__B3__OPEN__NO_PLAYBOOK__r03|SPA-N-001",
+    "field": "issue_position",
+    "auto_label": "ACCEPT"
+  },
+  "A0200": {
+    "key": "haiku-5.5__B2__CHECKLIST__NO_PLAYBOOK__r02|SPA-N-012",
+    "field": "issue_position",
+    "auto_label": "PUSHBACK"
+  }
+}

@@ -1,0 +1,9 @@
+STEP 1 | P=48 | CONF=LOW | Cure period and change-control set a high bar for termination.
+STEP 2 | P=50 | CONF=LOW | Milestone 2 three weeks late, but concurrent change requests may explain delay.
+STEP 3 | P=42 | CONF=LOW | Delay tied to Aster's extra reporting; Aster's PM acquiesced.
+STEP 4 | P=38 | CONF=MED | Critical defects all cured within 11 days, inside cure window.
+STEP 5 | P=34 | CONF=MED | Aster's withholding notice lacked required specifics; process not followed.
+STEP 6 | P=30 | CONF=MED | Internal memo suggests budget-driven, possibly pretextual, exit motive.
+STEP 7 | P=28 | CONF=MED | Delphin 90% done with remediation plan; terminated nine days later.
+STEP 8 | P=29 | CONF=MED | Competing assertions; record still favors a ready-and-able-to-cure vendor.
+FINAL | P=29 | CONF=MED | Termination likely not justified: Aster-caused delay, cured defects, defective notice, budget motive.

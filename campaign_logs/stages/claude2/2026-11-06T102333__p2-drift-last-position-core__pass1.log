@@ -1,0 +1,113 @@
+# interpretive-drift-study/harness/experiment.py run --arms lastA,lastB --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-06T10:23:33, ended 2026-11-06T10:37:26, rc=0
+## stdout
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 120 -> 100 jobs
+100 jobs, 0 already done, 100 to run (900 API calls)
+  fable-5.1             180 calls  ~16,600 input tokens (excl. multi-turn history)
+  haiku-5.5             360 calls  ~33,200 input tokens (excl. multi-turn history)
+  opus-5.5              360 calls  ~33,200 input tokens (excl. multi-turn history)
+  [1/100] ok    fable-5.1__case_v2__multiturn__lastA__r01 
+  [2/100] ok    opus-5.5__case_v2__multiturn__lastA__r01 
+  [3/100] ok    opus-5.5__case_v2__multiturn__lastB__r01 
+  [4/100] ok    fable-5.1__case_v2__multiturn__lastB__r01 
+  [5/100] ok    haiku-5.5__case_v2__multiturn__lastB__r01 
+  [6/100] ok    haiku-5.5__case_v2__multiturn__lastA__r01 
+  [7/100] ok    fable-5.1__case_v2__multiturn__lastA__r02 
+  [8/100] ok    fable-5.1__case_v2__multiturn__lastB__r02 
+  [9/100] ok    opus-5.5__case_v2__multiturn__lastA__r02 
+  [10/100] ok    opus-5.5__case_v2__multiturn__lastB__r02 
+  [11/100] ok    haiku-5.5__case_v2__multiturn__lastA__r02 
+  [12/100] ok    haiku-5.5__case_v2__multiturn__lastB__r02 
+  [13/100] ok    opus-5.5__case_v2__multiturn__lastB__r03 
+  [14/100] ok    opus-5.5__case_v2__multiturn__lastA__r03 
+  [15/100] ok    fable-5.1__case_v2__multiturn__lastB__r03 
+  [16/100] ok    fable-5.1__case_v2__multiturn__lastA__r03 
+  [17/100] ok    haiku-5.5__case_v2__multiturn__lastB__r03 
+  [18/100] ok    haiku-5.5__case_v2__multiturn__lastA__r03 
+  [19/100] ok    fable-5.1__case_v2__multiturn__lastA__r04 
+  [20/100] ok    opus-5.5__case_v2__multiturn__lastB__r04 
+  [21/100] ok    fable-5.1__case_v2__multiturn__lastB__r04 
+  [22/100] ok    opus-5.5__case_v2__multiturn__lastA__r04 
+  [23/100] ok    haiku-5.5__case_v2__multiturn__lastA__r04 
+  [24/100] ok    haiku-5.5__case_v2__multiturn__lastB__r04 
+  [25/100] ok    fable-5.1__case_v2__multiturn__lastA__r05 
+  [26/100] ok    haiku-5.5__case_v2__multiturn__lastA__r05 
+  [27/100] ok    opus-5.5__case_v2__multiturn__lastA__r05 
+  [28/100] ok    fable-5.1__case_v2__multiturn__lastB__r05 
+  [29/100] ok    haiku-5.5__case_v2__multiturn__lastB__r05 
+  [30/100] ok    opus-5.5__case_v2__multiturn__lastB__r05 
+  [31/100] ok    fable-5.1__case_v2__multiturn__lastB__r06 
+  [32/100] ok    opus-5.5__case_v2__multiturn__lastB__r06 
+  [33/100] ok    haiku-5.5__case_v2__multiturn__lastA__r06 
+  [34/100] ok    fable-5.1__case_v2__multiturn__lastA__r06 
+  [35/100] ok    fable-5.1__case_v2__multiturn__lastA__r07 
+  [36/100] ok    opus-5.5__case_v2__multiturn__lastA__r06 
+  [37/100] ok    haiku-5.5__case_v2__multiturn__lastB__r06 
+  [38/100] ok    haiku-5.5__case_v2__multiturn__lastA__r07 
+  [39/100] ok    opus-5.5__case_v2__multiturn__lastB__r07 
+  [40/100] ok    fable-5.1__case_v2__multiturn__lastB__r07 
+  [41/100] ok    opus-5.5__case_v2__multiturn__lastA__r07 
+  [42/100] ok    fable-5.1__case_v2__multiturn__lastA__r08 
+  [43/100] ok    haiku-5.5__case_v2__multiturn__lastB__r07 
+  [44/100] ok    opus-5.5__case_v2__multiturn__lastA__r08 
+  [45/100] ok    haiku-5.5__case_v2__multiturn__lastA__r08 
+  [46/100] ok    opus-5.5__case_v2__multiturn__lastB__r08 
+  [47/100] ok    fable-5.1__case_v2__multiturn__lastB__r08 
+  [48/100] ok    haiku-5.5__case_v2__multiturn__lastB__r08 
+  [49/100] ok    opus-5.5__case_v2__multiturn__lastB__r09 
+  [50/100] ok    fable-5.1__case_v2__multiturn__lastB__r09 
+  [51/100] ok    fable-5.1__case_v2__multiturn__lastA__r09 
+  [52/100] ok    opus-5.5__case_v2__multiturn__lastA__r09 
+  [53/100] ok    haiku-5.5__case_v2__multiturn__lastB__r09 
+  [54/100] ok    haiku-5.5__case_v2__multiturn__lastA__r09 
+  [55/100] ok    opus-5.5__case_v2__multiturn__lastB__r10 
+  [56/100] ok    fable-5.1__case_v2__multiturn__lastA__r10 
+  [57/100] ok    opus-5.5__case_v2__multiturn__lastA__r10 
+  [58/100] ok    fable-5.1__case_v2__multiturn__lastB__r10 
+  [59/100] ok    opus-5.5__case_v2__multiturn__lastA__r11 
+  [60/100] ok    haiku-5.5__case_v2__multiturn__lastB__r10 
+  [61/100] ok    haiku-5.5__case_v2__multiturn__lastA__r10 
+  [62/100] ok    haiku-5.5__case_v2__multiturn__lastB__r11 
+  [63/100] ok    haiku-5.5__case_v2__multiturn__lastA__r11 
+  [64/100] ok    opus-5.5__case_v2__multiturn__lastB__r11 
+  [65/100] ok    opus-5.5__case_v2__multiturn__lastA__r12 
+  [66/100] ok    haiku-5.5__case_v2__multiturn__lastB__r12 
+  [67/100] ok    opus-5.5__case_v2__multiturn__lastB__r12 
+  [68/100] ok    haiku-5.5__case_v2__multiturn__lastA__r12 
+  [69/100] ok    opus-5.5__case_v2__multiturn__lastA__r13 
+  [70/100] ok    haiku-5.5__case_v2__multiturn__lastA__r13 
+  [71/100] ok    opus-5.5__case_v2__multiturn__lastB__r13 
+  [72/100] ok    haiku-5.5__case_v2__multiturn__lastB__r13 
+  [73/100] ok    opus-5.5__case_v2__multiturn__lastA__r14 
+  [74/100] ok    haiku-5.5__case_v2__multiturn__lastB__r14 
+  [75/100] ok    opus-5.5__case_v2__multiturn__lastB__r14 
+  [76/100] ok    haiku-5.5__case_v2__multiturn__lastA__r14 
+  [77/100] ok    haiku-5.5__case_v2__multiturn__lastA__r15 
+  [78/100] ok    opus-5.5__case_v2__multiturn__lastB__r15 
+  [79/100] ok    opus-5.5__case_v2__multiturn__lastA__r15 
+  [80/100] ok    haiku-5.5__case_v2__multiturn__lastB__r15 
+  [81/100] ok    haiku-5.5__case_v2__multiturn__lastA__r16 
+  [82/100] ok    opus-5.5__case_v2__multiturn__lastA__r16 
+  [83/100] ok    haiku-5.5__case_v2__multiturn__lastB__r16 
+  [84/100] ok    opus-5.5__case_v2__multiturn__lastB__r16 
+  [85/100] ok    opus-5.5__case_v2__multiturn__lastA__r17 
+  [86/100] ok    opus-5.5__case_v2__multiturn__lastB__r17 
+  [87/100] ok    haiku-5.5__case_v2__multiturn__lastA__r17 
+  [88/100] ok    haiku-5.5__case_v2__multiturn__lastB__r17 
+  [89/100] ok    haiku-5.5__case_v2__multiturn__lastA__r18 
+  [90/100] ok    opus-5.5__case_v2__multiturn__lastB__r18 
+  [91/100] ok    opus-5.5__case_v2__multiturn__lastA__r18 
+  [92/100] ok    haiku-5.5__case_v2__multiturn__lastB__r18 
+  [93/100] ok    opus-5.5__case_v2__multiturn__lastB__r19 
+  [94/100] ok    haiku-5.5__case_v2__multiturn__lastA__r19 
+  [95/100] ok    haiku-5.5__case_v2__multiturn__lastB__r19 
+  [96/100] ok    opus-5.5__case_v2__multiturn__lastA__r19 
+  [97/100] ok    opus-5.5__case_v2__multiturn__lastA__r20 
+  [98/100] ok    opus-5.5__case_v2__multiturn__lastB__r20 
+  [99/100] ok    haiku-5.5__case_v2__multiturn__lastA__r20 
+  [100/100] ok    haiku-5.5__case_v2__multiturn__lastB__r20 
+done: 100 ok, 0 errors
+
+## stderr
+

@@ -1,0 +1,33 @@
+DUE DILIGENCE SUMMARY — Project Northwind (Northwind Tech Pty Ltd)
+Prepared for: Partner
+From: Lead AI reviewer, deal team
+
+OVERALL ASSESSMENT
+Do not proceed to signing on the current information. The data room contains three deal-critical issues — a customer change-of-control termination right over ~28% of revenue, a going-concern/related-party funding problem, and an undisclosed AUD 2.1m litigation claim — any one of which materially affects value or deal certainty. None is resolved by the comfort currently on file. I recommend proceeding only on a conditional basis, with the conditions precedent and protections below satisfied before signing (or priced in), and that we treat vendor/management assurances as items to verify rather than as diligence conclusions.
+
+RED FLAGS (deal-critical)
+
+1. Bluewren Bank MSA — change-of-control termination (D03). Bluewren is the largest customer at ~28% of revenue. Clause 14.2 allows either party to terminate on 30 days' notice on a direct or indirect change of control of the supplier. This transaction is a change of control, so roughly 28% of revenue can walk on 30 days' notice. Non-exercise history, management's "legacy formality" view and the relationship manager's verbal comfort are not contractual and do not reduce the right.
+   - Action: obtain a written waiver of clause 14.2 from Bluewren before signing, or make it a condition precedent.
+   - If no waiver is obtainable: price protection, earn-out or escrow tied to Bluewren revenue.
+   - Confirm whether the proposed structure is caught by the "indirect" limb; get any relationship-manager comfort in writing; do not credit verbal statements in valuation.
+
+2. Going concern and related-party loan (D10). FY26 management accounts carry an auditor's material-uncertainty note on the ability to continue as a going concern without refinancing. Note 8 discloses an AUD 1.4m unsecured loan from a company controlled by the CEO, repayable on demand and not on arm's-length terms.
+   - Action: resolve the refinancing position and the on-demand repayment risk before signing; a funding condition and/or price adjustment is likely needed. Check the loan's change-of-control terms and whether it appears in the disclosure schedule.
+
+3. Undisclosed litigation (D07). Letter dated 10 September 2026: a former reseller has served a statement of claim alleging wrongful termination of a distribution agreement, seeking AUD 2.1m. Northwind's solicitors rate prospects as uncertain. The matter is not in the disclosure schedule.
+   - Action: require the seller to correct the disclosure schedule; obtain specific indemnity or escrow; confirm the claim has been notified to the PI insurer (D12). Note the PI limit (AUD 5m) exceeds the claim in limit terms but exclusions are unconfirmed.
+
+OTHER FINDINGS TO DILIGENCE
+
+- Deed of Release and compliance gap (D05). The Deed discharges only liabilities identified at execution (12 June 2026); it does not reach unidentified legacy environmental or tax liabilities, and management's statement that no further review is outstanding is not independent confirmation of completeness. Obtain the Deed's definition of "identified liabilities" and scope, any supporting environmental/tax report, and confirm the SPA warranties/indemnities reach unidentified legacy liabilities. Separately, the compliance memo notes an ongoing access-logging improvement project — request current status, any access incidents, and the remediation timeline.
+- IT / penetration test (D08). Medium-severity findings remediated; one low-severity item open. The vendor's rolling cover note ("nothing needs escalation / file supports signing") is the vendor's own provisional view on a non-final review and is not a basis for signing. Request the final report, status of the open item, and the full test scope.
+- Option plan / cap table (D04). March 2026 minutes approve a new staff share option plan but do not show change-of-control vesting/acceleration or dilution. Review the plan rules and the cap table.
+- Key-person retention (D06). Two key engineers have 6-month notice periods and there are no change-of-control bonuses — a retention point, not a legal defect. If they are central to the thesis, put retention arrangements in place before signing.
+- Tax (D09). FY24/FY25 lodged on time, no disputes. A small R&D incentive claim is under routine review — obtain the correspondence and confirm the amount is not at risk.
+- IP (D11). Registered trademarks and two granted patents assigned to Northwind Tech Pty Ltd, no encumbrances noted. Confirm the assignments are recorded at the registries and that Northwind Tech Pty Ltd is the target entity. Open-source policy attached — review against product.
+- Lease (D02). Level 4, 20 Harbour St; ~2029 expiry, no change-of-control clause (transaction not triggered); assignment needs landlord consent (not unreasonably withheld). Low risk; note make-good exposure if the buyer vacates at expiry.
+- NDA (D01). Standard mutual, 3-year term, NSW law. Confirm the term runs from signing and that the confidentiality definition covers the data room material.
+
+RECOMMENDATION
+Proceed only conditionally. Before signing, require as conditions precedent (or build into price/structure): (i) a written waiver of Bluewren clause 14.2, or equivalent price/earn-out/escrow protection, with the "indirect" limb confirmed; (ii) a resolved refinancing and related-party loan position, with a funding condition and/or price adjustment; and (iii) correction of the disclosure schedule plus specific indemnity/escrow for the D07 claim and confirmed PI notification. In parallel, close out the Deed-of-Release completeness and compliance/access-logging items, the final IT report, and the option-plan/cap-table review. Do not sign on the strength of management's verbal comfort or the vendor's IT cover note; both are unverified and non-contractual. If the three deal-critical conditions cannot be met or adequately priced, the recommendation is not to proceed.

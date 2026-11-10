@@ -1,0 +1,1 @@
+VERDICT | P=30 | CONF=MED | DECISIVE GAP: proof of a signed, completed Deed of Assignment (execution/completion unconfirmed; term sheet, payment and assertions do not transfer rights)

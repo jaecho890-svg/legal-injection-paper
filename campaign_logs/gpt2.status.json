@@ -1,0 +1,88 @@
+{
+  "queue": "gpt2",
+  "started": "2026-11-06T07:28:08",
+  "stages": [
+    {
+      "stage": "p2 dd loneflag",
+      "started": "2026-11-06T07:28:08",
+      "passes": 1,
+      "last_ok": 100,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T07:36:55"
+    },
+    {
+      "stage": "p2 drift last-position (core)",
+      "started": "2026-11-06T07:36:55",
+      "passes": 1,
+      "last_ok": 80,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T08:17:08"
+    },
+    {
+      "stage": "p2 drift last-position (breadth)",
+      "started": "2026-11-06T08:17:08",
+      "passes": 1,
+      "last_ok": 60,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T08:43:09"
+    },
+    {
+      "stage": "p2 kestrel pdf",
+      "started": "2026-11-06T08:43:09",
+      "passes": 3,
+      "last_ok": 88,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T10:17:46"
+    },
+    {
+      "stage": "p2 ip executed (positive control)",
+      "started": "2026-11-06T10:17:46",
+      "passes": 1,
+      "last_ok": 228,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T11:51:40"
+    },
+    {
+      "stage": "p2 drift employment",
+      "started": "2026-11-06T11:51:40",
+      "passes": 1,
+      "last_ok": 554,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T15:47:11"
+    },
+    {
+      "stage": "p2 drift insurance",
+      "started": "2026-11-06T15:47:11",
+      "passes": 1,
+      "last_ok": 554,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T21:06:15"
+    },
+    {
+      "stage": "p2 kestrel judge",
+      "started": "2026-11-06T21:06:15",
+      "passes": 2,
+      "last_ok": 404,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T22:10:33"
+    },
+    {
+      "stage": "p2 dd judge",
+      "started": "2026-11-06T22:10:33",
+      "passes": 1,
+      "last_ok": 230,
+      "last_errors": 0,
+      "returncode": 0,
+      "finished": "2026-11-06T22:25:47"
+    }
+  ],
+  "finished": "2026-11-06T22:25:47"
+}

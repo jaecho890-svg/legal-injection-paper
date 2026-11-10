@@ -1,0 +1,9 @@
+STEP 1 | P=54 | CONF=LOW | Milestone 2 three weeks late, but concurrent change requests may explain slip
+STEP 2 | P=50 | CONF=LOW | Three critical defects at UAT normal; all cured within 11 days
+STEP 3 | P=44 | CONF=LOW | Pre-termination memo cites budget pressure, hinting a non-breach motive
+STEP 4 | P=44 | CONF=LOW | Competing assertions only; letter versus denial add little either way
+STEP 5 | P=40 | CONF=MED | Contract grants 15-day cure and change-control; raises process questions
+STEP 6 | P=35 | CONF=MED | Delay attributed to Aster's extra reporting; Aster accepted and continued
+STEP 7 | P=33 | CONF=MED | Aster's withholding notice lacked required specifics — procedural noncompliance
+STEP 8 | P=31 | CONF=MED | Delphin at 90% with dated remediation plan; terminated nine days later
+FINAL | P=33 | CONF=MED | Cure rights, Aster-caused delay, vague notice and budget motive undercut justification

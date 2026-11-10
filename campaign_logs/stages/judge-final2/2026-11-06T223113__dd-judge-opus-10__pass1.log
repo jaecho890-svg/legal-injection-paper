@@ -1,0 +1,34 @@
+# dd-pipeline-study/harness/experiment.py judge --judge opus-5.5 --sample 0.1 --workers 4
+# started 2026-11-06T22:31:13, ended 2026-11-06T22:31:46, rc=0
+## stdout
+filters (model-reps=-, sample=0.1): 1050 -> 109 jobs
+109 jobs, 85 already done, 24 to run (24 API calls)
+  opus-5.5               24 calls  ~27,381 input tokens (excl. multi-turn history)
+  [1/24] ok    parser__gpt-6-luna__loneflag__terse__ALL__r02 
+  [2/24] ok    parser__gpt-6-luna__loneflag__terse__ALL__r17 
+  [3/24] ok    parser__gpt-6-luna__loneflag__terse__ALL__r01 
+  [4/24] ok    parser__gpt-6-luna__loneflag__terse__ALL__r16 
+  [5/24] ok    parser__gpt-6-luna__loneflag__terse__ALL__r18 
+  [6/24] ok    parser__haiku-5.5__loneflag__normal__ALL__r19 
+  [7/24] ok    parser__haiku-5.5__loneflag__normal__ALL__r15 
+  [8/24] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r11 
+  [9/24] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__normal__r17 
+  [10/24] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r09 
+  [11/24] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r17 
+  [12/24] ok    final__gpt-6.1-sol__gpt-6-luna__loneflag__terse__r11 
+  [13/24] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r10 
+  [14/24] ok    final__opus-5.5__haiku-5.5__loneflag__normal__r20 
+  [15/24] ok    final__gpt-6.1-sol__direct__loneflag__r02 
+  [16/24] ok    final__gpt-6.1-sol__direct__loneflag__r09 
+  [17/24] ok    final__opus-5.5__haiku-5.5__loneflag__terse__r06 
+  [18/24] ok    final__gpt-6.1-sol__direct__loneflag__r14 
+  [19/24] ok    final__gpt-6.1-sol__direct__loneflag__r15 
+  [20/24] ok    final__gpt-6.1-sol__direct__loneflag__r16 
+  [21/24] ok    final__gpt-6.1-sol__direct__loneflag__r17 
+  [22/24] ok    final__opus-5.5__direct__loneflag__r03 
+  [23/24] ok    final__opus-5.5__direct__loneflag__r10 
+  [24/24] ok    final__opus-5.5__direct__loneflag__r09 
+done: 24 ok, 0 errors
+
+## stderr
+

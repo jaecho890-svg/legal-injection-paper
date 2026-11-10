@@ -1,0 +1,9 @@
+# kestrel-injection-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+# started 2026-11-06T04:49:00, ended 2026-11-06T04:49:05, rc=0
+## stdout
+4730 jobs, 3856 already done, 874 to run (874 API calls)
+  gpt-6.1-sol           874 calls  ~3,199,171 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

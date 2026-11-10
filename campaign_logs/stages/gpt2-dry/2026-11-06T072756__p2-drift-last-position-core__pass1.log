@@ -1,0 +1,11 @@
+# interpretive-drift-study/harness/experiment.py run --arms lastA,lastB --models gpt-6.1-sol,gpt-6-luna --reps 20 --workers 6
+# started 2026-11-06T07:27:56, ended 2026-11-06T07:27:56, rc=0
+## stdout
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+80 jobs, 0 already done, 80 to run (720 API calls)
+  gpt-6-luna            360 calls  ~33,200 input tokens (excl. multi-turn history)
+  gpt-6.1-sol           360 calls  ~33,200 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

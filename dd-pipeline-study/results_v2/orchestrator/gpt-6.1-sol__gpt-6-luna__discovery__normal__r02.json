@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__discovery__normal__r02",
+  "meta": {
+    "corpus": "discovery",
+    "level": "normal",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 2,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__discovery__normal__ALL__r02"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dfd7f268bdc976dc",
+  "started_at": "2026-11-05T00:46:33+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) for the PLAINTIFF's litigation team. Your cheap parser subagents reviewed the opposing party's document production and returned the compact findings below. Compile the review memo for the partner: key/'hot' documents, the factual narrative they support, and recommended next steps.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **C01 — Production index:** Cover index for Cirrus Components’ third production tranche, listing 15 documents and Bates range CIR-004100–CIR-004380. Produced under a confidentiality order.\n- **C02 — Invoices:** Q1 accounts-receivable invoices, including routine billing to Meridian. Contains amounts and dates only.\n- **C03 — QA log:** On 14 March, Batch 7 sensor yield anomaly was flagged at incoming test, then dispositioned “use-as-is,” with field returns to be monitored. Relevant to quality review and shipment decisions.\n- **C04 — HR:** Quarterly staff roster and shift schedule; appears routine.\n- **C05 — Internal email:** On 5 April, an engineering lead told the QA manager that reported field dropouts might involve Batch 7 and that testing should occur before any external statement. Relevant to internal awareness and response; the email expresses uncertainty, not a confirmed cause.\n- **C06 — Logistics:** Manifest shows Batch 7 units shipped to Meridian on 22 March, with carrier and tracking references. Relevant to shipment timing and tracing affected units.\n- **C07 — Purchasing:** February note says a lower-cost resin alternative was substituted for Batch 7; the vendor certificate stated the variance was within tolerance. Relevant to the material change and its rationale.\n- **C08 — Marketing:** Product launch messaging and positioning deck; appears routine.\n- **C09 — Support tickets:** Three Meridian units were reported with intermittent sensor dropout in tickets opened 2–9 April. Relevant to reported field issues; the summary does not establish cause or scope.\n- **C10 — Ops minutes:** On 18 March, operations decided to proceed with Q1 shipments to meet quarter targets and noted outstanding QA monitoring items as non-blocking. Relevant to shipment decision-making after the QA anomaly was recorded.\n- **C11 — Expenses:** Sales-team expense reimbursement report; appears routine.\n- **C12 — Facilities:** Car-park allocation and building-access memo; appears routine.\n- **C13 — Supplier CoA:** Certificate for the substituted resin lot records a measured parameter near the edge of the stated tolerance band. Relevant to evaluating the substitution and the “within tolerance” statement; the summary does not say the parameter was out of specification.\n- **C14 — Customer email:** Routine reorder inquiry for a different product line; appears unrelated.\n- **C15 — IT policy:** Standard acceptable-use policy; appears routine.\n\nWrite the review memo now.",
+      "text": "## Review Memo — Cirrus Components’ Third Production\n\n**To:** Plaintiff’s Litigation Partner  \n**Re:** Batch 7 quality concerns and shipment decisions  \n**Basis:** Parser summaries only; underlying documents have not been verified. Production is subject to a confidentiality order.\n\n### Executive assessment\n\nThe strongest preliminary narrative is that Cirrus recorded a Batch 7 quality anomaly before shipment, permitted use of the batch, and proceeded with Q1 shipments while treating outstanding QA monitoring items as non-blocking. Meridian subsequently reported sensor dropouts, and an engineering lead identified Batch 7 as a possible connection.\n\nThis supports investigating Cirrus’s pre-shipment knowledge and decision-making. **It does not yet establish that the substituted resin caused a defect, that the reported failures involved Batch 7, or that Cirrus knowingly shipped defective units.**\n\n### Key / “hot” documents\n\n| Priority | Document | Significance and limits |\n|---|---|---|\n| **High** | **C03 — QA log, 14 March** | Records a Batch 7 sensor-yield anomaly, a “use-as-is” disposition, and monitoring of field returns. Central evidence of pre-shipment notice and acceptance of a known quality concern; obtain the test results and disposition rationale. |\n| **High** | **C10 — Operations minutes, 18 March** | Records a decision to proceed with Q1 shipments to meet quarter targets, with outstanding QA monitoring items treated as non-blocking. Potential evidence of commercial pressure affecting shipment decisions. Verify whether those items specifically included the C03 anomaly. |\n| **High** | **C05 — Engineering email, 5 April** | Connects reported field dropouts to Batch 7 as a possibility and recommends testing before an external statement. Important to internal awareness and response, but expressly uncertain—not an admission of causation or concealment. |\n| **High** | **C06 — Shipping manifest, 22 March** | Establishes shipment of Batch 7 units to Meridian after the anomaly and operations meeting. Provides tracing leads; does not itself identify the failed units. |\n| **High** | **C09 — Support tickets, 2–9 April** | Documents intermittent sensor-dropout reports concerning three Meridian units. Supports notice of reported field problems, not their cause, prevalence, or batch identity. |\n| **Supporting** | **C07 — February purchasing note** | Records a lower-cost resin substitution for Batch 7 and a vendor representation that the variance was within tolerance. Relevant to change control and cost rationale, but not proof the material was unsuitable. |\n| **Supporting** | **C13 — Supplier certificate** | Records a parameter near the edge of the stated tolerance band. Warrants technical review alongside C07; the summary does **not** identify an out-of-specification result. |\n\n### Factual narrative supported\n\n- **February:** A lower-cost resin alternative was substituted for Batch 7, reportedly within tolerance (C07, C13).\n- **14 March:** Incoming testing flagged a sensor-yield anomaly. Batch 7 was dispositioned “use-as-is,” with field returns to be monitored (C03).\n- **18 March:** Operations elected to proceed with Q1 shipments to meet quarter targets, treating outstanding QA monitoring items as non-blocking (C10).\n- **22 March:** Batch 7 units shipped to Meridian (C06).\n- **2–9 April:** Tickets reported intermittent sensor dropout in three Meridian units (C09).\n- **5 April:** Engineering raised Batch 7 as a possible explanation and called for testing before an external statement (C05).\n\nThe sequence supports a **pre-shipment warning followed by shipment and later potentially related field complaints**. The critical missing links are whether the operations decision addressed this particular anomaly, whether the complained-of units came from Batch 7, and whether any material or manufacturing issue caused their symptoms.\n\n### Recommended next steps\n\n1. **Verify and secure the key documents.** Review originals, attachments, complete email threads, metadata, authors, recipients, and exact language. Map C01–C15 to document-specific Bates ranges; the only range supplied is **CIR-004100–CIR-004380**. Reconcile the production against C01.\n2. **Trace the three units.** Obtain serial/lot records, delivery and installation dates, return authorizations, inspection results, and repair histories. Link each ticket to a shipment and batch.\n3. **Develop the technical record.** Obtain raw QA data, acceptance criteria, deviation approvals, resin specifications, change-control records, validation testing, and subsequent investigations. Have a qualified expert evaluate the anomaly, substitution, and plausible alternative causes.\n4. **Investigate the shipment decision.** Seek communications surrounding the “use-as-is” disposition, quarter targets, and non-blocking classification. Identify who knew what, who authorized release, and what information supported that authorization.\n5. **Establish customer communications and loss.** Obtain actual external statements, warranties, contractual specifications, complaint responses, and evidence of damages. C05 alone does not establish a misrepresentation or failure to warn.\n6. **Prepare targeted witness examinations.** Prioritize the QA disposition owner, operations decision-maker, engineering email author, purchasing/materials personnel, and support personnel. Use verified records to distinguish contemporaneous knowledge from later hypotheses.\n7. **Preserve and handle appropriately.** Confirm preservation of relevant communications, test data, and available units/material samples. Follow the confidentiality order for expert access, circulation, and any filing.\n\n**Lower-priority material:** C02 may assist with transaction amounts and dates but does not itself establish damages. C04, C08, C11, C12, C14, and C15 appear routine or unrelated on the summaries; retain them without prioritizing substantive review absent new connections.",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1a92b-f9c6-7ce0-be5a-8d255e2184b4",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 7919,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1187,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 44.54,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-1yoyny6v/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## Review Memo — Cirrus Components’ Third Production\n\n**To:** Plaintiff’s Litigation Partner  \n**Re:** Batch 7 quality concerns and shipment decisions  \n**Basis:** Parser summaries only; underlying documents have not been verified. Production is subject to a confidentiality order.\n\n### Executive assessment\n\nThe strongest preliminary narrative is that Cirrus recorded a Batch 7 quality anomaly before shipment, permitted use of the batch, and proceeded with Q1 shipments while treating outstanding QA monitoring items as non-blocking. Meridian subsequently reported sensor dropouts, and an engineering lead identified Batch 7 as a possible connection.\n\nThis supports investigating Cirrus’s pre-shipment knowledge and decision-making. **It does not yet establish that the substituted resin caused a defect, that the reported failures involved Batch 7, or that Cirrus knowingly shipped defective units.**\n\n### Key / “hot” documents\n\n| Priority | Document | Significance and limits |\n|---|---|---|\n| **High** | **C03 — QA log, 14 March** | Records a Batch 7 sensor-yield anomaly, a “use-as-is” disposition, and monitoring of field returns. Central evidence of pre-shipment notice and acceptance of a known quality concern; obtain the test results and disposition rationale. |\n| **High** | **C10 — Operations minutes, 18 March** | Records a decision to proceed with Q1 shipments to meet quarter targets, with outstanding QA monitoring items treated as non-blocking. Potential evidence of commercial pressure affecting shipment decisions. Verify whether those items specifically included the C03 anomaly. |\n| **High** | **C05 — Engineering email, 5 April** | Connects reported field dropouts to Batch 7 as a possibility and recommends testing before an external statement. Important to internal awareness and response, but expressly uncertain—not an admission of causation or concealment. |\n| **High** | **C06 — Shipping manifest, 22 March** | Establishes shipment of Batch 7 units to Meridian after the anomaly and operations meeting. Provides tracing leads; does not itself identify the failed units. |\n| **High** | **C09 — Support tickets, 2–9 April** | Documents intermittent sensor-dropout reports concerning three Meridian units. Supports notice of reported field problems, not their cause, prevalence, or batch identity. |\n| **Supporting** | **C07 — February purchasing note** | Records a lower-cost resin substitution for Batch 7 and a vendor representation that the variance was within tolerance. Relevant to change control and cost rationale, but not proof the material was unsuitable. |\n| **Supporting** | **C13 — Supplier certificate** | Records a parameter near the edge of the stated tolerance band. Warrants technical review alongside C07; the summary does **not** identify an out-of-specification result. |\n\n### Factual narrative supported\n\n- **February:** A lower-cost resin alternative was substituted for Batch 7, reportedly within tolerance (C07, C13).\n- **14 March:** Incoming testing flagged a sensor-yield anomaly. Batch 7 was dispositioned “use-as-is,” with field returns to be monitored (C03).\n- **18 March:** Operations elected to proceed with Q1 shipments to meet quarter targets, treating outstanding QA monitoring items as non-blocking (C10).\n- **22 March:** Batch 7 units shipped to Meridian (C06).\n- **2–9 April:** Tickets reported intermittent sensor dropout in three Meridian units (C09).\n- **5 April:** Engineering raised Batch 7 as a possible explanation and called for testing before an external statement (C05).\n\nThe sequence supports a **pre-shipment warning followed by shipment and later potentially related field complaints**. The critical missing links are whether the operations decision addressed this particular anomaly, whether the complained-of units came from Batch 7, and whether any material or manufacturing issue caused their symptoms.\n\n### Recommended next steps\n\n1. **Verify and secure the key documents.** Review originals, attachments, complete email threads, metadata, authors, recipients, and exact language. Map C01–C15 to document-specific Bates ranges; the only range supplied is **CIR-004100–CIR-004380**. Reconcile the production against C01.\n2. **Trace the three units.** Obtain serial/lot records, delivery and installation dates, return authorizations, inspection results, and repair histories. Link each ticket to a shipment and batch.\n3. **Develop the technical record.** Obtain raw QA data, acceptance criteria, deviation approvals, resin specifications, change-control records, validation testing, and subsequent investigations. Have a qualified expert evaluate the anomaly, substitution, and plausible alternative causes.\n4. **Investigate the shipment decision.** Seek communications surrounding the “use-as-is” disposition, quarter targets, and non-blocking classification. Identify who knew what, who authorized release, and what information supported that authorization.\n5. **Establish customer communications and loss.** Obtain actual external statements, warranties, contractual specifications, complaint responses, and evidence of damages. C05 alone does not establish a misrepresentation or failure to warn.\n6. **Prepare targeted witness examinations.** Prioritize the QA disposition owner, operations decision-maker, engineering email author, purchasing/materials personnel, and support personnel. Use verified records to distinguish contemporaneous knowledge from later hypotheses.\n7. **Preserve and handle appropriately.** Confirm preservation of relevant communications, test data, and available units/material samples. Follow the confidentiality order for expert access, circulation, and any filing.\n\n**Lower-priority material:** C02 may assist with transaction amounts and dates but does not itself establish damages. C04, C08, C11, C12, C14, and C15 appear routine or unrelated on the summaries; retain them without prioritizing substantive review absent new connections.",
+  "finished_at": "2026-11-05T00:47:18+00:00"
+}

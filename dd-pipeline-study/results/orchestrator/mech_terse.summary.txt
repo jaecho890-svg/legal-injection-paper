@@ -1,0 +1,19 @@
+DD SUMMARY — NORTHWIND
+
+Key findings
+- Revenue concentration: Topaz = 35% of revenue; renewal undecided (M03).
+- Liquidity: operating cash negative in 2 of last 3 quarters (M07); cloud supplier shifted Northwind to prepayment terms (M09).
+- Leverage: covenant headroom down to 2.8x against 3.0x cap (M05).
+- Reporting: audited FY26 accounts deferred pending refinancing (M10).
+
+Red flags
+- Single-customer dependency (Topaz 35%) with unresolved renewal — material revenue-cliff risk.
+- Tightening liquidity: negative operating cash plus supplier prepayment demand draining working capital.
+- Thin covenant headroom (0.2x) — breach risk if EBITDA slips.
+- Refinancing overhang: audited accounts withheld until refinance closes — limits verification and signals funding stress.
+- Unprovisioned reseller claim AUD 0.2m–2.1m, no provision booked (M11) — understated liabilities.
+
+Recommendation
+- Do NOT proceed on current terms. Hold pending resolution of the two gating items: (1) Topaz renewal confirmed in writing; (2) refinancing closed with audited FY26 accounts delivered.
+- Conditions before reconsidering: covenant waiver/reset headroom restored; provision booked for reseller claim; working-capital bridge addressing supplier prepayment.
+- If both gating items clear, revisit at a revised valuation reflecting concentration and liquidity risk.

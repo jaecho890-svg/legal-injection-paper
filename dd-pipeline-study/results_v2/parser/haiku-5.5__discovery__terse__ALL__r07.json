@@ -1,0 +1,79 @@
+{
+  "run_id": "haiku-5.5__discovery__terse__ALL__r07",
+  "meta": {
+    "corpus": "discovery",
+    "level": "terse",
+    "chunk": "ALL",
+    "parser": "haiku-5.5",
+    "rep": 7
+  },
+  "role": "reviewer",
+  "model_alias": "haiku-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-haiku-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:37:50+00:00",
+  "system": "You are a document reader processing a LARGE batch under tight output limits to save tokens/cost. Summarise the whole batch in AT MOST 90 words: at most one very short bullet per noteworthy document (<=8 words each); omit routine/boilerplate documents entirely; end with a one-line overall takeaway. Do not exceed the limit.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "Documents:\n--- C01 (Production index) ---\nCirrus Components document production, tranche 3, cover index. 15 documents, Bates CIR-004100 to CIR-004380. Produced subject to confidentiality order.\n\n--- C02 (Invoices) ---\nAccounts-receivable invoice batch, Q1. Routine billing to several customers including Meridian. Amounts and dates only.\n\n--- C03 (QA log) ---\nQuality log entry, 14 March: 'Batch 7 sensor yield anomaly flagged at incoming test; dispositioned use-as-is, monitor field returns.'\n\n--- C04 (HR) ---\nStaff roster and shift schedule for the quarter. Routine.\n\n--- C05 (Internal email) ---\nEmail from engineering lead to QA manager, 5 April: 'I'm not certain, but the field dropouts we're hearing about might be the Batch 7 units - we should run the tests before we say anything externally.'\n\n--- C06 (Logistics) ---\nShipping manifest: Batch 7 units despatched to Meridian on 22 March, with carrier and tracking references.\n\n--- C07 (Purchasing) ---\nPurchasing note, February: 'Resin lot substituted to a lower-cost alternative for Batch 7; vendor certificate of analysis states variance within tolerance.'\n\n--- C08 (Marketing) ---\nProduct launch marketing deck. Messaging and positioning slides. Routine.\n\n--- C09 (Support tickets) ---\nCustomer support export: three Meridian units logged with intermittent sensor dropout, tickets opened 2-9 April.\n\n--- C10 (Ops minutes) ---\nOperations meeting minutes, 18 March: 'Decision to proceed with Q1 shipments to meet quarter targets; outstanding QA monitor items noted as non-blocking.'\n\n--- C11 (Expenses) ---\nExpense reimbursement report for the sales team. Routine.\n\n--- C12 (Facilities) ---\nFacilities memo on car-park allocation and building access. Routine.\n\n--- C13 (Supplier CoA) ---\nResin supplier certificate of analysis for the substituted lot: records a measured parameter near the edge of the stated tolerance band.\n\n--- C14 (Customer email) ---\nUnrelated routine customer email about a reorder of a different product line.\n\n--- C15 (IT policy) ---\nIT acceptable-use policy, standard terms. Routine.\n\nWrite your per-document notes.",
+      "text": "- **C03:** Batch 7 yield anomaly flagged; use-as-is dispositioned.\n- **C05:** Engineer suspects Batch 7 causes field dropouts.\n- **C06:** Batch 7 shipped to Meridian 22 March.\n- **C07:** Batch 7 resin swapped for cheaper alternative.\n- **C09:** Three Meridian units show sensor dropout.\n- **C10:** Q1 shipments proceeded despite open QA items.\n- **C13:** Substituted resin lot near tolerance edge.\n\n**Takeaway:** Batch 7 concerns were known before Meridian shipments and dropout reports.",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "04439554-1452-4760-8080-a113bf9ebb63",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 814,
+        "cache_read_input_tokens": 1194,
+        "cache_creation_input_tokens": 362
+      },
+      "latency_s": 4.857,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-haiku-5-5",
+  "final_text": "- **C03:** Batch 7 yield anomaly flagged; use-as-is dispositioned.\n- **C05:** Engineer suspects Batch 7 causes field dropouts.\n- **C06:** Batch 7 shipped to Meridian 22 March.\n- **C07:** Batch 7 resin swapped for cheaper alternative.\n- **C09:** Three Meridian units show sensor dropout.\n- **C10:** Q1 shipments proceeded despite open QA items.\n- **C13:** Substituted resin lot near tolerance edge.\n\n**Takeaway:** Batch 7 concerns were known before Meridian shipments and dropout reports.",
+  "finished_at": "2026-11-05T12:37:55+00:00"
+}

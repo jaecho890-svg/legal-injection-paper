@@ -1,0 +1,108 @@
+[2026-11-05T08:02:31] START kestrel core (pass 1): kestrel-injection-study/harness/experiment.py run --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 2160 -> 1800 jobs
+1800 jobs, 503 already done, 1297 to run (1297 API calls)
+  fable-5.1             155 calls  ~366,010 input tokens (excl. multi-turn history)
+  haiku-5.5             576 calls  ~1,356,992 input tokens (excl. multi-turn history)
+  opus-5.5              566 calls  ~1,333,289 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-05T08:02:32] END   kestrel core (pass 1): rc=0 ok=0 errors=0 | 1800 jobs, 503 already done, 1297 to run (1297 API calls) ;   fable-5.1             155 calls  ~366,010 input tokens (excl. multi-turn history) ;   haiku-5.5             576 calls  ~1,356,992 input tokens (excl. multi-turn history) ;   opus-5.5              566 calls  ~1,333,289 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:32] START drift core (pass 1): interpretive-drift-study/harness/experiment.py run --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 720 -> 600 jobs
+600 jobs, 0 already done, 600 to run (5400 API calls)
+  fable-5.1            1080 calls  ~115,450 input tokens (excl. multi-turn history)
+  haiku-5.5            2160 calls  ~230,900 input tokens (excl. multi-turn history)
+  opus-5.5             2160 calls  ~230,900 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-05T08:02:32] END   drift core (pass 1): rc=0 ok=0 errors=0 | 600 jobs, 0 already done, 600 to run (5400 API calls) ;   fable-5.1            1080 calls  ~115,450 input tokens (excl. multi-turn history) ;   haiku-5.5            2160 calls  ~230,900 input tokens (excl. multi-turn history) ;   opus-5.5             2160 calls  ~230,900 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:32] START ip core (pass 1): ip-assignment-study/harness/experiment.py run --models fable-5.1,opus-5.5,haiku-5.5 --reps 20 --workers 4 --model-reps fable-5.1=10
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 360 -> 300 jobs
+300 jobs, 0 already done, 300 to run (2800 API calls)
+  fable-5.1             560 calls  ~56,150 input tokens (excl. multi-turn history)
+  haiku-5.5            1120 calls  ~112,300 input tokens (excl. multi-turn history)
+  opus-5.5             1120 calls  ~112,300 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-05T08:02:33] END   ip core (pass 1): rc=0 ok=0 errors=0 | 300 jobs, 0 already done, 300 to run (2800 API calls) ;   fable-5.1             560 calls  ~56,150 input tokens (excl. multi-turn history) ;   haiku-5.5            1120 calls  ~112,300 input tokens (excl. multi-turn history) ;   opus-5.5             1120 calls  ~112,300 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:33] START ip pipeline (pass 1): ip-assignment-study/harness/experiment.py pipeline --parser haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+60 jobs, 0 already done, 60 to run (60 API calls)
+  haiku-5.5              60 calls  ~31,420 input tokens (excl. multi-turn history)
+dry run: nothing sent
+stage 2 would add 120 assessor calls
+
+[2026-11-05T08:02:33] END   ip pipeline (pass 1): rc=0 ok=0 errors=0 | 60 jobs, 0 already done, 60 to run (60 API calls) ;   haiku-5.5              60 calls  ~31,420 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:33] START dd overt (pass 1): dd-pipeline-study/harness/experiment.py run --corpus overt --parsers haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+80 jobs, 0 already done, 80 to run (80 API calls)
+  haiku-5.5              80 calls  ~42,180 input tokens (excl. multi-turn history)
+dry run: nothing sent
+stage 2 would add about 80 orchestrator calls
+
+[2026-11-05T08:02:33] END   dd overt (pass 1): rc=0 ok=0 errors=0 | 80 jobs, 0 already done, 80 to run (80 API calls) ;   haiku-5.5              80 calls  ~42,180 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:33] START dd subtle (pass 1): dd-pipeline-study/harness/experiment.py run --corpus subtle --parsers haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+80 jobs, 0 already done, 80 to run (80 API calls)
+  haiku-5.5              80 calls  ~43,720 input tokens (excl. multi-turn history)
+dry run: nothing sent
+stage 2 would add about 80 orchestrator calls
+
+[2026-11-05T08:02:33] END   dd subtle (pass 1): rc=0 ok=0 errors=0 | 80 jobs, 0 already done, 80 to run (80 API calls) ;   haiku-5.5              80 calls  ~43,720 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:33] START dd mechanism (pass 1): dd-pipeline-study/harness/experiment.py run --corpus mechanism --parsers haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+40 jobs, 0 already done, 40 to run (40 API calls)
+  haiku-5.5              40 calls  ~28,780 input tokens (excl. multi-turn history)
+dry run: nothing sent
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 40 -> 30 jobs
+30 jobs, 0 already done, 30 to run (30 API calls)
+  fable-5.1              10 calls  ~7,150 input tokens (excl. multi-turn history)
+  opus-5.5               20 calls  ~14,300 input tokens (excl. multi-turn history)
+dry run: nothing sent
+stage 2 would add about 80 orchestrator calls
+
+[2026-11-05T08:02:33] END   dd mechanism (pass 1): rc=0 ok=0 errors=0 | 40 jobs, 0 already done, 40 to run (40 API calls) ;   haiku-5.5              40 calls  ~28,780 input tokens (excl. multi-turn history) ; 30 jobs, 0 already done, 30 to run (30 API calls) ;   fable-5.1              10 calls  ~7,150 input tokens (excl. multi-turn history) ;   opus-5.5               20 calls  ~14,300 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:33] START dd discovery (pass 1): dd-pipeline-study/harness/experiment.py run --corpus discovery --parsers haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+40 jobs, 0 already done, 40 to run (40 API calls)
+  haiku-5.5              40 calls  ~23,460 input tokens (excl. multi-turn history)
+dry run: nothing sent
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 40 -> 30 jobs
+30 jobs, 0 already done, 30 to run (30 API calls)
+  fable-5.1              10 calls  ~6,040 input tokens (excl. multi-turn history)
+  opus-5.5               20 calls  ~12,080 input tokens (excl. multi-turn history)
+dry run: nothing sent
+stage 2 would add about 80 orchestrator calls
+
+[2026-11-05T08:02:33] END   dd discovery (pass 1): rc=0 ok=0 errors=0 | 40 jobs, 0 already done, 40 to run (40 API calls) ;   haiku-5.5              40 calls  ~23,460 input tokens (excl. multi-turn history) ; 30 jobs, 0 already done, 30 to run (30 API calls) ;   fable-5.1              10 calls  ~6,040 input tokens (excl. multi-turn history) ;   opus-5.5               20 calls  ~12,080 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:33] START kestrel breadth (pass 1): kestrel-injection-study/harness/experiment.py run --models sonnet-5.5,opus-4.8 --reps 5 --workers 4
+360 jobs, 0 already done, 360 to run (360 API calls)
+  opus-4.8              180 calls  ~424,060 input tokens (excl. multi-turn history)
+  sonnet-5.5            180 calls  ~424,060 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-05T08:02:34] END   kestrel breadth (pass 1): rc=0 ok=0 errors=0 | 360 jobs, 0 already done, 360 to run (360 API calls) ;   opus-4.8              180 calls  ~424,060 input tokens (excl. multi-turn history) ;   sonnet-5.5            180 calls  ~424,060 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:34] START drift breadth (pass 1): interpretive-drift-study/harness/experiment.py run --models sonnet-5.5,opus-4.8 --reps 5 --workers 4
+120 jobs, 0 already done, 120 to run (1080 API calls)
+  opus-4.8              540 calls  ~57,725 input tokens (excl. multi-turn history)
+  sonnet-5.5            540 calls  ~57,725 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-05T08:02:34] END   drift breadth (pass 1): rc=0 ok=0 errors=0 | 120 jobs, 0 already done, 120 to run (1080 API calls) ;   opus-4.8              540 calls  ~57,725 input tokens (excl. multi-turn history) ;   sonnet-5.5            540 calls  ~57,725 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:34] START draft pilot: employment (pass 1): interpretive-drift-study/harness/experiment.py run --case case_employment.json --arms control --models opus-5.5,haiku-5.5 --reps 3 --workers 4
+6 jobs, 0 already done, 6 to run (54 API calls)
+  haiku-5.5              27 calls  ~2,703 input tokens (excl. multi-turn history)
+  opus-5.5               27 calls  ~2,703 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-05T08:02:34] END   draft pilot: employment (pass 1): rc=0 ok=0 errors=0 | 6 jobs, 0 already done, 6 to run (54 API calls) ;   haiku-5.5              27 calls  ~2,703 input tokens (excl. multi-turn history) ;   opus-5.5               27 calls  ~2,703 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:34] START draft pilot: insurance (pass 1): interpretive-drift-study/harness/experiment.py run --case case_insurance.json --arms control --models opus-5.5,haiku-5.5 --reps 3 --workers 4
+6 jobs, 0 already done, 6 to run (54 API calls)
+  haiku-5.5              27 calls  ~2,511 input tokens (excl. multi-turn history)
+  opus-5.5               27 calls  ~2,511 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-05T08:02:34] END   draft pilot: insurance (pass 1): rc=0 ok=0 errors=0 | 6 jobs, 0 already done, 6 to run (54 API calls) ;   haiku-5.5              27 calls  ~2,511 input tokens (excl. multi-turn history) ;   opus-5.5               27 calls  ~2,511 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:34] START draft pilot: ip executed (pass 1): ip-assignment-study/harness/experiment.py run --case case_executed.json --arms honest --models opus-5.5,haiku-5.5 --reps 3 --workers 4
+12 jobs, 0 already done, 12 to run (108 API calls)
+  haiku-5.5              54 calls  ~5,208 input tokens (excl. multi-turn history)
+  opus-5.5               54 calls  ~5,208 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+[2026-11-05T08:02:34] END   draft pilot: ip executed (pass 1): rc=0 ok=0 errors=0 | 12 jobs, 0 already done, 12 to run (108 API calls) ;   haiku-5.5              54 calls  ~5,208 input tokens (excl. multi-turn history) ;   opus-5.5               54 calls  ~5,208 input tokens (excl. multi-turn history)
+[2026-11-05T08:02:34] QUEUE claude FINISHED

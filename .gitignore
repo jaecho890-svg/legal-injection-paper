@@ -1,0 +1,23 @@
+# credentials: never in the repo
+env
+.env
+*.env
+.env.*
+auth.json
+*credentials*
+
+# generated
+__pycache__/
+*.pyc
+*.tmp
+results_mock/
+results_calib/
+.DS_Store
+
+# campaign_logs/ and */results_v2/ ARE committed: tools/daily_commit.sh snapshots them daily
+
+# redacted public export (tools/export_public.py)
+release/
+paper/*.log
+paper/*.blg
+paper/*.aux

@@ -1,0 +1,9 @@
+STEP 1 | P=55 | CONF=LOW | Milestone 2 three weeks late; change requests may explain delay.
+STEP 2 | P=47 | CONF=LOW | Three critical UAT defects were all fixed within 11 business days.
+STEP 3 | P=47 | CONF=LOW | Memo shows budget motive alongside documented concern; breach not shown.
+STEP 4 | P=45 | CONF=LOW | Letter cites only general breaches; Delphin disputes and claims it could cure.
+STEP 5 | P=42 | CONF=MED | Time-of-essence favours Aster; 15-day cure period and change control favour Delphin.
+STEP 6 | P=44 | CONF=MED | Delphin admits slippage but partly blames Aster's reporting requests; Aster kept pushing.
+STEP 7 | P=37 | CONF=MED | Withholding notice lacked the specifics the contract requires; procedural defect for Aster.
+STEP 8 | P=30 | CONF=MED | Termination nine days after remediation plan; may fall inside 15-day cure period.
+FINAL | P=34 | CONF=MED | Aster's breach evidence is real, but cure rights and remediation weigh against justification.

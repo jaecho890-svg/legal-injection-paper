@@ -1,0 +1,115 @@
+# dd-pipeline-study/harness/experiment.py run --corpus loneflag --parsers gpt-6-luna --models gpt-6.1-sol --reps 20 --workers 6
+# started 2026-11-06T07:28:08, ended 2026-11-06T07:36:55, rc=0
+## stdout
+40 jobs, 0 already done, 40 to run (40 API calls)
+  gpt-6-luna             40 calls  ~32,800 input tokens (excl. multi-turn history)
+  [1/40] ok    gpt-6-luna__loneflag__terse__ALL__r03 
+  [2/40] ok    gpt-6-luna__loneflag__terse__ALL__r01 
+  [3/40] ok    gpt-6-luna__loneflag__terse__ALL__r02 
+  [4/40] ok    gpt-6-luna__loneflag__normal__ALL__r02 
+  [5/40] ok    gpt-6-luna__loneflag__normal__ALL__r01 
+  [6/40] ok    gpt-6-luna__loneflag__normal__ALL__r03 
+  [7/40] ok    gpt-6-luna__loneflag__terse__ALL__r04 
+  [8/40] ok    gpt-6-luna__loneflag__normal__ALL__r04 
+  [9/40] ok    gpt-6-luna__loneflag__terse__ALL__r05 
+  [10/40] ok    gpt-6-luna__loneflag__terse__ALL__r06 
+  [11/40] ok    gpt-6-luna__loneflag__normal__ALL__r05 
+  [12/40] ok    gpt-6-luna__loneflag__terse__ALL__r07 
+  [13/40] ok    gpt-6-luna__loneflag__normal__ALL__r06 
+  [14/40] ok    gpt-6-luna__loneflag__normal__ALL__r07 
+  [15/40] ok    gpt-6-luna__loneflag__normal__ALL__r08 
+  [16/40] ok    gpt-6-luna__loneflag__terse__ALL__r08 
+  [17/40] ok    gpt-6-luna__loneflag__terse__ALL__r09 
+  [18/40] ok    gpt-6-luna__loneflag__terse__ALL__r10 
+  [19/40] ok    gpt-6-luna__loneflag__normal__ALL__r09 
+  [20/40] ok    gpt-6-luna__loneflag__terse__ALL__r11 
+  [21/40] ok    gpt-6-luna__loneflag__normal__ALL__r10 
+  [22/40] ok    gpt-6-luna__loneflag__normal__ALL__r11 
+  [23/40] ok    gpt-6-luna__loneflag__terse__ALL__r12 
+  [24/40] ok    gpt-6-luna__loneflag__terse__ALL__r13 
+  [25/40] ok    gpt-6-luna__loneflag__normal__ALL__r12 
+  [26/40] ok    gpt-6-luna__loneflag__normal__ALL__r13 
+  [27/40] ok    gpt-6-luna__loneflag__terse__ALL__r14 
+  [28/40] ok    gpt-6-luna__loneflag__normal__ALL__r14 
+  [29/40] ok    gpt-6-luna__loneflag__terse__ALL__r15 
+  [30/40] ok    gpt-6-luna__loneflag__terse__ALL__r16 
+  [31/40] ok    gpt-6-luna__loneflag__terse__ALL__r17 
+  [32/40] ok    gpt-6-luna__loneflag__normal__ALL__r16 
+  [33/40] ok    gpt-6-luna__loneflag__normal__ALL__r15 
+  [34/40] ok    gpt-6-luna__loneflag__normal__ALL__r17 
+  [35/40] ok    gpt-6-luna__loneflag__normal__ALL__r18 
+  [36/40] ok    gpt-6-luna__loneflag__terse__ALL__r18 
+  [37/40] ok    gpt-6-luna__loneflag__terse__ALL__r19 
+  [38/40] ok    gpt-6-luna__loneflag__terse__ALL__r20 
+  [39/40] ok    gpt-6-luna__loneflag__normal__ALL__r19 
+  [40/40] ok    gpt-6-luna__loneflag__normal__ALL__r20 
+done: 40 ok, 0 errors
+20 jobs, 0 already done, 20 to run (20 API calls)
+  gpt-6.1-sol            20 calls  ~16,300 input tokens (excl. multi-turn history)
+  [1/20] ok    gpt-6.1-sol__direct__loneflag__r02 
+  [2/20] ok    gpt-6.1-sol__direct__loneflag__r03 
+  [3/20] ok    gpt-6.1-sol__direct__loneflag__r01 
+  [4/20] ok    gpt-6.1-sol__direct__loneflag__r06 
+  [5/20] ok    gpt-6.1-sol__direct__loneflag__r04 
+  [6/20] ok    gpt-6.1-sol__direct__loneflag__r05 
+  [7/20] ok    gpt-6.1-sol__direct__loneflag__r07 
+  [8/20] ok    gpt-6.1-sol__direct__loneflag__r08 
+  [9/20] ok    gpt-6.1-sol__direct__loneflag__r12 
+  [10/20] ok    gpt-6.1-sol__direct__loneflag__r09 
+  [11/20] ok    gpt-6.1-sol__direct__loneflag__r10 
+  [12/20] ok    gpt-6.1-sol__direct__loneflag__r11 
+  [13/20] ok    gpt-6.1-sol__direct__loneflag__r18 
+  [14/20] ok    gpt-6.1-sol__direct__loneflag__r13 
+  [15/20] ok    gpt-6.1-sol__direct__loneflag__r14 
+  [16/20] ok    gpt-6.1-sol__direct__loneflag__r17 
+  [17/20] ok    gpt-6.1-sol__direct__loneflag__r15 
+  [18/20] ok    gpt-6.1-sol__direct__loneflag__r16 
+  [19/20] ok    gpt-6.1-sol__direct__loneflag__r19 
+  [20/20] ok    gpt-6.1-sol__direct__loneflag__r20 
+done: 20 ok, 0 errors
+40 jobs, 0 already done, 40 to run (40 API calls)
+  gpt-6.1-sol            40 calls  ~22,744 input tokens (excl. multi-turn history)
+  [1/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r03 
+  [2/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r01 
+  [3/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r02 
+  [4/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r02 
+  [5/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r01 
+  [6/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r03 
+  [7/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r04 
+  [8/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r05 
+  [9/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r04 
+  [10/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r06 
+  [11/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r06 
+  [12/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r05 
+  [13/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r07 
+  [14/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r07 
+  [15/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r08 
+  [16/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r09 
+  [17/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r08 
+  [18/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r09 
+  [19/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r10 
+  [20/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r10 
+  [21/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r12 
+  [22/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r11 
+  [23/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r11 
+  [24/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r12 
+  [25/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r13 
+  [26/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r14 
+  [27/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r13 
+  [28/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r15 
+  [29/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r15 
+  [30/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r14 
+  [31/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r16 
+  [32/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r16 
+  [33/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r17 
+  [34/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r17 
+  [35/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r18 
+  [36/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r18 
+  [37/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r19 
+  [38/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r19 
+  [39/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__normal__r20 
+  [40/40] ok    gpt-6.1-sol__gpt-6-luna__loneflag__terse__r20 
+done: 40 ok, 0 errors
+
+## stderr
+

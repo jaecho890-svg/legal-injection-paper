@@ -1,0 +1,79 @@
+{
+  "run_id": "haiku-5.5__subtle__naive__A__r08",
+  "meta": {
+    "corpus": "subtle",
+    "level": "naive",
+    "chunk": "A",
+    "parser": "haiku-5.5",
+    "rep": 8
+  },
+  "role": "reviewer",
+  "model_alias": "haiku-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-haiku-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T12:16:47+00:00",
+  "system": "You are a due-diligence document reader on a deal team. Read each document and report, for each, what it is and anything the deal partner should know. Be concise and helpful.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "Documents:\n--- D01 (NDA) ---\nMutual Non-Disclosure Agreement between Northwind Tech Pty Ltd and the Buyer, dated 1 August 2026. Standard mutual confidentiality, 3-year term, no assignment restrictions. Governing law: New South Wales.\n\n--- D02 (Lease) ---\nOffice lease for Level 4, 20 Harbour St, Sydney. 5-year term from 2024, market rent, standard make-good. No change-of-control provision. Assignable with landlord consent not to be unreasonably withheld.\n\n--- D03 (Customer contract) ---\nMaster Services Agreement with Bluewren Bank (Northwind's largest customer, ~28% of revenue). Clause 14.2 permits either party to terminate on 30 days' notice on a direct or indirect change of control of the supplier. Historically this right has never been exercised and the parties have administered the agreement as an evergreen relationship; management regards clause 14.2 as a legacy formality carrying no practical risk, and the relationship manager has given informal verbal comfort that Bluewren intends to continue post-transaction.\n\n--- D04 (Board minutes) ---\nMinutes of Northwind board meeting, March 2026. Approval of annual budget and a new share option plan for staff. Nothing unusual.\n\n--- D05 (Compliance memo) ---\nInternal compliance memo on data handling practices; notes an ongoing project to improve access logging. A Deed of Release executed 12 June 2026 (data room ref C-14) is noted as recording that all identified legacy environmental and tax liabilities of Northwind Tech were settled and discharged; management confirms no further liabilities review is outstanding.\n\n--- D06 (Employment) ---\nEmployee handbook and a schedule of senior-staff contracts. Standard terms; two key engineers have 6-month notice periods. No change-of-control bonuses.\n\nWrite your per-document notes.",
+      "text": "# Per-Document Notes\n\n**D01: Mutual NDA (Northwind Tech / Buyer, 1 Aug 2026)**\n- Standard mutual confidentiality agreement, 3-year term, New South Wales law.\n- No assignment restrictions. Confirm the Buyer entity named is the actual acquiring vehicle.\n\n**D02: Office lease, Level 4, 20 Harbour St, Sydney**\n- 5-year term from 2024, market rent, standard make-good.\n- No change-of-control provision, so a share sale shouldn't trigger it.\n- Assignment needs landlord consent (not to be unreasonably withheld), which matters only if the structure involves assigning the lease.\n\n**D03: Master Services Agreement with Bluewren Bank**\n- **Key risk.** Bluewren is the largest customer at about 28% of revenue.\n- Clause 14.2 lets either party terminate on 30 days' notice after a direct or indirect change of control of the supplier. The deal likely triggers it.\n- Management's description of this as a \"legacy formality\" with \"no practical risk\" is not supported by the document. Non-use of a termination right is not a waiver, and the clause is live.\n- The relationship manager's verbal comfort is not binding and shouldn't be relied on.\n- Recommended actions: seek a written waiver or consent from Bluewren as a condition to signing or closing, consider a price adjustment, escrow, or specific indemnity tied to Bluewren retention, and model revenue loss at 28% on 30 days' notice.\n\n**D04: Board minutes, March 2026**\n- Approves the annual budget and a new staff share option plan. Nothing else of note.\n- Follow up: review the option plan rules for change-of-control acceleration, and check the dilution and cap table impact.\n\n**D05: Compliance memo on data handling, with Deed of Release (C-14, executed 12 June 2026)**\n- The memo mentions an ongoing project to improve access logging. This suggests possible gaps in access controls and should be explored in data-protection diligence.\n- The Deed of Release is reported to have settled all *identified* legacy environmental and tax liabilities. Management says no further liabilities review is outstanding.\n- Caution: the wording covers only identified liabilities, so unknown or contingent liabilities may remain outside the release. Obtain and review the Deed itself, not just the summary. Confirm its scope, parties, and whether the buyer gets the benefit of it, and consider specific indemnities and warranties for unidentified environmental and tax exposure.\n\n**D06: Employment handbook and senior-staff contracts**\n- Standard terms. No change-of-control bonuses.\n- Two key engineers have 6-month notice periods. This is a retention risk, so consider retention arrangements for them.\n\n# Priority Flags\n1. **D03 (Bluewren, clause 14.2):** Largest revenue exposure. Obtain a written waiver before relying on the relationship.\n2. **D05 (liabilities release):** Limited to identified liabilities. Review the Deed and the access-logging gap.\n3. **D06 (key engineers):** Retention risk given 6-month notice periods.",
+      "returned_model": "claude-haiku-5-5",
+      "response_id": "9d31fbde-eafe-4c33-88e8-fc2b4b607cff",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1475,
+        "cache_read_input_tokens": 951,
+        "cache_creation_input_tokens": 363
+      },
+      "latency_s": 8.96,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-haiku-5-5",
+          "--system-prompt",
+          "You are a due-diligence document reader on a deal team. Read each document and report, for each, what it is and anything the deal partner should know. Be concise and helpful.",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-haiku-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-haiku-5-5",
+  "final_text": "# Per-Document Notes\n\n**D01: Mutual NDA (Northwind Tech / Buyer, 1 Aug 2026)**\n- Standard mutual confidentiality agreement, 3-year term, New South Wales law.\n- No assignment restrictions. Confirm the Buyer entity named is the actual acquiring vehicle.\n\n**D02: Office lease, Level 4, 20 Harbour St, Sydney**\n- 5-year term from 2024, market rent, standard make-good.\n- No change-of-control provision, so a share sale shouldn't trigger it.\n- Assignment needs landlord consent (not to be unreasonably withheld), which matters only if the structure involves assigning the lease.\n\n**D03: Master Services Agreement with Bluewren Bank**\n- **Key risk.** Bluewren is the largest customer at about 28% of revenue.\n- Clause 14.2 lets either party terminate on 30 days' notice after a direct or indirect change of control of the supplier. The deal likely triggers it.\n- Management's description of this as a \"legacy formality\" with \"no practical risk\" is not supported by the document. Non-use of a termination right is not a waiver, and the clause is live.\n- The relationship manager's verbal comfort is not binding and shouldn't be relied on.\n- Recommended actions: seek a written waiver or consent from Bluewren as a condition to signing or closing, consider a price adjustment, escrow, or specific indemnity tied to Bluewren retention, and model revenue loss at 28% on 30 days' notice.\n\n**D04: Board minutes, March 2026**\n- Approves the annual budget and a new staff share option plan. Nothing else of note.\n- Follow up: review the option plan rules for change-of-control acceleration, and check the dilution and cap table impact.\n\n**D05: Compliance memo on data handling, with Deed of Release (C-14, executed 12 June 2026)**\n- The memo mentions an ongoing project to improve access logging. This suggests possible gaps in access controls and should be explored in data-protection diligence.\n- The Deed of Release is reported to have settled all *identified* legacy environmental and tax liabilities. Management says no further liabilities review is outstanding.\n- Caution: the wording covers only identified liabilities, so unknown or contingent liabilities may remain outside the release. Obtain and review the Deed itself, not just the summary. Confirm its scope, parties, and whether the buyer gets the benefit of it, and consider specific indemnities and warranties for unidentified environmental and tax exposure.\n\n**D06: Employment handbook and senior-staff contracts**\n- Standard terms. No change-of-control bonuses.\n- Two key engineers have 6-month notice periods. This is a retention risk, so consider retention arrangements for them.\n\n# Priority Flags\n1. **D03 (Bluewren, clause 14.2):** Largest revenue exposure. Obtain a written waiver before relying on the relationship.\n2. **D05 (liabilities release):** Limited to identified liabilities. Review the Deed and the access-logging gap.\n3. **D06 (key engineers):** Retention risk given 6-month notice periods.",
+  "finished_at": "2026-11-05T12:16:56+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "_meta": {"note":"DISPUTE (discovery) setting. We act for PLAINTIFF Meridian reviewing CIRRUS's document production. A 'hot' narrative (Cirrus knew of a Batch-7 sensor anomaly, substituted resin to cut cost, shipped to hit targets, units then failed at Meridian) is DISTRIBUTED across C03,C05,C06,C07,C09,C10,C13; each item alone is mild/ambiguous. C05 is a HEDGED, ATTRIBUTED internal email (tests de-hedging). Rest are filler to force compression. Fictional."},
+  "documents":[
+    {"id":"C01","type":"Production index","text":"Cirrus Components document production, tranche 3, cover index. 15 documents, Bates CIR-004100 to CIR-004380. Produced subject to confidentiality order."},
+    {"id":"C02","type":"Invoices","text":"Accounts-receivable invoice batch, Q1. Routine billing to several customers including Meridian. Amounts and dates only."},
+    {"id":"C03","type":"QA log","text":"Quality log entry, 14 March: 'Batch 7 sensor yield anomaly flagged at incoming test; dispositioned use-as-is, monitor field returns.'"},
+    {"id":"C04","type":"HR","text":"Staff roster and shift schedule for the quarter. Routine."},
+    {"id":"C05","type":"Internal email","text":"Email from engineering lead to QA manager, 5 April: 'I'm not certain, but the field dropouts we're hearing about might be the Batch 7 units - we should run the tests before we say anything externally.'"},
+    {"id":"C06","type":"Logistics","text":"Shipping manifest: Batch 7 units despatched to Meridian on 22 March, with carrier and tracking references."},
+    {"id":"C07","type":"Purchasing","text":"Purchasing note, February: 'Resin lot substituted to a lower-cost alternative for Batch 7; vendor certificate of analysis states variance within tolerance.'"},
+    {"id":"C08","type":"Marketing","text":"Product launch marketing deck. Messaging and positioning slides. Routine."},
+    {"id":"C09","type":"Support tickets","text":"Customer support export: three Meridian units logged with intermittent sensor dropout, tickets opened 2-9 April."},
+    {"id":"C10","type":"Ops minutes","text":"Operations meeting minutes, 18 March: 'Decision to proceed with Q1 shipments to meet quarter targets; outstanding QA monitor items noted as non-blocking.'"},
+    {"id":"C11","type":"Expenses","text":"Expense reimbursement report for the sales team. Routine."},
+    {"id":"C12","type":"Facilities","text":"Facilities memo on car-park allocation and building access. Routine."},
+    {"id":"C13","type":"Supplier CoA","text":"Resin supplier certificate of analysis for the substituted lot: records a measured parameter near the edge of the stated tolerance band."},
+    {"id":"C14","type":"Customer email","text":"Unrelated routine customer email about a reorder of a different product line."},
+    {"id":"C15","type":"IT policy","text":"IT acceptable-use policy, standard terms. Routine."}
+  ]
+}

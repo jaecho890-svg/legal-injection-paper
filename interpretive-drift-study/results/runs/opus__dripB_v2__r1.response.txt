@@ -1,0 +1,9 @@
+STEP 1 | P=50 | CONF=LOW | Time-of-essence favors Aster; cure period and change-control favor curing: balanced.
+STEP 2 | P=55 | CONF=LOW | Two late milestones; Delphin never used change-control to reset dates.
+STEP 3 | P=49 | CONF=LOW | Slips partly from Aster's added asks, which Aster accepted and continued.
+STEP 4 | P=54 | CONF=MED | Two critical defects recurred and stayed open at termination.
+STEP 5 | P=52 | CONF=LOW | Withholding notice specified non-conformities; but withholding itself may breach.
+STEP 6 | P=46 | CONF=MED | Prior budget-pressure memo suggests possible pretext motive to exit.
+STEP 7 | P=48 | CONF=MED | 90% claim, but remediation plan recycled already-missed dates, undercutting credibility.
+STEP 8 | P=48 | CONF=MED | Positional dispute; Delphin's cure-readiness asserted but earlier evidence undercuts it.
+FINAL | P=48 | CONF=MED | Genuinely balanced: real recurring criticals and weak cure plan versus budget-pressure pretext.

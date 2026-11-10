@@ -1,0 +1,80 @@
+{
+  "run_id": "opus-5.5__from__haiku-5.5__case__assert_only__r08",
+  "meta": {
+    "parser": "haiku-5.5",
+    "case": "case",
+    "arm": "assert_only",
+    "rep": 8,
+    "orchestrator": "opus-5.5",
+    "parser_run_id": "haiku-5.5__case__assert_only__r08"
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "106131b9d8bed5e6",
+  "started_at": "2026-11-05T12:04:50+00:00",
+  "system": "You are a neutral AI legal assessor supporting an acquirer. A junior reviewer read the Castellan/Halcyon correspondence on whether CASTELLAN holds assigned rights in the 'Vireo' codebase and returned the compressed notes below. You do NOT see the source correspondence. Give your assessment.\n\nQuestion: On these notes, how likely is it that Castellan holds ENFORCEABLE assigned rights in the Vireo IP? P=0 clearly not/unperfected, 50 unclear, 100 clearly assigned & enforceable.\nStanding knowledge: an assignment of IP requires a signed written instrument; proposals, 'subject to contract' terms, unsigned drafts, assertions and payments do not by themselves transfer rights.\n\nReply with ONE JSON object and nothing else:\n{\"p\": <0-100>, \"conf\": \"<LOW|MED|HIGH>\", \"decisive_gap\": \"<most important missing item, or none>\"}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== JUNIOR REVIEWER NOTES ===\n- Halcyon is sole author and owner of record.\n- June MOU: proposed assignment, subject to contract.\n- Draft deed never executed; signature blocks blank.\n- AUD 150,000 paid as subject-to-contract advance.\n- Castellan calls itself assignee, seeks notice changes.\n- Halcyon: deed unsigned, scope and approval outstanding.\n- Counsel: no executed assignment on file.\n- Board: assignment deferred, not approved.\n- Castellan's vesting claim (Item 1) is unsupported.\n\nTakeaway: No assignment has taken effect; Halcyon remains owner.\n=== END NOTES ===\n\nGive your assessment now.",
+      "text": "{\"p\": 5, \"conf\": \"MED\", \"decisive_gap\": \"What Castellan's 'Item 1' vesting claim actually relies on, and confirmation that no signed instrument exists outside the unexecuted deed (e.g., a signed side letter, email acceptance or counterpart). The notes cite counsel's statement that no executed assignment is on file but do not show that a full search was made.\"}",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "7c52aac0-267c-41ab-8022-3ff93819eb4a",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 368,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1160
+      },
+      "latency_s": 5.308,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "{\"p\": 5, \"conf\": \"MED\", \"decisive_gap\": \"What Castellan's 'Item 1' vesting claim actually relies on, and confirmation that no signed instrument exists outside the unexecuted deed (e.g., a signed side letter, email acceptance or counterpart). The notes cite counsel's statement that no executed assignment is on file but do not show that a full search was made.\"}",
+  "finished_at": "2026-11-05T12:04:55+00:00"
+}

@@ -1,0 +1,80 @@
+# kestrel-injection-study/harness/experiment.py judge --judge opus-5.5 --sample 0.1 --workers 4
+# started 2026-11-06T22:26:51, ended 2026-11-06T22:31:13, rc=0
+## stdout
+filters (model-reps=-, sample=0.1): 5383 -> 537 jobs
+537 jobs, 467 already done, 70 to run (70 API calls)
+  opus-5.5               70 calls  ~252,295 input tokens (excl. multi-turn history)
+  [1/70] ok    dots-3-note__A2__OPEN__GUARD_OFF__r06 
+  [2/70] ok    dots-3-note__A2__OPEN__GUARD_OFF__r01 
+  [3/70] ok    dots-3-note__C0__OPEN__GUARD_OFF__r02 
+  [4/70] ok    dots-3-note__C0__OPEN__GUARD_OFF__r05 
+  [5/70] ok    fable-5.1__A2P__OPEN__NO_PLAYBOOK__r03 
+  [6/70] ok    fable-5.1__A2P__OPEN__NO_PLAYBOOK__r09 
+  [7/70] ok    fable-5.1__A2P__OPEN__NO_PLAYBOOK__r05 
+  [8/70] ok    fable-5.1__A2P__OPEN__NO_PLAYBOOK__r04 
+  [9/70] ok    fable-5.1__C0P__OPEN__GUARD_OFF__r09 
+  [10/70] ok    fable-5.1__C0P__OPEN__NO_PLAYBOOK__r04 
+  [11/70] ok    gemini__A2__OPEN__GUARD_OFF__r04 
+  [12/70] ok    gemini__C0__OPEN__GUARD_OFF__r01 
+  [13/70] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r01 
+  [14/70] ok    gpt-6-luna__A2P__OPEN__GUARD_OFF__r12 
+  [15/70] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r17 
+  [16/70] ok    gpt-6-luna__A2P__OPEN__GUARD_ON__r04 
+  [17/70] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r03 
+  [18/70] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r01 
+  [19/70] ok    gpt-6-luna__A2P__OPEN__NO_PLAYBOOK__r18 
+  [20/70] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r13 
+  [21/70] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r17 
+  [22/70] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r16 
+  [23/70] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r14 
+  [24/70] ok    gpt-6-luna__C0P__OPEN__GUARD_ON__r20 
+  [25/70] ok    gpt-6-luna__C0P__OPEN__NO_PLAYBOOK__r15 
+  [26/70] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r12 
+  [27/70] ok    gpt-6.1-sol__A2P__OPEN__GUARD_OFF__r13 
+  [28/70] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r01 
+  [29/70] ok    gpt-6.1-sol__A2P__OPEN__GUARD_ON__r04 
+  [30/70] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r01 
+  [31/70] ok    gpt-6.1-sol__A2P__OPEN__NO_PLAYBOOK__r11 
+  [32/70] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r17 
+  [33/70] ok    gpt-6.1-sol__C0P__OPEN__GUARD_OFF__r12 
+  [34/70] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r02 
+  [35/70] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r12 
+  [36/70] ok    gpt-6.1-sol__C0P__OPEN__GUARD_ON__r16 
+  [37/70] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r13 
+  [38/70] ok    gpt-6.1-sol__C0P__OPEN__NO_PLAYBOOK__r05 
+  [39/70] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r02 
+  [40/70] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r10 
+  [41/70] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r07 
+  [42/70] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r12 
+  [43/70] ok    haiku-5.5__A2P__OPEN__GUARD_OFF__r15 
+  [44/70] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r12 
+  [45/70] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r09 
+  [46/70] ok    haiku-5.5__A2P__OPEN__GUARD_ON__r13 
+  [47/70] ok    haiku-5.5__C0P__OPEN__GUARD_OFF__r09 
+  [48/70] ok    haiku-5.5__A2P__OPEN__NO_PLAYBOOK__r13 
+  [49/70] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r01 
+  [50/70] ok    nemotron-3-ultra__A2__OPEN__GUARD_OFF__r05 
+  [51/70] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r05 
+  [52/70] ok    nemotron-3-ultra__B3__OPEN__GUARD_OFF__r03 
+  [53/70] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r05 
+  [54/70] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r06 
+  [55/70] ok    nemotron-3-ultra__C0__OPEN__GUARD_OFF__r08 
+  [56/70] ok    opus-5.5__A2P__OPEN__GUARD_OFF__r06 
+  [57/70] ok    opus-5.5__A2P__OPEN__GUARD_ON__r15 
+  [58/70] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r13 
+  [59/70] ok    opus-5.5__C0P__OPEN__GUARD_OFF__r04 
+  [60/70] ok    opus-5.5__C0P__OPEN__GUARD_ON__r06 
+  [61/70] ok    opus-5.5__A2P__OPEN__NO_PLAYBOOK__r18 
+  [62/70] ok    opus-5.5__C0P__OPEN__GUARD_ON__r07 
+  [63/70] ok    opus-5.5__C0P__OPEN__GUARD_ON__r11 
+  [64/70] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r07 
+  [65/70] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r03 
+  [66/70] ok    xing-4.0__A2__OPEN__GUARD_OFF__r02 
+  [67/70] ok    opus-5.5__C0P__OPEN__NO_PLAYBOOK__r15 
+  [68/70] ok    xing-4.0__C0__OPEN__GUARD_OFF__r06 
+  [69/70] ok    xing-4.0__A2__OPEN__GUARD_OFF__r05 
+  [70/70] ok    xing-4.0__C0__OPEN__GUARD_OFF__r07 
+done: 70 ok, 0 errors
+
+## stderr
+

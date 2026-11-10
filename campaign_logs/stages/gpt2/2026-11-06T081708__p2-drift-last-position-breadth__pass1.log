@@ -1,0 +1,75 @@
+# interpretive-drift-study/harness/experiment.py run --arms lastA,lastB --models gpt-6.1-terra,gpt-6-astra,gpt-6-sol,gpt-5.6-sol,gpt-5.6-terra,gpt-5.6-luna --reps 5 --workers 6
+# started 2026-11-06T08:17:08, ended 2026-11-06T08:43:09, rc=0
+## stdout
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+60 jobs, 0 already done, 60 to run (540 API calls)
+  gpt-5.6-luna           90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-5.6-sol            90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-5.6-terra          90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6-astra            90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6-sol              90 calls  ~8,300 input tokens (excl. multi-turn history)
+  gpt-6.1-terra          90 calls  ~8,300 input tokens (excl. multi-turn history)
+  [1/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r01 
+  [2/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r01 
+  [3/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r01 
+  [4/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r01 
+  [5/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r01 
+  [6/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r01 
+  [7/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r01 
+  [8/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r01 
+  [9/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r01 
+  [10/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r01 
+  [11/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r01 
+  [12/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r01 
+  [13/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r02 
+  [14/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r02 
+  [15/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r02 
+  [16/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r02 
+  [17/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r02 
+  [18/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r02 
+  [19/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r02 
+  [20/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r02 
+  [21/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r02 
+  [22/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r02 
+  [23/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r02 
+  [24/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r02 
+  [25/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r03 
+  [26/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r03 
+  [27/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r03 
+  [28/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r03 
+  [29/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r03 
+  [30/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r03 
+  [31/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r03 
+  [32/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r03 
+  [33/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r03 
+  [34/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r03 
+  [35/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r03 
+  [36/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r03 
+  [37/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r04 
+  [38/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r04 
+  [39/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r04 
+  [40/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r04 
+  [41/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r04 
+  [42/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r04 
+  [43/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r04 
+  [44/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r04 
+  [45/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r04 
+  [46/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r04 
+  [47/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r04 
+  [48/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r04 
+  [49/60] ok    gpt-6.1-terra__case_v2__multiturn__lastA__r05 
+  [50/60] ok    gpt-6.1-terra__case_v2__multiturn__lastB__r05 
+  [51/60] ok    gpt-6-astra__case_v2__multiturn__lastA__r05 
+  [52/60] ok    gpt-6-astra__case_v2__multiturn__lastB__r05 
+  [53/60] ok    gpt-6-sol__case_v2__multiturn__lastB__r05 
+  [54/60] ok    gpt-6-sol__case_v2__multiturn__lastA__r05 
+  [55/60] ok    gpt-5.6-sol__case_v2__multiturn__lastA__r05 
+  [56/60] ok    gpt-5.6-sol__case_v2__multiturn__lastB__r05 
+  [57/60] ok    gpt-5.6-terra__case_v2__multiturn__lastA__r05 
+  [58/60] ok    gpt-5.6-terra__case_v2__multiturn__lastB__r05 
+  [59/60] ok    gpt-5.6-luna__case_v2__multiturn__lastA__r05 
+  [60/60] ok    gpt-5.6-luna__case_v2__multiturn__lastB__r05 
+done: 60 ok, 0 errors
+
+## stderr
+

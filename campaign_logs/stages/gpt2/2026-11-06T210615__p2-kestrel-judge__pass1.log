@@ -1,0 +1,39 @@
+# kestrel-injection-study/harness/experiment.py judge --judge gpt-6.1-sol --workers 6
+# started 2026-11-06T21:06:15, ended 2026-11-06T21:07:54, rc=1
+## stdout
+5383 jobs, 4806 already done, 577 to run (577 API calls)
+  gpt-6.1-sol           577 calls  ~2,194,812 input tokens (excl. multi-turn history)
+  [1/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r01 
+  [2/577] ok    fable-5.1__A2P__OPEN__GUARD_OFF__r10 
+  [3/577] ok    fable-5.1__A2P__OPEN__GUARD_OFF__r09 
+  [4/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r03 
+  [5/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r02 
+  [6/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r05 
+  [7/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r06 
+  [8/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r09 
+  [9/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r10 
+  [10/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r07 
+  [11/577] ok    fable-5.1__A2P__OPEN__GUARD_ON__r08 
+
+## stderr
+Traceback (most recent call last):
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/harness/experiment.py", line 331, in <module>
+    main()
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/harness/experiment.py", line 306, in main
+    runner.run_jobs(jobs, out / f"judge_{judge_alias}", STUDY, args.workers, args.dry_run, args.force,
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 227, in run_jobs
+    list(ex.map(work, pending))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 608, in result_iterator
+    yield fs.pop().result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 445, in result
+    return self.__get_result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 218, in work
+    _atomic_write(outdir / f"{job['run_id']}.json", rec)
+  File "/Users/<redacted>/legal-ai-research/legal-injection-paper/common/runner.py", line 81, in _atomic_write
+    os.replace(tmp, path)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__A2P__OPEN__GUARD_ON__r04.tmp' -> '/Users/<redacted>/legal-ai-research/legal-injection-paper/kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__A2P__OPEN__GUARD_ON__r04.json'
+

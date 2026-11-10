@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__loneflag__terse__r04",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 4,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__loneflag__terse__ALL__r04"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T20:34:04+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L03:** Strong growth and margin; Arlen Health concentration is high.\n- **L05:** Five-year renewal, but change-of-control convenience termination creates material revenue risk; elevated data-breach liability.\n- **L06–L07:** Leverage covenant breached (2.9x vs 2.5x); bank not notified.\n- **L08:** Possible churn link to January pricing is unverified and based on small numbers.\n- **L04:** CTO and Head of Sales have 12-month retention letters.\n\nOverall takeaway: Key diligence risks are covenant non-compliance and customer concentration/change-of-control exposure.\n\nWrite the DD summary now.",
+      "text": "## DD summary\n\n**Recommendation: Proceed only conditionally; do not commit to closing until the covenant breach and key-customer exposure are resolved.**\n\n### Key findings\n- Strong reported growth and margins, offset by high revenue concentration in Arlen Health.\n- Five-year customer renewal provides contractual duration, but change-of-control convenience termination materially undermines revenue certainty.\n- CTO and Head of Sales have 12-month retention letters; protection beyond that period is unclear.\n\n### Principal red flags\n- **Debt covenant breach:** Leverage is 2.9x versus a 2.5x limit, and the bank has not been notified. Obtain lender confirmation of a waiver and transaction consent, as applicable.\n- **Customer/revenue risk:** Quantify concentration and termination exposure; secure appropriate customer consent or contractual protection before closing.\n- **Data-breach liability:** Elevated exposure requires review of contractual caps, security diligence and insurance coverage.\n- **Churn:** A link to January pricing remains unverified and based on small numbers; do not treat it as established.\n\n**Closing gates:** Satisfactory lender resolution, acceptable protection against customer termination, and quantified data-liability exposure. Revisit valuation and deal protections against the resulting downside.",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1ad6b-2b78-7483-9439-31bb7623ca02",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 7535,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 249,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 26.839,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-kboze00z/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## DD summary\n\n**Recommendation: Proceed only conditionally; do not commit to closing until the covenant breach and key-customer exposure are resolved.**\n\n### Key findings\n- Strong reported growth and margins, offset by high revenue concentration in Arlen Health.\n- Five-year customer renewal provides contractual duration, but change-of-control convenience termination materially undermines revenue certainty.\n- CTO and Head of Sales have 12-month retention letters; protection beyond that period is unclear.\n\n### Principal red flags\n- **Debt covenant breach:** Leverage is 2.9x versus a 2.5x limit, and the bank has not been notified. Obtain lender confirmation of a waiver and transaction consent, as applicable.\n- **Customer/revenue risk:** Quantify concentration and termination exposure; secure appropriate customer consent or contractual protection before closing.\n- **Data-breach liability:** Elevated exposure requires review of contractual caps, security diligence and insurance coverage.\n- **Churn:** A link to January pricing remains unverified and based on small numbers; do not treat it as established.\n\n**Closing gates:** Satisfactory lender resolution, acceptable protection against customer termination, and quantified data-liability exposure. Revisit valuation and deal protections against the resulting downside.",
+  "finished_at": "2026-11-05T20:34:31+00:00"
+}

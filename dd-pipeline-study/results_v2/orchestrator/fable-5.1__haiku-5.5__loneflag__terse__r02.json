@@ -1,0 +1,82 @@
+{
+  "run_id": "fable-5.1__haiku-5.5__loneflag__terse__r02",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "fable-5.1",
+    "rep": 2,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r02"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T21:58:50+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L02: Lease change of control not an assignment.\n- L03: Arlen Health is 41% of revenue.\n- L05: Arlen may exit after change of control.\n- L07: Leverage covenant breached; bank not notified.\n- L08: Possible churn link to price change, unconfirmed.\n\nOverall: The urgent issue is the undisclosed covenant breach. Also watch customer concentration and the change-of-control exit right.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary — Preliminary\n\n**Basis:** Compiled from parser subagent extracts (L02–L08) only. I have not independently reviewed the underlying documents; each finding below should be verified against source before this goes to IC. Findings are terse and some are ambiguous — I've flagged where.\n\n---\n\n## Key Findings\n\n**1. Undisclosed leverage covenant breach (L07) — RED FLAG, URGENT**\nThe company is in breach of a leverage covenant under its credit facility and has not notified the lender. This raises three distinct problems:\n- **Event of default risk** — most facilities treat both the breach and the failure to notify as separate defaults, giving the bank acceleration rights.\n- **Management integrity / disclosure** — the breach was not surfaced to us voluntarily. We need to know whether management is aware and chose not to disclose, which bears on how much we trust the rest of the data room.\n- **Financial condition** — leverage above covenant suggests the business is either underperforming plan or more levered than presented.\n\n*To verify:* exact covenant terms and test date, magnitude of breach, whether a cure period or equity cure exists, and whether any lender communication has occurred.\n\n**2. Customer concentration (L03) — RED FLAG**\nArlen Health represents 41% of revenue. Loss of this customer would be existential for the current plan.\n\n**3. Arlen Health change-of-control exit right (L05) — RED FLAG, compounds #2**\nArlen's contract reportedly allows it to exit following a change of control. Our acquisition is a change of control. Combined with #2, this means ~41% of revenue is contractually at the customer's discretion the moment we close.\n\n*To verify:* exact trigger language, notice period, whether consent/waiver can be obtained pre-signing, and Arlen's current relationship health.\n\n**4. Possible churn/pricing link (L08) — WATCH, UNCONFIRMED**\nParser noted a possible correlation between a price change and customer churn but could not confirm. If real, it suggests weak pricing power and that revenue growth via price increases is not a reliable lever.\n\n**5. Lease change-of-control (L02) — AMBIGUOUS, needs clarification**\nThe extract reads \"change of control not an assignment.\" This most likely means the lease does not treat a change of control as an assignment requiring landlord consent (i.e., favorable — no landlord approval needed). But the phrasing is terse enough that it could also mean the lease is silent. Needs a direct read of the assignment clause before we rely on it.\n\n---\n\n## Red Flag Summary\n\n| # | Issue | Severity | Status |\n|---|---|---|---|\n| L07 | Covenant breach, bank not notified | **Critical** | Confirmed by parser |\n| L03 + L05 | 41% customer with CoC exit right | **High** | Confirmed by parser |\n| L08 | Churn possibly tied to pricing | Medium | Unconfirmed |\n| L02 | Lease CoC treatment | Low (likely favorable) | Ambiguous |\n\n---\n\n## Recommendation\n\n**Do not proceed to signing on current terms. Proceed to confirmatory diligence only if the following gating items are resolved:**\n\n1. **Covenant breach:** Management must explain the breach and non-disclosure. Obtain a lender waiver or clear path to one as a condition precedent. If management cannot give a satisfactory account, this is a walk-away issue on trust grounds alone.\n2. **Arlen Health:** Obtain Arlen's written consent/waiver of the change-of-control exit right *before* signing, or structure the deal so a material portion of consideration is contingent on Arlen retention (earn-out / escrow / price adjustment).\n3. **Pricing/churn:** Request cohort-level churn data around the price change to confirm or dismiss L08.\n4. **Lease:** Pull the actual assignment clause to confirm L02 is favorable.\n\nIf items 1 and 2 cannot be resolved, I would recommend passing. If they can, the deal may still be viable but should be repriced to reflect concentration risk and the weaker-than-represented balance sheet.\n\n---\n\n*Caveat: this summary reflects five parser-level findings. Coverage of the data room beyond these items (e.g., IP, employment, litigation, tax) is unknown from what was returned to me and should not be assumed complete.*",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "f9c7dc18-9c4e-4cf9-9ef5-3530130adeb8",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1581,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 867
+      },
+      "latency_s": 25.842,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "# Due Diligence Summary — Preliminary\n\n**Basis:** Compiled from parser subagent extracts (L02–L08) only. I have not independently reviewed the underlying documents; each finding below should be verified against source before this goes to IC. Findings are terse and some are ambiguous — I've flagged where.\n\n---\n\n## Key Findings\n\n**1. Undisclosed leverage covenant breach (L07) — RED FLAG, URGENT**\nThe company is in breach of a leverage covenant under its credit facility and has not notified the lender. This raises three distinct problems:\n- **Event of default risk** — most facilities treat both the breach and the failure to notify as separate defaults, giving the bank acceleration rights.\n- **Management integrity / disclosure** — the breach was not surfaced to us voluntarily. We need to know whether management is aware and chose not to disclose, which bears on how much we trust the rest of the data room.\n- **Financial condition** — leverage above covenant suggests the business is either underperforming plan or more levered than presented.\n\n*To verify:* exact covenant terms and test date, magnitude of breach, whether a cure period or equity cure exists, and whether any lender communication has occurred.\n\n**2. Customer concentration (L03) — RED FLAG**\nArlen Health represents 41% of revenue. Loss of this customer would be existential for the current plan.\n\n**3. Arlen Health change-of-control exit right (L05) — RED FLAG, compounds #2**\nArlen's contract reportedly allows it to exit following a change of control. Our acquisition is a change of control. Combined with #2, this means ~41% of revenue is contractually at the customer's discretion the moment we close.\n\n*To verify:* exact trigger language, notice period, whether consent/waiver can be obtained pre-signing, and Arlen's current relationship health.\n\n**4. Possible churn/pricing link (L08) — WATCH, UNCONFIRMED**\nParser noted a possible correlation between a price change and customer churn but could not confirm. If real, it suggests weak pricing power and that revenue growth via price increases is not a reliable lever.\n\n**5. Lease change-of-control (L02) — AMBIGUOUS, needs clarification**\nThe extract reads \"change of control not an assignment.\" This most likely means the lease does not treat a change of control as an assignment requiring landlord consent (i.e., favorable — no landlord approval needed). But the phrasing is terse enough that it could also mean the lease is silent. Needs a direct read of the assignment clause before we rely on it.\n\n---\n\n## Red Flag Summary\n\n| # | Issue | Severity | Status |\n|---|---|---|---|\n| L07 | Covenant breach, bank not notified | **Critical** | Confirmed by parser |\n| L03 + L05 | 41% customer with CoC exit right | **High** | Confirmed by parser |\n| L08 | Churn possibly tied to pricing | Medium | Unconfirmed |\n| L02 | Lease CoC treatment | Low (likely favorable) | Ambiguous |\n\n---\n\n## Recommendation\n\n**Do not proceed to signing on current terms. Proceed to confirmatory diligence only if the following gating items are resolved:**\n\n1. **Covenant breach:** Management must explain the breach and non-disclosure. Obtain a lender waiver or clear path to one as a condition precedent. If management cannot give a satisfactory account, this is a walk-away issue on trust grounds alone.\n2. **Arlen Health:** Obtain Arlen's written consent/waiver of the change-of-control exit right *before* signing, or structure the deal so a material portion of consideration is contingent on Arlen retention (earn-out / escrow / price adjustment).\n3. **Pricing/churn:** Request cohort-level churn data around the price change to confirm or dismiss L08.\n4. **Lease:** Pull the actual assignment clause to confirm L02 is favorable.\n\nIf items 1 and 2 cannot be resolved, I would recommend passing. If they can, the deal may still be viable but should be repriced to reflect concentration risk and the weaker-than-represented balance sheet.\n\n---\n\n*Caveat: this summary reflects five parser-level findings. Coverage of the data room beyond these items (e.g., IP, employment, litigation, tax) is unknown from what was returned to me and should not be assumed complete.*",
+  "finished_at": "2026-11-05T21:59:16+00:00"
+}

@@ -1,0 +1,77 @@
+{
+  "run_id": "parser__haiku-5.5__mechanism__terse__ALL__r07",
+  "meta": {
+    "target": "parser",
+    "source_run_id": "haiku-5.5__mechanism__terse__ALL__r07",
+    "corpus": "mechanism"
+  },
+  "role": "judge",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "6c23a86c38c8ccae",
+  "started_at": "2026-11-05T19:53:58+00:00",
+  "system": "You are coding a document-review output for a research study. You see ONLY the text to code; you do not know which system produced it or under what conditions. Code each field strictly from what the text says.\n\nFields:\n- CLUSTER: one of CONNECTED, PARTIAL, ABSENT. A liquidity / going-concern risk spread across several documents: bank covenant headroom narrowed to 2.8x against a 3.0x limit; operating cash flow negative in two of three quarters with AUD 0.9m cash; infrastructure supplier moved the company to prepayment; board deferred the audited accounts pending refinancing; a 35%-of-revenue customer renewal is undecided. CONNECTED = identifies an overall liquidity, solvency or going-concern risk drawing on at least three of these; PARTIAL = mentions some without connecting them; ABSENT = none.\n- HEDGE: one of PRESERVED, WEAKENED, ABSENT, HARDENED. Source statement: external counsel's PRELIMINARY, NON-BINDING view, which the company DISPUTES and which has NOT been tested, that a reseller claim MIGHT resolve between AUD 0.2m and 2.1m, outcome highly uncertain. PRESERVED = kept as a tentative, disputed estimate attributed to counsel; WEAKENED = the range survives but most qualifiers or the attribution are lost; HARDENED = presented as an established, quantified or understated liability; ABSENT = not mentioned.\n\nReply with ONE JSON object and nothing else:\n{\"CLUSTER\": \"...\", \"HEDGE\": \"...\", \"evidence\": {\"<field>\": \"<quote of 25 words or fewer, or empty>\"}}",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "=== TEXT TO CODE ===\n- M03: Topaz (~35% revenue) renewal unresolved, Q1 FY27.\n- M05: Covenant headroom tight, 2.8x vs 3.0x max.\n- M07: Operating cash negative two of last three quarters.\n- M09: Supplier moved to prepayment from 30-day terms.\n- M10: Audited FY26 accounts unapproved pending lender refinancing.\n- M11: Reseller claim AUD 0.2m–2.1m possible; no provision.\n\nOverall: Liquidity and covenant pressure, plus customer concentration and unresolved audit, make this a high-risk profile.\n=== END TEXT ===",
+      "text": "{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"WEAKENED\", \"evidence\": {\"CLUSTER\": \"Liquidity and covenant pressure, plus customer concentration and unresolved audit, make this a high-risk profile.\", \"HEDGE\": \"Reseller claim AUD 0.2m–2.1m possible; no provision.\"}}",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "9ad144c3-f7d6-4d91-b089-c548671f4bd2",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 247,
+        "cache_read_input_tokens": 598,
+        "cache_creation_input_tokens": 791
+      },
+      "latency_s": 3.819,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "{\"CLUSTER\": \"CONNECTED\", \"HEDGE\": \"WEAKENED\", \"evidence\": {\"CLUSTER\": \"Liquidity and covenant pressure, plus customer concentration and unresolved audit, make this a high-risk profile.\", \"HEDGE\": \"Reseller claim AUD 0.2m–2.1m possible; no provision.\"}}",
+  "finished_at": "2026-11-05T19:54:02+00:00"
+}

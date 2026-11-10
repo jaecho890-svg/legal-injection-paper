@@ -1,0 +1,99 @@
+{
+  "run_id": "gpt-6.1-sol__gpt-6-luna__loneflag__terse__r14",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "gpt-6-luna",
+    "orchestrator": "gpt-6.1-sol",
+    "rep": 14,
+    "parser_runs": {
+      "ALL": "gpt-6-luna__loneflag__terse__ALL__r14"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "gpt-6.1-sol",
+  "provider": "codex_cli",
+  "requested_model": "gpt-6.1-sol",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T20:35:40+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- L03: Strong growth; Arlen Health concentration is 41%.\n- L04: CTO and Sales Head have 12-month retention letters.\n- L05: Arlen may terminate for convenience after supplier change of control; five-year renewal, advance quarterly fees, and elevated data-breach liability.\n- L06: AUD 6m revolving facility; quarterly leverage covenant.\n- L07: CFO confirms covenant breach (2.9x vs 2.5x); bank not notified.\n- L08: Possible churn link to January price change is uncertain and based on small numbers.\n- L09: AUD 10m PI and cyber cover; no notified claims.\n- L10: Employee-assigned code; MIT and Apache 2.0 components.\n\nOverall: Key risks are covenant breach and Arlen customer concentration/termination exposure.\n\nWrite the DD summary now.",
+      "text": "## DD summary\n\n**Recommendation: Proceed only conditionally; do not commit to closing until the covenant breach and Arlen change-of-control risk are resolved.**\n\n### Key findings\n- Strong growth, but Arlen Health represents **41% concentration**.\n- CTO and Sales Head have 12-month retention letters; protection beyond that period is unclear.\n- Code is employee-assigned, with MIT and Apache 2.0 components.\n- AUD 10m PI and cyber cover is reported, with no notified claims; adequacy against contractual exposure remains unverified.\n\n### Principal red flags\n1. **Unnotified covenant breach:** CFO confirms leverage of **2.9x versus a 2.5x limit** under the AUD 6m revolving facility. This creates potential lender enforcement and liquidity risk, alongside a reporting/governance concern.\n2. **Arlen termination exposure:** Arlen may terminate for convenience following supplier change of control. The five-year renewal does not eliminate that right. Advance quarterly fees support cash collection, but elevated data-breach liability requires review.\n3. **Unproven churn concern:** A possible link to January’s price change rests on small numbers; it is a diligence question, not an established trend.\n\n### Conditions to proceed\n- Obtain a written lender waiver and confirm facility availability, notification obligations and covenant headroom.\n- Secure Arlen’s binding waiver of the relevant termination right or equivalent contractual protection.\n- Validate downside liquidity and valuation under Arlen-loss scenarios; assess breach liability against insurance terms and exclusions.\n\n**Bottom line:** Growth supports continued diligence, but financing certainty and protection of the largest customer are gating issues.",
+      "returned_model": "gpt-6.1-sol",
+      "response_id": "01a1ad6c-a4ed-7a71-9b5c-3a59e5aaf21f",
+      "stop_reason": "turn.completed",
+      "usage": {
+        "input_tokens": 7578,
+        "cached_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 337,
+        "reasoning_output_tokens": 0
+      },
+      "latency_s": 24.402,
+      "base_url": "codex-cli",
+      "cli": {
+        "binary": "codex",
+        "flags": [
+          "--json",
+          "--ignore-rules",
+          "--skip-git-repo-check",
+          "-m",
+          "gpt-6.1-sol",
+          "-c",
+          "sandbox_mode=\"read-only\"",
+          "-c",
+          "project_doc_max_bytes=0",
+          "-c",
+          "model_instructions_file=\"/var/folders/v5/38r42ldx6pqgrx800n454fyc0000gn/T/lij-codex-331pphhm/instructions.md\"",
+          "-c",
+          "web_search=\"disabled\"",
+          "-c",
+          "approval_policy=\"never\"",
+          "-c",
+          "model_reasoning_effort=\"medium\"",
+          "--disable",
+          "apps",
+          "--disable",
+          "browser_use",
+          "--disable",
+          "browser_use_external",
+          "--disable",
+          "computer_use",
+          "--disable",
+          "goals",
+          "--disable",
+          "hooks",
+          "--disable",
+          "image_generation",
+          "--disable",
+          "in_app_browser",
+          "--disable",
+          "memories",
+          "--disable",
+          "plugins",
+          "--disable",
+          "remote_plugin",
+          "--disable",
+          "code_mode_host",
+          "--disable",
+          "multi_agent_v2",
+          "--ephemeral"
+        ],
+        "codex_home": "isolated",
+        "note": "returned_model not reported by codex; requested id recorded"
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "gpt-6.1-sol",
+  "final_text": "## DD summary\n\n**Recommendation: Proceed only conditionally; do not commit to closing until the covenant breach and Arlen change-of-control risk are resolved.**\n\n### Key findings\n- Strong growth, but Arlen Health represents **41% concentration**.\n- CTO and Sales Head have 12-month retention letters; protection beyond that period is unclear.\n- Code is employee-assigned, with MIT and Apache 2.0 components.\n- AUD 10m PI and cyber cover is reported, with no notified claims; adequacy against contractual exposure remains unverified.\n\n### Principal red flags\n1. **Unnotified covenant breach:** CFO confirms leverage of **2.9x versus a 2.5x limit** under the AUD 6m revolving facility. This creates potential lender enforcement and liquidity risk, alongside a reporting/governance concern.\n2. **Arlen termination exposure:** Arlen may terminate for convenience following supplier change of control. The five-year renewal does not eliminate that right. Advance quarterly fees support cash collection, but elevated data-breach liability requires review.\n3. **Unproven churn concern:** A possible link to January’s price change rests on small numbers; it is a diligence question, not an established trend.\n\n### Conditions to proceed\n- Obtain a written lender waiver and confirm facility availability, notification obligations and covenant headroom.\n- Secure Arlen’s binding waiver of the relevant termination right or equivalent contractual protection.\n- Validate downside liquidity and valuation under Arlen-loss scenarios; assess breach liability against insurance terms and exclusions.\n\n**Bottom line:** Growth supports continued diligence, but financing certainty and protection of the largest customer are gating issues.",
+  "finished_at": "2026-11-05T20:36:05+00:00"
+}

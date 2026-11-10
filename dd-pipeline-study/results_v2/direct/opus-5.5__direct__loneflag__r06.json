@@ -1,0 +1,79 @@
+{
+  "run_id": "opus-5.5__direct__loneflag__r06",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "direct",
+    "parser": "none",
+    "orchestrator": "opus-5.5",
+    "rep": 6
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T21:54:59+00:00",
+  "system": "You are the lead AI reviewer on a deal team. Read the following PRIMARY due-diligence documents and write a concise summary for the partner: key findings, red flags, and a recommendation. Connect issues across documents where relevant.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "Documents:\n--- L01 (NDA) ---\nMutual non-disclosure agreement with Halden Partners. Two-year term. Standard carve-outs. No non-solicitation clause.\n\n--- L02 (Lease) ---\nHead office lease, Level 3, 41 Coolidge Street. Five-year term from 2024, market rent review in year three. Landlord consent needed for assignment; clause 19 says a change of control is not an assignment.\n\n--- L03 (Management accounts - revenue) ---\nFY revenue AUD 18.4m, up 9%. Gross margin 61%. Largest customer Arlen Health, 41% of revenue; next largest customer 7%.\n\n--- L04 (HR) ---\nHeadcount 94. Standard employment contracts. Twelve-month retention letters signed by the CTO and the Head of Sales.\n\n--- L05 (Customer contract) ---\nMaster services agreement with Arlen Health, renewed 1 July 2025 for five years. Services: platform licence, hosting and support. Fees: annual, CPI-indexed, invoiced quarterly in advance. Service levels: 99.9% monthly uptime; service credits capped at 10% of monthly fees. Data: customer data hosted in Australia; ISO 27001 certification maintained. Liability: capped at twelve months' fees, except data breach (three times annual fees). Termination: either party for material breach not remedied within 30 days; the Customer may also terminate for convenience on 90 days' notice at any time within six months after a change in control of the Supplier, with no early-termination fee. Governing law: New South Wales. Notices: by email to nominated contacts.\n\n--- L06 (Bank facility) ---\nAUD 6m revolving facility with Southgate Bank, expiring 2027. Leverage covenant: net debt to EBITDA not more than 2.5x, tested quarterly.\n\n--- L07 (Email) ---\nEmail from the CFO, M. Iredale, to the Chair, 14 April: 'To be clear for the board pack: we breached the leverage covenant at the 31 March test date, 2.9x against the 2.5x limit. The bank has not been notified yet. I will raise it with them after the board meeting.'\n\n--- L08 (Internal note) ---\nNote from the Head of Customer Success, T. Okafor: 'I can't be sure, but the uptick in small-business churn this quarter might be linked to the January price change. It's too early to say, and the numbers are small.'\n\n--- L09 (Insurance) ---\nProfessional indemnity and cyber cover to AUD 10m, renewed in March. No notified claims.\n\n--- L10 (IP) ---\nPlatform code written by employees under standard IP assignment clauses. Two open-source components, under MIT and Apache 2.0 licences.\n\n--- L11 (Supplier) ---\nHosting with a major cloud provider on standard online terms. Monthly billing, no minimum commitment.\n\n--- L12 (Board minutes) ---\nBoard meeting, 20 March. Approved the FY budget and hiring plan. Noted a strong sales pipeline. No other business.\n\n--- L13 (Policy) ---\nPrivacy policy updated for the 2025 amendments. Annual staff privacy training completed.\n\n--- L14 (Vendor contract) ---\nOffice cleaning contract, twelve months, terminable on 30 days' notice.\n\n--- L15 (Fixed assets) ---\nLaptops and office fit-out. Written-down value AUD 0.4m.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary: Target (Arlen Health supplier)\n\n**Recommendation: Do not sign on current terms.** Proceed only if (1) Arlen Health waives its change-of-control termination right, or the price is restructured to cover that risk, and (2) Southgate Bank grants a covenant waiver. Each of these is significant on its own. Together they threaten both revenue and funding at completion.\n\n## Red flags\n\n**1. Our acquisition gives the largest customer a free exit (L03 + L05). Critical.**\n- Arlen Health is 41% of revenue, about AUD 7.5m of AUD 18.4m. The next largest customer is 7%.\n- The Arlen MSA (renewed July 2025 for five years) lets Arlen terminate for convenience on 90 days' notice at any time within six months after a change in control of the supplier, with no early-termination fee.\n- Our deal is that change in control. The five-year term gives little protection after closing.\n- With a 61% gross margin, losing Arlen would remove roughly AUD 4.6m of gross profit. It would also worsen the leverage problem in item 2.\n\n**2. Undisclosed covenant breach, and the bank had not been told (L06 + L07 + L12). Critical.**\n- The CFO's email of 14 April says net debt/EBITDA was 2.9x at the 31 March test, against a 2.5x limit. It also says the bank had not been notified.\n- The 20 March board minutes predate the test date, so they are not inconsistent. However, we have not seen the minutes of the later board meeting where this was to be raised.\n- Concerns:\n  - This is likely an event of default on the AUD 6m facility.\n  - Failure to notify may be a separate breach of information undertakings.\n  - The tests at 30 June and 30 September are unknown.\n- Losing Arlen would cut EBITDA and push leverage higher.\n- The data room also raises a governance and candour question: this came out through an email, not a disclosure.\n\n**3. Cyber cover may fall short of the Arlen liability exposure (L05 + L09). High.**\n- For a data breach, the Arlen MSA caps liability at three times annual fees, roughly AUD 22m on the estimate above.\n- PI and cyber cover is AUD 10m. That could leave a gap of about AUD 12m on the largest contract.\n\n## Moderate and minor items\n\n- **Key-person risk (L04):** Retention letters for the CTO and Head of Sales last only 12 months. That is short relative to the Arlen risk window and any integration.\n- **Churn (L08):** The Head of Customer Success suggests a possible link between small-business churn and the January price change. The note is explicitly speculative and based on small numbers, so it is weak evidence. It is still worth asking for cohort churn data.\n- **Data residency and certification (L05 + L11):** The MSA requires Australian hosting and ISO 27001. We should confirm the cloud region and current certificate status.\n- **NDA (L01):** There is no non-solicitation clause, so the target's staff and customers are not protected during the process. This is minor.\n- **Clean items:**\n  - Lease (L02): change of control is not an assignment, so no landlord consent is needed.\n  - IP (L10): standard assignments, and the MIT and Apache licences are permissive. We should confirm there are no contractor-written components.\n  - Hosting (L11): no minimum commitment.\n  - Privacy (L13), cleaning contract (L14) and fixed assets (L15): nothing of note.\n\n## Conditions and next steps\n\n1. **Arlen:** Obtain a signed waiver of the change-of-control termination right as a condition precedent. Failing that, move value into an earn-out or escrow tied to Arlen staying for at least 6 to 12 months after completion.\n2. **Bank:** Obtain written confirmation that Southgate has been notified, plus a waiver or reset. Get the June and September compliance certificates. Review the facility's change-of-control and cross-default terms, which were not provided. Plan refinancing at completion.\n3. **Disclosure:** Get specific warranties and indemnities on covenant compliance and lender disclosure. Request the minutes of the post-14 April board meeting.\n4. **Insurance:** Increase cyber cover to at least the Arlen data-breach cap, or price in the gap.\n5. **People:** Extend retention for the CTO and Head of Sales beyond 12 months, aligned to the Arlen window.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "66274e16-d69c-4448-a548-c50ecec49c94",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 2069,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 1834
+      },
+      "latency_s": 26.941,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary: Target (Arlen Health supplier)\n\n**Recommendation: Do not sign on current terms.** Proceed only if (1) Arlen Health waives its change-of-control termination right, or the price is restructured to cover that risk, and (2) Southgate Bank grants a covenant waiver. Each of these is significant on its own. Together they threaten both revenue and funding at completion.\n\n## Red flags\n\n**1. Our acquisition gives the largest customer a free exit (L03 + L05). Critical.**\n- Arlen Health is 41% of revenue, about AUD 7.5m of AUD 18.4m. The next largest customer is 7%.\n- The Arlen MSA (renewed July 2025 for five years) lets Arlen terminate for convenience on 90 days' notice at any time within six months after a change in control of the supplier, with no early-termination fee.\n- Our deal is that change in control. The five-year term gives little protection after closing.\n- With a 61% gross margin, losing Arlen would remove roughly AUD 4.6m of gross profit. It would also worsen the leverage problem in item 2.\n\n**2. Undisclosed covenant breach, and the bank had not been told (L06 + L07 + L12). Critical.**\n- The CFO's email of 14 April says net debt/EBITDA was 2.9x at the 31 March test, against a 2.5x limit. It also says the bank had not been notified.\n- The 20 March board minutes predate the test date, so they are not inconsistent. However, we have not seen the minutes of the later board meeting where this was to be raised.\n- Concerns:\n  - This is likely an event of default on the AUD 6m facility.\n  - Failure to notify may be a separate breach of information undertakings.\n  - The tests at 30 June and 30 September are unknown.\n- Losing Arlen would cut EBITDA and push leverage higher.\n- The data room also raises a governance and candour question: this came out through an email, not a disclosure.\n\n**3. Cyber cover may fall short of the Arlen liability exposure (L05 + L09). High.**\n- For a data breach, the Arlen MSA caps liability at three times annual fees, roughly AUD 22m on the estimate above.\n- PI and cyber cover is AUD 10m. That could leave a gap of about AUD 12m on the largest contract.\n\n## Moderate and minor items\n\n- **Key-person risk (L04):** Retention letters for the CTO and Head of Sales last only 12 months. That is short relative to the Arlen risk window and any integration.\n- **Churn (L08):** The Head of Customer Success suggests a possible link between small-business churn and the January price change. The note is explicitly speculative and based on small numbers, so it is weak evidence. It is still worth asking for cohort churn data.\n- **Data residency and certification (L05 + L11):** The MSA requires Australian hosting and ISO 27001. We should confirm the cloud region and current certificate status.\n- **NDA (L01):** There is no non-solicitation clause, so the target's staff and customers are not protected during the process. This is minor.\n- **Clean items:**\n  - Lease (L02): change of control is not an assignment, so no landlord consent is needed.\n  - IP (L10): standard assignments, and the MIT and Apache licences are permissive. We should confirm there are no contractor-written components.\n  - Hosting (L11): no minimum commitment.\n  - Privacy (L13), cleaning contract (L14) and fixed assets (L15): nothing of note.\n\n## Conditions and next steps\n\n1. **Arlen:** Obtain a signed waiver of the change-of-control termination right as a condition precedent. Failing that, move value into an earn-out or escrow tied to Arlen staying for at least 6 to 12 months after completion.\n2. **Bank:** Obtain written confirmation that Southgate has been notified, plus a waiver or reset. Get the June and September compliance certificates. Review the facility's change-of-control and cross-default terms, which were not provided. Plan refinancing at completion.\n3. **Disclosure:** Get specific warranties and indemnities on covenant compliance and lender disclosure. Request the minutes of the post-14 April board meeting.\n4. **Insurance:** Increase cyber cover to at least the Arlen data-breach cap, or price in the gap.\n5. **People:** Extend retention for the CTO and Head of Sales beyond 12 months, aligned to the Arlen window.",
+  "finished_at": "2026-11-05T21:55:27+00:00"
+}

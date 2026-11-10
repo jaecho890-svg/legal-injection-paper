@@ -1,0 +1,11 @@
+# interpretive-drift-study/harness/experiment.py run --arms lastA,lastB --models sonnet-5.5,opus-4.8 --reps 5 --workers 4
+# started 2026-11-06T07:27:55, ended 2026-11-06T07:27:55, rc=0
+## stdout
+note: no control arm requested; analysis needs control runs for the same model/case/protocol
+20 jobs, 0 already done, 20 to run (180 API calls)
+  opus-4.8               90 calls  ~8,300 input tokens (excl. multi-turn history)
+  sonnet-5.5             90 calls  ~8,300 input tokens (excl. multi-turn history)
+dry run: nothing sent
+
+## stderr
+

@@ -1,0 +1,345 @@
+{
+ "files": 22437,
+ "files_changed": 56,
+ "emails_redacted": 13,
+ "home_paths_redacted": 159,
+ "names_replaced": 26,
+ "changed": [
+  {
+   "file": "campaign_logs/api-subset-judge.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/claude.log",
+   "emails": 0,
+   "home_paths": 72,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/gpt2.log",
+   "emails": 0,
+   "home_paths": 9,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/gpt2.out",
+   "emails": 0,
+   "home_paths": 2,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/judge-final-dry.log",
+   "emails": 0,
+   "home_paths": 4,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/judge-final.log",
+   "emails": 0,
+   "home_paths": 4,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/judge-final2.log",
+   "emails": 0,
+   "home_paths": 4,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/review-claude-dry.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/review-claude.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/review-gpt.log",
+   "emails": 0,
+   "home_paths": 2,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/claude/2026-11-05T193932__drift-core__pass1.log",
+   "emails": 0,
+   "home_paths": 9,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/gpt2/2026-11-06T210615__p2-kestrel-judge__pass1.log",
+   "emails": 0,
+   "home_paths": 7,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final/2026-11-06T065528__kestrel-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final/2026-11-06T065730__drift-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final/2026-11-06T065846__ip-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final/2026-11-06T065903__dd-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final-dry/2026-11-06T044909__kestrel-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final-dry/2026-11-06T045053__drift-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final-dry/2026-11-06T045216__ip-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final-dry/2026-11-06T045233__dd-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final2/2026-11-06T223158__kestrel-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final2/2026-11-06T223423__drift-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final2/2026-11-06T223756__ip-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/judge-final2/2026-11-06T223827__dd-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/review-claude/2026-11-08T194743__review-rerun-drift-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/review-claude-dry/2026-11-08T163450__review-rerun-drift-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/review-gpt/2026-11-09T040829__review-rerun-drift-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/stages/review-gpt/2026-11-09T112132__review-rerun-drift-analyze__pass1.log",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "campaign_logs/validation_2026-11-10/codex_pass2.log",
+   "emails": 1,
+   "home_paths": 24,
+   "names": 2
+  },
+  {
+   "file": "campaign_logs/validation_2026-11-10/codex_prompt.md",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "kestrel-injection-study/corpus/base_documents.json",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/analysis/human_agreement.md",
+   "emails": 0,
+   "home_paths": 1,
+   "names": 0
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__A1__CHECKLIST__GUARD_OFF__r03.json",
+   "emails": 1,
+   "home_paths": 0,
+   "names": 0
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__B1__OPEN__GUARD_OFF__r08.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 1
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__B1__OPEN__NO_PLAYBOOK__r03.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 1
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__B3__OPEN__NO_PLAYBOOK__r05.json",
+   "emails": 1,
+   "home_paths": 0,
+   "names": 0
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/judge_gpt-6.1-sol/fable-5.1__C0P__OPEN__GUARD_OFF__r06.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 1
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/reviewer/fable-5.1__A1__CHECKLIST__GUARD_OFF__r03.json",
+   "emails": 2,
+   "home_paths": 0,
+   "names": 0
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/reviewer/fable-5.1__B1__OPEN__GUARD_OFF__r08.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 2
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/reviewer/fable-5.1__B1__OPEN__NO_PLAYBOOK__r03.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 2
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/reviewer/fable-5.1__B3__OPEN__NO_PLAYBOOK__r05.json",
+   "emails": 2,
+   "home_paths": 0,
+   "names": 0
+  },
+  {
+   "file": "kestrel-injection-study/results_v2/reviewer/fable-5.1__C0P__OPEN__GUARD_OFF__r06.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 2
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/direct/fable-5.1__direct__discovery__r01.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 2
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/direct/fable-5.1__direct__loneflag__r02.json",
+   "emails": 2,
+   "home_paths": 0,
+   "names": 0
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/judge_gpt-6.1-sol/final__fable-5.1__direct__discovery__r01.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 1
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/judge_gpt-6.1-sol/final__fable-5.1__direct__loneflag__r02.json",
+   "emails": 1,
+   "home_paths": 0,
+   "names": 0
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/judge_gpt-6.1-sol/final__fable-5.1__haiku-5.5__discovery__normal__r02.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 1
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/judge_gpt-6.1-sol/final__fable-5.1__haiku-5.5__discovery__normal__r04.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 1
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/judge_gpt-6.1-sol/final__fable-5.1__haiku-5.5__discovery__normal__r07.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 1
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/judge_gpt-6.1-sol/final__fable-5.1__haiku-5.5__discovery__terse__r07.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 1
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/judge_gpt-6.1-sol/final__fable-5.1__haiku-5.5__overt__hardened__r04.json",
+   "emails": 1,
+   "home_paths": 0,
+   "names": 0
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/orchestrator/fable-5.1__haiku-5.5__discovery__normal__r02.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 2
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/orchestrator/fable-5.1__haiku-5.5__discovery__normal__r04.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 2
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/orchestrator/fable-5.1__haiku-5.5__discovery__normal__r07.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 2
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/orchestrator/fable-5.1__haiku-5.5__discovery__terse__r07.json",
+   "emails": 0,
+   "home_paths": 0,
+   "names": 2
+  },
+  {
+   "file": "dd-pipeline-study/results_v2/orchestrator/fable-5.1__haiku-5.5__overt__hardened__r04.json",
+   "emails": 2,
+   "home_paths": 0,
+   "names": 0
+  }
+ ]
+}

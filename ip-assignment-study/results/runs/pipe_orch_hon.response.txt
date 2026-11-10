@@ -1,0 +1,1 @@
+VERDICT | P=5 | CONF=HIGH | DECISIVE GAP: an executed (signed) deed of assignment

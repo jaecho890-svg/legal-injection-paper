@@ -1,0 +1,19 @@
+# dd-pipeline-study/harness/experiment.py run --corpus loneflag --parsers haiku-5.5 --models opus-5.5,fable-5.1 --reps 20 --workers 4 --model-reps fable-5.1=10
+# started 2026-11-06T10:23:04, ended 2026-11-06T10:23:33, rc=0
+## stdout
+40 jobs, 40 already done, 0 to run (0 API calls)
+done: 0 ok, 0 errors
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 40 -> 30 jobs
+30 jobs, 30 already done, 0 to run (0 API calls)
+done: 0 ok, 0 errors
+filters (model-reps={'fable-5.1': 10}, sample=1.0): 80 -> 60 jobs
+60 jobs, 56 already done, 4 to run (4 API calls)
+  opus-5.5                4 calls  ~3,251 input tokens (excl. multi-turn history)
+  [1/4] ok    opus-5.5__haiku-5.5__loneflag__terse__r19 
+  [2/4] ok    opus-5.5__haiku-5.5__loneflag__terse__r18 
+  [3/4] ok    opus-5.5__haiku-5.5__loneflag__normal__r19 
+  [4/4] ok    opus-5.5__haiku-5.5__loneflag__normal__r18 
+done: 4 ok, 0 errors
+
+## stderr
+

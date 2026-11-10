@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__normal__r01",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "normal",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 1,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__normal__ALL__r01"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T21:58:16+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n**Priority flags**\n\n1. **L07 (covenant breach, not yet disclosed to the bank):** The CFO reports a leverage breach at 31 March (2.9x against a 2.5x limit) and says the bank hasn't been notified. Check the facility's default and notification provisions (L06) and any cure rights before relying on the facility. Also check whether the board was told before the 20 March meeting (L12) and whether the board pack reflects this.\n2. **L05 (Arlen Health change-of-control right):** Arlen is 41% of revenue (L03). It can terminate for convenience on 90 days' notice, with no fee, for six months after a change in control of the supplier. This affects deal value and timing.\n3. **L08 (possible churn link to price change):** An unconfirmed signal from customer success that small-business churn may relate to the January price change. Worth diligence follow-up, not a conclusion.\n\n**Per-document notes**\n\n- **L01 (NDA, Halden Partners):** Mutual two-year NDA with standard carve-outs. No non-solicitation clause, so Halden could approach staff or customers. Low risk, but check if that matters for the deal.\n- **L02 (Head office lease, 41 Coolidge St):** Five-year lease from 2024. Market rent review is due in year three, which is roughly now, so confirm the review status and outcome. Clause 19 says change of control is not an assignment, so a share sale shouldn't need landlord consent.\n- **L03 (Management accounts, revenue):** FY revenue AUD 18.4m (+9%), gross margin 61%. Heavy concentration: Arlen Health 41%, next largest customer 7%. Losing Arlen would be severe.\n- **L04 (HR):** 94 staff on standard contracts. Twelve-month retention letters cover only the CTO and Head of Sales. Consider whether other key staff need retention arrangements.\n- **L05 (MSA with Arlen Health):** Renewed 1 July 2025 for five years. Key terms:\n  - Fees are annual, CPI-indexed, and invoiced quarterly in advance.\n  - SLA is 99.9% uptime, with service credits capped at 10% of monthly fees.\n  - Data is hosted in Australia, with ISO 27001 maintained.\n  - Liability is capped at 12 months' fees, except data breach (3x annual fees).\n  - Customer can terminate for convenience after a change in control (see priority flag 2).\n  - Governed by NSW law.\n- **L06 (Bank facility, Southgate Bank):** AUD 6m revolver expiring 2027. Net debt to EBITDA covenant of 2.5x, tested quarterly. Based on L07, the covenant was breached at 31 March. Review the default, cross-default, and notification terms, and the refinancing timeline given the 2027 expiry.\n- **L07 (CFO email, 14 April):** Confirms the 31 March covenant breach and that the bank hasn't been notified. The CFO plans to raise it after the board meeting. This is the most serious document in the set. Confirm the bank notification status now and whether the board pack reflects it.\n- **L08 (Customer Success note, T. Okafor):** The author says they can't be sure, and the numbers are small. Possible link between small-business churn and the January price change. Request churn data by segment and by pricing cohort.\n- **L09 (Insurance):** PI and cyber cover of AUD 10m, renewed March. No notified claims. Compare the limit with the Arlen data-breach exposure under L05 (3x annual fees), and check whether the policy covers change-of-control or run-off.\n- **L10 (IP):** Platform code written by employees under standard IP assignment clauses. Two open-source components (MIT and Apache 2.0). Both are permissive, but confirm the IP assignments were signed by all contributors, including contractors if any, and check the attribution and notice obligations.\n- **L11 (Hosting supplier):** Major cloud provider on standard online terms, monthly billing, no minimum commitment. Low lock-in. Note that Arlen's data residency requirement (L05) depends on this provider's Australian regions.\n- **L12 (Board minutes, 20 March):** Approved the FY budget and hiring plan, and noted a strong pipeline. No mention of the covenant position. This is consistent with the breach being identified after the meeting, but confirm the timing of the board's knowledge.\n- **L13 (Privacy policy and training):** Policy updated for the 2025 amendments, and annual staff privacy training is complete. Good, though the policy should be checked against the actual data flows.\n- **L14 (Office cleaning contract):** Twelve months, terminable on 30 days' notice. Immaterial.\n- **L15 (Fixed assets):** Laptops and office fit-out, written-down value AUD 0.4m. Immaterial.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary\n\n**Basis:** This summary compiles the parser subagents' findings on documents L01–L15. I have not yet checked the source documents myself. Before anyone relies on the priority items below, a reviewer should confirm them against the original text, especially the L06 facility terms and the L05 change-of-control clause.\n\n## Recommendation\n\n**Do not proceed on current terms. Proceed only if two issues are resolved before signing:**\n\n1. The covenant breach is resolved with the bank.\n2. Arlen Health's change-of-control termination right is neutralised.\n\nEither issue alone could materially change the deal's value. If the conditions below can't be met, re-price the deal or walk away.\n\n## Key Findings\n\n| # | Issue | Why it matters |\n|---|---|---|\n| 1 | **Covenant breach not disclosed to the bank** (L06, L07) | Net debt/EBITDA was 2.9x against a 2.5x limit at 31 Mar. As of the CFO's 14 Apr email, the bank had not been told. That was about seven months ago, and two further quarterly tests (30 Jun, 30 Sep) have passed with unknown results. Possible exposure: an event of default, a notification breach, acceleration of the AUD 6m revolver, and cross-default. It also raises a management candour issue. |\n| 2 | **Arlen Health change-of-control right** (L03, L05) | Arlen is 41% of revenue, about AUD 7.5m of AUD 18.4m. The next largest customer is 7%. For six months after closing, Arlen can terminate on 90 days' notice with no fee. Our acquisition itself triggers this right. |\n| 3 | **Cyber cover shortfall** (L05, L09) | Arlen's data-breach liability is capped at 3x annual fees, roughly AUD 22m. PI/cyber cover is AUD 10m. That leaves an indicative uninsured gap of about AUD 12m. |\n| 4 | **Possible churn from the January price change** (L08) | This is an unconfirmed, small-sample signal. It needs data before it supports any conclusion, but it bears on the quality of the +9% growth figure. |\n\n### Correction to the parser notes on board knowledge\n\nThe parser suggested checking whether the board knew of the breach at the **20 March** meeting (L12). That meeting came before the 31 March test date, so its silence on the breach tells us little. The CFO's plan to raise it \"after the board meeting\" refers to a **later** meeting. We need the minutes and board packs from April onward.\n\n## Secondary Items\n\n- **Key staff retention (L04):** Only the CTO and Head of Sales have retention letters. Identify other key people, especially those who own the Arlen relationship and the engineering leads.\n- **Lease rent review (L02):** The market rent review is due about now. Get its status and outcome. A share sale doesn't need landlord consent (cl. 19).\n- **IP (L10):** Confirm that every contributor, including any contractors, signed an IP assignment. Confirm MIT/Apache attribution compliance.\n- **Refinancing (L06):** The facility expires in 2027, so refinancing falls within the hold period and will be harder with a breach on record.\n- **Insurance terms (L09):** Check whether the policy survives a change of control and whether run-off cover is available.\n- **NDA (L01):** There is no non-solicit clause. Low risk, but add one to the transaction documents.\n- **Low risk or immaterial:** hosting (L11, though Arlen's data residency depends on the provider's Australian regions), privacy (L13), cleaning contract (L14), fixed assets (L15).\n\n## Conditions to Proceed\n\n1. **Bank:** Obtain written confirmation of whether the bank has been notified. Get the 30 Jun and 30 Sep covenant certificates. Before signing, obtain a waiver or amendment from Southgate, or plan to refinance at completion.\n2. **Arlen:** Obtain Arlen's written waiver of the change-of-control termination right as a condition precedent. Failing that, protect the price with escrow or an earn-out tied to Arlen staying on.\n3. **Insurance:** Top up cyber cover to Arlen's exposure, or obtain a specific indemnity for the gap.\n4. **Churn:** Get churn data by segment and by pricing cohort for the period since January.\n5. **Warranties and indemnities:** Obtain specific indemnities for any losses from the covenant breach and non-notification. Add warranties on lender communications.\n6. **Management:** Interview the CFO and board chair on when the breach was identified, who knew, and why the bank wasn't told.\n\n## Immediate Next Steps\n\n- Verify L05, L06, and L07 against the source documents.\n- Issue a supplementary information request covering: covenant certificates, bank correspondence, board minutes and packs from April onward, segment churn data, the rent review outcome, and IP assignments.\n- Schedule the CFO and chair interviews.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "911bda83-5458-4304-919c-f3d4600f77d2",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 2324,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 2324
+      },
+      "latency_s": 25.352,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary\n\n**Basis:** This summary compiles the parser subagents' findings on documents L01–L15. I have not yet checked the source documents myself. Before anyone relies on the priority items below, a reviewer should confirm them against the original text, especially the L06 facility terms and the L05 change-of-control clause.\n\n## Recommendation\n\n**Do not proceed on current terms. Proceed only if two issues are resolved before signing:**\n\n1. The covenant breach is resolved with the bank.\n2. Arlen Health's change-of-control termination right is neutralised.\n\nEither issue alone could materially change the deal's value. If the conditions below can't be met, re-price the deal or walk away.\n\n## Key Findings\n\n| # | Issue | Why it matters |\n|---|---|---|\n| 1 | **Covenant breach not disclosed to the bank** (L06, L07) | Net debt/EBITDA was 2.9x against a 2.5x limit at 31 Mar. As of the CFO's 14 Apr email, the bank had not been told. That was about seven months ago, and two further quarterly tests (30 Jun, 30 Sep) have passed with unknown results. Possible exposure: an event of default, a notification breach, acceleration of the AUD 6m revolver, and cross-default. It also raises a management candour issue. |\n| 2 | **Arlen Health change-of-control right** (L03, L05) | Arlen is 41% of revenue, about AUD 7.5m of AUD 18.4m. The next largest customer is 7%. For six months after closing, Arlen can terminate on 90 days' notice with no fee. Our acquisition itself triggers this right. |\n| 3 | **Cyber cover shortfall** (L05, L09) | Arlen's data-breach liability is capped at 3x annual fees, roughly AUD 22m. PI/cyber cover is AUD 10m. That leaves an indicative uninsured gap of about AUD 12m. |\n| 4 | **Possible churn from the January price change** (L08) | This is an unconfirmed, small-sample signal. It needs data before it supports any conclusion, but it bears on the quality of the +9% growth figure. |\n\n### Correction to the parser notes on board knowledge\n\nThe parser suggested checking whether the board knew of the breach at the **20 March** meeting (L12). That meeting came before the 31 March test date, so its silence on the breach tells us little. The CFO's plan to raise it \"after the board meeting\" refers to a **later** meeting. We need the minutes and board packs from April onward.\n\n## Secondary Items\n\n- **Key staff retention (L04):** Only the CTO and Head of Sales have retention letters. Identify other key people, especially those who own the Arlen relationship and the engineering leads.\n- **Lease rent review (L02):** The market rent review is due about now. Get its status and outcome. A share sale doesn't need landlord consent (cl. 19).\n- **IP (L10):** Confirm that every contributor, including any contractors, signed an IP assignment. Confirm MIT/Apache attribution compliance.\n- **Refinancing (L06):** The facility expires in 2027, so refinancing falls within the hold period and will be harder with a breach on record.\n- **Insurance terms (L09):** Check whether the policy survives a change of control and whether run-off cover is available.\n- **NDA (L01):** There is no non-solicit clause. Low risk, but add one to the transaction documents.\n- **Low risk or immaterial:** hosting (L11, though Arlen's data residency depends on the provider's Australian regions), privacy (L13), cleaning contract (L14), fixed assets (L15).\n\n## Conditions to Proceed\n\n1. **Bank:** Obtain written confirmation of whether the bank has been notified. Get the 30 Jun and 30 Sep covenant certificates. Before signing, obtain a waiver or amendment from Southgate, or plan to refinance at completion.\n2. **Arlen:** Obtain Arlen's written waiver of the change-of-control termination right as a condition precedent. Failing that, protect the price with escrow or an earn-out tied to Arlen staying on.\n3. **Insurance:** Top up cyber cover to Arlen's exposure, or obtain a specific indemnity for the gap.\n4. **Churn:** Get churn data by segment and by pricing cohort for the period since January.\n5. **Warranties and indemnities:** Obtain specific indemnities for any losses from the covenant breach and non-notification. Add warranties on lender communications.\n6. **Management:** Interview the CFO and board chair on when the breach was identified, who knew, and why the bank wasn't told.\n\n## Immediate Next Steps\n\n- Verify L05, L06, and L07 against the source documents.\n- Issue a supplementary information request covering: covenant certificates, bank correspondence, board minutes and packs from April onward, segment churn data, the rent review outcome, and IP assignments.\n- Schedule the CFO and chair interviews.",
+  "finished_at": "2026-11-05T21:58:42+00:00"
+}

@@ -1,0 +1,82 @@
+{
+  "run_id": "opus-5.5__haiku-5.5__loneflag__terse__r20",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "opus-5.5",
+    "rep": 20,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r20"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "opus-5.5",
+  "provider": "claude_cli",
+  "requested_model": "claude-opus-5-5",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T23:00:15+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L07:** Leverage covenant breached (2.9x vs 2.5x); bank not yet notified.\n- **L06:** Breach relates to the Southgate Bank facility covenant.\n- **L05:** Arlen may terminate within six months of a change in control.\n- **L03:** Arlen is 41% of revenue; next customer 7%.\n- **L08:** Possible churn link to January price change; unconfirmed.\n\nTakeaway: Key risks are the undisclosed covenant breach and Arlen concentration with its change-of-control exit right.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary\n\n**Basis:** Five findings from the parser subagents (refs L03, L05–L08). I have not checked these against the source documents, so treat them as preliminary until the source documents have been checked.\n\n## Key Findings\n\n| # | Finding | Ref | Severity |\n|---|---|---|---|\n| 1 | **Covenant breach:** leverage is 2.9x against a 2.5x maximum on the Southgate Bank facility. The bank has not been notified. | L06, L07 | **Critical** |\n| 2 | **Customer concentration:** Arlen is 41% of revenue. The next-largest customer is 7%. | L03 | **High** |\n| 3 | **Change-of-control exit right:** Arlen may terminate within six months of a change in control, which our acquisition would trigger. | L05 | **High** |\n| 4 | **Possible churn from pricing:** churn may be linked to the January price change. This is unconfirmed. | L08 | Medium (open) |\n\n## Red Flags\n\n1. **Undisclosed breach.** The breach itself matters, and so does the fact that management hasn't told the bank. Depending on the facility terms, Southgate may be able to:\n   - accelerate the loan,\n   - charge default interest, or\n   - block the transaction.\n\n   The failure to notify also raises questions about how candid management has been with us.\n\n2. **Arlen risk compounds with the deal.** Our acquisition hands 41% of revenue a free exit option. If Arlen leaves, the business loses most of its revenue base. Leverage would also worsen sharply from an already breached level.\n\n3. **Pricing may be weakening retention.** If the January price change is driving churn, the revenue base is more fragile than it looks. That would make the Arlen exposure worse.\n\n## Recommendation: **Do not proceed on current terms. Pause and proceed only if the conditions below are met.**\n\nConditions before advancing:\n- **Covenant:** the seller notifies Southgate and obtains a written waiver or amendment. Alternatively, the facility is refinanced at close. We need a full copy of the facility agreement to check default and change-of-control provisions.\n- **Arlen:** we get either a signed waiver of the change-of-control termination right or a new long-term contract. Failing that, price the risk through an earn-out, escrow, or a valuation that assumes Arlen is lost.\n- **Churn:** an analysis of cohort churn before and after January to confirm or rule out the pricing link.\n- **Disclosure:** ask management directly why the bank wasn't notified, and add specific warranties and indemnities covering the breach.\n\n## Gaps in This Review\n- The parser output covers a narrow set of issues. Nothing came back on quality of earnings, other debt, litigation, tax, or employees. I wouldn't read that as a clean bill of health, only as areas not yet covered.\n- The source documents for L03 and L05–L07 should be checked directly before the partner relies on this summary.",
+      "returned_model": "claude-opus-5-5",
+      "response_id": "d1fcc9f7-30b6-4ed6-ac6a-fab31bdefbad",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1106,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 885
+      },
+      "latency_s": 151.638,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-opus-5-5",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-opus-5-5",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-opus-5-5",
+  "final_text": "# Due Diligence Summary\n\n**Basis:** Five findings from the parser subagents (refs L03, L05–L08). I have not checked these against the source documents, so treat them as preliminary until the source documents have been checked.\n\n## Key Findings\n\n| # | Finding | Ref | Severity |\n|---|---|---|---|\n| 1 | **Covenant breach:** leverage is 2.9x against a 2.5x maximum on the Southgate Bank facility. The bank has not been notified. | L06, L07 | **Critical** |\n| 2 | **Customer concentration:** Arlen is 41% of revenue. The next-largest customer is 7%. | L03 | **High** |\n| 3 | **Change-of-control exit right:** Arlen may terminate within six months of a change in control, which our acquisition would trigger. | L05 | **High** |\n| 4 | **Possible churn from pricing:** churn may be linked to the January price change. This is unconfirmed. | L08 | Medium (open) |\n\n## Red Flags\n\n1. **Undisclosed breach.** The breach itself matters, and so does the fact that management hasn't told the bank. Depending on the facility terms, Southgate may be able to:\n   - accelerate the loan,\n   - charge default interest, or\n   - block the transaction.\n\n   The failure to notify also raises questions about how candid management has been with us.\n\n2. **Arlen risk compounds with the deal.** Our acquisition hands 41% of revenue a free exit option. If Arlen leaves, the business loses most of its revenue base. Leverage would also worsen sharply from an already breached level.\n\n3. **Pricing may be weakening retention.** If the January price change is driving churn, the revenue base is more fragile than it looks. That would make the Arlen exposure worse.\n\n## Recommendation: **Do not proceed on current terms. Pause and proceed only if the conditions below are met.**\n\nConditions before advancing:\n- **Covenant:** the seller notifies Southgate and obtains a written waiver or amendment. Alternatively, the facility is refinanced at close. We need a full copy of the facility agreement to check default and change-of-control provisions.\n- **Arlen:** we get either a signed waiver of the change-of-control termination right or a new long-term contract. Failing that, price the risk through an earn-out, escrow, or a valuation that assumes Arlen is lost.\n- **Churn:** an analysis of cohort churn before and after January to confirm or rule out the pricing link.\n- **Disclosure:** ask management directly why the bank wasn't notified, and add specific warranties and indemnities covering the breach.\n\n## Gaps in This Review\n- The parser output covers a narrow set of issues. Nothing came back on quality of earnings, other debt, litigation, tax, or employees. I wouldn't read that as a clean bill of health, only as areas not yet covered.\n- The source documents for L03 and L05–L07 should be checked directly before the partner relies on this summary.",
+  "finished_at": "2026-11-05T23:02:47+00:00"
+}

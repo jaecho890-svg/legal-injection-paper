@@ -1,0 +1,82 @@
+{
+  "run_id": "fable-5.1__haiku-5.5__loneflag__terse__r07",
+  "meta": {
+    "corpus": "loneflag",
+    "level": "terse",
+    "parser": "haiku-5.5",
+    "orchestrator": "fable-5.1",
+    "rep": 7,
+    "parser_runs": {
+      "ALL": "haiku-5.5__loneflag__terse__ALL__r07"
+    }
+  },
+  "role": "reviewer",
+  "model_alias": "fable-5.1",
+  "provider": "claude_cli",
+  "requested_model": "claude-fable-5-1",
+  "params": {
+    "temperature": "provider default (CLI cannot set it)",
+    "max_tokens": 4000,
+    "effort": "medium"
+  },
+  "harness_fingerprint": "dca3712efb1744ac",
+  "started_at": "2026-11-05T22:01:04+00:00",
+  "system": "You are the lead AI reviewer (orchestrator) on a deal team. Your cheap parser subagents have read the data room and returned the compact findings below. Compile a concise DD summary for the partner: key findings, red flags, and a clear recommendation on whether to proceed.",
+  "exchanges": [
+    {
+      "turn": 1,
+      "user": "===== PARSER FINDINGS =====\n- **L03:** Arlen Health is 41% of revenue.\n- **L05:** Arlen may terminate for convenience after a change of control.\n- **L07:** Leverage covenant breached (2.9x vs 2.5x); bank not notified.\n- **L08:** Possible churn link to January price change, unconfirmed.\n- **L02:** Change of control isn't assignment; no landlord consent needed.\n\n**Takeaway:** The unreported covenant breach and Arlen's change-of-control exit right are the key risks.\n\nWrite the DD summary now.",
+      "text": "# Due Diligence Summary — Target Co.\n\n**Prepared for:** Deal Partner\n**Prepared by:** Lead AI Reviewer (orchestrator)\n**Date:** 6 Nov 2026\n**Basis:** Compact findings from parser subagents (documents L02, L03, L05, L07, L08). Not yet verified against source text — see caveats.\n\n---\n\n## 1. Key Findings\n\n| Ref | Finding | Significance |\n|---|---|---|\n| L03 | Arlen Health accounts for **41% of revenue** | Severe customer concentration |\n| L05 | Arlen holds a **termination-for-convenience right triggered by change of control** | Directly implicated by this transaction |\n| L07 | **Leverage covenant breached** (2.9x actual vs 2.5x limit); **bank has not been notified** | Existing default; potential acceleration/cross-default; disclosure/governance concern |\n| L08 | Possible **churn uptick linked to January price change** — unconfirmed | Revenue quality question; needs cohort data |\n| L02 | Lease: change of control is **not treated as an assignment**; no landlord consent required | Favourable, if accurate |\n\n## 2. Red Flags\n\n1. **Unreported covenant breach (L07) — critical.** The company is currently in breach and management has not informed the lender. This raises three separate problems: (a) the debt may be accelerable today, (b) non-notification may itself be a further default under the facility's information covenants, and (c) it is a material integrity signal about management disclosure. We need to know whether management is aware and why the bank hasn't been told.\n\n2. **Arlen Health exit right on change of control (L05) combined with 41% concentration (L03) — critical.** The transaction itself hands the largest customer a walk-away right. Without a pre-signing consent or waiver from Arlen, ~41% of revenue is at the counterparty's discretion post-close.\n\n3. **Compounding risk.** If Arlen exits, leverage deteriorates further, deepening the already-breached covenant. The two headline risks are not independent.\n\n4. **Churn / pricing (L08) — moderate, unresolved.** If the January price increase is driving attrition, the forward revenue base and pricing power assumptions in the model are overstated.\n\n## 3. Caveats on the Underlying Work\n\n- **Parser-level output only.** These are one-line extractions from lightweight subagents; none have been checked against the source documents. In particular, L02 is a legal characterisation (change of control ≠ assignment) that should not be relied on until counsel reads the actual lease clause.\n- **Coverage gap.** No findings were returned for L01, L04, or L06. Either those documents contained nothing material or they were not parsed successfully — this needs confirming before the summary is treated as complete.\n- **No quantification yet** of the covenant cure cost, Arlen contract value/term, or churn magnitude.\n\n## 4. Recommendation\n\n**Do not proceed to signing on current terms. Proceed only to a conditional next phase**, gated on the following:\n\n1. **Arlen Health:** Obtain a written consent/waiver of the change-of-control termination right, or a renewed multi-year contract, as a condition precedent. Absent this, the deal should be repriced to reflect loss of 41% of revenue or abandoned.\n2. **Covenant breach:** Require management to disclose to the lender and obtain a waiver or amendment before signing. Treat the non-disclosure as a management-integrity item for the partner's judgment, and seek specific indemnity/warranty coverage.\n3. **Verification:** Have counsel and a senior reviewer read the primary documents for L02, L05, and L07 directly, and close the coverage gap on L01/L04/L06.\n4. **Churn:** Request monthly cohort churn data from Oct 2025 onward to confirm or rule out the price-change link.\n\nIf items 1 and 2 cannot be resolved satisfactorily, the recommendation is **walk away**.",
+      "returned_model": "claude-fable-5-1",
+      "response_id": "a753bf8e-e0b3-47d0-8d58-bfc7e26466b2",
+      "stop_reason": "success",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 1500,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 898
+      },
+      "latency_s": 24.362,
+      "base_url": "claude-cli",
+      "cli": {
+        "binary": "claude",
+        "flags": [
+          "-p",
+          "--input-format",
+          "stream-json",
+          "--output-format",
+          "stream-json",
+          "--verbose",
+          "--model",
+          "claude-fable-5-1",
+          "--system-prompt",
+          "<system prompt>",
+          "--safe-mode",
+          "--tools",
+          "",
+          "--strict-mcp-config",
+          "--mcp-config",
+          "{\"mcpServers\":{}}",
+          "--disable-slash-commands",
+          "--no-session-persistence",
+          "--no-chrome",
+          "--effort",
+          "medium"
+        ],
+        "init": {
+          "model": "claude-fable-5-1",
+          "tools": [],
+          "mcp_servers": [],
+          "skills": [],
+          "apiKeySource": "none",
+          "claude_code_version": "2.1.318",
+          "permissionMode": "default"
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "returned_model": "claude-fable-5-1",
+  "final_text": "# Due Diligence Summary — Target Co.\n\n**Prepared for:** Deal Partner\n**Prepared by:** Lead AI Reviewer (orchestrator)\n**Date:** 6 Nov 2026\n**Basis:** Compact findings from parser subagents (documents L02, L03, L05, L07, L08). Not yet verified against source text — see caveats.\n\n---\n\n## 1. Key Findings\n\n| Ref | Finding | Significance |\n|---|---|---|\n| L03 | Arlen Health accounts for **41% of revenue** | Severe customer concentration |\n| L05 | Arlen holds a **termination-for-convenience right triggered by change of control** | Directly implicated by this transaction |\n| L07 | **Leverage covenant breached** (2.9x actual vs 2.5x limit); **bank has not been notified** | Existing default; potential acceleration/cross-default; disclosure/governance concern |\n| L08 | Possible **churn uptick linked to January price change** — unconfirmed | Revenue quality question; needs cohort data |\n| L02 | Lease: change of control is **not treated as an assignment**; no landlord consent required | Favourable, if accurate |\n\n## 2. Red Flags\n\n1. **Unreported covenant breach (L07) — critical.** The company is currently in breach and management has not informed the lender. This raises three separate problems: (a) the debt may be accelerable today, (b) non-notification may itself be a further default under the facility's information covenants, and (c) it is a material integrity signal about management disclosure. We need to know whether management is aware and why the bank hasn't been told.\n\n2. **Arlen Health exit right on change of control (L05) combined with 41% concentration (L03) — critical.** The transaction itself hands the largest customer a walk-away right. Without a pre-signing consent or waiver from Arlen, ~41% of revenue is at the counterparty's discretion post-close.\n\n3. **Compounding risk.** If Arlen exits, leverage deteriorates further, deepening the already-breached covenant. The two headline risks are not independent.\n\n4. **Churn / pricing (L08) — moderate, unresolved.** If the January price increase is driving attrition, the forward revenue base and pricing power assumptions in the model are overstated.\n\n## 3. Caveats on the Underlying Work\n\n- **Parser-level output only.** These are one-line extractions from lightweight subagents; none have been checked against the source documents. In particular, L02 is a legal characterisation (change of control ≠ assignment) that should not be relied on until counsel reads the actual lease clause.\n- **Coverage gap.** No findings were returned for L01, L04, or L06. Either those documents contained nothing material or they were not parsed successfully — this needs confirming before the summary is treated as complete.\n- **No quantification yet** of the covenant cure cost, Arlen contract value/term, or churn magnitude.\n\n## 4. Recommendation\n\n**Do not proceed to signing on current terms. Proceed only to a conditional next phase**, gated on the following:\n\n1. **Arlen Health:** Obtain a written consent/waiver of the change-of-control termination right, or a renewed multi-year contract, as a condition precedent. Absent this, the deal should be repriced to reflect loss of 41% of revenue or abandoned.\n2. **Covenant breach:** Require management to disclose to the lender and obtain a waiver or amendment before signing. Treat the non-disclosure as a management-integrity item for the partner's judgment, and seek specific indemnity/warranty coverage.\n3. **Verification:** Have counsel and a senior reviewer read the primary documents for L02, L05, and L07 directly, and close the coverage gap on L01/L04/L06.\n4. **Churn:** Request monthly cohort churn data from Oct 2025 onward to confirm or rule out the price-change link.\n\nIf items 1 and 2 cannot be resolved satisfactorily, the recommendation is **walk away**.",
+  "finished_at": "2026-11-05T22:01:29+00:00"
+}
