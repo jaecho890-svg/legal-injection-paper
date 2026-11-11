@@ -94,4 +94,3 @@ The site is built in a clone of the public repository, so the footer names a com
 ## Still to set in config.json
 
 1. `arxiv_url` and `first_posted`, once the paper is posted.
-2. `zenodo_doi`, once the archive has one.
