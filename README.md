@@ -2,7 +2,7 @@
 
 This repository holds the research code and synthetic fixtures for a study of whether text one party places in legal documents can shift the conclusions of the opposing party's AI reviewer. It covers four studies: contract review (Kestrel), interpretive drift on balanced disputes, IP-assignment correspondence, and a cheap-summariser/strong-decider due-diligence pipeline.
 
-**Site:** <https://jaecho890-svg.github.io/legal-injection-paper/> (results, the paper, downloads and the corrections log). **Paper:** [paper/main.pdf](paper/main.pdf), source in [paper/main.tex](paper/main.tex) (see [paper/README.md](paper/README.md)). **Results record:** [docs/RESULTS.md](docs/RESULTS.md).
+**Site:** <https://adversarialrecord.org/> (results, the paper, downloads and the corrections log). **Paper:** [paper/main.pdf](paper/main.pdf), source in [paper/main.tex](paper/main.tex) (see [paper/README.md](paper/README.md)). **Results record:** [docs/RESULTS.md](docs/RESULTS.md).
 
 The public copy of this repository is built by `tools/export_public.py`, which removes email addresses and home-folder paths from the raw records, replaces the name a model made out of the account address with the author's published name, and lists every file it changed in `REDACTION_REPORT.json`.
 

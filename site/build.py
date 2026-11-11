@@ -12,6 +12,7 @@ import re
 import shutil
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from gen import core, home, pages, source  # noqa: E402
@@ -63,6 +64,9 @@ def main():
         p = core.DIST / rel
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(html)
+    host = urlparse(cfg["site_url"] or "").hostname
+    if host and not host.endswith(".github.io"):
+        (core.DIST / "CNAME").write_text(host + "\n")  # GitHub Pages reads the custom domain from this file
     print(f"built {len(out)} pages and {len(items)} downloads into {core.DIST.relative_to(core.ROOT)}")
 
 

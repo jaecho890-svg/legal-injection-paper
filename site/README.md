@@ -3,7 +3,7 @@
 A static site for the working paper: results, the paper, data and code, and the corrections log.
 It is generated from the manuscript and the analysis outputs, so the site cannot drift from the paper.
 
-`dist/` is generated and ignored by git. The built site is served by GitHub Pages from the `gh-pages` branch of the public repository, at <https://jaecho890-svg.github.io/legal-injection-paper/>.
+`dist/` is generated and ignored by git. The built site is served by GitHub Pages from the `gh-pages` branch of the public repository, at <https://adversarialrecord.org/> (the custom domain; <https://jaecho890-svg.github.io/legal-injection-paper/> redirects to it).
 
 ## Build
 
@@ -49,7 +49,7 @@ A `null` value renders as plain text saying the thing is pending. It never rende
 | Field | Meaning | When `null` |
 |---|---|---|
 | `site_name` | Brand in the header | required |
-| `site_url` | Public address, used in the citation when there is no arXiv link and in the scholar PDF tag | both left out |
+| `site_url` | Public address, used in the citation when there is no arXiv link, in the scholar PDF tag and for the `CNAME` file | both left out |
 | `arxiv_url` | Link to the arXiv listing | "Submission pending" |
 | `first_posted` | ISO date the paper was first posted | "Not yet posted" |
 | `zenodo_doi` | DOI of the archived copy | "DOI pending" |
@@ -89,7 +89,7 @@ The site is built in a clone of the public repository, so the footer names a com
 
 1. Commit the change on `main` of the public repository.
 2. Run `python3 site/build.py` there and check the footer shows that commit.
-3. Replace the contents of the `gh-pages` branch with `site/dist/` plus an empty `.nojekyll` file, and push it.
+3. Replace the contents of the `gh-pages` branch with `site/dist/` plus an empty `.nojekyll` file, and push it. The build writes a `CNAME` file from `site_url`, which keeps the custom domain set on GitHub Pages.
 
 ## Still to set in config.json
 
