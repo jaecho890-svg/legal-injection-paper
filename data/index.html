@@ -16,7 +16,7 @@
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="../">Steering AI legal review</a>
-<nav class="nav" aria-label="Site"><a href="../">Results</a><a href="../paper/">Paper</a><a href="../data/" aria-current="page">Data and code</a><a href="../corrections/">Corrections</a></nav>
+<nav class="nav" aria-label="Site"><a href="../">Results</a><a href="../paper/">Paper</a><a href="../data/" aria-current="page">Data and code</a></nav>
 </div></header>
 <main>
 <div class="wrap pagehead">
@@ -32,7 +32,7 @@
 <section class="block"><h2>Reproduce</h2><p>From a checkout of the repository. A dry run calls no model and costs nothing.</p>
 <div class="after"><div class="cite"><div class="bar"><h3>Run the unit tests</h3><button type="button" class="btn quiet small needs-js" data-copy="cmd0">Copy</button></div><pre id="cmd0">python3 -m unittest discover -s tests</pre></div><div class="cite"><div class="bar"><h3>Check the fixtures against their specifications</h3><button type="button" class="btn quiet small needs-js" data-copy="cmd1">Copy</button></div><pre id="cmd1">python3 tools/validate_fixtures.py</pre></div><div class="cite"><div class="bar"><h3>Confirm each model route answers in isolation</h3><button type="button" class="btn quiet small needs-js" data-copy="cmd2">Copy</button></div><pre id="cmd2">python3 -m common.probe --models opus-5.5,haiku-5.5 --mark-verified</pre></div><div class="cite"><div class="bar"><h3>Dry-run the contract-review experiment</h3><button type="button" class="btn quiet small needs-js" data-copy="cmd3">Copy</button></div><pre id="cmd3">python3 kestrel-injection-study/harness/experiment.py run --models opus-5.5,haiku-5.5 --reps 5 --dry-run</pre></div></div></section>
 <section class="block" id="report"><h2>Report an error</h2>
-<p>If a number here does not match the raw records, or a claim goes further than the data, <a href="mailto:jae.cho.890@gmail.com?subject=Error%20report%20on%20the%20working%20paper">write to the author</a> or <a href="https://github.com/jaecho890-svg/legal-injection-paper/issues">open an issue</a>. Confirmed errors are fixed in the manuscript and added to the <a href="../corrections/">corrections</a>.</p>
+<p>If a number here does not match the raw records, or a claim goes further than the data, <a href="mailto:jae.cho.890@gmail.com?subject=Error%20report%20on%20the%20working%20paper">write to the author</a> or <a href="https://github.com/jaecho890-svg/legal-injection-paper/issues">open an issue</a>. Confirmed errors are fixed in the manuscript.</p>
 <p>To cite the paper or the data, use the entries on the <a href="../paper/#cite">paper page</a>.</p></section>
 </div>
 </main>

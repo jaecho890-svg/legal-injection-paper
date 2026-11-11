@@ -245,22 +245,6 @@ pre.wrapit{white-space:pre-wrap;overflow-wrap:anywhere}
 .cite h3{font-size:var(--t-ui);line-height:1.6;letter-spacing:0;font-weight:500;color:var(--ink-2)}
 .hash{font-family:var(--mono);font-size:var(--t-xs);color:var(--ink-3)}
 
-/* corrections */
-.cgrp{margin-top:2.5rem}
-.cgrp + p{margin-top:2rem;color:var(--ink-2)}
-.cgrp h3{font-size:var(--t-body);line-height:1.6;letter-spacing:0;font-weight:500;display:flex;gap:.625rem;align-items:baseline}
-.cgrp h3 span{font:400 var(--t-sm) var(--mono);color:var(--ink-3)}
-.corrs{margin-top:.75rem;border-top:1px solid var(--line)}
-.corr{display:grid;grid-template-columns:2.5rem minmax(0,11rem) minmax(0,1fr);gap:.25rem 1.5rem;padding-block:1.125rem;
-  border-bottom:1px solid var(--line);scroll-margin-top:1rem}
-.corr .no{font:400 var(--t-sm)/1.7 var(--mono);color:var(--ink-3)}
-.corr .where{font-size:var(--t-ui);line-height:1.55}
-.corr .where small{display:block;font-size:var(--t-sm);color:var(--ink-3)}
-.corr dl{display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:.375rem 1rem}
-.corr dt{font-size:var(--t-sm);color:var(--ink-3);padding-top:.1875rem}
-.corr dd{max-width:40rem}
-.corr dd.was{color:var(--ink-2)}
-
 /* footer */
 .foot{margin-top:5rem;border-top:1px solid var(--line);font-size:var(--t-ui);color:var(--ink-2)}
 .foot .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1.5rem 3rem;padding-block:2rem 3rem;align-items:start}
@@ -270,8 +254,6 @@ pre.wrapit{white-space:pre-wrap;overflow-wrap:anywhere}
 
 @media (max-width:60rem){
   .hero{grid-template-columns:minmax(0,1fr);gap:2.5rem;padding-block:3rem 2.5rem}
-  .corr{grid-template-columns:2rem minmax(0,1fr)}
-  .corr dl{grid-column:2}
 }
 @media (max-width:40rem){
   .wrap{padding-inline:1rem}
@@ -285,8 +267,6 @@ pre.wrapit{white-space:pre-wrap;overflow-wrap:anywhere}
   .sec h2 + h3{margin-top:1.5rem}
   .rows > div{grid-template-columns:minmax(0,1fr)}
   .foot .wrap{grid-template-columns:minmax(0,1fr)}
-  .corr dl{grid-template-columns:minmax(0,1fr);gap:0}
-  .corr dd + dt{margin-top:.5rem}
   tbody th{position:sticky;left:0;background:var(--bg);padding-right:.75rem}
   .pc{min-width:13rem}
   table.fig .pc{width:62%}
