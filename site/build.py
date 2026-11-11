@@ -50,10 +50,6 @@ def main():
             S, cfg, "data", "../", f"Data and code. {name}",
             "Raw records, analysis outputs, checksums and the commands that reproduce the results.",
             pages.data(S, cfg, items)),
-        "corrections/index.html": core.page(
-            S, cfg, "corrections", "../", f"Corrections. {name}",
-            "What two independent recomputations of the paper found, and what was changed.",
-            pages.corrections(S)),
     }
     for rel, html in out.items():
         text = visible(html)

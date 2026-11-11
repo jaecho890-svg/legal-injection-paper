@@ -1,4 +1,4 @@
-"""The paper, data and corrections pages, and the files offered for download."""
+"""The paper and data pages, and the files offered for download."""
 import hashlib
 import re
 import sys
@@ -33,6 +33,7 @@ DOWNLOADS = (
     ("dd-pipeline-study/results_v2/analysis/judge_agreement.md", "due-diligence-judge-agreement.md",
      "Due-diligence pipeline: agreement between the two automated judges"),
 )
+VALIDATION_LOG = next(name for src, name, _ in DOWNLOADS if src.startswith("docs/VALIDATION"))
 STUDIES = (
     ("Contract review", "kestrel-injection-study/", "contract-review-summary.md"),
     ("Interpretive drift", "interpretive-drift-study/", "interpretive-drift-summary.md"),
@@ -125,7 +126,7 @@ def paper(S, cfg):
 <section class="block abstract"><h2>Abstract</h2><p>{esc(S["abstract"])}</p></section>
 <section class="block"><h2>Status</h2><dl class="rows">{dl}</dl>
 <p class="muted small after">{esc(S["thanks"])}</p>
-<p class="small">The numbers were recomputed from the raw records twice. <a href="../corrections/">Read the corrections</a>.</p></section>
+<p class="small">The numbers were recomputed from the raw records twice. <a href="../downloads/{VALIDATION_LOG}">Read the validation log</a>.</p></section>
 <section class="block" id="cite"><h2>How to cite</h2>
 {copy_block("aglc", "AGLC", aglc, True)}
 {copy_block("apa", "APA", apa, True)}
@@ -188,88 +189,7 @@ def data(S, cfg, items):
 <section class="block"><h2>Reproduce</h2><p>From a checkout of the repository. A dry run calls no model and costs nothing.</p>
 <div class="after">{cmds}</div></section>
 <section class="block" id="report"><h2>Report an error</h2>
-<p>If a number here does not match the raw records, or a claim goes further than the data, <a href="{mail}">write to the author</a>{issue}. Confirmed errors are fixed in the manuscript and added to the <a href="../corrections/">corrections</a>.</p>
+<p>If a number here does not match the raw records, or a claim goes further than the data, <a href="{mail}">write to the author</a>{issue}. Confirmed errors are fixed in the manuscript.</p>
 <p>To cite the paper or the data, use the entries on the <a href="../paper/#cite">paper page</a>.</p></section>
 </div>"""
 
-
-# ---- corrections -----------------------------------------------------------
-
-GROUPS = (("Abstract and conclusion", ("Abstract",)), ("Methods", ("§3",)), ("Contract review", ("§4.1",)),
-          ("Interpretive drift", ("§4.2",)), ("IP assignment", ("§4.3",)), ("Due-diligence pipeline", ("§4.4",)),
-          ("Discussion and limitations", ("§5", "§6")), ("Figure", ("Figure",)))
-
-
-def md(s):
-    """Inline markdown to HTML, in the site's own punctuation."""
-    s = s.replace("\\|", "|").replace("→", "to")
-    s = re.sub(r"(\d)–(\d)", r"\1 to \2", s).replace("–", "-")
-    s = esc(s)
-    s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
-    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
-
-
-def found_by(s):
-    s = s.replace("P1", "Pass 1").replace("P2", "Pass 2")
-    return "Both passes" if s == "both" else s
-
-
-def corrections(S):
-    blocks = S["validation"]
-    out, section = [], None
-    intro = []
-    for b in blocks:
-        if b[0] == "h1":
-            continue
-        if b[0] == "h2":
-            section = b[1]
-            if section != "Corrections":
-                out.append(f'<section class="block"><h2>{md(section)}</h2>')
-            continue
-        if section is None:
-            intro.append(b)
-        elif b[0] == "table":
-            rows = b[2]
-            used = set()
-            parts = []
-            for title, prefixes in GROUPS:
-                mine = [r for r in rows if r[1].startswith(prefixes)]
-                if not mine:
-                    continue
-                used.update(r[0] for r in mine)
-                entries = "".join(
-                    f'<div class="corr"><span class="no">{esc(r[0])}</span>'
-                    f'<div class="where">{md(r[1])}<small>{md(found_by(r[4]))}</small></div>'
-                    f'<dl><dt>As written</dt><dd class="was">{md(r[2])}</dd>'
-                    f'<dt>In the raw records</dt><dd>{md(r[3])}</dd><dt>Now</dt><dd>{md(r[5])}</dd></dl></div>'
-                    for r in mine)
-                parts.append(f'<div class="cgrp"><h3>{title}<span>{len(mine)}</span></h3>'
-                             f'<div class="corrs">{entries}</div></div>')
-            if len(used) != len(rows):
-                fail("a correction did not fall into any group")
-            out.append(f'<section class="block" id="list"><h2>{len(rows)} corrections</h2>' + "".join(parts))
-        elif section == "Corrections" and b[0] == "p" and b[1].startswith("P1 and P2"):
-            continue
-        elif b[0] == "p":
-            out.append(f"<p>{md(b[1])}</p>")
-        elif b[0] == "ul":
-            out.append('<ul class="list">' + "".join(f"<li>{md(x)}</li>" for x in b[1]) + "</ul>")
-    # close the open sections: every h2 opened one, the corrections table opened its own
-    html, depth = [], 0
-    for chunk in out:
-        if chunk.startswith("<section"):
-            if depth:
-                html.append("</section>")
-            depth = 1
-        html.append(chunk)
-    html.append("</section>")
-    lead = "".join(f"<p>{md(b[1])}</p>" if b[0] == "p" else
-                   '<ul class="list">' + "".join(f"<li>{md(x)}</li>" for x in b[1]) + "</ul>" for b in intro)
-    return f"""<div class="wrap pagehead">
-<h1>Corrections</h1>
-<p class="sub">Every number in the paper was recomputed from the raw records twice. This is what reproduced, what did not and what was changed.</p>
-</div>
-<div class="wrap">
-<section class="block">{lead}</section>
-{"".join(html)}
-</div>"""

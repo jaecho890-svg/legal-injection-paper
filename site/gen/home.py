@@ -2,6 +2,7 @@
 from collections import Counter
 
 from .core import WORDS, axis_th, esc, fail, key, plot_td, slug
+from .pages import VALIDATION_LOG
 from .source import has
 from .studies import AX3, all_studies, table, th
 
@@ -56,7 +57,7 @@ def cohort(S):
                     for a, b, s in stats)
     return (f'<div class="wrap"><div class="stats">{cells}</div>'
             '<div class="invite"><p>This is a working paper and has not been peer reviewed. '
-            "Corrections and criticism are welcome, and every correction so far is listed on this site.</p>"
+            "Corrections and criticism are welcome.</p>"
             f'<a href="{mailto(S, "Feedback on the working paper")}">Send feedback</a></div></div>')
 
 
@@ -123,8 +124,8 @@ def approach(S):
          "if anything, smaller than reported.</p>"),
         ("Recomputed twice",
          "<p>The reported results were recomputed from the raw records twice, independently: once with Claude "
-         f'and once with GPT-6 Astra. The two passes led to {n_fix} corrections, <a href="corrections/">each '
-         "one listed</a>.</p>"),
+         f"and once with GPT-6 Astra. The two passes led to {n_fix} corrections, listed in the "
+         f'<a href="downloads/{VALIDATION_LOG}">validation log</a>.</p>'),
         ("AI assistance and funding",
          "<p>The author set the question, specified the scenarios, directed the work and did the blind "
          "human coding. Claude, used as a research and drafting assistant, prepared the fixtures and the "
@@ -144,7 +145,7 @@ def questions(S):
 <dl class="rows">{limits}</dl>
 <h3>What should be tested next</h3>
 <ul class="list">{future}</ul>
-<div class="close"><p>Found an error, a rival explanation or a case that breaks the pattern? Write to the author. Corrections are logged with the date and what changed.</p>
+<div class="close"><p>Found an error, a rival explanation or a case that breaks the pattern? Write to the author. Confirmed errors are fixed in the manuscript.</p>
 <a class="btn primary" href="{mailto(S, "Feedback on the working paper")}">Send feedback</a></div>
 </div></section>"""
 

@@ -132,7 +132,7 @@ def key(*items):
 # ---- page shell ------------------------------------------------------------
 
 NAV = (("results", "Results", ""), ("paper", "Paper", "paper/"),
-       ("data", "Data and code", "data/"), ("corrections", "Corrections", "corrections/"))
+       ("data", "Data and code", "data/"))
 HEAD_JS = ('document.documentElement.className="js";try{var t=localStorage.getItem("theme");'
            'if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}')
 

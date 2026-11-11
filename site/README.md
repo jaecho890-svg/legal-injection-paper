@@ -1,6 +1,6 @@
 # Companion site
 
-A static site for the working paper: results, the paper, data and code, and the corrections log.
+A static site for the working paper: results, the paper, and data and code.
 It is generated from the manuscript and the analysis outputs, so the site cannot drift from the paper.
 
 `dist/` is generated and ignored by git. The built site is served by GitHub Pages from the `gh-pages` branch of the public repository, at <https://adversarialrecord.org/> (the custom domain; <https://jaecho890-svg.github.io/legal-injection-paper/> redirects to it).
@@ -20,7 +20,6 @@ This writes `site/dist/`:
 | `index.html` | Results: the headline figure, cohort numbers, every study as a plot and a table, approach, limits |
 | `paper/index.html` | Abstract, PDF, status, how to cite (AGLC, APA, BibTeX) |
 | `data/index.html` | Where the repository lives, raw records by study, downloads with SHA-256 sums, how to reproduce, how to report an error |
-| `corrections/index.html` | The two validation passes and all corrections, from `docs/VALIDATION_2026-11-10.md` |
 | `downloads/` | The PDF, figure values, results and fixtures notes, the validation log, the analysis summaries and `SHA256SUMS` |
 | `assets/` | One stylesheet, one script, self-hosted IBM Plex fonts |
 
@@ -39,7 +38,7 @@ Then open http://127.0.0.1:4173/. All internal links are relative, so the site a
 | `paper/main.tex` | Title, author, abstract, counts, models, limits, future work |
 | `paper/figures/figure1.values.txt` | The headline figure and the per-study plots |
 | Analysis summaries | The per-study tables |
-| `docs/VALIDATION_2026-11-10.md` | The corrections page |
+| `docs/VALIDATION_2026-11-10.md` | The record counts on the data page, the corrections count on the home page, and the validation log download |
 | `site/config.json` | Links, dates and licences that the manuscript does not hold |
 
 ## config.json
